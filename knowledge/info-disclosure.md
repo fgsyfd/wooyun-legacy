@@ -660,7 +660,7 @@ ServerSignature Off
 
 阶段2：接口直接调用
 ├─ 无需认证访问短信管理后台
-│  └─ http://sms.provider.com/admin (admin/admin123)
+│  └─ https://example.com/[已脱敏] (admin/admin123)
 ├─ 直接调用API接口
 │  └─ POST /api/sendSms?user=xxx&pass=yyy
 └─ 利用弱默认密码
@@ -775,7 +775,7 @@ credential_management:
 api_security:
   network_layer:
     - 配置IP白名单(仅允许服务器IP调用)
-    - 使用VPC内网调用(阿里云/腾讯云)
+    - 使用VPC内网调用(某电商平台/某互联网公司云)
     - 禁止公网直接访问
 
   application_layer:

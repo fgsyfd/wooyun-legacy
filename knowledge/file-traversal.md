@@ -117,7 +117,7 @@
 ../../../etc/passwd%00.jpg
 ../../../etc/passwd%00.png
 
-# 京东案例
+# 某电商平台案例
 /misc/script/?js=../../../../../etc/passwd%00f.js
 ```
 
@@ -583,9 +583,9 @@ def safe_file_access(user_input, base_dir):
 
 | 漏洞ID | 厂商 | 关键技术 |
 |--------|------|----------|
-| wooyun-2015-092186 | 新浪微博 | curl直接读取 |
+| wooyun-2015-092186 | 某社交平台某社交平台 | curl直接读取 |
 | wooyun-2016-0189746 | Winmail | Base64编码 |
-| wooyun-2016-0214222 | 京东 | 空字节截断 |
+| wooyun-2016-0214222 | 某电商平台 | 空字节截断 |
 | wooyun-2016-0170101 | 上海海事大学 | UTF-8超长编码 |
 | wooyun-2015-0130898 | 金智教育 | WEB-INF读取 |
 | wooyun-2015-0116637 | 淘客帝国 | Base64+file_get_contents |
@@ -1047,7 +1047,7 @@ class FileTraversalScanner:
 
 # 使用示例
 if __name__ == '__main__':
-    scanner = FileTraversalScanner('http://target.com/download.php')
+    scanner = FileTraversalScanner('https://example.com/[已脱敏]')
     print('[*] Testing P0 payloads...')
     results = scanner.test_p0_payloads()
     for r in results:

